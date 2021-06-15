@@ -19,17 +19,6 @@ void Actor_Kill(Actor* actor) {
 }
 ```
 
-And edit the generated ```oot.ld``` file to place the ```Actor_Kill``` section in the right spot. When you compile with armcc, it will produce a .o file in an ARM proprietary format. You can correct this using objcopy doing something like this:
+And edit the generated ```oot.ld``` file to place the ```Actor_Kill``` section in the right spot.
 
-```
-
-$DEVKITARM/bin/arm-none-eabi-objcopy -O binary actor_kill_ARM.o actor_kill.bin
-$DEVKITARM/bin/arm-none-eabi-objcopy -O elf32-littlearm --rename-section .data=Actor_Kill actor_kill.bin build/actor_kill.o
-```
-
-There is probably a way to shorten that to one command, and to automate it, but I leave that as an exercise to the reader (or me in a few days)
-Then edit the command in ```build_rom.sh``` to something like this:
-
-```
-"$DEVKITARM/bin/arm-none-eabi-gcc" -o ./build/text.o binary/*.o build/actor_kill.o -T oot.ld
-```
+You can check ```src/actor.cpp``` for a quick and dirty sample. You can try compiling it yourself and see that it does create a matching rom.
