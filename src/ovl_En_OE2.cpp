@@ -21,12 +21,7 @@ void EnOE2_SetupAction(EnOE2* self, EnOE2ActionFunc actionFunc) {
     self->actionFunc = actionFunc;
 }
 
-/* This function is not included in the rom, but it demonstrates a problem:
- * It needs to be linked with EnOe2_DoNothing. With the current method of
- * converting from ARM .o files to GCC .o files, this is simply impossible
- * Obviously this is a huge problem and it is a fundamental issue with how
- * this repository is set up. We may need to reconsider how the build process works.
- */
+__attribute__((section("EnOE2_Init")))
 void EnOE2_Init(Actor* super, GlobalContext* globalCtx) {
     EnOE2* self = SELF;
 

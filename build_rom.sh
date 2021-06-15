@@ -19,8 +19,7 @@ fi
 echo "compiling src..."
 for src in src/*.cpp; do
 	name=$( basename $src .cpp )
-	./armcc.exe -o ./build/src/arm/${name}.o -c $src
-	python3 ./tools/arm_to_gcc.py ./build/src/arm/${name}.o
+	./armcc.exe -o ./build/src/${name}.o -c --apcs=/interwork $src
 done
 
 echo "assembling asm..."
