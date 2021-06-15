@@ -4,8 +4,27 @@ if [ ! -d "build" ]; then
 	mkdir "build"
 fi
 
+if [ ! -d "build/src" ]; then
+	mkdir "build/src"
+fi
+
+if [ ! -d "build/src/bin" ]; then
+	mkdir "build/src/bin"
+fi
+
+if [ ! -d "build/src/arm" ]; then
+	mkdir "build/src/arm"
+fi
+
+echo "compiling src..."
+for src in src/*.cpp; do
+	name=$( basename $src .cpp )
+	./armcc.exe -o ./build/src/arm/${name}.o -c $src
+	python3 ./tools/arm_to_gcc.py ./build/src/arm/${name}.o
+done
+
 echo "assembling asm..."
-"$DEVKITARM/bin/arm-none-eabi-gcc" -o ./build/text.o binary/*.o -T oot.ld
+"$DEVKITARM/bin/arm-none-eabi-gcc" -o ./build/text.o ./build/src/*.o binary/*.o -T oot.ld
 
 echo "building text.bin..."
 "$DEVKITARM/bin/arm-none-eabi-objcopy" -O binary ./build/text.o ./build/text.bin
