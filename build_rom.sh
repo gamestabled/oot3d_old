@@ -8,14 +8,6 @@ if [ ! -d "build/src" ]; then
 	mkdir "build/src"
 fi
 
-if [ ! -d "build/src/bin" ]; then
-	mkdir "build/src/bin"
-fi
-
-if [ ! -d "build/src/arm" ]; then
-	mkdir "build/src/arm"
-fi
-
 echo "compiling src..."
 for src in src/*.cpp; do
 	name=$( basename $src .cpp )

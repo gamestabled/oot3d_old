@@ -37,7 +37,6 @@ with open(WORKDIR + 'text.bin', 'rb') as b:
         for i in range(0, len(Lines)):
             funcName = Lines[i].split(',')[0]
             funcStart = int(Lines[i].split(',')[1].strip(), 16) - 0x100000
-            funcName = funcName + "_" + str(funcStart)
             if i == (len(Lines) - 1):
                 funcEnd = textSize
             else:
@@ -46,10 +45,10 @@ with open(WORKDIR + 'text.bin', 'rb') as b:
             b.seek(funcStart)
             funcBin = b.read(funcSize)
             writefile(BINARYDIR + funcName + '.bin', funcBin)
-            run('{0} -I binary -O elf32-littlearm --rename-section .data="{1}" "{2}{3}.bin" "{2}{3}.o"'.format(OC, funcName, BINARYDIR, funcName))
+            run('{0} -I binary -O elf32-littlearm --rename-section .data="ASM_{1}" "{2}{3}.bin" "{2}{3}.o"'.format(OC, funcName, BINARYDIR, funcName))
             run('{0} -D "{1}{2}.o" > "{3}{2}.s"'.format(OD, BINARYDIR, funcName, ASMDIR))
-            linkerscript += '\t\t*({0})\n'.format(funcName)
+            linkerscript += '\t\t*({0})\n'.format('ASM_' + funcName)
     linkerscript += '\t}\n'
     linkerscript += '}\n'
-    with open('oot.ld', 'w') as l:
-        l.write(linkerscript)
+    # with open('oot.ld', 'w') as l:
+        # l.write(linkerscript)
