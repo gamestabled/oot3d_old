@@ -38,7 +38,6 @@ mv "$OUTDIR/baserom.elf" "$PWD"
 echo "creating baserom.s..."
 "$DEVKITARM/bin/arm-none-eabi-objdump" -D "baserom.elf" > "baserom.s"
 
-echo "splitting asm..."
 echo "creating baserom.elf..."
 if [ ! -d "$BINDIR" ]; then
 	mkdir "$BINDIR"
@@ -46,4 +45,6 @@ fi
 if [ ! -d "$ASMDIR" ]; then
 	mkdir "$ASMDIR"
 fi
+
+echo "splitting asm..."
 python ./tools/split_asm.py

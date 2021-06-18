@@ -45,7 +45,7 @@ with open(WORKDIR + 'text.bin', 'rb') as b:
             b.seek(funcStart)
             funcBin = b.read(funcSize)
             writefile(BINARYDIR + funcName + '.bin', funcBin)
-            run('{0} -I binary -O elf32-littlearm --rename-section .data="ASM_{1}" "{2}{3}.bin" "{2}{3}.o"'.format(OC, funcName, BINARYDIR, funcName))
+            run('{0} -I binary -O elf32-littlearm --rename-section .data="ASM_{1}" --redefine-sym _binary_binary_{1}_bin_start={1} --globalize-symbol={1} "{2}{3}.bin" "{2}{3}.o"'.format(OC, funcName, BINARYDIR, funcName))
             run('{0} -D "{1}{2}.o" > "{3}{2}.s"'.format(OD, BINARYDIR, funcName, ASMDIR))
             linkerscript += '\t\t*({0})\n'.format('ASM_' + funcName)
     linkerscript += '\t}\n'

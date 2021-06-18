@@ -14,7 +14,7 @@ for src in src/*.cpp; do
 	./armcc.exe -o ./build/src/${name}.o -c --apcs=/interwork $src
 done
 
-echo "assembling asm..."
+echo "linking asm..."
 "$DEVKITARM/bin/arm-none-eabi-gcc" -o ./build/text.o ./build/src/*.o binary/*.o -T oot.ld
 
 echo "building text.bin..."
