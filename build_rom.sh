@@ -11,17 +11,15 @@ fi
 echo "compiling src..."
 for src in src/*.cpp; do
 	name=$( basename $src .cpp )
-	./armcc.exe -o ./build/src/${name}.o -c --apcs=/interwork $src
+	./armcc.exe -o ./build/src/${name}.o -c --apcs=/interwork --split_sections --no_debug_macros --no-debug $src
 done
 
 echo "linking asm..."
 "$DEVKITARM/bin/arm-none-eabi-gcc" -o ./build/text.o ./build/src/*.o binary/*.o -T oot.ld
 
-echo "building text.bin..."
-"$DEVKITARM/bin/arm-none-eabi-objcopy" -O binary ./build/text.o ./build/text.bin
-
 echo "building code.bin..."
-python ./tools/build_code_binary.py
+"$DEVKITARM/bin/arm-none-eabi-objcopy" -O binary ./build/text.o ./build/code.bin
+python ./tools/pad_code_binary.py
 
 echo "archiving romfs..."
 ./tools/3dstool -cvtf romfs ./build/romfs.bin --romfs-dir ./baserom/romfs > /dev/null

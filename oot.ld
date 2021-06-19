@@ -1335,8 +1335,8 @@ SECTIONS
 		*(ASM_EnNiw_Init)
 		*(ASM_EnNiw_Destroy)
 		*(ASM_EnNwc_Init)
-		*(EnOE2_Init)
-		*(EnOE2_Destroy)
+		*(i.EnOE2_Init)
+		*(i.EnOE2_Destroy)
 		*(ASM_EnXc_Init)
 		*(ASM_EnXc_Destroy)
 		*(ASM_EnOwl_Init)
@@ -2022,8 +2022,8 @@ SECTIONS
 		*(ASM_EnNwc_Draw)
 		*(ASM_EnNwc_Update)
 		*(ASM_FUN_001dc50c)
-		*(EnOE2_Draw)
-		*(EnOE2_Update)
+		*(i.EnOE2_Draw)
+		*(i.EnOE2_Update)
 		*(ASM_EnOssan_Init)
 		*(ASM_EnOssan_Destroy)
 		*(ASM_EnXc_Draw)
@@ -7523,7 +7523,7 @@ SECTIONS
 		*(ASM_EffectSsKiraKira_SpawnSmall)
 		*(ASM_FUN_003742c4)
 		*(ASM_DemoKankyo_KillDoorOfTimeCollision)
-		*(ASM_Actor_Kill)
+		*(i.Actor_Kill)
 		*(ASM_Item_DropCollectibleRandom)
 		*(ASM_Animation_MorphToPlayOnce)
 		*(ASM_FUN_00374ab0)
@@ -8190,7 +8190,7 @@ SECTIONS
 		*(ASM_FUN_003ae4b8)
 		*(ASM_FUN_003ae5f8)
 		*(ASM_FUN_003ae6b8)
-		*(EnOE2_DoNothing)
+		*(i.EnOE2_DoNothing)
 		*(ASM_FUN_003ae784)
 		*(ASM_FUN_003ae868)
 		*(ASM_FUN_003ae93c)
@@ -11771,5 +11771,33 @@ SECTIONS
 		*(ASM_FUN_004c9748)
 		*(ASM__printf_percent)
 		*(ASM___cpp_initialize__aeabi_)
+	}
+
+	. = ALIGN(0x1000);
+	.rodata : {
+		*(ASM_rodata_4CA000)
+	}
+
+	. = ALIGN(0x1000);
+	.data : {
+		*(ASM_data_4F9000)
+	}
+
+	/DISCARD/ : {
+		*(.init)
+		*(.fini)
+		*(.text.__do_global_dtors_aux)
+		*(.text.frame_dummy)
+		*(.eh_frame)
+		*(.ARM.exidx)
+		*(.init_array)
+		*(.fini_array)
+		*(.data.__dso_handle)
+		*(.bss.completed.1)
+		*(.bss.object.0)
+		*(.ARM.attributes)
+		*(.comment)
+		*(.arm_vfe_header)
+		*(.debug_frame)
 	}
 }

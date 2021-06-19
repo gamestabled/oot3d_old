@@ -1,3 +1,4 @@
+extern "C" {
 #include "actor.hpp"
 
 typedef void (*EnOE2ActionFunc)(struct EnOE2*, GlobalContext*);
@@ -17,29 +18,25 @@ void EnOE2_Draw(Actor* super, GlobalContext* globalCtx);
 
 void EnOE2_DoNothing(EnOE2* self, GlobalContext* globalCtx);
 
-void EnOE2_SetupAction(EnOE2* self, EnOE2ActionFunc actionFunc) {
+inline void EnOE2_SetupAction(EnOE2* self, EnOE2ActionFunc actionFunc) {
     self->actionFunc = actionFunc;
 }
 
-__attribute__((section("EnOE2_Init")))
 void EnOE2_Init(Actor* super, GlobalContext* globalCtx) {
     EnOE2* self = SELF;
 
     EnOE2_SetupAction(self, EnOE2_DoNothing);
 }
 
-__attribute__((section("EnOE2_Destroy")))
 void EnOE2_Destroy(Actor* super, GlobalContext* globalCtx) {
 }
 
-__attribute__((section("EnOE2_DoNothing")))
 void EnOE2_DoNothing(EnOE2* self, GlobalContext* globalCtx) {
 }
 
-__attribute__((section("EnOE2_Update")))
 void EnOE2_Update(Actor* super, GlobalContext* globalCtx) {
 }
 
-__attribute__((section("EnOE2_Draw")))
 void EnOE2_Draw(Actor* super, GlobalContext* globalCtx) {
+}
 }
