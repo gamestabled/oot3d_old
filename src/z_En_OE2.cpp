@@ -1,5 +1,5 @@
 extern "C" {
-#include "actor.hpp"
+#include "z3Dactor.hpp"
 
 typedef void (*EnOE2ActionFunc)(struct EnOE2*, GlobalContext*);
 

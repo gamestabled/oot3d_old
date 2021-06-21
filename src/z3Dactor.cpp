@@ -1,5 +1,5 @@
 extern "C" {
-#include "actor.hpp"
+#include "z3Dactor.hpp"
 
 void Actor_Kill(Actor* actor) {
     actor->draw = 0;
