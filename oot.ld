@@ -11978,6 +11978,7 @@ SECTIONS
 	}
 
 	/DISCARD/ : {
+		*(.rodata.all_implied_fbits)
 		*(.init)
 		*(.fini)
 		*(.text.__do_global_dtors_aux)

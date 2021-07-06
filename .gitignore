@@ -1,0 +1,12 @@
+asm
+build
+binary
+baserom
+__pycache__
+*.3ds
+*.elf
+*.o
+*.s
+*.bin
+*.map
+armcc.exe
