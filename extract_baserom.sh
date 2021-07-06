@@ -33,12 +33,10 @@ if [ ! -d "$OUTDIR/workdir" ]; then
 	mkdir "$OUTDIR/workdir"
 fi
 python tools/exefs2elf.py
-mv "$OUTDIR/baserom.elf" "$PWD"
 
 echo "creating baserom.s..."
-"$DEVKITARM/bin/arm-none-eabi-objdump" -D "baserom.elf" > "baserom.s"
+"$DEVKITARM/bin/arm-none-eabi-objdump" -D "$OUTDIR/baserom.elf" > "$OUTDIR/baserom.s"
 
-echo "creating baserom.elf..."
 if [ ! -d "$BINDIR" ]; then
 	mkdir "$BINDIR"
 fi

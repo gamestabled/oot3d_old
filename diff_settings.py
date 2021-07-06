@@ -1,5 +1,5 @@
 def apply(config, args):
-    config["baseimg"] = "baserom/workdir/text.o"
+    config["baseimg"] = "baserom/baserom.elf"
     config["myimg"] = "build/text.o"
     #config["mapfile"] = "build.map"
     config["source_directories"] = ["."]
