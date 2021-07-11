@@ -382,9 +382,6 @@ typedef struct {
     /* 0x03 */ u8 flags3;
 } RestrictionFlags;
 
-extern GlobalContext* gGlobalContext;
-extern const u32 ItemSlots[];
-extern const char DungeonNames[][25];
 #define gSaveContext (*(SaveContext*)0x00587958)
 #define gStaticContext (*(StaticContext*)0x08080010)
 #define gObjectTable ((ObjectFile*)0x53CCF4)

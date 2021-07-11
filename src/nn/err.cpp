@@ -1,4 +1,4 @@
-#include "../z3Dvec.hpp"
+#include "z3Dvec.hpp"
 
 namespace nn {
 namespace err {
