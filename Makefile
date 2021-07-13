@@ -3,7 +3,7 @@ TARGET = oot3d_usa
 SRC_DIR ?= src
 BUILD_DIR ?= build
 
-CPP_SRCS := $(wildcard $(SRC_DIR)/*.cpp $(SRC_DIR)/**/*.cpp)
+CPP_SRCS := $(wildcard $(SRC_DIR)/*.cpp $(SRC_DIR)/**/*.cpp $(SRC_DIR)/**/**/*.cpp)
 CPP_OBJS := $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(CPP_SRCS))
 SUBDIRS  := $(sort $(dir $(CPP_OBJS)))
 PRECOMP_O := binary/*.o

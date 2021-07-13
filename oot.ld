@@ -11973,7 +11973,7 @@ SECTIONS
 		*(ASM_z_En_Bom_Bowl_Pit)
 		*(ASM_z_En_Bom_Chu)
 		*(ASM_data_52127C)
-		*(z_En_Torch.data)
+		*(actors/En_Torch/z_en_torch.data)
 		*(ASM_data_52F998)
 	}
 
