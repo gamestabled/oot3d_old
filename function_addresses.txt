@@ -2042,7 +2042,6 @@ EnSsh_Update,001df0a4,001df8c0
 FUN_001df8c0,001df8c0,001dfa30
 FUN_001dfa30,001dfa30,001dfb24
 FUN_001dfb24,001dfb24,001dfb2c
-EnTorch_Init,001dfb2c,001dfba8
 EnToryo_Init,001dfba8,001dfdc4
 EnToryo_Destroy,001dfdc4,001dfe20
 EnZl1_Draw,001dfe20,001dfe94

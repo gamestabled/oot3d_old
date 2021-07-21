@@ -2052,7 +2052,7 @@ SECTIONS
 		*(ASM_FUN_001df8c0)
 		*(ASM_FUN_001dfa30)
 		*(ASM_FUN_001dfb24)
-		*(ASM_EnTorch_Init)
+		*(i.EnTorch_Init)
 		*(ASM_EnToryo_Init)
 		*(ASM_EnToryo_Destroy)
 		*(ASM_EnZl1_Draw)
@@ -11977,6 +11977,11 @@ SECTIONS
 		*(ASM_data_52DA8C)
 		*(actors/En_Torch/z_en_torch.data)
 		*(ASM_data_52F998)
+	}
+
+	.bss : {
+		. += 0x02D738;
+		*(z_common_data.bss)
 	}
 
 	/DISCARD/ : {

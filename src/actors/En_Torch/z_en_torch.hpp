@@ -10,6 +10,5 @@ typedef struct EnTorch {
 } EnTorch; // size = 0x1A4
 
 extern ActorInit En_Torch_InitVars;
-extern u8 sChestContents[]; //externed so it isnt optimized out for now. once EnTorch_Init matches, it can become static
 
 #endif

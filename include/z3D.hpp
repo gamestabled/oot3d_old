@@ -163,13 +163,16 @@ typedef struct {
     /* 0x1594 */ char         unk_1594[0x000C];
     /* 0x15A0 */ u16          nextCutsceneIndex;
     /* 0x15A2 */ u8           cutsceneTrigger;
-    /* 0x15A3 */ char         unk_15A3[0x00F];
+    /* 0x15A3 */ char         unk_15A3[0x000F];
     /* 0x15B2 */ s16          healthAccumulator;
-
+    /* 0x15B4 */ char         unk_15B4[0x0010];
 } SaveContext; // size = 0x15C4
 
 typedef struct GraphicsContext GraphicsContext; //TODO
-typedef struct Camera Camera; //TODO
+
+typedef struct Camera {
+    /* 0x0000 */ char unk_0[0x1BC];
+} Camera; // size = 0x1BC
 
 typedef struct {
     /* 0x00 */ void* colHeader; //TODO: CollisionHeader* struct
@@ -187,6 +190,34 @@ typedef struct {
     /* 0x0000 */ StaticCollisionContext stat;
     /* 0x0050 */ DynaCollisionContext   dyna;
 } CollisionContext; // size = 0x15F4
+
+typedef struct {
+    /* 0x0000 */ u32 size;
+    /* 0x0004 */ void* bufp;
+    /* 0x0008 */ void* head;
+    /* 0x000C */ void* tail;
+} TwoHeadArena; // size = 0x10
+
+typedef struct {
+    /* 0x000 */ s32    topyY;
+    /* 0x004 */ s32    bottomY;
+    /* 0x008 */ s32    leftX;
+    /* 0x00C */ s32    rightX;
+    /* 0x010 */ f32    fovy;  // vertical field of view in degrees
+    /* 0x014 */ f32    zNear; // distance to near clipping plane
+    /* 0x018 */ f32    zFar;  // distance to far clipping plane
+    /* 0x01C */ char   unk_1C[0x014];
+    /* 0x030 */ Vec3f  eye;
+    /* 0x03C */ Vec3f  lookAt;
+    /* 0x048 */ Vec3f  up;
+    /* 0x054 */ char   unk_54[0x150];
+    /* 0x1A4 */ Vec3f  unk_1A4;
+    /* 0x1B0 */ Vec3f  unk_1B0;
+    /* 0x1BC */ Vec3f  unk_1BC;
+    /* 0x1C8 */ Vec3f  unk_1C8;
+    /* 0x1D8 */ s32    flags;
+    /* 0x1D9 */ char   unk_1D9[0x003];
+} View; // size = 0x1DC
 
 typedef struct {
     /* 0x00 */ u8*  texture;
@@ -246,19 +277,6 @@ typedef struct CutsceneContext {
     /* 0x44 */ CsCmdActorAction* actorActions[10]; // "npcdemopnt"
 } CutsceneContext; // size = 0x6C
 
-typedef struct Sub_118_C {
-    s32 data[4];
-} Sub_118_C;
-
-typedef struct SubGlobalContext_118 {
-    /* 0x00 */ char unk_00[0x0C];
-    /* 0x0C */ Sub_118_C* sub0C; //an array of these
-    /* 0x10 */ char unk_10[0x24];
-    /* 0x34 */ s32 indexInto0C;
-    /* 0x38 */ char unk_38[0x28];
-    /* 0x60 */ void** unk_60; //seems to point to an array of cutscene pointers, maybe?
-} SubGlobalContext_118; // size = at least 0x64
-
 typedef struct Collider Collider; //TODO
 typedef struct OcLine OcLine; //TODO
 #define COLLISION_CHECK_AT_MAX 50
@@ -307,22 +325,56 @@ typedef struct {
     /* 0x40 */ u32 size;
 } ObjectFile;
 
+typedef struct GameAllocEntry {
+    /* 0x00 */ struct GameAllocEntry* next;
+    /* 0x04 */ struct GameAllocEntry* prev;
+    /* 0x08 */ u32 size;
+    /* 0x0C */ u32 unk_0C;
+} GameAllocEntry; // size = 0x10
+
+typedef struct {
+    /* 0x00 */ GameAllocEntry base;
+    /* 0x10 */ GameAllocEntry* head;
+} GameAlloc; // size = 0x14
+
+struct GameState;
+
+typedef void (*GameStateFunc)(struct GameState* gameState);
+
 typedef struct GameState {
-    /* 0x00 */ GraphicsContext* gfxCtx;
-    /* 0x04 */ void (*main)(struct GameState*);
-    /* 0x08 */ void (*destroy)(struct GameState*); // "cleanup"
-    /* 0x0C */ void (*init)(struct GameState*);
-    //TODO
-} GameState;
+    /* 0x000 */ GraphicsContext* gfxCtx;
+    /* 0x004 */ GameStateFunc main;
+    /* 0x008 */ GameStateFunc destroy; // "cleanup"
+    /* 0x00C */ GameStateFunc init;
+    /* 0x010 */ u32 size;
+    /* 0x014 */ char unk_14[0xC0];
+    /* 0x0D4 */ TwoHeadArena tha;
+    /* 0x0E4 */ GameAlloc alloc;
+    /* 0x0F8 */ u32 frames;
+    /* 0x0FC */ char unk_FC[0x5];
+    /* 0x101 */ u8 running;
+    /* 0x102 */ char unk_102[0x2];
+} GameState; // size = 0x104
+
+typedef struct {
+    /* 0x000 */ GameState state;
+    /* 0x104 */ char unk_104[0x1F0];
+    /* 0x2F4 */ u8 exit;
+    /* 0x2F5 */ char unk_2F5[0x3];
+} TitleContext; // size = 0x2F8
 
 // Global Context (ram start: 0871E840)
 typedef struct GlobalContext {
-    // /* 0x0000 */ GameState state;
-    /* 0x0000 */ char                  unk_0[0x0104];
-    /* 0x0104 */ s16                   sceneNum;
-    /* 0x0106 */ char                  unk_106[0x0012];
-    /* 0x0118 */ SubGlobalContext_118  sub118;
-    /* 0x017C */ char                  unk_17C[0x08D8];
+    /* 0x0000 */ GameState state;
+    /* 0x0104 */ s16 sceneNum;
+    /* 0x0106 */ u8 sceneConfig;
+    /* 0x0107 */ char unk_107[0x0009];
+    /* 0x0110 */ void* sceneSegment;
+    /* 0x0114 */ void* sceneZAR;
+    /* 0x0118 */ ZARInfo sceneZARInfo;
+    /* 0x0188 */ View view;
+    /* 0x0364 */ Camera mainCamera;
+    /* 0x0520 */ Camera subCameras[3];
     /* 0x0A54 */ Camera*               cameraPtrs[4];
     /* 0x0A64 */ s16                   activeCamera;
     /* 0x0A66 */ char                  unk_A66[0x0032];
@@ -382,7 +434,6 @@ typedef struct {
     /* 0x03 */ u8 flags3;
 } RestrictionFlags;
 
-#define gSaveContext (*(SaveContext*)0x00587958)
 #define gStaticContext (*(StaticContext*)0x08080010)
 #define gObjectTable ((ObjectFile*)0x53CCF4)
 #define gEntranceTable ((EntranceInfo*)0x543BB8)
