@@ -2,6 +2,7 @@
 #define _Z3DACTOR_H_
 
 #include "z3Dvec.hpp"
+#include "graphics.hpp"
 
 struct Actor;
 struct GlobalContext;

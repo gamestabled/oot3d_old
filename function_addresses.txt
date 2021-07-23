@@ -3979,8 +3979,6 @@ BgGateShutter_Init,0028a5d4,0028a6d8
 BgGateShutter_Destroy,0028a6d8,0028a708
 BgGndIceblock_Init,0028a708,0028a818
 BgGndIceblock_Destroy,0028a818,0028a848
-BgGndNisekabe_Init,0028a848,0028a8e8
-BgGndNisekabe_Destroy,0028a8e8,0028a8f4
 FUN_0028a8f4,0028a8f4,0028a95c
 BgHakaSgami_Update,0028a95c,0028a99c
 BgHakaWater_Draw,0028a99c,0028ac24
@@ -4406,8 +4404,6 @@ BgGateShutter_Draw,002ab8e4,002ab930
 BgGateShutter_Update,002ab930,002ab94c
 BgGndIceblock_Draw,002ab94c,002ab9c4
 BgGndIceblock_Update,002ab9c4,002ab9cc
-BgGndNisekabe_Draw,002ab9cc,002aba34
-BgGndNisekabe_Update,002aba34,002aba54
 BgHidanFirewall_Init,002aba54,002abb34
 BgHidanFirewall_Destroy,002abb34,002abb5c
 BgHidanFslift_Draw,002abb5c,002abba8
@@ -6840,7 +6836,7 @@ Collider_SetJntSph,00350d48,00350eb8
 Collider_InitJntSph,00350eb8,00350ef4
 ZeldaArena_Free,00350ef4,00350f04
 BgZg_Destroy,00350f04,00350f34
-Actor_DestroyModel_maybe,00350f34,00350fac
+FUN_00350f34,00350f34,00350fac
 EnGb_Destroy,00350fac,00351034
 DynaPolyInfo_Free,00351034,003510b0
 Actor_ProcessInitChain,003510b0,003510f0
