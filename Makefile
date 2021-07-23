@@ -6,8 +6,8 @@ BUILD_DIR ?= build
 CPP_SRCS := $(wildcard $(SRC_DIR)/*.cpp $(SRC_DIR)/**/*.cpp $(SRC_DIR)/**/**/*.cpp)
 CPP_OBJS := $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(CPP_SRCS))
 SUBDIRS  := $(sort $(dir $(CPP_OBJS)))
-PRECOMP_O := binary/*.o
-
+SPEC     := spec
+PRECOMP_O := $(shell cat $(SPEC))
 
 # Tools
 

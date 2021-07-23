@@ -6,6 +6,7 @@
 #include "z3Dcutscene.hpp"
 #include "z3Ditem.hpp"
 #include "z3Dobject.hpp"
+#include "color.hpp"
 
 typedef struct {
     /* 0x00 */ u8 buttonItems[5]; //B,Y,X,I,II

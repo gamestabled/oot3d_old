@@ -20,6 +20,7 @@ typedef struct {
 } CollisionPoly; // size = 0x10
 
 typedef void (*ActorFunc)(struct Actor*, struct GlobalContext*);
+typedef void (*ActorShadowFunc)(struct Actor*, struct Lights*, struct GlobalContext*);
 
 typedef struct {
     /* 0x00 */ s16 id;
@@ -73,14 +74,15 @@ typedef struct {
 } CollisionCheckInfo; // size = 0x1C
 
 typedef struct {
-    /* 0x00 */ Vec3s  rot; // Current actor shape rotation
-    /* 0x06 */ u8     unk_06;
-    /* 0x08 */ f32    unk_08; // Model y axis offset. Represents model space units. collision mesh related
-    /* 0x0C */ void (*shadowDrawFunc)(struct Actor*, struct LightMapper*, struct GlobalContext*);
-    /* 0x10 */ f32    unk_10;
-    /* 0x14 */ u8     unk_14;
-    /* 0x15 */ u8     unk_15;
-} ActorShape; // size = 0x18
+    /* 0x00 */ Vec3s rot; // Current actor shape rotation
+    /* 0x06 */ s16 face; // Used to index eyebrow/eye/mouth textures. Only used by player
+    /* 0x08 */ f32 yOffset; // Model y axis offset. Represents model space units
+    /* 0x0C */ ActorShadowFunc shadowDraw; // Shadow draw function
+    /* 0x10 */ f32 shadowScale; // Changes the size of the shadow
+    /* 0x14 */ u8 shadowAlpha; // Default is 255
+    /* 0x15 */ u8 feetFloorFlags; // Set if the actor's foot is clipped under the floor. & 1 is right foot, & 2 is left
+    /* 0x18 */ Vec3f feetPos[2]; // Update by using `Actor_SetFeetPos` in PostLimbDraw
+} ActorShape; // size = 0x30
 
 typedef struct Actor {
     /* 0x000 */ s16     id; // Actor Id
@@ -117,7 +119,6 @@ typedef struct Actor {
     /* 0x09C */ f32     yDistToPlayer; // Dist is negative if the actor is above the player
     /* 0x0A0 */ CollisionCheckInfo colChkInfo; // Variables related to the Collision Check system
     /* 0x0BC */ ActorShape shape; // Variables related to the physical shape of the actor
-    /* 0x0D4 */ Vec3f   unk_D4[2];
     /* 0x0EC */ Vec3f   unk_EC; // Stores result of some vector transformation involving actor xyz vector, and a matrix at Global Context + 11D60
     /* 0x0F8 */ f32     unk_F8; // Related to above
     /* 0x0FC */ f32     uncullZoneForward; // Amount to increase the uncull zone forward by (in projected space)
