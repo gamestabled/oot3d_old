@@ -6,7 +6,10 @@
 #include "z3Dcutscene.hpp"
 #include "z3Ditem.hpp"
 #include "z3Dobject.hpp"
+#include "z3Danimation.hpp"
+#include "z3Dcamera.hpp"
 #include "color.hpp"
+#include "math.hpp"
 
 typedef struct {
     /* 0x00 */ u8 buttonItems[5]; //B,Y,X,I,II
@@ -171,10 +174,6 @@ typedef struct {
 
 typedef struct GraphicsContext GraphicsContext; //TODO
 
-typedef struct Camera {
-    /* 0x0000 */ char unk_0[0x1BC];
-} Camera; // size = 0x1BC
-
 typedef struct {
     /* 0x00 */ void* colHeader; //TODO: CollisionHeader* struct
     /* 0x04 */ char             unk_04[0x4C];
@@ -216,7 +215,8 @@ typedef struct {
     /* 0x1B0 */ Vec3f  unk_1B0;
     /* 0x1BC */ Vec3f  unk_1BC;
     /* 0x1C8 */ Vec3f  unk_1C8;
-    /* 0x1D8 */ s32    flags;
+    /* 0x1D4 */ f32    unk_1D4;
+    /* 0x1D8 */ s8     flags;
     /* 0x1D9 */ char   unk_1D9[0x003];
 } View; // size = 0x1DC
 
@@ -385,7 +385,9 @@ typedef struct GlobalContext {
     /* 0x2298 */ CutsceneContext       csCtx; // "demo_play"
     /* 0x2304 */ char                  unk_2304[0x087A];
     /* 0x2B7E */ s16                   unk_2B7E; // msgCtx.unk_E3EE in OoT
-    /* 0x2B80 */ char                  unk_2B80[0x0ED8];
+    /* 0x2B80 */ char                  unk_2B80[0x0A80];
+    /* 0x3600 */ f32                   unk_3600;
+    /* 0x3604 */ char                  unk_3604[0x0454];
     /* 0x3A58 */ ObjectContext         objectCtx;
     /* 0x43DC */ char                  unk_43DC[0x1824];
     /* 0x5C00 */ u8                    linkAgeOnLoad;
@@ -446,6 +448,6 @@ typedef struct {
 #define gRandFloat (*(f32*)0x50C0C8)
 #define gDrawItemTable ((DrawItemTableEntry*)0x4D88C8)
 #define gRestrictionFlags ((RestrictionFlags*)0x539DC4)
-#define PLAYER ((Player*)gGlobalContext->actorCtx.actorList[ACTORTYPE_PLAYER].first)
+#define PLAYER ((Player*)globalCtx->actorCtx.actorList[ACTORCAT_PLAYER].first)
 
 #endif //_Z3D_H_

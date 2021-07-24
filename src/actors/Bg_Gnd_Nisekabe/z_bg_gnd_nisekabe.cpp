@@ -26,8 +26,7 @@ void BgGndNisekabe_Init(Actor* actor, GameState* state) {
   
     Actor_SetScale(&self->actor, 0.1);
     self->actor.uncullZoneForward = 3000.0;
-    u16 uVar2 = self->actor.params & 0xFF;
-    switch (uVar2) {
+    switch (self->actor.params & 0xFF) {
         case 0:
             FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 13, 0);
             break;
