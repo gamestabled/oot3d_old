@@ -148,12 +148,26 @@ typedef struct Actor {
     /* 0x17C */ void*         unk_17C[6]; // Unknown pointer type
     /* 0x194 */ u32           unk_194;
     /* 0x198 */ u8            unk_198;
-    /* 0x199 */ char          unk_199[0x3];
+    /* 0x199 */ char          unk_199[0x1];
+    /* 0x19A */ s8            unk_19A;
+    /* 0x19B */ char          unk_19B[0x1];
     /* 0x19C */ u16           unk_19C;
     /* 0x19E */ char          unk_19E[0x2];
     /* 0x1A0 */ f32           unk_1A0;
    /* From here on, the structure and size varies for each actor */
 } Actor; // size = 0x1A4
+
+typedef struct DynaPolyActor {
+    /* 0x000 */ struct Actor actor;
+    /* 0x1A4 */ s32 bgId;
+    /* 0x1A8 */ f32 unk_1A8;
+    /* 0x1AC */ f32 unk_1AC;
+    /* 0x1B0 */ s16 unk_1B0;
+    /* 0x1B2 */ u16 unk_1B2;
+    /* 0x1B4 */ u32 unk_1B4;
+    /* 0x1B8 */ u8 unk_1B8;
+    /* 0x1BA */ s16 unk_1BA;
+} DynaPolyActor; // size = 0x1BC
 
 typedef struct {
     /* 0x00 */ Actor* actor;
