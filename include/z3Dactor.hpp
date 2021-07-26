@@ -20,7 +20,7 @@ typedef struct {
     /* 0x0E */ s16    dist;  // Plane distance from origin
 } CollisionPoly; // size = 0x10
 
-typedef void (*ActorFunc)(struct Actor*, struct GlobalContext*);
+typedef void (*ActorFunc)(struct Actor*, struct GameState*);
 typedef void (*ActorShadowFunc)(struct Actor*, struct Lights*, struct GlobalContext*);
 
 typedef struct {

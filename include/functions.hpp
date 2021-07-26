@@ -42,3 +42,6 @@ void FUN_0036b96c(Actor* actor);
 void FUN_003731e0(SkelAnime* skelAnime);
 void FUN_0036788c(void* arg0);
 void FUN_003542c4(void* arg0, s32 arg1, s32 arg2);
+void ActorShape_Init(ActorShape* shape, f32 yOffset, ActorShadowFunc shadowDraw, f32 shadowScale);
+void ActorShadow_DrawCircle(Actor* actor, Lights* lights, GlobalContext* globalCtx);
+void Actor_Noop(Actor* actor, GameState* state);

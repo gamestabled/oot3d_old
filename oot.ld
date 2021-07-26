@@ -1377,6 +1377,7 @@ SECTIONS
 		*(i.EnfHG_Destroy)
 		*(i.EnTrap_Draw)
 		*(i.EnVase_Draw)
+		*(i.FUN_00190550)
 		*(i.FUN_001905d4)
 		*(i.FUN_0019062c)
 		*(i.FUN_00190740)
@@ -11977,6 +11978,8 @@ SECTIONS
 		*(ASM_data_52DA8C)
 		*(actors/En_Torch/z_en_torch.data)
 		*(ASM_data_52F998)
+		*(actors/En_Vase/z_en_vase.data)
+		*(ASM_data_52FDB4)
 	}
 
 	.bss : {
