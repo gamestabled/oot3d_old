@@ -7,7 +7,8 @@ struct ObjBombiwa;
 
 typedef struct ObjBombiwa {
     /* 0x0000 */ Actor actor;
-    /* 0x01A4 */ char unk_1A4[0x5C];
+    /* 0x01A4 */ ColliderCylinder collider;
+    /* 0x01FC */ SkeletonAnimationModel* skelAnimModel;
 } ObjBombiwa; // size = 0x200
 
 extern ActorInit Obj_Bombiwa_InitVars;

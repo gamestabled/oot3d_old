@@ -3,6 +3,6 @@
 
 #define NULL ((void*)0)
 
-typedef int size_t;
+typedef unsigned int size_t;
 
 #endif

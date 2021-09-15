@@ -8,8 +8,10 @@
 #include "z3Dobject.hpp"
 #include "z3Danimation.hpp"
 #include "z3Dcamera.hpp"
+#include "z3Dcollision_check.hpp"
 #include "color.hpp"
 #include "math.hpp"
+#include "ichain.hpp"
 
 typedef struct {
     /* 0x00 */ u8 buttonItems[5]; //B,Y,X,I,II
@@ -278,7 +280,6 @@ typedef struct CutsceneContext {
     /* 0x44 */ CsCmdActorAction* actorActions[10]; // "npcdemopnt"
 } CutsceneContext; // size = 0x6C
 
-typedef struct Collider Collider; //TODO
 typedef struct OcLine OcLine; //TODO
 #define COLLISION_CHECK_AT_MAX 50
 #define COLLISION_CHECK_AC_MAX 60

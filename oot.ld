@@ -6804,7 +6804,7 @@ SECTIONS
 		*(i.EnNb_SetCurrentAnim)
 		*(i.FUN_0034f558)
 		*(i.EnMu_Interact)
-		*(i.Collider_DestroyCylinder)
+		*(i.SkelAnime_Free)
 		*(i.FUN_0034f6bc)
 		*(i.Collider_DestroyTris)
 		*(i.FUN_0034f724)
@@ -6826,7 +6826,7 @@ SECTIONS
 		*(i.SystemArena_Malloc_0035010c)
 		*(i.DamageTable_Get)
 		*(i.EnCs_Destroy)
-		*(i.FUN_00350174)
+		*(i.Collider_DestroyCylinder)
 		*(i.FUN_0035017c)
 		*(i.FUN_003501b8)
 		*(i.FUN_003501e8)
@@ -6847,7 +6847,7 @@ SECTIONS
 		*(i.EnFd_Destroy)
 		*(i.Collider_DestroyJntSph)
 		*(i.EnDs_Destroy)
-		*(i.Collider_DestroyCylinder_00350be0)
+		*(i.SkelAnime_Free2)
 		*(i.FUN_00350c68)
 		*(i.Flags_GetEventChkInf)
 		*(i.CollisionCheck_SetInfo)
@@ -11980,6 +11980,8 @@ SECTIONS
 		*(ASM_data_52F998)
 		*(actors/En_Vase/z_en_vase.data)
 		*(ASM_data_52FDB4)
+		*(actors/Obj_Bombiwa/z_obj_bombiwa.data)
+		*(ASM_data_534EE4)
 	}
 
 	.bss : {

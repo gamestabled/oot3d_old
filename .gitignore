@@ -1,3 +1,4 @@
+.vscode
 asm
 build
 binary
@@ -9,4 +10,4 @@ __pycache__
 *.s
 *.bin
 *.map
-armcc.exe
+*.exe
