@@ -38,11 +38,4 @@ s32 Collider_DestroyCylinder(GlobalContext* globalCtx, ColliderCylinder* collide
     Collider_DestroyCylinderDim(globalCtx, &collider->dim);
     return 1;
 }
-
-/**
- * Destroys a ColliderCylinder
- */
-void SkelAnime_Free(SkelAnime* skelAnime, GlobalContext* globalCtx) {
-    return SkelAnime_Free2(skelAnime);
-}
 }
