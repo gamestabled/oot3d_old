@@ -19,7 +19,6 @@ z_Bg_Gjyo_Bridge.data,00510F68,00510F94
 z_Bg_Gnd_Darkmeiro.data,00510F94,00510FB4
 z_Bg_Gnd_Firemeiro.data,00510FB4,00510FD4
 z_Bg_Gnd_Iceblock.data,00510FD4,00511004
-z_Bg_Gnd_Nisekabe.data,00511004,00511024
 z_Bg_Gnd_Soulmeiro.data,00511024,00511090
 z_Bg_Haka.data,00511090,005110C8
 z_Bg_Haka_Gate.data,005110C8,005110E8

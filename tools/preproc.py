@@ -10,9 +10,7 @@ with open(sys.argv[1], 'r') as srcFile:
         srcLine = srcLine.strip()
         if srcLine.startswith("#pragma GLOBAL_ASM("):
             fname = srcLine[srcLine.index('(') + 2 : -2]
-            print(fname)
             outdependencies.append(fname)
-            print(outdependencies)
     if len(outdependencies) > 0:
         with open(sys.argv[2], 'w') as depsFile:
             for dep in outdependencies:
