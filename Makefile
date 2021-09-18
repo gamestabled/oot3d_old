@@ -69,11 +69,13 @@ $(BUILD_DIR)/text.o: $(CPP_OBJS)
 # 	$(CC) $(CPPFLAGS) $@ -o $<
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
+	python ./tools/preproc.py $(SRC_DIR)/$*.cpp $(BUILD_DIR)/$*_deps.txt
 	$(CC) $(CPPFLAGS) $(SRC_DIR)/$*.cpp -S -o $(BUILD_DIR)/$*.s
 ifeq ($(NON_MATCHING),0)
 	python ./tools/partial_inlines.py $(BUILD_DIR)/$*.s
 endif
-	$(AS) $(ASMFLAGS) $(BUILD_DIR)/$*.s -o $(BUILD_DIR)/$*.o
+	$(AS) $(ASMFLAGS) $(BUILD_DIR)/$*.s -o $(BUILD_DIR)/$*_temp.o
+	$(LK) -r $(BUILD_DIR)/$*_temp.o $(shell cat '$(BUILD_DIR)/$*_deps.txt') -o $(BUILD_DIR)/$*.o
 	$(OBJCOPY) --rename-section .data=$*.data --rename-section .constdata=$*.rodata $(BUILD_DIR)/$*.o
 
 $(BUILD_DIR)/code.bin: $(BUILD_DIR)/text.o

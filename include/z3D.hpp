@@ -365,6 +365,10 @@ typedef struct {
     /* 0x2F5 */ char unk_2F5[0x3];
 } TitleContext; // size = 0x2F8
 
+typedef struct {
+    /* 0x00 */ char unk_00[0x40];
+} subGlobalContext_5FCC; // size at least 0x40
+
 // Global Context (ram start: 0871E840)
 typedef struct GlobalContext {
     /* 0x0000 */ GameState state;
@@ -399,6 +403,8 @@ typedef struct GlobalContext {
     /* 0x5C34 */ char                  unk_5C34[0x0042];
     /* 0x5C76 */ u8                    fadeOutTransition;
     /* 0x5C78 */ CollisionCheckContext colChkCtx;
+    /* 0x5F14 */ char                  unk_5F14[0x00B8];
+    /* 0x5FCC */ subGlobalContext_5FCC unk_5FCC;
     //TODO
 } GlobalContext; // size = 0x5F14 TODO
 

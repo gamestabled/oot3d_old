@@ -55,3 +55,14 @@ void SkelAnime_Free(SkelAnime* skelAnime, GlobalContext* globalCtx);
 void SkelAnime_Free2(SkelAnime* skelAnime);
 void Actor_ProcessInitChain(Actor* actor, InitChainEntry* chain);
 s32 Flags_GetSwitch(GlobalContext* globalCtx, s32 flag);
+void Flags_SetSwitch(GlobalContext* globalCtx, s32 flag);
+Actor* FUN_00346d94(GlobalContext* globalCtx, Actor* explosiveActor);
+s32 CollisionCheck_SetAC(GlobalContext* globalCtx, CollisionCheckContext* colChkCtx, Collider* collider);
+s32 CollisionCheck_SetOC(GlobalContext* globalCtx, CollisionCheckContext* colChkCtx, Collider* collider);
+f32 Rand_ZeroOne(void);
+void EffectSsKakera_Spawn(GlobalContext* globalCtx, Vec3f* pos, Vec3f* velocity, Vec3f* arg3, s16 gravity, s16 arg5,
+                          s16 arg6, s16 arg7, s16 arg8, s16 scale, s16 arg10, s16 arg11, s32 life, s16 colorIdx,
+                          s16 objId, void* dList);
+void FUN_0037378c(GlobalContext* globalCtx, Vec3f* arg1, f32 arg2, s32 arg3, s16 arg4, s16 arg5, u8 arg6);
+void Audio_PlaySoundAtPosition(GlobalContext* globalCtx, Vec3f* pos, s32 duration, u32 sfxId);
+void FUN_00372244(void* arg0, s16 arg1, u32 sfxId);

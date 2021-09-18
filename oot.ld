@@ -7194,7 +7194,7 @@ SECTIONS
 		*(i.EnDodongo_SpawnBombSmoke)
 		*(i.FUN_00365d20)
 		*(i.EnTuboTrap_SpawnFragments)
-		*(i.Effect_SpawnFragment)
+		*(i.EffectSsKakera_Spawn)
 		*(i.FUN_00366044)
 		*(i.Animation_PlayLoopSetSpeed)
 		*(i.FUN_00366150)
