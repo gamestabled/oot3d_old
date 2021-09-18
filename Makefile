@@ -8,8 +8,6 @@ BUILD_DIR ?= build
 CPP_SRCS := $(wildcard $(SRC_DIR)/*.cpp $(SRC_DIR)/**/*.cpp $(SRC_DIR)/**/**/*.cpp)
 CPP_OBJS := $(patsubst $(SRC_DIR)/%.cpp,$(BUILD_DIR)/%.o,$(CPP_SRCS))
 SUBDIRS  := $(sort $(dir $(CPP_OBJS)))
-SPEC     := spec
-PRECOMP_O := $(shell cat $(SPEC))
 
 # Tools
 
@@ -63,7 +61,7 @@ clean:
 
 $(BUILD_DIR)/text.o: $(CPP_OBJS)
 	@echo "linking asm..."
-	$(LK) $(LKFLAGS) -Xlinker -Map=$(TARGET).map $(PRECOMP_O) $(CPP_OBJS) -o $@
+	$(LK) $(LKFLAGS) -Xlinker -Map=$(TARGET).map $(CPP_OBJS) -o $@
 
 # $(CPP_OBJS): $(CPP_SRCS)
 # 	$(CC) $(CPPFLAGS) $@ -o $<
