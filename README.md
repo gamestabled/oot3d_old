@@ -22,10 +22,10 @@ To set up the repository, place a USA version of `The Legend of Zelda: Ocarina o
 Run `extract_baserom.sh` to extract all of the necessary materials from your rom.
 
 ## Building
-Place `armcc` in the root directory of the repository. The particular versions of `armcc` that will produce a matching rom are still being researched, though armcc v4.0 builds 8xx seem likely. Run `make`.
+Place `armcc` and `armasm` in the root directory of the repository. The particular versions of `armcc` that will produce a matching rom are still being researched, though armcc v4.0 builds 8xx seem likely. Run `make`.
 
 
 ## Contributing
-If you decompile a function, remove that function from the `spec` file (`spec` is just a list of precompiled files that need to be included in the build). If you rename the function, you will also need to change its name in `oot.ld` (`oot.ld` is the linkerscript which handles global ordering). Once the function matches, you can remove it from `function_addresses.txt` (`function_addresses.txt` is used by `split_asm.py` during rom extraction). For data, replace `ASM_[FileName]` with `[FileName].data` in `oot.ld`. This process is likely to change.
+If you decompile a function or data, remove the `GLOBAL_ASM` for that function or data. If you rename a function, you will also need to change its name in `oot.ld` (`oot.ld` is the linkerscript which handles global ordering). Once the function matches, you can remove it from `function_addresses.txt` (`function_addresses.txt` is used by `split_asm.py` during rom extraction). For data, replace `ASM_[FileName]` with `[FileName].data` in `oot.ld`. This process is likely to change.
 
 Most discussions happen on our [Discord Server](https://discord.zelda64.dev), where you are welcome to ask if you need help getting started, or if you have any questions regarding this project and other decompilation projects.
