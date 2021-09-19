@@ -21,4 +21,12 @@ ActorInit Bg_Spot08_Iceblock_InitVars = {
     (ActorFunc)BgSpot08Iceblock_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Wallmas_InitVars = {
     (ActorFunc)EnWallmas_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnWallmas_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnWallmas_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnWallmas_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnWallmas_Draw.o")
 }

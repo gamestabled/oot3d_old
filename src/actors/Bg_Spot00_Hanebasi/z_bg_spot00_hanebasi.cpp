@@ -21,4 +21,12 @@ ActorInit Bg_Spot00_Hanebasi_InitVars = {
     (ActorFunc)BgSpot00Hanebasi_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot00Hanebasi_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot00Hanebasi_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot00Hanebasi_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot00Hanebasi_Draw.o")
 }

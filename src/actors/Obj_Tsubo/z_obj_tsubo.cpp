@@ -20,4 +20,10 @@ ActorInit Obj_Tsubo_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjTsubo_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjTsubo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjTsubo_Update.o")
 }

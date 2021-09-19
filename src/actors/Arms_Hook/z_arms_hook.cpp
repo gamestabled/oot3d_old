@@ -21,4 +21,12 @@ ActorInit Arms_Hook_InitVars = {
     (ActorFunc)ArmsHook_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ArmsHook_Init.o")
+
+#pragma GLOBAL_ASM("binary/ArmsHook_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ArmsHook_Update.o")
+
+#pragma GLOBAL_ASM("binary/ArmsHook_Draw.o")
 }

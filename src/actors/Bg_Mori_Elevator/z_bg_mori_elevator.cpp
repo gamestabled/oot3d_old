@@ -20,4 +20,10 @@ ActorInit Bg_Mori_Elevator_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMoriElevator_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriElevator_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriElevator_Update.o")
 }

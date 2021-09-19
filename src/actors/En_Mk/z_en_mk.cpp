@@ -21,4 +21,12 @@ ActorInit En_Mk_InitVars = {
     (ActorFunc)EnMk_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnMk_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnMk_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnMk_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnMk_Draw.o")
 }

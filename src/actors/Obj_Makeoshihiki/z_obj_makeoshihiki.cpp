@@ -16,9 +16,13 @@ ActorInit Obj_Makeoshihiki_InitVars = {
     OBJECT_GAMEPLAY_DANGEON_KEEP,
     sizeof(ObjMakeoshihiki),
     (ActorFunc)ObjMakeoshihiki_Init,
-    (ActorFunc)ObjMakeoshihiki_Destroy,
-    (ActorFunc)ObjMakeoshihiki_Update,
+    (ActorFunc)Actor_Noop,
+    (ActorFunc)Actor_Noop,
     (ActorFunc)ObjMakeoshihiki_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjMakeoshihiki_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjMakeoshihiki_Draw.o")
 }

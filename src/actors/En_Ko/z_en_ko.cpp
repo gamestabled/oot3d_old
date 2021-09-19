@@ -21,4 +21,12 @@ ActorInit En_Ko_InitVars = {
     (ActorFunc)EnKo_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnKo_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnKo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnKo_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnKo_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Arrow_InitVars = {
     (ActorFunc)EnArrow_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnArrow_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnArrow_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnArrow_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnArrow_Draw.o")
 }

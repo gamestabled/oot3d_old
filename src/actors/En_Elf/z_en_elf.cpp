@@ -21,4 +21,12 @@ ActorInit En_Elf_InitVars = {
     (ActorFunc)EnElf_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnElf_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnElf_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnElf_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnElf_Draw.o")
 }

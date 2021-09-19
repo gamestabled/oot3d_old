@@ -21,4 +21,12 @@ ActorInit En_Horse_Link_Child_InitVars = {
     (ActorFunc)EnHorseLinkChild_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Draw.o")
 }

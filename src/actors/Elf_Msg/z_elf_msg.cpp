@@ -21,4 +21,12 @@ ActorInit Elf_Msg_InitVars = {
     (ActorFunc)ElfMsg_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ElfMsg_Init.o")
+
+#pragma GLOBAL_ASM("binary/ElfMsg_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ElfMsg_Update.o")
+
+#pragma GLOBAL_ASM("binary/ElfMsg_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Horse_Ganon_InitVars = {
     (ActorFunc)EnHorseGanon_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnHorseGanon_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnHorseGanon_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnHorseGanon_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnHorseGanon_Draw.o")
 }

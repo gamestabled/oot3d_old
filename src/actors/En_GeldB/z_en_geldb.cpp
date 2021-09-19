@@ -21,4 +21,12 @@ ActorInit En_GeldB_InitVars = {
     (ActorFunc)EnGeldB_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnGeldB_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnGeldB_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnGeldB_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnGeldB_Draw.o")
 }

@@ -20,4 +20,10 @@ ActorInit Bg_Mori_Rakkatenjo_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMoriRakkatenjo_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriRakkatenjo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriRakkatenjo_Update.o")
 }

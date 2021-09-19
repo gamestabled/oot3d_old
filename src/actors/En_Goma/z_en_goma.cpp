@@ -21,4 +21,12 @@ ActorInit En_Goma_InitVars = {
     (ActorFunc)EnGoma_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnGoma_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnGoma_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnGoma_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnGoma_Draw.o")
 }

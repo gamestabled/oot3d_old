@@ -21,4 +21,12 @@ ActorInit En_Po_Sisters_InitVars = {
     (ActorFunc)EnPoSisters_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnPoSisters_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnPoSisters_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnPoSisters_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnPoSisters_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Magic_Fire_InitVars = {
     (ActorFunc)MagicFire_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/MagicFire_Init.o")
+
+#pragma GLOBAL_ASM("binary/MagicFire_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/MagicFire_Update.o")
+
+#pragma GLOBAL_ASM("binary/MagicFire_Draw.o")
 }

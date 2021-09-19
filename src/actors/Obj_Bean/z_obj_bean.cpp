@@ -21,4 +21,12 @@ ActorInit Obj_Bean_InitVars = {
     (ActorFunc)ObjBean_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjBean_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjBean_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjBean_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjBean_Draw.o")
 }

@@ -20,4 +20,10 @@ ActorInit Actor_1DA_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/Actor1DA_Init.o")
+
+#pragma GLOBAL_ASM("binary/Actor1DA_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/Actor1DA_Update.o")
 }

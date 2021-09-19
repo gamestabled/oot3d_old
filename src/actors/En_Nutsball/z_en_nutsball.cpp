@@ -20,4 +20,10 @@ ActorInit En_Nutsball_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnNutsball_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnNutsball_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnNutsball_Update.o")
 }

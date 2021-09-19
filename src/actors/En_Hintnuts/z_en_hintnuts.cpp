@@ -21,4 +21,12 @@ ActorInit En_Hintnuts_InitVars = {
     (ActorFunc)EnHintnuts_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnHintnuts_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnHintnuts_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnHintnuts_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnHintnuts_Draw.o")
 }

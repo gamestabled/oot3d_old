@@ -21,4 +21,12 @@ ActorInit En_Ge3_InitVars = {
     (ActorFunc)EnGe3_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnGe3_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnGe3_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnGe3_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnGe3_Draw.o")
 }

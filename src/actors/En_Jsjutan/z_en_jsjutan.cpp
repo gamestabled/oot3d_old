@@ -20,4 +20,10 @@ ActorInit En_Jsjutan_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnJsjutan_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnJsjutan_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnJsjutan_Update.o")
 }

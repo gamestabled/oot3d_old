@@ -21,4 +21,12 @@ ActorInit Bg_Gate_Shutter_InitVars = {
     (ActorFunc)BgGateShutter_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgGateShutter_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgGateShutter_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgGateShutter_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgGateShutter_Draw.o")
 }

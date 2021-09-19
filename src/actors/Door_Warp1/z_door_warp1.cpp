@@ -21,4 +21,12 @@ ActorInit Door_Warp1_InitVars = {
     (ActorFunc)DoorWarp1_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DoorWarp1_Init.o")
+
+#pragma GLOBAL_ASM("binary/DoorWarp1_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DoorWarp1_Update.o")
+
+#pragma GLOBAL_ASM("binary/DoorWarp1_Draw.o")
 }

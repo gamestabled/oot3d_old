@@ -20,4 +20,10 @@ ActorInit Obj_Mure_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjMure_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjMure_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjMure_Update.o")
 }

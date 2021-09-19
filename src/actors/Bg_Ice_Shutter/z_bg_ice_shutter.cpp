@@ -21,4 +21,12 @@ ActorInit Bg_Ice_Shutter_InitVars = {
     (ActorFunc)BgIceShutter_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgIceShutter_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgIceShutter_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgIceShutter_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgIceShutter_Draw.o")
 }

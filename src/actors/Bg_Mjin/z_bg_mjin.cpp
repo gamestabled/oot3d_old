@@ -20,4 +20,10 @@ ActorInit Bg_Mjin_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMjin_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMjin_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMjin_Update.o")
 }

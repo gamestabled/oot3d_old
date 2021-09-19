@@ -21,4 +21,12 @@ ActorInit En_River_Sound_InitVars = {
     (ActorFunc)EnRiverSound_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnRiverSound_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnRiverSound_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnRiverSound_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnRiverSound_Draw.o")
 }

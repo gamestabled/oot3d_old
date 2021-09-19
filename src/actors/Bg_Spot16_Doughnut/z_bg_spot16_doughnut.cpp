@@ -21,4 +21,12 @@ ActorInit Bg_Spot16_Doughnut_InitVars = {
     (ActorFunc)BgSpot16Doughnut_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Draw.o")
 }

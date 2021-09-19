@@ -21,4 +21,12 @@ ActorInit Boss_Ganon2_InitVars = {
     (ActorFunc)BossGanon2_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BossGanon2_Init.o")
+
+#pragma GLOBAL_ASM("binary/BossGanon2_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BossGanon2_Update.o")
+
+#pragma GLOBAL_ASM("binary/BossGanon2_Draw.o")
 }

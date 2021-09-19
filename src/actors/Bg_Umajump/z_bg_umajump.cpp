@@ -21,4 +21,12 @@ ActorInit Bg_Umajump_InitVars = {
     (ActorFunc)BgUmajump_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgUmajump_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgUmajump_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgUmajump_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgUmajump_Draw.o")
 }

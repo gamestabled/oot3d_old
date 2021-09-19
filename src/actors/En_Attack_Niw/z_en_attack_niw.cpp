@@ -21,4 +21,12 @@ ActorInit En_Attack_Niw_InitVars = {
     (ActorFunc)EnAttackNiw_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnAttackNiw_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnAttackNiw_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnAttackNiw_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnAttackNiw_Draw.o")
 }

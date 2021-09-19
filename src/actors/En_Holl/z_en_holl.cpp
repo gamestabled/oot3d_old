@@ -21,4 +21,12 @@ ActorInit En_Holl_InitVars = {
     (ActorFunc)EnHoll_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnHoll_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnHoll_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnHoll_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnHoll_Draw.o")
 }

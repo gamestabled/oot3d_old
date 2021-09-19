@@ -21,4 +21,12 @@ ActorInit Bg_Haka_Tubo_InitVars = {
     (ActorFunc)BgHakaTubo_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHakaTubo_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaTubo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaTubo_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaTubo_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Bg_Haka_Gate_InitVars = {
     (ActorFunc)BgHakaGate_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHakaGate_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaGate_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaGate_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaGate_Draw.o")
 }

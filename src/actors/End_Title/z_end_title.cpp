@@ -21,4 +21,12 @@ ActorInit End_Title_InitVars = {
     (ActorFunc)EndTitle_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EndTitle_Init.o")
+
+#pragma GLOBAL_ASM("binary/EndTitle_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EndTitle_Update.o")
+
+#pragma GLOBAL_ASM("binary/EndTitle_Draw.o")
 }

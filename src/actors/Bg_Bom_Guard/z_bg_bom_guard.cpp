@@ -20,4 +20,10 @@ ActorInit Bg_Bom_Guard_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgBomGuard_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgBomGuard_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgBomGuard_Update.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Peehat_InitVars = {
     (ActorFunc)EnPeehat_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnPeehat_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnPeehat_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnPeehat_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnPeehat_Draw.o")
 }

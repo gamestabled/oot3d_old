@@ -21,4 +21,12 @@ ActorInit Demo_Sa_InitVars = {
     (ActorFunc)DemoSa_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DemoSa_Init.o")
+
+#pragma GLOBAL_ASM("binary/DemoSa_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DemoSa_Update.o")
+
+#pragma GLOBAL_ASM("binary/DemoSa_Draw.o")
 }

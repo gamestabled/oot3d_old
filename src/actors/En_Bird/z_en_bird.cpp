@@ -21,4 +21,12 @@ ActorInit En_Bird_InitVars = {
     (ActorFunc)EnBird_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnBird_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnBird_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnBird_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnBird_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Kz_InitVars = {
     (ActorFunc)EnKz_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnKz_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnKz_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnKz_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnKz_Draw.o")
 }

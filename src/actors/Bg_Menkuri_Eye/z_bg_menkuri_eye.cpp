@@ -21,4 +21,12 @@ ActorInit Bg_Menkuri_Eye_InitVars = {
     (ActorFunc)BgMenkuriEye_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMenkuriEye_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMenkuriEye_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMenkuriEye_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgMenkuriEye_Draw.o")
 }

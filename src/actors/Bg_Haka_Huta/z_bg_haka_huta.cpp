@@ -21,4 +21,12 @@ ActorInit Bg_Haka_Huta_InitVars = {
     (ActorFunc)BgHakaHuta_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHakaHuta_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaHuta_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaHuta_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaHuta_Draw.o")
 }

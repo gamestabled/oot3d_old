@@ -21,4 +21,12 @@ ActorInit Bg_Gnd_Firemeiro_InitVars = {
     (ActorFunc)BgGndFiremeiro_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgGndFiremeiro_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgGndFiremeiro_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgGndFiremeiro_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgGndFiremeiro_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Obj_Oshihiki_InitVars = {
     (ActorFunc)ObjOshihiki_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjOshihiki_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjOshihiki_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjOshihiki_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjOshihiki_Draw.o")
 }

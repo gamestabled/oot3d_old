@@ -21,4 +21,12 @@ ActorInit Bg_Jya_Megami_InitVars = {
     (ActorFunc)BgJyaMegami_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgJyaMegami_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaMegami_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaMegami_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaMegami_Draw.o")
 }

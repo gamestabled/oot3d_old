@@ -21,4 +21,12 @@ ActorInit En_Go2_InitVars = {
     (ActorFunc)EnGo2_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnGo2_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnGo2_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnGo2_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnGo2_Draw.o")
 }

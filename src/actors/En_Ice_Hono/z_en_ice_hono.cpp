@@ -21,4 +21,12 @@ ActorInit En_Ice_Hono_InitVars = {
     (ActorFunc)EnIceHono_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnIceHono_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnIceHono_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnIceHono_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnIceHono_Draw.o")
 }

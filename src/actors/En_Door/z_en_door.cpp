@@ -21,4 +21,12 @@ ActorInit En_Door_InitVars = {
     (ActorFunc)EnDoor_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDoor_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDoor_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDoor_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnDoor_Draw.o")
 }

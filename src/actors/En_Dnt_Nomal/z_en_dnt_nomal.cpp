@@ -20,4 +20,10 @@ ActorInit En_Dnt_Nomal_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDntNomal_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDntNomal_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDntNomal_Update.o")
 }

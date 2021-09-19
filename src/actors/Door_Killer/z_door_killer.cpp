@@ -20,4 +20,10 @@ ActorInit Door_Killer_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DoorKiller_Init.o")
+
+#pragma GLOBAL_ASM("binary/DoorKiller_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DoorKiller_Update.o")
 }

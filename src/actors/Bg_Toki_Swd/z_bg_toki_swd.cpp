@@ -21,4 +21,12 @@ ActorInit Bg_Toki_Swd_InitVars = {
     (ActorFunc)BgTokiSwd_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgTokiSwd_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgTokiSwd_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgTokiSwd_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgTokiSwd_Draw.o")
 }

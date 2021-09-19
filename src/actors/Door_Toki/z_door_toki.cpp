@@ -20,4 +20,10 @@ ActorInit Door_Toki_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DoorToki_Init.o")
+
+#pragma GLOBAL_ASM("binary/DoorToki_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DoorToki_Update.o")
 }

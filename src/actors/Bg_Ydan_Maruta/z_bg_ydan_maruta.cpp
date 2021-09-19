@@ -21,4 +21,12 @@ ActorInit Bg_Ydan_Maruta_InitVars = {
     (ActorFunc)BgYdanMaruta_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgYdanMaruta_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgYdanMaruta_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgYdanMaruta_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgYdanMaruta_Draw.o")
 }

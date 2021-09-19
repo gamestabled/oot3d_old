@@ -21,4 +21,12 @@ ActorInit Bg_Ddan_Jd_InitVars = {
     (ActorFunc)BgDdanJd_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgDdanJd_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgDdanJd_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgDdanJd_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgDdanJd_Draw.o")
 }

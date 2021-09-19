@@ -20,4 +20,10 @@ ActorInit Shot_Sun_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ShotSun_Init.o")
+
+#pragma GLOBAL_ASM("binary/ShotSun_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ShotSun_Update.o")
 }

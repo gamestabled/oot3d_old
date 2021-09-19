@@ -20,4 +20,10 @@ ActorInit En_Guest_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnGuest_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnGuest_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnGuest_Update.o")
 }

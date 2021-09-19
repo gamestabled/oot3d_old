@@ -21,4 +21,12 @@ ActorInit Bg_Menkuri_Nisekabe_InitVars = {
     (ActorFunc)BgMenkuriNisekabe_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMenkuriNisekabe_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMenkuriNisekabe_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMenkuriNisekabe_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgMenkuriNisekabe_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Bg_Spot05_Soko_InitVars = {
     (ActorFunc)BgSpot05Soko_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot05Soko_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot05Soko_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot05Soko_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot05Soko_Draw.o")
 }

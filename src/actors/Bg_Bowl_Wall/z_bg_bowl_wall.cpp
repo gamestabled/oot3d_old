@@ -21,4 +21,12 @@ ActorInit Bg_Bowl_Wall_InitVars = {
     (ActorFunc)BgBowlWall_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgBowlWall_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgBowlWall_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgBowlWall_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgBowlWall_Draw.o")
 }

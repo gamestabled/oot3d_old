@@ -21,4 +21,12 @@ ActorInit En_Owl_InitVars = {
     (ActorFunc)EnOwl_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnOwl_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnOwl_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnOwl_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnOwl_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Reeba_InitVars = {
     (ActorFunc)EnReeba_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnReeba_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnReeba_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnReeba_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnReeba_Draw.o")
 }

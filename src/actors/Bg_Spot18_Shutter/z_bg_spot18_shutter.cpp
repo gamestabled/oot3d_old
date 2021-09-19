@@ -21,4 +21,12 @@ ActorInit Bg_Spot18_Shutter_InitVars = {
     (ActorFunc)BgSpot18Shutter_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot18Shutter_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot18Shutter_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot18Shutter_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot18Shutter_Draw.o")
 }

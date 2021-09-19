@@ -21,4 +21,12 @@ ActorInit Bg_Spot01_Fusya_InitVars = {
     (ActorFunc)BgSpot01Fusya_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot01Fusya_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Fusya_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Fusya_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Fusya_Draw.o")
 }

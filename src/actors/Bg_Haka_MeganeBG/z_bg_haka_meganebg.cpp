@@ -21,4 +21,12 @@ ActorInit Bg_Haka_MeganeBG_InitVars = {
     (ActorFunc)BgHakaMeganeBG_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHakaMeganeBG_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaMeganeBG_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaMeganeBG_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaMeganeBG_Draw.o")
 }

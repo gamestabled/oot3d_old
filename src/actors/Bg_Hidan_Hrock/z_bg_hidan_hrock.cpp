@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Hrock_InitVars = {
     (ActorFunc)BgHidanHrock_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanHrock_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanHrock_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanHrock_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanHrock_Draw.o")
 }

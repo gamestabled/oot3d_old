@@ -20,4 +20,10 @@ ActorInit En_Bom_Bowl_Pit_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnBomBowlPit_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnBomBowlPit_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnBomBowlPit_Update.o")
 }

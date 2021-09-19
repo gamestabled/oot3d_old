@@ -21,4 +21,12 @@ ActorInit En_Part_InitVars = {
     (ActorFunc)EnPart_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnPart_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnPart_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnPart_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnPart_Draw.o")
 }

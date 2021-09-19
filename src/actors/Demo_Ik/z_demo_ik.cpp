@@ -21,4 +21,12 @@ ActorInit Demo_Ik_InitVars = {
     (ActorFunc)DemoIk_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DemoIk_Init.o")
+
+#pragma GLOBAL_ASM("binary/DemoIk_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DemoIk_Update.o")
+
+#pragma GLOBAL_ASM("binary/DemoIk_Draw.o")
 }

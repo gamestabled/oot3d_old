@@ -21,4 +21,12 @@ ActorInit Fishing_InitVars = {
     (ActorFunc)Fishing_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/Fishing_Init.o")
+
+#pragma GLOBAL_ASM("binary/Fishing_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/Fishing_Update.o")
+
+#pragma GLOBAL_ASM("binary/Fishing_Draw.o")
 }

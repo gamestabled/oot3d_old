@@ -20,4 +20,10 @@ ActorInit En_Dnt_Demo_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDntDemo_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDntDemo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDntDemo_Update.o")
 }

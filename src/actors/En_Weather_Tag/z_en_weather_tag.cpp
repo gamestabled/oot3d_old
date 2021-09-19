@@ -20,4 +20,10 @@ ActorInit En_Weather_Tag_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnWeatherTag_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnWeatherTag_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnWeatherTag_Update.o")
 }

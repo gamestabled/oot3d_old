@@ -21,4 +21,12 @@ ActorInit Bg_Jya_Kanaami_InitVars = {
     (ActorFunc)BgJyaKanaami_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgJyaKanaami_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaKanaami_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaKanaami_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaKanaami_Draw.o")
 }

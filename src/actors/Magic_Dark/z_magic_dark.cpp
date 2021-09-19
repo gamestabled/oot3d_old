@@ -21,4 +21,12 @@ ActorInit Magic_Dark_InitVars = {
     (ActorFunc)MagicDark_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/MagicDark_Init.o")
+
+#pragma GLOBAL_ASM("binary/MagicDark_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/MagicDark_Update.o")
+
+#pragma GLOBAL_ASM("binary/MagicDark_Draw.o")
 }

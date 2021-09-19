@@ -21,4 +21,12 @@ ActorInit Bg_Po_Syokudai_InitVars = {
     (ActorFunc)BgPoSyokudai_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgPoSyokudai_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgPoSyokudai_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgPoSyokudai_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgPoSyokudai_Draw.o")
 }

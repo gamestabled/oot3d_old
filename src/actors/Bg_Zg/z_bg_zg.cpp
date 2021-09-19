@@ -21,4 +21,12 @@ ActorInit Bg_Zg_InitVars = {
     (ActorFunc)BgZg_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgZg_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgZg_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgZg_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgZg_Draw.o")
 }

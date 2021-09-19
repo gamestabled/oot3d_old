@@ -21,4 +21,12 @@ ActorInit En_Stream_InitVars = {
     (ActorFunc)EnStream_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnStream_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnStream_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnStream_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnStream_Draw.o")
 }

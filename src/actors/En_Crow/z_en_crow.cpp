@@ -21,4 +21,12 @@ ActorInit En_Crow_InitVars = {
     (ActorFunc)EnCrow_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnCrow_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnCrow_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnCrow_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnCrow_Draw.o")
 }

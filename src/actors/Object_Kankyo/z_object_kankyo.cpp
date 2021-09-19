@@ -21,4 +21,12 @@ ActorInit Object_Kankyo_InitVars = {
     (ActorFunc)ObjectKankyo_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjectKankyo_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjectKankyo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjectKankyo_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjectKankyo_Draw.o")
 }

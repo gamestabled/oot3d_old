@@ -21,4 +21,12 @@ ActorInit Bg_Gjyo_Bridge_InitVars = {
     (ActorFunc)BgGjyoBridge_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgGjyoBridge_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgGjyoBridge_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgGjyoBridge_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgGjyoBridge_Draw.o")
 }

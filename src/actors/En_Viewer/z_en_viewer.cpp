@@ -21,4 +21,12 @@ ActorInit En_Viewer_InitVars = {
     (ActorFunc)EnViewer_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnViewer_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnViewer_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnViewer_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnViewer_Draw.o")
 }

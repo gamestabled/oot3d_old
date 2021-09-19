@@ -21,4 +21,12 @@ ActorInit En_Ganon_Organ_InitVars = {
     (ActorFunc)EnGanonOrgan_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnGanonOrgan_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnGanonOrgan_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnGanonOrgan_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnGanonOrgan_Draw.o")
 }

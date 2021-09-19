@@ -21,4 +21,12 @@ ActorInit Obj_Hamishi_InitVars = {
     (ActorFunc)ObjHamishi_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjHamishi_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjHamishi_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjHamishi_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjHamishi_Draw.o")
 }

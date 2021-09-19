@@ -21,4 +21,12 @@ ActorInit En_Js_InitVars = {
     (ActorFunc)EnJs_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnJs_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnJs_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnJs_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnJs_Draw.o")
 }

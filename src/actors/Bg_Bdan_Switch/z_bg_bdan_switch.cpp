@@ -21,4 +21,12 @@ ActorInit Bg_Bdan_Switch_InitVars = {
     (ActorFunc)BgBdanSwitch_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgBdanSwitch_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgBdanSwitch_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgBdanSwitch_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgBdanSwitch_Draw.o")
 }

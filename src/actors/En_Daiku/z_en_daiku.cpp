@@ -21,4 +21,12 @@ ActorInit En_Daiku_InitVars = {
     (ActorFunc)EnDaiku_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDaiku_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDaiku_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDaiku_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnDaiku_Draw.o")
 }

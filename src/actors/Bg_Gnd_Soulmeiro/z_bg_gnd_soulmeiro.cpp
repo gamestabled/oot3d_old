@@ -21,4 +21,12 @@ ActorInit Bg_Gnd_Soulmeiro_InitVars = {
     (ActorFunc)BgGndSoulmeiro_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Draw.o")
 }

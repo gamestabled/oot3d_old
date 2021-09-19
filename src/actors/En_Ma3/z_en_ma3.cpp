@@ -21,4 +21,12 @@ ActorInit En_Ma3_InitVars = {
     (ActorFunc)EnMa3_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnMa3_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnMa3_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnMa3_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnMa3_Draw.o")
 }

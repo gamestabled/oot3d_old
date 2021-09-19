@@ -21,4 +21,12 @@ ActorInit Demo_Kankyo_InitVars = {
     (ActorFunc)DemoKankyo_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DemoKankyo_Init.o")
+
+#pragma GLOBAL_ASM("binary/DemoKankyo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DemoKankyo_Update.o")
+
+#pragma GLOBAL_ASM("binary/DemoKankyo_Draw.o")
 }

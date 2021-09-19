@@ -21,4 +21,12 @@ ActorInit Bg_Spot01_Idomizu_InitVars = {
     (ActorFunc)BgSpot01Idomizu_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idomizu_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idomizu_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idomizu_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idomizu_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Bg_Jya_Zurerukabe_InitVars = {
     (ActorFunc)BgJyaZurerukabe_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Draw.o")
 }

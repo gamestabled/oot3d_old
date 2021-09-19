@@ -20,4 +20,10 @@ ActorInit Elf_Msg2_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ElfMsg2_Init.o")
+
+#pragma GLOBAL_ASM("binary/ElfMsg2_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ElfMsg2_Update.o")
 }

@@ -20,4 +20,10 @@ ActorInit Obj_Blockstop_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjBlockstop_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjBlockstop_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjBlockstop_Update.o")
 }

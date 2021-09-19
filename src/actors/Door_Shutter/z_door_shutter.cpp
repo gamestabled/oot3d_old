@@ -21,4 +21,12 @@ ActorInit Door_Shutter_InitVars = {
     (ActorFunc)DoorShutter_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DoorShutter_Init.o")
+
+#pragma GLOBAL_ASM("binary/DoorShutter_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DoorShutter_Update.o")
+
+#pragma GLOBAL_ASM("binary/DoorShutter_Draw.o")
 }

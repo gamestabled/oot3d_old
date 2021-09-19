@@ -21,4 +21,12 @@ ActorInit En_Diving_Game_InitVars = {
     (ActorFunc)EnDivingGame_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDivingGame_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDivingGame_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDivingGame_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnDivingGame_Draw.o")
 }

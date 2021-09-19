@@ -21,4 +21,12 @@ ActorInit Bg_Spot18_Futa_InitVars = {
     (ActorFunc)BgSpot18Futa_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot18Futa_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot18Futa_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot18Futa_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot18Futa_Draw.o")
 }

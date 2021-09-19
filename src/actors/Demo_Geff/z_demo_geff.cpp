@@ -21,4 +21,12 @@ ActorInit Demo_Geff_InitVars = {
     (ActorFunc)DemoGeff_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DemoGeff_Init.o")
+
+#pragma GLOBAL_ASM("binary/DemoGeff_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DemoGeff_Update.o")
+
+#pragma GLOBAL_ASM("binary/DemoGeff_Draw.o")
 }

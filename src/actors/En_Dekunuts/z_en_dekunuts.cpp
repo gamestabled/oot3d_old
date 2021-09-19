@@ -21,4 +21,12 @@ ActorInit En_Dekunuts_InitVars = {
     (ActorFunc)EnDekunuts_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDekunuts_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDekunuts_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDekunuts_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnDekunuts_Draw.o")
 }

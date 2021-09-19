@@ -21,4 +21,12 @@ ActorInit En_Jj_InitVars = {
     (ActorFunc)EnJj_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnJj_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnJj_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnJj_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnJj_Draw.o")
 }

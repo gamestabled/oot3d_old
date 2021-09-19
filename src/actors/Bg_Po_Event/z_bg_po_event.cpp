@@ -21,4 +21,12 @@ ActorInit Bg_Po_Event_InitVars = {
     (ActorFunc)BgPoEvent_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgPoEvent_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgPoEvent_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgPoEvent_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgPoEvent_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Anubice_Fire_InitVars = {
     (ActorFunc)EnAnubiceFire_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnAnubiceFire_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnAnubiceFire_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnAnubiceFire_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnAnubiceFire_Draw.o")
 }

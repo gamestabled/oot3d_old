@@ -20,4 +20,10 @@ ActorInit Bg_Spot17_Funen_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot17Funen_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot17Funen_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot17Funen_Update.o")
 }

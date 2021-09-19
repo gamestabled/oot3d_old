@@ -21,4 +21,12 @@ ActorInit Bg_Spot01_Idosoko_InitVars = {
     (ActorFunc)BgSpot01Idosoko_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Arrow_Fire_InitVars = {
     (ActorFunc)ArrowFire_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ArrowFire_Init.o")
+
+#pragma GLOBAL_ASM("binary/ArrowFire_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ArrowFire_Update.o")
+
+#pragma GLOBAL_ASM("binary/ArrowFire_Draw.o")
 }

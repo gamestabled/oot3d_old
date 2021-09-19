@@ -21,4 +21,12 @@ ActorInit En_Skj_InitVars = {
     (ActorFunc)EnSkj_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnSkj_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnSkj_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnSkj_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnSkj_Draw.o")
 }

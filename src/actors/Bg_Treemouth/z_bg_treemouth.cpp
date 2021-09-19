@@ -21,4 +21,12 @@ ActorInit Bg_Treemouth_InitVars = {
     (ActorFunc)BgTreemouth_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgTreemouth_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgTreemouth_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgTreemouth_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgTreemouth_Draw.o")
 }

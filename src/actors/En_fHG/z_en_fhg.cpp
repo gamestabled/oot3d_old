@@ -21,4 +21,12 @@ ActorInit En_fHG_InitVars = {
     (ActorFunc)EnfHG_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnfHG_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnfHG_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnfHG_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnfHG_Draw.o")
 }

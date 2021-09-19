@@ -21,4 +21,12 @@ ActorInit Oceff_Spot_InitVars = {
     (ActorFunc)OceffSpot_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/OceffSpot_Init.o")
+
+#pragma GLOBAL_ASM("binary/OceffSpot_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/OceffSpot_Update.o")
+
+#pragma GLOBAL_ASM("binary/OceffSpot_Draw.o")
 }

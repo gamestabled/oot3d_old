@@ -20,4 +20,10 @@ ActorInit En_Wall_Tubo_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnWallTubo_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnWallTubo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnWallTubo_Update.o")
 }

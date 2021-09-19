@@ -20,4 +20,10 @@ ActorInit Bg_Mori_Kaitenkabe_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMoriKaitenkabe_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriKaitenkabe_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriKaitenkabe_Update.o")
 }

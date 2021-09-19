@@ -21,4 +21,12 @@ ActorInit Bg_Ice_Turara_InitVars = {
     (ActorFunc)BgIceTurara_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgIceTurara_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgIceTurara_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgIceTurara_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgIceTurara_Draw.o")
 }

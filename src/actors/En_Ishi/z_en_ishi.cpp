@@ -21,4 +21,12 @@ ActorInit En_Ishi_InitVars = {
     (ActorFunc)EnIshi_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnIshi_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnIshi_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnIshi_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnIshi_Draw.o")
 }

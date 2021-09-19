@@ -21,4 +21,12 @@ ActorInit Demo_Go_InitVars = {
     (ActorFunc)DemoGo_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DemoGo_Init.o")
+
+#pragma GLOBAL_ASM("binary/DemoGo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DemoGo_Update.o")
+
+#pragma GLOBAL_ASM("binary/DemoGo_Draw.o")
 }

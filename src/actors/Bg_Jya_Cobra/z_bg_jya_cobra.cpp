@@ -21,4 +21,12 @@ ActorInit Bg_Jya_Cobra_InitVars = {
     (ActorFunc)BgJyaCobra_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgJyaCobra_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaCobra_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaCobra_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaCobra_Draw.o")
 }

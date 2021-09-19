@@ -20,4 +20,10 @@ ActorInit Demo_Effect_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DemoEffect_Init.o")
+
+#pragma GLOBAL_ASM("binary/DemoEffect_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DemoEffect_Update.o")
 }

@@ -20,4 +20,10 @@ ActorInit Obj_Roomtimer_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjRoomtimer_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjRoomtimer_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjRoomtimer_Update.o")
 }

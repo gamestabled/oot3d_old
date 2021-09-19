@@ -21,4 +21,12 @@ ActorInit Mir_Ray_InitVars = {
     (ActorFunc)MirRay_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/MirRay_Init.o")
+
+#pragma GLOBAL_ASM("binary/MirRay_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/MirRay_Update.o")
+
+#pragma GLOBAL_ASM("binary/MirRay_Draw.o")
 }

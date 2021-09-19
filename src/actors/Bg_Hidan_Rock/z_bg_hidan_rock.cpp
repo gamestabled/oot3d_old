@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Rock_InitVars = {
     (ActorFunc)BgHidanRock_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanRock_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanRock_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanRock_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanRock_Draw.o")
 }

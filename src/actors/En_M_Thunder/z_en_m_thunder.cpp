@@ -21,4 +21,12 @@ ActorInit En_M_Thunder_InitVars = {
     (ActorFunc)EnMThunder_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnMThunder_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnMThunder_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnMThunder_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnMThunder_Draw.o")
 }

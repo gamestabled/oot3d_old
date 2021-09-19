@@ -21,4 +21,12 @@ ActorInit Bg_Spot06_Objects_InitVars = {
     (ActorFunc)BgSpot06Objects_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot06Objects_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot06Objects_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot06Objects_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot06Objects_Draw.o")
 }

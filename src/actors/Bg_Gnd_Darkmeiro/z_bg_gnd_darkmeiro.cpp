@@ -20,4 +20,10 @@ ActorInit Bg_Gnd_Darkmeiro_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgGndDarkmeiro_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgGndDarkmeiro_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgGndDarkmeiro_Update.o")
 }

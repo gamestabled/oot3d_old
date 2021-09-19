@@ -21,4 +21,12 @@ ActorInit Bg_Sst_Floor_InitVars = {
     (ActorFunc)BgSstFloor_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSstFloor_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSstFloor_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSstFloor_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSstFloor_Draw.o")
 }

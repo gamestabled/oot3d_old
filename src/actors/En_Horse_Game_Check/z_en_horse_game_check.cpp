@@ -21,4 +21,12 @@ ActorInit En_Horse_Game_Check_InitVars = {
     (ActorFunc)EnHorseGameCheck_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnHorseGameCheck_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnHorseGameCheck_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnHorseGameCheck_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnHorseGameCheck_Draw.o")
 }

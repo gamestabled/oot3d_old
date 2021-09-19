@@ -15,9 +15,13 @@ ActorInit Obj_Mure2_InitVars = {
     OBJECT_GAMEPLAY_KEEP,
     sizeof(ObjMure2),
     (ActorFunc)ObjMure2_Init,
-    (ActorFunc)ObjMure2_Destroy,
+    (ActorFunc)Actor_Noop,
     (ActorFunc)ObjMure2_Update,
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjMure2_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjMure2_Update.o")
 }

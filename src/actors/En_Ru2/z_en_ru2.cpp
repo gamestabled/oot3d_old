@@ -21,4 +21,12 @@ ActorInit En_Ru2_InitVars = {
     (ActorFunc)EnRu2_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnRu2_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnRu2_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnRu2_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnRu2_Draw.o")
 }

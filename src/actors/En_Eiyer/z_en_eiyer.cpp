@@ -21,4 +21,12 @@ ActorInit En_Eiyer_InitVars = {
     (ActorFunc)EnEiyer_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnEiyer_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnEiyer_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnEiyer_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnEiyer_Draw.o")
 }

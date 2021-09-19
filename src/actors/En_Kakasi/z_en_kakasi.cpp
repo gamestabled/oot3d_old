@@ -21,4 +21,12 @@ ActorInit En_Kakasi_InitVars = {
     (ActorFunc)EnKakasi_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnKakasi_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnKakasi_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnKakasi_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnKakasi_Draw.o")
 }

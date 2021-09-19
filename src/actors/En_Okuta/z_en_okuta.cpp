@@ -21,4 +21,12 @@ ActorInit En_Okuta_InitVars = {
     (ActorFunc)EnOkuta_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnOkuta_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnOkuta_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnOkuta_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnOkuta_Draw.o")
 }

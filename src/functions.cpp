@@ -22,37 +22,11 @@
 
 #pragma GLOBAL_ASM("binary/FUN_001002c4.o")
 
-#pragma GLOBAL_ASM("binary/BgZg_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgZg_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0010040c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00100434.o")
 
-#pragma GLOBAL_ASM("binary/EnHorseNormal_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBb_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnEg_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnEg_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseGanon_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseZelda_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001008b4.o")
-
-#pragma GLOBAL_ASM("binary/EnRd_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTp_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnZf_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDh_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnVm_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00102ccc.o")
 
@@ -478,12 +452,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00112fcc.o")
 
-#pragma GLOBAL_ASM("binary/EnArowTrap_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDha_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnfHG_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00113378.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0011348c.o")
@@ -746,7 +714,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00124ac8.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_Neutral.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_Neutral.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001255e4.o")
 
@@ -976,37 +944,11 @@
 
 #pragma GLOBAL_ASM("binary/EnDs_OfferOddPotion.o")
 
-#pragma GLOBAL_ASM("binary/BossVa_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0012e0b0.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0012e0c4.o")
 
-#pragma GLOBAL_ASM("binary/DemoEc_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoEc_Update.o")
-
-#pragma GLOBAL_ASM("binary/DemoGj_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoGj_Update.o")
-
-#pragma GLOBAL_ASM("binary/DemoGt_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoGt_Update.o")
-
-#pragma GLOBAL_ASM("binary/DemoIk_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoIk_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0012e264.o")
-
-#pragma GLOBAL_ASM("binary/EnTest_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTite_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBird_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTrap_Update.o")
 
 #pragma GLOBAL_ASM("binary/EnFz_MoveTowardsPlayer.o")
 
@@ -1402,10 +1344,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00149340.o")
 
-#pragma GLOBAL_ASM("binary/DemoExt_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoExt_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0014949c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001494f0.o")
@@ -1414,35 +1352,7 @@
 
 #pragma GLOBAL_ASM("binary/EnDns_Wait.o")
 
-#pragma GLOBAL_ASM("binary/EnHorseNormal_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBb_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGeldB_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseGanon_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseZelda_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHorse_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0014be68.o")
-
-#pragma GLOBAL_ASM("binary/EnRd_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnReeba_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTp_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnZf_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBombf_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDh_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnPubox_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnVm_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0014d56c.o")
 
@@ -1592,7 +1502,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_001563ec.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_Paintings.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_Paintings.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001565fc.o")
 
@@ -1808,19 +1718,11 @@
 
 #pragma GLOBAL_ASM("binary/EnZl1_PostDrawLimb.o")
 
-#pragma GLOBAL_ASM("binary/BgZg_Init.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00161554.o")
 
 #pragma GLOBAL_ASM("binary/Actor_Noop.o")
 
-#pragma GLOBAL_ASM("binary/EnNwc_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00161654.o")
-
-#pragma GLOBAL_ASM("binary/DemoGeff_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoGeff_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001616f0.o")
 
@@ -1830,223 +1732,9 @@
 
 #pragma GLOBAL_ASM("binary/EnDns_Talk.o")
 
-#pragma GLOBAL_ASM("binary/EnHorseNormal_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseNormal_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnAm_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBb_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBb_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBw_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnCs_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDodojr_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDs_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDu_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDu_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnEg_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnEg_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnFd_Init.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00163a88.o")
-
-#pragma GLOBAL_ASM("binary/EnFu_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnFu_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnFw_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnFw_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnFz_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGb_Init.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001645c8.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001645ec.o")
-
-#pragma GLOBAL_ASM("binary/EnGs_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGs_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseGanon_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseGanon_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseZelda_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseZelda_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnHs_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHs_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnHy_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHy_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnIk_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnIk_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnIn_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnIn_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00165188.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001651dc.o")
-
-#pragma GLOBAL_ASM("binary/EnJj_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnJj_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnJs_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnJs_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnKo_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnKo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnKz_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnKz_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMb_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMb_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMd_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMd_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMk_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMk_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMm_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMm_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMs_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMs_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMu_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMu_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnNb_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnNb_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnNy_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnNy_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00167204.o")
 
-#pragma GLOBAL_ASM("binary/EnPeehat_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnRd_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnRd_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnRi_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnRi_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnRr_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnRr_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnSa_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSa_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnSb_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSb_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnSb_PostLimbDraw.o")
-
-#pragma GLOBAL_ASM("binary/EnSi_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSi_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnSt_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSt_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnSw_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSw_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTa_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTa_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTg_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTg_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTk_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTk_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTp_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTp_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTr_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTr_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnWf_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnWf_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnZf_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnZf_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnZo_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnZo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnAObj_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBa_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBa_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBx_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBx_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDh_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDh_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDha_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnfHG_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnVm_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnWood02_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0016c790.o")
 
@@ -2266,7 +1954,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_001770b4.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_Block.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_Block.o")
 
 #pragma GLOBAL_ASM("binary/EnHintnuts_BeginFreeze.o")
 
@@ -2342,7 +2030,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0017dd68.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_Intro.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_Intro.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0018041c.o")
 
@@ -2570,8 +2258,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00188d38.o")
 
-#pragma GLOBAL_ASM("binary/BossVa_Draw.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00189628.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00189644.o")
@@ -2580,163 +2266,9 @@
 
 #pragma GLOBAL_ASM("binary/FUN_001896a8.o")
 
-#pragma GLOBAL_ASM("binary/EnAni_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnAni_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00189844.o")
 
-#pragma GLOBAL_ASM("binary/EnBom_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBom_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBox_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBox_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnCow_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnCow_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDns_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDns_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDog_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDog_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnElf_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnElf_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnGe1_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGe1_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnGe2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGe2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnGe3_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGe3_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnGo2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGo2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnHs2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHs2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMa1_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMa1_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMa2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMa2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMa3_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMa3_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMag_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMag_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMm2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMm2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnNiw_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnNiw_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnNwc_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnXc_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnXc_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnOwl_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnOwl_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnPoh_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnPoh_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnRu1_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnRu1_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnRu2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnRu2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnSda_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSda_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnSkb_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSkb_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnSkj_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSkj_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0018f08c.o")
-
-#pragma GLOBAL_ASM("binary/EnSsh_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSsh_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0018f508.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0018f5c4.o")
-
-#pragma GLOBAL_ASM("binary/EnTest_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnTite_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnZl1_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnZl1_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnZl2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnZl2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnZl3_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnZl3_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnZl4_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnZl4_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnArowTrap_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnArowTrap_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBird_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDha_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDha_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnfHG_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnfHG_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTrap_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00190550.o")
 
@@ -2773,10 +2305,6 @@
 #pragma GLOBAL_ASM("binary/FUN_0019157c.o")
 
 #pragma GLOBAL_ASM("binary/EnNwc_ChickNoop.o")
-
-#pragma GLOBAL_ASM("binary/Player_Init.o")
-
-#pragma GLOBAL_ASM("binary/Player_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00192844.o")
 
@@ -2960,7 +2488,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0019b0e4.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_Throw.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_Throw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0019b63c.o")
 
@@ -3156,75 +2684,13 @@
 
 #pragma GLOBAL_ASM("binary/Actor_IsMounted.o")
 
-#pragma GLOBAL_ASM("binary/BgHaka_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHaka_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001a61c4.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001a6220.o")
-
 #pragma GLOBAL_ASM("binary/caseD_0_001a6260.o")
-
-#pragma GLOBAL_ASM("binary/BossFd_Init.o")
-
-#pragma GLOBAL_ASM("binary/BossFd_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BossMo_Init.o")
-
-#pragma GLOBAL_ASM("binary/BossMo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001a7e18.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001a88e8.o")
-
-#pragma GLOBAL_ASM("binary/BossVa_Init.o")
-
-#pragma GLOBAL_ASM("binary/BossVa_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/Collider_SetJntSphAllocType1.o")
 
-#pragma GLOBAL_ASM("binary/Demo6K_Init.o")
-
-#pragma GLOBAL_ASM("binary/Demo6K_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DemoDu_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoDu_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001aa92c.o")
 
-#pragma GLOBAL_ASM("binary/DemoEc_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoEc_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001aa9b4.o")
-
-#pragma GLOBAL_ASM("binary/DemoGj_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoGj_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DemoGo_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoGo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DemoGt_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoGt_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DemoIk_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoIk_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DemoIm_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoIm_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DemoSa_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoSa_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DemoKankyo_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001ac538.o")
 
@@ -3232,285 +2698,29 @@
 
 #pragma GLOBAL_ASM("binary/FUN_001acb6c.o")
 
-#pragma GLOBAL_ASM("binary/ElfMsg_Init.o")
-
-#pragma GLOBAL_ASM("binary/ElfMsg_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnAm_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnAm_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBili_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBili_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001ad994.o")
-
-#pragma GLOBAL_ASM("binary/EnBird_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBoom_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBoom_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBrob_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBrob_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBw_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBw_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnButte_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnButte_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnCrow_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnCrow_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnCs_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnCs_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDoor_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDs_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDs_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDu_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDu_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnFd_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFd_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001b09ac.o")
 
-#pragma GLOBAL_ASM("binary/EnFr_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001b0ea0.o")
-
-#pragma GLOBAL_ASM("binary/EnFu_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFu_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnFw_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFw_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnFz_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFz_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnGb_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGb_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnGeldB_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001b2dfc.o")
 
-#pragma GLOBAL_ASM("binary/FUN_001b2fc0.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001b2fc8.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001b33c4.o")
-
-#pragma GLOBAL_ASM("binary/EnGs_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGs_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHata_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHata_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnHoll_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHoll_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnHorse_UpdateBgCheckInfo.o")
-
-#pragma GLOBAL_ASM("binary/EnHorse_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHs_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHs_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHy_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHy_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnIn_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnIn_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnIshi_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnIshi_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnJj_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnJj_Update.o")
 
 #pragma GLOBAL_ASM("binary/EnJj_UpdateStaticCollision.o")
 
-#pragma GLOBAL_ASM("binary/EnJs_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnJs_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnKo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnKo_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001b64ec.o")
-
-#pragma GLOBAL_ASM("binary/EnKz_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnKz_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMb_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMb_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMd_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMd_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMk_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMk_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMm_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMm_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMs_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMs_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMu_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMu_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnNb_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnNb_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnNy_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnNy_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnPart_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnPart_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnReeba_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnRi_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnRi_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnRr_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnRr_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001b9324.o")
-
-#pragma GLOBAL_ASM("binary/EnSa_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSa_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSb_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSb_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSi_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSi_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSt_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSt_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSw_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSw_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTa_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnTa_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTana_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTana_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTest_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTest_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTg_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnTg_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTite_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTite_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTk_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnTk_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTr_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnTr_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnVali_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnVali_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnWf_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnWf_Update.o")
 
 #pragma GLOBAL_ASM("binary/caseD_0_001bce9c.o")
 
 #pragma GLOBAL_ASM("binary/caseD_0_001bcf6c.o")
-
-#pragma GLOBAL_ASM("binary/EnZo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnZo_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBa_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBa_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBird_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBombf_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBx_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBx_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnLightbox_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnPubox_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnTrap_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTrap_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001bf194.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001bfb74.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001c0310.o")
-
-#pragma GLOBAL_ASM("binary/Fishing_Init.o")
-
-#pragma GLOBAL_ASM("binary/Fishing_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001c23a4.o")
 
@@ -3519,10 +2729,6 @@
 #pragma GLOBAL_ASM("binary/FUN_001c27c4.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001c283c.o")
-
-#pragma GLOBAL_ASM("binary/MirRay_Init.o")
-
-#pragma GLOBAL_ASM("binary/MirRay_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/func_80AC5DAC.o")
 
@@ -3634,7 +2840,7 @@
 
 #pragma GLOBAL_ASM("binary/EnShopnuts_Stand.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_Return.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_Return.o")
 
 #pragma GLOBAL_ASM("binary/EnGeldB_Wait.o")
 
@@ -3672,7 +2878,7 @@
 
 #pragma GLOBAL_ASM("binary/BgYdanSp_FloorWebBroken.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_Charge.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_Charge.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001c8c7c.o")
 
@@ -3828,15 +3034,7 @@
 
 #pragma GLOBAL_ASM("binary/BgZg_DrawFn.o")
 
-#pragma GLOBAL_ASM("binary/BossFd2_Init.o")
-
-#pragma GLOBAL_ASM("binary/BossFd2_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001d0c3c.o")
-
-#pragma GLOBAL_ASM("binary/BossSst_Init.o")
-
-#pragma GLOBAL_ASM("binary/BossSst_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/Collider_ResetCylinderAC.o")
 
@@ -3864,27 +3062,11 @@
 
 #pragma GLOBAL_ASM("binary/DemoEffect_DrawSpiritualStones.o")
 
-#pragma GLOBAL_ASM("binary/DemoExt_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoExt_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/caseD_2_001d21d4.o")
-
-#pragma GLOBAL_ASM("binary/DemoShd_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoShd_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001d2588.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001d2700.o")
-
-#pragma GLOBAL_ASM("binary/DoorAna_Init.o")
-
-#pragma GLOBAL_ASM("binary/DoorAna_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EffDust_Init.o")
-
-#pragma GLOBAL_ASM("binary/EffDust_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001d37ac.o")
 
@@ -3892,111 +3074,9 @@
 
 #pragma GLOBAL_ASM("binary/FUN_001d3ef4.o")
 
-#pragma GLOBAL_ASM("binary/FUN_001d3f60.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001d40a4.o")
-
-#pragma GLOBAL_ASM("binary/EnAni_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnAni_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnArrow_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnArrow_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001d4b0c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001d51e8.o")
-
-#pragma GLOBAL_ASM("binary/EnBom_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBom_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBox_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBox_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnCow_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnCow_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDaiku_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDaiku_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDns_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDns_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDodojr_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDog_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDog_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnEiyer_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnEiyer_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnElf_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnElf_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnGe1_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGe1_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnGe2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGe2_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnGe3_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGeldB_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGeldB_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnGirlA_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGirlA_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnGo2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGo2_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001d8d08.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001d8d48.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHorse_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHorse_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnHs2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHs2_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnLight_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnLight_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnMa1_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMa1_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMa2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMa2_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMa3_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMa3_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMag_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMag_Update.o")
 
 #pragma GLOBAL_ASM("binary/caseD_0_001dac9c.o")
 
@@ -4008,117 +3088,19 @@
 
 #pragma GLOBAL_ASM("binary/caseD_4.o")
 
-#pragma GLOBAL_ASM("binary/EnMm2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMm2_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnInsect_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnInsect_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnNiw_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnNiw_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnNwc_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnNwc_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001dc50c.o")
-
-#pragma GLOBAL_ASM("binary/EnOssan_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnOssan_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnXc_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnXc_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnOkuta_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnOkuta_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnOwl_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnOwl_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnPeehat_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001dd6c0.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001dd974.o")
 
-#pragma GLOBAL_ASM("binary/EnReeba_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnReeba_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnRu1_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnRu1_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnRu2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnRu2_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSda_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSda_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSkb_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSkb_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSkj_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSkj_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSsh_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSsh_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001df8c0.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001dfa30.o")
 
-#pragma GLOBAL_ASM("binary/FUN_001dfb24.o")
-
-#pragma GLOBAL_ASM("binary/EnToryo_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnToryo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnZl1_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnZl1_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnZl2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnZl2_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001e0108.o")
 
-#pragma GLOBAL_ASM("binary/EnZl3_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnZl3_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001e02e0.o")
-
-#pragma GLOBAL_ASM("binary/EnZl4_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnZl4_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnAObj_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnAObj_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBombf_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBombf_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnPubox_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnPubox_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnWood02_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001e1060.o")
 
@@ -4128,29 +3110,7 @@
 
 #pragma GLOBAL_ASM("binary/EnOssan_DrawKokiriShopkeeper.o")
 
-#pragma GLOBAL_ASM("binary/ObjBean_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjBean_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjComb_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjComb_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjHana_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjHana_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjLift_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjLift_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001e1a30.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001e1abc.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001e1ac0.o")
-
-#pragma GLOBAL_ASM("binary/Player_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001e1dfc.o")
 
@@ -4165,10 +3125,6 @@
 #pragma GLOBAL_ASM("binary/EnWf_PostLimbDraw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001e2d60.o")
-
-#pragma GLOBAL_ASM("binary/ShotSun_Init.o")
-
-#pragma GLOBAL_ASM("binary/ShotSun_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/EnSkj_StartOcarinaMinigame.o")
 
@@ -4438,53 +3394,13 @@
 
 #pragma GLOBAL_ASM("binary/Actor_SetRideActor.o")
 
-#pragma GLOBAL_ASM("binary/ArmsHook_Init.o")
-
-#pragma GLOBAL_ASM("binary/ArmsHook_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ArrowIce_Init.o")
-
-#pragma GLOBAL_ASM("binary/ArrowIce_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHaka_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHaka_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgIngate_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgIngate_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001ec57c.o")
 
-#pragma GLOBAL_ASM("binary/FUN_001ec5b0.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001ec5b8.o")
-
-#pragma GLOBAL_ASM("binary/BossFd_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BossFd_Update.o")
-
-#pragma GLOBAL_ASM("binary/BossGoma_Init.o")
-
-#pragma GLOBAL_ASM("binary/BossGoma_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BossMo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BossMo_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001eedf0.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001ef880.o")
-
-#pragma GLOBAL_ASM("binary/Demo6K_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001eff74.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001f010c.o")
-
-#pragma GLOBAL_ASM("binary/DemoDu_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoDu_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001f033c.o")
 
@@ -4492,37 +3408,13 @@
 
 #pragma GLOBAL_ASM("binary/caseD_0_001f0880.o")
 
-#pragma GLOBAL_ASM("binary/DemoGeff_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoGeff_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001f09ac.o")
-
-#pragma GLOBAL_ASM("binary/DemoGo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoGo_Update.o")
-
-#pragma GLOBAL_ASM("binary/DemoIm_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoIm_Update.o")
-
-#pragma GLOBAL_ASM("binary/DemoSa_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoSa_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001f0eb8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001f0f04.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001f0f08.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001f0f34.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001f0fa4.o")
-
-#pragma GLOBAL_ASM("binary/EfcErupc_Init.o")
-
-#pragma GLOBAL_ASM("binary/EfcErupc_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/EffectBlure_Init1.o")
 
@@ -4548,135 +3440,13 @@
 
 #pragma GLOBAL_ASM("binary/FUN_001f2b28.o")
 
-#pragma GLOBAL_ASM("binary/ElfMsg_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ElfMsg_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBdfire_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBdfire_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBili_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBili_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBlkobj_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBlkobj_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBoom_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBoom_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBrob_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBrob_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBubble_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBubble_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnButte_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnButte_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnCrow_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnCrow_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDodojr_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDodojr_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDoor_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDoor_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001f53d0.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001f597c.o")
-
-#pragma GLOBAL_ASM("binary/EnHata_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHata_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHoll_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHoll_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnIshi_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnIshi_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnItem00_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnItem00_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnKanban_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnKanban_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001f7510.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001f75c4.o")
-
-#pragma GLOBAL_ASM("binary/EnPart_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001f778c.o")
 
-#pragma GLOBAL_ASM("binary/EnPart_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnPeehat_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnPeehat_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnFish_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnFish_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnStream_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnStream_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001f84ec.o")
 
-#pragma GLOBAL_ASM("binary/EnTana_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTorch2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTorch2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnVali_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnVali_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnViewer_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnViewer_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnWeiyer_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnWeiyer_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnWood02_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnAObj_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnWood02_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EndTitle_Init.o")
-
-#pragma GLOBAL_ASM("binary/EndTitle_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/Player_StartFishing.o")
-
-#pragma GLOBAL_ASM("binary/Fishing_Draw.o")
-
-#pragma GLOBAL_ASM("binary/Fishing_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001fdcb8.o")
 
@@ -4684,21 +3454,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_001fe3a0.o")
 
-#pragma GLOBAL_ASM("binary/MirRay_Draw.o")
-
-#pragma GLOBAL_ASM("binary/MirRay_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_001ff084.o")
-
-#pragma GLOBAL_ASM("binary/ObjMure2_Init.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001ff138.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001ff180.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001ff184.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001ff2b4.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001ff2dc.o")
 
@@ -4952,42 +3708,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002095b4.o")
 
-#pragma GLOBAL_ASM("binary/ArrowFire_Init.o")
-
-#pragma GLOBAL_ASM("binary/ArrowFire_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgDdanJd_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgDdanJd_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgDdanKd_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgDdanKd_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgDodoago_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgDodoago_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgUmajump_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgUmajump_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgVbSima_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgVbSima_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanSp_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanSp_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BossFd2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BossFd2_Update.o")
-
-#pragma GLOBAL_ASM("binary/BossGanon_Init.o")
-
-#pragma GLOBAL_ASM("binary/BossGanon_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/Collider_ResetJntSphAC.o")
 
 #pragma GLOBAL_ASM("binary/Collider_ResetJntSphAT.o")
@@ -5000,25 +3720,9 @@
 
 #pragma GLOBAL_ASM("binary/caseD_1_0020c5a4.o")
 
-#pragma GLOBAL_ASM("binary/DemoShd_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoShd_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0020c728.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0020ce24.o")
-
-#pragma GLOBAL_ASM("binary/DoorAna_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DoorAna_Update.o")
-
-#pragma GLOBAL_ASM("binary/DoorWarp1_Init.o")
-
-#pragma GLOBAL_ASM("binary/DoorWarp1_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EffDust_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EffDust_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0020d318.o")
 
@@ -5036,139 +3740,27 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0020dc5c.o")
 
-#pragma GLOBAL_ASM("binary/FUN_0020de5c.o")
-
-#pragma GLOBAL_ASM("binary/EnAnubice_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnAnubice_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnArrow_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnArrow_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBomChu_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBomChu_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnChanger_Init.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0020f088.o")
-
-#pragma GLOBAL_ASM("binary/EnDaiku_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDaiku_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDodongo_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDodongo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnEiyer_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnEiyer_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnExItem_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnExItem_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnFdFire_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnFdFire_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnFirefly_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnFirefly_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnGirlA_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGirlA_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnGoroiwa_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGoroiwa_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00210678.o")
 
-#pragma GLOBAL_ASM("binary/FUN_00210758.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002108ac.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi1_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi1_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00210cd4.o")
 
-#pragma GLOBAL_ASM("binary/EnHeishi2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi2_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002110e4.o")
 
-#pragma GLOBAL_ASM("binary/EnHeishi3_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi3_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnHeishi3_OverrideLimbDraw.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi4_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi4_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00211524.o")
 
 #pragma GLOBAL_ASM("binary/EnHorse_Inactive.o")
 
-#pragma GLOBAL_ASM("binary/FUN_00211688.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0021173c.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi3_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi3_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnLight_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnLight_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMFire1_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMFire1_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnInsect_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnInsect_Update.o")
-
 #pragma GLOBAL_ASM("binary/caseD_2_002121a4.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002121fc.o")
 
-#pragma GLOBAL_ASM("binary/EnOssan_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnOkuta_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnOkuta_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSiofuki_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSiofuki_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00212df4.o")
-
-#pragma GLOBAL_ASM("binary/EnToryo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnToryo_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00212f94.o")
-
-#pragma GLOBAL_ASM("binary/EnWallmas_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnWallmas_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnLightbox_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002133f0.o")
 
@@ -5176,61 +3768,9 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00213614.o")
 
-#pragma GLOBAL_ASM("binary/ItemInbox_Init.o")
-
-#pragma GLOBAL_ASM("binary/ItemInbox_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/MagicDark_Init.o")
-
-#pragma GLOBAL_ASM("binary/MagicDark_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/MagicFire_Init.o")
-
-#pragma GLOBAL_ASM("binary/MagicFire_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/MagicWind_Init.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00214874.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002148a4.o")
-
-#pragma GLOBAL_ASM("binary/ObjBean_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjBean_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjComb_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjComb_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjDekujr_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjDekujr_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjHana_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjHana_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjKibako_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjKibako_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjLift_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjLift_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002159f8.o")
-
-#pragma GLOBAL_ASM("binary/ObjSwitch_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjSwitch_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/OceffSpot_Init.o")
-
-#pragma GLOBAL_ASM("binary/OceffSpot_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe_Init.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002165ec.o")
 
@@ -5271,8 +3811,6 @@
 #pragma GLOBAL_ASM("binary/FUN_00217a5c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00217c2c.o")
-
-#pragma GLOBAL_ASM("binary/ShotSun_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00217c6c.o")
 
@@ -5496,54 +4034,6 @@
 
 #pragma GLOBAL_ASM("binary/Actor_NotMounted.o")
 
-#pragma GLOBAL_ASM("binary/ArmsHook_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ArmsHook_Update.o")
-
-#pragma GLOBAL_ASM("binary/ArrowIce_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ArrowIce_Update.o")
-
-#pragma GLOBAL_ASM("binary/ArrowLight_Init.o")
-
-#pragma GLOBAL_ASM("binary/ArrowLight_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgBombwall_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgBombwall_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaZou_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaZou_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgIngate_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgIngate_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaLift_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaLift_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuUzu_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuUzu_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgPoEvent_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgPoEvent_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgTokiSwd_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgTokiSwd_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BossGanon2_Init.o")
-
-#pragma GLOBAL_ASM("binary/BossGanon2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BossGoma_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BossGoma_Update.o")
-
 #pragma GLOBAL_ASM("binary/caseD_19.o")
 
 #pragma GLOBAL_ASM("binary/caseD_3_002225cc.o")
@@ -5584,39 +4074,15 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00223378.o")
 
-#pragma GLOBAL_ASM("binary/DemoEffect_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoEffect_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00224714.o")
 
 #pragma GLOBAL_ASM("binary/caseD_1_002247f8.o")
 
 #pragma GLOBAL_ASM("binary/caseD_1_00224b24.o")
 
-#pragma GLOBAL_ASM("binary/DemoKankyo_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoKankyo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DemoKekkai_Init.o")
-
-#pragma GLOBAL_ASM("binary/DemoKekkai_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00225580.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00225690.o")
-
-#pragma GLOBAL_ASM("binary/DoorGerudo_Init.o")
-
-#pragma GLOBAL_ASM("binary/DoorGerudo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DoorKiller_Init.o")
-
-#pragma GLOBAL_ASM("binary/DoorKiller_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EfcErupc_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EfcErupc_Update.o")
 
 #pragma GLOBAL_ASM("binary/EffectBlure_Draw.o")
 
@@ -5646,161 +4112,17 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002285bc.o")
 
-#pragma GLOBAL_ASM("binary/EnBdfire_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBigokuta_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBigokuta_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnBlkobj_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBlkobj_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBubble_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBubble_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDekubaba_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDekubaba_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDekunuts_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDekunuts_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDntDemo_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDntDemo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDntJiji_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDntJiji_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnDyExtra_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDyExtra_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnEncount1_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnEncount1_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnEncount2_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnEncount2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnExRuppy_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnExRuppy_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnFhgFire_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnFhgFire_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnFloormas_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnFloormas_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnGSwitch_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGSwitch_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnGirlA_InitItem.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHintnuts_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHintnuts_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnHonotrap_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHonotrap_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnIceHono_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnIceHono_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnItem00_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnItem00_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnKanban_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnKanban_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnKarebaba_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnKarebaba_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnNiwGirl_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnNiwGirl_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/EnNiwGirl_OverrideLimbDraw.o")
 
-#pragma GLOBAL_ASM("binary/EnNiwLady_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnNiwLady_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0022de08.o")
-
-#pragma GLOBAL_ASM("binary/EnNutsball_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnNutsball_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnPoField_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnPoField_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnPoRelay_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnPoRelay_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/caseD_2_0022e48c.o")
 
-#pragma GLOBAL_ASM("binary/EnFish_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFish_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnShopnuts_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnShopnuts_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnStream_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnStream_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTorch2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnTorch2_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0022fa68.o")
 
-#pragma GLOBAL_ASM("binary/EnViewer_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnViewer_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnWeiyer_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnWeiyer_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnYukabyun_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnYukabyun_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnDh_Burrow.o")
-
-#pragma GLOBAL_ASM("binary/EnLightbox_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnLightbox_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EndTitle_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EndTitle_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00230a00.o")
 
@@ -5810,10 +4132,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00230d84.o")
 
-#pragma GLOBAL_ASM("binary/ItemShield_Init.o")
-
-#pragma GLOBAL_ASM("binary/ItemShield_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002311dc.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002311e0.o")
@@ -5822,39 +4140,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00231364.o")
 
-#pragma GLOBAL_ASM("binary/ObjHamishi_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjHamishi_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjHsblock_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjHsblock_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjKibako2_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjKibako2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0023186c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002318ac.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002318b4.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002318f0.o")
-
-#pragma GLOBAL_ASM("binary/OceffStorm_Init.o")
-
-#pragma GLOBAL_ASM("binary/OceffStorm_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe2_Init.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe2_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe3_Init.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe3_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe4_Init.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00232500.o")
 
@@ -6170,94 +4456,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0023f334.o")
 
-#pragma GLOBAL_ASM("binary/ArrowFire_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ArrowFire_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgBomGuard_Init.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0023f928.o")
-
-#pragma GLOBAL_ASM("binary/BgBowlWall_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgBowlWall_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgBreakwall_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgBreakwall_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgDdanJd_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgDdanJd_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgDdanKd_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgDdanKd_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgDodoago_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgDodoago_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaGate_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaGate_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaHuta_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaHuta_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaShip_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaShip_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaTrap_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaTrap_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaTubo_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaTubo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBlock_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBlock_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaCobra_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaCobra_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSstFloor_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSstFloor_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgTreemouth_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgTreemouth_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgUmajump_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgUmajump_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgVbSima_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgVbSima_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanHasi_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanHasi_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanSp_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanSp_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00241f00.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002422c8.o")
-
-#pragma GLOBAL_ASM("binary/BossGanon_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BossGanon_Update.o")
-
 #pragma GLOBAL_ASM("binary/caseD_2_00243f54.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00243fa4.o")
@@ -6328,16 +4526,6 @@
 
 #pragma GLOBAL_ASM("binary/caseD_2_00245298.o")
 
-#pragma GLOBAL_ASM("binary/DemoTreLgt_Init.o")
-
-#pragma GLOBAL_ASM("binary/DoorShutter_Init.o")
-
-#pragma GLOBAL_ASM("binary/DoorShutter_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/DoorWarp1_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DoorWarp1_Update.o")
-
 #pragma GLOBAL_ASM("binary/EnHorseNormal_Wander.o")
 
 #pragma GLOBAL_ASM("binary/EnHorseNormal_Wait.o")
@@ -6356,10 +4544,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00246c74.o")
 
-#pragma GLOBAL_ASM("binary/EnAnubice_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnAnubice_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00247338.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00247488.o")
@@ -6368,21 +4552,11 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002479f8.o")
 
-#pragma GLOBAL_ASM("binary/EnBomChu_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBomChu_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00248264.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002482d0.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002483fc.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00249014.o")
-
-#pragma GLOBAL_ASM("binary/EnClearTag_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnClearTag_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00249044.o")
 
@@ -6390,77 +4564,19 @@
 
 #pragma GLOBAL_ASM("binary/EnDodongo_Death.o")
 
-#pragma GLOBAL_ASM("binary/FUN_00249260.o")
-
-#pragma GLOBAL_ASM("binary/EnDodongo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDodongo_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00249af8.o")
-
-#pragma GLOBAL_ASM("binary/EnExItem_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnExItem_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnFdFire_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFdFire_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnFireRock_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnFireRock_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnFirefly_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFirefly_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnGoroiwa_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGoroiwa_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0024ae70.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0024af18.o")
 
-#pragma GLOBAL_ASM("binary/EnHeishi1_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi1_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi2_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0024ba60.o")
 
-#pragma GLOBAL_ASM("binary/EnHeishi3_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi3_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi4_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHeishi4_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHintstone_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHintstone_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0024be50.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0024c3e8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0024c648.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0024c6b8.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi2_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi3_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnKakasi3_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnMThunder_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnMThunder_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0024cdec.o")
 
@@ -6470,12 +4586,6 @@
 
 #pragma GLOBAL_ASM("binary/caseD_c.o")
 
-#pragma GLOBAL_ASM("binary/EnPoDesert_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnPoDesert_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnPoh_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0024d5dc.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0024d7b0.o")
@@ -6484,31 +4594,9 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0024d9c0.o")
 
-#pragma GLOBAL_ASM("binary/EnSiofuki_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSiofuki_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSkjneedle_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSkjneedle_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnTp_Die.o")
 
 #pragma GLOBAL_ASM("binary/EnTp_Tail_FollowHead.o")
-
-#pragma GLOBAL_ASM("binary/EnTuboTrap_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTuboTrap_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0024e4e8.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0024e700.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0024ef24.o")
-
-#pragma GLOBAL_ASM("binary/EnWallmas_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnWallmas_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0024f670.o")
 
@@ -6540,69 +4628,13 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002535f0.o")
 
-#pragma GLOBAL_ASM("binary/ItemBHeart_Init.o")
-
-#pragma GLOBAL_ASM("binary/ItemBHeart_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ItemInbox_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ItemInbox_Update.o")
-
-#pragma GLOBAL_ASM("binary/ItemOcarina_Init.o")
-
-#pragma GLOBAL_ASM("binary/ItemOcarina_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/MagicDark_DiamondDraw.o")
 
-#pragma GLOBAL_ASM("binary/MagicDark_Update.o")
-
-#pragma GLOBAL_ASM("binary/MagicFire_Draw.o")
-
-#pragma GLOBAL_ASM("binary/MagicFire_Update.o")
-
 #pragma GLOBAL_ASM("binary/MagicFire_UpdateBeforeCast.o")
-
-#pragma GLOBAL_ASM("binary/MagicWind_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00254868.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002549b4.o")
-
-#pragma GLOBAL_ASM("binary/ObjDekujr_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjDekujr_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjElevator_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjElevator_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjIcePoly_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjIcePoly_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjKibako_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjKibako_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjOshihiki_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjOshihiki_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjSwitch_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjSwitch_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjSyokudai_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjSyokudai_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/OceffSpot_Draw.o")
-
-#pragma GLOBAL_ASM("binary/OceffSpot_Update.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe_Draw.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002561a4.o")
 
@@ -6688,7 +4720,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00258a04.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_SetupReturn.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_SetupReturn.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00258cd4.o")
 
@@ -6812,97 +4844,11 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0025d43c.o")
 
-#pragma GLOBAL_ASM("binary/ArrowLight_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ArrowLight_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgBombwall_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgBombwall_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgDyYoseizo_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgDyYoseizo_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/BgDyYoseizo_OverrideLimbDraw.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaSgami_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaSgami_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaWater_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaWater_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0025e314.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaZou_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanDalm_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanDalm_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanRock_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanRock_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSima_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSima_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgIceTurara_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgIceTurara_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgJya1flift_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJya1flift_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaLift_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaLift_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaMegami_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaMegami_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuBwall_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuBwall_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuUzu_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuUzu_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuWater_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuWater_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriBigst_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriBigst_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgPoEvent_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgPoEvent_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot09Obj_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot09Obj_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Obj_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Obj_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgTokiSwd_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgTokiSwd_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00260008.o")
-
-#pragma GLOBAL_ASM("binary/BossGanon2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BossGanon2_Update.o")
 
 #pragma GLOBAL_ASM("binary/BossGoma_UpdateHit.o")
 
@@ -6928,25 +4874,11 @@
 
 #pragma GLOBAL_ASM("binary/caseD_d_00262bf0.o")
 
-#pragma GLOBAL_ASM("binary/DemoEffect_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00262c60.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00262d34.o")
 
-#pragma GLOBAL_ASM("binary/DemoKankyo_Update.o")
-
-#pragma GLOBAL_ASM("binary/DemoKekkai_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DemoKekkai_Update.o")
-
-#pragma GLOBAL_ASM("binary/DoorGerudo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DoorGerudo_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00263120.o")
-
-#pragma GLOBAL_ASM("binary/DoorKiller_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0026365c.o")
 
@@ -6986,109 +4918,35 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00265808.o")
 
-#pragma GLOBAL_ASM("binary/EnAttackNiw_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnAttackNiw_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002659fc.o")
-
-#pragma GLOBAL_ASM("binary/EnBigokuta_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBigokuta_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0026680c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00266b14.o")
 
-#pragma GLOBAL_ASM("binary/EnDekubaba_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDekubaba_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDekunuts_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDekunuts_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDntDemo_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDntJiji_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDntJiji_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00267c84.o")
-
-#pragma GLOBAL_ASM("binary/EnDyExtra_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00267dc0.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002681a4.o")
 
-#pragma GLOBAL_ASM("binary/EnEncount1_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnEncount2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnEncount2_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnExRuppy_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnExRuppy_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnFhgFire_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFhgFire_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnFloormas_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFloormas_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002692ac.o")
-
-#pragma GLOBAL_ASM("binary/EnGSwitch_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0026966c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0026967c.o")
 
 #pragma GLOBAL_ASM("binary/EnGe2_UpdateStunned.o")
 
 #pragma GLOBAL_ASM("binary/EnGe2_UpdateAfterTalk.o")
 
-#pragma GLOBAL_ASM("binary/EnGe3_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00269aa0.o")
 
-#pragma GLOBAL_ASM("binary/EnHintnuts_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHintnuts_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnHonotrap_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHonotrap_Update.o")
-
 #pragma GLOBAL_ASM("binary/EnHorse_CutsceneUpdate.o")
-
-#pragma GLOBAL_ASM("binary/EnIceHono_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnIceHono_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnKarebaba_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnKarebaba_Update.o")
 
 #pragma GLOBAL_ASM("binary/EnLight_UpdateSwitch.o")
 
 #pragma GLOBAL_ASM("binary/caseD_2_0026b1dc.o")
 
-#pragma GLOBAL_ASM("binary/EnNiwGirl_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnNiwGirl_Update.o")
-
 #pragma GLOBAL_ASM("binary/EnNiwLady_Draw.o")
 
-#pragma GLOBAL_ASM("binary/EnNiwLady_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0026bb68.o")
-
-#pragma GLOBAL_ASM("binary/EnNutsball_Update.o")
 
 #pragma GLOBAL_ASM("binary/caseD_12_0026bf1c.o")
 
@@ -7104,18 +4962,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0026c56c.o")
 
-#pragma GLOBAL_ASM("binary/EnPoField_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnPoField_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnPoRelay_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnPoRelay_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnPoSisters_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnPoSisters_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0026d630.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0026d700.o")
@@ -7126,14 +4972,6 @@
 
 #pragma GLOBAL_ASM("binary/caseD_0_0026dc48.o")
 
-#pragma GLOBAL_ASM("binary/EnShopnuts_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnShopnuts_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnTakaraMan_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnTakaraMan_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnTakaraMan_OverrideLimbDraw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0026e080.o")
@@ -7141,10 +4979,6 @@
 #pragma GLOBAL_ASM("binary/EnTp_Fragment_Fade.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0026e1e0.o")
-
-#pragma GLOBAL_ASM("binary/EnYukabyun_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnYukabyun_Update.o")
 
 #pragma GLOBAL_ASM("binary/EnDha_Die.o")
 
@@ -7156,57 +4990,9 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0026f30c.o")
 
-#pragma GLOBAL_ASM("binary/ItemShield_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ItemShield_Update.o")
-
 #pragma GLOBAL_ASM("binary/MagicDark_DiamondUpdate.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0026f7ec.o")
-
-#pragma GLOBAL_ASM("binary/ObjBlockstop_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjBlockstop_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjHamishi_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjHamishi_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjHsblock_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjHsblock_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjKibako2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjKibako2_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00270338.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00270380.o")
-
-#pragma GLOBAL_ASM("binary/ObjTimeblock_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjTimeblock_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjectKankyo_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjectKankyo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/OceffStorm_Draw.o")
-
-#pragma GLOBAL_ASM("binary/OceffStorm_Update.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe2_Draw.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe2_Update.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe3_Draw.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe3_Update.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe4_Draw.o")
-
-#pragma GLOBAL_ASM("binary/OceffWipe4_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00271c9c.o")
 
@@ -7267,10 +5053,6 @@
 #pragma GLOBAL_ASM("binary/FUN_00273dd8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00273eac.o")
-
-#pragma GLOBAL_ASM("binary/ItemEtcetera_Init.o")
-
-#pragma GLOBAL_ASM("binary/ItemEtcetera_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002740ec.o")
 
@@ -7370,177 +5152,11 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002764c0.o")
 
-#pragma GLOBAL_ASM("binary/BgBdanSwitch_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgBdanSwitch_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00276828.o")
-
-#pragma GLOBAL_ASM("binary/BgBowlWall_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgBowlWall_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002768c4.o")
-
-#pragma GLOBAL_ASM("binary/BgBreakwall_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgGjyoBridge_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgGjyoBridge_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaGate_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaGate_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaHuta_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaHuta_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaMegane_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaMegane_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaShip_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaShip_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaTrap_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaTrap_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaTubo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaTubo_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHeavyBlock_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHeavyBlock_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFwbig_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFwbig_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanHrock_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanHrock_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanKousi_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanKousi_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSyoku_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSyoku_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgIceObjects_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgIceObjects_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgIceShelter_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgIceShelter_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgIceShutter_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgIceShutter_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBlock_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBlock_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00278a14.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaCobra_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaCobra_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00278f58.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaGoroiwa_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaGoroiwa_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00279928.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00279a38.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaKanaami_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaKanaami_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriEye_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriEye_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuMovebg_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuMovebg_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriHineri_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriHineri_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgPoSyokudai_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgPoSyokudai_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot03Taki_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot03Taki_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot05Soko_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot05Soko_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot07Taki_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot07Taki_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot12Gate_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot12Gate_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot12Saku_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot12Saku_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot15Saku_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot15Saku_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Futa_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Futa_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSstFloor_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSstFloor_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot06Objects_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot06Objects_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgTreemouth_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgTreemouth_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanHasi_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanHasi_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanMaruta_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanMaruta_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0027bb30.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0027be30.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0027cba8.o")
-
-#pragma GLOBAL_ASM("binary/BossGanondorf_Init.o")
-
-#pragma GLOBAL_ASM("binary/BossGanondorf_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/caseD_1_0027cf14.o")
 
@@ -7594,12 +5210,6 @@
 
 #pragma GLOBAL_ASM("binary/caseD_0_0027dfe8.o")
 
-#pragma GLOBAL_ASM("binary/DemoTreLgt_Update.o")
-
-#pragma GLOBAL_ASM("binary/DoorShutter_Draw.o")
-
-#pragma GLOBAL_ASM("binary/DoorShutter_Update.o")
-
 #pragma GLOBAL_ASM("binary/EnHorseNormal_WaitClone.o")
 
 #pragma GLOBAL_ASM("binary/EffectShieldParticle_Init.o")
@@ -7626,45 +5236,19 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0027fb90.o")
 
-#pragma GLOBAL_ASM("binary/EnAnubiceTag_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnAnubiceTag_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0027fc54.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0027fd24.o")
 
-#pragma GLOBAL_ASM("binary/EnClearTag_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnClearTag_Update.o")
-
 #pragma GLOBAL_ASM("binary/EnDodongo_SweepTail.o")
 
-#pragma GLOBAL_ASM("binary/EnDivingGame_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDivingGame_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0028033c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00280510.o")
-
-#pragma GLOBAL_ASM("binary/EnFireRock_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnFireRock_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnGanonOrgan_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnGanonOrgan_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/EnGe2_UpdateFriendly.o")
 
 #pragma GLOBAL_ASM("binary/EnGe3_UpdateWhenNotTalking.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00281144.o")
-
-#pragma GLOBAL_ASM("binary/EnHintstone_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnHinstone_Update.o")
 
 #pragma GLOBAL_ASM("binary/caseD_1_00281938.o")
 
@@ -7674,10 +5258,6 @@
 
 #pragma GLOBAL_ASM("binary/caseD_47.o")
 
-#pragma GLOBAL_ASM("binary/EnOkarinaTag_Init.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00281ea0.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00281edc.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002823f4.o")
@@ -7685,10 +5265,6 @@
 #pragma GLOBAL_ASM("binary/FUN_00282820.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0028282c.o")
-
-#pragma GLOBAL_ASM("binary/EnPoDesert_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnPoDesert_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00282cc8.o")
 
@@ -7700,33 +5276,13 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00283578.o")
 
-#pragma GLOBAL_ASM("binary/EnRiverSound_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnRiverSound_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/caseD_1_00283944.o")
 
 #pragma GLOBAL_ASM("binary/caseD_2_00283a94.o")
 
 #pragma GLOBAL_ASM("binary/caseD_2_00283b4c.o")
 
-#pragma GLOBAL_ASM("binary/EnSkjneedle_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSkjneedle_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiItm_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiItm_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiMan_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiMan_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00284070.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiNiw_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiNiw_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002842d8.o")
 
@@ -7737,24 +5293,6 @@
 #pragma GLOBAL_ASM("binary/FUN_0028456c.o")
 
 #pragma GLOBAL_ASM("binary/EnTite_Idle.o")
-
-#pragma GLOBAL_ASM("binary/EnTuboTrap_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnTuboTrap_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00284960.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0028497c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00284b0c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00284c2c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00284f08.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00284f40.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00284fcc.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00284fd0.o")
 
@@ -7770,14 +5308,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00285a7c.o")
 
-#pragma GLOBAL_ASM("binary/ItemBHeart_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ItemBHeart_Update.o")
-
-#pragma GLOBAL_ASM("binary/ItemOcarina_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ItemOcarina_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00285d84.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00285e5c.o")
@@ -7785,26 +5315,6 @@
 #pragma GLOBAL_ASM("binary/FUN_00285f50.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00285fa4.o")
-
-#pragma GLOBAL_ASM("binary/ObjElevator_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjElevator_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjIcePoly_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjIcePoly_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjOshihiki_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjOshihiki_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjSyokudai_Init_00286590.o")
-
-#pragma GLOBAL_ASM("binary/ObjSyokudai_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjWarp2Block_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjWarp2Block_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/OceffStorm_Draw2.o")
 
@@ -7928,123 +5438,15 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002894e0.o")
 
-#pragma GLOBAL_ASM("binary/BgBdanObjects_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgBdanObjects_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/BgDyYoseizo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgDyYoseizo_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgGanonOtyuka_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgGanonOtyuka_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgGateShutter_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgGateShutter_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgGndIceblock_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgGndIceblock_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0028a8f4.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaSgami_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaWater_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaWater_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanDalm_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanDalm_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFslift_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFslift_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanRock_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanRock_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSima_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSima_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgIceTurara_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgIceTurara_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJya1flift_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJya1flift_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaMegami_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaMegami_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuBwall_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuBwall_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuShutter_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuShutter_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuWater_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuWater_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0028c230.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriBigst_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriHashigo_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriHashigo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0028c570.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0028c6cc.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot00Break_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot00Break_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Fusya_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Fusya_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot09Obj_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot09Obj_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0028c90c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0028c994.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot15Rrbox_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot15Rrbox_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0028caec.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Obj_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Obj_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0028cbbc.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0028ce30.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0028ce90.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0028d1c4.o")
-
-#pragma GLOBAL_ASM("binary/BossSst_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BossSst_Update.o")
 
 #pragma GLOBAL_ASM("binary/caseD_2_0028e140.o")
 
@@ -8106,39 +5508,17 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00290dc4.o")
 
-#pragma GLOBAL_ASM("binary/EnAnubiceFire_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnAnubiceFire_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnAttackNiw_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnAttackNiw_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00291378.o")
 
-#pragma GLOBAL_ASM("binary/EnBomBowlMan_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBomBowlMan_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnBomBowlMan_OverrideLimbDraw.o")
-
-#pragma GLOBAL_ASM("binary/EnBomBowlPit_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnBomBowlPit_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002919d8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002919ec.o")
 
-#pragma GLOBAL_ASM("binary/FUN_002925ac.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002928c8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00292b50.o")
-
-#pragma GLOBAL_ASM("binary/EnIk_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnIk_Update.o")
 
 #pragma GLOBAL_ASM("binary/caseD_4_002930a8.o")
 
@@ -8158,10 +5538,6 @@
 
 #pragma GLOBAL_ASM("binary/caseD_42.o")
 
-#pragma GLOBAL_ASM("binary/EnPoSisters_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnPoSisters_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00294a7c.o")
 
 #pragma GLOBAL_ASM("binary/caseD_1_00294fb4.o")
@@ -8171,14 +5547,6 @@
 #pragma GLOBAL_ASM("binary/FUN_00295138.o")
 
 #pragma GLOBAL_ASM("binary/caseD_1_0029529c.o")
-
-#pragma GLOBAL_ASM("binary/EnSceneChange_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnSceneChange_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/EnTakaraMan_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnTakaraMan_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002954a8.o")
 
@@ -8210,25 +5578,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00296eb4.o")
 
-#pragma GLOBAL_ASM("binary/MagicWind_Draw.o")
-
 #pragma GLOBAL_ASM("binary/EnOssan_InitKokiriShopkeeper.o")
-
-#pragma GLOBAL_ASM("binary/ObjBlockstop_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjLightswitch_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjLightswitch_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/ObjMakekinsuta_Init.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002974a4.o")
-
-#pragma GLOBAL_ASM("binary/ObjTimeblock_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjectKankyo_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjectKankyo_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00297e04.o")
 
@@ -8263,10 +5613,6 @@
 #pragma GLOBAL_ASM("binary/FUN_002988b8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00298b20.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00298bb4.o")
-
-#pragma GLOBAL_ASM("binary/ItemEtcetera_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00298d90.o")
 
@@ -8340,183 +5686,11 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00299ef8.o")
 
-#pragma GLOBAL_ASM("binary/BgBdanSwitch_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgBdanSwitch_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgGjyoBridge_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgGjyoBridge_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0029a3b4.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0029a69c.o")
-
-#pragma GLOBAL_ASM("binary/BgGndFiremeiro_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgGndFiremeiro_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaMeganeBG_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaMeganeBG_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0029ac3c.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaMegane_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHeavyBlock_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHeavyBlock_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanCurtain_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanCurtain_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFwbig_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFwbig_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanHamstep_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanHamstep_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanHrock_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanHrock_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanKousi_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanKousi_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSekizou_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSekizou_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSyoku_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSyoku_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgIceObjects_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgIceObjects_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgIceShelter_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgIceShelter_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgIceShutter_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgIceShutter_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBigmirror_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBigmirror_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0029c29c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0029c318.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaGoroiwa_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaGoroiwa_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaHaheniron_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaHaheniron_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0029c7cc.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0029c818.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaKanaami_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaKanaami_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriEye_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriEye_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuMovebg_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuMovebg_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriElevator_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriElevator_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriHashira4_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriHashira4_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0029d22c.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriHineri_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgPoSyokudai_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgPoSyokudai_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgRelayObjects_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgRelayObjects_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot03Taki_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot03Taki_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot05Soko_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot05Soko_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot07Taki_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot07Taki_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot12Gate_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot12Gate_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot12Saku_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot12Saku_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot15Saku_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot15Saku_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Basket_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Basket_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Futa_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Futa_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot06Objects_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot06Objects_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanMaruta_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgYdanMaruta_Update.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0029e718.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0029e7ec.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0029e828.o")
-
-#pragma GLOBAL_ASM("binary/BossGanondorf_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BossGanondorf_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0029f8a0.o")
 
@@ -8576,25 +5750,13 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002a2f78.o")
 
-#pragma GLOBAL_ASM("binary/EnAnubiceTag_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnAnubiceTag_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002a2f88.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002a3208.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002a3a58.o")
 
-#pragma GLOBAL_ASM("binary/EnDivingGame_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDivingGame_Update.o")
-
 #pragma GLOBAL_ASM("binary/EnFirefly_DrawInvisible.o")
-
-#pragma GLOBAL_ASM("binary/EnGanonOrgan_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnGanonOrgan_Update.o")
 
 #pragma GLOBAL_ASM("binary/caseD_1c_002a439c.o")
 
@@ -8610,8 +5772,6 @@
 
 #pragma GLOBAL_ASM("binary/caseD_4c.o")
 
-#pragma GLOBAL_ASM("binary/FUN_002a4c88.o")
-
 #pragma GLOBAL_ASM("binary/EnPeehat_StateExplode.o")
 
 #pragma GLOBAL_ASM("binary/EnPeehat_Ground_StateLanding.o")
@@ -8626,39 +5786,17 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002a57b0.o")
 
-#pragma GLOBAL_ASM("binary/EnRiverSound_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnRiverSound_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002a5e68.o")
 
 #pragma GLOBAL_ASM("binary/caseD_a_002a5f08.o")
 
 #pragma GLOBAL_ASM("binary/EnSkj_SariasSongShortStumpUpdate.o")
 
-#pragma GLOBAL_ASM("binary/EnSyatekiItm_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiMan_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiMan_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiNiw_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSyatekiNiw_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002a6968.o")
 
 #pragma GLOBAL_ASM("binary/EnTite_Recoil.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002a6da8.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002a6f80.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002a6f88.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002a7008.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002a7114.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002a7124.o")
 
@@ -8687,12 +5825,6 @@
 #pragma GLOBAL_ASM("binary/FUN_002a8bdc.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002a8be4.o")
-
-#pragma GLOBAL_ASM("binary/ObjMakeoshihiki_Init.o")
-
-#pragma GLOBAL_ASM("binary/ObjWarp2Block_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjWarp2Block_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002a8e5c.o")
 
@@ -8782,103 +5914,13 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002aafdc.o")
 
-#pragma GLOBAL_ASM("binary/BgBdanObjects_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgBdanObjects_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgGanonOtyuka_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgGanonOtyuka_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgGateShutter_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgGateShutter_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgGndIceblock_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgGndIceblock_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFirewall_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFirewall_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFslift_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanFslift_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanRsekizou_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanRsekizou_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaAmishutter_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaAmishutter_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBombchuiwa_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBombchuiwa_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuShutter_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgMizuShutter_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002ac4f8.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriHashigo_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002ac5a0.o")
 
-#pragma GLOBAL_ASM("binary/FUN_002ac618.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot00Break_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot00Break_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Fusya_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Fusya_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idomizu_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idomizu_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot02Objects_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot02Objects_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot06Objects_Init_002accc4.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot06Objects_Destroy_002ad1e4.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002ad270.o")
 
-#pragma GLOBAL_ASM("binary/FUN_002ad2e0.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot15Rrbox_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot15Rrbox_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002ad4d4.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Shutter_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Shutter_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002ad7b0.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002ad98c.o")
 
 #pragma GLOBAL_ASM("binary/caseD_10_002ae21c.o")
 
@@ -8904,8 +5946,6 @@
 
 #pragma GLOBAL_ASM("binary/caseD_1b_002af150.o")
 
-#pragma GLOBAL_ASM("binary/DemoTreLgt_Draw.o")
-
 #pragma GLOBAL_ASM("binary/EnHorseNormal_CycleAnimations.o")
 
 #pragma GLOBAL_ASM("binary/EnHorseNormal_FollowPath.o")
@@ -8926,29 +5966,13 @@
 
 #pragma GLOBAL_ASM("binary/FUN_002b02b4.o")
 
-#pragma GLOBAL_ASM("binary/EnAnubiceFire_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnAnubiceFire_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002b08f4.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002b1028.o")
 
-#pragma GLOBAL_ASM("binary/EnBomBowlMan_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnBomBowlMan_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnBomBowlPit_Update.o")
-
-#pragma GLOBAL_ASM("binary/EnDaikuKakariko_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnDaikuKakariko_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/EnFloormas_DrawHighlighted.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002b175c.o")
-
-#pragma GLOBAL_ASM("binary/EnMFire1_Update.o")
 
 #pragma GLOBAL_ASM("binary/caseD_7_002b1a90.o")
 
@@ -8972,10 +5996,6 @@
 
 #pragma GLOBAL_ASM("binary/caseD_3b.o")
 
-#pragma GLOBAL_ASM("binary/FUN_002b28d4.o")
-
-#pragma GLOBAL_ASM("binary/FUN_002b28f8.o")
-
 #pragma GLOBAL_ASM("binary/FUN_002b2940.o")
 
 #pragma GLOBAL_ASM("binary/EnPeehat_Flying_StateLanding.o")
@@ -8993,10 +6013,6 @@
 #pragma GLOBAL_ASM("binary/caseD_13_002b398c.o")
 
 #pragma GLOBAL_ASM("binary/caseD_e_002b3b48.o")
-
-#pragma GLOBAL_ASM("binary/EnSceneChange_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnSceneChange_Update.o")
 
 #pragma GLOBAL_ASM("binary/EnSkj_OcarinaMinigameShortStumpUpdate.o")
 
@@ -9047,8 +6063,6 @@
 #pragma GLOBAL_ASM("binary/FUN_002b6b9c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002b6c00.o")
-
-#pragma GLOBAL_ASM("binary/MagicDark_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_002b7234.o")
 
@@ -12744,8 +9758,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_003356d4.o")
 
-#pragma GLOBAL_ASM("binary/DemoTreLgt_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0033579c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_003357dc.o")
@@ -12857,8 +9869,6 @@
 #pragma GLOBAL_ASM("binary/FUN_0033a05c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0033a480.o")
-
-#pragma GLOBAL_ASM("binary/EnBdfire_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0033a638.o")
 
@@ -13126,8 +10136,6 @@
 
 #pragma GLOBAL_ASM("binary/SkelAnime_SetCurrentFrame2.o")
 
-#pragma GLOBAL_ASM("binary/EnDoor_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0034291c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00342968.o")
@@ -13279,8 +10287,6 @@
 #pragma GLOBAL_ASM("binary/FUN_00346e2c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00346fb0.o")
-
-#pragma GLOBAL_ASM("binary/MagicWind_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0034708c.o")
 
@@ -13534,8 +10540,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0034ea6c.o")
 
-#pragma GLOBAL_ASM("binary/FUN_0034ea98.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0034eaf8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0034eb00.o")
@@ -13584,8 +10588,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0034fc7c.o")
 
-#pragma GLOBAL_ASM("binary/EnFz_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0034fda8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0034fe20.o")
@@ -13600,13 +10602,7 @@
 
 #pragma GLOBAL_ASM("binary/DamageTable_Get.o")
 
-#pragma GLOBAL_ASM("binary/EnCs_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0035017c.o")
-
 #pragma GLOBAL_ASM("binary/FUN_003501b8.o")
-
-#pragma GLOBAL_ASM("binary/FUN_003501e8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0035021c.o")
 
@@ -13615,8 +10611,6 @@
 #pragma GLOBAL_ASM("binary/CollisionCheck_SetInfo2.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00350348.o")
-
-#pragma GLOBAL_ASM("binary/EnBw_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0035046c.o")
 
@@ -13628,19 +10622,13 @@
 
 #pragma GLOBAL_ASM("binary/__aeabi_vec_ctor_nocookie_nodtor.o")
 
-#pragma GLOBAL_ASM("binary/EnAm_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_003508b8.o")
 
 #pragma GLOBAL_ASM("binary/Collider_SetQuad.o")
 
 #pragma GLOBAL_ASM("binary/Collider_InitQuad.o")
 
-#pragma GLOBAL_ASM("binary/EnFd_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/Collider_DestroyJntSph.o")
-
-#pragma GLOBAL_ASM("binary/EnDs_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/SkelAnime_Free2.o")
 
@@ -13656,11 +10644,7 @@
 
 #pragma GLOBAL_ASM("binary/ZeldaArena_Free.o")
 
-#pragma GLOBAL_ASM("binary/BgZg_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00350f34.o")
-
-#pragma GLOBAL_ASM("binary/EnGb_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/DynaPolyInfo_Free.o")
 
@@ -13754,7 +10738,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00353aa4.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_SetupNeutral.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_SetupNeutral.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00353c6c.o")
 
@@ -13847,8 +10831,6 @@
 #pragma GLOBAL_ASM("binary/FUN_0035708c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00357194.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0035720c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00357248.o")
 
@@ -14264,7 +11246,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00363a98.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondorf_SetupThrow.o")
+#pragma GLOBAL_ASM("binary/BossGanondrof_SetupThrow.o")
 
 #pragma GLOBAL_ASM("binary/Object_GetIndex.o")
 
@@ -14420,8 +11402,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00367bfc.o")
 
-#pragma GLOBAL_ASM("binary/OceffWipe4_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00367c48.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00367c54.o")
@@ -14447,8 +11427,6 @@
 #pragma GLOBAL_ASM("binary/FUN_00368280.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00368498.o")
-
-#pragma GLOBAL_ASM("binary/EnVm_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/FUN_003685a0.o")
 
@@ -14665,8 +11643,6 @@
 #pragma GLOBAL_ASM("binary/Flags_GetClear.o")
 
 #pragma GLOBAL_ASM("binary/OnePointCutscene_Attention.o")
-
-#pragma GLOBAL_ASM("binary/ObjTimeblock_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0036d15c.o")
 
@@ -14942,8 +11918,6 @@
 
 #pragma GLOBAL_ASM("binary/SkelAnime_SetPlaySpeed.o")
 
-#pragma GLOBAL_ASM("binary/FUN_003731f4.o")
-
 #pragma GLOBAL_ASM("binary/Actor_SetFocus.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00373264.o")
@@ -15048,15 +12022,11 @@
 
 #pragma GLOBAL_ASM("binary/CollisionCheck_SetAT.o")
 
-#pragma GLOBAL_ASM("binary/FUN_00376278.o")
-
 #pragma GLOBAL_ASM("binary/CollisionCheck_SetOC.o")
 
 #pragma GLOBAL_ASM("binary/Collider_UpdateCylinder.o")
 
 #pragma GLOBAL_ASM("binary/Actor_UpdateBgCheckInfo.o")
-
-#pragma GLOBAL_ASM("binary/EnDyExtra_Update.o")
 
 #pragma GLOBAL_ASM("binary/Actor_MoveForward.o")
 
@@ -15085,12 +12055,6 @@
 #pragma GLOBAL_ASM("binary/HandleNotification.o")
 
 #pragma GLOBAL_ASM("binary/ExitProcess.o")
-
-#pragma GLOBAL_ASM("binary/ObjLightswitch_Draw.o")
-
-#pragma GLOBAL_ASM("binary/ObjLightswitch_Update.o")
-
-#pragma GLOBAL_ASM("binary/ObjMakekinsuta_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00378308.o")
 
@@ -15148,8 +12112,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_003794e8.o")
 
-#pragma GLOBAL_ASM("binary/FUN_003794ec.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00379514.o")
 
 #pragma GLOBAL_ASM("binary/ObjMure2_SetPosShrubCircle.o")
@@ -15186,85 +12148,11 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00379cac.o")
 
-#pragma GLOBAL_ASM("binary/FUN_00379cdc.o")
-
-#pragma GLOBAL_ASM("binary/BgGndFiremeiro_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgGndFiremeiro_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaMeganeBG_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHakaMeganeBG_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanCurtain_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanCurtain_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanHamstep_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanHamstep_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSekizou_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanSekizou_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBigmirror_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBigmirror_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaHaheniron_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaHaheniron_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0037ab90.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriElevator_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0037ac08.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriHashira4_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriKaitenkabe_Init.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0037ad28.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriRakkatenjo_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMoriRakkatenjo_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgRelayObjects_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgRelayObjects_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot00Hanebasi_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot00Hanebasi_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0037b3a4.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0037b46c.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Basket_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Basket_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0037bb4c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0037be8c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0037bee4.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0037c168.o")
 
@@ -15352,8 +12240,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0038049c.o")
 
-#pragma GLOBAL_ASM("binary/FUN_003804e0.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00380604.o")
 
 #pragma GLOBAL_ASM("binary/FUN_003806d8.o")
@@ -15375,8 +12261,6 @@
 #pragma GLOBAL_ASM("binary/FUN_003813c4.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00381434.o")
-
-#pragma GLOBAL_ASM("binary/ObjMakeoshihiki_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_003815f8.o")
 
@@ -15416,56 +12300,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0038256c.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanFirewall_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanRsekizou_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanRsekizou_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaAmishutter_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaAmishutter_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBombchuiwa_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaBombchuiwa_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriNisekabe_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriNisekabe_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idomizu_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idomizu_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot02Objects_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot02Objects_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot06Objects_Draw_003831b4.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot06Objects_Update_003833f8.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot16Bombstone_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot16Bombstone_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Shutter_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot18Shutter_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00383808.o")
 
 #pragma GLOBAL_ASM("binary/FUN_003840c8.o")
@@ -15502,19 +12336,11 @@
 
 #pragma GLOBAL_ASM("binary/EffectSsKiraKira_SpawnSmallYellow.o")
 
-#pragma GLOBAL_ASM("binary/EnDaikuKakariko_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnDaikuKakariko_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0038639c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_003864c4.o")
 
 #pragma GLOBAL_ASM("binary/EnHorse_UpdateIngoRace.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseGameCheck_Init.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseGameCheck_Destroy.o")
 
 #pragma GLOBAL_ASM("binary/caseD_c_00386b28.o")
 
@@ -15533,8 +12359,6 @@
 #pragma GLOBAL_ASM("binary/caseD_3a.o")
 
 #pragma GLOBAL_ASM("binary/caseD_16_003870dc.o")
-
-#pragma GLOBAL_ASM("binary/FUN_003871a8.o")
 
 #pragma GLOBAL_ASM("binary/EnPeehat_Ground_StateSeekPlayer.o")
 
@@ -15624,31 +12448,9 @@
 
 #pragma GLOBAL_ASM("binary/BgMoriKaitenkabe_Draw.o")
 
-#pragma GLOBAL_ASM("binary/FUN_0038ada8.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0038adb0.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriRakkatenjo_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot00Hanebasi_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot00Hanebasi_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0038b8d4.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0038b924.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Update.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0038bc50.o")
 
@@ -15820,30 +12622,6 @@
 
 #pragma GLOBAL_ASM("binary/BgGanonOtyuka_DoNothing.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanKowarerukabe_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanKowarerukabe_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriNisekabe_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgMenkuriNisekabe_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot08Bakudankabe_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot08Bakudankabe_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot11Bakudankabe_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot11Bakudankabe_Destroy.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot16Bombstone_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot16Bombstone_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot17Bakudankabe_Init.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot17Bakudankabe_Destroy.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00394e8c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00395c54.o")
@@ -15881,8 +12659,6 @@
 #pragma GLOBAL_ASM("binary/FUN_0039a7b0.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0039a858.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseGameCheck_Update.o")
 
 #pragma GLOBAL_ASM("binary/caseD_24_0039a91c.o")
 
@@ -15948,10 +12724,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0039c5e0.o")
 
-#pragma GLOBAL_ASM("binary/EnMThunder_Draw.o")
-
-#pragma GLOBAL_ASM("binary/EnMThunder_Update.o")
-
 #pragma GLOBAL_ASM("binary/caseD_4_0039ce8c.o")
 
 #pragma GLOBAL_ASM("binary/caseD_28.o")
@@ -16002,23 +12774,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0039dfdc.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanKowarerukabe_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgHidanKowarerukabe_Update.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0039e58c.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot08Bakudankabe_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot08Bakudankabe_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot11Bakudankabe_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot11Bakudankabe_Update.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot17Bakudankabe_Draw.o")
-
-#pragma GLOBAL_ASM("binary/BgSpot17Bakudankabe_Update.o")
 
 #pragma GLOBAL_ASM("binary/CollisionCheck_AC_CylVsCyl.o")
 
@@ -16090,10 +12846,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_003a30e4.o")
 
-#pragma GLOBAL_ASM("binary/FUN_003a3184.o")
-
-#pragma GLOBAL_ASM("binary/FUN_003a31e8.o")
-
 #pragma GLOBAL_ASM("binary/FUN_003a3200.o")
 
 #pragma GLOBAL_ASM("binary/CollisionCheck_SetCylHitFX.o")
@@ -16103,8 +12855,6 @@
 #pragma GLOBAL_ASM("binary/CollisionCheck_SetTrisHitFX.o")
 
 #pragma GLOBAL_ASM("binary/caseD_5_003a34dc.o")
-
-#pragma GLOBAL_ASM("binary/EnHorseGameCheck_Draw.o")
 
 #pragma GLOBAL_ASM("binary/caseD_12_003a36c0.o")
 
@@ -16157,8 +12907,6 @@
 #pragma GLOBAL_ASM("binary/FUN_003a5778.o")
 
 #pragma GLOBAL_ASM("binary/FUN_003a590c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_003a5ad4.o")
 
 #pragma GLOBAL_ASM("binary/caseD_2_003a5b20.o")
 
@@ -23267,8 +20015,6 @@
 #pragma GLOBAL_ASM("binary/FUN_004bf3bc.o")
 
 #pragma GLOBAL_ASM("binary/FUN_004bf5cc.o")
-
-#pragma GLOBAL_ASM("binary/PlayerActor_Draw.o")
 
 #pragma GLOBAL_ASM("binary/FUN_004c00ac.o")
 

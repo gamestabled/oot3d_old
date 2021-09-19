@@ -20,4 +20,10 @@ ActorInit Bg_Breakwall_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgBreakwall_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgBreakwall_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgBreakwall_Update.o")
 }

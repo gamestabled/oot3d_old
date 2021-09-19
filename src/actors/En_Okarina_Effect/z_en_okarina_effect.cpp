@@ -20,4 +20,10 @@ ActorInit En_Okarina_Effect_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnOkarinaEffect_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnOkarinaEffect_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnOkarinaEffect_Update.o")
 }

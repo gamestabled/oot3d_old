@@ -21,4 +21,12 @@ ActorInit Bg_Bdan_Objects_InitVars = {
     (ActorFunc)BgBdanObjects_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgBdanObjects_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgBdanObjects_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgBdanObjects_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgBdanObjects_Draw.o")
 }

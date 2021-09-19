@@ -21,4 +21,12 @@ ActorInit Bg_Jya_Ironobj_InitVars = {
     (ActorFunc)BgJyaIronobj_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgJyaIronobj_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaIronobj_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaIronobj_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaIronobj_Draw.o")
 }

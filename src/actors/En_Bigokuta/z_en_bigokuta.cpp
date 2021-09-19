@@ -21,4 +21,12 @@ ActorInit En_Bigokuta_InitVars = {
     (ActorFunc)EnBigokuta_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnBigokuta_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnBigokuta_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnBigokuta_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnBigokuta_Draw.o")
 }

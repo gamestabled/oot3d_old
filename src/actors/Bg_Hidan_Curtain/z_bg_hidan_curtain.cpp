@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Curtain_InitVars = {
     (ActorFunc)BgHidanCurtain_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanCurtain_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanCurtain_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanCurtain_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanCurtain_Draw.o")
 }

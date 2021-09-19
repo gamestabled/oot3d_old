@@ -21,4 +21,12 @@ ActorInit Obj_Warp2block_InitVars = {
     (ActorFunc)ObjWarp2block_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjWarp2block_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjWarp2block_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjWarp2block_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjWarp2block_Draw.o")
 }

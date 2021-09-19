@@ -21,4 +21,12 @@ ActorInit Item_B_Heart_InitVars = {
     (ActorFunc)ItemBHeart_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ItemBHeart_Init.o")
+
+#pragma GLOBAL_ASM("binary/ItemBHeart_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ItemBHeart_Update.o")
+
+#pragma GLOBAL_ASM("binary/ItemBHeart_Draw.o")
 }

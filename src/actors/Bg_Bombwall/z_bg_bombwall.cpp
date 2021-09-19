@@ -21,4 +21,12 @@ ActorInit Bg_Bombwall_InitVars = {
     (ActorFunc)BgBombwall_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgBombwall_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgBombwall_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgBombwall_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgBombwall_Draw.o")
 }

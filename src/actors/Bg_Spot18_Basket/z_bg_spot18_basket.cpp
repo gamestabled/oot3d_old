@@ -21,4 +21,12 @@ ActorInit Bg_Spot18_Basket_InitVars = {
     (ActorFunc)BgSpot18Basket_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot18Basket_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot18Basket_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot18Basket_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot18Basket_Draw.o")
 }

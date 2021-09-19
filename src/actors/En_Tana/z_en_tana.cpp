@@ -20,4 +20,10 @@ ActorInit En_Tana_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnTana_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnTana_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnTana_Update.o")
 }

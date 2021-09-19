@@ -21,4 +21,12 @@ ActorInit En_Fire_Rock_InitVars = {
     (ActorFunc)EnFireRock_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnFireRock_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnFireRock_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnFireRock_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnFireRock_Draw.o")
 }

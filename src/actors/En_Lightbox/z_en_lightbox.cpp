@@ -21,4 +21,12 @@ ActorInit En_Lightbox_InitVars = {
     (ActorFunc)EnLightbox_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnLightbox_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnLightbox_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnLightbox_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnLightbox_Draw.o")
 }

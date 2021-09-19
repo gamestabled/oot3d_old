@@ -21,4 +21,12 @@ ActorInit Arrow_Light_InitVars = {
     (ActorFunc)ArrowLight_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ArrowLight_Init.o")
+
+#pragma GLOBAL_ASM("binary/ArrowLight_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ArrowLight_Update.o")
+
+#pragma GLOBAL_ASM("binary/ArrowLight_Draw.o")
 }

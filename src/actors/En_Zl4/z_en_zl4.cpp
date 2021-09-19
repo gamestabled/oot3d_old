@@ -21,4 +21,12 @@ ActorInit En_Zl4_InitVars = {
     (ActorFunc)EnZl4_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnZl4_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnZl4_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnZl4_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnZl4_Draw.o")
 }

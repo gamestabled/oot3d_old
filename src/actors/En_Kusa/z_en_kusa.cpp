@@ -20,4 +20,10 @@ ActorInit En_Kusa_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnKusa_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnKusa_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnKusa_Update.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Po_Field_InitVars = {
     (ActorFunc)EnPoField_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnPoField_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnPoField_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnPoField_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnPoField_Draw.o")
 }

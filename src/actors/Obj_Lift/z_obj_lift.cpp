@@ -21,4 +21,12 @@ ActorInit Obj_Lift_InitVars = {
     (ActorFunc)ObjLift_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjLift_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjLift_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjLift_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjLift_Draw.o")
 }

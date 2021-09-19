@@ -21,4 +21,12 @@ ActorInit En_Xc_InitVars = {
     (ActorFunc)EnXc_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnXc_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnXc_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnXc_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnXc_Draw.o")
 }

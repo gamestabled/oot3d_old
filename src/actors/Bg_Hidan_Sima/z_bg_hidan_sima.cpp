@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Sima_InitVars = {
     (ActorFunc)BgHidanSima_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanSima_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanSima_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanSima_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanSima_Draw.o")
 }

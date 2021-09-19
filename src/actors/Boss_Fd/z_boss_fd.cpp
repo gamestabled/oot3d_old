@@ -21,4 +21,12 @@ ActorInit Boss_Fd_InitVars = {
     (ActorFunc)BossFd_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BossFd_Init.o")
+
+#pragma GLOBAL_ASM("binary/BossFd_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BossFd_Update.o")
+
+#pragma GLOBAL_ASM("binary/BossFd_Draw.o")
 }

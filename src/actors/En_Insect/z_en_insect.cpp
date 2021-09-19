@@ -21,4 +21,12 @@ ActorInit En_Insect_InitVars = {
     (ActorFunc)EnInsect_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnInsect_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnInsect_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnInsect_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnInsect_Draw.o")
 }

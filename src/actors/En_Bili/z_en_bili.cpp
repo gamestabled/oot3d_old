@@ -21,4 +21,12 @@ ActorInit En_Bili_InitVars = {
     (ActorFunc)EnBili_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnBili_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnBili_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnBili_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnBili_Draw.o")
 }

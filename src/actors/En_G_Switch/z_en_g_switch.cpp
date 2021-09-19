@@ -20,4 +20,10 @@ ActorInit En_G_Switch_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnGSwitch_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnGSwitch_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnGSwitch_Update.o")
 }

@@ -21,4 +21,12 @@ ActorInit Obj_Dekujr_InitVars = {
     (ActorFunc)ObjDekujr_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjDekujr_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjDekujr_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjDekujr_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjDekujr_Draw.o")
 }

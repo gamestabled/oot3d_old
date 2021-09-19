@@ -21,4 +21,12 @@ ActorInit Bg_Spot12_Saku_InitVars = {
     (ActorFunc)BgSpot12Saku_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot12Saku_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot12Saku_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot12Saku_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot12Saku_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Obj_Elevator_InitVars = {
     (ActorFunc)ObjElevator_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjElevator_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjElevator_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjElevator_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjElevator_Draw.o")
 }

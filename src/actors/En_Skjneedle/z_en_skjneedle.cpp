@@ -21,4 +21,12 @@ ActorInit En_Skjneedle_InitVars = {
     (ActorFunc)EnSkjneedle_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnSkjneedle_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnSkjneedle_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnSkjneedle_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnSkjneedle_Draw.o")
 }

@@ -20,4 +20,10 @@ ActorInit En_Sth_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnSth_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnSth_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnSth_Update.o")
 }

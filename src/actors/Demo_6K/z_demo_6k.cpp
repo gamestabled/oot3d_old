@@ -20,4 +20,10 @@ ActorInit Demo_6K_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/Demo6K_Init.o")
+
+#pragma GLOBAL_ASM("binary/Demo6K_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/Demo6K_Update.o")
 }

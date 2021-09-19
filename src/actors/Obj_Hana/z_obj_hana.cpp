@@ -21,4 +21,12 @@ ActorInit Obj_Hana_InitVars = {
     (ActorFunc)ObjHana_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjHana_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjHana_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjHana_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjHana_Draw.o")
 }

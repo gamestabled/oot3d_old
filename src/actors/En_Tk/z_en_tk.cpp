@@ -21,4 +21,12 @@ ActorInit En_Tk_InitVars = {
     (ActorFunc)EnTk_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnTk_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnTk_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnTk_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnTk_Draw.o")
 }

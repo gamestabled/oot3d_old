@@ -21,4 +21,12 @@ ActorInit En_Dns_InitVars = {
     (ActorFunc)EnDns_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDns_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDns_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDns_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnDns_Draw.o")
 }

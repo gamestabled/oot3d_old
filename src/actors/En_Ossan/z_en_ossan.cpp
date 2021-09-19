@@ -20,4 +20,10 @@ ActorInit En_Ossan_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnOssan_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnOssan_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnOssan_Update.o")
 }

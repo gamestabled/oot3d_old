@@ -20,4 +20,10 @@ ActorInit Bg_Dy_Yoseizo_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgDyYoseizo_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgDyYoseizo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgDyYoseizo_Update.o")
 }

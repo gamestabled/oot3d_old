@@ -21,4 +21,12 @@ ActorInit En_Nwc_InitVars = {
     (ActorFunc)EnNwc_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnNwc_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnNwc_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnNwc_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnNwc_Draw.o")
 }

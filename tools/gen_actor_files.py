@@ -974,6 +974,14 @@ def createActorHeader(path, actorName, actorId):
         header.write(fileStr)
 
 def createActorSource(path, actorName, actorId):
+    addrs = open('function_addresses_new.txt', 'r')
+    funcs = addrs.read()
+
+    linkerFile = open('oot_new.ld', 'r')
+    linker = linkerFile.read()
+
+    functionNamesToRemove = []
+
     actorStructName = actorName.replace("_","")
     initVars = getActorInitVars(actorId)
 
@@ -1019,7 +1027,44 @@ def createActorSource(path, actorName, actorId):
         fileStr += "    (ActorFunc)NULL,\n"
     fileStr += "};\n"
     fileStr += "*/\n"
+
+    if (initVars[5] != 0):
+        fileStr += "\n#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Init.o\")\n"
+        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Init.o\")\n")
+        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[5]) + ".o\")\n")
+        funcs = funcs.replace("FUN_" + "{:08x}".format(initVars[5]), actorStructName + "_Init")
+        linker = linker.replace("FUN_" + "{:08x}".format(initVars[5]), actorStructName + "_Init")
+    if (initVars[6] != 0):
+        fileStr += "\n#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Destroy.o\")\n"
+        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Destroy.o\")\n")
+        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[6]) + ".o\")\n")
+        funcs = funcs.replace("FUN_" + "{:08x}".format(initVars[6]), actorStructName + "_Destroy")
+        linker = linker.replace("FUN_" + "{:08x}".format(initVars[6]), actorStructName + "_Destroy")
+    if (initVars[7] != 0):
+        fileStr += "\n#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Update.o\")\n"
+        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Update.o\")\n")
+        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[7]) + ".o\")\n")
+        funcs = funcs.replace("FUN_" + "{:08x}".format(initVars[7]), actorStructName + "_Update")
+        linker = linker.replace("FUN_" + "{:08x}".format(initVars[7]), actorStructName + "_Update")
+    if (initVars[8] != 0):
+        fileStr += "\n#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Draw.o\")\n"
+        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Draw.o\")\n")
+        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[8]) + ".o\")\n")
+        funcs = funcs.replace("FUN_" + "{:08x}".format(initVars[8]), actorStructName + "_Draw")
+        linker = linker.replace("FUN_" + "{:08x}".format(initVars[8]), actorStructName + "_Draw")
+
+    addrs.close()
+    with open('function_addresses_new.txt', 'w') as newFuncs:
+        newFuncs.write(funcs)
+    linkerFile.close()
+    with open('oot_new.ld', 'w') as newLinker:
+        newLinker.write(linker)
+
     fileStr += "}\n"
+
+    with open('funcsToRemove.txt', 'a') as removes:
+        for func in functionNamesToRemove:
+            removes.write(func)
 
     with open(path, 'w') as source:
         source.write(fileStr)
@@ -1029,6 +1074,8 @@ with open('notes/actor_list.txt', 'r') as actorList:
     for i in range(0, len(actorLines)):
         actorName = actorLines[i].strip()
         if actorName == "unset":
+            continue
+        if actorName == "Obj_Bombiwa" or actorName == "En_OE2" or actorName == "En_Torch" or actorName == "Bg_Gnd_Nisekabe" or actorName == "En_Vase":
             continue
 
         actorFolder = actorsFolder + actorName

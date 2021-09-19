@@ -21,4 +21,12 @@ ActorInit Boss_Va_InitVars = {
     (ActorFunc)BossVa_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BossVa_Init.o")
+
+#pragma GLOBAL_ASM("binary/BossVa_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BossVa_Update.o")
+
+#pragma GLOBAL_ASM("binary/BossVa_Draw.o")
 }

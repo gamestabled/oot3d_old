@@ -21,4 +21,12 @@ ActorInit Bg_Jya_Bombiwa_InitVars = {
     (ActorFunc)BgJyaBombiwa_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgJyaBombiwa_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaBombiwa_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaBombiwa_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaBombiwa_Draw.o")
 }

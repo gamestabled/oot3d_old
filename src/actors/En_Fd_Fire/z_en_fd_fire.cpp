@@ -21,4 +21,12 @@ ActorInit En_Fd_Fire_InitVars = {
     (ActorFunc)EnFdFire_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnFdFire_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnFdFire_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnFdFire_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnFdFire_Draw.o")
 }

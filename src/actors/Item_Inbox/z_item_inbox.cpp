@@ -21,4 +21,12 @@ ActorInit Item_Inbox_InitVars = {
     (ActorFunc)ItemInbox_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ItemInbox_Init.o")
+
+#pragma GLOBAL_ASM("binary/ItemInbox_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ItemInbox_Update.o")
+
+#pragma GLOBAL_ASM("binary/ItemInbox_Draw.o")
 }

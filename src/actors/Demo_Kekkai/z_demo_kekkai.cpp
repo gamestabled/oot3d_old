@@ -21,4 +21,12 @@ ActorInit Demo_Kekkai_InitVars = {
     (ActorFunc)DemoKekkai_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DemoKekkai_Init.o")
+
+#pragma GLOBAL_ASM("binary/DemoKekkai_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DemoKekkai_Update.o")
+
+#pragma GLOBAL_ASM("binary/DemoKekkai_Draw.o")
 }

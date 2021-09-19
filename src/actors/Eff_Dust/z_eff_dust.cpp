@@ -21,4 +21,12 @@ ActorInit Eff_Dust_InitVars = {
     (ActorFunc)EffDust_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EffDust_Init.o")
+
+#pragma GLOBAL_ASM("binary/EffDust_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EffDust_Update.o")
+
+#pragma GLOBAL_ASM("binary/EffDust_Draw.o")
 }

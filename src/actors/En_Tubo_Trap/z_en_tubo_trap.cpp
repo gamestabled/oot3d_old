@@ -21,4 +21,12 @@ ActorInit En_Tubo_Trap_InitVars = {
     (ActorFunc)EnTuboTrap_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnTuboTrap_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnTuboTrap_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnTuboTrap_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnTuboTrap_Draw.o")
 }

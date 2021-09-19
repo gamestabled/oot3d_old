@@ -21,4 +21,12 @@ ActorInit Obj_Timeblock_InitVars = {
     (ActorFunc)ObjTimeblock_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjTimeblock_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjTimeblock_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjTimeblock_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjTimeblock_Draw.o")
 }

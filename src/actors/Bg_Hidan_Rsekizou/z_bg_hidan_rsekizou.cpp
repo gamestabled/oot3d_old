@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Rsekizou_InitVars = {
     (ActorFunc)BgHidanRsekizou_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanRsekizou_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanRsekizou_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanRsekizou_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanRsekizou_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Obj_Syokudai_InitVars = {
     (ActorFunc)ObjSyokudai_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjSyokudai_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjSyokudai_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjSyokudai_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjSyokudai_Draw.o")
 }

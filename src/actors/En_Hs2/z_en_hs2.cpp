@@ -21,4 +21,12 @@ ActorInit En_Hs2_InitVars = {
     (ActorFunc)EnHs2_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnHs2_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnHs2_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnHs2_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnHs2_Draw.o")
 }

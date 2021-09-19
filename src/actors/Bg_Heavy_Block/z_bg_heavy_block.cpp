@@ -21,4 +21,12 @@ ActorInit Bg_Heavy_Block_InitVars = {
     (ActorFunc)BgHeavyBlock_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHeavyBlock_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHeavyBlock_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHeavyBlock_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHeavyBlock_Draw.o")
 }

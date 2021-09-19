@@ -21,4 +21,12 @@ ActorInit Bg_Ice_Shelter_InitVars = {
     (ActorFunc)BgIceShelter_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgIceShelter_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgIceShelter_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgIceShelter_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgIceShelter_Draw.o")
 }

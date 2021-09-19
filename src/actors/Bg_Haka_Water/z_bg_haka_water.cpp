@@ -21,4 +21,12 @@ ActorInit Bg_Haka_Water_InitVars = {
     (ActorFunc)BgHakaWater_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHakaWater_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaWater_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaWater_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaWater_Draw.o")
 }

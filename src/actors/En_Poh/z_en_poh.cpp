@@ -20,4 +20,10 @@ ActorInit En_Poh_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnPoh_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnPoh_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnPoh_Update.o")
 }

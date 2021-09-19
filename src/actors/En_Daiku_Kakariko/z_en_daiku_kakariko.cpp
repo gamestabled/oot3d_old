@@ -21,4 +21,12 @@ ActorInit En_Daiku_Kakariko_InitVars = {
     (ActorFunc)EnDaikuKakariko_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDaikuKakariko_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDaikuKakariko_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDaikuKakariko_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnDaikuKakariko_Draw.o")
 }

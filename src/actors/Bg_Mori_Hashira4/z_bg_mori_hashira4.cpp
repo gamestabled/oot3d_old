@@ -20,4 +20,10 @@ ActorInit Bg_Mori_Hashira4_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMoriHashira4_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriHashira4_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriHashira4_Update.o")
 }

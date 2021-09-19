@@ -21,4 +21,12 @@ ActorInit Bg_Spot08_Bakudankabe_InitVars = {
     (ActorFunc)BgSpot08Bakudankabe_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot08Bakudankabe_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot08Bakudankabe_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot08Bakudankabe_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot08Bakudankabe_Draw.o")
 }

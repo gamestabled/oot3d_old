@@ -20,4 +20,10 @@ ActorInit En_GirlA_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnGirlA_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnGirlA_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnGirlA_Update.o")
 }

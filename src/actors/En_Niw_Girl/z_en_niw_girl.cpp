@@ -21,4 +21,12 @@ ActorInit En_Niw_Girl_InitVars = {
     (ActorFunc)EnNiwGirl_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnNiwGirl_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnNiwGirl_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnNiwGirl_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnNiwGirl_Draw.o")
 }

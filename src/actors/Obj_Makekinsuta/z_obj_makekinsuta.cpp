@@ -15,9 +15,13 @@ ActorInit Obj_Makekinsuta_InitVars = {
     OBJECT_GAMEPLAY_KEEP,
     sizeof(ObjMakekinsuta),
     (ActorFunc)ObjMakekinsuta_Init,
-    (ActorFunc)ObjMakekinsuta_Destroy,
+    (ActorFunc)Actor_Noop,
     (ActorFunc)ObjMakekinsuta_Update,
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjMakekinsuta_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjMakekinsuta_Update.o")
 }

@@ -21,4 +21,12 @@ ActorInit Bg_Mizu_Water_InitVars = {
     (ActorFunc)BgMizuWater_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMizuWater_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMizuWater_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMizuWater_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgMizuWater_Draw.o")
 }

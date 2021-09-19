@@ -21,4 +21,12 @@ ActorInit En_Horse_InitVars = {
     (ActorFunc)EnHorse_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnHorse_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnHorse_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnHorse_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnHorse_Draw.o")
 }

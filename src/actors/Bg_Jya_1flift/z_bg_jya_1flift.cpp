@@ -21,4 +21,12 @@ ActorInit Bg_Jya_1flift_InitVars = {
     (ActorFunc)BgJya1flift_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgJya1flift_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgJya1flift_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgJya1flift_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgJya1flift_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Obj_Hsblock_InitVars = {
     (ActorFunc)ObjHsblock_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjHsblock_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjHsblock_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjHsblock_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjHsblock_Draw.o")
 }

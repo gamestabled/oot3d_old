@@ -21,4 +21,12 @@ ActorInit En_Hata_InitVars = {
     (ActorFunc)EnHata_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnHata_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnHata_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnHata_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnHata_Draw.o")
 }

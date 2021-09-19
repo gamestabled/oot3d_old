@@ -20,4 +20,10 @@ ActorInit Bg_Mori_Hineri_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMoriHineri_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriHineri_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriHineri_Update.o")
 }

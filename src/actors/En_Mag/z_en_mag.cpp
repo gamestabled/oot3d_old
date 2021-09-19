@@ -21,4 +21,12 @@ ActorInit En_Mag_InitVars = {
     (ActorFunc)EnMag_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnMag_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnMag_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnMag_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnMag_Draw.o")
 }

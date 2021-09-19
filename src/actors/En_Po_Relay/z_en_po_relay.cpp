@@ -21,4 +21,12 @@ ActorInit En_Po_Relay_InitVars = {
     (ActorFunc)EnPoRelay_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnPoRelay_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnPoRelay_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnPoRelay_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnPoRelay_Draw.o")
 }

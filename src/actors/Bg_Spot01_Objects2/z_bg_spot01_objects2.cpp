@@ -20,4 +20,10 @@ ActorInit Bg_Spot01_Objects2_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot01Objects2_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Objects2_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Objects2_Update.o")
 }

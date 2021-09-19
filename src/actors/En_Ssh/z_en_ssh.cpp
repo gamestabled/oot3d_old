@@ -21,4 +21,12 @@ ActorInit En_Ssh_InitVars = {
     (ActorFunc)EnSsh_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnSsh_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnSsh_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnSsh_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnSsh_Draw.o")
 }

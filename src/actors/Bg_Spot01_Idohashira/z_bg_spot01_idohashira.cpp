@@ -21,4 +21,12 @@ ActorInit Bg_Spot01_Idohashira_InitVars = {
     (ActorFunc)BgSpot01Idohashira_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Draw.o")
 }

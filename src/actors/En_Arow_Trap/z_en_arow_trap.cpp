@@ -20,4 +20,10 @@ ActorInit En_Arow_Trap_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnArowTrap_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnArowTrap_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnArowTrap_Update.o")
 }

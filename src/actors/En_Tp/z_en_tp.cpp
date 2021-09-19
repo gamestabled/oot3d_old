@@ -21,4 +21,12 @@ ActorInit En_Tp_InitVars = {
     (ActorFunc)EnTp_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnTp_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnTp_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnTp_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnTp_Draw.o")
 }

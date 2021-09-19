@@ -21,4 +21,12 @@ ActorInit En_Kanban_InitVars = {
     (ActorFunc)EnKanban_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnKanban_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnKanban_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnKanban_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnKanban_Draw.o")
 }

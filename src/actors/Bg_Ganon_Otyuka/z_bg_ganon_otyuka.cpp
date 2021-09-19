@@ -21,4 +21,12 @@ ActorInit Bg_Ganon_Otyuka_InitVars = {
     (ActorFunc)BgGanonOtyuka_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgGanonOtyuka_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgGanonOtyuka_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgGanonOtyuka_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgGanonOtyuka_Draw.o")
 }

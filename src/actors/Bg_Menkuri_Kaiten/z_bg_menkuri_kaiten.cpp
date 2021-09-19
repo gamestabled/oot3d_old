@@ -21,4 +21,12 @@ ActorInit Bg_Menkuri_Kaiten_InitVars = {
     (ActorFunc)BgMenkuriKaiten_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Draw.o")
 }

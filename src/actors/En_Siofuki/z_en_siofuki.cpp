@@ -21,4 +21,12 @@ ActorInit En_Siofuki_InitVars = {
     (ActorFunc)EnSiofuki_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnSiofuki_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnSiofuki_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnSiofuki_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnSiofuki_Draw.o")
 }

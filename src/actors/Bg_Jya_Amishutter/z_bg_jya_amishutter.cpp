@@ -21,4 +21,12 @@ ActorInit Bg_Jya_Amishutter_InitVars = {
     (ActorFunc)BgJyaAmishutter_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgJyaAmishutter_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaAmishutter_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaAmishutter_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgJyaAmishutter_Draw.o")
 }

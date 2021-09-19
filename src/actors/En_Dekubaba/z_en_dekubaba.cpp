@@ -21,4 +21,12 @@ ActorInit En_Dekubaba_InitVars = {
     (ActorFunc)EnDekubaba_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDekubaba_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDekubaba_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDekubaba_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnDekubaba_Draw.o")
 }

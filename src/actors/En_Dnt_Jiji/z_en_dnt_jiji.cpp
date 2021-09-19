@@ -21,4 +21,12 @@ ActorInit En_Dnt_Jiji_InitVars = {
     (ActorFunc)EnDntJiji_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDntJiji_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDntJiji_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDntJiji_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnDntJiji_Draw.o")
 }

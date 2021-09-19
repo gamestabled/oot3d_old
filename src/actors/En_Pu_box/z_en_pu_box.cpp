@@ -21,4 +21,12 @@ ActorInit En_Pu_box_InitVars = {
     (ActorFunc)EnPubox_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnPubox_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnPubox_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnPubox_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnPubox_Draw.o")
 }

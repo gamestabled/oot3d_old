@@ -21,4 +21,12 @@ ActorInit Oceff_Storm_InitVars = {
     (ActorFunc)OceffStorm_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/OceffStorm_Init.o")
+
+#pragma GLOBAL_ASM("binary/OceffStorm_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/OceffStorm_Update.o")
+
+#pragma GLOBAL_ASM("binary/OceffStorm_Draw.o")
 }

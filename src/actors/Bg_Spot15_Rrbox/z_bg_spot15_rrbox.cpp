@@ -21,4 +21,12 @@ ActorInit Bg_Spot15_Rrbox_InitVars = {
     (ActorFunc)BgSpot15Rrbox_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot15Rrbox_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot15Rrbox_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot15Rrbox_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot15Rrbox_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Ik_InitVars = {
     (ActorFunc)EnIk_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnIk_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnIk_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnIk_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnIk_Draw.o")
 }

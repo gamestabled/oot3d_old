@@ -21,4 +21,12 @@ ActorInit Bg_Mizu_Uzu_InitVars = {
     (ActorFunc)BgMizuUzu_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMizuUzu_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMizuUzu_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMizuUzu_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgMizuUzu_Draw.o")
 }

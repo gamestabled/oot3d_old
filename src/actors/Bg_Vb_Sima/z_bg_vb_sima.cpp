@@ -21,4 +21,12 @@ ActorInit Bg_Vb_Sima_InitVars = {
     (ActorFunc)BgVbSima_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgVbSima_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgVbSima_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgVbSima_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgVbSima_Draw.o")
 }

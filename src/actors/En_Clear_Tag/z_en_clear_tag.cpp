@@ -21,4 +21,12 @@ ActorInit En_Clear_Tag_InitVars = {
     (ActorFunc)EnClearTag_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnClearTag_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnClearTag_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnClearTag_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnClearTag_Draw.o")
 }

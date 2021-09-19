@@ -20,4 +20,10 @@ ActorInit Bg_Mori_Bigst_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMoriBigst_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriBigst_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriBigst_Update.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Bombf_InitVars = {
     (ActorFunc)EnBombf_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnBombf_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnBombf_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnBombf_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnBombf_Draw.o")
 }

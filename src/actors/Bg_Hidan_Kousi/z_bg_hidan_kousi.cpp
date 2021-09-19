@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Kousi_InitVars = {
     (ActorFunc)BgHidanKousi_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanKousi_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanKousi_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanKousi_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanKousi_Draw.o")
 }

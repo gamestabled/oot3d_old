@@ -21,4 +21,12 @@ ActorInit Boss_Goma_InitVars = {
     (ActorFunc)BossGoma_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BossGoma_Init.o")
+
+#pragma GLOBAL_ASM("binary/BossGoma_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BossGoma_Update.o")
+
+#pragma GLOBAL_ASM("binary/BossGoma_Draw.o")
 }

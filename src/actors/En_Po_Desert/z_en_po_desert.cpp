@@ -21,4 +21,12 @@ ActorInit En_Po_Desert_InitVars = {
     (ActorFunc)EnPoDesert_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnPoDesert_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnPoDesert_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnPoDesert_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnPoDesert_Draw.o")
 }

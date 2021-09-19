@@ -20,4 +20,10 @@ ActorInit Item_Etcetera_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ItemEtcetera_Init.o")
+
+#pragma GLOBAL_ASM("binary/ItemEtcetera_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ItemEtcetera_Update.o")
 }

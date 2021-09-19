@@ -21,4 +21,12 @@ ActorInit Obj_Kibako_InitVars = {
     (ActorFunc)ObjKibako_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjKibako_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjKibako_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjKibako_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjKibako_Draw.o")
 }

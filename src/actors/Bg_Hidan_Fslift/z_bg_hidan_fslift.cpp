@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Fslift_InitVars = {
     (ActorFunc)BgHidanFslift_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanFslift_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanFslift_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanFslift_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanFslift_Draw.o")
 }

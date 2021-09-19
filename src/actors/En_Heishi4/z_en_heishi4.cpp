@@ -21,4 +21,12 @@ ActorInit En_Heishi4_InitVars = {
     (ActorFunc)EnHeishi4_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnHeishi4_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnHeishi4_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnHeishi4_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnHeishi4_Draw.o")
 }

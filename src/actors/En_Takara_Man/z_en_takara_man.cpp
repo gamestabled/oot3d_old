@@ -21,4 +21,12 @@ ActorInit En_Takara_Man_InitVars = {
     (ActorFunc)EnTakaraMan_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnTakaraMan_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnTakaraMan_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnTakaraMan_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnTakaraMan_Draw.o")
 }

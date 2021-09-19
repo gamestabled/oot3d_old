@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Hamstep_InitVars = {
     (ActorFunc)BgHidanHamstep_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanHamstep_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanHamstep_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanHamstep_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanHamstep_Draw.o")
 }

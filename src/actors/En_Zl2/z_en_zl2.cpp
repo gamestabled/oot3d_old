@@ -21,4 +21,12 @@ ActorInit En_Zl2_InitVars = {
     (ActorFunc)EnZl2_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnZl2_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnZl2_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnZl2_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnZl2_Draw.o")
 }

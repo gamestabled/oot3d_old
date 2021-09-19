@@ -21,4 +21,12 @@ ActorInit Bg_Ddan_Kd_InitVars = {
     (ActorFunc)BgDdanKd_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgDdanKd_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgDdanKd_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgDdanKd_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgDdanKd_Draw.o")
 }

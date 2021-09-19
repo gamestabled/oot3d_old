@@ -21,4 +21,12 @@ ActorInit En_Dodongo_InitVars = {
     (ActorFunc)EnDodongo_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnDodongo_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnDodongo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnDodongo_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnDodongo_Draw.o")
 }

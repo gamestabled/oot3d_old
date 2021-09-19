@@ -21,4 +21,12 @@ ActorInit Obj_Comb_InitVars = {
     (ActorFunc)ObjComb_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjComb_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjComb_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjComb_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjComb_Draw.o")
 }

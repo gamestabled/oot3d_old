@@ -1,6 +1,5 @@
 extern "C" {
 #include "global.hpp"
-
 #define FLAGS 0x06000035
 
 void Player_Init(Actor* actor, GameState* state);
@@ -21,4 +20,12 @@ ActorInit Player_InitVars = {
     (ActorFunc)Player_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/Player_Init.o")
+
+#pragma GLOBAL_ASM("binary/Player_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/Player_Update.o")
+
+#pragma GLOBAL_ASM("binary/Player_Draw.o")
 }

@@ -20,4 +20,10 @@ ActorInit Bg_Haka_Zou_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHakaZou_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaZou_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaZou_Update.o")
 }

@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Fwbig_InitVars = {
     (ActorFunc)BgHidanFwbig_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanFwbig_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanFwbig_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanFwbig_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanFwbig_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit En_Bom_Chu_InitVars = {
     (ActorFunc)EnBomChu_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnBomChu_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnBomChu_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnBomChu_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnBomChu_Draw.o")
 }

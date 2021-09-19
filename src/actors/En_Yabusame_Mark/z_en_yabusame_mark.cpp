@@ -20,4 +20,10 @@ ActorInit En_Yabusame_Mark_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnYabusameMark_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnYabusameMark_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnYabusameMark_Update.o")
 }

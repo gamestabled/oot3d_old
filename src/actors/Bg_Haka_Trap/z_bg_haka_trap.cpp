@@ -21,4 +21,12 @@ ActorInit Bg_Haka_Trap_InitVars = {
     (ActorFunc)BgHakaTrap_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHakaTrap_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaTrap_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaTrap_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHakaTrap_Draw.o")
 }

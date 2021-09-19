@@ -21,4 +21,12 @@ ActorInit Demo_Tre_Lgt_InitVars = {
     (ActorFunc)DemoTreLgt_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DemoTreLgt_Init.o")
+
+#pragma GLOBAL_ASM("binary/DemoTreLgt_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DemoTreLgt_Update.o")
+
+#pragma GLOBAL_ASM("binary/DemoTreLgt_Draw.o")
 }

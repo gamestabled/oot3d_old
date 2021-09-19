@@ -21,4 +21,12 @@ ActorInit Boss_Dodongo_InitVars = {
     (ActorFunc)BossDodongo_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BossDodongo_Init.o")
+
+#pragma GLOBAL_ASM("binary/BossDodongo_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BossDodongo_Update.o")
+
+#pragma GLOBAL_ASM("binary/BossDodongo_Draw.o")
 }

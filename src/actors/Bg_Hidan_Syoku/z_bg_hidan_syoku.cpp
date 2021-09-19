@@ -21,4 +21,12 @@ ActorInit Bg_Hidan_Syoku_InitVars = {
     (ActorFunc)BgHidanSyoku_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgHidanSyoku_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanSyoku_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanSyoku_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgHidanSyoku_Draw.o")
 }

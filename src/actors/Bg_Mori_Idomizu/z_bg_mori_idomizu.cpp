@@ -20,4 +20,10 @@ ActorInit Bg_Mori_Idomizu_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgMoriIdomizu_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriIdomizu_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgMoriIdomizu_Update.o")
 }

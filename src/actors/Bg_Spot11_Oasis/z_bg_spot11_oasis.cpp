@@ -20,4 +20,10 @@ ActorInit Bg_Spot11_Oasis_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot11Oasis_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot11Oasis_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot11Oasis_Update.o")
 }

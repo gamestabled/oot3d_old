@@ -21,4 +21,12 @@ ActorInit En_Wf_InitVars = {
     (ActorFunc)EnWf_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnWf_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnWf_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnWf_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnWf_Draw.o")
 }

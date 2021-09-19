@@ -21,4 +21,12 @@ ActorInit Demo_Shd_InitVars = {
     (ActorFunc)DemoShd_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/DemoShd_Init.o")
+
+#pragma GLOBAL_ASM("binary/DemoShd_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/DemoShd_Update.o")
+
+#pragma GLOBAL_ASM("binary/DemoShd_Draw.o")
 }

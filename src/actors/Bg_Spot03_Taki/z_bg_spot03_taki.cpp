@@ -21,4 +21,12 @@ ActorInit Bg_Spot03_Taki_InitVars = {
     (ActorFunc)BgSpot03Taki_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgSpot03Taki_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot03Taki_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot03Taki_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgSpot03Taki_Draw.o")
 }

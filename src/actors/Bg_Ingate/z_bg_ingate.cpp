@@ -21,4 +21,12 @@ ActorInit Bg_Ingate_InitVars = {
     (ActorFunc)BgIngate_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgIngate_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgIngate_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgIngate_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgIngate_Draw.o")
 }

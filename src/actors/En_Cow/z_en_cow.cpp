@@ -21,4 +21,12 @@ ActorInit En_Cow_InitVars = {
     (ActorFunc)EnCow_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnCow_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnCow_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnCow_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnCow_Draw.o")
 }

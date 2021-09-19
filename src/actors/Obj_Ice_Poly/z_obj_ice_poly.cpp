@@ -21,4 +21,12 @@ ActorInit Obj_Ice_Poly_InitVars = {
     (ActorFunc)ObjIcePoly_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjIcePoly_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjIcePoly_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjIcePoly_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjIcePoly_Draw.o")
 }

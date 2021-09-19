@@ -21,4 +21,12 @@ ActorInit Bg_Gnd_Iceblock_InitVars = {
     (ActorFunc)BgGndIceblock_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/BgGndIceblock_Init.o")
+
+#pragma GLOBAL_ASM("binary/BgGndIceblock_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/BgGndIceblock_Update.o")
+
+#pragma GLOBAL_ASM("binary/BgGndIceblock_Draw.o")
 }

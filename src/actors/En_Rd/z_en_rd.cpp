@@ -21,4 +21,12 @@ ActorInit En_Rd_InitVars = {
     (ActorFunc)EnRd_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnRd_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnRd_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnRd_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnRd_Draw.o")
 }

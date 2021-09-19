@@ -21,4 +21,12 @@ ActorInit En_Floormas_InitVars = {
     (ActorFunc)EnFloormas_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnFloormas_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnFloormas_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnFloormas_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnFloormas_Draw.o")
 }

@@ -21,4 +21,12 @@ ActorInit Obj_Lightswitch_InitVars = {
     (ActorFunc)ObjLightswitch_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/ObjLightswitch_Init.o")
+
+#pragma GLOBAL_ASM("binary/ObjLightswitch_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/ObjLightswitch_Update.o")
+
+#pragma GLOBAL_ASM("binary/ObjLightswitch_Draw.o")
 }

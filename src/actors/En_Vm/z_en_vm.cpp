@@ -21,4 +21,12 @@ ActorInit En_Vm_InitVars = {
     (ActorFunc)EnVm_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnVm_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnVm_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnVm_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnVm_Draw.o")
 }

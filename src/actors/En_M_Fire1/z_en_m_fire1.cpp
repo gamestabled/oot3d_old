@@ -20,4 +20,10 @@ ActorInit En_M_Fire1_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnMFire1_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnMFire1_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnMFire1_Update.o")
 }

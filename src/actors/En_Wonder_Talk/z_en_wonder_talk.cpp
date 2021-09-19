@@ -20,4 +20,10 @@ ActorInit En_Wonder_Talk_InitVars = {
     (ActorFunc)NULL,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnWonderTalk_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnWonderTalk_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnWonderTalk_Update.o")
 }

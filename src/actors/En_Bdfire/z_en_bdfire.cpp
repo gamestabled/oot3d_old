@@ -21,4 +21,12 @@ ActorInit En_Bdfire_InitVars = {
     (ActorFunc)EnBdfire_Draw,
 };
 */
+
+#pragma GLOBAL_ASM("binary/EnBdfire_Init.o")
+
+#pragma GLOBAL_ASM("binary/EnBdfire_Destroy.o")
+
+#pragma GLOBAL_ASM("binary/EnBdfire_Update.o")
+
+#pragma GLOBAL_ASM("binary/EnBdfire_Draw.o")
 }
