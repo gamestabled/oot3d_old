@@ -388,5 +388,5 @@
 
 #pragma GLOBAL_ASM("binary/data_52FDB4.o")
 
-#pragma GLOBAL_ASM("binary/data_534EE4.o")
+#pragma GLOBAL_ASM("binary/data_534EF4.o")
 

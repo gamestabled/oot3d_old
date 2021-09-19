@@ -11981,7 +11981,8 @@ SECTIONS
 		*(actors/En_Vase/z_en_vase.data)
 		*(ASM_data_52FDB4)
 		*(actors/Obj_Bombiwa/z_obj_bombiwa.data)
-		*(ASM_data_534EE4)
+		*(ASM_z_Obj_Bombiwa)
+		*(ASM_data_534EF4)
 	}
 
 	.bss : {

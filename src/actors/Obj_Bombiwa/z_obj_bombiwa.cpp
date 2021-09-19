@@ -20,24 +20,24 @@ ActorInit Obj_Bombiwa_InitVars = {
     (ActorFunc)ObjBombiwa_Draw,
 };
 
-static CollisionCheckInfoInit sColChkInfoInit = { 0, 12, 60, 0xFF };
+static CollisionCheckInfoInit sColChkInfoInit = { 0, 12, 60, MASS_IMMOVABLE };
 
 static ColliderCylinderInit sCylinderInit = {
     {
-        0xC,
-        0x0,
-        0xD,
-        0x39,
-        0x20,
-        0x01,
+        COLTYPE_HARD,
+        AT_NONE,
+        AC_ON | AC_HARD | AC_TYPE_PLAYER,
+        OC1_ON | OC1_TYPE_ALL,
+        OC2_TYPE_2,
+        COLSHAPE_CYLINDER,
     },
     {
-        0,
+        ELEMTYPE_UNK0,
         { 0x00000000, 0x00, 0x00 },
         { 0x4FC1FFFE, 0x00, 0x00 },
-        0,
-        1,
-        1,
+        TOUCH_NONE,
+        BUMP_ON,
+        OCELEM_ON,
     },
     { 55.0f, 70.0f, 0, { 0 } },
 };
@@ -49,10 +49,14 @@ static InitChainEntry sInitChain[] = {
     ICHAIN_F32(uncullZoneDownward, 1000, ICHAIN_STOP),
 };
 
-// This is getting optimized out so im including it in the next data chunk
+#ifdef NON_MATCHING
 static s16 sEffectScales[] = {
     17, 14, 10, 8, 7, 5, 3, 2,
 };
+#else
+#pragma GLOBAL_ASM("binary/z_Obj_Bombiwa.o")
+#endif
+
 
 inline void ObjBombiwa_InitCollision(ObjBombiwa* self, GlobalContext* globalCtx) {
     Collider_InitCylinder(globalCtx, &self->collider);

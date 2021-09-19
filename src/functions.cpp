@@ -7168,8 +7168,6 @@
 
 #pragma GLOBAL_ASM("binary/ObjBlockstop_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ObjBombiwa_Update.o")
-
 #pragma GLOBAL_ASM("binary/ObjHamishi_Draw.o")
 
 #pragma GLOBAL_ASM("binary/ObjHamishi_Update.o")

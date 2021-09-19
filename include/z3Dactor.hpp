@@ -4,9 +4,11 @@
 #include "z3Dvec.hpp"
 #include "graphics.hpp"
 
+#define MASS_IMMOVABLE 0xFF // Cannot be pushed by OC collisions
+#define MASS_HEAVY 0xFE // Can only be pushed by OC collisions with IMMOVABLE and HEAVY objects.
+
 struct Actor;
 struct GlobalContext;
-
 struct LightMapper;
 
 typedef struct {
