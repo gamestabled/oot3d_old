@@ -32,7 +32,7 @@ echo "creating baserom.elf..."
 if [ ! -d "$OUTDIR/workdir" ]; then
 	mkdir "$OUTDIR/workdir"
 fi
-python tools/exefs2elf.py
+python3 tools/exefs2elf.py
 
 echo "creating baserom.s..."
 "$DEVKITARM/bin/arm-none-eabi-objdump" -D "$OUTDIR/baserom.elf" > "$OUTDIR/baserom.s"
@@ -45,4 +45,4 @@ if [ ! -d "$ASMDIR" ]; then
 fi
 
 echo "splitting asm..."
-python ./tools/split_asm.py
+python3 ./tools/split_asm.py
