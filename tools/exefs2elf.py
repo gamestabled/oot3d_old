@@ -48,11 +48,20 @@ with open('tools/e2elf.ld', 'r') as f:
 	ldscript = f.read()
 ldscript = ldscript.replace('%memorigin%', str(textBase))
 ldscript = ldscript.replace('%bsssize%', str(bssSize))
-writefile(WORKDIR + 'e2elf.ld', ldscript)
 
-writefile(WORKDIR + 'text.bin', text)
-writefile(WORKDIR + 'ro.bin', ro)
-writefile(WORKDIR + 'rw.bin', rw)
+with open(WORKDIR + 'e2elf.ld', 'w') as ldfile:
+	ldfile.write(ldscript)
+# writefile(WORKDIR + 'e2elf.ld', ldscript)
+
+with open(WORKDIR + 'text.bin', 'wb') as textfile:
+	textfile.write(text)
+with open(WORKDIR + 'ro.bin', 'wb') as rofile:
+	rofile.write(ro)
+with open(WORKDIR + 'rw.bin', 'wb') as datafile:
+	datafile.write(rw)
+# writefile(WORKDIR + 'text.bin', text)
+# writefile(WORKDIR + 'ro.bin', ro)
+# writefile(WORKDIR + 'rw.bin', rw)
 
 objfiles = ''
 for i in (('text', 'text'), ('ro', 'rodata'), ('rw', 'data')):

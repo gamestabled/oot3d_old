@@ -19,7 +19,7 @@ def run(cmd):
 
 def writefile(path, s):
     with open(path, "wb") as f:
-        f.write(str(s))
+        f.write(s)
 
 with open(WORKDIR + 'text.bin', 'rb') as b:
     b.seek(0, os.SEEK_END)
