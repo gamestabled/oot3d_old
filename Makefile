@@ -1,6 +1,13 @@
 TARGET = oot3d_usa
 
+# If COMPARE is 1, check the output md5sum after building
+COMPARE ?= 1
+# If NON_MATCHING is 1, define the NON_MATCHING C flag when building
 NON_MATCHING ?= 0
+
+ifeq ($(NON_MATCHING),1)
+  COMPARE := 0
+endif
 
 SRC_DIR ?= src
 BUILD_DIR ?= build
@@ -47,8 +54,13 @@ LKFLAGS += -mcpu=MPCore -mfloat-abi=hard -marm -T oot.ld
 
 .PHONY: dir all clean
 all: dir $(TARGET).3ds
-	cat $(TARGET).sha1 
-	@$(SHA1) $(TARGET).3ds
+#	cat $(TARGET).sha1 
+#	@$(SHA1) $(TARGET).3ds
+ifeq ($(COMPARE),1)
+	@md5sum $(BUILD_DIR)/code.bin
+	@md5sum $(BUILD_DIR)/romfs.bin
+	@md5sum -c checksum.md5
+endif
 	
 dir:
 	mkdir -p $(BUILD_DIR) $(SUBDIRS)
@@ -61,18 +73,18 @@ clean:
 
 $(BUILD_DIR)/text.o: $(CPP_OBJS)
 	@echo "linking asm..."
-	$(LK) $(LKFLAGS) -Xlinker -Map=$(TARGET).map $(CPP_OBJS) -o $@
+	$(LK) $(LKFLAGS) -nostdlib -Xlinker -Map=$(TARGET).map $(CPP_OBJS) -o $@
 
 # $(CPP_OBJS): $(CPP_SRCS)
 # 	$(CC) $(CPPFLAGS) $@ -o $<
 
 $(BUILD_DIR)/%.deps: $(SRC_DIR)/%.cpp
-	python ./tools/preproc.py $(SRC_DIR)/$*.cpp $(BUILD_DIR)/$*.deps
+	python3 ./tools/preproc.py $(SRC_DIR)/$*.cpp $(BUILD_DIR)/$*.deps
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp $(BUILD_DIR)/%.deps
 	$(CC) $(CPPFLAGS) $(SRC_DIR)/$*.cpp -S -o $(BUILD_DIR)/$*.s
 ifeq ($(NON_MATCHING),0)
-	python ./tools/partial_inlines.py $(BUILD_DIR)/$*.s
+	python3 ./tools/partial_inlines.py $(BUILD_DIR)/$*.s
 endif
 	$(AS) $(ASMFLAGS) $(BUILD_DIR)/$*.s -o $(BUILD_DIR)/$*_temp.o
 	$(LK) -r $(BUILD_DIR)/$*_temp.o $(shell cat '$(BUILD_DIR)/$*.deps') -o $(BUILD_DIR)/$*.o
@@ -81,7 +93,7 @@ endif
 $(BUILD_DIR)/code.bin: $(BUILD_DIR)/text.o
 	@echo building code.bin...
 	$(OBJCOPY) -O binary $(BUILD_DIR)/text.o $@
-	python ./tools/pad_code_binary.py
+	python3 ./tools/pad_code_binary.py
 
 $(BUILD_DIR)/romfs.bin:
 	@echo "archiving romfs..."
