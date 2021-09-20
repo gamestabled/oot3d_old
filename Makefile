@@ -69,6 +69,9 @@ clean:
 	rm -f $(TARGET).3ds
 	rm -f -r $(BUILD_DIR)
 
+setup:
+	./extract_baserom.sh
+
 # Steps
 
 $(BUILD_DIR)/text.o: $(CPP_OBJS)
