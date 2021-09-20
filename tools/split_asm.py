@@ -3,12 +3,18 @@ import sys
 import os
 import struct
 
-CC = "$DEVKITARM/bin/arm-none-eabi-gcc"
-CP = "$DEVKITARM/bin/arm-none-eabi-g++"
-OC = "$DEVKITARM/bin/arm-none-eabi-objcopy"
-OD = "$DEVKITARM/bin/arm-none-eabi-objdump"
-LD = "$DEVKITARM/bin/arm-none-eabi-ld"
-	
+if 'DEVKITARM' not in os.environ:
+    print('DEVKITARM environment variable is not set!')
+    sys.exit(1)
+
+DEVKITARM = os.environ.get('DEVKITARM')
+
+CC = DEVKITARM + "/bin/arm-none-eabi-gcc"
+CP = DEVKITARM + "/bin/arm-none-eabi-g++"
+OC = DEVKITARM + "/bin/arm-none-eabi-objcopy"
+OD = DEVKITARM + "/bin/arm-none-eabi-objdump"
+LD = DEVKITARM + "/bin/arm-none-eabi-ld"
+
 BASEROMDIR = 'baserom/'
 WORKDIR = BASEROMDIR + 'workdir/'
 BINARYDIR = 'binary/'
