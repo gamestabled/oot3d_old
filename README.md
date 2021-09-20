@@ -19,7 +19,7 @@ Discord: <https://discord.zelda64.dev>
 ## Installation
 To set up the repository, place a USA version of `The Legend of Zelda: Ocarina of Time 3D (USA)` in the root directory of the repository and name it `baserom.3ds`. Any revision (v0 or v1) and either trimmed or untrimmed roms should be able to produce a correct repository.
 
-Run `extract_baserom.sh` to extract all of the necessary materials from your rom.
+Run `make setup` to extract all of the necessary materials for building from your rom.
 
 ## Building
 Place `armcc` and `armasm` in the root directory of the repository. The particular versions of `armcc` that will produce a matching rom are still being researched, though armcc v4.0 builds 8xx seem likely. Run `make`.
