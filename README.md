@@ -2,12 +2,16 @@
 
 This is a WIP decompilation of The Legend of Zelda: Ocarina of Time 3D.
 The purpose of the project is to recreate a source code base for the game from scratch, using information found inside the game along with static and/or dynamic analysis.
-The only build currently supported is the GodMode9 "trimmed" version of `The Legend of Zelda: Ocarina of Time 3D (USA)(v0)`.
+The only build currently supported is the USA version.
 
 It builds the following ROM:
 
 
-* **oot3d_usa.3ds** `sha1: a6e831e3b8322a493c19f258099733cd7dade264`
+* **oot3d_usa.3ds**
+* **code.bin** `md5: 20c7ec6288ba0af4feb6db646c6cc6d5`
+* **romfs.bin** `md5: d2a0fa58cfb52ca9e584170195821364`
+
+For simplicity, this repository only enforces binary matching on the portions of the ROM which contain compiled source code and assets.
 
 **Note:** This repository does not include any of the assets necessary to build the ROM.
 A prior copy of the game is required to extract the needed assets.
@@ -22,7 +26,9 @@ To set up the repository, place a USA version of `The Legend of Zelda: Ocarina o
 Run `make setup` to extract all of the necessary materials for building from your rom.
 
 ## Building
-Place `armcc` and `armasm` in the root directory of the repository. The particular versions of `armcc` that will produce a matching rom are still being researched, though armcc v4.0 builds 8xx seem likely. Run `make`.
+Place `armcc` and `armasm` from RVCT4.0 [Build 821] in the root directory of the repository. These legacy tools are available for public download from ARM. Early research shows that these tools are sufficiently similar to those used to compile the original game.
+
+Run `make`.
 
 
 ## Contributing
