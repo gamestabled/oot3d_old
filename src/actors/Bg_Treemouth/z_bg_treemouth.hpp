@@ -5,9 +5,14 @@
 
 struct BgTreemouth;
 
+typedef void (*BgTreemouthActionFunc)(struct BgTreemouth*, GlobalContext*);
+
 typedef struct BgTreemouth {
-    /* 0x0000 */ Actor actor;
-    /* 0x01A4 */ char unk_1A4[0x28];
+    /* 0x0000 */ DynaPolyActor dyna;
+    /* 0x01BC */ BgTreemouthActionFunc actionFunc;
+    /* 0x01C0 */ f32 unk_1C0;
+    /* 0x01C4 */ SkeletonAnimationModel* skelAnimModel;
+    /* 0x01C8 */ char unk_1C8[0x4];
 } BgTreemouth; // size = 0x1CC
 
 extern ActorInit Bg_Treemouth_InitVars;

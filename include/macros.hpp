@@ -7,4 +7,11 @@
 #define SQ(x) ((x)*(x))
 #define ABS(x) ((x) >= 0 ? (x) : -(x))
 
+#define LINK_IS_ADULT (gSaveContext.linkAge == 0)
+#define LINK_IS_CHILD (gSaveContext.linkAge == 1)
+
+#define GET_PLAYER(globalCtx) ((Player*)(globalCtx)->actorCtx.actorLists[ACTORCAT_PLAYER].head)
+
+#define ADJUST_F32_FOR_FRAMERATE(f) ((2.0f * f) / 3.0f)
+
 #endif

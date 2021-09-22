@@ -91,7 +91,7 @@ ifeq ($(NON_MATCHING),0)
 endif
 	$(AS) $(ASMFLAGS) $(BUILD_DIR)/$*.s -o $(BUILD_DIR)/$*_temp.o
 	$(LK) -r $(BUILD_DIR)/$*_temp.o $(shell cat '$(BUILD_DIR)/$*.deps') -o $(BUILD_DIR)/$*.o
-	$(OBJCOPY) --rename-section .data=$*.data --rename-section .constdata=$*.rodata $(BUILD_DIR)/$*.o
+	$(OBJCOPY) --rename-section .data=$*.data --rename-section .constdata=$*.rodata --rename-section .bss=$*.bss $(BUILD_DIR)/$*.o
 
 $(BUILD_DIR)/code.bin: $(BUILD_DIR)/text.o
 	@echo building code.bin...
