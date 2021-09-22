@@ -42,13 +42,13 @@ void EnVase_Destroy(Actor* actor, GameState* state) {
 
 void EnVase_Draw(Actor* actor, GameState* state) {
     EnVase* self = (EnVase*)actor;
-    nn_math_MTX34 modelMtx;
+    MTX34 modelMtx;
 
     MTX34CopyAsm(&modelMtx, &self->actor.modelMtx);
     if (self->skelAnimModel != NULL) {
-        self->skelAnimModel->unk_AC = '\x01';
-        FUN_003721e0(self->skelAnimModel, &modelMtx);
-        FUN_00372170(self->skelAnimModel, 0);
+        self->skelAnimModel->SetUnkAC(1);
+        self->skelAnimModel->FUN_003721e0(&modelMtx);
+        self->skelAnimModel->FUN_00372170(0);
     }
 }
 }

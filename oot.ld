@@ -2394,6 +2394,7 @@ SECTIONS
 		*(i.Camera_Demo8)
 		*(i.Camera_Demo9)
 		*(i.BgDyYoseizo_Give_Reward)
+		*(i.FUN_002021a0)
 		*(i.FUN_002021d4)
 		*(i.FUN_00202274)
 		*(i.FUN_0020229c)
@@ -2667,6 +2668,7 @@ SECTIONS
 		*(i.FUN_00218b94)
 		*(i.FUN_00218c88)
 		*(i.FUN_00218d60)
+		*(i.FUN_00218d88)
 		*(i.FUN_00218dbc)
 		*(i.FUN_00218de4)
 		*(i.FUN_00218e50)
@@ -6769,7 +6771,7 @@ SECTIONS
 		*(i.FUN_0034c998)
 		*(i.FUN_0034cbb4)
 		*(i.Flags_SetEventChkInf)
-		*(i.FUN_0034cc28)
+		*(i.Actor_IsFacingAndNearPlayer)
 		*(i.FUN_0034cc78)
 		*(i.FUN_0034d4b0)
 		*(i.FUN_0034d628)
@@ -6862,7 +6864,7 @@ SECTIONS
 		*(i.BgZg_Destroy)
 		*(i.FUN_00350f34)
 		*(i.EnGb_Destroy)
-		*(i.DynaPolyInfo_Free)
+		*(i.DynaPoly_DeleteBgActor)
 		*(i.Actor_ProcessInitChain)
 		*(i.FUN_003510f0)
 		*(i.FUN_0035123c)
@@ -6895,7 +6897,7 @@ SECTIONS
 		*(i.Animation_Change)
 		*(i.FUN_00353190)
 		*(i.FUN_00353214)
-		*(i.FUN_003532c0)
+		*(i._ZN7ZARInfo12FUN_003532c0Ei)
 		*(i.DynaPolyActor_Init)
 		*(i.FUN_00353310)
 		*(i.FUN_00353484)
@@ -7240,7 +7242,7 @@ SECTIONS
 		*(i.__cxa_guard_acquire)
 		*(i.FUN_003679d0)
 		*(i.Gameplay_CameraSetAtEye)
-		*(i.FUN_00367bfc)
+		*(i._ZN13GlobalContext16SetCutsceneStateEh)
 		*(i.OceffWipe4_Destroy)
 		*(i.FUN_00367c48)
 		*(i.FUN_00367c54)
@@ -7472,8 +7474,8 @@ SECTIONS
 		*(i.Matrix_UpdatePosition)
 		*(i.FUN_003720a4)
 		*(i.FUN_003720b8)
-		*(i.FUN_00372170)
-		*(i.FUN_003721e0)
+		*(i._ZN22SkeletonAnimationModel12FUN_00372170Ei)
+		*(i._ZN22SkeletonAnimationModel12FUN_003721e0EP5MTX34)
 		*(i.FUN_0037220c)
 		*(i.MTX34CopyAsm)
 		*(i.FUN_00372244)
@@ -7536,10 +7538,10 @@ SECTIONS
 		*(i.FUN_00374bb8)
 		*(i.FUN_00374be8)
 		*(i.Audio_PlaySoundGeneral)
-		*(i.GetCutsceneContextState)
+		*(i._ZN13GlobalContext16GetCutsceneStateEv)
 		*(i.Actor_SetScale)
-		*(i.FUN_0037573c)
-		*(i.FUN_00375750)
+		*(i._ZN13GlobalContext12FUN_0037573cEPv)
+		*(i._ZN7ZARInfo13GetQDBByIndexEi)
 		*(i.Gameplay_InCsMode)
 		*(i.CollisionCheck_SpawnShieldParticles)
 		*(i.FUN_0037587c)
@@ -11908,7 +11910,7 @@ SECTIONS
 		*(ASM_z_Bg_Sst_Floor.data)
 		*(ASM_z_Bg_Toki_Hikari.data)
 		*(ASM_z_Bg_Toki_Swd.data)
-		*(ASM_z_Bg_Treemouth.data)
+		*(actors/Bg_Treemouth/z_bg_treemouth.data)
 		*(ASM_z_Bg_Umajump.data)
 		*(ASM_z_Bg_Vb_Sima.data)
 		*(ASM_z_Bg_Ydan_Hasi.data)
@@ -11932,6 +11934,8 @@ SECTIONS
 		*(ASM_z_camera)
 		*(ASM_z_collision)
 		*(ASM_z_demo)
+		*(.data_51b2f4)
+		*(ASM_data_51B2F8)
 		*(ASM_z_Demo_6K)
 		*(ASM_z_Demo_Du)
 		*(ASM_z_Demo_Ec)
@@ -11989,10 +11993,18 @@ SECTIONS
 		*(actors/Obj_Bombiwa/z_obj_bombiwa.data)
 		*(ASM_z_Obj_Bombiwa)
 		*(ASM_data_534EF4)
+		*(.data_54ac20)
+		*(.data_54ac24)
+		*(.data_54ac25)
+		*(.data_54ac26)
+		*(.data_54ac27)
+		*(ASM_data_54AC28)
 	}
 
 	.bss : {
-		. += 0x02D738;
+		. += 0x00F8C8;
+		*(actors/Bg_Treemouth/z_bg_treemouth.bss)
+		. += 0x01DE58;
 		*(z_common_data.bss)
 	}
 
@@ -12013,5 +12025,10 @@ SECTIONS
 		*(.comment)
 		*(.arm_vfe_header)
 		*(.debug_frame)
+
+
+		/* INLINES THAT HAVENT FOUND THEIR HOME YET */
+		*(i._ZN15CollisionHeader8SetUnk00EPvPS_)
+		*(i.__cxa_guard_release)
 	}
 }

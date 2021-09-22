@@ -1602,8 +1602,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_0015cd7c.o")
 
-#pragma GLOBAL_ASM("binary/BgTreemouth_DoNothing.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0015d054.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0015d0fc.o")
@@ -1802,13 +1800,9 @@
 
 #pragma GLOBAL_ASM("binary/BgDyYoseizo_SetupSpinGrow_Reward.o")
 
-#pragma GLOBAL_ASM("binary/FUN_0016e5a4.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0016e630.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0016e678.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0016e7f8.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0016e964.o")
 
@@ -2339,8 +2333,6 @@
 #pragma GLOBAL_ASM("binary/FUN_00193f0c.o")
 
 #pragma GLOBAL_ASM("binary/BgDyYoseizo_SpinGrowSetupGive_Reward.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001944c0.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0019454c.o")
 
@@ -3161,8 +3153,6 @@
 #pragma GLOBAL_ASM("binary/FUN_001e3ccc.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001e45a4.o")
-
-#pragma GLOBAL_ASM("binary/FUN_001e466c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_001e4790.o")
 
@@ -10486,7 +10476,7 @@
 
 #pragma GLOBAL_ASM("binary/Flags_SetEventChkInf.o")
 
-#pragma GLOBAL_ASM("binary/FUN_0034cc28.o")
+#pragma GLOBAL_ASM("binary/Actor_IsFacingAndNearPlayer.o")
 
 #pragma GLOBAL_ASM("binary/FUN_0034cc78.o")
 
@@ -10646,7 +10636,7 @@
 
 #pragma GLOBAL_ASM("binary/FUN_00350f34.o")
 
-#pragma GLOBAL_ASM("binary/DynaPolyInfo_Free.o")
+#pragma GLOBAL_ASM("binary/DynaPoly_DeleteBgActor.o")
 
 #pragma GLOBAL_ASM("binary/Actor_ProcessInitChain.o")
 
@@ -10711,8 +10701,6 @@
 #pragma GLOBAL_ASM("binary/FUN_00353190.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00353214.o")
-
-#pragma GLOBAL_ASM("binary/FUN_003532c0.o")
 
 #pragma GLOBAL_ASM("binary/DynaPolyActor_Init.o")
 
@@ -11400,8 +11388,6 @@
 
 #pragma GLOBAL_ASM("binary/Gameplay_CameraSetAtEye.o")
 
-#pragma GLOBAL_ASM("binary/FUN_00367bfc.o")
-
 #pragma GLOBAL_ASM("binary/FUN_00367c48.o")
 
 #pragma GLOBAL_ASM("binary/FUN_00367c54.o")
@@ -11854,10 +11840,6 @@
 
 #pragma GLOBAL_ASM("binary/FUN_003720b8.o")
 
-#pragma GLOBAL_ASM("binary/FUN_00372170.o")
-
-#pragma GLOBAL_ASM("binary/FUN_003721e0.o")
-
 #pragma GLOBAL_ASM("binary/FUN_0037220c.o")
 
 #pragma GLOBAL_ASM("binary/MTX34CopyAsm.o")
@@ -11976,13 +11958,7 @@
 
 #pragma GLOBAL_ASM("binary/Audio_PlaySoundGeneral.o")
 
-#pragma GLOBAL_ASM("binary/GetCutsceneContextState.o")
-
 #pragma GLOBAL_ASM("binary/Actor_SetScale.o")
-
-#pragma GLOBAL_ASM("binary/FUN_0037573c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_00375750.o")
 
 #pragma GLOBAL_ASM("binary/Gameplay_InCsMode.o")
 
@@ -14359,8 +14335,6 @@
 #pragma GLOBAL_ASM("binary/FUN_003f450c.o")
 
 #pragma GLOBAL_ASM("binary/FUN_003f471c.o")
-
-#pragma GLOBAL_ASM("binary/FUN_003f48c4.o")
 
 #pragma GLOBAL_ASM("binary/FUN_003f4a3c.o")
 

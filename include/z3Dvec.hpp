@@ -29,11 +29,19 @@ typedef struct {
 
 typedef struct {
     f32 data[3][4];
-} nn_math_MTX34;
+} MTX34;
 
 typedef struct {
     f32 data[4][4];
-} nn_math_MTX44;
+} MTX44;
 
+class Vector3f {
+public:
+    Vector3f(f32 x, f32 y, f32 z) : x(x), y(y), z(z) {}
+
+    f32 x;
+    f32 y;
+    f32 z;
+};
 
 #endif

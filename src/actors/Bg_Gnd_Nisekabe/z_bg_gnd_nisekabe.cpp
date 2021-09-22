@@ -23,7 +23,7 @@ ActorInit Bg_Gnd_Nisekabe_InitVars = {
 void BgGndNisekabe_Init(Actor* actor, GameState* state) {
     BgGndNisekabe* self = (BgGndNisekabe*)actor;
     GlobalContext* globalCtx = (GlobalContext*)state;
-  
+
     Actor_SetScale(&self->actor, 0.1);
     self->actor.uncullZoneForward = 3000.0;
     switch (self->actor.params & 0xFF) {
@@ -58,19 +58,19 @@ void BgGndNisekabe_Update(Actor* actor, GameState* state) {
 
 void BgGndNisekabe_Draw(Actor* actor, GameState* state) {
     BgGndNisekabe* self = (BgGndNisekabe*)actor;
-    nn_math_MTX34 modelMtx;
+    MTX34 modelMtx;
 
     MTX34CopyAsm(&modelMtx, &self->actor.modelMtx);
     if ((self->actor.flags & 0x80) == 0x80) {
         if (self->skelAnimModel != NULL) {
-            self->skelAnimModel->unk_AC = 1;
-            FUN_003721e0(self->skelAnimModel, &modelMtx);
-            FUN_00372170(self->skelAnimModel, 0);
+            self->skelAnimModel->SetUnkAC(1);
+            self->skelAnimModel->FUN_003721e0(&modelMtx);
+            self->skelAnimModel->FUN_00372170(0);
         }
     } else if (self->skelAnimModel != NULL) {
-        self->skelAnimModel->unk_AC = 1;
-        FUN_003721e0(self->skelAnimModel, &modelMtx);
-        FUN_00372170(self->skelAnimModel, 0);
+        self->skelAnimModel->SetUnkAC(1);
+        self->skelAnimModel->FUN_003721e0(&modelMtx);
+        self->skelAnimModel->FUN_00372170(0);
     }
 }
 }

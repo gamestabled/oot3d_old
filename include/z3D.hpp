@@ -9,9 +9,11 @@
 #include "z3Danimation.hpp"
 #include "z3Dcamera.hpp"
 #include "z3Dcollision_check.hpp"
+#include "z3Dbgcheck.hpp"
 #include "color.hpp"
 #include "math.hpp"
 #include "ichain.hpp"
+#include "stddef.hpp"
 
 typedef struct {
     /* 0x00 */ u8 buttonItems[5]; //B,Y,X,I,II
@@ -238,7 +240,7 @@ typedef struct {
 
 typedef struct {
     /* 0x00 */ u32    length; // number of actors loaded of this type
-    /* 0x04 */ Actor* first;  // pointer to first actor of this type
+    /* 0x04 */ Actor* head;  // pointer to first actor of this type
 } ActorListEntry; // size = 0x08
 
 typedef struct {
@@ -249,7 +251,7 @@ typedef struct {
     /* 0x0004 */ char   unk_04[0x04];
     /* 0x0008 */ u8     total; // total number of actors loaded
     /* 0x0009 */ char   unk_09[0x03];
-    /* 0x000C */ ActorListEntry actorList[12];
+    /* 0x000C */ ActorListEntry actorLists[12];
     // /* 0x006C */ TargetContext targetCtx;
     /* 0x006C */ char   unk_6C[0x130];
     struct {
@@ -270,14 +272,23 @@ typedef struct CutsceneContext {
     /* 0x00 */ char  unk_00[0x4];
     /* 0x04 */ void* segment;
     /* 0x08 */ u8    state;
-    /* 0x09 */ char  unk_09[0x13];
+    /* 0x09 */ char  unk_09[0x0B];
+    /* 0x14 */ s32   unk_14;
+    /* 0x18 */ s32   unk_18;
     /* 0x1C */ f32   unk_1C;
     /* 0x20 */ u16   frames;
     /* 0x22 */ u16   unk_22;
     /* 0x24 */ s32   unk_24;
-    /* 0x28 */ char  unk_28[0x18];
+    /* 0x28 */ u16   unk_28;
+    /* 0x2A */ u16   unk_2A;
+    /* 0x2C */ u16   unk_2C;
+    /* 0x2E */ u16   unk_2E;
+    /* 0x30 */ char  unk_30[0x04];
+    /* 0x34 */ s8    unk_34;
+    /* 0x35 */ s8    unk_35;
+    /* 0x36 */ char  unk_36[0x0A];
     /* 0x40 */ CsCmdActorAction* linkAction;
-    /* 0x44 */ CsCmdActorAction* actorActions[10]; // "npcdemopnt"
+    /* 0x44 */ CsCmdActorAction* npcActions[10]; // "npcdemopnt"
 } CutsceneContext; // size = 0x6C
 
 typedef struct OcLine OcLine; //TODO
@@ -296,23 +307,40 @@ typedef struct {
     /* 0x1C4 */ Collider* colOc[COLLISION_CHECK_OC_MAX];
     /* 0x28C */ s32 colOcLineCount;
     /* 0x290 */ OcLine* colOcLine[COLLISION_CHECK_OC_LINE_MAX];
-
 } CollisionCheckContext; // size = 0x29C
 
-typedef struct ZARInfo {
+struct ZARFileTypeEntry {
+    /* 0x00 */ u32 numFiles;
+    /* 0x04 */ u32 filesListOffset;
+    /* 0x08 */ u32 typeNameOffset;
+    /* 0x0C */ u32 unk_0C;
+};
+
+struct ZARInfo {
+    void* FUN_003532c0(s32 index);
+    void* GetQDBByIndex(s32 index);
+
     /* 0x00 */ void* buf;
-    /* 0x04 */ char unk_04[0x48];
+    /* 0x04 */ char unk_04[0x08];
+    /* 0x0C */ ZARFileTypeEntry* fileTypes;
+    /* 0x10 */ char unk_10[0xC];
+    /* 0x1C */ s32 filetypeMap[11];
+    /* 0x48 */ char unk_48[0x04];
     /* 0x4C */ void*** cmbPtrs;  /* Really, this is a pointer to an array of pointers to CMB managers,
                                     the first member of which is a pointer to the CMB data */
     /* 0x50 */ void*** csabPtrs; /* Same as above but for CSAB */
     /* 0x54 */ char unk_54[0x04];
     /* 0x58 */ void*** cmabPtrs; /* Same as above but for CMAB */
-    /* 0x5C */ char unk_5C[0x14];
-} ZARInfo; // size = 0x70
+    /* 0x5C */ void*** unk_5C;
+    /* 0x60 */ void*** qdbPtrs;
+    /* 0x64 */ char unk_64[0x0C];
+}; // size = 0x70
 
 typedef struct {
     /* 0x00 */ s16 id;
-    /* 0x02 */ char unk_02[0x0E];
+    /* 0x02 */ char unk_02[0x06];
+    /* 0x08 */ s32 unk_08;
+    /* 0x0C */ char unk_0C[0x4];
     /* 0x10 */ ZARInfo zarInfo;
 } ObjectStatus; // size = 0x80
 
@@ -369,6 +397,12 @@ typedef struct {
     /* 0x00 */ char unk_00[0x40];
 } subGlobalContext_5FCC; // size at least 0x40
 
+typedef struct {
+    /* 0x000 */ char unk_00[0x7C0];
+    /* 0x7C0 */ u16 unk_7C0;
+    /* 0x7C2 */ char unk_7C2[0x796];
+} RoomContext; // size 0xF58
+
 // Global Context (ram start: 0871E840)
 typedef struct GlobalContext {
     /* 0x0000 */ GameState state;
@@ -394,7 +428,9 @@ typedef struct GlobalContext {
     /* 0x3600 */ f32                   unk_3600;
     /* 0x3604 */ char                  unk_3604[0x0454];
     /* 0x3A58 */ ObjectContext         objectCtx;
-    /* 0x43DC */ char                  unk_43DC[0x1824];
+    /* 0x43DC */ char                  unk_43DC[0x0854];
+    /* 0x4C30 */ RoomContext           roomCtx;
+    /* 0x5B88 */ char                  unk_5B88[0x0078];
     /* 0x5C00 */ u8                    linkAgeOnLoad;
     /* 0x5C01 */ char                  unk_5C01[0x002C];
     /* 0x5C2D */ s8                    sceneLoadFlag; // "fade_direction"
@@ -406,6 +442,18 @@ typedef struct GlobalContext {
     /* 0x5F14 */ char                  unk_5F14[0x00B8];
     /* 0x5FCC */ subGlobalContext_5FCC unk_5FCC;
     //TODO
+
+    ObjectStatus* GetObjectStatus(u8 objBankIdx) {
+        if ((objBankIdx < OBJECT_EXCHANGE_BANK_MAX) && (objectCtx.status[objBankIdx].unk_08 != 0)) {
+            return &objectCtx.status[objBankIdx];
+        } else {
+            return (ObjectStatus*)NULL;
+        }
+    }
+
+    void FUN_0037573c(void* csSegment);
+    u8 GetCutsceneState();
+    void SetCutsceneState(u8 csState);
 } GlobalContext; // size = 0x5F14 TODO
 
 typedef struct StaticContext {
@@ -416,6 +464,13 @@ typedef struct StaticContext {
     /* 0x0FD2 */ char unk_FD2[0x0602];
 } StaticContext; //size 0x15D4
 // _Static_assert(sizeof(StaticContext) == 0x15D4, "Static Context size");
+
+typedef enum {
+    DPM_UNK = 0,
+    DPM_PLAYER = 1,
+    DPM_ENEMY = 2,
+    DPM_UNK3 = 3
+} DynaPolyMoveFlag;
 
 typedef struct {
     /* 0x00 */ s8  scene;
@@ -443,6 +498,16 @@ typedef struct {
     /* 0x02 */ u8 flags2;
     /* 0x03 */ u8 flags3;
 } RestrictionFlags;
+
+struct unk_51b2f4 {
+    char unk_00[0x100];
+    s16 unk_100[0x100];
+    char unk_300[0x12D4];
+
+    s32 ConvertFrameCount(f32 frames) {
+        return (s32)(frames / unk_100[0x8] + 0.5f);
+    }
+}; // size 0x15D4
 
 #define gStaticContext (*(StaticContext*)0x08080010)
 #define gObjectTable ((ObjectFile*)0x53CCF4)

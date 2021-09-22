@@ -14,6 +14,14 @@ typedef struct {
 } CsCmdActorAction; // size = 0x30
 
 typedef enum {
+    CS_STATE_IDLE,
+    CS_STATE_SKIPPABLE_INIT,
+    CS_STATE_SKIPPABLE_EXEC,
+    CS_STATE_UNSKIPPABLE_INIT,
+    CS_STATE_UNSKIPPABLE_EXEC
+} CutsceneState;
+
+typedef enum {
     /* 0x00 */ OCARINA_ACTION_UNK_0,
     /* 0x01 */ OCARINA_ACTION_FREE_PLAY_OCARINA,
     /* 0x02 */ OCARINA_ACTION_MINUET,

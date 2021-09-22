@@ -1,6 +1,8 @@
 #ifndef _SKELETON_ANIMATION_MODEL_H_
 #define _SKELETON_ANIMATION_MODEL_H_
 
+#include "z3Dvec.hpp"
+
 class SkeletonAnimationModel_unk_04 {
     char unk_00[0x34];
 }; // size = 0x34
@@ -40,6 +42,13 @@ class SkeletonAnimationModel_unk_14 {
 
 class SkeletonAnimationModel {
 public:
+    void SetUnkAC(u8 arg1) {
+        unk_AC = arg1;
+    }
+
+    void FUN_003721e0(MTX34* modelMtx);
+    void FUN_00372170(s32 arg1);
+
     void* vTable;
     SkeletonAnimationModel_unk_04* unk_04;
     SkeletonAnimationModel_unk_08* unk_08;
@@ -57,8 +66,8 @@ public:
     f32 unk_40;
     f32 unk_44;
     f32 unk_48;
-    nn_math_MTX34 unk_4C;
-    nn_math_MTX34 unk_7C;
+    MTX34 unk_4C;
+    MTX34 unk_7C;
     u8 unk_AC;
     char unk_AD[0x3];
 }; // size = 0xB0

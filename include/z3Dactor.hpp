@@ -157,7 +157,7 @@ typedef struct Actor {
     /* 0x13C */ ActorFunc update; // Update Routine. Called by `Actor_UpdateAll`
     /* 0x140 */ ActorFunc draw; // Draw Routine. Called by `Actor_Draw`
     /* 0x144 */ ActorOverlay* overlayEntry; // Pointer to the overlay table entry for this actor
-    /* 0x148 */ nn_math_MTX34 modelMtx; // Transforms model space coordinates to world coordinates
+    /* 0x148 */ MTX34 modelMtx; // Transforms model space coordinates to world coordinates
     /* 0x178 */ void*         unk_178; // Unknown pointer type
     /* 0x17C */ void*         unk_17C[6]; // Unknown pointer type
     /* 0x194 */ u32           unk_194;
