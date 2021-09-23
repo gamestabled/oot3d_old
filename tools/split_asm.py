@@ -29,11 +29,11 @@ def writefile(path, s):
 
 with open(WORKDIR + 'text.bin', 'rb') as b:
     with open('function_addresses.txt') as funcs:
-        Lines = funcs.readlines()
-        for i in range(0, len(Lines)):
-            funcName = Lines[i].split(',')[0]
-            funcStart = int(Lines[i].split(',')[1].strip(), 16) - 0x100000
-            funcEnd = int(Lines[i].split(',')[2].strip(), 16) - 0x100000
+        for line in funcs:
+            splitLine = line.split(',')
+            funcName = splitLine[0]
+            funcStart = int(splitLine[1].strip(), 16) - 0x100000
+            funcEnd = int(splitLine[2].strip(), 16) - 0x100000
             funcSize = funcEnd - funcStart
             b.seek(funcStart)
             funcBin = b.read(funcSize)
@@ -43,11 +43,11 @@ with open(WORKDIR + 'text.bin', 'rb') as b:
 
 with open(WORKDIR + 'ro.bin', 'rb') as b:
     with open('rodata_chunks.txt') as rodata:
-        Lines = rodata.readlines()
-        for i in range(0, len(Lines)):
-            chunkName = Lines[i].split(',')[0]
-            chunkStart = int(Lines[i].split(',')[1].strip(), 16) - 0x4CA000
-            chunkEnd = int(Lines[i].split(',')[2].strip(), 16) - 0x4CA000
+        for line in rodata:
+            splitLine = line.split(',')
+            chunkName = splitLine[0]
+            chunkStart = int(splitLine[1].strip(), 16) - 0x4CA000
+            chunkEnd = int(splitLine[2].strip(), 16) - 0x4CA000
             chunkSize = chunkEnd - chunkStart
             b.seek(chunkStart)
             chunkBin = b.read(chunkSize)
@@ -55,12 +55,12 @@ with open(WORKDIR + 'ro.bin', 'rb') as b:
             run('{0} -I binary -O elf32-littlearm --rename-section .data="ASM_{1}",alloc,load,readonly,data,contents --redefine-sym _binary_binary_{1}_bin_start={1} "{2}{3}.bin" "{2}{3}.o"'.format(OC, chunkName, BINARYDIR, chunkName))
 
 with open(WORKDIR + 'rw.bin', 'rb') as b:
-    with open('data_chunks.txt') as rodata:
-        Lines = rodata.readlines()
-        for i in range(0, len(Lines)):
-            chunkName = Lines[i].split(',')[0]
-            chunkStart = int(Lines[i].split(',')[1].strip(), 16) - 0x4F9000
-            chunkEnd = int(Lines[i].split(',')[2].strip(), 16) - 0x4F9000
+    with open('data_chunks.txt') as data:
+        for line in data:
+            splitLine = line.split(',')
+            chunkName = splitLine[0]
+            chunkStart = int(splitLine[1].strip(), 16) - 0x4F9000
+            chunkEnd = int(splitLine[2].strip(), 16) - 0x4F9000
             chunkSize = chunkEnd - chunkStart
             b.seek(chunkStart)
             chunkBin = b.read(chunkSize)
