@@ -1,7 +1,8 @@
 # convert exefs to elf
 import sys
 import os
-import struct
+import shlex
+from subprocess import run
 
 if 'DEVKITARM' not in os.environ:
     print('DEVKITARM environment variable is not set!')
@@ -20,9 +21,6 @@ WORKDIR = BASEROMDIR + 'workdir/'
 BINARYDIR = 'binary/'
 ASMDIR = 'asm/'
 
-def run(cmd):
-    os.system(cmd)
-
 def writefile(path, s):
     with open(path, "wb") as f:
         f.write(s)
@@ -38,8 +36,12 @@ with open(WORKDIR + 'text.bin', 'rb') as b:
             b.seek(funcStart)
             funcBin = b.read(funcSize)
             writefile(BINARYDIR + funcName + '.bin', funcBin)
-            run('{0} -I binary -O elf32-littlearm --rename-section .data="i.{1}" --redefine-sym _binary_binary_{1}_bin_start={1} --globalize-symbol={1} "{2}{3}.bin" "{2}{3}.o"'.format(OC, funcName, BINARYDIR, funcName))
-            run('{0} -D "{1}{2}.o" > "{3}{2}.s"'.format(OD, BINARYDIR, funcName, ASMDIR))
+
+            run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data="i.{funcName}"',
+                 '--redefine-sym', f'_binary_binary_{funcName}_bin_start={funcName}',
+                 f'--globalize-symbol={funcName}', f'{BINARYDIR}{funcName}.bin', f'{BINARYDIR}{funcName}.o'])
+            with open(f'{ASMDIR}{funcName}.s', 'w') as asmfile:
+                run([OD, '-D', f'{BINARYDIR}{funcName}.o'], stdout=asmfile)
 
 with open(WORKDIR + 'ro.bin', 'rb') as b:
     with open('rodata_chunks.txt') as rodata:
@@ -52,7 +54,8 @@ with open(WORKDIR + 'ro.bin', 'rb') as b:
             b.seek(chunkStart)
             chunkBin = b.read(chunkSize)
             writefile(BINARYDIR + chunkName + '.bin', chunkBin)
-            run('{0} -I binary -O elf32-littlearm --rename-section .data="ASM_{1}",alloc,load,readonly,data,contents --redefine-sym _binary_binary_{1}_bin_start={1} "{2}{3}.bin" "{2}{3}.o"'.format(OC, chunkName, BINARYDIR, chunkName))
+            run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data="ASM_{chunkName}",alloc,load,readonly,data,contents',
+                 '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{BINARYDIR}{chunkName}.bin', f'{BINARYDIR}{chunkName}.o'])
 
 with open(WORKDIR + 'rw.bin', 'rb') as b:
     with open('data_chunks.txt') as data:
@@ -65,4 +68,5 @@ with open(WORKDIR + 'rw.bin', 'rb') as b:
             b.seek(chunkStart)
             chunkBin = b.read(chunkSize)
             writefile(BINARYDIR + chunkName + '.bin', chunkBin)
-            run('{0} -I binary -O elf32-littlearm --rename-section .data="ASM_{1}",alloc,load,data,contents --redefine-sym _binary_binary_{1}_bin_start={1} "{2}{3}.bin" "{2}{3}.o"'.format(OC, chunkName, BINARYDIR, chunkName))
+            run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data="ASM_{chunkName}",alloc,load,data,contents',
+                 '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{BINARYDIR}{chunkName}.bin', f'{BINARYDIR}{chunkName}.o'])
