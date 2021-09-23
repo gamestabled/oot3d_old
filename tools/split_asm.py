@@ -28,16 +28,6 @@ def writefile(path, s):
         f.write(s)
 
 with open(WORKDIR + 'text.bin', 'rb') as b:
-    b.seek(0, os.SEEK_END)
-    textSize = b.tell()
-    b.seek(0)
-    # linkerscript = ''
-    # linkerscript += 'OUTPUT_FORMAT("elf32-littlearm", "elf32-littlearm", "elf32-littlearm")\n'
-    # linkerscript += 'OUTPUT_ARCH(arm)\n'
-    # linkerscript += 'SECTIONS\n'
-    # linkerscript += '{\n'
-    # linkerscript += '\t. = 0x100000;\n'
-    # linkerscript += '\t.text : {\n'
     with open('function_addresses.txt') as funcs:
         Lines = funcs.readlines()
         for i in range(0, len(Lines)):
@@ -50,11 +40,6 @@ with open(WORKDIR + 'text.bin', 'rb') as b:
             writefile(BINARYDIR + funcName + '.bin', funcBin)
             run('{0} -I binary -O elf32-littlearm --rename-section .data="i.{1}" --redefine-sym _binary_binary_{1}_bin_start={1} --globalize-symbol={1} "{2}{3}.bin" "{2}{3}.o"'.format(OC, funcName, BINARYDIR, funcName))
             run('{0} -D "{1}{2}.o" > "{3}{2}.s"'.format(OD, BINARYDIR, funcName, ASMDIR))
-            # linkerscript += '\t\t*({0})\n'.format('ASM_' + funcName)
-    # linkerscript += '\t}\n'
-    # linkerscript += '}\n'
-    # with open('oot.ld', 'w') as l:
-        # l.write(linkerscript)
 
 with open(WORKDIR + 'ro.bin', 'rb') as b:
     with open('rodata_chunks.txt') as rodata:
