@@ -50,11 +50,11 @@ static InitChainEntry sInitChain[] = {
 };
 
 #ifdef NON_MATCHING
-static s16 sEffectScales[] = {
+static
+#else
+s16 sEffectScales[] = {
     17, 14, 10, 8, 7, 5, 3, 2,
 };
-#else
-#pragma GLOBAL_ASM("binary/z_Obj_Bombiwa.o")
 #endif
 
 inline void ObjBombiwa_InitCollision(ObjBombiwa* self, GlobalContext* globalCtx) {
