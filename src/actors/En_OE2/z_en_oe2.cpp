@@ -22,7 +22,7 @@ ActorInit En_OE2_InitVars = {
     (ActorFunc)EnOE2_Draw,
 };
 
-inline void EnOE2_SetupAction(EnOE2* self, EnOE2ActionFunc actionFunc) {
+static void EnOE2_SetupAction(EnOE2* self, EnOE2ActionFunc actionFunc) {
     self->actionFunc = actionFunc;
 }
 

@@ -57,7 +57,7 @@ s16 sEffectScales[] = {
 };
 #endif
 
-inline void ObjBombiwa_InitCollision(ObjBombiwa* self, GlobalContext* globalCtx) {
+static void ObjBombiwa_InitCollision(ObjBombiwa* self, GlobalContext* globalCtx) {
     Collider_InitCylinder(globalCtx, &self->collider);
     Collider_SetCylinder(globalCtx, &self->collider, &self->actor, &sCylinderInit);
     Collider_UpdateCylinder(&self->actor, &self->collider);
@@ -93,7 +93,7 @@ void ObjBombiwa_Destroy(Actor* actor, GameState* state) {
 }
 
 #ifdef NON_MATCHING
-inline void ObjBombiwa_Break(ObjBombiwa* self, GlobalContext* globalCtx) {
+static void ObjBombiwa_Break(ObjBombiwa* self, GlobalContext* globalCtx) {
     Vec3f pos;
     Vec3f velocity;
     s16 arg5;

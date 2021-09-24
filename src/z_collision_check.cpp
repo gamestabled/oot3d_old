@@ -3,25 +3,25 @@ extern "C" {
 #include "math.hpp"
 #include "functions.hpp"
 
-inline s32 Collider_DestroyBase(GlobalContext* globalCtx, Collider* collider) {
+static s32 Collider_DestroyBase(GlobalContext* globalCtx, Collider* collider) {
     return 1;
 }
 
-inline s32 Collider_DestroyTouch(GlobalContext* globalCtx, ColliderTouch* touch) {
+static s32 Collider_DestroyTouch(GlobalContext* globalCtx, ColliderTouch* touch) {
     return 1;
 }
 
-inline s32 Collider_DestroyBump(GlobalContext* globalCtx, ColliderBump* bump) {
+static s32 Collider_DestroyBump(GlobalContext* globalCtx, ColliderBump* bump) {
     return 1;
 }
 
-inline s32 Collider_DestroyInfo(GlobalContext* globalCtx, ColliderInfo* info) {
+static s32 Collider_DestroyInfo(GlobalContext* globalCtx, ColliderInfo* info) {
     Collider_DestroyTouch(globalCtx, &info->toucher);
     Collider_DestroyBump(globalCtx, &info->bumper);
     return 1;
 }
 
-inline s32 Collider_DestroyCylinderDim(GlobalContext* globalCtx, Cylinderf* dim) {
+static s32 Collider_DestroyCylinderDim(GlobalContext* globalCtx, Cylinderf* dim) {
     return 1;
 }
 

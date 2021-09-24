@@ -36,7 +36,7 @@ static InitChainEntry sInitChain[] = {
     ICHAIN_F32(uncullZoneDownward, 300, ICHAIN_STOP),
 };
 
-inline void BgTreemouth_SetupAction(BgTreemouth* self, BgTreemouthActionFunc actionFunc) {
+static void BgTreemouth_SetupAction(BgTreemouth* self, BgTreemouthActionFunc actionFunc) {
     self->actionFunc = actionFunc;
 }
 
