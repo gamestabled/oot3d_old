@@ -1,7 +1,26 @@
 # convert exefs to elf
-import sys
 import os
-import struct
+import sys
+from subprocess import run
+
+# Ugliness in order to keep the script self-contained
+try:
+    import tqdm
+except ImportError:
+    print("Installing tqdm...")
+    def command():
+        return run([sys.executable, '-m', 'pip', 'install', 'tqdm'])
+
+    # Sigh
+    if (command().returncode != 0):
+        # Package managers are cool, I say, as I close my eyes and
+        # ram through software with reckless abandon.
+        if (run([sys.executable, '-m', 'ensurepip']).returncode == 0):
+            # Alright pip is set up, lets give it another shot. If it
+            # doesn't work, then it's left up to the user.
+            command().check_returncode()
+finally:
+    import tqdm
 
 if 'DEVKITARM' not in os.environ:
     print('DEVKITARM environment variable is not set!')
@@ -20,64 +39,75 @@ WORKDIR = BASEROMDIR + 'workdir/'
 BINARYDIR = 'binary/'
 ASMDIR = 'asm/'
 
-def run(cmd):
-    os.system(cmd)
+DATA_CHUNK_FILE = 'data_chunks.txt'
+FUNCTION_ADDRESSES_FILE = 'function_addresses.txt'
+RODATA_CHUNK_FILE = 'rodata_chunks.txt'
 
-def writefile(path, s):
+def writefile(path, s) -> None:
     with open(path, "wb") as f:
         f.write(s)
 
-with open(WORKDIR + 'text.bin', 'rb') as b:
-    b.seek(0, os.SEEK_END)
-    textSize = b.tell()
-    b.seek(0)
-    # linkerscript = ''
-    # linkerscript += 'OUTPUT_FORMAT("elf32-littlearm", "elf32-littlearm", "elf32-littlearm")\n'
-    # linkerscript += 'OUTPUT_ARCH(arm)\n'
-    # linkerscript += 'SECTIONS\n'
-    # linkerscript += '{\n'
-    # linkerscript += '\t. = 0x100000;\n'
-    # linkerscript += '\t.text : {\n'
-    with open('function_addresses.txt') as funcs:
-        Lines = funcs.readlines()
-        for i in range(0, len(Lines)):
-            funcName = Lines[i].split(',')[0]
-            funcStart = int(Lines[i].split(',')[1].strip(), 16) - 0x100000
-            funcEnd = int(Lines[i].split(',')[2].strip(), 16) - 0x100000
-            funcSize = funcEnd - funcStart
-            b.seek(funcStart)
-            funcBin = b.read(funcSize)
-            writefile(BINARYDIR + funcName + '.bin', funcBin)
-            run('{0} -I binary -O elf32-littlearm --rename-section .data="i.{1}" --redefine-sym _binary_binary_{1}_bin_start={1} --globalize-symbol={1} "{2}{3}.bin" "{2}{3}.o"'.format(OC, funcName, BINARYDIR, funcName))
-            run('{0} -D "{1}{2}.o" > "{3}{2}.s"'.format(OD, BINARYDIR, funcName, ASMDIR))
-            # linkerscript += '\t\t*({0})\n'.format('ASM_' + funcName)
-    # linkerscript += '\t}\n'
-    # linkerscript += '}\n'
-    # with open('oot.ld', 'w') as l:
-        # l.write(linkerscript)
+def total_file_sizes() -> int:
+    return os.path.getsize(DATA_CHUNK_FILE) + \
+           os.path.getsize(FUNCTION_ADDRESSES_FILE) + \
+           os.path.getsize(RODATA_CHUNK_FILE)
 
-with open(WORKDIR + 'ro.bin', 'rb') as b:
-    with open('rodata_chunks.txt') as rodata:
-        Lines = rodata.readlines()
-        for i in range(0, len(Lines)):
-            chunkName = Lines[i].split(',')[0]
-            chunkStart = int(Lines[i].split(',')[1].strip(), 16) - 0x4CA000
-            chunkEnd = int(Lines[i].split(',')[2].strip(), 16) - 0x4CA000
-            chunkSize = chunkEnd - chunkStart
-            b.seek(chunkStart)
-            chunkBin = b.read(chunkSize)
-            writefile(BINARYDIR + chunkName + '.bin', chunkBin)
-            run('{0} -I binary -O elf32-littlearm --rename-section .data="ASM_{1}",alloc,load,readonly,data,contents --redefine-sym _binary_binary_{1}_bin_start={1} "{2}{3}.bin" "{2}{3}.o"'.format(OC, chunkName, BINARYDIR, chunkName))
+def handle_function_addresses(progress: tqdm.tqdm) -> None:
+    with open(WORKDIR + 'text.bin', 'rb') as b:
+        with open(FUNCTION_ADDRESSES_FILE) as funcs:
+            for line in funcs:
+                splitLine = line.split(',')
+                funcName = splitLine[0]
+                funcStart = int(splitLine[1].strip(), 16) - 0x100000
+                funcEnd = int(splitLine[2].strip(), 16) - 0x100000
+                funcSize = funcEnd - funcStart
+                b.seek(funcStart)
+                funcBin = b.read(funcSize)
+                writefile(BINARYDIR + funcName + '.bin', funcBin)
 
-with open(WORKDIR + 'rw.bin', 'rb') as b:
-    with open('data_chunks.txt') as rodata:
-        Lines = rodata.readlines()
-        for i in range(0, len(Lines)):
-            chunkName = Lines[i].split(',')[0]
-            chunkStart = int(Lines[i].split(',')[1].strip(), 16) - 0x4F9000
-            chunkEnd = int(Lines[i].split(',')[2].strip(), 16) - 0x4F9000
-            chunkSize = chunkEnd - chunkStart
-            b.seek(chunkStart)
-            chunkBin = b.read(chunkSize)
-            writefile(BINARYDIR + chunkName + '.bin', chunkBin)
-            run('{0} -I binary -O elf32-littlearm --rename-section .data="ASM_{1}",alloc,load,data,contents --redefine-sym _binary_binary_{1}_bin_start={1} "{2}{3}.bin" "{2}{3}.o"'.format(OC, chunkName, BINARYDIR, chunkName))
+                run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data="i.{funcName}"',
+                     '--redefine-sym', f'_binary_binary_{funcName}_bin_start={funcName}',
+                     f'--globalize-symbol={funcName}', f'{BINARYDIR}{funcName}.bin', f'{BINARYDIR}{funcName}.o'])
+                with open(f'{ASMDIR}{funcName}.s', 'w') as asmfile:
+                    run([OD, '-D', f'{BINARYDIR}{funcName}.o'], stdout=asmfile)
+
+                progress.update(len(line))
+
+def handle_rodata_chunks(progress: tqdm.tqdm) -> None:
+    with open(WORKDIR + 'ro.bin', 'rb') as b:
+        with open(RODATA_CHUNK_FILE) as rodata:
+            for line in rodata:
+                splitLine = line.split(',')
+                chunkName = splitLine[0]
+                chunkStart = int(splitLine[1].strip(), 16) - 0x4CA000
+                chunkEnd = int(splitLine[2].strip(), 16) - 0x4CA000
+                chunkSize = chunkEnd - chunkStart
+                b.seek(chunkStart)
+                chunkBin = b.read(chunkSize)
+                writefile(BINARYDIR + chunkName + '.bin', chunkBin)
+                run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data="ASM_{chunkName}",alloc,load,readonly,data,contents',
+                     '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{BINARYDIR}{chunkName}.bin', f'{BINARYDIR}{chunkName}.o'])
+
+                progress.update(len(line))
+
+def handle_data_chunks(progress: tqdm.tqdm) -> None:
+    with open(WORKDIR + 'rw.bin', 'rb') as b:
+        with open(DATA_CHUNK_FILE) as data:
+            for line in data:
+                splitLine = line.split(',')
+                chunkName = splitLine[0]
+                chunkStart = int(splitLine[1].strip(), 16) - 0x4F9000
+                chunkEnd = int(splitLine[2].strip(), 16) - 0x4F9000
+                chunkSize = chunkEnd - chunkStart
+                b.seek(chunkStart)
+                chunkBin = b.read(chunkSize)
+                writefile(BINARYDIR + chunkName + '.bin', chunkBin)
+                run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data="ASM_{chunkName}",alloc,load,data,contents',
+                     '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{BINARYDIR}{chunkName}.bin', f'{BINARYDIR}{chunkName}.o'])
+
+                progress.update(len(line))
+
+with tqdm.tqdm(total=total_file_sizes()) as progress:
+    handle_function_addresses(progress)
+    handle_rodata_chunks(progress)
+    handle_data_chunks(progress)
