@@ -11990,6 +11990,8 @@ SECTIONS
 		*(ASM_data_52F998)
 		*(actors/En_Vase/z_en_vase.data)
 		*(ASM_data_52FDB4)
+		*(actors/Item_B_Heart/z_item_b_heart.data)
+		*(ASM_data_531DB0)
 		*(actors/Obj_Bombiwa/z_obj_bombiwa.data)
 		*(ASM_data_534EF4)
 		*(.data_54ac20)
