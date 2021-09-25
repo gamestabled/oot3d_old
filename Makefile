@@ -54,8 +54,6 @@ LKFLAGS += -mcpu=MPCore -mfloat-abi=hard -marm -T oot.ld
 
 .PHONY: dir all clean
 all: dir $(TARGET).3ds
-#	cat $(TARGET).sha1 
-#	@$(SHA1) $(TARGET).3ds
 ifeq ($(COMPARE),1)
 	@md5sum $(BUILD_DIR)/code.bin
 	@md5sum $(BUILD_DIR)/romfs.bin
