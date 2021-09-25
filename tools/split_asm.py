@@ -65,7 +65,7 @@ def handle_function_addresses(progress: tqdm.tqdm) -> None:
                 funcBin = b.read(funcSize)
                 writefile(BINARYDIR + funcName + '.bin', funcBin)
 
-                run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data="i.{funcName}"',
+                run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data=i.{funcName}',
                      '--redefine-sym', f'_binary_binary_{funcName}_bin_start={funcName}',
                      f'--globalize-symbol={funcName}', f'{BINARYDIR}{funcName}.bin', f'{BINARYDIR}{funcName}.o'])
                 with open(f'{ASMDIR}{funcName}.s', 'w') as asmfile:
@@ -85,7 +85,7 @@ def handle_rodata_chunks(progress: tqdm.tqdm) -> None:
                 b.seek(chunkStart)
                 chunkBin = b.read(chunkSize)
                 writefile(BINARYDIR + chunkName + '.bin', chunkBin)
-                run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data="ASM_{chunkName}",alloc,load,readonly,data,contents',
+                run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data=ASM_{chunkName},alloc,load,readonly,data,contents',
                      '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{BINARYDIR}{chunkName}.bin', f'{BINARYDIR}{chunkName}.o'])
 
                 progress.update(len(line))
@@ -102,7 +102,7 @@ def handle_data_chunks(progress: tqdm.tqdm) -> None:
                 b.seek(chunkStart)
                 chunkBin = b.read(chunkSize)
                 writefile(BINARYDIR + chunkName + '.bin', chunkBin)
-                run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data="ASM_{chunkName}",alloc,load,data,contents',
+                run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data=ASM_{chunkName},alloc,load,data,contents',
                      '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{BINARYDIR}{chunkName}.bin', f'{BINARYDIR}{chunkName}.o'])
 
                 progress.update(len(line))

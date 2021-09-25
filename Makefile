@@ -70,7 +70,7 @@ clean:
 	rm -f -r $(BUILD_DIR)
 
 setup:
-	./extract_baserom.sh
+	python3 ./tools/extract_baserom.py
 
 # Steps
 
