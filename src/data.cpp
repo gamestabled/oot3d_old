@@ -392,6 +392,8 @@ unk_51b2f4* DAT_0051b2f4 __attribute__((section(".data_51b2f4"))) = (unk_51b2f4*
 
 #pragma GLOBAL_ASM("binary/data_52FDB4.o")
 
+#pragma GLOBAL_ASM("binary/data_531DB0.o")
+
 #pragma GLOBAL_ASM("binary/data_534EF4.o")
 
 f32 FLOAT_0054ac20 __attribute__((section(".data_54ac20"))) = 1.0f;
