@@ -15,6 +15,7 @@
 #include "math.hpp"
 #include "ichain.hpp"
 #include "stddef.hpp"
+#include "regs.hpp"
 
 typedef struct {
     /* 0x00 */ u8 buttonItems[5]; //B,Y,X,I,II
@@ -507,15 +508,18 @@ typedef struct {
     /* 0x03 */ u8 flags3;
 } RestrictionFlags;
 
-struct unk_51b2f4 {
-    char unk_00[0x100];
-    s16 unk_100[0x100];
-    char unk_300[0x12D4];
+// Game Info aka. Static Context
+// Data normally accessed through REG macros (see regs.h)
+typedef struct {
+    /* 0x00 */ s32  regPage;   // 1 is first page
+    /* 0x04 */ s32  regGroup;  // "register" group (R, RS, RO, RP etc.)
+    /* 0x08 */ s32  regCur;    // selected register within page
+    /* 0x0C */ s32  dpadLast;
+    /* 0x10 */ s32  repeat;
+    /* 0x14 */ s16  data[REG_GROUPS * REG_PER_GROUP]; // 0xAE0 entries
+} GameInfo; // size = 0x15D4
 
-    s32 ConvertFrameCount(f32 frames) {
-        return (s32)(frames / unk_100[0x8] + 0.5f);
-    }
-}; // size 0x15D4
+extern GameInfo* gGameInfo;
 
 #define gStaticContext (*(StaticContext*)0x08080010)
 #define gObjectTable ((ObjectFile*)0x53CCF4)

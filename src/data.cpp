@@ -286,7 +286,7 @@
 
 #pragma GLOBAL_ASM("binary/z_demo.o")
 
-unk_51b2f4* DAT_0051b2f4 __attribute__((section(".data_51b2f4"))) = (unk_51b2f4*)NULL;
+GameInfo* gGameInfo __attribute__((section(".data_51b2f4"))) = (GameInfo*)NULL;
 
 #pragma GLOBAL_ASM("binary/data_51B2F8.o")
 

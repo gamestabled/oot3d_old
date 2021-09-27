@@ -6,6 +6,5 @@
 #include "variables.hpp"
 #include "macros.hpp"
 #include "libcpp.hpp"
-#include "regs.hpp"
 
 #endif
