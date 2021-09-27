@@ -10,6 +10,7 @@
 #include "z3Dcamera.hpp"
 #include "z3Dcollision_check.hpp"
 #include "z3Dbgcheck.hpp"
+#include "z3Dscene.hpp"
 #include "color.hpp"
 #include "math.hpp"
 #include "ichain.hpp"
@@ -354,6 +355,13 @@ typedef struct {
     /* 0x00 */ char filename[0x40];
     /* 0x40 */ u32 size;
 } ObjectFile;
+
+typedef struct {
+    /* 0x00 */ s16   id;
+    /* 0x02 */ Vec3s pos;
+    /* 0x08 */ Vec3s rot;
+    /* 0x0E */ s16   params;
+} ActorEntry; // size = 0x10
 
 typedef struct GameAllocEntry {
     /* 0x00 */ struct GameAllocEntry* next;
