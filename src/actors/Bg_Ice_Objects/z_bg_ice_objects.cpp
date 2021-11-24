@@ -22,11 +22,11 @@ ActorInit Bg_Ice_Objects_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgIceObjects_Init.o")
+GLOBAL_ASM("binary/BgIceObjects_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgIceObjects_Destroy.o")
+GLOBAL_ASM("binary/BgIceObjects_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgIceObjects_Update.o")
+GLOBAL_ASM("binary/BgIceObjects_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgIceObjects_Draw.o")
+GLOBAL_ASM("binary/BgIceObjects_Draw.o")
 }

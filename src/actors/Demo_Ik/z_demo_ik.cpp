@@ -22,11 +22,11 @@ ActorInit Demo_Ik_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DemoIk_Init.o")
+GLOBAL_ASM("binary/DemoIk_Init.o")
 
-#pragma GLOBAL_ASM("binary/DemoIk_Destroy.o")
+GLOBAL_ASM("binary/DemoIk_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DemoIk_Update.o")
+GLOBAL_ASM("binary/DemoIk_Update.o")
 
-#pragma GLOBAL_ASM("binary/DemoIk_Draw.o")
+GLOBAL_ASM("binary/DemoIk_Draw.o")
 }

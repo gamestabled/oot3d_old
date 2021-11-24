@@ -21,9 +21,9 @@ ActorInit En_Changer_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnChanger_Init.o")
+GLOBAL_ASM("binary/EnChanger_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnChanger_Destroy.o")
+GLOBAL_ASM("binary/EnChanger_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnChanger_Update.o")
+GLOBAL_ASM("binary/EnChanger_Update.o")
 }

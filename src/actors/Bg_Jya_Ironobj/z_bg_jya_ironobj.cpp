@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Ironobj_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgJyaIronobj_Init.o")
+GLOBAL_ASM("binary/BgJyaIronobj_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaIronobj_Destroy.o")
+GLOBAL_ASM("binary/BgJyaIronobj_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaIronobj_Update.o")
+GLOBAL_ASM("binary/BgJyaIronobj_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaIronobj_Draw.o")
+GLOBAL_ASM("binary/BgJyaIronobj_Draw.o")
 }

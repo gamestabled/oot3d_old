@@ -22,11 +22,11 @@ ActorInit En_Heishi3_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnHeishi3_Init.o")
+GLOBAL_ASM("binary/EnHeishi3_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnHeishi3_Destroy.o")
+GLOBAL_ASM("binary/EnHeishi3_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnHeishi3_Update.o")
+GLOBAL_ASM("binary/EnHeishi3_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnHeishi3_Draw.o")
+GLOBAL_ASM("binary/EnHeishi3_Draw.o")
 }

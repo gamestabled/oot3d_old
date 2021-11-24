@@ -22,11 +22,11 @@ ActorInit En_Holl_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnHoll_Init.o")
+GLOBAL_ASM("binary/EnHoll_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnHoll_Destroy.o")
+GLOBAL_ASM("binary/EnHoll_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnHoll_Update.o")
+GLOBAL_ASM("binary/EnHoll_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnHoll_Draw.o")
+GLOBAL_ASM("binary/EnHoll_Draw.o")
 }

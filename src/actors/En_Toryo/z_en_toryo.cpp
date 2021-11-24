@@ -22,11 +22,11 @@ ActorInit En_Toryo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnToryo_Init.o")
+GLOBAL_ASM("binary/EnToryo_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnToryo_Destroy.o")
+GLOBAL_ASM("binary/EnToryo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnToryo_Update.o")
+GLOBAL_ASM("binary/EnToryo_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnToryo_Draw.o")
+GLOBAL_ASM("binary/EnToryo_Draw.o")
 }

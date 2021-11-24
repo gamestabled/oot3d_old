@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Bombchuiwa_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgJyaBombchuiwa_Init.o")
+GLOBAL_ASM("binary/BgJyaBombchuiwa_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaBombchuiwa_Destroy.o")
+GLOBAL_ASM("binary/BgJyaBombchuiwa_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaBombchuiwa_Update.o")
+GLOBAL_ASM("binary/BgJyaBombchuiwa_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaBombchuiwa_Draw.o")
+GLOBAL_ASM("binary/BgJyaBombchuiwa_Draw.o")
 }

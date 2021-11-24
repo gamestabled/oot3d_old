@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Kowarerukabe_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHidanKowarerukabe_Init.o")
+GLOBAL_ASM("binary/BgHidanKowarerukabe_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanKowarerukabe_Destroy.o")
+GLOBAL_ASM("binary/BgHidanKowarerukabe_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanKowarerukabe_Update.o")
+GLOBAL_ASM("binary/BgHidanKowarerukabe_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanKowarerukabe_Draw.o")
+GLOBAL_ASM("binary/BgHidanKowarerukabe_Draw.o")
 }

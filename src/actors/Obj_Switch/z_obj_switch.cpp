@@ -22,11 +22,11 @@ ActorInit Obj_Switch_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjSwitch_Init.o")
+GLOBAL_ASM("binary/ObjSwitch_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjSwitch_Destroy.o")
+GLOBAL_ASM("binary/ObjSwitch_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ObjSwitch_Update.o")
+GLOBAL_ASM("binary/ObjSwitch_Update.o")
 
-#pragma GLOBAL_ASM("binary/ObjSwitch_Draw.o")
+GLOBAL_ASM("binary/ObjSwitch_Draw.o")
 }

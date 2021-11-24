@@ -22,11 +22,11 @@ ActorInit En_Vm_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnVm_Init.o")
+GLOBAL_ASM("binary/EnVm_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnVm_Destroy.o")
+GLOBAL_ASM("binary/EnVm_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnVm_Update.o")
+GLOBAL_ASM("binary/EnVm_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnVm_Draw.o")
+GLOBAL_ASM("binary/EnVm_Draw.o")
 }

@@ -21,9 +21,9 @@ ActorInit Bg_Breakwall_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgBreakwall_Init.o")
+GLOBAL_ASM("binary/BgBreakwall_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgBreakwall_Destroy.o")
+GLOBAL_ASM("binary/BgBreakwall_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgBreakwall_Update.o")
+GLOBAL_ASM("binary/BgBreakwall_Update.o")
 }

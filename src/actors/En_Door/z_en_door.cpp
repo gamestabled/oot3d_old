@@ -22,11 +22,11 @@ ActorInit En_Door_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDoor_Init.o")
+GLOBAL_ASM("binary/EnDoor_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDoor_Destroy.o")
+GLOBAL_ASM("binary/EnDoor_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDoor_Update.o")
+GLOBAL_ASM("binary/EnDoor_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnDoor_Draw.o")
+GLOBAL_ASM("binary/EnDoor_Draw.o")
 }

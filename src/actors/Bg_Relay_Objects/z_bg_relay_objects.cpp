@@ -22,11 +22,11 @@ ActorInit Bg_Relay_Objects_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgRelayObjects_Init.o")
+GLOBAL_ASM("binary/BgRelayObjects_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgRelayObjects_Destroy.o")
+GLOBAL_ASM("binary/BgRelayObjects_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgRelayObjects_Update.o")
+GLOBAL_ASM("binary/BgRelayObjects_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgRelayObjects_Draw.o")
+GLOBAL_ASM("binary/BgRelayObjects_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit En_Blkobj_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBlkobj_Init.o")
+GLOBAL_ASM("binary/EnBlkobj_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBlkobj_Destroy.o")
+GLOBAL_ASM("binary/EnBlkobj_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBlkobj_Update.o")
+GLOBAL_ASM("binary/EnBlkobj_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnBlkobj_Draw.o")
+GLOBAL_ASM("binary/EnBlkobj_Draw.o")
 }

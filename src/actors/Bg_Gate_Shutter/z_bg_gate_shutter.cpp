@@ -22,11 +22,11 @@ ActorInit Bg_Gate_Shutter_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgGateShutter_Init.o")
+GLOBAL_ASM("binary/BgGateShutter_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgGateShutter_Destroy.o")
+GLOBAL_ASM("binary/BgGateShutter_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgGateShutter_Update.o")
+GLOBAL_ASM("binary/BgGateShutter_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgGateShutter_Draw.o")
+GLOBAL_ASM("binary/BgGateShutter_Draw.o")
 }

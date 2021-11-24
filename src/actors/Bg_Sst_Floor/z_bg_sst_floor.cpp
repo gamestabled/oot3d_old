@@ -22,11 +22,11 @@ ActorInit Bg_Sst_Floor_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSstFloor_Init.o")
+GLOBAL_ASM("binary/BgSstFloor_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSstFloor_Destroy.o")
+GLOBAL_ASM("binary/BgSstFloor_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSstFloor_Update.o")
+GLOBAL_ASM("binary/BgSstFloor_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSstFloor_Draw.o")
+GLOBAL_ASM("binary/BgSstFloor_Draw.o")
 }

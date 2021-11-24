@@ -22,11 +22,11 @@ ActorInit En_Syateki_Man_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnSyatekiMan_Init.o")
+GLOBAL_ASM("binary/EnSyatekiMan_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnSyatekiMan_Destroy.o")
+GLOBAL_ASM("binary/EnSyatekiMan_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnSyatekiMan_Update.o")
+GLOBAL_ASM("binary/EnSyatekiMan_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnSyatekiMan_Draw.o")
+GLOBAL_ASM("binary/EnSyatekiMan_Draw.o")
 }

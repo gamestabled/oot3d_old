@@ -22,11 +22,11 @@ ActorInit En_Bubble_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBubble_Init.o")
+GLOBAL_ASM("binary/EnBubble_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBubble_Destroy.o")
+GLOBAL_ASM("binary/EnBubble_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBubble_Update.o")
+GLOBAL_ASM("binary/EnBubble_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnBubble_Draw.o")
+GLOBAL_ASM("binary/EnBubble_Draw.o")
 }

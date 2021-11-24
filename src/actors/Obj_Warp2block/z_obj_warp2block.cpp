@@ -22,11 +22,11 @@ ActorInit Obj_Warp2block_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjWarp2block_Init.o")
+GLOBAL_ASM("binary/ObjWarp2block_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjWarp2block_Destroy.o")
+GLOBAL_ASM("binary/ObjWarp2block_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ObjWarp2block_Update.o")
+GLOBAL_ASM("binary/ObjWarp2block_Update.o")
 
-#pragma GLOBAL_ASM("binary/ObjWarp2block_Draw.o")
+GLOBAL_ASM("binary/ObjWarp2block_Draw.o")
 }

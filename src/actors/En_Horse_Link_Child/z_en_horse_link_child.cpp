@@ -22,11 +22,11 @@ ActorInit En_Horse_Link_Child_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Init.o")
+GLOBAL_ASM("binary/EnHorseLinkChild_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Destroy.o")
+GLOBAL_ASM("binary/EnHorseLinkChild_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Update.o")
+GLOBAL_ASM("binary/EnHorseLinkChild_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnHorseLinkChild_Draw.o")
+GLOBAL_ASM("binary/EnHorseLinkChild_Draw.o")
 }

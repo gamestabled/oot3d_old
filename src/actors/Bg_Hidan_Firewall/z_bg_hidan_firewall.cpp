@@ -21,9 +21,9 @@ ActorInit Bg_Hidan_Firewall_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHidanFirewall_Init.o")
+GLOBAL_ASM("binary/BgHidanFirewall_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanFirewall_Destroy.o")
+GLOBAL_ASM("binary/BgHidanFirewall_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanFirewall_Update.o")
+GLOBAL_ASM("binary/BgHidanFirewall_Update.o")
 }

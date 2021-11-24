@@ -22,11 +22,11 @@ ActorInit En_Rr_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnRr_Init.o")
+GLOBAL_ASM("binary/EnRr_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnRr_Destroy.o")
+GLOBAL_ASM("binary/EnRr_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnRr_Update.o")
+GLOBAL_ASM("binary/EnRr_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnRr_Draw.o")
+GLOBAL_ASM("binary/EnRr_Draw.o")
 }

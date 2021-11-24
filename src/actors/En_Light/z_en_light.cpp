@@ -22,11 +22,11 @@ ActorInit En_Light_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnLight_Init.o")
+GLOBAL_ASM("binary/EnLight_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnLight_Destroy.o")
+GLOBAL_ASM("binary/EnLight_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnLight_Update.o")
+GLOBAL_ASM("binary/EnLight_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnLight_Draw.o")
+GLOBAL_ASM("binary/EnLight_Draw.o")
 }

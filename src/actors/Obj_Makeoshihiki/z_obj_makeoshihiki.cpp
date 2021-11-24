@@ -22,7 +22,7 @@ ActorInit Obj_Makeoshihiki_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjMakeoshihiki_Init.o")
+GLOBAL_ASM("binary/ObjMakeoshihiki_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjMakeoshihiki_Draw.o")
+GLOBAL_ASM("binary/ObjMakeoshihiki_Draw.o")
 }

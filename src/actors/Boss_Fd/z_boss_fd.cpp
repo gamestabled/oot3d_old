@@ -22,11 +22,11 @@ ActorInit Boss_Fd_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BossFd_Init.o")
+GLOBAL_ASM("binary/BossFd_Init.o")
 
-#pragma GLOBAL_ASM("binary/BossFd_Destroy.o")
+GLOBAL_ASM("binary/BossFd_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BossFd_Update.o")
+GLOBAL_ASM("binary/BossFd_Update.o")
 
-#pragma GLOBAL_ASM("binary/BossFd_Draw.o")
+GLOBAL_ASM("binary/BossFd_Draw.o")
 }

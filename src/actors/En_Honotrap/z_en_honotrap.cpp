@@ -22,11 +22,11 @@ ActorInit En_Honotrap_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnHonotrap_Init.o")
+GLOBAL_ASM("binary/EnHonotrap_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnHonotrap_Destroy.o")
+GLOBAL_ASM("binary/EnHonotrap_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnHonotrap_Update.o")
+GLOBAL_ASM("binary/EnHonotrap_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnHonotrap_Draw.o")
+GLOBAL_ASM("binary/EnHonotrap_Draw.o")
 }

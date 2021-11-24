@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Hineri_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMoriHineri_Init.o")
+GLOBAL_ASM("binary/BgMoriHineri_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriHineri_Destroy.o")
+GLOBAL_ASM("binary/BgMoriHineri_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriHineri_Update.o")
+GLOBAL_ASM("binary/BgMoriHineri_Update.o")
 }

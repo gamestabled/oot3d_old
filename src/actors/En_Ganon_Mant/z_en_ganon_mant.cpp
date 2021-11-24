@@ -21,9 +21,9 @@ ActorInit En_Ganon_Mant_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnGanonMant_Init.o")
+GLOBAL_ASM("binary/EnGanonMant_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnGanonMant_Destroy.o")
+GLOBAL_ASM("binary/EnGanonMant_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnGanonMant_Update.o")
+GLOBAL_ASM("binary/EnGanonMant_Update.o")
 }

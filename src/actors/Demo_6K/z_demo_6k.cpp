@@ -21,9 +21,9 @@ ActorInit Demo_6K_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/Demo6K_Init.o")
+GLOBAL_ASM("binary/Demo6K_Init.o")
 
-#pragma GLOBAL_ASM("binary/Demo6K_Destroy.o")
+GLOBAL_ASM("binary/Demo6K_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/Demo6K_Update.o")
+GLOBAL_ASM("binary/Demo6K_Update.o")
 }

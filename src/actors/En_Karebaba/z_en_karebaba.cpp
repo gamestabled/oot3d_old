@@ -22,11 +22,11 @@ ActorInit En_Karebaba_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnKarebaba_Init.o")
+GLOBAL_ASM("binary/EnKarebaba_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnKarebaba_Destroy.o")
+GLOBAL_ASM("binary/EnKarebaba_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnKarebaba_Update.o")
+GLOBAL_ASM("binary/EnKarebaba_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnKarebaba_Draw.o")
+GLOBAL_ASM("binary/EnKarebaba_Draw.o")
 }

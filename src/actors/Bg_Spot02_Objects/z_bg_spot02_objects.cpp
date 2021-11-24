@@ -22,11 +22,11 @@ ActorInit Bg_Spot02_Objects_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot02Objects_Init.o")
+GLOBAL_ASM("binary/BgSpot02Objects_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot02Objects_Destroy.o")
+GLOBAL_ASM("binary/BgSpot02Objects_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot02Objects_Update.o")
+GLOBAL_ASM("binary/BgSpot02Objects_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot02Objects_Draw.o")
+GLOBAL_ASM("binary/BgSpot02Objects_Draw.o")
 }

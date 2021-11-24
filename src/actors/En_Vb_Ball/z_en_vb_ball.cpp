@@ -22,11 +22,11 @@ ActorInit En_Vb_Ball_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnVbBall_Init.o")
+GLOBAL_ASM("binary/EnVbBall_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnVbBall_Destroy.o")
+GLOBAL_ASM("binary/EnVbBall_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnVbBall_Update.o")
+GLOBAL_ASM("binary/EnVbBall_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnVbBall_Draw.o")
+GLOBAL_ASM("binary/EnVbBall_Draw.o")
 }

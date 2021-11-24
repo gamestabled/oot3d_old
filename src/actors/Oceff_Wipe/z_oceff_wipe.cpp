@@ -22,11 +22,11 @@ ActorInit Oceff_Wipe_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/OceffWipe_Init.o")
+GLOBAL_ASM("binary/OceffWipe_Init.o")
 
-#pragma GLOBAL_ASM("binary/OceffWipe_Destroy.o")
+GLOBAL_ASM("binary/OceffWipe_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/OceffWipe_Update.o")
+GLOBAL_ASM("binary/OceffWipe_Update.o")
 
-#pragma GLOBAL_ASM("binary/OceffWipe_Draw.o")
+GLOBAL_ASM("binary/OceffWipe_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit Efc_Erupc_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EfcErupc_Init.o")
+GLOBAL_ASM("binary/EfcErupc_Init.o")
 
-#pragma GLOBAL_ASM("binary/EfcErupc_Destroy.o")
+GLOBAL_ASM("binary/EfcErupc_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EfcErupc_Update.o")
+GLOBAL_ASM("binary/EfcErupc_Update.o")
 
-#pragma GLOBAL_ASM("binary/EfcErupc_Draw.o")
+GLOBAL_ASM("binary/EfcErupc_Draw.o")
 }

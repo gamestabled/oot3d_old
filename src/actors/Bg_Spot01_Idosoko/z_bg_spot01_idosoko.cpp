@@ -22,11 +22,11 @@ ActorInit Bg_Spot01_Idosoko_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Init.o")
+GLOBAL_ASM("binary/BgSpot01Idosoko_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Destroy.o")
+GLOBAL_ASM("binary/BgSpot01Idosoko_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Update.o")
+GLOBAL_ASM("binary/BgSpot01Idosoko_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot01Idosoko_Draw.o")
+GLOBAL_ASM("binary/BgSpot01Idosoko_Draw.o")
 }

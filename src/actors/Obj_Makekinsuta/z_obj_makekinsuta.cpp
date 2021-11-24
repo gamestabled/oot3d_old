@@ -21,7 +21,7 @@ ActorInit Obj_Makekinsuta_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjMakekinsuta_Init.o")
+GLOBAL_ASM("binary/ObjMakekinsuta_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjMakekinsuta_Update.o")
+GLOBAL_ASM("binary/ObjMakekinsuta_Update.o")
 }

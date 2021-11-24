@@ -22,11 +22,11 @@ ActorInit En_Box_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBox_Init.o")
+GLOBAL_ASM("binary/EnBox_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBox_Destroy.o")
+GLOBAL_ASM("binary/EnBox_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBox_Update.o")
+GLOBAL_ASM("binary/EnBox_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnBox_Draw.o")
+GLOBAL_ASM("binary/EnBox_Draw.o")
 }

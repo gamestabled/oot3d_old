@@ -22,11 +22,11 @@ ActorInit En_Dog_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDog_Init.o")
+GLOBAL_ASM("binary/EnDog_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDog_Destroy.o")
+GLOBAL_ASM("binary/EnDog_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDog_Update.o")
+GLOBAL_ASM("binary/EnDog_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnDog_Draw.o")
+GLOBAL_ASM("binary/EnDog_Draw.o")
 }

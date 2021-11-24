@@ -22,11 +22,11 @@ ActorInit En_Niw_Girl_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnNiwGirl_Init.o")
+GLOBAL_ASM("binary/EnNiwGirl_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnNiwGirl_Destroy.o")
+GLOBAL_ASM("binary/EnNiwGirl_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnNiwGirl_Update.o")
+GLOBAL_ASM("binary/EnNiwGirl_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnNiwGirl_Draw.o")
+GLOBAL_ASM("binary/EnNiwGirl_Draw.o")
 }

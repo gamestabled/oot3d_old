@@ -22,11 +22,11 @@ ActorInit En_Tp_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnTp_Init.o")
+GLOBAL_ASM("binary/EnTp_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnTp_Destroy.o")
+GLOBAL_ASM("binary/EnTp_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnTp_Update.o")
+GLOBAL_ASM("binary/EnTp_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnTp_Draw.o")
+GLOBAL_ASM("binary/EnTp_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit Obj_Hana_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjHana_Init.o")
+GLOBAL_ASM("binary/ObjHana_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjHana_Destroy.o")
+GLOBAL_ASM("binary/ObjHana_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ObjHana_Update.o")
+GLOBAL_ASM("binary/ObjHana_Update.o")
 
-#pragma GLOBAL_ASM("binary/ObjHana_Draw.o")
+GLOBAL_ASM("binary/ObjHana_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit En_Eiyer_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnEiyer_Init.o")
+GLOBAL_ASM("binary/EnEiyer_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnEiyer_Destroy.o")
+GLOBAL_ASM("binary/EnEiyer_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnEiyer_Update.o")
+GLOBAL_ASM("binary/EnEiyer_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnEiyer_Draw.o")
+GLOBAL_ASM("binary/EnEiyer_Draw.o")
 }

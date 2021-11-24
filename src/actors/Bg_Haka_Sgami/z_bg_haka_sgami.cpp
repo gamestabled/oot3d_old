@@ -21,9 +21,9 @@ ActorInit Bg_Haka_Sgami_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHakaSgami_Init.o")
+GLOBAL_ASM("binary/BgHakaSgami_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaSgami_Destroy.o")
+GLOBAL_ASM("binary/BgHakaSgami_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaSgami_Update.o")
+GLOBAL_ASM("binary/BgHakaSgami_Update.o")
 }

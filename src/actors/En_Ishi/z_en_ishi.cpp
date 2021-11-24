@@ -22,11 +22,11 @@ ActorInit En_Ishi_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnIshi_Init.o")
+GLOBAL_ASM("binary/EnIshi_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnIshi_Destroy.o")
+GLOBAL_ASM("binary/EnIshi_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnIshi_Update.o")
+GLOBAL_ASM("binary/EnIshi_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnIshi_Draw.o")
+GLOBAL_ASM("binary/EnIshi_Draw.o")
 }

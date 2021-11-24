@@ -22,11 +22,11 @@ ActorInit En_Niw_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnNiw_Init.o")
+GLOBAL_ASM("binary/EnNiw_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnNiw_Destroy.o")
+GLOBAL_ASM("binary/EnNiw_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnNiw_Update.o")
+GLOBAL_ASM("binary/EnNiw_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnNiw_Draw.o")
+GLOBAL_ASM("binary/EnNiw_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit En_Dekunuts_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDekunuts_Init.o")
+GLOBAL_ASM("binary/EnDekunuts_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDekunuts_Destroy.o")
+GLOBAL_ASM("binary/EnDekunuts_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDekunuts_Update.o")
+GLOBAL_ASM("binary/EnDekunuts_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnDekunuts_Draw.o")
+GLOBAL_ASM("binary/EnDekunuts_Draw.o")
 }

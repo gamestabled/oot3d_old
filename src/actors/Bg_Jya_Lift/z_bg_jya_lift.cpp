@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Lift_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgJyaLift_Init.o")
+GLOBAL_ASM("binary/BgJyaLift_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaLift_Destroy.o")
+GLOBAL_ASM("binary/BgJyaLift_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaLift_Update.o")
+GLOBAL_ASM("binary/BgJyaLift_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaLift_Draw.o")
+GLOBAL_ASM("binary/BgJyaLift_Draw.o")
 }

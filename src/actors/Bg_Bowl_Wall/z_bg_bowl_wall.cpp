@@ -22,11 +22,11 @@ ActorInit Bg_Bowl_Wall_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgBowlWall_Init.o")
+GLOBAL_ASM("binary/BgBowlWall_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgBowlWall_Destroy.o")
+GLOBAL_ASM("binary/BgBowlWall_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgBowlWall_Update.o")
+GLOBAL_ASM("binary/BgBowlWall_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgBowlWall_Draw.o")
+GLOBAL_ASM("binary/BgBowlWall_Draw.o")
 }

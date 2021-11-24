@@ -22,11 +22,11 @@ ActorInit En_Peehat_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnPeehat_Init.o")
+GLOBAL_ASM("binary/EnPeehat_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnPeehat_Destroy.o")
+GLOBAL_ASM("binary/EnPeehat_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnPeehat_Update.o")
+GLOBAL_ASM("binary/EnPeehat_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnPeehat_Draw.o")
+GLOBAL_ASM("binary/EnPeehat_Draw.o")
 }

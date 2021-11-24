@@ -21,9 +21,9 @@ ActorInit En_Arow_Trap_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnArowTrap_Init.o")
+GLOBAL_ASM("binary/EnArowTrap_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnArowTrap_Destroy.o")
+GLOBAL_ASM("binary/EnArowTrap_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnArowTrap_Update.o")
+GLOBAL_ASM("binary/EnArowTrap_Update.o")
 }

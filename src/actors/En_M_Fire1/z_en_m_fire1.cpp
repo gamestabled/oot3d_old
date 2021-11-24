@@ -21,9 +21,9 @@ ActorInit En_M_Fire1_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnMFire1_Init.o")
+GLOBAL_ASM("binary/EnMFire1_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnMFire1_Destroy.o")
+GLOBAL_ASM("binary/EnMFire1_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnMFire1_Update.o")
+GLOBAL_ASM("binary/EnMFire1_Update.o")
 }

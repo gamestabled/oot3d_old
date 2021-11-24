@@ -22,11 +22,11 @@ ActorInit En_Dodojr_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDodojr_Init.o")
+GLOBAL_ASM("binary/EnDodojr_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDodojr_Destroy.o")
+GLOBAL_ASM("binary/EnDodojr_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDodojr_Update.o")
+GLOBAL_ASM("binary/EnDodojr_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnDodojr_Draw.o")
+GLOBAL_ASM("binary/EnDodojr_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit En_Elf_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnElf_Init.o")
+GLOBAL_ASM("binary/EnElf_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnElf_Destroy.o")
+GLOBAL_ASM("binary/EnElf_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnElf_Update.o")
+GLOBAL_ASM("binary/EnElf_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnElf_Draw.o")
+GLOBAL_ASM("binary/EnElf_Draw.o")
 }

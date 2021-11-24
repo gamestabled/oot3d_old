@@ -22,11 +22,11 @@ ActorInit En_Viewer_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnViewer_Init.o")
+GLOBAL_ASM("binary/EnViewer_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnViewer_Destroy.o")
+GLOBAL_ASM("binary/EnViewer_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnViewer_Update.o")
+GLOBAL_ASM("binary/EnViewer_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnViewer_Draw.o")
+GLOBAL_ASM("binary/EnViewer_Draw.o")
 }

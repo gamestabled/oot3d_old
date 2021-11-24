@@ -21,9 +21,9 @@ ActorInit Door_Killer_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DoorKiller_Init.o")
+GLOBAL_ASM("binary/DoorKiller_Init.o")
 
-#pragma GLOBAL_ASM("binary/DoorKiller_Destroy.o")
+GLOBAL_ASM("binary/DoorKiller_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DoorKiller_Update.o")
+GLOBAL_ASM("binary/DoorKiller_Update.o")
 }

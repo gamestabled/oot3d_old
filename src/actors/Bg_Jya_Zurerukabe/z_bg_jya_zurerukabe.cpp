@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Zurerukabe_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Init.o")
+GLOBAL_ASM("binary/BgJyaZurerukabe_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Destroy.o")
+GLOBAL_ASM("binary/BgJyaZurerukabe_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Update.o")
+GLOBAL_ASM("binary/BgJyaZurerukabe_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaZurerukabe_Draw.o")
+GLOBAL_ASM("binary/BgJyaZurerukabe_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit Bg_Spot16_Doughnut_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Init.o")
+GLOBAL_ASM("binary/BgSpot16Doughnut_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Destroy.o")
+GLOBAL_ASM("binary/BgSpot16Doughnut_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Update.o")
+GLOBAL_ASM("binary/BgSpot16Doughnut_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot16Doughnut_Draw.o")
+GLOBAL_ASM("binary/BgSpot16Doughnut_Draw.o")
 }

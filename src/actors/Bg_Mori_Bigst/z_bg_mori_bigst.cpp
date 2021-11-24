@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Bigst_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMoriBigst_Init.o")
+GLOBAL_ASM("binary/BgMoriBigst_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriBigst_Destroy.o")
+GLOBAL_ASM("binary/BgMoriBigst_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriBigst_Update.o")
+GLOBAL_ASM("binary/BgMoriBigst_Update.o")
 }
