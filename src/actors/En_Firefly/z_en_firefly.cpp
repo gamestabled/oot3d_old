@@ -22,11 +22,11 @@ ActorInit En_Firefly_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnFirefly_Init.o")
+GLOBAL_ASM("binary/EnFirefly_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnFirefly_Destroy.o")
+GLOBAL_ASM("binary/EnFirefly_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnFirefly_Update.o")
+GLOBAL_ASM("binary/EnFirefly_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnFirefly_Draw.o")
+GLOBAL_ASM("binary/EnFirefly_Draw.o")
 }

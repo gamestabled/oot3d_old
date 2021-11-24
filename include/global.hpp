@@ -6,5 +6,7 @@
 #include "variables.hpp"
 #include "macros.hpp"
 #include "libcpp.hpp"
+#include "sys_math3d.hpp"
+#include "non_matchings.hpp"
 
 #endif

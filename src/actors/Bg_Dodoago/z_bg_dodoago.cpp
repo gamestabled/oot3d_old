@@ -22,11 +22,11 @@ ActorInit Bg_Dodoago_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgDodoago_Init.o")
+GLOBAL_ASM("binary/BgDodoago_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgDodoago_Destroy.o")
+GLOBAL_ASM("binary/BgDodoago_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgDodoago_Update.o")
+GLOBAL_ASM("binary/BgDodoago_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgDodoago_Draw.o")
+GLOBAL_ASM("binary/BgDodoago_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit Door_Gerudo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DoorGerudo_Init.o")
+GLOBAL_ASM("binary/DoorGerudo_Init.o")
 
-#pragma GLOBAL_ASM("binary/DoorGerudo_Destroy.o")
+GLOBAL_ASM("binary/DoorGerudo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DoorGerudo_Update.o")
+GLOBAL_ASM("binary/DoorGerudo_Update.o")
 
-#pragma GLOBAL_ASM("binary/DoorGerudo_Draw.o")
+GLOBAL_ASM("binary/DoorGerudo_Draw.o")
 }

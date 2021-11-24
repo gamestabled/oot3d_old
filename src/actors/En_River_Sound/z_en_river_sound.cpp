@@ -22,11 +22,11 @@ ActorInit En_River_Sound_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnRiverSound_Init.o")
+GLOBAL_ASM("binary/EnRiverSound_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnRiverSound_Destroy.o")
+GLOBAL_ASM("binary/EnRiverSound_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnRiverSound_Update.o")
+GLOBAL_ASM("binary/EnRiverSound_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnRiverSound_Draw.o")
+GLOBAL_ASM("binary/EnRiverSound_Draw.o")
 }

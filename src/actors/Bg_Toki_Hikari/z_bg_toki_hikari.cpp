@@ -22,11 +22,11 @@ ActorInit Bg_Toki_Hikari_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgTokiHikari_Init.o")
+GLOBAL_ASM("binary/BgTokiHikari_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgTokiHikari_Destroy.o")
+GLOBAL_ASM("binary/BgTokiHikari_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgTokiHikari_Update.o")
+GLOBAL_ASM("binary/BgTokiHikari_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgTokiHikari_Draw.o")
+GLOBAL_ASM("binary/BgTokiHikari_Draw.o")
 }

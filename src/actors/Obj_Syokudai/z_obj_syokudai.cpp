@@ -22,11 +22,11 @@ ActorInit Obj_Syokudai_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjSyokudai_Init.o")
+GLOBAL_ASM("binary/ObjSyokudai_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjSyokudai_Destroy.o")
+GLOBAL_ASM("binary/ObjSyokudai_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ObjSyokudai_Update.o")
+GLOBAL_ASM("binary/ObjSyokudai_Update.o")
 
-#pragma GLOBAL_ASM("binary/ObjSyokudai_Draw.o")
+GLOBAL_ASM("binary/ObjSyokudai_Draw.o")
 }

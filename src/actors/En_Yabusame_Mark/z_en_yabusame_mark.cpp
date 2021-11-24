@@ -21,9 +21,9 @@ ActorInit En_Yabusame_Mark_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnYabusameMark_Init.o")
+GLOBAL_ASM("binary/EnYabusameMark_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnYabusameMark_Destroy.o")
+GLOBAL_ASM("binary/EnYabusameMark_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnYabusameMark_Update.o")
+GLOBAL_ASM("binary/EnYabusameMark_Update.o")
 }

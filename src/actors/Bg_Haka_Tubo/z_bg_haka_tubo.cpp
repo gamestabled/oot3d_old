@@ -22,11 +22,11 @@ ActorInit Bg_Haka_Tubo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHakaTubo_Init.o")
+GLOBAL_ASM("binary/BgHakaTubo_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaTubo_Destroy.o")
+GLOBAL_ASM("binary/BgHakaTubo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaTubo_Update.o")
+GLOBAL_ASM("binary/BgHakaTubo_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaTubo_Draw.o")
+GLOBAL_ASM("binary/BgHakaTubo_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit Arrow_Ice_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ArrowIce_Init.o")
+GLOBAL_ASM("binary/ArrowIce_Init.o")
 
-#pragma GLOBAL_ASM("binary/ArrowIce_Destroy.o")
+GLOBAL_ASM("binary/ArrowIce_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ArrowIce_Update.o")
+GLOBAL_ASM("binary/ArrowIce_Update.o")
 
-#pragma GLOBAL_ASM("binary/ArrowIce_Draw.o")
+GLOBAL_ASM("binary/ArrowIce_Draw.o")
 }

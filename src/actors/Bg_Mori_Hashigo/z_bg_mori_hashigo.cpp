@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Hashigo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMoriHashigo_Init.o")
+GLOBAL_ASM("binary/BgMoriHashigo_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriHashigo_Destroy.o")
+GLOBAL_ASM("binary/BgMoriHashigo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriHashigo_Update.o")
+GLOBAL_ASM("binary/BgMoriHashigo_Update.o")
 }

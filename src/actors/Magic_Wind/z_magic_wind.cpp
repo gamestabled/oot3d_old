@@ -22,11 +22,11 @@ ActorInit Magic_Wind_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/MagicWind_Init.o")
+GLOBAL_ASM("binary/MagicWind_Init.o")
 
-#pragma GLOBAL_ASM("binary/MagicWind_Destroy.o")
+GLOBAL_ASM("binary/MagicWind_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/MagicWind_Update.o")
+GLOBAL_ASM("binary/MagicWind_Update.o")
 
-#pragma GLOBAL_ASM("binary/MagicWind_Draw.o")
+GLOBAL_ASM("binary/MagicWind_Draw.o")
 }

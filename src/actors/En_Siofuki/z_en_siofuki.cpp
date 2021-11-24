@@ -22,11 +22,11 @@ ActorInit En_Siofuki_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnSiofuki_Init.o")
+GLOBAL_ASM("binary/EnSiofuki_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnSiofuki_Destroy.o")
+GLOBAL_ASM("binary/EnSiofuki_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnSiofuki_Update.o")
+GLOBAL_ASM("binary/EnSiofuki_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnSiofuki_Draw.o")
+GLOBAL_ASM("binary/EnSiofuki_Draw.o")
 }

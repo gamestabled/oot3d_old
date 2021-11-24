@@ -22,11 +22,11 @@ ActorInit Bg_Mizu_Shutter_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMizuShutter_Init.o")
+GLOBAL_ASM("binary/BgMizuShutter_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMizuShutter_Destroy.o")
+GLOBAL_ASM("binary/BgMizuShutter_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMizuShutter_Update.o")
+GLOBAL_ASM("binary/BgMizuShutter_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgMizuShutter_Draw.o")
+GLOBAL_ASM("binary/BgMizuShutter_Draw.o")
 }

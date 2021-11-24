@@ -22,11 +22,11 @@ ActorInit Bg_Mizu_Bwall_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMizuBwall_Init.o")
+GLOBAL_ASM("binary/BgMizuBwall_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMizuBwall_Destroy.o")
+GLOBAL_ASM("binary/BgMizuBwall_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMizuBwall_Update.o")
+GLOBAL_ASM("binary/BgMizuBwall_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgMizuBwall_Draw.o")
+GLOBAL_ASM("binary/BgMizuBwall_Draw.o")
 }

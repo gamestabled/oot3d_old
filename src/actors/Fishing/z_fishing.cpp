@@ -22,11 +22,11 @@ ActorInit Fishing_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/Fishing_Init.o")
+GLOBAL_ASM("binary/Fishing_Init.o")
 
-#pragma GLOBAL_ASM("binary/Fishing_Destroy.o")
+GLOBAL_ASM("binary/Fishing_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/Fishing_Update.o")
+GLOBAL_ASM("binary/Fishing_Update.o")
 
-#pragma GLOBAL_ASM("binary/Fishing_Draw.o")
+GLOBAL_ASM("binary/Fishing_Draw.o")
 }

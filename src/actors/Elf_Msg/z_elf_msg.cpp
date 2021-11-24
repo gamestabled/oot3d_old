@@ -22,11 +22,11 @@ ActorInit Elf_Msg_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ElfMsg_Init.o")
+GLOBAL_ASM("binary/ElfMsg_Init.o")
 
-#pragma GLOBAL_ASM("binary/ElfMsg_Destroy.o")
+GLOBAL_ASM("binary/ElfMsg_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ElfMsg_Update.o")
+GLOBAL_ASM("binary/ElfMsg_Update.o")
 
-#pragma GLOBAL_ASM("binary/ElfMsg_Draw.o")
+GLOBAL_ASM("binary/ElfMsg_Draw.o")
 }

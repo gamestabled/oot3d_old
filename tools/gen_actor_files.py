@@ -1029,27 +1029,27 @@ def createActorSource(path, actorName, actorId):
     fileStr += "*/\n"
 
     if (initVars[5] != 0):
-        fileStr += "\n#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Init.o\")\n"
-        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Init.o\")\n")
-        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[5]) + ".o\")\n")
+        fileStr += "\nGLOBAL_ASM(\"binary/" + actorStructName + "_Init.o\")\n"
+        functionNamesToRemove.append("GLOBAL_ASM(\"binary/" + actorStructName + "_Init.o\")\n")
+        functionNamesToRemove.append("GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[5]) + ".o\")\n")
         funcs = funcs.replace("FUN_" + "{:08x}".format(initVars[5]), actorStructName + "_Init")
         linker = linker.replace("FUN_" + "{:08x}".format(initVars[5]), actorStructName + "_Init")
     if (initVars[6] != 0):
-        fileStr += "\n#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Destroy.o\")\n"
-        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Destroy.o\")\n")
-        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[6]) + ".o\")\n")
+        fileStr += "\nGLOBAL_ASM(\"binary/" + actorStructName + "_Destroy.o\")\n"
+        functionNamesToRemove.append("GLOBAL_ASM(\"binary/" + actorStructName + "_Destroy.o\")\n")
+        functionNamesToRemove.append("GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[6]) + ".o\")\n")
         funcs = funcs.replace("FUN_" + "{:08x}".format(initVars[6]), actorStructName + "_Destroy")
         linker = linker.replace("FUN_" + "{:08x}".format(initVars[6]), actorStructName + "_Destroy")
     if (initVars[7] != 0):
-        fileStr += "\n#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Update.o\")\n"
-        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Update.o\")\n")
-        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[7]) + ".o\")\n")
+        fileStr += "\nGLOBAL_ASM(\"binary/" + actorStructName + "_Update.o\")\n"
+        functionNamesToRemove.append("GLOBAL_ASM(\"binary/" + actorStructName + "_Update.o\")\n")
+        functionNamesToRemove.append("GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[7]) + ".o\")\n")
         funcs = funcs.replace("FUN_" + "{:08x}".format(initVars[7]), actorStructName + "_Update")
         linker = linker.replace("FUN_" + "{:08x}".format(initVars[7]), actorStructName + "_Update")
     if (initVars[8] != 0):
-        fileStr += "\n#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Draw.o\")\n"
-        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + actorStructName + "_Draw.o\")\n")
-        functionNamesToRemove.append("#pragma GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[8]) + ".o\")\n")
+        fileStr += "\nGLOBAL_ASM(\"binary/" + actorStructName + "_Draw.o\")\n"
+        functionNamesToRemove.append("GLOBAL_ASM(\"binary/" + actorStructName + "_Draw.o\")\n")
+        functionNamesToRemove.append("GLOBAL_ASM(\"binary/" + "FUN_" + "{:08x}".format(initVars[8]) + ".o\")\n")
         funcs = funcs.replace("FUN_" + "{:08x}".format(initVars[8]), actorStructName + "_Draw")
         linker = linker.replace("FUN_" + "{:08x}".format(initVars[8]), actorStructName + "_Draw")
 

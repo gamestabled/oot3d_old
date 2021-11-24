@@ -22,11 +22,11 @@ ActorInit En_Trap_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnTrap_Init.o")
+GLOBAL_ASM("binary/EnTrap_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnTrap_Destroy.o")
+GLOBAL_ASM("binary/EnTrap_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnTrap_Update.o")
+GLOBAL_ASM("binary/EnTrap_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnTrap_Draw.o")
+GLOBAL_ASM("binary/EnTrap_Draw.o")
 }

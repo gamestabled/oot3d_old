@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Bigmirror_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgJyaBigmirror_Init.o")
+GLOBAL_ASM("binary/BgJyaBigmirror_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaBigmirror_Destroy.o")
+GLOBAL_ASM("binary/BgJyaBigmirror_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaBigmirror_Update.o")
+GLOBAL_ASM("binary/BgJyaBigmirror_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaBigmirror_Draw.o")
+GLOBAL_ASM("binary/BgJyaBigmirror_Draw.o")
 }

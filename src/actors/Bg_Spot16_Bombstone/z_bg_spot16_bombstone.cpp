@@ -22,11 +22,11 @@ ActorInit Bg_Spot16_Bombstone_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot16Bombstone_Init.o")
+GLOBAL_ASM("binary/BgSpot16Bombstone_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot16Bombstone_Destroy.o")
+GLOBAL_ASM("binary/BgSpot16Bombstone_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot16Bombstone_Update.o")
+GLOBAL_ASM("binary/BgSpot16Bombstone_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot16Bombstone_Draw.o")
+GLOBAL_ASM("binary/BgSpot16Bombstone_Draw.o")
 }

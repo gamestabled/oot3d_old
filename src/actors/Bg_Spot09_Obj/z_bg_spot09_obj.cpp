@@ -22,11 +22,11 @@ ActorInit Bg_Spot09_Obj_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot09Obj_Init.o")
+GLOBAL_ASM("binary/BgSpot09Obj_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot09Obj_Destroy.o")
+GLOBAL_ASM("binary/BgSpot09Obj_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot09Obj_Update.o")
+GLOBAL_ASM("binary/BgSpot09Obj_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot09Obj_Draw.o")
+GLOBAL_ASM("binary/BgSpot09Obj_Draw.o")
 }

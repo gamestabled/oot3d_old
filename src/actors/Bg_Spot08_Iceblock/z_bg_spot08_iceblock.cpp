@@ -22,11 +22,11 @@ ActorInit Bg_Spot08_Iceblock_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Init.o")
+GLOBAL_ASM("binary/BgSpot08Iceblock_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Destroy.o")
+GLOBAL_ASM("binary/BgSpot08Iceblock_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Update.o")
+GLOBAL_ASM("binary/BgSpot08Iceblock_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot08Iceblock_Draw.o")
+GLOBAL_ASM("binary/BgSpot08Iceblock_Draw.o")
 }

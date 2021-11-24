@@ -22,11 +22,11 @@ ActorInit En_Po_Field_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnPoField_Init.o")
+GLOBAL_ASM("binary/EnPoField_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnPoField_Destroy.o")
+GLOBAL_ASM("binary/EnPoField_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnPoField_Update.o")
+GLOBAL_ASM("binary/EnPoField_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnPoField_Draw.o")
+GLOBAL_ASM("binary/EnPoField_Draw.o")
 }

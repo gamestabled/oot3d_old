@@ -22,11 +22,11 @@ ActorInit Bg_Ddan_Kd_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgDdanKd_Init.o")
+GLOBAL_ASM("binary/BgDdanKd_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgDdanKd_Destroy.o")
+GLOBAL_ASM("binary/BgDdanKd_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgDdanKd_Update.o")
+GLOBAL_ASM("binary/BgDdanKd_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgDdanKd_Draw.o")
+GLOBAL_ASM("binary/BgDdanKd_Draw.o")
 }

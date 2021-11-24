@@ -21,9 +21,9 @@ ActorInit En_Kusa_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnKusa_Init.o")
+GLOBAL_ASM("binary/EnKusa_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnKusa_Destroy.o")
+GLOBAL_ASM("binary/EnKusa_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnKusa_Update.o")
+GLOBAL_ASM("binary/EnKusa_Update.o")
 }

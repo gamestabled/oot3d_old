@@ -21,9 +21,9 @@ ActorInit En_Dnt_Nomal_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDntNomal_Init.o")
+GLOBAL_ASM("binary/EnDntNomal_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDntNomal_Destroy.o")
+GLOBAL_ASM("binary/EnDntNomal_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDntNomal_Update.o")
+GLOBAL_ASM("binary/EnDntNomal_Update.o")
 }

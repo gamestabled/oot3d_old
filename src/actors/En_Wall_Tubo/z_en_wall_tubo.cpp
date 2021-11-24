@@ -21,9 +21,9 @@ ActorInit En_Wall_Tubo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnWallTubo_Init.o")
+GLOBAL_ASM("binary/EnWallTubo_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnWallTubo_Destroy.o")
+GLOBAL_ASM("binary/EnWallTubo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnWallTubo_Update.o")
+GLOBAL_ASM("binary/EnWallTubo_Update.o")
 }

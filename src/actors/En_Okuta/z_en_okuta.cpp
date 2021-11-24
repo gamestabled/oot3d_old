@@ -22,11 +22,11 @@ ActorInit En_Okuta_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnOkuta_Init.o")
+GLOBAL_ASM("binary/EnOkuta_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnOkuta_Destroy.o")
+GLOBAL_ASM("binary/EnOkuta_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnOkuta_Update.o")
+GLOBAL_ASM("binary/EnOkuta_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnOkuta_Draw.o")
+GLOBAL_ASM("binary/EnOkuta_Draw.o")
 }

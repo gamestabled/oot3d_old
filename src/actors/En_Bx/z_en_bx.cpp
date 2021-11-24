@@ -22,11 +22,11 @@ ActorInit En_Bx_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBx_Init.o")
+GLOBAL_ASM("binary/EnBx_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBx_Destroy.o")
+GLOBAL_ASM("binary/EnBx_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBx_Update.o")
+GLOBAL_ASM("binary/EnBx_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnBx_Draw.o")
+GLOBAL_ASM("binary/EnBx_Draw.o")
 }

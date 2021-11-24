@@ -21,9 +21,9 @@ ActorInit En_Poh_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnPoh_Init.o")
+GLOBAL_ASM("binary/EnPoh_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnPoh_Destroy.o")
+GLOBAL_ASM("binary/EnPoh_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnPoh_Update.o")
+GLOBAL_ASM("binary/EnPoh_Update.o")
 }

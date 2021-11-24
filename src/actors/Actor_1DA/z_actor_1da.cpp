@@ -21,9 +21,9 @@ ActorInit Actor_1DA_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/Actor1DA_Init.o")
+GLOBAL_ASM("binary/Actor1DA_Init.o")
 
-#pragma GLOBAL_ASM("binary/Actor1DA_Destroy.o")
+GLOBAL_ASM("binary/Actor1DA_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/Actor1DA_Update.o")
+GLOBAL_ASM("binary/Actor1DA_Update.o")
 }

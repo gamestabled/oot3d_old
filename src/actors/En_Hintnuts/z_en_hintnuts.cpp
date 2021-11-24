@@ -22,11 +22,11 @@ ActorInit En_Hintnuts_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnHintnuts_Init.o")
+GLOBAL_ASM("binary/EnHintnuts_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnHintnuts_Destroy.o")
+GLOBAL_ASM("binary/EnHintnuts_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnHintnuts_Update.o")
+GLOBAL_ASM("binary/EnHintnuts_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnHintnuts_Draw.o")
+GLOBAL_ASM("binary/EnHintnuts_Draw.o")
 }

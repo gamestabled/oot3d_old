@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Rock_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHidanRock_Init.o")
+GLOBAL_ASM("binary/BgHidanRock_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanRock_Destroy.o")
+GLOBAL_ASM("binary/BgHidanRock_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanRock_Update.o")
+GLOBAL_ASM("binary/BgHidanRock_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanRock_Draw.o")
+GLOBAL_ASM("binary/BgHidanRock_Draw.o")
 }

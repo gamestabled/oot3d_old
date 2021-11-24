@@ -21,9 +21,9 @@ ActorInit En_Tana_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnTana_Init.o")
+GLOBAL_ASM("binary/EnTana_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnTana_Destroy.o")
+GLOBAL_ASM("binary/EnTana_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnTana_Update.o")
+GLOBAL_ASM("binary/EnTana_Update.o")
 }

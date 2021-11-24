@@ -22,11 +22,11 @@ ActorInit Bg_Spot01_Idohashira_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Init.o")
+GLOBAL_ASM("binary/BgSpot01Idohashira_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Destroy.o")
+GLOBAL_ASM("binary/BgSpot01Idohashira_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Update.o")
+GLOBAL_ASM("binary/BgSpot01Idohashira_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot01Idohashira_Draw.o")
+GLOBAL_ASM("binary/BgSpot01Idohashira_Draw.o")
 }

@@ -21,9 +21,9 @@ ActorInit Elf_Msg2_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ElfMsg2_Init.o")
+GLOBAL_ASM("binary/ElfMsg2_Init.o")
 
-#pragma GLOBAL_ASM("binary/ElfMsg2_Destroy.o")
+GLOBAL_ASM("binary/ElfMsg2_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ElfMsg2_Update.o")
+GLOBAL_ASM("binary/ElfMsg2_Update.o")
 }

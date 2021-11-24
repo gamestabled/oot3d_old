@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Block_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgJyaBlock_Init.o")
+GLOBAL_ASM("binary/BgJyaBlock_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaBlock_Destroy.o")
+GLOBAL_ASM("binary/BgJyaBlock_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaBlock_Update.o")
+GLOBAL_ASM("binary/BgJyaBlock_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaBlock_Draw.o")
+GLOBAL_ASM("binary/BgJyaBlock_Draw.o")
 }

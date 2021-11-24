@@ -22,11 +22,11 @@ ActorInit Bg_Po_Event_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgPoEvent_Init.o")
+GLOBAL_ASM("binary/BgPoEvent_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgPoEvent_Destroy.o")
+GLOBAL_ASM("binary/BgPoEvent_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgPoEvent_Update.o")
+GLOBAL_ASM("binary/BgPoEvent_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgPoEvent_Draw.o")
+GLOBAL_ASM("binary/BgPoEvent_Draw.o")
 }

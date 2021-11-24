@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Fwbig_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHidanFwbig_Init.o")
+GLOBAL_ASM("binary/BgHidanFwbig_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanFwbig_Destroy.o")
+GLOBAL_ASM("binary/BgHidanFwbig_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanFwbig_Update.o")
+GLOBAL_ASM("binary/BgHidanFwbig_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgHidanFwbig_Draw.o")
+GLOBAL_ASM("binary/BgHidanFwbig_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit En_Dha_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDha_Init.o")
+GLOBAL_ASM("binary/EnDha_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDha_Destroy.o")
+GLOBAL_ASM("binary/EnDha_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDha_Update.o")
+GLOBAL_ASM("binary/EnDha_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnDha_Draw.o")
+GLOBAL_ASM("binary/EnDha_Draw.o")
 }

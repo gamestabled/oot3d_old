@@ -22,11 +22,11 @@ ActorInit Boss_Tw_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BossTw_Init.o")
+GLOBAL_ASM("binary/BossTw_Init.o")
 
-#pragma GLOBAL_ASM("binary/BossTw_Destroy.o")
+GLOBAL_ASM("binary/BossTw_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BossTw_Update.o")
+GLOBAL_ASM("binary/BossTw_Update.o")
 
-#pragma GLOBAL_ASM("binary/BossTw_Draw.o")
+GLOBAL_ASM("binary/BossTw_Draw.o")
 }

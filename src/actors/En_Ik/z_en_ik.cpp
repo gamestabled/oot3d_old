@@ -22,11 +22,11 @@ ActorInit En_Ik_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnIk_Init.o")
+GLOBAL_ASM("binary/EnIk_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnIk_Destroy.o")
+GLOBAL_ASM("binary/EnIk_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnIk_Update.o")
+GLOBAL_ASM("binary/EnIk_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnIk_Draw.o")
+GLOBAL_ASM("binary/EnIk_Draw.o")
 }

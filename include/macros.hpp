@@ -13,5 +13,8 @@
 #define GET_PLAYER(globalCtx) ((Player*)(globalCtx)->actorCtx.actorLists[ACTORCAT_PLAYER].head)
 
 #define ADJUST_F32_FOR_FRAMERATE(f) ((2.0f * f) / 3.0f)
+#define ADJUST_S32_FOR_FRAMERATE(s) ((3 * s) / 2)
+
+#define ADJUST_FRAMECOUNT(x) ((s32)((f32)(3 * x) / SREG(30) + 0.5f))
 
 #endif

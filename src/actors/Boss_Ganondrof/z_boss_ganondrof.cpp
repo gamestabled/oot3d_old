@@ -22,11 +22,11 @@ ActorInit Boss_Ganondrof_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BossGanondrof_Init.o")
+GLOBAL_ASM("binary/BossGanondrof_Init.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondrof_Destroy.o")
+GLOBAL_ASM("binary/BossGanondrof_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondrof_Update.o")
+GLOBAL_ASM("binary/BossGanondrof_Update.o")
 
-#pragma GLOBAL_ASM("binary/BossGanondrof_Draw.o")
+GLOBAL_ASM("binary/BossGanondrof_Draw.o")
 }

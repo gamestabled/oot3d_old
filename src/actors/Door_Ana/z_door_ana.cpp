@@ -22,11 +22,11 @@ ActorInit Door_Ana_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DoorAna_Init.o")
+GLOBAL_ASM("binary/DoorAna_Init.o")
 
-#pragma GLOBAL_ASM("binary/DoorAna_Destroy.o")
+GLOBAL_ASM("binary/DoorAna_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DoorAna_Update.o")
+GLOBAL_ASM("binary/DoorAna_Update.o")
 
-#pragma GLOBAL_ASM("binary/DoorAna_Draw.o")
+GLOBAL_ASM("binary/DoorAna_Draw.o")
 }

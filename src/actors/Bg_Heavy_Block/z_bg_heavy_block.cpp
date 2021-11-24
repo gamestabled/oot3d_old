@@ -22,11 +22,11 @@ ActorInit Bg_Heavy_Block_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHeavyBlock_Init.o")
+GLOBAL_ASM("binary/BgHeavyBlock_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHeavyBlock_Destroy.o")
+GLOBAL_ASM("binary/BgHeavyBlock_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHeavyBlock_Update.o")
+GLOBAL_ASM("binary/BgHeavyBlock_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgHeavyBlock_Draw.o")
+GLOBAL_ASM("binary/BgHeavyBlock_Draw.o")
 }

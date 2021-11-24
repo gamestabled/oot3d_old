@@ -22,11 +22,11 @@ ActorInit En_Hata_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnHata_Init.o")
+GLOBAL_ASM("binary/EnHata_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnHata_Destroy.o")
+GLOBAL_ASM("binary/EnHata_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnHata_Update.o")
+GLOBAL_ASM("binary/EnHata_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnHata_Draw.o")
+GLOBAL_ASM("binary/EnHata_Draw.o")
 }

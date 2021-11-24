@@ -21,9 +21,9 @@ ActorInit Shot_Sun_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ShotSun_Init.o")
+GLOBAL_ASM("binary/ShotSun_Init.o")
 
-#pragma GLOBAL_ASM("binary/ShotSun_Destroy.o")
+GLOBAL_ASM("binary/ShotSun_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ShotSun_Update.o")
+GLOBAL_ASM("binary/ShotSun_Update.o")
 }

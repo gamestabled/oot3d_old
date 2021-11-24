@@ -22,11 +22,11 @@ ActorInit En_Bili_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBili_Init.o")
+GLOBAL_ASM("binary/EnBili_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBili_Destroy.o")
+GLOBAL_ASM("binary/EnBili_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBili_Update.o")
+GLOBAL_ASM("binary/EnBili_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnBili_Draw.o")
+GLOBAL_ASM("binary/EnBili_Draw.o")
 }

@@ -21,9 +21,9 @@ ActorInit En_Wonder_Talk2_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnWonderTalk2_Init.o")
+GLOBAL_ASM("binary/EnWonderTalk2_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnWonderTalk2_Destroy.o")
+GLOBAL_ASM("binary/EnWonderTalk2_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnWonderTalk2_Update.o")
+GLOBAL_ASM("binary/EnWonderTalk2_Update.o")
 }

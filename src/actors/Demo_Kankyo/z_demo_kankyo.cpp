@@ -22,11 +22,11 @@ ActorInit Demo_Kankyo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DemoKankyo_Init.o")
+GLOBAL_ASM("binary/DemoKankyo_Init.o")
 
-#pragma GLOBAL_ASM("binary/DemoKankyo_Destroy.o")
+GLOBAL_ASM("binary/DemoKankyo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DemoKankyo_Update.o")
+GLOBAL_ASM("binary/DemoKankyo_Update.o")
 
-#pragma GLOBAL_ASM("binary/DemoKankyo_Draw.o")
+GLOBAL_ASM("binary/DemoKankyo_Draw.o")
 }

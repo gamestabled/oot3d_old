@@ -21,9 +21,9 @@ ActorInit En_Wonder_Item_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnWonderItem_Init.o")
+GLOBAL_ASM("binary/EnWonderItem_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnWonderItem_Destroy.o")
+GLOBAL_ASM("binary/EnWonderItem_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnWonderItem_Update.o")
+GLOBAL_ASM("binary/EnWonderItem_Update.o")
 }

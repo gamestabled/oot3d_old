@@ -21,9 +21,9 @@ ActorInit Bg_Bom_Guard_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgBomGuard_Init.o")
+GLOBAL_ASM("binary/BgBomGuard_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgBomGuard_Destroy.o")
+GLOBAL_ASM("binary/BgBomGuard_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgBomGuard_Update.o")
+GLOBAL_ASM("binary/BgBomGuard_Update.o")
 }

@@ -22,11 +22,11 @@ ActorInit En_Goroiwa_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnGoroiwa_Init.o")
+GLOBAL_ASM("binary/EnGoroiwa_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnGoroiwa_Destroy.o")
+GLOBAL_ASM("binary/EnGoroiwa_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnGoroiwa_Update.o")
+GLOBAL_ASM("binary/EnGoroiwa_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnGoroiwa_Draw.o")
+GLOBAL_ASM("binary/EnGoroiwa_Draw.o")
 }

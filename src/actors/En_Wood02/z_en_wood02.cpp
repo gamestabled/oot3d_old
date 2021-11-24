@@ -22,11 +22,11 @@ ActorInit En_Wood02_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnWood02_Init.o")
+GLOBAL_ASM("binary/EnWood02_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnWood02_Destroy.o")
+GLOBAL_ASM("binary/EnWood02_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnWood02_Update.o")
+GLOBAL_ASM("binary/EnWood02_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnWood02_Draw.o")
+GLOBAL_ASM("binary/EnWood02_Draw.o")
 }

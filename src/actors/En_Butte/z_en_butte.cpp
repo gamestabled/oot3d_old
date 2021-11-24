@@ -22,11 +22,11 @@ ActorInit En_Butte_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnButte_Init.o")
+GLOBAL_ASM("binary/EnButte_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnButte_Destroy.o")
+GLOBAL_ASM("binary/EnButte_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnButte_Update.o")
+GLOBAL_ASM("binary/EnButte_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnButte_Draw.o")
+GLOBAL_ASM("binary/EnButte_Draw.o")
 }

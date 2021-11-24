@@ -22,11 +22,11 @@ ActorInit Bg_Spot12_Gate_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot12Gate_Init.o")
+GLOBAL_ASM("binary/BgSpot12Gate_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot12Gate_Destroy.o")
+GLOBAL_ASM("binary/BgSpot12Gate_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot12Gate_Update.o")
+GLOBAL_ASM("binary/BgSpot12Gate_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot12Gate_Draw.o")
+GLOBAL_ASM("binary/BgSpot12Gate_Draw.o")
 }

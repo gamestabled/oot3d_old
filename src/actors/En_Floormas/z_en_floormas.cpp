@@ -22,11 +22,11 @@ ActorInit En_Floormas_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnFloormas_Init.o")
+GLOBAL_ASM("binary/EnFloormas_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnFloormas_Destroy.o")
+GLOBAL_ASM("binary/EnFloormas_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnFloormas_Update.o")
+GLOBAL_ASM("binary/EnFloormas_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnFloormas_Draw.o")
+GLOBAL_ASM("binary/EnFloormas_Draw.o")
 }

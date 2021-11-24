@@ -22,11 +22,11 @@ ActorInit Obj_Comb_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjComb_Init.o")
+GLOBAL_ASM("binary/ObjComb_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjComb_Destroy.o")
+GLOBAL_ASM("binary/ObjComb_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ObjComb_Update.o")
+GLOBAL_ASM("binary/ObjComb_Update.o")
 
-#pragma GLOBAL_ASM("binary/ObjComb_Draw.o")
+GLOBAL_ASM("binary/ObjComb_Draw.o")
 }

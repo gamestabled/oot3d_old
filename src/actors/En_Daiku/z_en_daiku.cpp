@@ -22,11 +22,11 @@ ActorInit En_Daiku_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDaiku_Init.o")
+GLOBAL_ASM("binary/EnDaiku_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDaiku_Destroy.o")
+GLOBAL_ASM("binary/EnDaiku_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDaiku_Update.o")
+GLOBAL_ASM("binary/EnDaiku_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnDaiku_Draw.o")
+GLOBAL_ASM("binary/EnDaiku_Draw.o")
 }

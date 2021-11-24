@@ -22,11 +22,11 @@ ActorInit Bg_Menkuri_Kaiten_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Init.o")
+GLOBAL_ASM("binary/BgMenkuriKaiten_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Destroy.o")
+GLOBAL_ASM("binary/BgMenkuriKaiten_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Update.o")
+GLOBAL_ASM("binary/BgMenkuriKaiten_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgMenkuriKaiten_Draw.o")
+GLOBAL_ASM("binary/BgMenkuriKaiten_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit En_Stream_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnStream_Init.o")
+GLOBAL_ASM("binary/EnStream_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnStream_Destroy.o")
+GLOBAL_ASM("binary/EnStream_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnStream_Update.o")
+GLOBAL_ASM("binary/EnStream_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnStream_Draw.o")
+GLOBAL_ASM("binary/EnStream_Draw.o")
 }

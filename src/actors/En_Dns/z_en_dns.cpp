@@ -22,11 +22,11 @@ ActorInit En_Dns_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDns_Init.o")
+GLOBAL_ASM("binary/EnDns_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDns_Destroy.o")
+GLOBAL_ASM("binary/EnDns_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDns_Update.o")
+GLOBAL_ASM("binary/EnDns_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnDns_Draw.o")
+GLOBAL_ASM("binary/EnDns_Draw.o")
 }

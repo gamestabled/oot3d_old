@@ -22,11 +22,11 @@ ActorInit En_Ta_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnTa_Init.o")
+GLOBAL_ASM("binary/EnTa_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnTa_Destroy.o")
+GLOBAL_ASM("binary/EnTa_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnTa_Update.o")
+GLOBAL_ASM("binary/EnTa_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnTa_Draw.o")
+GLOBAL_ASM("binary/EnTa_Draw.o")
 }

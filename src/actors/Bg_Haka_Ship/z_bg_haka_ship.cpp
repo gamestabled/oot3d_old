@@ -22,11 +22,11 @@ ActorInit Bg_Haka_Ship_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHakaShip_Init.o")
+GLOBAL_ASM("binary/BgHakaShip_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaShip_Destroy.o")
+GLOBAL_ASM("binary/BgHakaShip_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaShip_Update.o")
+GLOBAL_ASM("binary/BgHakaShip_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaShip_Draw.o")
+GLOBAL_ASM("binary/BgHakaShip_Draw.o")
 }

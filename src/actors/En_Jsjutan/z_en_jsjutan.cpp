@@ -21,9 +21,9 @@ ActorInit En_Jsjutan_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnJsjutan_Init.o")
+GLOBAL_ASM("binary/EnJsjutan_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnJsjutan_Destroy.o")
+GLOBAL_ASM("binary/EnJsjutan_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnJsjutan_Update.o")
+GLOBAL_ASM("binary/EnJsjutan_Update.o")
 }

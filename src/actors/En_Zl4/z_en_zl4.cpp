@@ -22,11 +22,11 @@ ActorInit En_Zl4_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnZl4_Init.o")
+GLOBAL_ASM("binary/EnZl4_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnZl4_Destroy.o")
+GLOBAL_ASM("binary/EnZl4_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnZl4_Update.o")
+GLOBAL_ASM("binary/EnZl4_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnZl4_Draw.o")
+GLOBAL_ASM("binary/EnZl4_Draw.o")
 }

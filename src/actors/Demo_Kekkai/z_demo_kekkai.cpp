@@ -22,11 +22,11 @@ ActorInit Demo_Kekkai_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DemoKekkai_Init.o")
+GLOBAL_ASM("binary/DemoKekkai_Init.o")
 
-#pragma GLOBAL_ASM("binary/DemoKekkai_Destroy.o")
+GLOBAL_ASM("binary/DemoKekkai_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DemoKekkai_Update.o")
+GLOBAL_ASM("binary/DemoKekkai_Update.o")
 
-#pragma GLOBAL_ASM("binary/DemoKekkai_Draw.o")
+GLOBAL_ASM("binary/DemoKekkai_Draw.o")
 }

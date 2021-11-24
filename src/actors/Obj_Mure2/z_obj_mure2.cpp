@@ -21,7 +21,7 @@ ActorInit Obj_Mure2_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjMure2_Init.o")
+GLOBAL_ASM("binary/ObjMure2_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjMure2_Update.o")
+GLOBAL_ASM("binary/ObjMure2_Update.o")
 }

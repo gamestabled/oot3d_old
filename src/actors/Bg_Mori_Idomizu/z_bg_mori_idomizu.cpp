@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Idomizu_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMoriIdomizu_Init.o")
+GLOBAL_ASM("binary/BgMoriIdomizu_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriIdomizu_Destroy.o")
+GLOBAL_ASM("binary/BgMoriIdomizu_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriIdomizu_Update.o")
+GLOBAL_ASM("binary/BgMoriIdomizu_Update.o")
 }

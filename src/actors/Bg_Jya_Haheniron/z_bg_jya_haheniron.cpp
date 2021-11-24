@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Haheniron_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgJyaHaheniron_Init.o")
+GLOBAL_ASM("binary/BgJyaHaheniron_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaHaheniron_Destroy.o")
+GLOBAL_ASM("binary/BgJyaHaheniron_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaHaheniron_Update.o")
+GLOBAL_ASM("binary/BgJyaHaheniron_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaHaheniron_Draw.o")
+GLOBAL_ASM("binary/BgJyaHaheniron_Draw.o")
 }

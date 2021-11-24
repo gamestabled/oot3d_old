@@ -22,11 +22,11 @@ ActorInit Door_Warp1_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DoorWarp1_Init.o")
+GLOBAL_ASM("binary/DoorWarp1_Init.o")
 
-#pragma GLOBAL_ASM("binary/DoorWarp1_Destroy.o")
+GLOBAL_ASM("binary/DoorWarp1_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DoorWarp1_Update.o")
+GLOBAL_ASM("binary/DoorWarp1_Update.o")
 
-#pragma GLOBAL_ASM("binary/DoorWarp1_Draw.o")
+GLOBAL_ASM("binary/DoorWarp1_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit Bg_Zg_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgZg_Init.o")
+GLOBAL_ASM("binary/BgZg_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgZg_Destroy.o")
+GLOBAL_ASM("binary/BgZg_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgZg_Update.o")
+GLOBAL_ASM("binary/BgZg_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgZg_Draw.o")
+GLOBAL_ASM("binary/BgZg_Draw.o")
 }

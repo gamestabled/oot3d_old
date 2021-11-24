@@ -22,11 +22,11 @@ ActorInit Demo_Sa_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DemoSa_Init.o")
+GLOBAL_ASM("binary/DemoSa_Init.o")
 
-#pragma GLOBAL_ASM("binary/DemoSa_Destroy.o")
+GLOBAL_ASM("binary/DemoSa_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DemoSa_Update.o")
+GLOBAL_ASM("binary/DemoSa_Update.o")
 
-#pragma GLOBAL_ASM("binary/DemoSa_Draw.o")
+GLOBAL_ASM("binary/DemoSa_Draw.o")
 }

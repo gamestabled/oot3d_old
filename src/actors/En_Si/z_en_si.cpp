@@ -22,11 +22,11 @@ ActorInit En_Si_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnSi_Init.o")
+GLOBAL_ASM("binary/EnSi_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnSi_Destroy.o")
+GLOBAL_ASM("binary/EnSi_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnSi_Update.o")
+GLOBAL_ASM("binary/EnSi_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnSi_Draw.o")
+GLOBAL_ASM("binary/EnSi_Draw.o")
 }
