@@ -22,11 +22,11 @@ ActorInit Oceff_Storm_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/OceffStorm_Init.o")
+GLOBAL_ASM("binary/OceffStorm_Init.o")
 
-#pragma GLOBAL_ASM("binary/OceffStorm_Destroy.o")
+GLOBAL_ASM("binary/OceffStorm_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/OceffStorm_Update.o")
+GLOBAL_ASM("binary/OceffStorm_Update.o")
 
-#pragma GLOBAL_ASM("binary/OceffStorm_Draw.o")
+GLOBAL_ASM("binary/OceffStorm_Draw.o")
 }

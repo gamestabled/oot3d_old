@@ -22,11 +22,11 @@ ActorInit Bg_Ydan_Sp_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgYdanSp_Init.o")
+GLOBAL_ASM("binary/BgYdanSp_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgYdanSp_Destroy.o")
+GLOBAL_ASM("binary/BgYdanSp_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgYdanSp_Update.o")
+GLOBAL_ASM("binary/BgYdanSp_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgYdanSp_Draw.o")
+GLOBAL_ASM("binary/BgYdanSp_Draw.o")
 }

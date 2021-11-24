@@ -21,9 +21,9 @@ ActorInit Item_Etcetera_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ItemEtcetera_Init.o")
+GLOBAL_ASM("binary/ItemEtcetera_Init.o")
 
-#pragma GLOBAL_ASM("binary/ItemEtcetera_Destroy.o")
+GLOBAL_ASM("binary/ItemEtcetera_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ItemEtcetera_Update.o")
+GLOBAL_ASM("binary/ItemEtcetera_Update.o")
 }

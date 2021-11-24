@@ -22,11 +22,11 @@ ActorInit En_Scene_Change_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnSceneChange_Init.o")
+GLOBAL_ASM("binary/EnSceneChange_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnSceneChange_Destroy.o")
+GLOBAL_ASM("binary/EnSceneChange_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnSceneChange_Update.o")
+GLOBAL_ASM("binary/EnSceneChange_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnSceneChange_Draw.o")
+GLOBAL_ASM("binary/EnSceneChange_Draw.o")
 }

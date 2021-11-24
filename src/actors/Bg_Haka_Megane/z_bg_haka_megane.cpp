@@ -21,9 +21,9 @@ ActorInit Bg_Haka_Megane_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHakaMegane_Init.o")
+GLOBAL_ASM("binary/BgHakaMegane_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaMegane_Destroy.o")
+GLOBAL_ASM("binary/BgHakaMegane_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaMegane_Update.o")
+GLOBAL_ASM("binary/BgHakaMegane_Update.o")
 }

@@ -22,11 +22,11 @@ ActorInit Obj_Timeblock_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjTimeblock_Init.o")
+GLOBAL_ASM("binary/ObjTimeblock_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjTimeblock_Destroy.o")
+GLOBAL_ASM("binary/ObjTimeblock_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ObjTimeblock_Update.o")
+GLOBAL_ASM("binary/ObjTimeblock_Update.o")
 
-#pragma GLOBAL_ASM("binary/ObjTimeblock_Draw.o")
+GLOBAL_ASM("binary/ObjTimeblock_Draw.o")
 }

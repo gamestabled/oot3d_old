@@ -10,10 +10,12 @@
 #include "z3Dcamera.hpp"
 #include "z3Dcollision_check.hpp"
 #include "z3Dbgcheck.hpp"
+#include "z3Dscene.hpp"
 #include "color.hpp"
 #include "math.hpp"
 #include "ichain.hpp"
 #include "stddef.hpp"
+#include "regs.hpp"
 
 typedef struct {
     /* 0x00 */ u8 buttonItems[5]; //B,Y,X,I,II
@@ -166,8 +168,9 @@ typedef struct {
     /* 0x156F */ u8           buttonStatus[5];
     /* 0x1574 */ char         unk_1574[0x000F];
     /* 0x1584 */ u16          magicMeterSize;
-    /* 0x1586 */ char         unk_1586[0x000C];
-    /* 0x1592 */ u16          dungeonIndex;
+    /* 0x1586 */ char         unk_1586[0x0004];
+    /* 0x158A */ u16          eventInf[4];
+    /* 0x1592 */ u16          mapIndex;
     /* 0x1594 */ char         unk_1594[0x000C];
     /* 0x15A0 */ u16          nextCutsceneIndex;
     /* 0x15A2 */ u8           cutsceneTrigger;
@@ -355,6 +358,13 @@ typedef struct {
     /* 0x40 */ u32 size;
 } ObjectFile;
 
+typedef struct {
+    /* 0x00 */ s16   id;
+    /* 0x02 */ Vec3s pos;
+    /* 0x08 */ Vec3s rot;
+    /* 0x0E */ s16   params;
+} ActorEntry; // size = 0x10
+
 typedef struct GameAllocEntry {
     /* 0x00 */ struct GameAllocEntry* next;
     /* 0x04 */ struct GameAllocEntry* prev;
@@ -499,15 +509,18 @@ typedef struct {
     /* 0x03 */ u8 flags3;
 } RestrictionFlags;
 
-struct unk_51b2f4 {
-    char unk_00[0x100];
-    s16 unk_100[0x100];
-    char unk_300[0x12D4];
+// Game Info aka. Static Context
+// Data normally accessed through REG macros (see regs.h)
+typedef struct {
+    /* 0x00 */ s32  regPage;   // 1 is first page
+    /* 0x04 */ s32  regGroup;  // "register" group (R, RS, RO, RP etc.)
+    /* 0x08 */ s32  regCur;    // selected register within page
+    /* 0x0C */ s32  dpadLast;
+    /* 0x10 */ s32  repeat;
+    /* 0x14 */ s16  data[REG_GROUPS * REG_PER_GROUP]; // 0xAE0 entries
+} GameInfo; // size = 0x15D4
 
-    s32 ConvertFrameCount(f32 frames) {
-        return (s32)(frames / unk_100[0x8] + 0.5f);
-    }
-}; // size 0x15D4
+extern GameInfo* gGameInfo;
 
 #define gStaticContext (*(StaticContext*)0x08080010)
 #define gObjectTable ((ObjectFile*)0x53CCF4)

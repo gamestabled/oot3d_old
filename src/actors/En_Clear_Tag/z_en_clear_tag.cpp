@@ -22,11 +22,11 @@ ActorInit En_Clear_Tag_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnClearTag_Init.o")
+GLOBAL_ASM("binary/EnClearTag_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnClearTag_Destroy.o")
+GLOBAL_ASM("binary/EnClearTag_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnClearTag_Update.o")
+GLOBAL_ASM("binary/EnClearTag_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnClearTag_Draw.o")
+GLOBAL_ASM("binary/EnClearTag_Draw.o")
 }

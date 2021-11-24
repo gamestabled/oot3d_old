@@ -22,11 +22,11 @@ ActorInit En_Bom_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBom_Init.o")
+GLOBAL_ASM("binary/EnBom_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBom_Destroy.o")
+GLOBAL_ASM("binary/EnBom_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBom_Update.o")
+GLOBAL_ASM("binary/EnBom_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnBom_Draw.o")
+GLOBAL_ASM("binary/EnBom_Draw.o")
 }

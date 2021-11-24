@@ -22,11 +22,11 @@ ActorInit Demo_Shd_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DemoShd_Init.o")
+GLOBAL_ASM("binary/DemoShd_Init.o")
 
-#pragma GLOBAL_ASM("binary/DemoShd_Destroy.o")
+GLOBAL_ASM("binary/DemoShd_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DemoShd_Update.o")
+GLOBAL_ASM("binary/DemoShd_Update.o")
 
-#pragma GLOBAL_ASM("binary/DemoShd_Draw.o")
+GLOBAL_ASM("binary/DemoShd_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit Magic_Fire_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/MagicFire_Init.o")
+GLOBAL_ASM("binary/MagicFire_Init.o")
 
-#pragma GLOBAL_ASM("binary/MagicFire_Destroy.o")
+GLOBAL_ASM("binary/MagicFire_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/MagicFire_Update.o")
+GLOBAL_ASM("binary/MagicFire_Update.o")
 
-#pragma GLOBAL_ASM("binary/MagicFire_Draw.o")
+GLOBAL_ASM("binary/MagicFire_Draw.o")
 }

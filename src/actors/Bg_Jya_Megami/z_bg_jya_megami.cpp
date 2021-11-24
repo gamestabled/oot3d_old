@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Megami_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgJyaMegami_Init.o")
+GLOBAL_ASM("binary/BgJyaMegami_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaMegami_Destroy.o")
+GLOBAL_ASM("binary/BgJyaMegami_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaMegami_Update.o")
+GLOBAL_ASM("binary/BgJyaMegami_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgJyaMegami_Draw.o")
+GLOBAL_ASM("binary/BgJyaMegami_Draw.o")
 }

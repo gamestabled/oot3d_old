@@ -21,11 +21,11 @@ ActorInit Player_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/Player_Init.o")
+GLOBAL_ASM("binary/Player_Init.o")
 
-#pragma GLOBAL_ASM("binary/Player_Destroy.o")
+GLOBAL_ASM("binary/Player_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/Player_Update.o")
+GLOBAL_ASM("binary/Player_Update.o")
 
-#pragma GLOBAL_ASM("binary/Player_Draw.o")
+GLOBAL_ASM("binary/Player_Draw.o")
 }

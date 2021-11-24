@@ -22,11 +22,11 @@ ActorInit Bg_Ydan_Hasi_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgYdanHasi_Init.o")
+GLOBAL_ASM("binary/BgYdanHasi_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgYdanHasi_Destroy.o")
+GLOBAL_ASM("binary/BgYdanHasi_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgYdanHasi_Update.o")
+GLOBAL_ASM("binary/BgYdanHasi_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgYdanHasi_Draw.o")
+GLOBAL_ASM("binary/BgYdanHasi_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit Item_Shield_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ItemShield_Init.o")
+GLOBAL_ASM("binary/ItemShield_Init.o")
 
-#pragma GLOBAL_ASM("binary/ItemShield_Destroy.o")
+GLOBAL_ASM("binary/ItemShield_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ItemShield_Update.o")
+GLOBAL_ASM("binary/ItemShield_Update.o")
 
-#pragma GLOBAL_ASM("binary/ItemShield_Draw.o")
+GLOBAL_ASM("binary/ItemShield_Draw.o")
 }

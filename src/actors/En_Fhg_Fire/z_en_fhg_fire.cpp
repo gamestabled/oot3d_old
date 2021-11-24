@@ -22,11 +22,11 @@ ActorInit En_Fhg_Fire_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnFhgFire_Init.o")
+GLOBAL_ASM("binary/EnFhgFire_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnFhgFire_Destroy.o")
+GLOBAL_ASM("binary/EnFhgFire_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnFhgFire_Update.o")
+GLOBAL_ASM("binary/EnFhgFire_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnFhgFire_Draw.o")
+GLOBAL_ASM("binary/EnFhgFire_Draw.o")
 }

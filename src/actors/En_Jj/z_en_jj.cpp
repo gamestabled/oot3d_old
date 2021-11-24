@@ -22,11 +22,11 @@ ActorInit En_Jj_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnJj_Init.o")
+GLOBAL_ASM("binary/EnJj_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnJj_Destroy.o")
+GLOBAL_ASM("binary/EnJj_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnJj_Update.o")
+GLOBAL_ASM("binary/EnJj_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnJj_Draw.o")
+GLOBAL_ASM("binary/EnJj_Draw.o")
 }

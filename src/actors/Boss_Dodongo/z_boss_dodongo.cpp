@@ -22,11 +22,11 @@ ActorInit Boss_Dodongo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BossDodongo_Init.o")
+GLOBAL_ASM("binary/BossDodongo_Init.o")
 
-#pragma GLOBAL_ASM("binary/BossDodongo_Destroy.o")
+GLOBAL_ASM("binary/BossDodongo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BossDodongo_Update.o")
+GLOBAL_ASM("binary/BossDodongo_Update.o")
 
-#pragma GLOBAL_ASM("binary/BossDodongo_Draw.o")
+GLOBAL_ASM("binary/BossDodongo_Draw.o")
 }

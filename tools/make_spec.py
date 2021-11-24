@@ -4,7 +4,7 @@ with open('src/functions.cpp', 'w') as funcsSrc:
         for i in range(0, len(Lines)):
             funcName = Lines[i].split(',')[0]
             objectName = "binary/" + funcName + ".o"
-            funcsSrc.write('#pragma GLOBAL_ASM(\"' + objectName + '\")\n\n')
+            funcsSrc.write('GLOBAL_ASM(\"' + objectName + '\")\n\n')
 
 with open('src/rodata.cpp', 'w') as rodataSrc:
     with open('rodata_chunks.txt', 'r') as rodata:
@@ -12,7 +12,7 @@ with open('src/rodata.cpp', 'w') as rodataSrc:
         for i in range(0, len(Lines)):
             rodataName = Lines[i].split(',')[0]
             objectName = "binary/" + rodataName + ".o"
-            rodataSrc.write('#pragma GLOBAL_ASM(\"' + objectName + '\")\n\n')
+            rodataSrc.write('GLOBAL_ASM(\"' + objectName + '\")\n\n')
 
 with open('src/data.cpp', 'w') as dataSrc:
     with open('data_chunks.txt', 'r') as data:
@@ -20,4 +20,4 @@ with open('src/data.cpp', 'w') as dataSrc:
         for i in range(0, len(Lines)):
             dataName = Lines[i].split(',')[0]
             objectName = "binary/" + dataName + ".o"
-            dataSrc.write('#pragma GLOBAL_ASM(\"' + objectName + '\")\n\n')
+            dataSrc.write('GLOBAL_ASM(\"' + objectName + '\")\n\n')

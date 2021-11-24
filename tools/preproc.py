@@ -8,7 +8,7 @@ with open(sys.argv[1], 'r') as srcFile:
     srcLines = srcFile.readlines()
     for srcLine in srcLines:
         srcLine = srcLine.strip()
-        if srcLine.startswith("#pragma GLOBAL_ASM("):
+        if srcLine.startswith("GLOBAL_ASM("):
             fname = srcLine[srcLine.index('(') + 2 : -2]
             outdependencies.append(fname)
     if len(outdependencies) > 0:

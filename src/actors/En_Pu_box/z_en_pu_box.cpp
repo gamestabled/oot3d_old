@@ -22,11 +22,11 @@ ActorInit En_Pu_box_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnPubox_Init.o")
+GLOBAL_ASM("binary/EnPubox_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnPubox_Destroy.o")
+GLOBAL_ASM("binary/EnPubox_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnPubox_Update.o")
+GLOBAL_ASM("binary/EnPubox_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnPubox_Draw.o")
+GLOBAL_ASM("binary/EnPubox_Draw.o")
 }

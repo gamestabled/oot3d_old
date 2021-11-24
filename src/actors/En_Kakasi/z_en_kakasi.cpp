@@ -22,11 +22,11 @@ ActorInit En_Kakasi_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnKakasi_Init.o")
+GLOBAL_ASM("binary/EnKakasi_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnKakasi_Destroy.o")
+GLOBAL_ASM("binary/EnKakasi_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnKakasi_Update.o")
+GLOBAL_ASM("binary/EnKakasi_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnKakasi_Draw.o")
+GLOBAL_ASM("binary/EnKakasi_Draw.o")
 }

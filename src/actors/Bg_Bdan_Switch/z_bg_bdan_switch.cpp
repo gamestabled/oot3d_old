@@ -22,11 +22,11 @@ ActorInit Bg_Bdan_Switch_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgBdanSwitch_Init.o")
+GLOBAL_ASM("binary/BgBdanSwitch_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgBdanSwitch_Destroy.o")
+GLOBAL_ASM("binary/BgBdanSwitch_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgBdanSwitch_Update.o")
+GLOBAL_ASM("binary/BgBdanSwitch_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgBdanSwitch_Draw.o")
+GLOBAL_ASM("binary/BgBdanSwitch_Draw.o")
 }

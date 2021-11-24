@@ -22,11 +22,11 @@ ActorInit En_Diving_Game_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDivingGame_Init.o")
+GLOBAL_ASM("binary/EnDivingGame_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDivingGame_Destroy.o")
+GLOBAL_ASM("binary/EnDivingGame_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDivingGame_Update.o")
+GLOBAL_ASM("binary/EnDivingGame_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnDivingGame_Draw.o")
+GLOBAL_ASM("binary/EnDivingGame_Draw.o")
 }

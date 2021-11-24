@@ -101,7 +101,7 @@ void FUN_001e466c(BgTreemouth* self, GlobalContext* globalCtx) {
         self->unk_1C0 = 1.0f;
     }
 
-    if ((gSaveContext.sceneSetupIndex == 6) && !(DAT_0051b2f4->ConvertFrameCount(2100.0f) >= globalCtx->csCtx.frames) &&
+    if ((gSaveContext.sceneSetupIndex == 6) && !(ADJUST_FRAMECOUNT(700) >= globalCtx->csCtx.frames) &&
         (globalCtx->state.frames % 8 == 0)) {
         sp34.x = (Rand_ZeroOne() * 1158.0f) + 3407.0f;
         sp34.y = 970.0f;

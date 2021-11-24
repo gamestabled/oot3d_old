@@ -22,11 +22,11 @@ ActorInit Boss_Ganon_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BossGanon_Init.o")
+GLOBAL_ASM("binary/BossGanon_Init.o")
 
-#pragma GLOBAL_ASM("binary/BossGanon_Destroy.o")
+GLOBAL_ASM("binary/BossGanon_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BossGanon_Update.o")
+GLOBAL_ASM("binary/BossGanon_Update.o")
 
-#pragma GLOBAL_ASM("binary/BossGanon_Draw.o")
+GLOBAL_ASM("binary/BossGanon_Draw.o")
 }

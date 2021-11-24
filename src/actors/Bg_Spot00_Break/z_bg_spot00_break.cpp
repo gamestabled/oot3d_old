@@ -22,11 +22,11 @@ ActorInit Bg_Spot00_Break_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot00Break_Init.o")
+GLOBAL_ASM("binary/BgSpot00Break_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot00Break_Destroy.o")
+GLOBAL_ASM("binary/BgSpot00Break_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot00Break_Update.o")
+GLOBAL_ASM("binary/BgSpot00Break_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot00Break_Draw.o")
+GLOBAL_ASM("binary/BgSpot00Break_Draw.o")
 }

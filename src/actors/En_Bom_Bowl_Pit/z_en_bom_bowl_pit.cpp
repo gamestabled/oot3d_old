@@ -21,9 +21,9 @@ ActorInit En_Bom_Bowl_Pit_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBomBowlPit_Init.o")
+GLOBAL_ASM("binary/EnBomBowlPit_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBomBowlPit_Destroy.o")
+GLOBAL_ASM("binary/EnBomBowlPit_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBomBowlPit_Update.o")
+GLOBAL_ASM("binary/EnBomBowlPit_Update.o")
 }

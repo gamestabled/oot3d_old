@@ -22,11 +22,11 @@ ActorInit En_Shopnuts_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnShopnuts_Init.o")
+GLOBAL_ASM("binary/EnShopnuts_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnShopnuts_Destroy.o")
+GLOBAL_ASM("binary/EnShopnuts_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnShopnuts_Update.o")
+GLOBAL_ASM("binary/EnShopnuts_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnShopnuts_Draw.o")
+GLOBAL_ASM("binary/EnShopnuts_Draw.o")
 }

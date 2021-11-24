@@ -22,11 +22,11 @@ ActorInit En_Bird_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBird_Init.o")
+GLOBAL_ASM("binary/EnBird_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBird_Destroy.o")
+GLOBAL_ASM("binary/EnBird_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBird_Update.o")
+GLOBAL_ASM("binary/EnBird_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnBird_Draw.o")
+GLOBAL_ASM("binary/EnBird_Draw.o")
 }

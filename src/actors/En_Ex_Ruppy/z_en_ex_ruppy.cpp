@@ -22,11 +22,11 @@ ActorInit En_Ex_Ruppy_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnExRuppy_Init.o")
+GLOBAL_ASM("binary/EnExRuppy_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnExRuppy_Destroy.o")
+GLOBAL_ASM("binary/EnExRuppy_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnExRuppy_Update.o")
+GLOBAL_ASM("binary/EnExRuppy_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnExRuppy_Draw.o")
+GLOBAL_ASM("binary/EnExRuppy_Draw.o")
 }

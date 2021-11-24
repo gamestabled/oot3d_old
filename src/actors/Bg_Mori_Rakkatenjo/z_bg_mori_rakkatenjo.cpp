@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Rakkatenjo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMoriRakkatenjo_Init.o")
+GLOBAL_ASM("binary/BgMoriRakkatenjo_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriRakkatenjo_Destroy.o")
+GLOBAL_ASM("binary/BgMoriRakkatenjo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMoriRakkatenjo_Update.o")
+GLOBAL_ASM("binary/BgMoriRakkatenjo_Update.o")
 }

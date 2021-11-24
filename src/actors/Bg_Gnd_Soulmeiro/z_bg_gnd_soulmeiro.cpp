@@ -22,11 +22,11 @@ ActorInit Bg_Gnd_Soulmeiro_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Init.o")
+GLOBAL_ASM("binary/BgGndSoulmeiro_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Destroy.o")
+GLOBAL_ASM("binary/BgGndSoulmeiro_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Update.o")
+GLOBAL_ASM("binary/BgGndSoulmeiro_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgGndSoulmeiro_Draw.o")
+GLOBAL_ASM("binary/BgGndSoulmeiro_Draw.o")
 }

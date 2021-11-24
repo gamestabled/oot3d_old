@@ -22,11 +22,11 @@ ActorInit En_Zo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnZo_Init.o")
+GLOBAL_ASM("binary/EnZo_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnZo_Destroy.o")
+GLOBAL_ASM("binary/EnZo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnZo_Update.o")
+GLOBAL_ASM("binary/EnZo_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnZo_Draw.o")
+GLOBAL_ASM("binary/EnZo_Draw.o")
 }

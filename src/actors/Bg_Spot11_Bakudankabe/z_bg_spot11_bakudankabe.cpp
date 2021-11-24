@@ -22,11 +22,11 @@ ActorInit Bg_Spot11_Bakudankabe_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot11Bakudankabe_Init.o")
+GLOBAL_ASM("binary/BgSpot11Bakudankabe_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot11Bakudankabe_Destroy.o")
+GLOBAL_ASM("binary/BgSpot11Bakudankabe_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot11Bakudankabe_Update.o")
+GLOBAL_ASM("binary/BgSpot11Bakudankabe_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot11Bakudankabe_Draw.o")
+GLOBAL_ASM("binary/BgSpot11Bakudankabe_Draw.o")
 }

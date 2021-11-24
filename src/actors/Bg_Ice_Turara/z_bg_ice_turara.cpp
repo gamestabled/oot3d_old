@@ -22,11 +22,11 @@ ActorInit Bg_Ice_Turara_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgIceTurara_Init.o")
+GLOBAL_ASM("binary/BgIceTurara_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgIceTurara_Destroy.o")
+GLOBAL_ASM("binary/BgIceTurara_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgIceTurara_Update.o")
+GLOBAL_ASM("binary/BgIceTurara_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgIceTurara_Draw.o")
+GLOBAL_ASM("binary/BgIceTurara_Draw.o")
 }

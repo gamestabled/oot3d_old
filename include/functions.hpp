@@ -21,7 +21,7 @@ s16 Gameplay_CreateSubCamera(GlobalContext* globalCtx);
 s16 Gameplay_ChangeCameraStatus(GlobalContext* globalCtx, s16 camId, s16 status);
 void Audio_PlaySoundGeneral(u32 sfxId, Vec3f* a1, u8 a2, f32* a3, f32* a4, s8* a5);
 void FUN_0035af04(Player* player, s32 arg1);
-void FUN_0036ec40(s32 arg0, s32 arg1, s32 arg2);
+void Audio_QueueSeqCmd(s32 arg0, s32 arg1, s32 arg2);
 void TitleCard_InitBossName(GlobalContext* globalCtx, TitleCardContext* titleCtx, void* texture, s16 x, s16 y,
                             s16 width, s16 height, f32 f);
 void FUN_0036e9b8(GlobalContext* globalCtx, s16 camId, s16 arg2);
@@ -85,3 +85,9 @@ void FUN_003695cc(SkeletonAnimationModel* skelAnimModel, s32 arg1, s32 arg2, s32
 s32 FUN_00369f3c(GlobalContext* globalCtx);
 void EffectSsHahen_SpawnBurst(GlobalContext* globalCtx, Vec3f* pos, f32 burstScale, s16 unused, s16 scale,
                               s16 randScaleRange, s16 count, s16 objId, s16 life, void* dList);
+void FUN_003716f0(GlobalContext* globalCtx, s16 entranceIndex, u32 sceneLoadFlag, u32 fadeTransition);
+s32 Math3D_PointInSquare2D(f32 upperLeftX, f32 lowerRightX, f32 upperLeftY, f32 lowerRightY, f32 x, f32 y);
+void FUN_0035239c(s16 arg0);
+void FUN_00367c7c(GlobalContext*, u16 textID, Actor* actor);
+void Audio_QueueSeqCmd(s32 arg0, s32 arg1, s32 arg2);
+void FUN_00354358(s32 arg0);

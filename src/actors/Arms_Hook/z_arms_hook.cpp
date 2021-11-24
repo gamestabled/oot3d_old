@@ -22,11 +22,11 @@ ActorInit Arms_Hook_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ArmsHook_Init.o")
+GLOBAL_ASM("binary/ArmsHook_Init.o")
 
-#pragma GLOBAL_ASM("binary/ArmsHook_Destroy.o")
+GLOBAL_ASM("binary/ArmsHook_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ArmsHook_Update.o")
+GLOBAL_ASM("binary/ArmsHook_Update.o")
 
-#pragma GLOBAL_ASM("binary/ArmsHook_Draw.o")
+GLOBAL_ASM("binary/ArmsHook_Draw.o")
 }

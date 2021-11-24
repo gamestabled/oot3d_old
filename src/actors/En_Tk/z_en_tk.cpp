@@ -22,11 +22,11 @@ ActorInit En_Tk_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnTk_Init.o")
+GLOBAL_ASM("binary/EnTk_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnTk_Destroy.o")
+GLOBAL_ASM("binary/EnTk_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnTk_Update.o")
+GLOBAL_ASM("binary/EnTk_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnTk_Draw.o")
+GLOBAL_ASM("binary/EnTk_Draw.o")
 }

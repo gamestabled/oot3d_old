@@ -22,11 +22,11 @@ ActorInit En_Test_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnTest_Init.o")
+GLOBAL_ASM("binary/EnTest_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnTest_Destroy.o")
+GLOBAL_ASM("binary/EnTest_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnTest_Update.o")
+GLOBAL_ASM("binary/EnTest_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnTest_Draw.o")
+GLOBAL_ASM("binary/EnTest_Draw.o")
 }

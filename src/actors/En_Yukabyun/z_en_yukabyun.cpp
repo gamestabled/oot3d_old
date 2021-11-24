@@ -22,11 +22,11 @@ ActorInit En_Yukabyun_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnYukabyun_Init.o")
+GLOBAL_ASM("binary/EnYukabyun_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnYukabyun_Destroy.o")
+GLOBAL_ASM("binary/EnYukabyun_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnYukabyun_Update.o")
+GLOBAL_ASM("binary/EnYukabyun_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnYukabyun_Draw.o")
+GLOBAL_ASM("binary/EnYukabyun_Draw.o")
 }

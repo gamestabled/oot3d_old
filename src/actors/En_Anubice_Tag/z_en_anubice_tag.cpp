@@ -22,11 +22,11 @@ ActorInit En_Anubice_Tag_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnAnubiceTag_Init.o")
+GLOBAL_ASM("binary/EnAnubiceTag_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnAnubiceTag_Destroy.o")
+GLOBAL_ASM("binary/EnAnubiceTag_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnAnubiceTag_Update.o")
+GLOBAL_ASM("binary/EnAnubiceTag_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnAnubiceTag_Draw.o")
+GLOBAL_ASM("binary/EnAnubiceTag_Draw.o")
 }

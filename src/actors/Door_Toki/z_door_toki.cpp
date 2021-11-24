@@ -21,9 +21,9 @@ ActorInit Door_Toki_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/DoorToki_Init.o")
+GLOBAL_ASM("binary/DoorToki_Init.o")
 
-#pragma GLOBAL_ASM("binary/DoorToki_Destroy.o")
+GLOBAL_ASM("binary/DoorToki_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/DoorToki_Update.o")
+GLOBAL_ASM("binary/DoorToki_Update.o")
 }

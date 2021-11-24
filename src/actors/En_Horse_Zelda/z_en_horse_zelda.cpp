@@ -22,11 +22,11 @@ ActorInit En_Horse_Zelda_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnHorseZelda_Init.o")
+GLOBAL_ASM("binary/EnHorseZelda_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnHorseZelda_Destroy.o")
+GLOBAL_ASM("binary/EnHorseZelda_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnHorseZelda_Update.o")
+GLOBAL_ASM("binary/EnHorseZelda_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnHorseZelda_Draw.o")
+GLOBAL_ASM("binary/EnHorseZelda_Draw.o")
 }

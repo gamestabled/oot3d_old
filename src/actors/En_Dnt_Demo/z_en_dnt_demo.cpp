@@ -21,9 +21,9 @@ ActorInit En_Dnt_Demo_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDntDemo_Init.o")
+GLOBAL_ASM("binary/EnDntDemo_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDntDemo_Destroy.o")
+GLOBAL_ASM("binary/EnDntDemo_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDntDemo_Update.o")
+GLOBAL_ASM("binary/EnDntDemo_Update.o")
 }

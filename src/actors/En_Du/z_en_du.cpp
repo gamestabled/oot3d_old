@@ -22,11 +22,11 @@ ActorInit En_Du_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnDu_Init.o")
+GLOBAL_ASM("binary/EnDu_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnDu_Destroy.o")
+GLOBAL_ASM("binary/EnDu_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnDu_Update.o")
+GLOBAL_ASM("binary/EnDu_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnDu_Draw.o")
+GLOBAL_ASM("binary/EnDu_Draw.o")
 }

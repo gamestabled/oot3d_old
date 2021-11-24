@@ -22,11 +22,11 @@ ActorInit Item_Ocarina_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ItemOcarina_Init.o")
+GLOBAL_ASM("binary/ItemOcarina_Init.o")
 
-#pragma GLOBAL_ASM("binary/ItemOcarina_Destroy.o")
+GLOBAL_ASM("binary/ItemOcarina_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ItemOcarina_Update.o")
+GLOBAL_ASM("binary/ItemOcarina_Update.o")
 
-#pragma GLOBAL_ASM("binary/ItemOcarina_Draw.o")
+GLOBAL_ASM("binary/ItemOcarina_Draw.o")
 }

@@ -21,9 +21,9 @@ ActorInit Bg_Spot01_Objects2_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgSpot01Objects2_Init.o")
+GLOBAL_ASM("binary/BgSpot01Objects2_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot01Objects2_Destroy.o")
+GLOBAL_ASM("binary/BgSpot01Objects2_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgSpot01Objects2_Update.o")
+GLOBAL_ASM("binary/BgSpot01Objects2_Update.o")
 }

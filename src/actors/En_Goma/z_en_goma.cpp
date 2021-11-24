@@ -22,11 +22,11 @@ ActorInit En_Goma_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnGoma_Init.o")
+GLOBAL_ASM("binary/EnGoma_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnGoma_Destroy.o")
+GLOBAL_ASM("binary/EnGoma_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnGoma_Update.o")
+GLOBAL_ASM("binary/EnGoma_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnGoma_Draw.o")
+GLOBAL_ASM("binary/EnGoma_Draw.o")
 }

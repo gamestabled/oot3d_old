@@ -22,11 +22,11 @@ ActorInit Bg_Haka_Gate_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgHakaGate_Init.o")
+GLOBAL_ASM("binary/BgHakaGate_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaGate_Destroy.o")
+GLOBAL_ASM("binary/BgHakaGate_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaGate_Update.o")
+GLOBAL_ASM("binary/BgHakaGate_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgHakaGate_Draw.o")
+GLOBAL_ASM("binary/BgHakaGate_Draw.o")
 }

@@ -22,11 +22,11 @@ ActorInit Bg_Mizu_Movebg_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMizuMovebg_Init.o")
+GLOBAL_ASM("binary/BgMizuMovebg_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMizuMovebg_Destroy.o")
+GLOBAL_ASM("binary/BgMizuMovebg_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMizuMovebg_Update.o")
+GLOBAL_ASM("binary/BgMizuMovebg_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgMizuMovebg_Draw.o")
+GLOBAL_ASM("binary/BgMizuMovebg_Draw.o")
 }

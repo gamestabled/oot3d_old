@@ -22,11 +22,11 @@ ActorInit En_Bom_Bowl_Man_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBomBowlMan_Init.o")
+GLOBAL_ASM("binary/EnBomBowlMan_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBomBowlMan_Destroy.o")
+GLOBAL_ASM("binary/EnBomBowlMan_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBomBowlMan_Update.o")
+GLOBAL_ASM("binary/EnBomBowlMan_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnBomBowlMan_Draw.o")
+GLOBAL_ASM("binary/EnBomBowlMan_Draw.o")
 }

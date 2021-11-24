@@ -22,11 +22,11 @@ ActorInit Obj_Elevator_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/ObjElevator_Init.o")
+GLOBAL_ASM("binary/ObjElevator_Init.o")
 
-#pragma GLOBAL_ASM("binary/ObjElevator_Destroy.o")
+GLOBAL_ASM("binary/ObjElevator_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/ObjElevator_Update.o")
+GLOBAL_ASM("binary/ObjElevator_Update.o")
 
-#pragma GLOBAL_ASM("binary/ObjElevator_Draw.o")
+GLOBAL_ASM("binary/ObjElevator_Draw.o")
 }

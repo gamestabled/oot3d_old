@@ -21,9 +21,9 @@ ActorInit En_GirlA_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnGirlA_Init.o")
+GLOBAL_ASM("binary/EnGirlA_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnGirlA_Destroy.o")
+GLOBAL_ASM("binary/EnGirlA_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnGirlA_Update.o")
+GLOBAL_ASM("binary/EnGirlA_Update.o")
 }

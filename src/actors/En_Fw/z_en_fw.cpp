@@ -22,11 +22,11 @@ ActorInit En_Fw_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnFw_Init.o")
+GLOBAL_ASM("binary/EnFw_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnFw_Destroy.o")
+GLOBAL_ASM("binary/EnFw_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnFw_Update.o")
+GLOBAL_ASM("binary/EnFw_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnFw_Draw.o")
+GLOBAL_ASM("binary/EnFw_Draw.o")
 }

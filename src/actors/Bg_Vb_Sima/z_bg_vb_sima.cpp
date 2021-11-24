@@ -22,11 +22,11 @@ ActorInit Bg_Vb_Sima_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgVbSima_Init.o")
+GLOBAL_ASM("binary/BgVbSima_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgVbSima_Destroy.o")
+GLOBAL_ASM("binary/BgVbSima_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgVbSima_Update.o")
+GLOBAL_ASM("binary/BgVbSima_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgVbSima_Draw.o")
+GLOBAL_ASM("binary/BgVbSima_Draw.o")
 }

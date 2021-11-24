@@ -22,11 +22,11 @@ ActorInit En_Bigokuta_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnBigokuta_Init.o")
+GLOBAL_ASM("binary/EnBigokuta_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnBigokuta_Destroy.o")
+GLOBAL_ASM("binary/EnBigokuta_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnBigokuta_Update.o")
+GLOBAL_ASM("binary/EnBigokuta_Update.o")
 
-#pragma GLOBAL_ASM("binary/EnBigokuta_Draw.o")
+GLOBAL_ASM("binary/EnBigokuta_Draw.o")
 }

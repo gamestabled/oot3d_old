@@ -21,9 +21,9 @@ ActorInit En_Nutsball_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/EnNutsball_Init.o")
+GLOBAL_ASM("binary/EnNutsball_Init.o")
 
-#pragma GLOBAL_ASM("binary/EnNutsball_Destroy.o")
+GLOBAL_ASM("binary/EnNutsball_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/EnNutsball_Update.o")
+GLOBAL_ASM("binary/EnNutsball_Update.o")
 }

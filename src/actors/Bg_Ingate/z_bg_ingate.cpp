@@ -22,11 +22,11 @@ ActorInit Bg_Ingate_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgIngate_Init.o")
+GLOBAL_ASM("binary/BgIngate_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgIngate_Destroy.o")
+GLOBAL_ASM("binary/BgIngate_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgIngate_Update.o")
+GLOBAL_ASM("binary/BgIngate_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgIngate_Draw.o")
+GLOBAL_ASM("binary/BgIngate_Draw.o")
 }

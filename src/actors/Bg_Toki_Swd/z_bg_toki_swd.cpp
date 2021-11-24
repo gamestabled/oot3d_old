@@ -22,11 +22,11 @@ ActorInit Bg_Toki_Swd_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgTokiSwd_Init.o")
+GLOBAL_ASM("binary/BgTokiSwd_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgTokiSwd_Destroy.o")
+GLOBAL_ASM("binary/BgTokiSwd_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgTokiSwd_Update.o")
+GLOBAL_ASM("binary/BgTokiSwd_Update.o")
 
-#pragma GLOBAL_ASM("binary/BgTokiSwd_Draw.o")
+GLOBAL_ASM("binary/BgTokiSwd_Draw.o")
 }

@@ -21,9 +21,9 @@ ActorInit Bg_Mjin_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/BgMjin_Init.o")
+GLOBAL_ASM("binary/BgMjin_Init.o")
 
-#pragma GLOBAL_ASM("binary/BgMjin_Destroy.o")
+GLOBAL_ASM("binary/BgMjin_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/BgMjin_Update.o")
+GLOBAL_ASM("binary/BgMjin_Update.o")
 }

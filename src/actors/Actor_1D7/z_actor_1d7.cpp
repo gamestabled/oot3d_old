@@ -22,11 +22,11 @@ ActorInit Actor_1D7_InitVars = {
 };
 */
 
-#pragma GLOBAL_ASM("binary/Actor1D7_Init.o")
+GLOBAL_ASM("binary/Actor1D7_Init.o")
 
-#pragma GLOBAL_ASM("binary/Actor1D7_Destroy.o")
+GLOBAL_ASM("binary/Actor1D7_Destroy.o")
 
-#pragma GLOBAL_ASM("binary/Actor1D7_Update.o")
+GLOBAL_ASM("binary/Actor1D7_Update.o")
 
-#pragma GLOBAL_ASM("binary/Actor1D7_Draw.o")
+GLOBAL_ASM("binary/Actor1D7_Draw.o")
 }
