@@ -204,7 +204,7 @@ typedef struct {
     /* 0x12AD */ char   unk_12AD[0x0001];
     /* 0x12AE */ u16    getItemDirection;
     /* 0x12B0 */ Actor* interactRangeActor;
-    /* 0x12B4 */ char   unk_12B4[0x0004];
+    /* 0x12B4 */ s8     mountSide;
     /* 0x12B8 */ Actor* rideActor;
     /* 0x12BC */ char   unk_12BC[0x0454];
     /* 0x1710 */ u32    stateFlags1;

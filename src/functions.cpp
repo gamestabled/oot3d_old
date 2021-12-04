@@ -2676,8 +2676,6 @@ GLOBAL_ASM("binary/EnZl4_GetText.o")
 
 GLOBAL_ASM("binary/EnZo_TreadWater.o")
 
-GLOBAL_ASM("binary/Actor_IsMounted.o")
-
 GLOBAL_ASM("binary/caseD_0_001a6260.o")
 
 GLOBAL_ASM("binary/Collider_SetJntSphAllocType1.o")
@@ -3384,8 +3382,6 @@ GLOBAL_ASM("binary/FUN_001ebe68.o")
 
 GLOBAL_ASM("binary/FUN_001ebf08.o")
 
-GLOBAL_ASM("binary/Actor_SetRideActor.o")
-
 GLOBAL_ASM("binary/FUN_001ec57c.o")
 
 GLOBAL_ASM("binary/FUN_001ec5b8.o")
@@ -4023,8 +4019,6 @@ GLOBAL_ASM("binary/FUN_0021fa90.o")
 GLOBAL_ASM("binary/FUN_0021faec.o")
 
 GLOBAL_ASM("binary/Interface_InitHorsebackArchery.o")
-
-GLOBAL_ASM("binary/Actor_NotMounted.o")
 
 GLOBAL_ASM("binary/caseD_19.o")
 
@@ -9560,8 +9554,6 @@ GLOBAL_ASM("binary/FUN_00330454.o")
 
 GLOBAL_ASM("binary/FUN_00330544.o")
 
-GLOBAL_ASM("binary/Actor_WorldDistXYZToActor.o")
-
 GLOBAL_ASM("binary/FUN_003306fc.o")
 
 GLOBAL_ASM("binary/FUN_00330710.o")
@@ -9609,8 +9601,6 @@ GLOBAL_ASM("binary/FUN_00331440.o")
 GLOBAL_ASM("binary/FUN_00331480.o")
 
 GLOBAL_ASM("binary/FUN_00331754.o")
-
-GLOBAL_ASM("binary/Actor_GetWorldPosShapeRot.o")
 
 GLOBAL_ASM("binary/FUN_003317ac.o")
 
@@ -10467,8 +10457,6 @@ GLOBAL_ASM("binary/FUN_0034c92c.o")
 GLOBAL_ASM("binary/FUN_0034c998.o")
 
 GLOBAL_ASM("binary/FUN_0034cbb4.o")
-
-GLOBAL_ASM("binary/Actor_IsFacingAndNearPlayer.o")
 
 GLOBAL_ASM("binary/FUN_0034cc78.o")
 
@@ -11448,8 +11436,6 @@ GLOBAL_ASM("binary/FUN_00369178.o")
 
 GLOBAL_ASM("binary/FUN_0036932c.o")
 
-GLOBAL_ASM("binary/Actor_FindNearby.o")
-
 GLOBAL_ASM("binary/FUN_003693b4.o")
 
 GLOBAL_ASM("binary/FUN_003694d4.o")
@@ -11581,8 +11567,6 @@ GLOBAL_ASM("binary/FUN_0036c5d8.o")
 GLOBAL_ASM("binary/FUN_0036c648.o")
 
 GLOBAL_ASM("binary/FUN_0036c684.o")
-
-GLOBAL_ASM("binary/Actor_HasNoParent.o")
 
 GLOBAL_ASM("binary/FUN_0036c950.o")
 
@@ -11792,8 +11776,6 @@ GLOBAL_ASM("binary/EnGo2_GetDustData.o")
 
 GLOBAL_ASM("binary/EnGo2_IsRollingOnGround.o")
 
-GLOBAL_ASM("binary/Actor_HasParent.o")
-
 GLOBAL_ASM("binary/Rand_ZeroFloat.o")
 
 GLOBAL_ASM("binary/FUN_00371e6c.o")
@@ -11851,8 +11833,6 @@ GLOBAL_ASM("binary/Math_StepToS.o")
 GLOBAL_ASM("binary/FUN_00372b50.o")
 
 GLOBAL_ASM("binary/ZAR_GetCTXBByIndex.o")
-
-GLOBAL_ASM("binary/Actor_Find.o")
 
 GLOBAL_ASM("binary/FUN_00372d94.o")
 
@@ -11927,8 +11907,6 @@ GLOBAL_ASM("binary/FUN_00374bb8.o")
 GLOBAL_ASM("binary/FUN_00374be8.o")
 
 GLOBAL_ASM("binary/Audio_PlaySoundGeneral.o")
-
-GLOBAL_ASM("binary/Actor_SetScale.o")
 
 GLOBAL_ASM("binary/Gameplay_InCsMode.o")
 
