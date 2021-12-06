@@ -56,12 +56,25 @@ void CollisionCheck_SetInfo2(CollisionCheckInfo* info, DamageTable* damageTable,
 void SkelAnime_Free(SkelAnime* skelAnime, GlobalContext* globalCtx);
 void SkelAnime_Free2(SkelAnime* skelAnime);
 void Actor_ProcessInitChain(Actor* actor, InitChainEntry* chain);
+
+s32 Flags_GetEnv(GlobalContext* globalCtx, s16 flag);
+void Flags_SetEnv(GlobalContext* globalCtx, s16 flag);
+void Flags_UnsetEnv(GlobalContext* globalCtx, s16 flag);
 s32 Flags_GetSwitch(GlobalContext* globalCtx, s32 flag);
 void Flags_SetSwitch(GlobalContext* globalCtx, s32 flag);
+void Flags_UnsetSwitch(GlobalContext* globalCtx, s32 flag);
+s32 Flags_GetTreasure(GlobalContext* globalCtx, s32 flag);
+void Flags_SetTreasure(GlobalContext* globalCtx, s32 flag);
+s32 Flags_GetClear(GlobalContext* globalCtx, s32 flag);
+void Flags_SetClear(GlobalContext* globalCtx, s32 flag);
+void Flags_UnsetClear(GlobalContext* globalCtx, s32 flag);
+s32 Flags_GetTempClear(GlobalContext* globalCtx, s32 flag);
+void Flags_SetTempClear(GlobalContext* globalCtx, s32 flag);
 s32 Flags_GetCollectible(GlobalContext* globalCtx, s32 flag);
 void Flags_SetCollectible(GlobalContext* globalCtx, s32 flag);
 s32 Flags_GetEventChkInf(s32 flag);
 void Flags_SetEventChkInf(s32 flag);
+
 Actor* FUN_00346d94(GlobalContext* globalCtx, Actor* explosiveActor);
 s32 CollisionCheck_SetAC(GlobalContext* globalCtx, CollisionCheckContext* colChkCtx, Collider* collider);
 s32 CollisionCheck_SetOC(GlobalContext* globalCtx, CollisionCheckContext* colChkCtx, Collider* collider);
