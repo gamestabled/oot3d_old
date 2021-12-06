@@ -7,6 +7,111 @@ void Actor_Kill(Actor* actor) {
     actor->flags &= ~0x1;
 }
 
+/**
+ * Finds the first actor instance of a specified ID and category if there is one.
+ */
+Actor* Actor_Find(ActorContext* actorCtx, s32 actorId, s32 actorCategory) {
+    Actor* actor = actorCtx->actorLists[actorCategory].head;
+
+    while (actor != NULL) {
+        if (actorId == actor->id) {
+            return actor;
+        }
+        actor = actor->next;
+    }
+
+    return 0;
+}
+
+/**
+ * Finds the first actor instance of a specified ID and category within a given range from
+ * an actor if there is one. If the ID provided is -1, this will look for any actor of the
+ * specified category rather than a specific ID.
+ */
+Actor* Actor_FindNearby(GlobalContext* globalCtx, Actor* refActor, s16 actorId, u8 actorCategory, f32 range) {
+    Actor* actor = globalCtx->actorCtx.actorLists[actorCategory].head;
+
+    while (actor != NULL) {
+        if (actor == refActor || ((actorId != -1) && (actorId != actor->id))) {
+            actor = actor->next;
+        } else {
+            if (Actor_WorldDistXYZToActor(refActor, actor) <= range) {
+                return actor;
+            } else {
+                actor = actor->next;
+            }
+        }
+    }
+
+    return 0;
+}
+
+PosRot Actor_GetWorldPosShapeRot(Actor* actor) {
+    PosRot tmp;
+
+    Math_Vec3f_Copy(&tmp.pos, &actor->world.pos);
+    tmp.rot = actor->shape.rot;
+
+    return tmp;
+}
+
+s32 Actor_HasParent(Actor* actor, GlobalContext* /*globalCtx*/) {
+    return actor->parent != NULL;
+}
+
+s32 Actor_HasNoParent(Actor* actor, GlobalContext* globalCtx) {
+    return Actor_HasParent(actor, globalCtx) == 0;
+}
+
+/**
+ * Check if the specified actor is facing the player and is nearby.
+ * The maximum angle difference that qualifies as "facing" is specified by `maxAngle`.
+ * The minimum distance that qualifies as "nearby" is specified by `range`.
+ */
+s32 Actor_IsFacingAndNearPlayer(Actor* actor, f32 range, s16 maxAngle) {
+    const s16 yawDiff = actor->yawTowardsPlayer - actor->shape.rot.y;
+
+    if (ABS(yawDiff) < maxAngle) {
+        const f32 xyzDistanceFromLink = sqrtf(SQ(actor->xzDistToPlayer) + SQ(actor->yDistToPlayer));
+
+        if (xyzDistanceFromLink < range) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+s32 Actor_IsMounted(GlobalContext* /*globalCtx*/, Actor* horse) {
+    return horse->child != NULL;
+}
+
+s32 Actor_NotMounted(GlobalContext* globalCtx, Actor* actor) {
+    return Actor_IsMounted(globalCtx, actor) == 0;
+}
+
+s32 Actor_SetRideActor(GlobalContext* globalCtx, Actor* horse, s32 mountSide) {
+    Player* player = GET_PLAYER(globalCtx);
+
+    if ((player->stateFlags1 & 0x003C7880) == 0) {
+        player->rideActor = horse;
+        player->mountSide = mountSide;
+        return true;
+    }
+
+    return false;
+}
+
+void Actor_SetScale(Actor* actor, f32 scale) {
+    actor->scale.z = scale;
+    actor->scale.y = scale;
+    actor->scale.x = scale;
+}
+
+f32 Actor_WorldDistXYZToActor(Actor* actorA, Actor* actorB) {
+    return Math_Vec3f_DistXYZ(&actorA->world.pos, &actorB->world.pos);
+}
+
 void ActorShape_Init(ActorShape* shape, f32 yOffset, ActorShadowFunc shadowDraw, f32 shadowScale) {
     shape->yOffset = yOffset;
     shape->shadowDraw = shadowDraw;
