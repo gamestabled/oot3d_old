@@ -459,7 +459,7 @@ typedef struct GlobalContext {
         if ((objBankIdx < OBJECT_EXCHANGE_BANK_MAX) && (objectCtx.status[objBankIdx].unk_08 != 0)) {
             return &objectCtx.status[objBankIdx];
         } else {
-            return (ObjectStatus*)NULL;
+            return NULL;
         }
     }
 

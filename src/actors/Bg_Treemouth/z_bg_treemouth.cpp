@@ -52,7 +52,7 @@ void BgTreemouth_Init(Actor* actor, GameState* state) {
     CollisionHeader::SetUnk00(globalCtx->GetObjectStatus(self->dyna.actor.objBankIndex)->zarInfo.FUN_003532c0(0),
                               &colHeader);
     self->dyna.bgId = DynaPoly_SetBgActor(globalCtx, &globalCtx->colCtx.dyna, actor, colHeader);
-    ActorShape_Init(&actor->shape, 0.0f, (ActorShadowFunc)NULL, 0.0f);
+    ActorShape_Init(&actor->shape, 0.0f, NULL, 0.0f);
     Actor_SetFocus(actor, 50.0f);
 
     if ((gSaveContext.sceneSetupIndex < 4) && !LINK_IS_ADULT) {
@@ -85,7 +85,7 @@ void FUN_0016e5a4(BgTreemouth* self, GlobalContext* globalCtx) {
             if (npcAction->action == 2) {
                 BgTreemouth_SetupAction(self, FUN_002021a0);
             } else if (npcAction->action == 3) {
-                Audio_PlaySoundGeneral(0x10001BD, (Vec3f*)NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
+                Audio_PlaySoundGeneral(0x10001BD, NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
                 BgTreemouth_SetupAction(self, FUN_001e466c);
             }
         }
@@ -194,7 +194,7 @@ void FUN_001944c0(BgTreemouth* self, GlobalContext* globalCtx) {
             if (npcAction->action == 2) {
                 BgTreemouth_SetupAction(self, FUN_002021a0);
             } else if (npcAction->action == 3) {
-                Audio_PlaySoundGeneral(0x10001BD, (Vec3f*)NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
+                Audio_PlaySoundGeneral(0x10001BD, NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
                 BgTreemouth_SetupAction(self, FUN_001e466c);
             }
         }

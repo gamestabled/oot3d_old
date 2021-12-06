@@ -20,7 +20,7 @@ Actor* Actor_Find(ActorContext* actorCtx, s32 actorId, s32 actorCategory) {
         actor = actor->next;
     }
 
-    return 0;
+    return NULL;
 }
 
 /**
@@ -43,7 +43,7 @@ Actor* Actor_FindNearby(GlobalContext* globalCtx, Actor* refActor, s16 actorId, 
         }
     }
 
-    return 0;
+    return NULL;
 }
 
 PosRot Actor_GetWorldPosShapeRot(Actor* actor) {
@@ -122,7 +122,7 @@ void ActorShape_Init(ActorShape* shape, f32 yOffset, ActorShadowFunc shadowDraw,
 extern void ActorShadow_Draw(Actor* actor, Lights* lights, GlobalContext* globalCtx, s32 arg3, Color_RGBA8* color);
 
 void ActorShadow_DrawCircle(Actor* actor, Lights* lights, GlobalContext* globalCtx) {
-    ActorShadow_Draw(actor, lights, globalCtx, 0, (Color_RGBA8*)NULL);
+    ActorShadow_Draw(actor, lights, globalCtx, 0, NULL);
 }
 
 void ActorShadow_DrawWhiteCircle(Actor* actor, Lights* lights, GlobalContext* globalCtx) {
@@ -133,7 +133,7 @@ void ActorShadow_DrawWhiteCircle(Actor* actor, Lights* lights, GlobalContext* gl
 }
 
 void ActorShadow_DrawHorse(Actor* actor, Lights* lights, GlobalContext* globalCtx) {
-    ActorShadow_Draw(actor, lights, globalCtx, 1, (Color_RGBA8*)NULL);
+    ActorShadow_Draw(actor, lights, globalCtx, 1, NULL);
 }
 
 // void ActorShadow_DrawFoot(GlobalContext* globalCtx, Light* light, MtxF* arg2, s32 arg3, f32 arg4, f32 arg5, f32 arg6);
