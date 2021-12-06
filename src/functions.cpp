@@ -11494,8 +11494,6 @@ GLOBAL_ASM("binary/FUN_0036aaa4.o")
 
 GLOBAL_ASM("binary/FUN_0036ab8c.o")
 
-GLOBAL_ASM("binary/Math_Vec3s_ToVec3f.o")
-
 GLOBAL_ASM("binary/FUN_0036ac40.o")
 
 GLOBAL_ASM("binary/FUN_0036adf4.o")
@@ -11603,8 +11601,6 @@ GLOBAL_ASM("binary/EnFirefly_SetupFlyIdle.o")
 GLOBAL_ASM("binary/FUN_0036d940.o")
 
 GLOBAL_ASM("binary/EnBoom_Fly.o")
-
-GLOBAL_ASM("binary/Math_Vec3f_Copy.o")
 
 GLOBAL_ASM("binary/Item_DropCollectible.o")
 
