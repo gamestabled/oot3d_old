@@ -91,18 +91,27 @@ Vec3f sFencePos[] = {
 };
 
 EnHorseGameCheckFunc sInitFuncs[] = {
-    (EnHorseGameCheckFunc)NULL, EnHorseGameCheck_InitIngoRace,  EnHorseGameCheck_InitGerudoArchery,
-    EnHorseGameCheck_InitType3, EnHorseGameCheck_InitMalonRace,
+    NULL,
+    EnHorseGameCheck_InitIngoRace,
+    EnHorseGameCheck_InitGerudoArchery,
+    EnHorseGameCheck_InitType3,
+    EnHorseGameCheck_InitMalonRace,
 };
 
 EnHorseGameCheckFunc sDestroyFuncs[] = {
-    (EnHorseGameCheckFunc)NULL,    EnHorseGameCheck_DestroyIngoRace,  EnHorseGameCheck_DestroyGerudoArchery,
-    EnHorseGameCheck_DestroyType3, EnHorseGameCheck_DestroyMalonRace,
+    NULL,
+    EnHorseGameCheck_DestroyIngoRace,
+    EnHorseGameCheck_DestroyGerudoArchery,
+    EnHorseGameCheck_DestroyType3,
+    EnHorseGameCheck_DestroyMalonRace,
 };
 
 EnHorseGameCheckFunc sUpdateFuncs[] = {
-    (EnHorseGameCheckFunc)NULL,   EnHorseGameCheck_UpdateIngoRace,  EnHorseGameCheck_UpdateGerudoArchery,
-    EnHorseGameCheck_UpdateType3, EnHorseGameCheck_UpdateMalonRace,
+    NULL,
+    EnHorseGameCheck_UpdateIngoRace,
+    EnHorseGameCheck_UpdateGerudoArchery,
+    EnHorseGameCheck_UpdateType3,
+    EnHorseGameCheck_UpdateMalonRace,
 };
 #else
 __attribute__((section("EnHorseGameCheckData_526FC0"))) ActorInit En_Horse_Game_Check_InitVars = {
@@ -136,7 +145,7 @@ __attribute__((section("EnHorseGameCheckData_527018"))) Vec3f sFencePos[] = {
 };
 
 __attribute__((section("EnHorseGameCheckData_527018"))) EnHorseGameCheckFunc sInitFuncs[] = {
-    (EnHorseGameCheckFunc)NULL,
+    NULL,
     EnHorseGameCheck_InitIngoRace,
     EnHorseGameCheck_InitGerudoArchery,
     EnHorseGameCheck_InitType3,
@@ -144,7 +153,7 @@ __attribute__((section("EnHorseGameCheckData_527018"))) EnHorseGameCheckFunc sIn
 };
 
 __attribute__((section("EnHorseGameCheckData_527018"))) EnHorseGameCheckFunc sDestroyFuncs[] = {
-    (EnHorseGameCheckFunc)NULL,
+    NULL,
     EnHorseGameCheck_DestroyIngoRace,
     EnHorseGameCheck_DestroyGerudoArchery,
     EnHorseGameCheck_DestroyType3,
@@ -152,7 +161,7 @@ __attribute__((section("EnHorseGameCheckData_527018"))) EnHorseGameCheckFunc sDe
 };
 
 __attribute__((section("EnHorseGameCheckData_527018"))) EnHorseGameCheckFunc sUpdateFuncs[] = {
-    (EnHorseGameCheckFunc)NULL,
+    NULL,
     EnHorseGameCheck_UpdateIngoRace,
     EnHorseGameCheck_UpdateGerudoArchery,
     EnHorseGameCheck_UpdateType3,
@@ -246,7 +255,7 @@ s32 EnHorseGameCheck_UpdateIngoRace(EnHorseGameCheckBase* base, GameState* state
                !(((EnHorseGameCheckIngoRace*)base)->startFlags & INGORACE_INGO_MOVE)) {
         ((EnHorse*)self->ingoHorse)->inRace = 1;
         ((EnHorseGameCheckIngoRace*)base)->startFlags |= INGORACE_INGO_MOVE;
-        Audio_PlaySoundGeneral(0x10004BA, (Vec3f*)NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
+        Audio_PlaySoundGeneral(0x10004BA, NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
     }
 
     self->startTimer++;
@@ -282,7 +291,7 @@ s32 EnHorseGameCheck_UpdateIngoRace(EnHorseGameCheckBase* base, GameState* state
                 ((EnHorseGameCheckIngoRace*)base)->result = INGORACE_PLAYER_WIN;
                 ((EnHorseGameCheckIngoRace*)base)->finishTimer = ADJUST_FRAMECOUNT(55);
                 Audio_QueueSeqCmd(0, 0x10005AE, 0);
-                Audio_PlaySoundGeneral(0x10004BA, (Vec3f*)NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
+                Audio_PlaySoundGeneral(0x10004BA, NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
             }
             for (i = 0; i < 3; i++) {
                 self->playerCheck[i] = 0;
@@ -298,7 +307,7 @@ s32 EnHorseGameCheck_UpdateIngoRace(EnHorseGameCheckBase* base, GameState* state
                 ((EnHorseGameCheckIngoRace*)base)->finishTimer = ADJUST_FRAMECOUNT(70);
                 ((EnHorse*)((EnHorseGameCheckIngoRace*)base)->ingoHorse)->stateFlags |= ENHORSE_INGO_WON;
                 Audio_QueueSeqCmd(0, 0x10005AE, 0);
-                Audio_PlaySoundGeneral(0x10004BA, (Vec3f*)NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
+                Audio_PlaySoundGeneral(0x10004BA, NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
             }
             for (i = 0; i < 3; i++) {
                 self->ingoCheck[i] = 0;
@@ -459,7 +468,7 @@ s32 EnHorseGameCheck_UpdateMalonRace(EnHorseGameCheckBase* base, GameState* stat
     } else if ((self->startTimer > ADJUST_S32_FOR_FRAMERATE(81)) &&
                !ENHORSEGAMECHECK_MALONRACE_GET_FLAG(base, MALONRACE_START_SFX)) {
         ENHORSEGAMECHECK_MALONRACE_SET_FLAG(base, MALONRACE_START_SFX);
-        Audio_PlaySoundGeneral(0x10004BA, (Vec3f*)NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
+        Audio_PlaySoundGeneral(0x10004BA, NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
     }
 
     self->startTimer++;
@@ -486,7 +495,7 @@ s32 EnHorseGameCheck_UpdateMalonRace(EnHorseGameCheckBase* base, GameState* stat
                     if ((((EnHorseGameCheckMalonRace*)base)->fenceCheck[i - 1] == 0) &&
                         !ENHORSEGAMECHECK_MALONRACE_GET_FLAG(base, MALONRACE_BROKE_RULE)) {
                         ENHORSEGAMECHECK_MALONRACE_SET_FLAG(base, MALONRACE_BROKE_RULE);
-                        FUN_00367c7c(globalCtx, 0x208C, (Actor*)NULL);
+                        FUN_00367c7c(globalCtx, 0x208C, NULL);
                         ((EnHorseGameCheckMalonRace*)base)->result = 4;
                         ((EnHorseGameCheckMalonRace*)base)->finishTimer = ADJUST_FRAMECOUNT(30);
                     }
@@ -498,13 +507,13 @@ s32 EnHorseGameCheck_UpdateMalonRace(EnHorseGameCheckBase* base, GameState* stat
             if ((((EnHorseGameCheckMalonRace*)base)->lapCount == 1) &&
                 (((EnHorseGameCheckMalonRace*)base)->fenceCheck[15] == 0) && (player->rideActor->prevPos.x < -230.0f)) {
                 ENHORSEGAMECHECK_MALONRACE_SET_FLAG(base, MALONRACE_BROKE_RULE);
-                FUN_00367c7c(globalCtx, 0x208C, (Actor*)NULL);
+                FUN_00367c7c(globalCtx, 0x208C, NULL);
                 ((EnHorseGameCheckMalonRace*)base)->result = MALONRACE_FAILURE;
                 ((EnHorseGameCheckMalonRace*)base)->finishTimer = ADJUST_FRAMECOUNT(30);
             } else if (((EnHorseGameCheckMalonRace*)base)->fenceCheck[15] == 1) {
                 ((EnHorseGameCheckMalonRace*)base)->lapCount = 2;
                 Audio_QueueSeqCmd(0, 0x10005AE, 0);
-                Audio_PlaySoundGeneral(0x10004BA, (Vec3f*)NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
+                Audio_PlaySoundGeneral(0x10004BA, NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
                 ((EnHorseGameCheckMalonRace*)base)->result = MALONRACE_SUCCESS;
                 ((EnHorseGameCheckMalonRace*)base)->finishTimer = ADJUST_FRAMECOUNT(70);
                 gSaveContext.timer1State = 0xF;
@@ -512,15 +521,15 @@ s32 EnHorseGameCheck_UpdateMalonRace(EnHorseGameCheckBase* base, GameState* stat
                        !ENHORSEGAMECHECK_MALONRACE_GET_FLAG(base, MALONRACE_SECOND_LAP)) {
                 ((EnHorseGameCheckMalonRace*)base)->lapCount = 1;
                 ENHORSEGAMECHECK_MALONRACE_SET_FLAG(base, MALONRACE_SECOND_LAP);
-                FUN_00367c7c(globalCtx, 0x208D, (Actor*)NULL);
+                FUN_00367c7c(globalCtx, 0x208D, NULL);
             } else if (((EnHorseGameCheckMalonRace*)base)->fenceCheck[7] == 0) {
                 ENHORSEGAMECHECK_MALONRACE_SET_FLAG(base, MALONRACE_BROKE_RULE);
-                FUN_00367c7c(globalCtx, 0x208C, (Actor*)NULL);
+                FUN_00367c7c(globalCtx, 0x208C, NULL);
                 ((EnHorseGameCheckMalonRace*)base)->result = MALONRACE_FAILURE;
                 ((EnHorseGameCheckMalonRace*)base)->finishTimer = ADJUST_FRAMECOUNT(30);
             } else if (player->rideActor->prevPos.x > 80.0f) {
                 ENHORSEGAMECHECK_MALONRACE_SET_FLAG(base, MALONRACE_BROKE_RULE);
-                FUN_00367c7c(globalCtx, 0x208C, (Actor*)NULL);
+                FUN_00367c7c(globalCtx, 0x208C, NULL);
                 ((EnHorseGameCheckMalonRace*)base)->result = MALONRACE_FAILURE;
                 ((EnHorseGameCheckMalonRace*)base)->finishTimer = ADJUST_FRAMECOUNT(30);
             }
