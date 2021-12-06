@@ -449,7 +449,9 @@ typedef struct GlobalContext {
     /* 0x5C34 */ char                  unk_5C34[0x0042];
     /* 0x5C76 */ u8                    fadeOutTransition;
     /* 0x5C78 */ CollisionCheckContext colChkCtx;
-    /* 0x5F14 */ char                  unk_5F14[0x00B8];
+    /* 0x5F14 */ char                  unk_5F14[0x0084];
+    /* 0x5F98 */ u16                   envFlags[20];
+    /* 0x5FC0 */ char                  unk_5FC0[12];
     /* 0x5FCC */ subGlobalContext_5FCC unk_5FCC;
     //TODO
 

@@ -9642,8 +9642,6 @@ GLOBAL_ASM("binary/FUN_0033292c.o")
 
 GLOBAL_ASM("binary/FUN_00332988.o")
 
-GLOBAL_ASM("binary/Flags_SetCollectible.o")
-
 GLOBAL_ASM("binary/FUN_00332a14.o")
 
 GLOBAL_ASM("binary/FUN_00332c98.o")
@@ -10442,8 +10440,6 @@ GLOBAL_ASM("binary/FUN_0034bea8.o")
 
 GLOBAL_ASM("binary/BossGoma_SetupFloorMain.o")
 
-GLOBAL_ASM("binary/FUN_0034bf44.o")
-
 GLOBAL_ASM("binary/FUN_0034bf5c.o")
 
 GLOBAL_ASM("binary/FUN_0034c050.o")
@@ -10471,8 +10467,6 @@ GLOBAL_ASM("binary/FUN_0034c92c.o")
 GLOBAL_ASM("binary/FUN_0034c998.o")
 
 GLOBAL_ASM("binary/FUN_0034cbb4.o")
-
-GLOBAL_ASM("binary/Flags_SetEventChkInf.o")
 
 GLOBAL_ASM("binary/Actor_IsFacingAndNearPlayer.o")
 
@@ -10622,8 +10616,6 @@ GLOBAL_ASM("binary/SkelAnime_Free2.o")
 
 GLOBAL_ASM("binary/FUN_00350c68.o")
 
-GLOBAL_ASM("binary/Flags_GetEventChkInf.o")
-
 GLOBAL_ASM("binary/CollisionCheck_SetInfo.o")
 
 GLOBAL_ASM("binary/Collider_SetJntSph.o")
@@ -10707,8 +10699,6 @@ GLOBAL_ASM("binary/FUN_00353310.o")
 GLOBAL_ASM("binary/FUN_00353484.o")
 
 GLOBAL_ASM("binary/FUN_003534b8.o")
-
-GLOBAL_ASM("binary/Flags_SetTempClear.o")
 
 GLOBAL_ASM("binary/Item_DropCollectible2.o")
 
@@ -10949,8 +10939,6 @@ GLOBAL_ASM("binary/OnePointCutscene_EndCutscene.o")
 GLOBAL_ASM("binary/FUN_0035a050.o")
 
 GLOBAL_ASM("binary/EnGeldB_SetupAdvance.o")
-
-GLOBAL_ASM("binary/Flags_GetEnv.o")
 
 GLOBAL_ASM("binary/BgDyYoseizo_Bob.o")
 
@@ -11248,8 +11236,6 @@ GLOBAL_ASM("binary/Color_RGBA8_Copy.o")
 
 GLOBAL_ASM("binary/FUN_00363f44.o")
 
-GLOBAL_ASM("binary/Flags_GetCollectible.o")
-
 GLOBAL_ASM("binary/FUN_00364084.o")
 
 GLOBAL_ASM("binary/FUN_003641d0.o")
@@ -11332,13 +11318,9 @@ GLOBAL_ASM("binary/FUN_00366684.o")
 
 GLOBAL_ASM("binary/FUN_003666a0.o")
 
-GLOBAL_ASM("binary/Flags_SetEnv.o")
-
 GLOBAL_ASM("binary/FrameAdvance_IsEnabled.o")
 
 GLOBAL_ASM("binary/FUN_00366748.o")
-
-GLOBAL_ASM("binary/FUN_003667b0.o")
 
 GLOBAL_ASM("binary/FUN_003667ec.o")
 
@@ -11522,8 +11504,6 @@ GLOBAL_ASM("binary/FUN_0036a924.o")
 
 GLOBAL_ASM("binary/Actor_SpawnAsChild.o")
 
-GLOBAL_ASM("binary/FUN_0036aa8c.o")
-
 GLOBAL_ASM("binary/FUN_0036aaa4.o")
 
 GLOBAL_ASM("binary/FUN_0036ab8c.o")
@@ -11578,8 +11558,6 @@ GLOBAL_ASM("binary/GetPlayer_UNK_172B.o")
 
 GLOBAL_ASM("binary/FUN_0036bc98.o")
 
-GLOBAL_ASM("binary/Flags_GetTreasure.o")
-
 GLOBAL_ASM("binary/FUN_0036bcc8.o")
 
 GLOBAL_ASM("binary/FUN_0036be34.o")
@@ -11623,8 +11601,6 @@ GLOBAL_ASM("binary/FUN_0036cd8c.o")
 GLOBAL_ASM("binary/FUN_0036cda4.o")
 
 GLOBAL_ASM("binary/FUN_0036cec4.o")
-
-GLOBAL_ASM("binary/Flags_GetClear.o")
 
 GLOBAL_ASM("binary/OnePointCutscene_Attention.o")
 
@@ -11681,10 +11657,6 @@ GLOBAL_ASM("binary/FUN_0036e9b8.o")
 GLOBAL_ASM("binary/EffectSsKiraKira_SpawnDispersed.o")
 
 GLOBAL_ASM("binary/Gameplay_TriggerVoidOut.o")
-
-GLOBAL_ASM("binary/Flags_SetClear.o")
-
-GLOBAL_ASM("binary/Flags_GetTempClear.o")
 
 GLOBAL_ASM("binary/Audio_QueueSeqCmd.o")
 
