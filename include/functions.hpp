@@ -24,6 +24,8 @@ void Actor_UpdateBgCheckInfo(GlobalContext* globalCtx, Actor* actor, f32 wallChe
                              f32 ceilingCheckHeight, s32 flags);
 f32 Actor_WorldDistXYZToActor(Actor* actorA, Actor* actorB);
 
+void Lib_MemSet(u8* dest, size_t size, u8 val);
+
 void Math_ApproachS(s16* pValue, s16 target, s16 scale, s16 step);
 void Math_ApproachF(f32* pValue, f32 target, f32 fraction, f32 step);
 void Math_ApproachZeroF(f32* pValue, f32 fraction, f32 step);

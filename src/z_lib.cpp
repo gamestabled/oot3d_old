@@ -1,6 +1,12 @@
 extern "C" {
 #include "global.hpp"
 
+void Lib_MemSet(u8* dest, size_t size, u8 val) {
+    for (size_t i = 0; i < size; i++) {
+        *dest++ = val;
+    }
+}
+
 void Math_Vec3f_Copy(Vec3f* dest, Vec3f* src) {
     *dest = *src;
 }
