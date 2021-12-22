@@ -10140,8 +10140,6 @@ GLOBAL_ASM("binary/FUN_003430fc.o")
 
 GLOBAL_ASM("binary/DemoGj_InitSetIndexes.o")
 
-GLOBAL_ASM("binary/Lib_MemSet.o")
-
 GLOBAL_ASM("binary/__ARM_common_memclr4_10.o")
 
 GLOBAL_ASM("binary/FUN_00343270.o")
