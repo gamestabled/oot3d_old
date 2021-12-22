@@ -24,6 +24,8 @@ void Actor_UpdateBgCheckInfo(GlobalContext* globalCtx, Actor* actor, f32 wallChe
                              f32 ceilingCheckHeight, s32 flags);
 f32 Actor_WorldDistXYZToActor(Actor* actorA, Actor* actorB);
 
+void Lib_MemSet(u8* dest, size_t size, u8 val);
+
 void Math_ApproachS(s16* pValue, s16 target, s16 scale, s16 step);
 void Math_ApproachF(f32* pValue, f32 target, f32 fraction, f32 step);
 void Math_ApproachZeroF(f32* pValue, f32 fraction, f32 step);
@@ -32,6 +34,7 @@ f32 Math_FAtan2F(f32 y, f32 x);
 f32 Math_SinS(s16 angle);
 void Math_Vec3f_Copy(Vec3f* dest, Vec3f* src);
 f32 Math_Vec3f_DistXYZ(Vec3f* a, Vec3f* b);
+void Math_Vec3s_ToVec3f(Vec3f* dest, Vec3s* src);
 
 ZARInfo* FUN_00372f38(Actor* actor, GlobalContext* globalCtx, SkeletonAnimationModel** skelAnimModel, s32 arg3,
                       s32 arg4);
