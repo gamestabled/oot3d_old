@@ -2,13 +2,7 @@
 
 GLOBAL_ASM("binary/data_4F9000.o")
 
-GLOBAL_ASM("binary/z_Actor_1DA.data.o")
-
-GLOBAL_ASM("binary/z_Actor_1D7.data.o")
-
 GLOBAL_ASM("binary/z_bgcheck.data.o")
-
-GLOBAL_ASM("binary/z_Actor_1D8.data.o")
 
 GLOBAL_ASM("binary/z_camera.data.o")
 
