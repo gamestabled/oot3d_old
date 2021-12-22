@@ -8,6 +8,8 @@ void BgHakaMeganeBG_Destroy(Actor* actor, GameState* state);
 void BgHakaMeganeBG_Update(Actor* actor, GameState* state);
 void BgHakaMeganeBG_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Haka_Megane_BG.data.o")
+
 /*
 ActorInit Bg_Haka_MeganeBG_InitVars = {
     ACTOR_BG_HAKA_MEGANEBG,

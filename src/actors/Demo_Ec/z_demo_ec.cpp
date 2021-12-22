@@ -8,6 +8,8 @@ void DemoEc_Destroy(Actor* actor, GameState* state);
 void DemoEc_Update(Actor* actor, GameState* state);
 void DemoEc_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Demo_Ec.data.o")
+
 /*
 ActorInit Demo_Ec_InitVars = {
     ACTOR_DEMO_EC,

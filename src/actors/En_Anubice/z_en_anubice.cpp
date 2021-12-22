@@ -8,6 +8,8 @@ void EnAnubice_Destroy(Actor* actor, GameState* state);
 void EnAnubice_Update(Actor* actor, GameState* state);
 void EnAnubice_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Anubice.data.o")
+
 /*
 ActorInit En_Anubice_InitVars = {
     ACTOR_EN_ANUBICE,

@@ -8,6 +8,8 @@ void BgYdanHasi_Destroy(Actor* actor, GameState* state);
 void BgYdanHasi_Update(Actor* actor, GameState* state);
 void BgYdanHasi_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Ydan_Hasi.data.o")
+
 /*
 ActorInit Bg_Ydan_Hasi_InitVars = {
     ACTOR_BG_YDAN_HASI,

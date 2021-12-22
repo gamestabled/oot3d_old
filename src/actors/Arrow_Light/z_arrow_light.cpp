@@ -8,6 +8,8 @@ void ArrowLight_Destroy(Actor* actor, GameState* state);
 void ArrowLight_Update(Actor* actor, GameState* state);
 void ArrowLight_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Arrow_Light.data.o")
+
 /*
 ActorInit Arrow_Light_InitVars = {
     ACTOR_ARROW_LIGHT,

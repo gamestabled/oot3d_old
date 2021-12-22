@@ -8,6 +8,8 @@ void BgBdanSwitch_Destroy(Actor* actor, GameState* state);
 void BgBdanSwitch_Update(Actor* actor, GameState* state);
 void BgBdanSwitch_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Bgan_Switch.data.o")
+
 /*
 ActorInit Bg_Bdan_Switch_InitVars = {
     ACTOR_BG_BDAN_SWITCH,

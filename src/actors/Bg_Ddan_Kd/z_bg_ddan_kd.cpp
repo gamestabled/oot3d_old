@@ -8,6 +8,8 @@ void BgDdanKd_Destroy(Actor* actor, GameState* state);
 void BgDdanKd_Update(Actor* actor, GameState* state);
 void BgDdanKd_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Ddan_Kd.data.o")
+
 /*
 ActorInit Bg_Ddan_Kd_InitVars = {
     ACTOR_BG_DDAN_KD,

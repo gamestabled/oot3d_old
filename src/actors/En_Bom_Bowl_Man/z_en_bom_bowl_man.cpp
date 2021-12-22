@@ -8,6 +8,8 @@ void EnBomBowlMan_Destroy(Actor* actor, GameState* state);
 void EnBomBowlMan_Update(Actor* actor, GameState* state);
 void EnBomBowlMan_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Bom_Bowl_Man.data.o")
+
 /*
 ActorInit En_Bom_Bowl_Man_InitVars = {
     ACTOR_EN_BOM_BOWL_MAN,

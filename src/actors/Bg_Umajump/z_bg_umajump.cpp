@@ -8,6 +8,8 @@ void BgUmajump_Destroy(Actor* actor, GameState* state);
 void BgUmajump_Update(Actor* actor, GameState* state);
 void BgUmajump_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Umajump.data.o")
+
 /*
 ActorInit Bg_Umajump_InitVars = {
     ACTOR_BG_UMAJUMP,

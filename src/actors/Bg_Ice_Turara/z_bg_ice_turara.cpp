@@ -8,6 +8,8 @@ void BgIceTurara_Destroy(Actor* actor, GameState* state);
 void BgIceTurara_Update(Actor* actor, GameState* state);
 void BgIceTurara_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Ice_Turara.data.o")
+
 /*
 ActorInit Bg_Ice_Turara_InitVars = {
     ACTOR_BG_ICE_TURARA,

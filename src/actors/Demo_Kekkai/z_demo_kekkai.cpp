@@ -8,6 +8,8 @@ void DemoKekkai_Destroy(Actor* actor, GameState* state);
 void DemoKekkai_Update(Actor* actor, GameState* state);
 void DemoKekkai_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Demo_Kekkai.data.o")
+
 /*
 ActorInit Demo_Kekkai_InitVars = {
     ACTOR_DEMO_KEKKAI,

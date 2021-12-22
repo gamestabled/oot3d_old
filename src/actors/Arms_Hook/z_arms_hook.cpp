@@ -8,6 +8,8 @@ void ArmsHook_Destroy(Actor* actor, GameState* state);
 void ArmsHook_Update(Actor* actor, GameState* state);
 void ArmsHook_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Arms_Hook.data.o")
+
 /*
 ActorInit Arms_Hook_InitVars = {
     ACTOR_ARMS_HOOK,

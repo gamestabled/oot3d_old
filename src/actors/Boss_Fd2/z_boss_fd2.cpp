@@ -8,6 +8,8 @@ void BossFd2_Destroy(Actor* actor, GameState* state);
 void BossFd2_Update(Actor* actor, GameState* state);
 void BossFd2_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Boss_Fd2.data.o")
+
 /*
 ActorInit Boss_Fd2_InitVars = {
     ACTOR_BOSS_FD2,

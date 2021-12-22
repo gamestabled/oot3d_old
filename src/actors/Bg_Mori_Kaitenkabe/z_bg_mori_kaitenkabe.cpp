@@ -7,6 +7,8 @@ void BgMoriKaitenkabe_Init(Actor* actor, GameState* state);
 void BgMoriKaitenkabe_Destroy(Actor* actor, GameState* state);
 void BgMoriKaitenkabe_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Mori_Kaitenkabe.data.o")
+
 /*
 ActorInit Bg_Mori_Kaitenkabe_InitVars = {
     ACTOR_BG_MORI_KAITENKABE,

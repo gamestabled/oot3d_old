@@ -8,6 +8,8 @@ void BossDodongo_Destroy(Actor* actor, GameState* state);
 void BossDodongo_Update(Actor* actor, GameState* state);
 void BossDodongo_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Boss_Dodongo.data.o")
+
 /*
 ActorInit Boss_Dodongo_InitVars = {
     ACTOR_EN_DODONGO,

@@ -8,6 +8,8 @@ void DemoExt_Destroy(Actor* actor, GameState* state);
 void DemoExt_Update(Actor* actor, GameState* state);
 void DemoExt_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Demo_Ext.data.o")
+
 /*
 ActorInit Demo_Ext_InitVars = {
     ACTOR_DEMO_EXT,

@@ -8,6 +8,8 @@ void BgJyaBigmirror_Destroy(Actor* actor, GameState* state);
 void BgJyaBigmirror_Update(Actor* actor, GameState* state);
 void BgJyaBigmirror_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Jya_Bigmirror.data.o")
+
 /*
 ActorInit Bg_Jya_Bigmirror_InitVars = {
     ACTOR_BG_JYA_BIGMIRROR,

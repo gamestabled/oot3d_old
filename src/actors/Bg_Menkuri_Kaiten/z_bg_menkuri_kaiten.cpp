@@ -8,6 +8,8 @@ void BgMenkuriKaiten_Destroy(Actor* actor, GameState* state);
 void BgMenkuriKaiten_Update(Actor* actor, GameState* state);
 void BgMenkuriKaiten_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Menkuri_Kaiten.data.o")
+
 /*
 ActorInit Bg_Menkuri_Kaiten_InitVars = {
     ACTOR_BG_MENKURI_KAITEN,

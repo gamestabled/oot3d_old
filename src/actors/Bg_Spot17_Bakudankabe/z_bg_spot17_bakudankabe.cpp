@@ -8,6 +8,8 @@ void BgSpot17Bakudankabe_Destroy(Actor* actor, GameState* state);
 void BgSpot17Bakudankabe_Update(Actor* actor, GameState* state);
 void BgSpot17Bakudankabe_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot17_Bakudankabe.data.o")
+
 /*
 ActorInit Bg_Spot17_Bakudankabe_InitVars = {
     ACTOR_BG_SPOT17_BAKUDANKABE,

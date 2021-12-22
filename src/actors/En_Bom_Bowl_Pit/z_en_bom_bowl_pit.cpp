@@ -7,6 +7,8 @@ void EnBomBowlPit_Init(Actor* actor, GameState* state);
 void EnBomBowlPit_Destroy(Actor* actor, GameState* state);
 void EnBomBowlPit_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Bom_Bowl_Pit.data.o")
+
 /*
 ActorInit En_Bom_Bowl_Pit_InitVars = {
     ACTOR_EN_BOM_BOWL_PIT,

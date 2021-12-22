@@ -8,6 +8,8 @@ void BgGndIceblock_Destroy(Actor* actor, GameState* state);
 void BgGndIceblock_Update(Actor* actor, GameState* state);
 void BgGndIceblock_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Gnd_Iceblock.data.o")
+
 /*
 ActorInit Bg_Gnd_Iceblock_InitVars = {
     ACTOR_BG_GND_ICEBLOCK,

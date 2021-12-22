@@ -7,6 +7,8 @@ void BgDyYoseizo_Init(Actor* actor, GameState* state);
 void BgDyYoseizo_Destroy(Actor* actor, GameState* state);
 void BgDyYoseizo_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Dy_Yoseizo.data.o")
+
 /*
 ActorInit Bg_Dy_Yoseizo_InitVars = {
     ACTOR_BG_DY_YOSEIZO,

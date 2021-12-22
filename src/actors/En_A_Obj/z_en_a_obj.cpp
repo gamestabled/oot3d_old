@@ -8,6 +8,8 @@ void EnAObj_Destroy(Actor* actor, GameState* state);
 void EnAObj_Update(Actor* actor, GameState* state);
 void EnAObj_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_A_Obj.data.o")
+
 /*
 ActorInit En_A_Obj_InitVars = {
     ACTOR_EN_A_OBJ,

@@ -8,6 +8,8 @@ void BgTokiHikari_Destroy(Actor* actor, GameState* state);
 void BgTokiHikari_Update(Actor* actor, GameState* state);
 void BgTokiHikari_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Toki_Hikari.data.o")
+
 /*
 ActorInit Bg_Toki_Hikari_InitVars = {
     ACTOR_BG_TOKI_HIKARI,

@@ -8,6 +8,8 @@ void BgHeavyBlock_Destroy(Actor* actor, GameState* state);
 void BgHeavyBlock_Update(Actor* actor, GameState* state);
 void BgHeavyBlock_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Heavy_Block.data.o")
+
 /*
 ActorInit Bg_Heavy_Block_InitVars = {
     ACTOR_BG_HEAVY_BLOCK,

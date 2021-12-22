@@ -8,6 +8,8 @@ void BgSpot18Shutter_Destroy(Actor* actor, GameState* state);
 void BgSpot18Shutter_Update(Actor* actor, GameState* state);
 void BgSpot18Shutter_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot18_Shutter.data.o")
+
 /*
 ActorInit Bg_Spot18_Shutter_InitVars = {
     ACTOR_BG_SPOT18_SHUTTER,

@@ -8,6 +8,8 @@ void DoorGerudo_Destroy(Actor* actor, GameState* state);
 void DoorGerudo_Update(Actor* actor, GameState* state);
 void DoorGerudo_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Door_Gerudo.data.o")
+
 /*
 ActorInit Door_Gerudo_InitVars = {
     ACTOR_DOOR_GERUDO,

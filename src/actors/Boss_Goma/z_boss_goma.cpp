@@ -8,6 +8,8 @@ void BossGoma_Destroy(Actor* actor, GameState* state);
 void BossGoma_Update(Actor* actor, GameState* state);
 void BossGoma_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Boss_Goma.data.o")
+
 /*
 ActorInit Boss_Goma_InitVars = {
     ACTOR_BOSS_GOMA,

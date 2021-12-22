@@ -8,6 +8,8 @@ void BossSst_Destroy(Actor* actor, GameState* state);
 void BossSst_Update(Actor* actor, GameState* state);
 void BossSst_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Boss_Sst.data.o")
+
 /*
 ActorInit Boss_Sst_InitVars = {
     ACTOR_BOSS_SST,

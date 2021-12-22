@@ -8,6 +8,8 @@ void BgHakaGate_Destroy(Actor* actor, GameState* state);
 void BgHakaGate_Update(Actor* actor, GameState* state);
 void BgHakaGate_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Haka_Gate.data.o")
+
 /*
 ActorInit Bg_Haka_Gate_InitVars = {
     ACTOR_BG_HAKA_GATE,

@@ -8,6 +8,8 @@ void BgYdanSp_Destroy(Actor* actor, GameState* state);
 void BgYdanSp_Update(Actor* actor, GameState* state);
 void BgYdanSp_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Ydan_Sp.data.o")
+
 /*
 ActorInit Bg_Ydan_Sp_InitVars = {
     ACTOR_BG_YDAN_SP,

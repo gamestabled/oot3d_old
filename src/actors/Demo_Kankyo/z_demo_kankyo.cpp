@@ -8,6 +8,8 @@ void DemoKankyo_Destroy(Actor* actor, GameState* state);
 void DemoKankyo_Update(Actor* actor, GameState* state);
 void DemoKankyo_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Demo_Kankyo.data.o")
+
 /*
 ActorInit Demo_Kankyo_InitVars = {
     ACTOR_DEMO_KANKYO,
