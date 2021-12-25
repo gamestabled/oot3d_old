@@ -8,6 +8,8 @@ void EnDha_Destroy(Actor* actor, GameState* state);
 void EnDha_Update(Actor* actor, GameState* state);
 void EnDha_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Dha.data.o")
+
 /*
 ActorInit En_Dha_InitVars = {
     ACTOR_EN_DHA,

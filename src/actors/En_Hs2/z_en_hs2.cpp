@@ -8,6 +8,8 @@ void EnHs2_Destroy(Actor* actor, GameState* state);
 void EnHs2_Update(Actor* actor, GameState* state);
 void EnHs2_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Hs2.data.o")
+
 /*
 ActorInit En_Hs2_InitVars = {
     ACTOR_EN_HS2,

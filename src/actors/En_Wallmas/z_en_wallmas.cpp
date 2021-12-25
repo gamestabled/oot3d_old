@@ -8,6 +8,8 @@ void EnWallmas_Destroy(Actor* actor, GameState* state);
 void EnWallmas_Update(Actor* actor, GameState* state);
 void EnWallmas_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Wallmas.data.o")
+
 /*
 ActorInit En_Wallmas_InitVars = {
     ACTOR_EN_WALLMAS,

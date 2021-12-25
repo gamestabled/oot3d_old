@@ -8,6 +8,8 @@ void EnTk_Destroy(Actor* actor, GameState* state);
 void EnTk_Update(Actor* actor, GameState* state);
 void EnTk_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Tk.data.o")
+
 /*
 ActorInit En_Tk_InitVars = {
     ACTOR_EN_TK,

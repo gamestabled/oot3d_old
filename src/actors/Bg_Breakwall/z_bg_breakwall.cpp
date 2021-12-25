@@ -7,6 +7,8 @@ void BgBreakwall_Init(Actor* actor, GameState* state);
 void BgBreakwall_Destroy(Actor* actor, GameState* state);
 void BgBreakwall_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Breakwall.data.o")
+
 /*
 ActorInit Bg_Breakwall_InitVars = {
     ACTOR_BG_BREAKWALL,

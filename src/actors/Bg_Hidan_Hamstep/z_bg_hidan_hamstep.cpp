@@ -8,6 +8,8 @@ void BgHidanHamstep_Destroy(Actor* actor, GameState* state);
 void BgHidanHamstep_Update(Actor* actor, GameState* state);
 void BgHidanHamstep_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Hamstep.data.o")
+
 /*
 ActorInit Bg_Hidan_Hamstep_InitVars = {
     ACTOR_BG_HIDAN_HAMSTEP,

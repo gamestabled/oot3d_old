@@ -8,6 +8,8 @@ void BossTw_Destroy(Actor* actor, GameState* state);
 void BossTw_Update(Actor* actor, GameState* state);
 void BossTw_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Boss_Tw.data.o")
+
 /*
 ActorInit Boss_Tw_InitVars = {
     ACTOR_BOSS_TW,

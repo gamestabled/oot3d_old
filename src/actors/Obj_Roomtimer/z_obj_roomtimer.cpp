@@ -7,6 +7,8 @@ void ObjRoomtimer_Init(Actor* actor, GameState* state);
 void ObjRoomtimer_Destroy(Actor* actor, GameState* state);
 void ObjRoomtimer_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Roomtimer.data.o")
+
 /*
 ActorInit Obj_Roomtimer_InitVars = {
     ACTOR_OBJ_ROOMTIMER,

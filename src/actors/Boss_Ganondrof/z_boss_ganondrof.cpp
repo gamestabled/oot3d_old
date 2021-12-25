@@ -8,6 +8,8 @@ void BossGanondrof_Destroy(Actor* actor, GameState* state);
 void BossGanondrof_Update(Actor* actor, GameState* state);
 void BossGanondrof_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Boss_Ganondorf.data.o")
+
 /*
 ActorInit Boss_Ganondrof_InitVars = {
     ACTOR_BOSS_GANONDROF,

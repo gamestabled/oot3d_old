@@ -8,6 +8,8 @@ void BgSpot16Doughnut_Destroy(Actor* actor, GameState* state);
 void BgSpot16Doughnut_Update(Actor* actor, GameState* state);
 void BgSpot16Doughnut_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot16_Doughnut.data.o")
+
 /*
 ActorInit Bg_Spot16_Doughnut_InitVars = {
     ACTOR_BG_SPOT16_DOUGHNUT,

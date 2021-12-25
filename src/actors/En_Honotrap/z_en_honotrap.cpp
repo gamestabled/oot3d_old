@@ -8,6 +8,8 @@ void EnHonotrap_Destroy(Actor* actor, GameState* state);
 void EnHonotrap_Update(Actor* actor, GameState* state);
 void EnHonotrap_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Honotrap.data.o")
+
 /*
 ActorInit En_Honotrap_InitVars = {
     ACTOR_EN_HONOTRAP,

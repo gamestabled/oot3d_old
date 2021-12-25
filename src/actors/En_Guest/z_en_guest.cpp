@@ -7,6 +7,8 @@ void EnGuest_Init(Actor* actor, GameState* state);
 void EnGuest_Destroy(Actor* actor, GameState* state);
 void EnGuest_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Guest.data.o")
+
 /*
 ActorInit En_Guest_InitVars = {
     ACTOR_EN_GUEST,

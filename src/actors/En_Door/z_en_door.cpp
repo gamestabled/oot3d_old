@@ -8,6 +8,8 @@ void EnDoor_Destroy(Actor* actor, GameState* state);
 void EnDoor_Update(Actor* actor, GameState* state);
 void EnDoor_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Door.data.o")
+
 /*
 ActorInit En_Door_InitVars = {
     ACTOR_EN_DOOR,

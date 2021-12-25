@@ -7,6 +7,8 @@ void BgSpot11Oasis_Init(Actor* actor, GameState* state);
 void BgSpot11Oasis_Destroy(Actor* actor, GameState* state);
 void BgSpot11Oasis_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot11_Oasis.data.o")
+
 /*
 ActorInit Bg_Spot11_Oasis_InitVars = {
     ACTOR_BG_SPOT11_OASIS,

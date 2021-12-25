@@ -8,6 +8,8 @@ void EnDodongo_Destroy(Actor* actor, GameState* state);
 void EnDodongo_Update(Actor* actor, GameState* state);
 void EnDodongo_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Dodongo.data.o")
+
 /*
 ActorInit En_Dodongo_InitVars = {
     ACTOR_EN_DODONGO,

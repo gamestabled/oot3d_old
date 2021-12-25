@@ -8,6 +8,8 @@ void ObjSyokudai_Destroy(Actor* actor, GameState* state);
 void ObjSyokudai_Update(Actor* actor, GameState* state);
 void ObjSyokudai_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Syokudai.data.o")
+
 /*
 ActorInit Obj_Syokudai_InitVars = {
     ACTOR_OBJ_SYOKUDAI,

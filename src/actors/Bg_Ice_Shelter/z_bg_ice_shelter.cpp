@@ -8,6 +8,8 @@ void BgIceShelter_Destroy(Actor* actor, GameState* state);
 void BgIceShelter_Update(Actor* actor, GameState* state);
 void BgIceShelter_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Ice_Shelter.data.o")
+
 /*
 ActorInit Bg_Ice_Shelter_InitVars = {
     ACTOR_BG_ICE_SHELTER,

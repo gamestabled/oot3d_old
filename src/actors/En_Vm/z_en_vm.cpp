@@ -8,6 +8,8 @@ void EnVm_Destroy(Actor* actor, GameState* state);
 void EnVm_Update(Actor* actor, GameState* state);
 void EnVm_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Vm.data.o")
+
 /*
 ActorInit En_Vm_InitVars = {
     ACTOR_EN_VM,

@@ -7,6 +7,8 @@ void BgHakaSgami_Init(Actor* actor, GameState* state);
 void BgHakaSgami_Destroy(Actor* actor, GameState* state);
 void BgHakaSgami_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Haka_Sgami.data.o")
+
 /*
 ActorInit Bg_Haka_Sgami_InitVars = {
     ACTOR_BG_HAKA_SGAMI,

@@ -8,6 +8,8 @@ void ObjKibako_Destroy(Actor* actor, GameState* state);
 void ObjKibako_Update(Actor* actor, GameState* state);
 void ObjKibako_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Kibako.data.o")
+
 /*
 ActorInit Obj_Kibako_InitVars = {
     ACTOR_OBJ_KIBAKO,

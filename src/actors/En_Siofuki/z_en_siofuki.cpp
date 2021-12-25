@@ -8,6 +8,8 @@ void EnSiofuki_Destroy(Actor* actor, GameState* state);
 void EnSiofuki_Update(Actor* actor, GameState* state);
 void EnSiofuki_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Siofuki.data.o")
+
 /*
 ActorInit En_Siofuki_InitVars = {
     ACTOR_EN_SIOFUKI,

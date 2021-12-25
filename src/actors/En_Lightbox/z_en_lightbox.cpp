@@ -8,6 +8,8 @@ void EnLightbox_Destroy(Actor* actor, GameState* state);
 void EnLightbox_Update(Actor* actor, GameState* state);
 void EnLightbox_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Lightbox.data.o")
+
 /*
 ActorInit En_Lightbox_InitVars = {
     ACTOR_EN_LIGHTBOX,

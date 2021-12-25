@@ -8,6 +8,8 @@ void EnButte_Destroy(Actor* actor, GameState* state);
 void EnButte_Update(Actor* actor, GameState* state);
 void EnButte_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Butte.data.o")
+
 /*
 ActorInit En_Butte_InitVars = {
     ACTOR_EN_BUTTE,

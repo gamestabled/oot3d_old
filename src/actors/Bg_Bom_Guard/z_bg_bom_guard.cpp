@@ -7,6 +7,8 @@ void BgBomGuard_Init(Actor* actor, GameState* state);
 void BgBomGuard_Destroy(Actor* actor, GameState* state);
 void BgBomGuard_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Bom_Guard.data.o")
+
 /*
 ActorInit Bg_Bom_Guard_InitVars = {
     ACTOR_BG_BOM_GUARD,

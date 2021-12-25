@@ -7,6 +7,8 @@ void DoorKiller_Init(Actor* actor, GameState* state);
 void DoorKiller_Destroy(Actor* actor, GameState* state);
 void DoorKiller_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Door_Killer.data.o")
+
 /*
 ActorInit Door_Killer_InitVars = {
     ACTOR_DOOR_KILLER,

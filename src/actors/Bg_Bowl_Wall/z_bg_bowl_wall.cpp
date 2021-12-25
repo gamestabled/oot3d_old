@@ -8,6 +8,8 @@ void BgBowlWall_Destroy(Actor* actor, GameState* state);
 void BgBowlWall_Update(Actor* actor, GameState* state);
 void BgBowlWall_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Bowl_Wall.data.o")
+
 /*
 ActorInit Bg_Bowl_Wall_InitVars = {
     ACTOR_BG_BOWL_WALL,

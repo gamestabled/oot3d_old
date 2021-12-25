@@ -8,6 +8,8 @@ void BgHidanSyoku_Destroy(Actor* actor, GameState* state);
 void BgHidanSyoku_Update(Actor* actor, GameState* state);
 void BgHidanSyoku_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Syoku.data.o")
+
 /*
 ActorInit Bg_Hidan_Syoku_InitVars = {
     ACTOR_BG_HIDAN_SYOKU,

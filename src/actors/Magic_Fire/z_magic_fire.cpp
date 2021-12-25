@@ -8,6 +8,8 @@ void MagicFire_Destroy(Actor* actor, GameState* state);
 void MagicFire_Update(Actor* actor, GameState* state);
 void MagicFire_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Magic_Fire.data.o")
+
 /*
 ActorInit Magic_Fire_InitVars = {
     ACTOR_MAGIC_FIRE,

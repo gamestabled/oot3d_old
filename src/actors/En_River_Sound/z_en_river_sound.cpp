@@ -8,6 +8,8 @@ void EnRiverSound_Destroy(Actor* actor, GameState* state);
 void EnRiverSound_Update(Actor* actor, GameState* state);
 void EnRiverSound_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_River_Sound.data.o")
+
 /*
 ActorInit En_River_Sound_InitVars = {
     ACTOR_EN_RIVER_SOUND,

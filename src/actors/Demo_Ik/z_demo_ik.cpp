@@ -8,6 +8,8 @@ void DemoIk_Destroy(Actor* actor, GameState* state);
 void DemoIk_Update(Actor* actor, GameState* state);
 void DemoIk_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Demo_Ik.data.o")
+
 /*
 ActorInit Demo_Ik_InitVars = {
     ACTOR_DEMO_IK,

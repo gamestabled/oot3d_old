@@ -8,6 +8,8 @@ void BgMizuBwall_Destroy(Actor* actor, GameState* state);
 void BgMizuBwall_Update(Actor* actor, GameState* state);
 void BgMizuBwall_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Mizu_Bwall.data.o")
+
 /*
 ActorInit Bg_Mizu_Bwall_InitVars = {
     ACTOR_BG_MIZU_BWALL,

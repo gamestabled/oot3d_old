@@ -8,6 +8,8 @@ void BgSstFloor_Destroy(Actor* actor, GameState* state);
 void BgSstFloor_Update(Actor* actor, GameState* state);
 void BgSstFloor_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Sst_Floor.data.o")
+
 /*
 ActorInit Bg_Sst_Floor_InitVars = {
     ACTOR_BG_SST_FLOOR,

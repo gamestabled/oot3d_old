@@ -8,6 +8,8 @@ void EnMu_Destroy(Actor* actor, GameState* state);
 void EnMu_Update(Actor* actor, GameState* state);
 void EnMu_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Mu.data.o")
+
 /*
 ActorInit En_Mu_InitVars = {
     ACTOR_EN_MU,

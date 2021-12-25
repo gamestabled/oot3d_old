@@ -7,6 +7,8 @@ void BgHakaZou_Init(Actor* actor, GameState* state);
 void BgHakaZou_Destroy(Actor* actor, GameState* state);
 void BgHakaZou_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Haka_Zou.data.o")
+
 /*
 ActorInit Bg_Haka_Zou_InitVars = {
     ACTOR_BG_HAKA_ZOU,

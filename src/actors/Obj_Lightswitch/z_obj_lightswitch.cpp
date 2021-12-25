@@ -8,6 +8,8 @@ void ObjLightswitch_Destroy(Actor* actor, GameState* state);
 void ObjLightswitch_Update(Actor* actor, GameState* state);
 void ObjLightswitch_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Lightswitch.data.o")
+
 /*
 ActorInit Obj_Lightswitch_InitVars = {
     ACTOR_OBJ_LIGHTSWITCH,

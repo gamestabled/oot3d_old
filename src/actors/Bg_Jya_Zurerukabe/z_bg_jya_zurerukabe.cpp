@@ -8,6 +8,8 @@ void BgJyaZurerukabe_Destroy(Actor* actor, GameState* state);
 void BgJyaZurerukabe_Update(Actor* actor, GameState* state);
 void BgJyaZurerukabe_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Jya_Zurerukabe.data.o")
+
 /*
 ActorInit Bg_Jya_Zurerukabe_InitVars = {
     ACTOR_BG_JYA_ZURERUKABE,

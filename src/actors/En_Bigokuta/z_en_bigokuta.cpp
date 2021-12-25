@@ -8,6 +8,8 @@ void EnBigokuta_Destroy(Actor* actor, GameState* state);
 void EnBigokuta_Update(Actor* actor, GameState* state);
 void EnBigokuta_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Bigokuta.data.o")
+
 /*
 ActorInit En_Bigokuta_InitVars = {
     ACTOR_EN_BIGOKUTA,

@@ -8,6 +8,8 @@ void EnYukabyun_Destroy(Actor* actor, GameState* state);
 void EnYukabyun_Update(Actor* actor, GameState* state);
 void EnYukabyun_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Yukabyun.data.o")
+
 /*
 ActorInit En_Yukabyun_InitVars = {
     ACTOR_EN_YUKABYUN,

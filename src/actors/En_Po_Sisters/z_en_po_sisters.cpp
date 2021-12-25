@@ -8,6 +8,8 @@ void EnPoSisters_Destroy(Actor* actor, GameState* state);
 void EnPoSisters_Update(Actor* actor, GameState* state);
 void EnPoSisters_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Po_Sisters.data.o")
+
 /*
 ActorInit En_Po_Sisters_InitVars = {
     ACTOR_EN_PO_SISTERS,

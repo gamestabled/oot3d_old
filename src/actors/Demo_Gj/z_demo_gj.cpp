@@ -8,6 +8,8 @@ void DemoGj_Destroy(Actor* actor, GameState* state);
 void DemoGj_Update(Actor* actor, GameState* state);
 void DemoGj_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Demo_Gj.data.o")
+
 /*
 ActorInit Demo_Gj_InitVars = {
     ACTOR_DEMO_GJ,

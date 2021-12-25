@@ -8,6 +8,8 @@ void EnKarebaba_Destroy(Actor* actor, GameState* state);
 void EnKarebaba_Update(Actor* actor, GameState* state);
 void EnKarebaba_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Karebaba.data.o")
+
 /*
 ActorInit En_Karebaba_InitVars = {
     ACTOR_EN_KAREBABA,

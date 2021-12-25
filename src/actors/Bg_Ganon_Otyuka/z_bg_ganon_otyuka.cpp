@@ -8,6 +8,8 @@ void BgGanonOtyuka_Destroy(Actor* actor, GameState* state);
 void BgGanonOtyuka_Update(Actor* actor, GameState* state);
 void BgGanonOtyuka_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Ganon_Otyuka.data.o")
+
 /*
 ActorInit Bg_Ganon_Otyuka_InitVars = {
     ACTOR_BG_GANON_OTYUKA,

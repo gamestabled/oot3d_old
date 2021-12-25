@@ -8,6 +8,8 @@ void BgSpot15Saku_Destroy(Actor* actor, GameState* state);
 void BgSpot15Saku_Update(Actor* actor, GameState* state);
 void BgSpot15Saku_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot15_Saku.data.o")
+
 /*
 ActorInit Bg_Spot15_Saku_InitVars = {
     ACTOR_BG_SPOT15_SAKU,

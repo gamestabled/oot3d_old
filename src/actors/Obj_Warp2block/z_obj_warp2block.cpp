@@ -8,6 +8,8 @@ void ObjWarp2block_Destroy(Actor* actor, GameState* state);
 void ObjWarp2block_Update(Actor* actor, GameState* state);
 void ObjWarp2block_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Warp2block.data.o")
+
 /*
 ActorInit Obj_Warp2block_InitVars = {
     ACTOR_OBJ_WARP2BLOCK,

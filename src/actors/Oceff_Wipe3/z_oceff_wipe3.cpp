@@ -8,6 +8,8 @@ void OceffWipe3_Destroy(Actor* actor, GameState* state);
 void OceffWipe3_Update(Actor* actor, GameState* state);
 void OceffWipe3_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Oceff_Wipe3.data.o")
+
 /*
 ActorInit Oceff_Wipe3_InitVars = {
     ACTOR_OCEFF_WIPE3,

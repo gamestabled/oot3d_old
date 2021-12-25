@@ -8,6 +8,8 @@ void DemoShd_Destroy(Actor* actor, GameState* state);
 void DemoShd_Update(Actor* actor, GameState* state);
 void DemoShd_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Demo_Shd.data.o")
+
 /*
 ActorInit Demo_Shd_InitVars = {
     ACTOR_DEMO_SHD,

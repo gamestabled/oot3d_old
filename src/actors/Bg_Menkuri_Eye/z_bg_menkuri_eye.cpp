@@ -8,6 +8,8 @@ void BgMenkuriEye_Destroy(Actor* actor, GameState* state);
 void BgMenkuriEye_Update(Actor* actor, GameState* state);
 void BgMenkuriEye_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Menkuri_Eye.data.o")
+
 /*
 ActorInit Bg_Menkuri_Eye_InitVars = {
     ACTOR_BG_MENKURI_EYE,

@@ -8,6 +8,8 @@ void ObjHsblock_Destroy(Actor* actor, GameState* state);
 void ObjHsblock_Update(Actor* actor, GameState* state);
 void ObjHsblock_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Hsblock.data.o")
+
 /*
 ActorInit Obj_Hsblock_InitVars = {
     ACTOR_OBJ_HSBLOCK,

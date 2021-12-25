@@ -7,6 +7,8 @@ void EnKakasi2_Init(Actor* actor, GameState* state);
 void EnKakasi2_Destroy(Actor* actor, GameState* state);
 void EnKakasi2_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Kakasi2.data.o")
+
 /*
 ActorInit En_Kakasi2_InitVars = {
     ACTOR_EN_KAKASI2,

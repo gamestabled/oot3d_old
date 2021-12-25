@@ -8,6 +8,8 @@ void BgHidanFwbig_Destroy(Actor* actor, GameState* state);
 void BgHidanFwbig_Update(Actor* actor, GameState* state);
 void BgHidanFwbig_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Fwbig.data.o")
+
 /*
 ActorInit Bg_Hidan_Fwbig_InitVars = {
     ACTOR_BG_HIDAN_FWBIG,

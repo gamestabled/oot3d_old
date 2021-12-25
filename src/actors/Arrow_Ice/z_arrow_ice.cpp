@@ -8,6 +8,8 @@ void ArrowIce_Destroy(Actor* actor, GameState* state);
 void ArrowIce_Update(Actor* actor, GameState* state);
 void ArrowIce_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Arrow_Ice.data.o")
+
 /*
 ActorInit Arrow_Ice_InitVars = {
     ACTOR_ARROW_ICE,

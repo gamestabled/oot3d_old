@@ -8,6 +8,8 @@ void ObjDekujr_Destroy(Actor* actor, GameState* state);
 void ObjDekujr_Update(Actor* actor, GameState* state);
 void ObjDekujr_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Dekujr.data.o")
+
 /*
 ActorInit Obj_Dekujr_InitVars = {
     ACTOR_OBJ_DEKUJR,

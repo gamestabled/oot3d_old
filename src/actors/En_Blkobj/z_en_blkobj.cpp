@@ -8,6 +8,8 @@ void EnBlkobj_Destroy(Actor* actor, GameState* state);
 void EnBlkobj_Update(Actor* actor, GameState* state);
 void EnBlkobj_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Blkobj.data.o")
+
 /*
 ActorInit En_Blkobj_InitVars = {
     ACTOR_EN_BLKOBJ,

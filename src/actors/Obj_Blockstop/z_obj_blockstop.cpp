@@ -7,6 +7,8 @@ void ObjBlockstop_Init(Actor* actor, GameState* state);
 void ObjBlockstop_Destroy(Actor* actor, GameState* state);
 void ObjBlockstop_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Blockstop.data.o")
+
 /*
 ActorInit Obj_Blockstop_InitVars = {
     ACTOR_OBJ_BLOCKSTOP,

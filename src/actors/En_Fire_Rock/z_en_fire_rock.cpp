@@ -8,6 +8,8 @@ void EnFireRock_Destroy(Actor* actor, GameState* state);
 void EnFireRock_Update(Actor* actor, GameState* state);
 void EnFireRock_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Fire_Rock.data.o")
+
 /*
 ActorInit En_Fire_Rock_InitVars = {
     ACTOR_EN_FIRE_ROCK,

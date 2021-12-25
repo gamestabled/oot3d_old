@@ -8,6 +8,8 @@ void BgHaka_Destroy(Actor* actor, GameState* state);
 void BgHaka_Update(Actor* actor, GameState* state);
 void BgHaka_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Haka.data.o")
+
 /*
 ActorInit Bg_Haka_InitVars = {
     ACTOR_BG_HAKA,

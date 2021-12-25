@@ -7,6 +7,8 @@ void EnIt_Init(Actor* actor, GameState* state);
 void EnIt_Destroy(Actor* actor, GameState* state);
 void EnIt_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_It.data.o")
+
 /*
 ActorInit En_It_InitVars = {
     ACTOR_EN_IT,

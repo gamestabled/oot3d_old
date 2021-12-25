@@ -8,6 +8,8 @@ void EnDaikuKakariko_Destroy(Actor* actor, GameState* state);
 void EnDaikuKakariko_Update(Actor* actor, GameState* state);
 void EnDaikuKakariko_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Daiku_Kakariko.data.o")
+
 /*
 ActorInit En_Daiku_Kakariko_InitVars = {
     ACTOR_EN_DAIKU_KAKARIKO,

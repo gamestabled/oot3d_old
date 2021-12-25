@@ -8,6 +8,8 @@ void EnNiw_Destroy(Actor* actor, GameState* state);
 void EnNiw_Update(Actor* actor, GameState* state);
 void EnNiw_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Niw.data.o")
+
 /*
 ActorInit En_Niw_InitVars = {
     ACTOR_EN_NIW,

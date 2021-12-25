@@ -8,6 +8,8 @@ void EnHorseZelda_Destroy(Actor* actor, GameState* state);
 void EnHorseZelda_Update(Actor* actor, GameState* state);
 void EnHorseZelda_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Horse_Zelda.data.o")
+
 /*
 ActorInit En_Horse_Zelda_InitVars = {
     ACTOR_EN_HORSE_ZELDA,

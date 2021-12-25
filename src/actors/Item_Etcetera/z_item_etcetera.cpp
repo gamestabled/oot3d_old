@@ -7,6 +7,8 @@ void ItemEtcetera_Init(Actor* actor, GameState* state);
 void ItemEtcetera_Destroy(Actor* actor, GameState* state);
 void ItemEtcetera_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Item_Etcetera.data.o")
+
 /*
 ActorInit Item_Etcetera_InitVars = {
     ACTOR_ITEM_ETCETERA,

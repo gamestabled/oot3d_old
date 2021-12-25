@@ -8,6 +8,8 @@ void BgGndSoulmeiro_Destroy(Actor* actor, GameState* state);
 void BgGndSoulmeiro_Update(Actor* actor, GameState* state);
 void BgGndSoulmeiro_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Gnd_Soulmeiro.data.o")
+
 /*
 ActorInit Bg_Gnd_Soulmeiro_InitVars = {
     ACTOR_BG_GND_SOULMEIRO,

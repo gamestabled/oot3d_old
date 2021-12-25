@@ -8,6 +8,8 @@ void ObjHamishi_Destroy(Actor* actor, GameState* state);
 void ObjHamishi_Update(Actor* actor, GameState* state);
 void ObjHamishi_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Hamishi.data.o")
+
 /*
 ActorInit Obj_Hamishi_InitVars = {
     ACTOR_OBJ_HAMISHI,

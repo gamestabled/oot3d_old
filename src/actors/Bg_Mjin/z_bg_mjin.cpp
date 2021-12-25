@@ -7,6 +7,8 @@ void BgMjin_Init(Actor* actor, GameState* state);
 void BgMjin_Destroy(Actor* actor, GameState* state);
 void BgMjin_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Mjin.data.o")
+
 /*
 ActorInit Bg_Mjin_InitVars = {
     ACTOR_BG_MJIN,

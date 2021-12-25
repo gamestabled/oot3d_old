@@ -8,6 +8,8 @@ void BgHidanFslift_Destroy(Actor* actor, GameState* state);
 void BgHidanFslift_Update(Actor* actor, GameState* state);
 void BgHidanFslift_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Fslift.data.o")
+
 /*
 ActorInit Bg_Hidan_Fslift_InitVars = {
     ACTOR_BG_HIDAN_FSLIFT,

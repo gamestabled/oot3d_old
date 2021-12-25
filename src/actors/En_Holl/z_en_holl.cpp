@@ -8,6 +8,8 @@ void EnHoll_Destroy(Actor* actor, GameState* state);
 void EnHoll_Update(Actor* actor, GameState* state);
 void EnHoll_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Holl.data.o")
+
 /*
 ActorInit En_Holl_InitVars = {
     ACTOR_EN_HOLL,

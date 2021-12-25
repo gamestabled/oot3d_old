@@ -7,6 +7,8 @@ void BgMoriRakkatenjo_Init(Actor* actor, GameState* state);
 void BgMoriRakkatenjo_Destroy(Actor* actor, GameState* state);
 void BgMoriRakkatenjo_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Mori_Rakkatenjo.data.o")
+
 /*
 ActorInit Bg_Mori_Rakkatenjo_InitVars = {
     ACTOR_BG_MORI_RAKKATENJO,

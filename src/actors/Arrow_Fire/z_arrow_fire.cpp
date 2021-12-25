@@ -8,6 +8,8 @@ void ArrowFire_Destroy(Actor* actor, GameState* state);
 void ArrowFire_Update(Actor* actor, GameState* state);
 void ArrowFire_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Arrow_Fire.data.o")
+
 /*
 ActorInit Arrow_Fire_InitVars = {
     ACTOR_ARROW_FIRE,

@@ -8,6 +8,8 @@ void EnDekubaba_Destroy(Actor* actor, GameState* state);
 void EnDekubaba_Update(Actor* actor, GameState* state);
 void EnDekubaba_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Dekubaba.data.o")
+
 /*
 ActorInit En_Dekubaba_InitVars = {
     ACTOR_EN_DEKUBABA,

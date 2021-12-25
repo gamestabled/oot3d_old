@@ -8,6 +8,8 @@ void BossGanon_Destroy(Actor* actor, GameState* state);
 void BossGanon_Update(Actor* actor, GameState* state);
 void BossGanon_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Boss_Ganon.data.o")
+
 /*
 ActorInit Boss_Ganon_InitVars = {
     ACTOR_BOSS_GANON,

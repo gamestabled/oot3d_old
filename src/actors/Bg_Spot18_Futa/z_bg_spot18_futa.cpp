@@ -8,6 +8,8 @@ void BgSpot18Futa_Destroy(Actor* actor, GameState* state);
 void BgSpot18Futa_Update(Actor* actor, GameState* state);
 void BgSpot18Futa_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot18_Futa.data.o")
+
 /*
 ActorInit Bg_Spot18_Futa_InitVars = {
     ACTOR_BG_SPOT18_FUTA,

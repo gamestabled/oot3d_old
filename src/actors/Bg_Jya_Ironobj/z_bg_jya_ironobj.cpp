@@ -8,6 +8,8 @@ void BgJyaIronobj_Destroy(Actor* actor, GameState* state);
 void BgJyaIronobj_Update(Actor* actor, GameState* state);
 void BgJyaIronobj_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Jya_Ironobj.data.o")
+
 /*
 ActorInit Bg_Jya_Ironobj_InitVars = {
     ACTOR_BG_JYA_IRONOBJ,

@@ -7,6 +7,8 @@ void BgSpot01Objects2_Init(Actor* actor, GameState* state);
 void BgSpot01Objects2_Destroy(Actor* actor, GameState* state);
 void BgSpot01Objects2_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot01_Objects2.data.o")
+
 /*
 ActorInit Bg_Spot01_Objects2_InitVars = {
     ACTOR_BG_SPOT01_OBJECTS2,

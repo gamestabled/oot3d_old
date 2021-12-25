@@ -8,6 +8,8 @@ void EnNy_Destroy(Actor* actor, GameState* state);
 void EnNy_Update(Actor* actor, GameState* state);
 void EnNy_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Ny.data.o")
+
 /*
 ActorInit En_Ny_InitVars = {
     ACTOR_EN_NY,

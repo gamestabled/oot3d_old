@@ -7,6 +7,8 @@ void EnDntDemo_Init(Actor* actor, GameState* state);
 void EnDntDemo_Destroy(Actor* actor, GameState* state);
 void EnDntDemo_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Dnt_Demo.data.o")
+
 /*
 ActorInit En_Dnt_Demo_InitVars = {
     ACTOR_EN_DNT_DEMO,

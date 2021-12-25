@@ -8,6 +8,8 @@ void BgJyaMegami_Destroy(Actor* actor, GameState* state);
 void BgJyaMegami_Update(Actor* actor, GameState* state);
 void BgJyaMegami_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Jya_Megami.data.o")
+
 /*
 ActorInit Bg_Jya_Megami_InitVars = {
     ACTOR_BG_JYA_MEGAMI,

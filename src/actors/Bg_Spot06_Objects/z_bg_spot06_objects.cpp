@@ -8,6 +8,8 @@ void BgSpot06Objects_Destroy(Actor* actor, GameState* state);
 void BgSpot06Objects_Update(Actor* actor, GameState* state);
 void BgSpot06Objects_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot06_Objects.data.o")
+
 /*
 ActorInit Bg_Spot06_Objects_InitVars = {
     ACTOR_BG_SPOT06_OBJECTS,

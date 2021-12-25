@@ -8,6 +8,8 @@ void MagicDark_Destroy(Actor* actor, GameState* state);
 void MagicDark_Update(Actor* actor, GameState* state);
 void MagicDark_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Magic_Dark.data.o")
+
 /*
 ActorInit Magic_Dark_InitVars = {
     ACTOR_MAGIC_DARK,

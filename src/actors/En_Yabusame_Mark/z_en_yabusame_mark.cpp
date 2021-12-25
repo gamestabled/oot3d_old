@@ -7,6 +7,8 @@ void EnYabusameMark_Init(Actor* actor, GameState* state);
 void EnYabusameMark_Destroy(Actor* actor, GameState* state);
 void EnYabusameMark_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Yabusame_Mark.data.o")
+
 /*
 ActorInit En_Yabusame_Mark_InitVars = {
     ACTOR_EN_YABUSAME_MARK,

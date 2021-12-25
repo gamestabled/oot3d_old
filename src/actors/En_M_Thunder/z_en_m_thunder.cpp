@@ -8,6 +8,8 @@ void EnMThunder_Destroy(Actor* actor, GameState* state);
 void EnMThunder_Update(Actor* actor, GameState* state);
 void EnMThunder_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_M_Thunder.data.o")
+
 /*
 ActorInit En_M_Thunder_InitVars = {
     ACTOR_EN_M_THUNDER,

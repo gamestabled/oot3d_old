@@ -8,6 +8,8 @@ void BgSpot12Gate_Destroy(Actor* actor, GameState* state);
 void BgSpot12Gate_Update(Actor* actor, GameState* state);
 void BgSpot12Gate_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot12_Gate.data.o")
+
 /*
 ActorInit Bg_Spot12_Gate_InitVars = {
     ACTOR_BG_SPOT12_GATE,

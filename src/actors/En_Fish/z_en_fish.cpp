@@ -8,6 +8,8 @@ void EnFish_Destroy(Actor* actor, GameState* state);
 void EnFish_Update(Actor* actor, GameState* state);
 void EnFish_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Fish.data.o")
+
 /*
 ActorInit En_Fish_InitVars = {
     ACTOR_EN_FISH,
