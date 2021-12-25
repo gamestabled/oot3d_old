@@ -8,6 +8,8 @@ void EnWeiyer_Destroy(Actor* actor, GameState* state);
 void EnWeiyer_Update(Actor* actor, GameState* state);
 void EnWeiyer_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Weiyer.data.o")
+
 /*
 ActorInit En_Weiyer_InitVars = {
     ACTOR_EN_WEIYER,

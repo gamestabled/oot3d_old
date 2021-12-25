@@ -8,6 +8,8 @@ void EnNwc_Destroy(Actor* actor, GameState* state);
 void EnNwc_Update(Actor* actor, GameState* state);
 void EnNwc_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Nwc.data.o")
+
 /*
 ActorInit En_Nwc_InitVars = {
     ACTOR_EN_NWC,

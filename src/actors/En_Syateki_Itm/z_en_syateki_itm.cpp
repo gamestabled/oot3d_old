@@ -7,6 +7,8 @@ void EnSyatekiItm_Init(Actor* actor, GameState* state);
 void EnSyatekiItm_Destroy(Actor* actor, GameState* state);
 void EnSyatekiItm_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Syateki_Itm.data.o")
+
 /*
 ActorInit En_Syateki_Itm_InitVars = {
     ACTOR_EN_SYATEKI_ITM,

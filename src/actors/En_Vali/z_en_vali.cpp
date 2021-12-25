@@ -8,6 +8,8 @@ void EnVali_Destroy(Actor* actor, GameState* state);
 void EnVali_Update(Actor* actor, GameState* state);
 void EnVali_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Vali.data.o")
+
 /*
 ActorInit En_Vali_InitVars = {
     ACTOR_EN_VALI,

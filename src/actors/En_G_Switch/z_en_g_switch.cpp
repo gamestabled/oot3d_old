@@ -7,6 +7,8 @@ void EnGSwitch_Init(Actor* actor, GameState* state);
 void EnGSwitch_Destroy(Actor* actor, GameState* state);
 void EnGSwitch_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_G_Switch.data.o")
+
 /*
 ActorInit En_G_Switch_InitVars = {
     ACTOR_EN_G_SWITCH,

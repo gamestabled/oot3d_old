@@ -8,6 +8,8 @@ void EnIshi_Destroy(Actor* actor, GameState* state);
 void EnIshi_Update(Actor* actor, GameState* state);
 void EnIshi_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Ishi.data.o")
+
 /*
 ActorInit En_Ishi_InitVars = {
     ACTOR_EN_ISHI,

@@ -7,6 +7,8 @@ void EnGanonMant_Init(Actor* actor, GameState* state);
 void EnGanonMant_Destroy(Actor* actor, GameState* state);
 void EnGanonMant_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Ganon_Mant.data.o")
+
 /*
 ActorInit En_Ganon_Mant_InitVars = {
     ACTOR_EN_GANON_MANT,

@@ -8,6 +8,8 @@ void EnIceHono_Destroy(Actor* actor, GameState* state);
 void EnIceHono_Update(Actor* actor, GameState* state);
 void EnIceHono_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Ice_Hono.data.o")
+
 /*
 ActorInit En_Ice_Hono_InitVars = {
     ACTOR_EN_ICE_HONO,

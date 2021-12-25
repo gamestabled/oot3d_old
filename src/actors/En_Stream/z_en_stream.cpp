@@ -8,6 +8,8 @@ void EnStream_Destroy(Actor* actor, GameState* state);
 void EnStream_Update(Actor* actor, GameState* state);
 void EnStream_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Stream.data.o")
+
 /*
 ActorInit En_Stream_InitVars = {
     ACTOR_EN_STREAM,

@@ -8,6 +8,8 @@ void EnDu_Destroy(Actor* actor, GameState* state);
 void EnDu_Update(Actor* actor, GameState* state);
 void EnDu_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Du.data.o")
+
 /*
 ActorInit En_Du_InitVars = {
     ACTOR_EN_DU,

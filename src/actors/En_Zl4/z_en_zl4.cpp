@@ -8,6 +8,8 @@ void EnZl4_Destroy(Actor* actor, GameState* state);
 void EnZl4_Update(Actor* actor, GameState* state);
 void EnZl4_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Zl4.data.o")
+
 /*
 ActorInit En_Zl4_InitVars = {
     ACTOR_EN_ZL4,

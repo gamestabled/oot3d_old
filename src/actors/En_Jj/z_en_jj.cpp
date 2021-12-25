@@ -8,6 +8,8 @@ void EnJj_Destroy(Actor* actor, GameState* state);
 void EnJj_Update(Actor* actor, GameState* state);
 void EnJj_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Jj.data.o")
+
 /*
 ActorInit En_Jj_InitVars = {
     ACTOR_EN_JJ,

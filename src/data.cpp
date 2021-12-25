@@ -18,19 +18,21 @@ GLOBAL_ASM("binary/z_effect.data.o")
 
 GLOBAL_ASM("binary/z_Effect_Blure.data.o")
 
-GLOBAL_ASM("binary/data_52127C.o")
+GLOBAL_ASM("binary/data_5311B8.o")
 
-GLOBAL_ASM("binary/data_5270C4.o")
+GLOBAL_ASM("binary/data_531AF4.o")
 
-GLOBAL_ASM("binary/data_52DA8C.o")
+GLOBAL_ASM("binary/data_531EB4.o")
 
-GLOBAL_ASM("binary/data_52F998.o")
+GLOBAL_ASM("binary/data_532518.o")
 
-GLOBAL_ASM("binary/data_52FDB4.o")
+GLOBAL_ASM("binary/data_534C54.o")
 
-GLOBAL_ASM("binary/data_531DB0.o")
+GLOBAL_ASM("binary/data_53603C.o")
 
-GLOBAL_ASM("binary/data_534EF4.o")
+GLOBAL_ASM("binary/data_53CAE4.o")
+
+GLOBAL_ASM("binary/data_5495F4.o")
 
 f32 FLOAT_0054ac20 __attribute__((section(".data_54ac20"))) = 1.0f;
 s8 DAT_0054ac24 __attribute__((section(".data_54ac24"))) = 0;

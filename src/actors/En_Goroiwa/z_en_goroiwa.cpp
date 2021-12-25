@@ -8,6 +8,8 @@ void EnGoroiwa_Destroy(Actor* actor, GameState* state);
 void EnGoroiwa_Update(Actor* actor, GameState* state);
 void EnGoroiwa_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Goroiwa.data.o")
+
 /*
 ActorInit En_Goroiwa_InitVars = {
     ACTOR_EN_GOROIWA,

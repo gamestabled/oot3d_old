@@ -8,6 +8,8 @@ void EnCrow_Destroy(Actor* actor, GameState* state);
 void EnCrow_Update(Actor* actor, GameState* state);
 void EnCrow_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Crow.data.o")
+
 /*
 ActorInit En_Crow_InitVars = {
     ACTOR_EN_CROW,

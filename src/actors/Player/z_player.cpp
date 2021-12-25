@@ -7,6 +7,8 @@ void Player_Destroy(Actor* actor, GameState* state);
 void Player_Update(Actor* actor, GameState* state);
 void Player_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Player.data.o")
+
 /*
 ActorInit Player_InitVars = {
     ACTOR_PLAYER,

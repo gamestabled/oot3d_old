@@ -8,6 +8,8 @@ void EnFhgFire_Destroy(Actor* actor, GameState* state);
 void EnFhgFire_Update(Actor* actor, GameState* state);
 void EnFhgFire_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Fhg_Fire.data.o")
+
 /*
 ActorInit En_Fhg_Fire_InitVars = {
     ACTOR_PLAYER,

@@ -8,6 +8,8 @@ void EnGo2_Destroy(Actor* actor, GameState* state);
 void EnGo2_Update(Actor* actor, GameState* state);
 void EnGo2_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Go2.data.o")
+
 /*
 ActorInit En_Go2_InitVars = {
     ACTOR_EN_GO2,

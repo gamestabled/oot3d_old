@@ -8,6 +8,8 @@ void EnElf_Destroy(Actor* actor, GameState* state);
 void EnElf_Update(Actor* actor, GameState* state);
 void EnElf_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Elf.data.o")
+
 /*
 ActorInit En_Elf_InitVars = {
     ACTOR_EN_ELF,

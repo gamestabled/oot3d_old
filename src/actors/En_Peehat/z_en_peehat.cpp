@@ -8,6 +8,8 @@ void EnPeehat_Destroy(Actor* actor, GameState* state);
 void EnPeehat_Update(Actor* actor, GameState* state);
 void EnPeehat_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Peehat.data.o")
+
 /*
 ActorInit En_Peehat_InitVars = {
     ACTOR_EN_PEEHAT,

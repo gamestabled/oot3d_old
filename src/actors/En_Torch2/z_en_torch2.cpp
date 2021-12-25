@@ -8,6 +8,8 @@ void EnTorch2_Destroy(Actor* actor, GameState* state);
 void EnTorch2_Update(Actor* actor, GameState* state);
 void EnTorch2_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Torch2.data.o")
+
 /*
 ActorInit En_Torch2_InitVars = {
     ACTOR_EN_TORCH2,

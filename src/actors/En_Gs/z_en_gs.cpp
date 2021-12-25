@@ -8,6 +8,8 @@ void EnGs_Destroy(Actor* actor, GameState* state);
 void EnGs_Update(Actor* actor, GameState* state);
 void EnGs_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Gs.data.o")
+
 /*
 ActorInit En_Gs_InitVars = {
     ACTOR_EN_GS,

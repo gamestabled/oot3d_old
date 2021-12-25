@@ -8,6 +8,8 @@ void EnFloormas_Destroy(Actor* actor, GameState* state);
 void EnFloormas_Update(Actor* actor, GameState* state);
 void EnFloormas_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Floormas.data.o")
+
 /*
 ActorInit En_Floormas_InitVars = {
     ACTOR_EN_FLOORMAS,

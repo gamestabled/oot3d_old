@@ -8,6 +8,8 @@ void EnTrap_Destroy(Actor* actor, GameState* state);
 void EnTrap_Update(Actor* actor, GameState* state);
 void EnTrap_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Trap.data.o")
+
 /*
 ActorInit En_Trap_InitVars = {
     ACTOR_EN_TRAP,

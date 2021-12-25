@@ -8,6 +8,8 @@ void EnIk_Destroy(Actor* actor, GameState* state);
 void EnIk_Update(Actor* actor, GameState* state);
 void EnIk_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Ik.data.o")
+
 /*
 ActorInit En_Ik_InitVars = {
     ACTOR_EN_IK,

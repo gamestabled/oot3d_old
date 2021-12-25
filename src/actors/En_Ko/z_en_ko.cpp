@@ -8,6 +8,8 @@ void EnKo_Destroy(Actor* actor, GameState* state);
 void EnKo_Update(Actor* actor, GameState* state);
 void EnKo_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Ko.data.o")
+
 /*
 ActorInit En_Ko_InitVars = {
     ACTOR_EN_KO,

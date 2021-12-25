@@ -8,6 +8,8 @@ void EnShopnuts_Destroy(Actor* actor, GameState* state);
 void EnShopnuts_Update(Actor* actor, GameState* state);
 void EnShopnuts_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Shopnuts.data.o")
+
 /*
 ActorInit En_Shopnuts_InitVars = {
     ACTOR_EN_SHOPNUTS,

@@ -8,6 +8,8 @@ void EnToryo_Destroy(Actor* actor, GameState* state);
 void EnToryo_Update(Actor* actor, GameState* state);
 void EnToryo_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Toryo.data.o")
+
 /*
 ActorInit En_Toryo_InitVars = {
     ACTOR_EN_TORYO,

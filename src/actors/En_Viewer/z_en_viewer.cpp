@@ -8,6 +8,8 @@ void EnViewer_Destroy(Actor* actor, GameState* state);
 void EnViewer_Update(Actor* actor, GameState* state);
 void EnViewer_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Viewer.data.o")
+
 /*
 ActorInit En_Viewer_InitVars = {
     ACTOR_EN_VIEWER,

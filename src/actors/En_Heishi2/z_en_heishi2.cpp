@@ -8,6 +8,8 @@ void EnHeishi2_Destroy(Actor* actor, GameState* state);
 void EnHeishi2_Update(Actor* actor, GameState* state);
 void EnHeishi2_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Heishi2.data.o")
+
 /*
 ActorInit En_Heishi2_InitVars = {
     ACTOR_EN_HEISHI2,

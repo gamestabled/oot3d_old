@@ -8,6 +8,8 @@ void Fishing_Destroy(Actor* actor, GameState* state);
 void Fishing_Update(Actor* actor, GameState* state);
 void Fishing_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Fishing.data.o")
+
 /*
 ActorInit Fishing_InitVars = {
     ACTOR_FISHING,

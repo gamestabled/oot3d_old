@@ -8,6 +8,8 @@ void EnSkj_Destroy(Actor* actor, GameState* state);
 void EnSkj_Update(Actor* actor, GameState* state);
 void EnSkj_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Skj.data.o")
+
 /*
 ActorInit En_Skj_InitVars = {
     ACTOR_EN_SKJ,

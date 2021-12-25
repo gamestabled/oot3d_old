@@ -8,6 +8,8 @@ void ObjHana_Destroy(Actor* actor, GameState* state);
 void ObjHana_Update(Actor* actor, GameState* state);
 void ObjHana_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Hana.data.o")
+
 /*
 ActorInit Obj_Hana_InitVars = {
     ACTOR_OBJ_HANA,

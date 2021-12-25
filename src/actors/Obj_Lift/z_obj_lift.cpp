@@ -8,6 +8,8 @@ void ObjLift_Destroy(Actor* actor, GameState* state);
 void ObjLift_Update(Actor* actor, GameState* state);
 void ObjLift_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Lift.data.o")
+
 /*
 ActorInit Obj_Lift_InitVars = {
     ACTOR_OBJ_LIFT,
