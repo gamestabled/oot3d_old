@@ -8,6 +8,8 @@ void EnBombf_Destroy(Actor* actor, GameState* state);
 void EnBombf_Update(Actor* actor, GameState* state);
 void EnBombf_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Bombf.data.o")
+
 /*
 ActorInit En_Bombf_InitVars = {
     ACTOR_EN_BOMBF,

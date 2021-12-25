@@ -8,6 +8,8 @@ void BgHidanKowarerukabe_Destroy(Actor* actor, GameState* state);
 void BgHidanKowarerukabe_Update(Actor* actor, GameState* state);
 void BgHidanKowarerukabe_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Kowarerukabe.data.o")
+
 /*
 ActorInit Bg_Hidan_Kowarerukabe_InitVars = {
     ACTOR_BG_HIDAN_KOWARERUKABE,

@@ -7,6 +7,8 @@ void EnGirlA_Init(Actor* actor, GameState* state);
 void EnGirlA_Destroy(Actor* actor, GameState* state);
 void EnGirlA_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_GirlA.data.o")
+
 /*
 ActorInit En_GirlA_InitVars = {
     ACTOR_EN_GIRLA,

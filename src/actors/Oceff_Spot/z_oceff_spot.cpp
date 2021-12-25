@@ -8,6 +8,8 @@ void OceffSpot_Destroy(Actor* actor, GameState* state);
 void OceffSpot_Update(Actor* actor, GameState* state);
 void OceffSpot_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Oceff_Spot.data.o")
+
 /*
 ActorInit Oceff_Spot_InitVars = {
     ACTOR_OCEFF_SPOT,

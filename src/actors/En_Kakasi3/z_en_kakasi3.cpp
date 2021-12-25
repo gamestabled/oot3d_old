@@ -8,6 +8,8 @@ void EnKakasi3_Destroy(Actor* actor, GameState* state);
 void EnKakasi3_Update(Actor* actor, GameState* state);
 void EnKakasi3_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Kakasi3.data.o")
+
 /*
 ActorInit En_Kakasi3_InitVars = {
     ACTOR_EN_KAKASI3,

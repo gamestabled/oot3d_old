@@ -8,6 +8,8 @@ void EnPart_Destroy(Actor* actor, GameState* state);
 void EnPart_Update(Actor* actor, GameState* state);
 void EnPart_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Part.data.o")
+
 /*
 ActorInit En_Part_InitVars = {
     ACTOR_EN_PART,

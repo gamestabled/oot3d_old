@@ -8,6 +8,8 @@ void ObjIcePoly_Destroy(Actor* actor, GameState* state);
 void ObjIcePoly_Update(Actor* actor, GameState* state);
 void ObjIcePoly_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Ice_Poly.data.o")
+
 /*
 ActorInit Obj_Ice_Poly_InitVars = {
     ACTOR_OBJ_ICE_POLY,

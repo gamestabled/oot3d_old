@@ -8,6 +8,8 @@ void MirRay_Destroy(Actor* actor, GameState* state);
 void MirRay_Update(Actor* actor, GameState* state);
 void MirRay_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Mir_Ray.data.o")
+
 /*
 ActorInit Mir_Ray_InitVars = {
     ACTOR_MIR_RAY,

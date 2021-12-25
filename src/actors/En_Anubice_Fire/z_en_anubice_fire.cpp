@@ -8,6 +8,8 @@ void EnAnubiceFire_Destroy(Actor* actor, GameState* state);
 void EnAnubiceFire_Update(Actor* actor, GameState* state);
 void EnAnubiceFire_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Anubice_Fire.data.o")
+
 /*
 ActorInit En_Anubice_Fire_InitVars = {
     ACTOR_EN_ANUBICE_FIRE,

@@ -8,6 +8,8 @@ void EnDodojr_Destroy(Actor* actor, GameState* state);
 void EnDodojr_Update(Actor* actor, GameState* state);
 void EnDodojr_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Dodojr.data.o")
+
 /*
 ActorInit En_Dodojr_InitVars = {
     ACTOR_EN_DODOJR,

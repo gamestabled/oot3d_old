@@ -8,6 +8,8 @@ void EnHintnuts_Destroy(Actor* actor, GameState* state);
 void EnHintnuts_Update(Actor* actor, GameState* state);
 void EnHintnuts_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Hintnuts.data.o")
+
 /*
 ActorInit En_Hintnuts_InitVars = {
     ACTOR_EN_HINTNUTS,

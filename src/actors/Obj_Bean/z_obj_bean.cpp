@@ -8,6 +8,8 @@ void ObjBean_Destroy(Actor* actor, GameState* state);
 void ObjBean_Update(Actor* actor, GameState* state);
 void ObjBean_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Bean.data.o")
+
 /*
 ActorInit Obj_Bean_InitVars = {
     ACTOR_OBJ_BEAN,

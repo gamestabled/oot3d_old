@@ -8,6 +8,8 @@ void BgTokiSwd_Destroy(Actor* actor, GameState* state);
 void BgTokiSwd_Update(Actor* actor, GameState* state);
 void BgTokiSwd_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Toki_Swd.data.o")
+
 /*
 ActorInit Bg_Toki_Swd_InitVars = {
     ACTOR_BG_TOKI_SWD,

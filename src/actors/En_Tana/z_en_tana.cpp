@@ -7,6 +7,8 @@ void EnTana_Init(Actor* actor, GameState* state);
 void EnTana_Destroy(Actor* actor, GameState* state);
 void EnTana_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Tana.data.o")
+
 /*
 ActorInit En_Tana_InitVars = {
     ACTOR_EN_TANA,

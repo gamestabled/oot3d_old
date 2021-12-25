@@ -8,6 +8,8 @@ void BgJyaKanaami_Destroy(Actor* actor, GameState* state);
 void BgJyaKanaami_Update(Actor* actor, GameState* state);
 void BgJyaKanaami_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Jya_Kanaami.data.o")
+
 /*
 ActorInit Bg_Jya_Kanaami_InitVars = {
     ACTOR_BG_JYA_KANAAMI,

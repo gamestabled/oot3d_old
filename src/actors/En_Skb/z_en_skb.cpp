@@ -8,6 +8,8 @@ void EnSkb_Destroy(Actor* actor, GameState* state);
 void EnSkb_Update(Actor* actor, GameState* state);
 void EnSkb_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Skb.data.o")
+
 /*
 ActorInit En_Skb_InitVars = {
     ACTOR_EN_SKB,

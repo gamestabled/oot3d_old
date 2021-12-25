@@ -8,6 +8,8 @@ void ObjOshihiki_Destroy(Actor* actor, GameState* state);
 void ObjOshihiki_Update(Actor* actor, GameState* state);
 void ObjOshihiki_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Oshihiki.data.o")
+
 /*
 ActorInit Obj_Oshihiki_InitVars = {
     ACTOR_OBJ_OSHIHIKI,

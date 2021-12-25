@@ -7,6 +7,8 @@ void BgMoriIdomizu_Init(Actor* actor, GameState* state);
 void BgMoriIdomizu_Destroy(Actor* actor, GameState* state);
 void BgMoriIdomizu_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Mori_Idomizu.data.o")
+
 /*
 ActorInit Bg_Mori_Idomizu_InitVars = {
     ACTOR_BG_MORI_IDOMIZU,

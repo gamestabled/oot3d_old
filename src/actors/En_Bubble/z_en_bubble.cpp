@@ -8,6 +8,8 @@ void EnBubble_Destroy(Actor* actor, GameState* state);
 void EnBubble_Update(Actor* actor, GameState* state);
 void EnBubble_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Bubble.data.o")
+
 /*
 ActorInit En_Bubble_InitVars = {
     ACTOR_EN_BUBBLE,

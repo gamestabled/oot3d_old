@@ -7,6 +7,8 @@ void BgHidanFirewall_Init(Actor* actor, GameState* state);
 void BgHidanFirewall_Destroy(Actor* actor, GameState* state);
 void BgHidanFirewall_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Firewall.data.o")
+
 /*
 ActorInit Bg_Hidan_Firewall_InitVars = {
     ACTOR_BG_HIDAN_FIREWALL,

@@ -8,6 +8,8 @@ void EnDaiku_Destroy(Actor* actor, GameState* state);
 void EnDaiku_Update(Actor* actor, GameState* state);
 void EnDaiku_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Daiku.data.o")
+
 /*
 ActorInit En_Daiku_InitVars = {
     ACTOR_EN_DAIKU,

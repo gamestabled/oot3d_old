@@ -8,6 +8,8 @@ void DemoTreLgt_Destroy(Actor* actor, GameState* state);
 void DemoTreLgt_Update(Actor* actor, GameState* state);
 void DemoTreLgt_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Demo_Tre_Lgt.data.o")
+
 /*
 ActorInit Demo_Tre_Lgt_InitVars = {
     ACTOR_DEMO_TRE_LGT,

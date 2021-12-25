@@ -8,6 +8,8 @@ void BgSpot18Basket_Destroy(Actor* actor, GameState* state);
 void BgSpot18Basket_Update(Actor* actor, GameState* state);
 void BgSpot18Basket_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot18_Basket.data.o")
+
 /*
 ActorInit Bg_Spot18_Basket_InitVars = {
     ACTOR_BG_SPOT18_BASKET,

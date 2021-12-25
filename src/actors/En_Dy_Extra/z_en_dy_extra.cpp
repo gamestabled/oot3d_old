@@ -8,6 +8,8 @@ void EnDyExtra_Destroy(Actor* actor, GameState* state);
 void EnDyExtra_Update(Actor* actor, GameState* state);
 void EnDyExtra_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Dy_Extra.data.o")
+
 /*
 ActorInit En_Dy_Extra_InitVars = {
     ACTOR_EN_DY_EXTRA,

@@ -8,6 +8,8 @@ void BgHakaTubo_Destroy(Actor* actor, GameState* state);
 void BgHakaTubo_Update(Actor* actor, GameState* state);
 void BgHakaTubo_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Haka_Tubo.data.o")
+
 /*
 ActorInit Bg_Haka_Tubo_InitVars = {
     ACTOR_BG_HAKA_TUBO,

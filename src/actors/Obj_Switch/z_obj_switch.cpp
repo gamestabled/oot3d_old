@@ -8,6 +8,8 @@ void ObjSwitch_Destroy(Actor* actor, GameState* state);
 void ObjSwitch_Update(Actor* actor, GameState* state);
 void ObjSwitch_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Switch.data.o")
+
 /*
 ActorInit Obj_Switch_InitVars = {
     ACTOR_OBJ_SWITCH,

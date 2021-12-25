@@ -8,6 +8,8 @@ void EnBird_Destroy(Actor* actor, GameState* state);
 void EnBird_Update(Actor* actor, GameState* state);
 void EnBird_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Bird.data.o")
+
 /*
 ActorInit En_Bird_InitVars = {
     ACTOR_EN_BIRD,

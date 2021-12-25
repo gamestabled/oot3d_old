@@ -8,6 +8,8 @@ void EnOwl_Destroy(Actor* actor, GameState* state);
 void EnOwl_Update(Actor* actor, GameState* state);
 void EnOwl_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Owl.data.o")
+
 /*
 ActorInit En_Owl_InitVars = {
     ACTOR_EN_OWL,

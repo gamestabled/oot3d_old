@@ -8,6 +8,8 @@ void EnWood02_Destroy(Actor* actor, GameState* state);
 void EnWood02_Update(Actor* actor, GameState* state);
 void EnWood02_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Wood02.data.o")
+
 /*
 ActorInit En_Wood02_InitVars = {
     ACTOR_EN_WOOD02,

@@ -8,6 +8,8 @@ void EnBw_Destroy(Actor* actor, GameState* state);
 void EnBw_Update(Actor* actor, GameState* state);
 void EnBw_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Bw.data.o")
+
 /*
 ActorInit En_Bw_InitVars = {
     ACTOR_EN_BW,

@@ -8,6 +8,8 @@ void DoorAna_Destroy(Actor* actor, GameState* state);
 void DoorAna_Update(Actor* actor, GameState* state);
 void DoorAna_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Door_Ana.data.o")
+
 /*
 ActorInit Door_Ana_InitVars = {
     ACTOR_DOOR_ANA,

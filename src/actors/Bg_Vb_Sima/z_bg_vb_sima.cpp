@@ -8,6 +8,8 @@ void BgVbSima_Destroy(Actor* actor, GameState* state);
 void BgVbSima_Update(Actor* actor, GameState* state);
 void BgVbSima_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Vb_Sima.data.o")
+
 /*
 ActorInit Bg_Vb_Sima_InitVars = {
     ACTOR_BG_VB_SIMA,

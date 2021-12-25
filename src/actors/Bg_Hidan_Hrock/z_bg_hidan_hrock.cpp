@@ -8,6 +8,8 @@ void BgHidanHrock_Destroy(Actor* actor, GameState* state);
 void BgHidanHrock_Update(Actor* actor, GameState* state);
 void BgHidanHrock_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Hrock.data.o")
+
 /*
 ActorInit Bg_Hidan_Hrock_InitVars = {
     ACTOR_BG_HIDAN_HROCK,

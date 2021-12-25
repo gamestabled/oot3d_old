@@ -8,6 +8,8 @@ void BgSpot01Idomizu_Destroy(Actor* actor, GameState* state);
 void BgSpot01Idomizu_Update(Actor* actor, GameState* state);
 void BgSpot01Idomizu_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot01_Idomizu.data.o")
+
 /*
 ActorInit Bg_Spot01_Idomizu_InitVars = {
     ACTOR_BG_SPOT01_IDOMIZU,

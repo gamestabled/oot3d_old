@@ -8,6 +8,8 @@ void EnFw_Destroy(Actor* actor, GameState* state);
 void EnFw_Update(Actor* actor, GameState* state);
 void EnFw_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Fw.data.o")
+
 /*
 ActorInit En_Fw_InitVars = {
     ACTOR_EN_FW,

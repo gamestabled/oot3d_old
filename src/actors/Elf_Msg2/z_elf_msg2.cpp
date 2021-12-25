@@ -7,6 +7,8 @@ void ElfMsg2_Init(Actor* actor, GameState* state);
 void ElfMsg2_Destroy(Actor* actor, GameState* state);
 void ElfMsg2_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Elf_Msg2.data.o")
+
 /*
 ActorInit Elf_Msg2_InitVars = {
     ACTOR_ELF_MSG2,

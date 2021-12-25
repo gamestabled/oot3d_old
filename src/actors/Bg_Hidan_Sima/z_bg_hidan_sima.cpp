@@ -8,6 +8,8 @@ void BgHidanSima_Destroy(Actor* actor, GameState* state);
 void BgHidanSima_Update(Actor* actor, GameState* state);
 void BgHidanSima_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Sima.data.o")
+
 /*
 ActorInit Bg_Hidan_Sima_InitVars = {
     ACTOR_BG_HIDAN_SIMA,

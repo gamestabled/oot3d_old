@@ -8,6 +8,8 @@ void BgHidanDalm_Destroy(Actor* actor, GameState* state);
 void BgHidanDalm_Update(Actor* actor, GameState* state);
 void BgHidanDalm_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Dalm.data.o")
+
 /*
 ActorInit Bg_Hidan_Dalm_InitVars = {
     ACTOR_BG_HIDAN_DALM,

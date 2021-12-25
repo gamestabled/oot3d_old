@@ -8,6 +8,8 @@ void BgHidanSekizou_Destroy(Actor* actor, GameState* state);
 void BgHidanSekizou_Update(Actor* actor, GameState* state);
 void BgHidanSekizou_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Sekizou.data.o")
+
 /*
 ActorInit Bg_Hidan_Sekizou_InitVars = {
     ACTOR_BG_HIDAN_SEKIZOU,

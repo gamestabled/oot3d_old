@@ -7,6 +7,8 @@ void BgMoriHashigo_Init(Actor* actor, GameState* state);
 void BgMoriHashigo_Destroy(Actor* actor, GameState* state);
 void BgMoriHashigo_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Mori_Hashigo.data.o")
+
 /*
 ActorInit Bg_Mori_Hashigo_InitVars = {
     ACTOR_BG_MORI_HASHIGO,

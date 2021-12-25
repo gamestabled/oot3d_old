@@ -8,6 +8,8 @@ void BgZg_Destroy(Actor* actor, GameState* state);
 void BgZg_Update(Actor* actor, GameState* state);
 void BgZg_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Zg.data.o")
+
 /*
 ActorInit Bg_Zg_InitVars = {
     ACTOR_BG_ZG,

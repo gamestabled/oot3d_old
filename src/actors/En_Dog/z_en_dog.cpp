@@ -8,6 +8,8 @@ void EnDog_Destroy(Actor* actor, GameState* state);
 void EnDog_Update(Actor* actor, GameState* state);
 void EnDog_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Dog.data.o")
+
 /*
 ActorInit En_Dog_InitVars = {
     ACTOR_EN_DOG,

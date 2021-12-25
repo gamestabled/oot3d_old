@@ -7,6 +7,8 @@ void BgSpot17Funen_Init(Actor* actor, GameState* state);
 void BgSpot17Funen_Destroy(Actor* actor, GameState* state);
 void BgSpot17Funen_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot17_Funen.data.o")
+
 /*
 ActorInit Bg_Spot17_Funen_InitVars = {
     ACTOR_BG_SPOT17_FUNEN,

@@ -8,6 +8,8 @@ void BgYdanMaruta_Destroy(Actor* actor, GameState* state);
 void BgYdanMaruta_Update(Actor* actor, GameState* state);
 void BgYdanMaruta_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Ydan_Maruta.data.o")
+
 /*
 ActorInit Bg_Ydan_Maruta_InitVars = {
     ACTOR_BG_YDAN_MARUTA,

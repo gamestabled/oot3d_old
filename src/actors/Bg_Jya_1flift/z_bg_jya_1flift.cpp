@@ -8,6 +8,8 @@ void BgJya1flift_Destroy(Actor* actor, GameState* state);
 void BgJya1flift_Update(Actor* actor, GameState* state);
 void BgJya1flift_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Jya_1flift.data.o")
+
 /*
 ActorInit Bg_Jya_1flift_InitVars = {
     ACTOR_BG_JYA_1FLIFT,

@@ -8,6 +8,8 @@ void EnPoRelay_Destroy(Actor* actor, GameState* state);
 void EnPoRelay_Update(Actor* actor, GameState* state);
 void EnPoRelay_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Po_Relay.data.o")
+
 /*
 ActorInit En_Po_Relay_InitVars = {
     ACTOR_EN_PO_RELAY,

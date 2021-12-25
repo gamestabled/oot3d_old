@@ -8,6 +8,8 @@ void BgJyaCobra_Destroy(Actor* actor, GameState* state);
 void BgJyaCobra_Update(Actor* actor, GameState* state);
 void BgJyaCobra_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Jya_Cobra.data.o")
+
 /*
 ActorInit Bg_Jya_Cobra_InitVars = {
     ACTOR_BG_JYA_COBRA,

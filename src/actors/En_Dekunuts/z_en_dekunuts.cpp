@@ -8,6 +8,8 @@ void EnDekunuts_Destroy(Actor* actor, GameState* state);
 void EnDekunuts_Update(Actor* actor, GameState* state);
 void EnDekunuts_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Dekunuts.data.o")
+
 /*
 ActorInit En_Dekunuts_InitVars = {
     ACTOR_EN_DEKUNUTS,

@@ -7,6 +7,8 @@ void EnWeatherTag_Init(Actor* actor, GameState* state);
 void EnWeatherTag_Destroy(Actor* actor, GameState* state);
 void EnWeatherTag_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Weather_Tag.data.o")
+
 /*
 ActorInit En_Weather_Tag_InitVars = {
     ACTOR_EN_WEATHER_TAG,

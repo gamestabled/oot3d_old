@@ -7,6 +7,8 @@ void EnOssan_Init(Actor* actor, GameState* state);
 void EnOssan_Destroy(Actor* actor, GameState* state);
 void EnOssan_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Ossan.data.o")
+
 /*
 ActorInit En_Ossan_InitVars = {
     ACTOR_EN_OSSAN,

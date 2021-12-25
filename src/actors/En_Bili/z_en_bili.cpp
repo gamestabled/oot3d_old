@@ -8,6 +8,8 @@ void EnBili_Destroy(Actor* actor, GameState* state);
 void EnBili_Update(Actor* actor, GameState* state);
 void EnBili_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Bili.data.o")
+
 /*
 ActorInit En_Bili_InitVars = {
     ACTOR_EN_BILI,

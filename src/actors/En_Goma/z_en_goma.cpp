@@ -8,6 +8,8 @@ void EnGoma_Destroy(Actor* actor, GameState* state);
 void EnGoma_Update(Actor* actor, GameState* state);
 void EnGoma_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Goma.data.o")
+
 /*
 ActorInit En_Goma_InitVars = {
     ACTOR_BOSS_GOMA,

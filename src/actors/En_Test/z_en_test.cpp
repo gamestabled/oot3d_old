@@ -8,6 +8,8 @@ void EnTest_Destroy(Actor* actor, GameState* state);
 void EnTest_Update(Actor* actor, GameState* state);
 void EnTest_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Test.data.o")
+
 /*
 ActorInit En_Test_InitVars = {
     ACTOR_EN_TEST,

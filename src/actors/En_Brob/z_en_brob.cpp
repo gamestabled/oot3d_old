@@ -8,6 +8,8 @@ void EnBrob_Destroy(Actor* actor, GameState* state);
 void EnBrob_Update(Actor* actor, GameState* state);
 void EnBrob_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Brob.data.o")
+
 /*
 ActorInit En_Brob_InitVars = {
     ACTOR_EN_BROB,

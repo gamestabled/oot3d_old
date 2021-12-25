@@ -7,6 +7,8 @@ void EnWonderItem_Init(Actor* actor, GameState* state);
 void EnWonderItem_Destroy(Actor* actor, GameState* state);
 void EnWonderItem_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Wonder_Item.data.o")
+
 /*
 ActorInit En_Wonder_Item_InitVars = {
     ACTOR_EN_WONDER_ITEM,

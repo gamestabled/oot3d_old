@@ -8,6 +8,8 @@ void EnRl_Destroy(Actor* actor, GameState* state);
 void EnRl_Update(Actor* actor, GameState* state);
 void EnRl_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Rl.data.o")
+
 /*
 ActorInit En_Rl_InitVars = {
     ACTOR_EN_RL,

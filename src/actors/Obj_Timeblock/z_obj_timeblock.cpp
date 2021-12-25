@@ -8,6 +8,8 @@ void ObjTimeblock_Destroy(Actor* actor, GameState* state);
 void ObjTimeblock_Update(Actor* actor, GameState* state);
 void ObjTimeblock_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Timeblock.data.o")
+
 /*
 ActorInit Obj_Timeblock_InitVars = {
     ACTOR_OBJ_TIMEBLOCK,

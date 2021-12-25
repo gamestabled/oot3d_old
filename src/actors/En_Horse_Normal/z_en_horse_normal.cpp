@@ -8,6 +8,8 @@ void EnHorseNormal_Destroy(Actor* actor, GameState* state);
 void EnHorseNormal_Update(Actor* actor, GameState* state);
 void EnHorseNormal_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Horse_Normal.data.o")
+
 /*
 ActorInit En_Horse_Normal_InitVars = {
     ACTOR_EN_HORSE_NORMAL,

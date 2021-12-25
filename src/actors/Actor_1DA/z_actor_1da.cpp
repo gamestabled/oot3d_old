@@ -7,6 +7,8 @@ void Actor1DA_Init(Actor* actor, GameState* state);
 void Actor1DA_Destroy(Actor* actor, GameState* state);
 void Actor1DA_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Actor_1DA.data.o")
+
 /*
 ActorInit Actor_1DA_InitVars = {
     ACTOR_1DA,

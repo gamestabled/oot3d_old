@@ -8,6 +8,8 @@ void BgSpot00Hanebasi_Destroy(Actor* actor, GameState* state);
 void BgSpot00Hanebasi_Update(Actor* actor, GameState* state);
 void BgSpot00Hanebasi_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot00_Hanebasi.data.o")
+
 /*
 ActorInit Bg_Spot00_Hanebasi_InitVars = {
     ACTOR_BG_SPOT00_HANEBASI,

@@ -7,6 +7,8 @@ void ShotSun_Init(Actor* actor, GameState* state);
 void ShotSun_Destroy(Actor* actor, GameState* state);
 void ShotSun_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Shot_Sun.data.o")
+
 /*
 ActorInit Shot_Sun_InitVars = {
     ACTOR_SHOT_SUN,

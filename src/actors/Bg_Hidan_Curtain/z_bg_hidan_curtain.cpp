@@ -8,6 +8,8 @@ void BgHidanCurtain_Destroy(Actor* actor, GameState* state);
 void BgHidanCurtain_Update(Actor* actor, GameState* state);
 void BgHidanCurtain_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Hidan_Curtain.data.o")
+
 /*
 ActorInit Bg_Hidan_Curtain_InitVars = {
     ACTOR_BG_HIDAN_CURTAIN,

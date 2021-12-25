@@ -7,6 +7,8 @@ void EnNiwLady_Init(Actor* actor, GameState* state);
 void EnNiwLady_Destroy(Actor* actor, GameState* state);
 void EnNiwLady_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Niw_Lady.data.o")
+
 /*
 ActorInit En_Niw_Lady_InitVars = {
     ACTOR_EN_NIW_LADY,

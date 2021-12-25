@@ -7,6 +7,8 @@ void ObjMure3_Init(Actor* actor, GameState* state);
 void ObjMure3_Destroy(Actor* actor, GameState* state);
 void ObjMure3_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Obj_Mure3.data.o")
+
 /*
 ActorInit Obj_Mure3_InitVars = {
     ACTOR_OBJ_MURE3,

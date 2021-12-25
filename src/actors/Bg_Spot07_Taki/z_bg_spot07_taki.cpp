@@ -8,6 +8,8 @@ void BgSpot07Taki_Destroy(Actor* actor, GameState* state);
 void BgSpot07Taki_Update(Actor* actor, GameState* state);
 void BgSpot07Taki_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot07_Taki.data.o")
+
 /*
 ActorInit Bg_Spot07_Taki_InitVars = {
     ACTOR_BG_SPOT07_TAKI,

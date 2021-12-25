@@ -7,6 +7,8 @@ void BgMoriHashira4_Init(Actor* actor, GameState* state);
 void BgMoriHashira4_Destroy(Actor* actor, GameState* state);
 void BgMoriHashira4_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Mori_Hashira4.data.o")
+
 /*
 ActorInit Bg_Mori_Hashira4_InitVars = {
     ACTOR_BG_MORI_HASHIRA4,

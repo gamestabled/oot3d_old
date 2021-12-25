@@ -8,6 +8,8 @@ void BgSpot05Soko_Destroy(Actor* actor, GameState* state);
 void BgSpot05Soko_Update(Actor* actor, GameState* state);
 void BgSpot05Soko_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot05_Soko.data.o")
+
 /*
 ActorInit Bg_Spot05_Soko_InitVars = {
     ACTOR_BG_SPOT05_SOKO,

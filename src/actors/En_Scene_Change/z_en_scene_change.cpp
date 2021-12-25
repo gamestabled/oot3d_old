@@ -8,6 +8,8 @@ void EnSceneChange_Destroy(Actor* actor, GameState* state);
 void EnSceneChange_Update(Actor* actor, GameState* state);
 void EnSceneChange_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Scene_Change.data.o")
+
 /*
 ActorInit En_Scene_Change_InitVars = {
     ACTOR_EN_SCENE_CHANGE,

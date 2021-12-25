@@ -8,6 +8,8 @@ void EnReeba_Destroy(Actor* actor, GameState* state);
 void EnReeba_Update(Actor* actor, GameState* state);
 void EnReeba_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Reeba.data.o")
+
 /*
 ActorInit En_Reeba_InitVars = {
     ACTOR_EN_REEBA,

@@ -7,6 +7,8 @@ void EnFr_Init(Actor* actor, GameState* state);
 void EnFr_Destroy(Actor* actor, GameState* state);
 void EnFr_Update(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Fr.data.o")
+
 /*
 ActorInit En_Fr_InitVars = {
     ACTOR_EN_FR,

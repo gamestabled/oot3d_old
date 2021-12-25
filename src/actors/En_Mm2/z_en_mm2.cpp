@@ -8,6 +8,8 @@ void EnMm2_Destroy(Actor* actor, GameState* state);
 void EnMm2_Update(Actor* actor, GameState* state);
 void EnMm2_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Mm2.data.o")
+
 /*
 ActorInit En_Mm2_InitVars = {
     ACTOR_EN_MM2,

@@ -8,6 +8,8 @@ void EnDivingGame_Destroy(Actor* actor, GameState* state);
 void EnDivingGame_Update(Actor* actor, GameState* state);
 void EnDivingGame_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Diving_Game.data.o")
+
 /*
 ActorInit En_Diving_Game_InitVars = {
     ACTOR_EN_DIVING_GAME,

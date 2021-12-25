@@ -8,6 +8,8 @@ void EnLight_Destroy(Actor* actor, GameState* state);
 void EnLight_Update(Actor* actor, GameState* state);
 void EnLight_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Light.data.o")
+
 /*
 ActorInit En_Light_InitVars = {
     ACTOR_EN_LIGHT,

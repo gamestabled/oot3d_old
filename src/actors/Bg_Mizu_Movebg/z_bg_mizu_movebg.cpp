@@ -8,6 +8,8 @@ void BgMizuMovebg_Destroy(Actor* actor, GameState* state);
 void BgMizuMovebg_Update(Actor* actor, GameState* state);
 void BgMizuMovebg_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Mizu_Movebg.data.o")
+
 /*
 ActorInit Bg_Mizu_Movebg_InitVars = {
     ACTOR_BG_MIZU_MOVEBG,

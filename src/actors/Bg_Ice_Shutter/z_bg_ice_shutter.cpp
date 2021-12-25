@@ -8,6 +8,8 @@ void BgIceShutter_Destroy(Actor* actor, GameState* state);
 void BgIceShutter_Update(Actor* actor, GameState* state);
 void BgIceShutter_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Ice_Shutter.data.o")
+
 /*
 ActorInit Bg_Ice_Shutter_InitVars = {
     ACTOR_BG_ICE_SHUTTER,

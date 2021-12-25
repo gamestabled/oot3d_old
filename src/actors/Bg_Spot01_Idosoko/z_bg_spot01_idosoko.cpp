@@ -8,6 +8,8 @@ void BgSpot01Idosoko_Destroy(Actor* actor, GameState* state);
 void BgSpot01Idosoko_Update(Actor* actor, GameState* state);
 void BgSpot01Idosoko_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Spot01_Idosoko.data.o")
+
 /*
 ActorInit Bg_Spot01_Idosoko_InitVars = {
     ACTOR_BG_SPOT01_IDOSOKO,

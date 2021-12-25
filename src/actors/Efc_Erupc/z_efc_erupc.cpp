@@ -8,6 +8,8 @@ void EfcErupc_Destroy(Actor* actor, GameState* state);
 void EfcErupc_Update(Actor* actor, GameState* state);
 void EfcErupc_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Efc_Erupc.data.o")
+
 /*
 ActorInit Efc_Erupc_InitVars = {
     ACTOR_EFC_ERUPC,

@@ -8,6 +8,8 @@ void DemoDu_Destroy(Actor* actor, GameState* state);
 void DemoDu_Update(Actor* actor, GameState* state);
 void DemoDu_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Demo_Du.data.o")
+
 /*
 ActorInit Demo_Du_InitVars = {
     ACTOR_DEMO_DU,

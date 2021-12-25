@@ -8,6 +8,8 @@ void BgHakaHuta_Destroy(Actor* actor, GameState* state);
 void BgHakaHuta_Update(Actor* actor, GameState* state);
 void BgHakaHuta_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Haka_Huta.data.o")
+
 /*
 ActorInit Bg_Haka_Huta_InitVars = {
     ACTOR_BG_HAKA_HUTA,

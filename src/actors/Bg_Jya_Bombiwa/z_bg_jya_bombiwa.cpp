@@ -8,6 +8,8 @@ void BgJyaBombiwa_Destroy(Actor* actor, GameState* state);
 void BgJyaBombiwa_Update(Actor* actor, GameState* state);
 void BgJyaBombiwa_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Bg_Jya_Bombiwa.data.o")
+
 /*
 ActorInit Bg_Jya_Bombiwa_InitVars = {
     ACTOR_BG_JYA_BOMBIWA,

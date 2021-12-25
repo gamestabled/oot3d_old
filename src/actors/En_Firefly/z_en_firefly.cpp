@@ -8,6 +8,8 @@ void EnFirefly_Destroy(Actor* actor, GameState* state);
 void EnFirefly_Update(Actor* actor, GameState* state);
 void EnFirefly_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Firefly.data.o")
+
 /*
 ActorInit En_Firefly_InitVars = {
     ACTOR_EN_FIREFLY,

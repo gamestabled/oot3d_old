@@ -8,6 +8,8 @@ void EnSi_Destroy(Actor* actor, GameState* state);
 void EnSi_Update(Actor* actor, GameState* state);
 void EnSi_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Si.data.o")
+
 /*
 ActorInit En_Si_InitVars = {
     ACTOR_EN_SI,

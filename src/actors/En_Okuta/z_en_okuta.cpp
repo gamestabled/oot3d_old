@@ -8,6 +8,8 @@ void EnOkuta_Destroy(Actor* actor, GameState* state);
 void EnOkuta_Update(Actor* actor, GameState* state);
 void EnOkuta_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Okuta.data.o")
+
 /*
 ActorInit En_Okuta_InitVars = {
     ACTOR_EN_OKUTA,

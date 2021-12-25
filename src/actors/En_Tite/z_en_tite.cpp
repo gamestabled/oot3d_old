@@ -8,6 +8,8 @@ void EnTite_Destroy(Actor* actor, GameState* state);
 void EnTite_Update(Actor* actor, GameState* state);
 void EnTite_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Tite.data.o")
+
 /*
 ActorInit En_Tite_InitVars = {
     ACTOR_EN_TITE,

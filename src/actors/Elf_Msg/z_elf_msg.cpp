@@ -8,6 +8,8 @@ void ElfMsg_Destroy(Actor* actor, GameState* state);
 void ElfMsg_Update(Actor* actor, GameState* state);
 void ElfMsg_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_Elf_Msg.data.o")
+
 /*
 ActorInit Elf_Msg_InitVars = {
     ACTOR_ELF_MSG,

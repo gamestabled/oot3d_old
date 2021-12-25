@@ -8,6 +8,8 @@ void EnInsect_Destroy(Actor* actor, GameState* state);
 void EnInsect_Update(Actor* actor, GameState* state);
 void EnInsect_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Insect.data.o")
+
 /*
 ActorInit En_Insect_InitVars = {
     ACTOR_EN_INSECT,

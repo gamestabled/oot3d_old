@@ -8,6 +8,8 @@ void EnDntJiji_Destroy(Actor* actor, GameState* state);
 void EnDntJiji_Update(Actor* actor, GameState* state);
 void EnDntJiji_Draw(Actor* actor, GameState* state);
 
+GLOBAL_ASM("binary/z_En_Dnt_Jiji.data.o")
+
 /*
 ActorInit En_Dnt_Jiji_InitVars = {
     ACTOR_EN_DNT_JIJI,
