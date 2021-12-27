@@ -34,7 +34,6 @@ z_Bg_Haka_Zou.data,005115B0,005115D0
 z_Bg_Heavy_Block.data,005115D0,00511678
 z_Bg_Hidan_Curtain.data,00511678,00511698
 z_Bg_Hidan_Dalm.data,00511698,005117C4
-z_Bg_Hidan_Firewall.data,005117C4,00511824
 z_Bg_Hidan_Fslift.data,00511824,00511854
 z_Bg_Hidan_Fwbig.data,00511854,005119BC
 z_Bg_Hidan_Hamstep.data,005119BC,005119DC

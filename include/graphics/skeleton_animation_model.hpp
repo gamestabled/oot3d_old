@@ -24,6 +24,17 @@ class AnimatedMaterial {
 }; // size = 0x14
 
 class SkeletonAnimationModel_unk_0C {
+public:
+    void FUN_00372d94(void* arg1);
+
+    void SetAnimType(s8 type) {
+        animType = type;
+    }
+
+    void SetAnimSpeed(f32 speed) {
+        animSpeed = speed;
+    }
+
     AnimatedMaterial* unk_00;
     void* unk_04;
     s32 curFrame;
