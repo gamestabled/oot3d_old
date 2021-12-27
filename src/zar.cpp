@@ -31,3 +31,19 @@ void* ZARInfo::GetQDBByIndex(s32 index) {
     }
     return ret;
 }
+
+void* ZARInfo::GetCMABByIndex(s32 index) {
+    void* ret = NULL;
+    u32 numFiles;
+
+    if (filetypeMap[5] == -1) {
+        numFiles = 0;
+    } else {
+        numFiles = fileTypes[filetypeMap[5]].numFiles;
+    }
+
+    if (numFiles > index) {
+        ret = cmabPtrs[index];
+    }
+    return ret;
+}

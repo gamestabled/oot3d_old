@@ -322,6 +322,7 @@ struct ZARFileTypeEntry {
 struct ZARInfo {
     void* FUN_003532c0(s32 index);
     void* GetQDBByIndex(s32 index);
+    void* GetCMABByIndex(s32 index);
 
     /* 0x00 */ void* buf;
     /* 0x04 */ char unk_04[0x08];
