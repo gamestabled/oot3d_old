@@ -23,6 +23,7 @@ Actor* Actor_Spawn(ActorContext* actorCtx, GlobalContext* globalCtx, s16 actorId
 void Actor_UpdateBgCheckInfo(GlobalContext* globalCtx, Actor* actor, f32 wallCheckHeight, f32 wallCheckRadius,
                              f32 ceilingCheckHeight, s32 flags);
 f32 Actor_WorldDistXYZToActor(Actor* actorA, Actor* actorB);
+s32 Actor_IsFacingPlayer(Actor* actor, s16 angle);
 
 void Lib_MemSet(u8* dest, size_t size, u8 val);
 
@@ -32,6 +33,7 @@ void Math_ApproachZeroF(f32* pValue, f32 fraction, f32 step);
 f32 Math_CosS(s16 angle);
 f32 Math_FAtan2F(f32 y, f32 x);
 f32 Math_SinS(s16 angle);
+s32 Math_StepToF(f32* pValue, f32 target, f32 step);
 void Math_Vec3f_Copy(Vec3f* dest, Vec3f* src);
 f32 Math_Vec3f_DistXYZ(Vec3f* a, Vec3f* b);
 void Math_Vec3s_ToVec3f(Vec3f* dest, Vec3s* src);
@@ -93,6 +95,7 @@ void Flags_SetEventChkInf(s32 flag);
 
 Actor* FUN_00346d94(GlobalContext* globalCtx, Actor* explosiveActor);
 s32 CollisionCheck_SetAC(GlobalContext* globalCtx, CollisionCheckContext* colChkCtx, Collider* collider);
+s32 CollisionCheck_SetAT(GlobalContext* globalCtx, CollisionCheckContext* colChkCtx, Collider* collider);
 s32 CollisionCheck_SetOC(GlobalContext* globalCtx, CollisionCheckContext* colChkCtx, Collider* collider);
 f32 Rand_ZeroOne(void);
 void EffectSsKakera_Spawn(GlobalContext* globalCtx, Vec3f* pos, Vec3f* velocity, Vec3f* arg3, s16 gravity, s16 arg5,
@@ -118,5 +121,9 @@ void FUN_0035239c(s16 arg0);
 void FUN_00367c7c(GlobalContext*, u16 textID, Actor* actor);
 void Audio_QueueSeqCmd(s32 arg0, s32 arg1, s32 arg2);
 void FUN_00354358(s32 arg0);
+void FUN_00374bb8(GlobalContext* globalCtx, Actor* actor, f32 arg2, s16 arg3, f32 arg4);
+void FUN_0036c5d8(Actor* actor, Vec3f* result, Vec3f* arg2);
+void FUN_00373264(Actor* actor, s32 arg1);
+u32 PauseContext_GetState(void);
 
 float sqrtf(float arg);

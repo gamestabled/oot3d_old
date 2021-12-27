@@ -2460,8 +2460,6 @@ GLOBAL_ASM("binary/FUN_0019a088.o")
 
 GLOBAL_ASM("binary/FUN_0019a1b0.o")
 
-GLOBAL_ASM("binary/FUN_0019a2f8.o")
-
 GLOBAL_ASM("binary/EnPoRelay_Talk.o")
 
 GLOBAL_ASM("binary/FUN_0019a490.o")
@@ -11440,7 +11438,7 @@ GLOBAL_ASM("binary/FUN_003694d4.o")
 
 GLOBAL_ASM("binary/FUN_003695cc.o")
 
-GLOBAL_ASM("binary/FUN_003695f8.o")
+GLOBAL_ASM("binary/PauseContext_GetState.o")
 
 GLOBAL_ASM("binary/FUN_00369608.o")
 
@@ -11646,7 +11644,7 @@ GLOBAL_ASM("binary/FUN_0036efa8.o")
 
 GLOBAL_ASM("binary/FUN_0036f00c.o")
 
-GLOBAL_ASM("binary/FUN_0036f18c.o")
+GLOBAL_ASM("binary/Actor_IsFacingPlayer.o")
 
 GLOBAL_ASM("binary/EnBili_UpdateFloating.o")
 
@@ -11828,9 +11826,7 @@ GLOBAL_ASM("binary/FUN_00372b50.o")
 
 GLOBAL_ASM("binary/ZAR_GetCTXBByIndex.o")
 
-GLOBAL_ASM("binary/FUN_00372d94.o")
-
-GLOBAL_ASM("binary/ZAR_GetCMABByIndex.o")
+GLOBAL_ASM("binary/_ZN29SkeletonAnimationModel_unk_0C12FUN_00372d94EPv.o")
 
 GLOBAL_ASM("binary/FUN_00372f38.o")
 
@@ -12213,8 +12209,6 @@ GLOBAL_ASM("binary/FUN_00382314.o")
 GLOBAL_ASM("binary/FUN_00382360.o")
 
 GLOBAL_ASM("binary/FUN_00382520.o")
-
-GLOBAL_ASM("binary/FUN_0038256c.o")
 
 GLOBAL_ASM("binary/FUN_00383808.o")
 
@@ -13748,8 +13742,6 @@ GLOBAL_ASM("binary/FUN_003dc268.o")
 
 GLOBAL_ASM("binary/FUN_003dc3e0.o")
 
-GLOBAL_ASM("binary/FUN_003dc564.o")
-
 GLOBAL_ASM("binary/FUN_003dc618.o")
 
 GLOBAL_ASM("binary/EnBili_Climb.o")
@@ -14077,8 +14069,6 @@ GLOBAL_ASM("binary/FUN_003e870c.o")
 GLOBAL_ASM("binary/FUN_003e8738.o")
 
 GLOBAL_ASM("binary/FUN_003e87dc.o")
-
-GLOBAL_ASM("binary/FUN_003e8a34.o")
 
 GLOBAL_ASM("binary/FUN_003e8ab8.o")
 
