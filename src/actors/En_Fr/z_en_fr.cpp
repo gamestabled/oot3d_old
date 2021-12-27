@@ -19,7 +19,7 @@ ActorInit En_Fr_InitVars = {
     (ActorFunc)EnFr_Init,
     (ActorFunc)EnFr_Destroy,
     (ActorFunc)EnFr_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

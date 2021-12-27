@@ -19,7 +19,7 @@ ActorInit En_Ganon_Mant_InitVars = {
     (ActorFunc)EnGanonMant_Init,
     (ActorFunc)EnGanonMant_Destroy,
     (ActorFunc)EnGanonMant_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

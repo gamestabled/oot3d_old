@@ -19,7 +19,7 @@ ActorInit En_Syateki_Itm_InitVars = {
     (ActorFunc)EnSyatekiItm_Init,
     (ActorFunc)EnSyatekiItm_Destroy,
     (ActorFunc)EnSyatekiItm_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

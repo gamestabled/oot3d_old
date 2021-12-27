@@ -19,7 +19,7 @@ ActorInit En_Dnt_Demo_InitVars = {
     (ActorFunc)EnDntDemo_Init,
     (ActorFunc)EnDntDemo_Destroy,
     (ActorFunc)EnDntDemo_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

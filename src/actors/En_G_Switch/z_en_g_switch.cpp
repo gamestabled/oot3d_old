@@ -19,7 +19,7 @@ ActorInit En_G_Switch_InitVars = {
     (ActorFunc)EnGSwitch_Init,
     (ActorFunc)EnGSwitch_Destroy,
     (ActorFunc)EnGSwitch_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

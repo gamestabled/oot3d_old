@@ -19,7 +19,7 @@ ActorInit Obj_Tsubo_InitVars = {
     (ActorFunc)ObjTsubo_Init,
     (ActorFunc)ObjTsubo_Destroy,
     (ActorFunc)ObjTsubo_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

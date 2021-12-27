@@ -19,7 +19,7 @@ ActorInit Elf_Msg2_InitVars = {
     (ActorFunc)ElfMsg2_Init,
     (ActorFunc)ElfMsg2_Destroy,
     (ActorFunc)ElfMsg2_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

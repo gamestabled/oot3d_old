@@ -19,7 +19,7 @@ ActorInit Bg_Mori_Idomizu_InitVars = {
     (ActorFunc)BgMoriIdomizu_Init,
     (ActorFunc)BgMoriIdomizu_Destroy,
     (ActorFunc)BgMoriIdomizu_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

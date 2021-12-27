@@ -19,7 +19,7 @@ ActorInit Obj_Blockstop_InitVars = {
     (ActorFunc)ObjBlockstop_Init,
     (ActorFunc)ObjBlockstop_Destroy,
     (ActorFunc)ObjBlockstop_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

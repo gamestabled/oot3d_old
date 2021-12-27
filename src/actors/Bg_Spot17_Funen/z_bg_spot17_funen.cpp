@@ -19,7 +19,7 @@ ActorInit Bg_Spot17_Funen_InitVars = {
     (ActorFunc)BgSpot17Funen_Init,
     (ActorFunc)BgSpot17Funen_Destroy,
     (ActorFunc)BgSpot17Funen_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

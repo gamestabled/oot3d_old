@@ -19,7 +19,7 @@ ActorInit Bg_Spot11_Oasis_InitVars = {
     (ActorFunc)BgSpot11Oasis_Init,
     (ActorFunc)BgSpot11Oasis_Destroy,
     (ActorFunc)BgSpot11Oasis_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

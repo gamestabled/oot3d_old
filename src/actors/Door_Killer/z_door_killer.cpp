@@ -19,7 +19,7 @@ ActorInit Door_Killer_InitVars = {
     (ActorFunc)DoorKiller_Init,
     (ActorFunc)DoorKiller_Destroy,
     (ActorFunc)DoorKiller_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

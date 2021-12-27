@@ -19,7 +19,7 @@ ActorInit Item_Etcetera_InitVars = {
     (ActorFunc)ItemEtcetera_Init,
     (ActorFunc)ItemEtcetera_Destroy,
     (ActorFunc)ItemEtcetera_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

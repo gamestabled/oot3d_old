@@ -19,7 +19,7 @@ ActorInit Bg_Mori_Hashigo_InitVars = {
     (ActorFunc)BgMoriHashigo_Init,
     (ActorFunc)BgMoriHashigo_Destroy,
     (ActorFunc)BgMoriHashigo_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

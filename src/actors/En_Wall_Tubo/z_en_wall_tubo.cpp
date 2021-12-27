@@ -19,7 +19,7 @@ ActorInit En_Wall_Tubo_InitVars = {
     (ActorFunc)EnWallTubo_Init,
     (ActorFunc)EnWallTubo_Destroy,
     (ActorFunc)EnWallTubo_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

@@ -19,7 +19,7 @@ ActorInit Obj_Makekinsuta_InitVars = {
     (ActorFunc)ObjMakekinsuta_Init,
     (ActorFunc)Actor_Noop,
     (ActorFunc)ObjMakekinsuta_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 
