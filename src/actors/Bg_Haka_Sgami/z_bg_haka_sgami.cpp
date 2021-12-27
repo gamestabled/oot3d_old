@@ -19,7 +19,7 @@ ActorInit Bg_Haka_Sgami_InitVars = {
     (ActorFunc)BgHakaSgami_Init,
     (ActorFunc)BgHakaSgami_Destroy,
     (ActorFunc)BgHakaSgami_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

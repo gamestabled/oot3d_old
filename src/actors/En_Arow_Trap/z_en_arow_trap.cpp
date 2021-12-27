@@ -19,7 +19,7 @@ ActorInit En_Arow_Trap_InitVars = {
     (ActorFunc)EnArowTrap_Init,
     (ActorFunc)EnArowTrap_Destroy,
     (ActorFunc)EnArowTrap_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

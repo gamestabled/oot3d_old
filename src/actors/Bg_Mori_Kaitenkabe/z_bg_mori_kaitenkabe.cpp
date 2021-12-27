@@ -19,7 +19,7 @@ ActorInit Bg_Mori_Kaitenkabe_InitVars = {
     (ActorFunc)BgMoriKaitenkabe_Init,
     (ActorFunc)BgMoriKaitenkabe_Destroy,
     (ActorFunc)BgMoriKaitenkabe_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

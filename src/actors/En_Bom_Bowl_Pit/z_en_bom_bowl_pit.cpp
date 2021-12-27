@@ -19,7 +19,7 @@ ActorInit En_Bom_Bowl_Pit_InitVars = {
     (ActorFunc)EnBomBowlPit_Init,
     (ActorFunc)EnBomBowlPit_Destroy,
     (ActorFunc)EnBomBowlPit_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

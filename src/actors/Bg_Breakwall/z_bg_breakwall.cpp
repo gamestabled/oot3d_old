@@ -19,7 +19,7 @@ ActorInit Bg_Breakwall_InitVars = {
     (ActorFunc)BgBreakwall_Init,
     (ActorFunc)BgBreakwall_Destroy,
     (ActorFunc)BgBreakwall_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

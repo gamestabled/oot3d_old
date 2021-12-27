@@ -35,7 +35,7 @@ void ItemBHeart_Init(Actor* actor, GameState* state) {
         Actor_Kill(&self->actor);
     } else {
         Actor_ProcessInitChain(&self->actor, sInitChain);
-        ActorShape_Init(&self->actor.shape, 0.0f, (ActorShadowFunc)NULL, 0.8f);
+        ActorShape_Init(&self->actor.shape, 0.0f, NULL, 0.8f);
         self->actor.unk_19A = 1;
         FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 0, 0);
     }

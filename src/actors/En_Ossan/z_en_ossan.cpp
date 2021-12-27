@@ -19,7 +19,7 @@ ActorInit En_Ossan_InitVars = {
     (ActorFunc)EnOssan_Init,
     (ActorFunc)EnOssan_Destroy,
     (ActorFunc)EnOssan_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

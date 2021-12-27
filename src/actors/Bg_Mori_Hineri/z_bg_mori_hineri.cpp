@@ -19,7 +19,7 @@ ActorInit Bg_Mori_Hineri_InitVars = {
     (ActorFunc)BgMoriHineri_Init,
     (ActorFunc)BgMoriHineri_Destroy,
     (ActorFunc)BgMoriHineri_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

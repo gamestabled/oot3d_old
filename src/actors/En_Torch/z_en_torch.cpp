@@ -12,9 +12,9 @@ ActorInit En_Torch_InitVars = {
     OBJECT_GAMEPLAY_KEEP,
     sizeof(EnTorch),
     (ActorFunc)EnTorch_Init,
-    (ActorFunc)NULL,
-    (ActorFunc)NULL,
-    (ActorFunc)NULL,
+    NULL,
+    NULL,
+    NULL,
 };
 
 static u8 sChestContents[] = {

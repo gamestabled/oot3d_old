@@ -19,7 +19,7 @@ ActorInit En_Yabusame_Mark_InitVars = {
     (ActorFunc)EnYabusameMark_Init,
     (ActorFunc)EnYabusameMark_Destroy,
     (ActorFunc)EnYabusameMark_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

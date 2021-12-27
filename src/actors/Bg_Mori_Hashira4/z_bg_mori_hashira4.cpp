@@ -19,7 +19,7 @@ ActorInit Bg_Mori_Hashira4_InitVars = {
     (ActorFunc)BgMoriHashira4_Init,
     (ActorFunc)BgMoriHashira4_Destroy,
     (ActorFunc)BgMoriHashira4_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

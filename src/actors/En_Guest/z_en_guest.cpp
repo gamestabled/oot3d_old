@@ -19,7 +19,7 @@ ActorInit En_Guest_InitVars = {
     (ActorFunc)EnGuest_Init,
     (ActorFunc)EnGuest_Destroy,
     (ActorFunc)EnGuest_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

@@ -19,7 +19,7 @@ ActorInit Demo_Effect_InitVars = {
     (ActorFunc)DemoEffect_Init,
     (ActorFunc)DemoEffect_Destroy,
     (ActorFunc)DemoEffect_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

@@ -19,7 +19,7 @@ ActorInit Bg_Mori_Elevator_InitVars = {
     (ActorFunc)BgMoriElevator_Init,
     (ActorFunc)BgMoriElevator_Destroy,
     (ActorFunc)BgMoriElevator_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

@@ -1012,19 +1012,19 @@ def createActorSource(path, actorName, actorId):
     if (initVars[5] != 0):
         fileStr += "    (ActorFunc)" + actorStructName + "_Init,\n"
     else:
-        fileStr += "    (ActorFunc)NULL,\n"
+        fileStr += "    NULL,\n"
     if (initVars[6] != 0):
         fileStr += "    (ActorFunc)" + actorStructName + "_Destroy,\n"
     else:
-        fileStr += "    (ActorFunc)NULL,\n"
+        fileStr += "    NULL,\n"
     if (initVars[7] != 0):
         fileStr += "    (ActorFunc)" + actorStructName + "_Update,\n"
     else:
-        fileStr += "    (ActorFunc)NULL,\n"
+        fileStr += "    NULL,\n"
     if (initVars[8] != 0):
         fileStr += "    (ActorFunc)" + actorStructName + "_Draw,\n"
     else:
-        fileStr += "    (ActorFunc)NULL,\n"
+        fileStr += "    NULL,\n"
     fileStr += "};\n"
     fileStr += "*/\n"
 

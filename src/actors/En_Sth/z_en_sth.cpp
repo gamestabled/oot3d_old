@@ -19,7 +19,7 @@ ActorInit En_Sth_InitVars = {
     (ActorFunc)EnSth_Init,
     (ActorFunc)EnSth_Destroy,
     (ActorFunc)EnSth_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

@@ -19,7 +19,7 @@ ActorInit Demo_6K_InitVars = {
     (ActorFunc)Demo6K_Init,
     (ActorFunc)Demo6K_Destroy,
     (ActorFunc)Demo6K_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

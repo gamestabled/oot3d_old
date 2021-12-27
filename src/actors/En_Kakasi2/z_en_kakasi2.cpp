@@ -19,7 +19,7 @@ ActorInit En_Kakasi2_InitVars = {
     (ActorFunc)EnKakasi2_Init,
     (ActorFunc)EnKakasi2_Destroy,
     (ActorFunc)EnKakasi2_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

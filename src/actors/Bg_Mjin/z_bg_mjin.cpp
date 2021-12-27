@@ -19,7 +19,7 @@ ActorInit Bg_Mjin_InitVars = {
     (ActorFunc)BgMjin_Init,
     (ActorFunc)BgMjin_Destroy,
     (ActorFunc)BgMjin_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

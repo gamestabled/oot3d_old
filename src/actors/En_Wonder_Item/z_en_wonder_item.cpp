@@ -19,7 +19,7 @@ ActorInit En_Wonder_Item_InitVars = {
     (ActorFunc)EnWonderItem_Init,
     (ActorFunc)EnWonderItem_Destroy,
     (ActorFunc)EnWonderItem_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

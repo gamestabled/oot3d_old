@@ -19,7 +19,7 @@ ActorInit Bg_Spot01_Objects2_InitVars = {
     (ActorFunc)BgSpot01Objects2_Init,
     (ActorFunc)BgSpot01Objects2_Destroy,
     (ActorFunc)BgSpot01Objects2_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

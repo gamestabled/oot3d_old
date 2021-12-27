@@ -19,7 +19,7 @@ ActorInit En_Encount1_InitVars = {
     (ActorFunc)EnEncount1_Init,
     (ActorFunc)EnEncount1_Destroy,
     (ActorFunc)EnEncount1_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

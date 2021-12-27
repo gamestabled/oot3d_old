@@ -19,7 +19,7 @@ ActorInit En_Changer_InitVars = {
     (ActorFunc)EnChanger_Init,
     (ActorFunc)EnChanger_Destroy,
     (ActorFunc)EnChanger_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

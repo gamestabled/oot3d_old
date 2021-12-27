@@ -19,7 +19,7 @@ ActorInit En_Tana_InitVars = {
     (ActorFunc)EnTana_Init,
     (ActorFunc)EnTana_Destroy,
     (ActorFunc)EnTana_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

@@ -19,7 +19,7 @@ ActorInit En_Poh_InitVars = {
     (ActorFunc)EnPoh_Init,
     (ActorFunc)EnPoh_Destroy,
     (ActorFunc)EnPoh_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 
