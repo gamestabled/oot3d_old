@@ -19,7 +19,7 @@ ActorInit Bg_Haka_Zou_InitVars = {
     (ActorFunc)BgHakaZou_Init,
     (ActorFunc)BgHakaZou_Destroy,
     (ActorFunc)BgHakaZou_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

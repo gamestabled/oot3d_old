@@ -19,7 +19,7 @@ ActorInit Obj_Mure3_InitVars = {
     (ActorFunc)ObjMure3_Init,
     (ActorFunc)ObjMure3_Destroy,
     (ActorFunc)ObjMure3_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

@@ -19,7 +19,7 @@ ActorInit Bg_Haka_Megane_InitVars = {
     (ActorFunc)BgHakaMegane_Init,
     (ActorFunc)BgHakaMegane_Destroy,
     (ActorFunc)BgHakaMegane_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

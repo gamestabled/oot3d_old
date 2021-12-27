@@ -19,7 +19,7 @@ ActorInit Bg_Gnd_Darkmeiro_InitVars = {
     (ActorFunc)BgGndDarkmeiro_Init,
     (ActorFunc)BgGndDarkmeiro_Destroy,
     (ActorFunc)BgGndDarkmeiro_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

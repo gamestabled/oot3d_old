@@ -19,7 +19,7 @@ ActorInit En_Gm_InitVars = {
     (ActorFunc)EnGm_Init,
     (ActorFunc)EnGm_Destroy,
     (ActorFunc)EnGm_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

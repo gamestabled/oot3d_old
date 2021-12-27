@@ -19,7 +19,7 @@ ActorInit En_M_Fire1_InitVars = {
     (ActorFunc)EnMFire1_Init,
     (ActorFunc)EnMFire1_Destroy,
     (ActorFunc)EnMFire1_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

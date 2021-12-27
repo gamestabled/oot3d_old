@@ -19,7 +19,7 @@ ActorInit En_Dnt_Nomal_InitVars = {
     (ActorFunc)EnDntNomal_Init,
     (ActorFunc)EnDntNomal_Destroy,
     (ActorFunc)EnDntNomal_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

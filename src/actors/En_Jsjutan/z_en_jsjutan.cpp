@@ -19,7 +19,7 @@ ActorInit En_Jsjutan_InitVars = {
     (ActorFunc)EnJsjutan_Init,
     (ActorFunc)EnJsjutan_Destroy,
     (ActorFunc)EnJsjutan_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

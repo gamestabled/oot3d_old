@@ -19,7 +19,7 @@ ActorInit En_Okarina_Effect_InitVars = {
     (ActorFunc)EnOkarinaEffect_Init,
     (ActorFunc)EnOkarinaEffect_Destroy,
     (ActorFunc)EnOkarinaEffect_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

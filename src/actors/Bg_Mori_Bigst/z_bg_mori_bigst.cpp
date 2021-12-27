@@ -19,7 +19,7 @@ ActorInit Bg_Mori_Bigst_InitVars = {
     (ActorFunc)BgMoriBigst_Init,
     (ActorFunc)BgMoriBigst_Destroy,
     (ActorFunc)BgMoriBigst_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

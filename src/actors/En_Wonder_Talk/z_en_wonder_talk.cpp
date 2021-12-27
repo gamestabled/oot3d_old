@@ -19,7 +19,7 @@ ActorInit En_Wonder_Talk_InitVars = {
     (ActorFunc)EnWonderTalk_Init,
     (ActorFunc)EnWonderTalk_Destroy,
     (ActorFunc)EnWonderTalk_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

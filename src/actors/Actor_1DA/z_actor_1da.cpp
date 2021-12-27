@@ -19,7 +19,7 @@ ActorInit Actor_1DA_InitVars = {
     (ActorFunc)Actor1DA_Init,
     (ActorFunc)Actor1DA_Destroy,
     (ActorFunc)Actor1DA_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

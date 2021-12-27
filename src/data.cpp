@@ -10,7 +10,7 @@ GLOBAL_ASM("binary/z_collision.data.o")
 
 GLOBAL_ASM("binary/z_demo.data.o")
 
-GameInfo* gGameInfo __attribute__((section(".data_51b2f4"))) = (GameInfo*)NULL;
+GameInfo* gGameInfo __attribute__((section(".data_51b2f4"))) = NULL;
 
 GLOBAL_ASM("binary/data_51B2F8.o")
 

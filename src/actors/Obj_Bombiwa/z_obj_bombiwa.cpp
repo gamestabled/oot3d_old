@@ -73,7 +73,7 @@ void ObjBombiwa_Init(Actor* actor, GameState* state) {
     if ((Flags_GetSwitch(globalCtx, self->actor.params & 0x3F) != 0)) {
         Actor_Kill(&self->actor);
     } else {
-        CollisionCheck_SetInfo(&self->actor.colChkInfo, (DamageTable*)NULL, &sColChkInfoInit);
+        CollisionCheck_SetInfo(&self->actor.colChkInfo, NULL, &sColChkInfoInit);
         if (self->actor.shape.rot.y == 0) {
             s16 rand = (s16)Rand_ZeroFloat(65536.0f);
             self->actor.world.rot.y = rand;

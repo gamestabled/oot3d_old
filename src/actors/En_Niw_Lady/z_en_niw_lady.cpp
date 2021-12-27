@@ -19,7 +19,7 @@ ActorInit En_Niw_Lady_InitVars = {
     (ActorFunc)EnNiwLady_Init,
     (ActorFunc)EnNiwLady_Destroy,
     (ActorFunc)EnNiwLady_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

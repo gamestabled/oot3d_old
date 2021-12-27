@@ -19,7 +19,7 @@ ActorInit Bg_Bom_Guard_InitVars = {
     (ActorFunc)BgBomGuard_Init,
     (ActorFunc)BgBomGuard_Destroy,
     (ActorFunc)BgBomGuard_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

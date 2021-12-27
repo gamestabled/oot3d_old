@@ -19,7 +19,7 @@ ActorInit Bg_Mori_Rakkatenjo_InitVars = {
     (ActorFunc)BgMoriRakkatenjo_Init,
     (ActorFunc)BgMoriRakkatenjo_Destroy,
     (ActorFunc)BgMoriRakkatenjo_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

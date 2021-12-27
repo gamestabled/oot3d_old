@@ -19,7 +19,7 @@ ActorInit Door_Toki_InitVars = {
     (ActorFunc)DoorToki_Init,
     (ActorFunc)DoorToki_Destroy,
     (ActorFunc)DoorToki_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 

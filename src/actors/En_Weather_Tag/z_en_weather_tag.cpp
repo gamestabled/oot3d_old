@@ -19,7 +19,7 @@ ActorInit En_Weather_Tag_InitVars = {
     (ActorFunc)EnWeatherTag_Init,
     (ActorFunc)EnWeatherTag_Destroy,
     (ActorFunc)EnWeatherTag_Update,
-    (ActorFunc)NULL,
+    NULL,
 };
 */
 
