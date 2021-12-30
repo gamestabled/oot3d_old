@@ -10,174 +10,13 @@
 #include "z3Dcamera.hpp"
 #include "z3Dcollision_check.hpp"
 #include "z3Dbgcheck.hpp"
+#include "z3Dsave.hpp"
 #include "z3Dscene.hpp"
 #include "color.hpp"
 #include "math.hpp"
 #include "ichain.hpp"
 #include "stddef.hpp"
 #include "regs.hpp"
-
-typedef struct {
-    /* 0x00 */ u8 buttonItems[5]; //B,Y,X,I,II
-    /* 0x05 */ u8 buttonSlots[4]; //Y,X,I,II
-    /* 0x0A */ u16 equipment;
-} ItemEquips; // size = 0x0C
-
-typedef struct {
-    /* 0x00 */ u32   chest;
-    /* 0x04 */ u32   swch;
-    /* 0x08 */ u32   clear;
-    /* 0x0C */ u32   collect;
-    /* 0x10 */ u32   unk;
-    /* 0x14 */ u32   rooms1;
-    /* 0x18 */ u32   rooms2;
-} SaveSceneFlags; // size = 0x1C
-
-typedef struct {
-    /* 0x00 */ s16   scene;
-    /* 0x02 */ Vec3s pos;
-    /* 0x08 */ s16   angle;
-} HorseData; // size = 0x0A
-
-typedef struct {
-    /* 0x00 */ Vec3f pos;
-    /* 0x0C */ s16   yaw;
-    /* 0x0E */ s16   playerParams;
-    /* 0x10 */ s16   entranceIndex;
-    /* 0x12 */ u8    roomIndex;
-    /* 0x13 */ u8    data;
-    /* 0x14 */ u32   tempSwchFlags;
-    /* 0x18 */ u32   tempCollectFlags;
-} RespawnData; // size = 0x1C
-
-typedef enum {
-    /* 0x00 */ RESPAWN_MODE_DOWN,   /* Normal Void Outs */
-    /* 0x01 */ RESPAWN_MODE_RETURN, /* Grotto Returnpoints */
-    /* 0x02 */ RESPAWN_MODE_TOP     /* Farore's Wind */
-} RespawnMode;
-
-typedef enum {
-    /* 0x00 */ BTN_ENABLED,
-    /* 0xFF */ BTN_DISABLED = 0xFF
-} ButtonStatus;
-
-// Save Context (ram start: 0x00587958)
-typedef struct {
-    /* 0x0000 */ s32          entranceIndex;
-    /* 0x0004 */ s32          linkAge; // 0: Adult; 1: Child
-    /* 0x0008 */ s32          cutsceneIndex;
-    /* 0x000C */ u16          dayTime; // "zelda_time"
-    /* 0x000E */ u8           masterQuestFlag;
-    /* 0x000F */ char         unk_F[0x0001];
-    /* 0x0010 */ s32          nightFlag;
-    /* 0x0014 */ s32          unk_14;
-    /* 0x0018 */ s32          unk_18;
-    /* 0x001C */ s16          playerName[0x8];
-    /* 0x002C */ u8           playerNameLength;
-    /* 0x002D */ u8           zTargetingSetting;
-    /* 0x002E */ s16          unk_2E;
-    /* 0x0030 */ char         newf[6]; // string "ZELDAZ"
-    /* 0x0036 */ u16          saveCount;
-    /* 0x0038 */ char         unk_38[0x000A];
-    /* 0x0042 */ u16          healthCapacity; // "max_life"
-    /* 0x0044 */ s16          health; // "now_life"
-    /* 0x0046 */ s8           magicLevel;
-    /* 0x0047 */ s8           magic;
-    /* 0x0048 */ s16          rupees;
-    /* 0x004A */ u16          bgsHitsLeft;
-    /* 0x004C */ u16          naviTimer;
-    /* 0x004E */ u8           magicAcquired;
-    /* 0x004F */ char         unk_4F;
-    /* 0x0050 */ u8           doubleMagic;
-    /* 0x0051 */ u8           doubleDefense;
-    /* 0x0052 */ s8           bgsFlag;
-    /* 0x0054 */ ItemEquips   childEquips;
-    /* 0x0060 */ ItemEquips   adultEquips;
-    /* 0x006C */ char         unk_6C[0x0012];
-    /* 0x007E */ u16          sceneIndex;
-    /* 0x0080 */ ItemEquips   equips;
-    /* 0x008C */ u8           items[26];
-    /* 0x00A6 */ s8           ammo[16];
-    /* 0x00B6 */ u16          equipment; //bits: swords 0-3, shields 4-6, tunics 8-10, boots 12-14
-    /* 0x00B8 */ u32          upgrades; //bits: quiver 0-2, bombs 3-5, strength 6-8, dive 9-11, wallet 12-13, seeds 14-16, sticks 17-19, nuts 20-22
-    /* 0x00BC */ u32          questItems; //bits: medallions 0-5, warp songs 6-11, songs 12-17, stones 18-20, shard 21, token 22, skull 23, heart pieces 24-31
-    /* 0x00C0 */ u8           dungeonItems[20];
-    /* 0x00D4 */ s8           dungeonKeys[19];
-    /* 0x00E7 */ char         unk_E7[0x0001]; //in oot: defenseHearts. seems not here.
-    /* 0x00E8 */ s16          gsTokens;
-    /* 0x00EC */ SaveSceneFlags sceneFlags[124];
-    struct {
-        /* 0x0E7C */ Vec3i pos;
-        /* 0x0E88 */ s32  yaw;
-        /* 0x0E8C */ s32  playerParams;
-        /* 0x0E90 */ s32  entranceIndex;
-        /* 0x0E94 */ s32  roomIndex;
-        /* 0x0E98 */ s32  set;
-        /* 0x0E9C */ s32  tempSwchFlags;
-        /* 0x0EA0 */ s32  tempCollectFlags;
-    }                         fw;
-    /* 0x0EA4 */ char         unk_EA4[0x0010];
-    /* 0x0EB4 */ u8           gsFlags[22]; //due to reordering, array is smaller
-    /* 0x0ECA */ char         unk_ECA[0x0006]; //the extra two bytes move here
-    /* 0x0ED0 */ u32          unk_ED0; //horseback archery highscore?
-    /* 0x0ED4 */ char         unk_ED4[0x0008];
-    /* 0x0EDC */ u32          unk_EDC; //horse race record time?
-    /* 0x0EE0 */ u32          unk_EE0; //marathon race record time?
-    /* 0x0EE4 */ char         unk_EE4[0x0008];
-    /* 0x0EEC */ u16          eventChkInf[14]; // "event_chk_inf"
-    /* 0x0F08 */ u16          itemGetInf[4]; // "item_get_inf"
-    /* 0x0F10 */ u16          infTable[30]; // "inf_table"
-    /* 0x0F4C */ char         unk_F34[0x0004];
-    /* 0x0F50 */ u32          worldMapAreaData; // "area_arrival"
-    /* 0x0F54 */ char         unk_F54[0x0410]; // TODO: scarecrow's song
-    /* 0x1364 */ HorseData    horseData;
-    /* 0x136E */ char         unk_136E[0x0002];
-    /* 0x1370 */ u8           itemSlotDataRecords[26];
-    /* 0x138A */ u8           itemMenuChild[24];
-    /* 0x13A2 */ u8           itemMenuAdult[24];
-    /* 0x13BA */ char         unk_13BA[0x0002];
-    struct {
-        /* 0x13BC */ u32 year;
-        /* 0x13C0 */ u32 month;
-        /* 0x13C4 */ u32 day;
-        /* 0x13C8 */ u32 hour;
-        /* 0x13CC */ u32 minute;
-    }                         saveTime;
-    /* 0x13D0 */ char         unk_13D0[0x0080];
-    /* 0x1450 */ u32          bossBattleVictories[9];
-    /* 0x1474 */ u32          bossBattleScores[9];
-    /* 0x1498 */ char         unk_1498[0x0040]; //sheikah stone flags?
-    /* 0x14D8 */ u16          checksum; // "check_sum"
-    /* 0x14DC */ s32          fileNum; // "file_no"
-    /* 0x14E0 */ char         unk_14E0[0x0004];
-    /* 0x14E4 */ s32          gameMode;
-    /* 0x14E8 */ s32          sceneSetupIndex;
-    /* 0x14EC */ s32          respawnFlag; // "restart_flag"
-    /* 0x14F0 */ RespawnData  respawn[3]; // "restart_data"
-    /* 0x1544 */ char         unk_1544[0x000E];
-    /* 0x1552 */ s16          nayrusLoveTimer;
-    /* 0x1554 */ char         unk_1554[0x0008];
-    /* 0x155C */ s16          rupeeAccumulator;
-    /* 0x155E */ s16          timer1State;
-    /* 0x1560 */ s16          timer1Value;
-    /* 0x1562 */ s16          timer2State;
-    /* 0x1564 */ s16          timer2Value;
-    /* 0x1566 */ s16          timerX[2]; //changing these doesn't seem to actually move the timer?
-    /* 0x156A */ s16          timerY[2]; //changing these doesn't seem to actually move the timer?
-    /* 0x156E */ u8           nightSeqIndex;
-    /* 0x156F */ u8           buttonStatus[5];
-    /* 0x1574 */ char         unk_1574[0x000F];
-    /* 0x1584 */ u16          magicMeterSize;
-    /* 0x1586 */ char         unk_1586[0x0004];
-    /* 0x158A */ u16          eventInf[4];
-    /* 0x1592 */ u16          mapIndex;
-    /* 0x1594 */ char         unk_1594[0x000C];
-    /* 0x15A0 */ u16          nextCutsceneIndex;
-    /* 0x15A2 */ u8           cutsceneTrigger;
-    /* 0x15A3 */ char         unk_15A3[0x000F];
-    /* 0x15B2 */ s16          healthAccumulator;
-    /* 0x15B4 */ char         unk_15B4[0x0010];
-} SaveContext; // size = 0x15C4
 
 typedef struct GraphicsContext GraphicsContext; //TODO
 
@@ -226,6 +65,11 @@ typedef struct {
     /* 0x1D8 */ s8     flags;
     /* 0x1D9 */ char   unk_1D9[0x003];
 } View; // size = 0x1DC
+
+typedef struct {
+    /* 0x00 */ s32 enabled;
+    /* 0x04 */ s32 timer;
+} FrameAdvanceContext; // size = 0x8
 
 typedef struct {
     /* 0x00 */ u8*  texture;
@@ -414,6 +258,10 @@ typedef struct {
     /* 0x7C2 */ char unk_7C2[0x796];
 } RoomContext; // size 0xF58
 
+typedef struct {
+    /* 0x000 */ char unk_000[0x2E0]; // Likely tons left
+} MessageContext;
+
 // Global Context (ram start: 0871E840)
 typedef struct GlobalContext {
     /* 0x0000 */ GameState state;
@@ -428,13 +276,14 @@ typedef struct GlobalContext {
     /* 0x0520 */ Camera subCameras[3];
     /* 0x0A54 */ Camera*               cameraPtrs[4];
     /* 0x0A64 */ s16                   activeCamera;
-    /* 0x0A66 */ char                  unk_A66[0x0032];
+    /* 0x0A66 */ char                  unk_A66[0x002A];
+    /* 0x0A90 */ FrameAdvanceContext   frameAdvCtx;
     /* 0x0A98 */ CollisionContext      colCtx;
     /* 0x208C */ ActorContext          actorCtx;
     /* 0x2264 */ char                  unk_2264[0x0034];
     /* 0x2298 */ CutsceneContext       csCtx; // "demo_play"
-    /* 0x2304 */ char                  unk_2304[0x087A];
-    /* 0x2B7E */ s16                   unk_2B7E; // msgCtx.unk_E3EE in OoT
+    /* 0x2304 */ char                  unk_2304[0x059C];
+    /* 0x28A0 */ MessageContext        msgCtx;
     /* 0x2B80 */ char                  unk_2B80[0x0A80];
     /* 0x3600 */ f32                   unk_3600;
     /* 0x3604 */ char                  unk_3604[0x0454];
@@ -443,7 +292,9 @@ typedef struct GlobalContext {
     /* 0x4C30 */ RoomContext           roomCtx;
     /* 0x5B88 */ char                  unk_5B88[0x0078];
     /* 0x5C00 */ u8                    linkAgeOnLoad;
-    /* 0x5C01 */ char                  unk_5C01[0x002C];
+    /* 0x5C01 */ char                  unk_5C01[0x001F];
+    /* 0x5C20 */ Path*                 setupPathList;
+    /* 0x5C24 */ char                  unk_5C24[0x0009];
     /* 0x5C2D */ s8                    sceneLoadFlag; // "fade_direction"
     /* 0x5C2E */ char                  unk_5C2E[0x0004];
     /* 0x5C32 */ s16                   nextEntranceIndex;
@@ -524,6 +375,20 @@ typedef struct {
 } GameInfo; // size = 0x15D4
 
 extern GameInfo* gGameInfo;
+
+typedef enum {
+    /*  0 */ TEXT_STATE_NONE,
+    /*  1 */ TEXT_STATE_DONE_HAS_NEXT,
+    /*  2 */ TEXT_STATE_CLOSING,
+    /*  3 */ TEXT_STATE_DONE_FADING,
+    /*  4 */ TEXT_STATE_CHOICE,
+    /*  5 */ TEXT_STATE_EVENT,
+    /*  6 */ TEXT_STATE_DONE,
+    /*  7 */ TEXT_STATE_SONG_DEMO_DONE, 
+    /*  8 */ TEXT_STATE_8, 
+    /*  9 */ TEXT_STATE_9, 
+    /* 10 */ TEXT_STATE_AWAITING_NEXT
+} TextState;
 
 #define gStaticContext (*(StaticContext*)0x08080010)
 #define gObjectTable ((ObjectFile*)0x53CCF4)

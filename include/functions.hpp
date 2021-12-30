@@ -10,20 +10,25 @@ PosRot Actor_GetWorldPosShapeRot(Actor* actor);
 s32 Actor_HasNoParent(Actor* actor, GlobalContext* globalCtx);
 s32 Actor_HasParent(Actor* actor, GlobalContext* globalCtx);
 s32 Actor_IsFacingAndNearPlayer(Actor* actor, f32 range, s16 angle);
-s32 Actor_IsMounted(GlobalContext *globalCtx, Actor *horse);
+s32 Actor_IsMounted(GlobalContext* globalCtx, Actor* horse);
 void Actor_Kill(Actor* actor);
 void Actor_Noop(Actor* actor, GameState* state);
-s32 Actor_NotMounted(GlobalContext *globalCtx, Actor *actor);
+s32 Actor_NotMounted(GlobalContext* globalCtx, Actor* actor);
 void Actor_ProcessInitChain(Actor* actor, InitChainEntry* chain);
 void Actor_SetFocus(Actor* actor, f32 yOffset);
 s32 Actor_SetRideActor(GlobalContext* globalCtx, Actor* horse, s32 mountSide);
 void Actor_SetScale(Actor* actor, f32 scale);
 Actor* Actor_Spawn(ActorContext* actorCtx, GlobalContext* globalCtx, s16 actorId, f32 posX, f32 posY, f32 posZ,
                    s16 rotX, s16 rotY, s16 rotZ, s16 params, s32 unk);
+Actor* Actor_SpawnAsChild(ActorContext* actorCtx, Actor* parent, GlobalContext* globalCtx, s16 actorId, f32 posX,
+                          f32 posY, f32 posZ, s16 rotX, s16 rotY, s16 rotZ, s16 params);
 void Actor_UpdateBgCheckInfo(GlobalContext* globalCtx, Actor* actor, f32 wallCheckHeight, f32 wallCheckRadius,
                              f32 ceilingCheckHeight, s32 flags);
 f32 Actor_WorldDistXYZToActor(Actor* actorA, Actor* actorB);
 s32 Actor_IsFacingPlayer(Actor* actor, s16 angle);
+void Actor_MoveForward(Actor* actor);
+u32 Actor_ProcessTalkRequest(Actor* actor, GlobalContext* globalCtx);
+void Actor_GetScreenPos(GlobalContext* globalCtx, Actor* actor, s16* x, s16* y);
 
 void Lib_MemSet(u8* dest, size_t size, u8 val);
 
@@ -32,23 +37,36 @@ void Math_ApproachF(f32* pValue, f32 target, f32 fraction, f32 step);
 void Math_ApproachZeroF(f32* pValue, f32 fraction, f32 step);
 f32 Math_CosS(s16 angle);
 f32 Math_FAtan2F(f32 y, f32 x);
+s16 Math_Atan2S(f32 x, f32 y);
 f32 Math_SinS(s16 angle);
 s32 Math_StepToF(f32* pValue, f32 target, f32 step);
+s16 Math_SmoothStepToS(s16* pValue, s16 target, s16 scale, s16 step, s16 minStep);
 void Math_Vec3f_Copy(Vec3f* dest, Vec3f* src);
 f32 Math_Vec3f_DistXYZ(Vec3f* a, Vec3f* b);
 void Math_Vec3s_ToVec3f(Vec3f* dest, Vec3s* src);
 
+void VEC3TransformAsm(Vector3f*, MTX34*, Vector3f*);
+
 ZARInfo* FUN_00372f38(Actor* actor, GlobalContext* globalCtx, SkeletonAnimationModel** skelAnimModel, s32 arg3,
                       s32 arg4);
 void FUN_00350f34(Actor* actor, SkeletonAnimationModel** skelAnimModel, s32 arg2);
+void FUN_003508b8(Actor* actor, SkeletonAnimationModel* skelAnimModel, s32 arg2);
 void MTX34CopyAsm(MTX34* dst, MTX34* src);
 void FUN_00370734(SkelAnime* skelAnime);
+void FUN_00353c9c(Actor* actor, GlobalContext* globalCtx, SkelAnime* skelAnime, s32 cmbIndex, s32 csabIndex,
+                  void* jointTable, void* morphTable, s32 limbCount);
+void SkelAnime_SetFaceAnimations(FaceAnimations* param_1, SkelAnime* skelAnime, s32 param_3, s32 param_4, s32 param_5);
+void SkelAnime_DrawOpa(SkelAnime* skelAnime, MTX34* modelMtx, OverrideLimbDrawOpa overrideLimbDraw,
+                       PostLimbDrawOpa postLimbDraw, Actor* actor, s32 arg5);
+void FUN_003717ac(SkelAnime* skelAnime, struct_80034EC0_Entry* animations, s32 index);
+s32 Animation_OnFrameImpl(SkelAnime* skelAnime, f32 frame, f32 updateRate);
 Camera* Gameplay_GetCamera(GlobalContext* globalCtx, s16 camId);
 void FUN_00367494(GlobalContext* globalCtx, CutsceneContext* csCtx);
 s32 FUN_0036e980(GlobalContext* globalCtx, Actor* actor, u8 arg2);
 s16 Gameplay_CreateSubCamera(GlobalContext* globalCtx);
 s16 Gameplay_ChangeCameraStatus(GlobalContext* globalCtx, s16 camId, s16 status);
 void Audio_PlaySoundGeneral(u32 sfxId, Vec3f* a1, u8 a2, f32* a3, f32* a4, s8* a5);
+void Audio_PlayActorSound2(Actor* actor, s32 arg1);
 void FUN_0035af04(Player* player, s32 arg1);
 void Audio_QueueSeqCmd(s32 arg0, s32 arg1, s32 arg2);
 void TitleCard_InitBossName(GlobalContext* globalCtx, TitleCardContext* titleCtx, void* texture, s16 x, s16 y,
@@ -59,6 +77,7 @@ s32 Gameplay_CameraSetAtEye(GlobalContext* globalCtx, s16 camId, Vec3f* at, Vec3
 f32 Rand_ZeroFloat(f32 f);
 void FUN_0036f5d8(GlobalContext* globalCtx, s16 arg1, s16 arg2, s16 arg3);
 f32 Rand_CenteredFloat(f32 f);
+s16 Rand_S16Offset_003702c8(s16 base, s16 range);
 void EffectSsKFire_Spawn(GlobalContext* globalCtx, Vec3f* pos, Vec3f* velocity, Vec3f* accel, s16 scaleMax, u8 type);
 s32 FUN_0035b164(void);
 s32 FUN_0035b0a0(void);
@@ -77,6 +96,8 @@ void CollisionCheck_SetInfo(CollisionCheckInfo* info, DamageTable* damageTable, 
 void CollisionCheck_SetInfo2(CollisionCheckInfo* info, DamageTable* damageTable, CollisionCheckInfoInit2* init);
 void SkelAnime_Free(SkelAnime* skelAnime, GlobalContext* globalCtx);
 void SkelAnime_Free2(SkelAnime* skelAnime);
+void SkelAnime_DrawOpa(SkelAnime* skelAnime, MTX34* modelMtx, OverrideLimbDrawOpa overrideLimbDraw,
+                       PostLimbDrawOpa postLimbDraw, Actor* actor, s32 arg5);
 
 s32 Flags_GetSwitch(GlobalContext* globalCtx, s32 flag);
 void Flags_SetSwitch(GlobalContext* globalCtx, s32 flag);
@@ -125,5 +146,16 @@ void FUN_00374bb8(GlobalContext* globalCtx, Actor* actor, f32 arg2, s16 arg3, f3
 void FUN_0036c5d8(Actor* actor, Vec3f* result, Vec3f* arg2);
 void FUN_00373264(Actor* actor, s32 arg1);
 u32 PauseContext_GetState(void);
+void GraphicsContext_UnknownStub(GraphicsContext*);
+void FUN_00370f5c(GlobalContext* globalCtx, s16* arg1, s16* arg2, s32 arg3);
+s32 Inventory_ReplaceItem(GlobalContext* globalCtx, u16 oldItem, u16 newItem);
+u16 Text_GetFaceReaction(GlobalContext* globalCtx, u32 reactionSet);
+s8 FUN_0036bc84(GlobalContext* globalCtx);
+u8 Message_GetState(MessageContext* msgCtx);
+u8 Message_ShouldAdvance(GlobalContext* globalCtx);
+void Message_ContinueTextbox(GlobalContext* globalCtx, u16 textId);
+void FUN_00371e6c(s16 seconds);
+void Gameplay_ClearCamera(GlobalContext* globalCtx, s16 camId);
+s32 FUN_0036bb28(Actor* actor, GlobalContext* globalCtx, f32 arg2);
 
 float sqrtf(float arg);

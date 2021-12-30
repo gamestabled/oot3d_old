@@ -28,4 +28,31 @@ typedef struct SkelAnime {
     /* 0x83 */ char unk_83[0x01];
 } SkelAnime; // size = 0x84
 
+class FaceAnimations {
+public:
+    void Destroy();
+    void FUN_0035e3a4(s32 arg1, s32 arg2);
+    void FUN_0035e330();
+
+    s8 unk_00;
+    s8 unk_01;
+    s8 unk_02;
+    SkeletonAnimationModel_unk_0C unk_04[3];
+};
+
+// Some animation related structure
+// Temporary name just taken from OoT
+typedef struct {
+    /* 0x00 */ s32              animationIndex;
+    /* 0x04 */ f32              playbackSpeed;
+    /* 0x08 */ f32              startFrame;
+    /* 0x0C */ f32              frameCount;
+    /* 0x10 */ u8               mode;
+    /* 0x14 */ f32              transitionRate;
+} struct_80034EC0_Entry; // size = 0x18
+
+typedef s32 (*OverrideLimbDrawOpa)(struct GlobalContext* globalCtx, s32 limbIndex, MTX34* mtx, void*);
+
+typedef void (*PostLimbDrawOpa)(struct GlobalContext* globalCtx, s32 limbIndex, MTX34* mtx, void*);
+
 #endif
