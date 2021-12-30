@@ -542,8 +542,6 @@ GLOBAL_ASM("binary/FUN_00118878.o")
 
 GLOBAL_ASM("binary/FUN_00118960.o")
 
-GLOBAL_ASM("binary/EnKz_StopMweep.o")
-
 GLOBAL_ASM("binary/FUN_00118a70.o")
 
 GLOBAL_ASM("binary/FUN_0011956c.o")
@@ -1028,8 +1026,6 @@ GLOBAL_ASM("binary/FUN_00134c8c.o")
 
 GLOBAL_ASM("binary/FUN_00134cec.o")
 
-GLOBAL_ASM("binary/EnKz_StartTimer.o")
-
 GLOBAL_ASM("binary/FUN_00134dbc.o")
 
 GLOBAL_ASM("binary/FUN_0013532c.o")
@@ -1414,8 +1410,6 @@ GLOBAL_ASM("binary/EnHs2_PostLimbDraw.o")
 
 GLOBAL_ASM("binary/EnHy_PostLimbDraw.o")
 
-GLOBAL_ASM("binary/EnKz_PostLimbDraw.o")
-
 GLOBAL_ASM("binary/EnMk_PostLimbDraw.o")
 
 GLOBAL_ASM("binary/EnOwl_PostLimbUpdate.o")
@@ -1449,8 +1443,6 @@ GLOBAL_ASM("binary/FUN_00151fe4.o")
 GLOBAL_ASM("binary/FUN_001520b0.o")
 
 GLOBAL_ASM("binary/FUN_00152130.o")
-
-GLOBAL_ASM("binary/EnKz_SetupMweep.o")
 
 GLOBAL_ASM("binary/FUN_001522b4.o")
 
@@ -1786,8 +1778,6 @@ GLOBAL_ASM("binary/EnHs2_OverrideLimbDraw.o")
 
 GLOBAL_ASM("binary/EnHy_OverrideLimbDraw.o")
 
-GLOBAL_ASM("binary/EnKz_OverrideLimbDraw.o")
-
 GLOBAL_ASM("binary/EnMk_OverrideLimbDraw.o")
 
 GLOBAL_ASM("binary/EnOwl_OverrideLimbDraw.o")
@@ -1849,10 +1839,6 @@ GLOBAL_ASM("binary/FUN_00171b9c.o")
 GLOBAL_ASM("binary/FUN_00171ed4.o")
 
 GLOBAL_ASM("binary/FUN_00172cb8.o")
-
-GLOBAL_ASM("binary/FUN_00173370.o")
-
-GLOBAL_ASM("binary/EnKz_GetText.o")
 
 GLOBAL_ASM("binary/FUN_00173710.o")
 
@@ -2779,8 +2765,6 @@ GLOBAL_ASM("binary/FUN_001c4e54.o")
 GLOBAL_ASM("binary/FUN_001c5148.o")
 
 GLOBAL_ASM("binary/FUN_001c51f8.o")
-
-GLOBAL_ASM("binary/EnKz_SetupGetItem.o")
 
 GLOBAL_ASM("binary/FUN_001c52cc.o")
 
@@ -9026,7 +9010,7 @@ GLOBAL_ASM("binary/BgCheck_EntityRaycastFloor5.o")
 
 GLOBAL_ASM("binary/FUN_00316c64.o")
 
-GLOBAL_ASM("binary/FUN_00316cec.o")
+GLOBAL_ASM("binary/Inventory_ReplaceItem.o")
 
 GLOBAL_ASM("binary/FUN_00316d74.o")
 
@@ -9602,8 +9586,6 @@ GLOBAL_ASM("binary/FUN_00331754.o")
 
 GLOBAL_ASM("binary/FUN_003317ac.o")
 
-GLOBAL_ASM("binary/Inventory_ChangeEquipment.o")
-
 GLOBAL_ASM("binary/FUN_003318bc.o")
 
 GLOBAL_ASM("binary/FUN_00331ae8.o")
@@ -9901,8 +9883,6 @@ GLOBAL_ASM("binary/FUN_0033c1b8.o")
 GLOBAL_ASM("binary/FUN_0033c20c.o")
 
 GLOBAL_ASM("binary/FUN_0033c25c.o")
-
-GLOBAL_ASM("binary/Inventory_ChangeUpgrade.o")
 
 GLOBAL_ASM("binary/FUN_0033c764.o")
 
@@ -10244,7 +10224,7 @@ GLOBAL_ASM("binary/FUN_00346850.o")
 
 GLOBAL_ASM("binary/FUN_003468fc.o")
 
-GLOBAL_ASM("binary/FUN_00346964.o")
+GLOBAL_ASM("binary/Message_ShouldAdvance.o")
 
 GLOBAL_ASM("binary/FUN_0034696c.o")
 
@@ -10567,8 +10547,6 @@ GLOBAL_ASM("binary/FUN_003500c4.o")
 GLOBAL_ASM("binary/SystemArena_Malloc_0035010c.o")
 
 GLOBAL_ASM("binary/DamageTable_Get.o")
-
-GLOBAL_ASM("binary/FUN_003501b8.o")
 
 GLOBAL_ASM("binary/FUN_0035021c.o")
 
@@ -11008,8 +10986,6 @@ GLOBAL_ASM("binary/FUN_0035d0bc.o")
 
 GLOBAL_ASM("binary/FUN_0035d178.o")
 
-GLOBAL_ASM("binary/Inventory_DeleteEquipment.o")
-
 GLOBAL_ASM("binary/FUN_0035d260.o")
 
 GLOBAL_ASM("binary/FUN_0035d27c.o")
@@ -11039,10 +11015,6 @@ GLOBAL_ASM("binary/FUN_0035e04c.o")
 GLOBAL_ASM("binary/SkelAnime_DrawOpa.o")
 
 GLOBAL_ASM("binary/caseD_3_0035e2d0.o")
-
-GLOBAL_ASM("binary/FUN_0035e330.o")
-
-GLOBAL_ASM("binary/FUN_0035e3a4.o")
 
 GLOBAL_ASM("binary/FUN_0035e414.o")
 
@@ -11200,7 +11172,7 @@ GLOBAL_ASM("binary/FUN_003631d0.o")
 
 GLOBAL_ASM("binary/FUN_00363604.o")
 
-GLOBAL_ASM("binary/FUN_00363a20.o")
+GLOBAL_ASM("binary/Actor_GetScreenPos.o")
 
 GLOBAL_ASM("binary/FUN_00363a98.o")
 
@@ -11442,7 +11414,7 @@ GLOBAL_ASM("binary/PauseContext_GetState.o")
 
 GLOBAL_ASM("binary/FUN_00369608.o")
 
-GLOBAL_ASM("binary/FUN_0036963c.o")
+GLOBAL_ASM("binary/Gameplay_ClearCamera.o")
 
 GLOBAL_ASM("binary/EnGe2_ChangeAction.o")
 
@@ -11534,13 +11506,13 @@ GLOBAL_ASM("binary/Text_GetFaceReaction.o")
 
 GLOBAL_ASM("binary/FUN_0036bbd0.o")
 
-GLOBAL_ASM("binary/GetPlayer_UNK_172B.o")
+GLOBAL_ASM("binary/FUN_0036bc84.o")
 
-GLOBAL_ASM("binary/FUN_0036bc98.o")
+GLOBAL_ASM("binary/Actor_ProcessTalkRequest.o")
 
 GLOBAL_ASM("binary/FUN_0036bcc8.o")
 
-GLOBAL_ASM("binary/FUN_0036be34.o")
+GLOBAL_ASM("binary/Message_ContinueTextbox.o")
 
 GLOBAL_ASM("binary/FUN_0036bee0.o")
 
@@ -11908,7 +11880,7 @@ GLOBAL_ASM("binary/Math_Atan2S.o")
 
 GLOBAL_ASM("binary/Rand_ZeroOne.o")
 
-GLOBAL_ASM("binary/Math_SmoothScaleMaxMinS.o")
+GLOBAL_ASM("binary/Math_SmoothStepToS.o")
 
 GLOBAL_ASM("binary/FUN_00375b70.o")
 
@@ -11946,7 +11918,7 @@ GLOBAL_ASM("binary/Actor_MoveForward.o")
 
 GLOBAL_ASM("binary/EnDns_ChangeAnim.o")
 
-GLOBAL_ASM("binary/FUN_003769d8.o")
+GLOBAL_ASM("binary/Message_GetState.o")
 
 GLOBAL_ASM("binary/FUN_00376a38.o")
 
@@ -13114,8 +13086,6 @@ GLOBAL_ASM("binary/FUN_003b8bd4.o")
 
 GLOBAL_ASM("binary/FUN_003b8e48.o")
 
-GLOBAL_ASM("binary/EnKz_Mweep.o")
-
 GLOBAL_ASM("binary/EnFd_Land.o")
 
 GLOBAL_ASM("binary/FUN_003b91bc.o")
@@ -13387,10 +13357,6 @@ GLOBAL_ASM("binary/FUN_003c5258.o")
 GLOBAL_ASM("binary/FUN_003c54f0.o")
 
 GLOBAL_ASM("binary/FUN_003c586c.o")
-
-GLOBAL_ASM("binary/EnKz_Wait.o")
-
-GLOBAL_ASM("binary/EnKz_PreMweepWait.o")
 
 GLOBAL_ASM("binary/FUN_003c6128.o")
 

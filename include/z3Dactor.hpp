@@ -24,6 +24,8 @@ typedef struct {
 
 typedef void (*ActorFunc)(struct Actor*, struct GameState*);
 typedef void (*ActorShadowFunc)(struct Actor*, struct Lights*, struct GlobalContext*);
+typedef u16 (*callback1_800343CC)(struct GlobalContext*, struct Actor*);
+typedef s16 (*callback2_800343CC)(struct GlobalContext*, struct Actor*);
 
 typedef struct {
     /* 0x00 */ s16 id;
@@ -209,7 +211,9 @@ typedef struct {
     /* 0x12BC */ char   unk_12BC[0x0454];
     /* 0x1710 */ u32    stateFlags1;
     /* 0x1714 */ u32    stateFlags2;
-    /* 0x1718 */ char   unk_1718[0x0B04];
+    /* 0x1718 */ char   unk_1718[0x0013];
+    /* 0x172B */ s8     exchangeItemId;
+    /* 0x172C */ char   unk_172C[0xAF0];
     /* 0x221C */ float  xzSpeed; //probably
     /* 0x2220 */ char   unk_2220[0x0007];
     /* 0x2227 */ u8     isg;

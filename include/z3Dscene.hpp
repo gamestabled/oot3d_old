@@ -1,6 +1,11 @@
 #ifndef _Z64SCENE_H_
 #define _Z64SCENE_H_
 
+typedef struct {
+    /* 0x00 */ u8 count; // number of points in the path
+    /* 0x04 */ Vec3s* points; // Segment Address to the array of points
+} Path; // size = 0x8
+
 typedef enum {
     /* 0x00 */ SCENE_YDAN,
     /* 0x01 */ SCENE_DDAN,
