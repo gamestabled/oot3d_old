@@ -10,7 +10,6 @@ void ObjKibako_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Kibako.data.o")
 
-/*
 ActorInit Obj_Kibako_InitVars = {
     ACTOR_OBJ_KIBAKO,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Obj_Kibako_InitVars = {
     (ActorFunc)ObjKibako_Update,
     (ActorFunc)ObjKibako_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjKibako_Init.o")
 

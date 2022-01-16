@@ -7,9 +7,6 @@ void EnOkarinaEffect_Init(Actor* actor, GameState* state);
 void EnOkarinaEffect_Destroy(Actor* actor, GameState* state);
 void EnOkarinaEffect_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Okarina_Effect.data.o")
-
-/*
 ActorInit En_Okarina_Effect_InitVars = {
     ACTOR_EN_OKARINA_EFFECT,
     ACTORCAT_ITEMACTION,
@@ -21,7 +18,6 @@ ActorInit En_Okarina_Effect_InitVars = {
     (ActorFunc)EnOkarinaEffect_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnOkarinaEffect_Init.o")
 

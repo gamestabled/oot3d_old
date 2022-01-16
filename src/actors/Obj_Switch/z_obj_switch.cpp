@@ -10,7 +10,6 @@ void ObjSwitch_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Switch.data.o")
 
-/*
 ActorInit Obj_Switch_InitVars = {
     ACTOR_OBJ_SWITCH,
     ACTORCAT_SWITCH,
@@ -22,7 +21,6 @@ ActorInit Obj_Switch_InitVars = {
     (ActorFunc)ObjSwitch_Update,
     (ActorFunc)ObjSwitch_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjSwitch_Init.o")
 

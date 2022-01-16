@@ -10,7 +10,6 @@ void BossVa_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Boss_Va.data.o")
 
-/*
 ActorInit Boss_Va_InitVars = {
     ACTOR_BOSS_VA,
     ACTORCAT_BOSS,
@@ -22,7 +21,6 @@ ActorInit Boss_Va_InitVars = {
     (ActorFunc)BossVa_Update,
     (ActorFunc)BossVa_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BossVa_Init.o")
 

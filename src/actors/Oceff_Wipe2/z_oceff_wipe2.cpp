@@ -8,9 +8,6 @@ void OceffWipe2_Destroy(Actor* actor, GameState* state);
 void OceffWipe2_Update(Actor* actor, GameState* state);
 void OceffWipe2_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Oceff_Wipe2.data.o")
-
-/*
 ActorInit Oceff_Wipe2_InitVars = {
     ACTOR_OCEFF_WIPE2,
     ACTORCAT_ITEMACTION,
@@ -22,7 +19,6 @@ ActorInit Oceff_Wipe2_InitVars = {
     (ActorFunc)OceffWipe2_Update,
     (ActorFunc)OceffWipe2_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/OceffWipe2_Init.o")
 

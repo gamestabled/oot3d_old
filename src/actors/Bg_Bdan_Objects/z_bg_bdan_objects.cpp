@@ -10,7 +10,6 @@ void BgBdanObjects_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Bdan_Objects.data.o")
 
-/*
 ActorInit Bg_Bdan_Objects_InitVars = {
     ACTOR_BG_BDAN_OBJECTS,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Bdan_Objects_InitVars = {
     (ActorFunc)BgBdanObjects_Update,
     (ActorFunc)BgBdanObjects_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgBdanObjects_Init.o")
 

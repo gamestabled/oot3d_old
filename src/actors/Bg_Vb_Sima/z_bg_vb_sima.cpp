@@ -10,7 +10,6 @@ void BgVbSima_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Vb_Sima.data.o")
 
-/*
 ActorInit Bg_Vb_Sima_InitVars = {
     ACTOR_BG_VB_SIMA,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Vb_Sima_InitVars = {
     (ActorFunc)BgVbSima_Update,
     (ActorFunc)BgVbSima_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgVbSima_Init.o")
 

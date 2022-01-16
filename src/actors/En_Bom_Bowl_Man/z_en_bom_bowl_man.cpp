@@ -10,7 +10,6 @@ void EnBomBowlMan_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Bom_Bowl_Man.data.o")
 
-/*
 ActorInit En_Bom_Bowl_Man_InitVars = {
     ACTOR_EN_BOM_BOWL_MAN,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Bom_Bowl_Man_InitVars = {
     (ActorFunc)EnBomBowlMan_Update,
     (ActorFunc)EnBomBowlMan_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBomBowlMan_Init.o")
 

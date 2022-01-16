@@ -10,7 +10,6 @@ void BossMo_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Boss_Mo.data.o")
 
-/*
 ActorInit Boss_Mo_InitVars = {
     ACTOR_BOSS_MO,
     ACTORCAT_BOSS,
@@ -22,7 +21,6 @@ ActorInit Boss_Mo_InitVars = {
     (ActorFunc)BossMo_Update,
     (ActorFunc)BossMo_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BossMo_Init.o")
 

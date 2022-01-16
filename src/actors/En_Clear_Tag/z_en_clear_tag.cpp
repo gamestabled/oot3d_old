@@ -8,9 +8,6 @@ void EnClearTag_Destroy(Actor* actor, GameState* state);
 void EnClearTag_Update(Actor* actor, GameState* state);
 void EnClearTag_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Clear_Tag.data.o")
-
-/*
 ActorInit En_Clear_Tag_InitVars = {
     ACTOR_EN_CLEAR_TAG,
     ACTORCAT_BOSS,
@@ -22,7 +19,6 @@ ActorInit En_Clear_Tag_InitVars = {
     (ActorFunc)EnClearTag_Update,
     (ActorFunc)EnClearTag_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnClearTag_Init.o")
 

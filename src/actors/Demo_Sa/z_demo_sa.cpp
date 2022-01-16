@@ -10,7 +10,6 @@ void DemoSa_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Demo_Sa.data.o")
 
-/*
 ActorInit Demo_Sa_InitVars = {
     ACTOR_DEMO_SA,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit Demo_Sa_InitVars = {
     (ActorFunc)DemoSa_Update,
     (ActorFunc)DemoSa_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DemoSa_Init.o")
 

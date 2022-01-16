@@ -10,7 +10,6 @@ void EnTuboTrap_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Tubo_Trap.data.o")
 
-/*
 ActorInit En_Tubo_Trap_InitVars = {
     ACTOR_EN_TUBO_TRAP,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Tubo_Trap_InitVars = {
     (ActorFunc)EnTuboTrap_Update,
     (ActorFunc)EnTuboTrap_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnTuboTrap_Init.o")
 

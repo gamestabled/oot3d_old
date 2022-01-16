@@ -10,7 +10,6 @@ void DemoGeff_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Demo_Geff.data.o")
 
-/*
 ActorInit Demo_Geff_InitVars = {
     ACTOR_DEMO_GEFF,
     ACTORCAT_BOSS,
@@ -22,7 +21,6 @@ ActorInit Demo_Geff_InitVars = {
     (ActorFunc)DemoGeff_Update,
     (ActorFunc)DemoGeff_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DemoGeff_Init.o")
 

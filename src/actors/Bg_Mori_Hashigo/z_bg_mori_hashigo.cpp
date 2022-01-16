@@ -9,7 +9,6 @@ void BgMoriHashigo_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mori_Hashigo.data.o")
 
-/*
 ActorInit Bg_Mori_Hashigo_InitVars = {
     ACTOR_BG_MORI_HASHIGO,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Mori_Hashigo_InitVars = {
     (ActorFunc)BgMoriHashigo_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgMoriHashigo_Init.o")
 

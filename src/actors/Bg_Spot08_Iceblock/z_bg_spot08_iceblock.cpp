@@ -10,7 +10,6 @@ void BgSpot08Iceblock_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot08_Iceblock.data.o")
 
-/*
 ActorInit Bg_Spot08_Iceblock_InitVars = {
     ACTOR_BG_SPOT08_ICEBLOCK,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot08_Iceblock_InitVars = {
     (ActorFunc)BgSpot08Iceblock_Update,
     (ActorFunc)BgSpot08Iceblock_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot08Iceblock_Init.o")
 

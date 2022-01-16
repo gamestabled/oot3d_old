@@ -10,7 +10,6 @@ void BgYdanHasi_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Ydan_Hasi.data.o")
 
-/*
 ActorInit Bg_Ydan_Hasi_InitVars = {
     ACTOR_BG_YDAN_HASI,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Ydan_Hasi_InitVars = {
     (ActorFunc)BgYdanHasi_Update,
     (ActorFunc)BgYdanHasi_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgYdanHasi_Init.o")
 

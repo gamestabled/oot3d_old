@@ -8,9 +8,6 @@ void MagicWind_Destroy(Actor* actor, GameState* state);
 void MagicWind_Update(Actor* actor, GameState* state);
 void MagicWind_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Magic_Wind.data.o")
-
-/*
 ActorInit Magic_Wind_InitVars = {
     ACTOR_MAGIC_WIND,
     ACTORCAT_ITEMACTION,
@@ -22,7 +19,6 @@ ActorInit Magic_Wind_InitVars = {
     (ActorFunc)MagicWind_Update,
     (ActorFunc)MagicWind_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/MagicWind_Init.o")
 

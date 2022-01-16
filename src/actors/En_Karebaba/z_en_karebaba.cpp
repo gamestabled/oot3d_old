@@ -10,7 +10,6 @@ void EnKarebaba_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Karebaba.data.o")
 
-/*
 ActorInit En_Karebaba_InitVars = {
     ACTOR_EN_KAREBABA,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Karebaba_InitVars = {
     (ActorFunc)EnKarebaba_Update,
     (ActorFunc)EnKarebaba_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnKarebaba_Init.o")
 

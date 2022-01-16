@@ -10,7 +10,6 @@ void BgPoSyokudai_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Po_Syokudai.data.o")
 
-/*
 ActorInit Bg_Po_Syokudai_InitVars = {
     ACTOR_BG_PO_SYOKUDAI,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Po_Syokudai_InitVars = {
     (ActorFunc)BgPoSyokudai_Update,
     (ActorFunc)BgPoSyokudai_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgPoSyokudai_Init.o")
 

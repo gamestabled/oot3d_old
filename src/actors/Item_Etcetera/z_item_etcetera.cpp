@@ -9,7 +9,6 @@ void ItemEtcetera_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Item_Etcetera.data.o")
 
-/*
 ActorInit Item_Etcetera_InitVars = {
     ACTOR_ITEM_ETCETERA,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit Item_Etcetera_InitVars = {
     (ActorFunc)ItemEtcetera_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/ItemEtcetera_Init.o")
 

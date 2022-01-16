@@ -10,7 +10,6 @@ void EnMb_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Mb.data.o")
 
-/*
 ActorInit En_Mb_InitVars = {
     ACTOR_EN_MB,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Mb_InitVars = {
     (ActorFunc)EnMb_Update,
     (ActorFunc)EnMb_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnMb_Init.o")
 

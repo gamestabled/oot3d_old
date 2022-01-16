@@ -10,7 +10,6 @@ void BgHidanFslift_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Fslift.data.o")
 
-/*
 ActorInit Bg_Hidan_Fslift_InitVars = {
     ACTOR_BG_HIDAN_FSLIFT,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Fslift_InitVars = {
     (ActorFunc)BgHidanFslift_Update,
     (ActorFunc)BgHidanFslift_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanFslift_Init.o")
 

@@ -9,7 +9,6 @@ void BgHakaSgami_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Haka_Sgami.data.o")
 
-/*
 ActorInit Bg_Haka_Sgami_InitVars = {
     ACTOR_BG_HAKA_SGAMI,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit Bg_Haka_Sgami_InitVars = {
     (ActorFunc)BgHakaSgami_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgHakaSgami_Init.o")
 

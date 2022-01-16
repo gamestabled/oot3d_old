@@ -8,9 +8,8 @@ void EffDust_Destroy(Actor* actor, GameState* state);
 void EffDust_Update(Actor* actor, GameState* state);
 void EffDust_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Effect_Dust.data.o")
+GLOBAL_ASM("binary/z_Eff_Dust.data.o")
 
-/*
 ActorInit Eff_Dust_InitVars = {
     ACTOR_EFF_DUST,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit Eff_Dust_InitVars = {
     (ActorFunc)EffDust_Update,
     (ActorFunc)EffDust_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EffDust_Init.o")
 

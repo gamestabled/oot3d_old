@@ -9,7 +9,6 @@ void EnGSwitch_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_G_Switch.data.o")
 
-/*
 ActorInit En_G_Switch_InitVars = {
     ACTOR_EN_G_SWITCH,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_G_Switch_InitVars = {
     (ActorFunc)EnGSwitch_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnGSwitch_Init.o")
 

@@ -10,7 +10,6 @@ void EnArrow_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Arrow.data.o")
 
-/*
 ActorInit En_Arrow_InitVars = {
     ACTOR_EN_ARROW,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Arrow_InitVars = {
     (ActorFunc)EnArrow_Update,
     (ActorFunc)EnArrow_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnArrow_Init.o")
 

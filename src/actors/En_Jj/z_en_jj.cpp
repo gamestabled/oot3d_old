@@ -10,7 +10,6 @@ void EnJj_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Jj.data.o")
 
-/*
 ActorInit En_Jj_InitVars = {
     ACTOR_EN_JJ,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Jj_InitVars = {
     (ActorFunc)EnJj_Update,
     (ActorFunc)EnJj_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnJj_Init.o")
 

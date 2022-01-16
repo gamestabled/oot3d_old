@@ -10,7 +10,6 @@ void EnMThunder_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_M_Thunder.data.o")
 
-/*
 ActorInit En_M_Thunder_InitVars = {
     ACTOR_EN_M_THUNDER,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_M_Thunder_InitVars = {
     (ActorFunc)EnMThunder_Update,
     (ActorFunc)EnMThunder_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnMThunder_Init.o")
 

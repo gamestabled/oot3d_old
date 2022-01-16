@@ -10,7 +10,6 @@ void EnHoll_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Holl.data.o")
 
-/*
 ActorInit En_Holl_InitVars = {
     ACTOR_EN_HOLL,
     ACTORCAT_DOOR,
@@ -22,7 +21,6 @@ ActorInit En_Holl_InitVars = {
     (ActorFunc)EnHoll_Update,
     (ActorFunc)EnHoll_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnHoll_Init.o")
 

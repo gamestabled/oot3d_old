@@ -10,7 +10,6 @@ void BgHidanRock_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Rock.data.o")
 
-/*
 ActorInit Bg_Hidan_Rock_InitVars = {
     ACTOR_BG_HIDAN_ROCK,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Rock_InitVars = {
     (ActorFunc)BgHidanRock_Update,
     (ActorFunc)BgHidanRock_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanRock_Init.o")
 

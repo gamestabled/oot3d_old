@@ -10,7 +10,6 @@ void EnDntJiji_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Dnt_Jiji.data.o")
 
-/*
 ActorInit En_Dnt_Jiji_InitVars = {
     ACTOR_EN_DNT_JIJI,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Dnt_Jiji_InitVars = {
     (ActorFunc)EnDntJiji_Update,
     (ActorFunc)EnDntJiji_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDntJiji_Init.o")
 

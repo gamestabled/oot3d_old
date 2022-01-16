@@ -10,7 +10,6 @@ void BgJyaBombiwa_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Bombiwa.data.o")
 
-/*
 ActorInit Bg_Jya_Bombiwa_InitVars = {
     ACTOR_BG_JYA_BOMBIWA,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Bombiwa_InitVars = {
     (ActorFunc)BgJyaBombiwa_Update,
     (ActorFunc)BgJyaBombiwa_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaBombiwa_Init.o")
 

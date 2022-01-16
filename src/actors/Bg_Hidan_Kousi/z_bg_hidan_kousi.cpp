@@ -10,7 +10,6 @@ void BgHidanKousi_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Kousi.data.o")
 
-/*
 ActorInit Bg_Hidan_Kousi_InitVars = {
     ACTOR_BG_HIDAN_KOUSI,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Kousi_InitVars = {
     (ActorFunc)BgHidanKousi_Update,
     (ActorFunc)BgHidanKousi_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanKousi_Init.o")
 

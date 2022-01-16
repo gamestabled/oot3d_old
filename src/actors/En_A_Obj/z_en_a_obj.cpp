@@ -10,7 +10,6 @@ void EnAObj_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_A_Obj.data.o")
 
-/*
 ActorInit En_A_Obj_InitVars = {
     ACTOR_EN_A_OBJ,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_A_Obj_InitVars = {
     (ActorFunc)EnAObj_Update,
     (ActorFunc)EnAObj_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnAObj_Init.o")
 

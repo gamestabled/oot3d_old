@@ -10,7 +10,6 @@ void BossFd_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Boss_Fd.data.o")
 
-/*
 ActorInit Boss_Fd_InitVars = {
     ACTOR_BOSS_FD,
     ACTORCAT_BOSS,
@@ -22,7 +21,6 @@ ActorInit Boss_Fd_InitVars = {
     (ActorFunc)BossFd_Update,
     (ActorFunc)BossFd_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BossFd_Init.o")
 

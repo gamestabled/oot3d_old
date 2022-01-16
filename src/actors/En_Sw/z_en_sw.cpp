@@ -8,9 +8,9 @@ void EnSw_Destroy(Actor* actor, GameState* state);
 void EnSw_Update(Actor* actor, GameState* state);
 void EnSw_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Sw.data.o")
+GLOBAL_ASM("binary/z_En_Sw.data_0052F258.o")
+GLOBAL_ASM("binary/z_En_Sw.data_0052F300.o")
 
-/*
 ActorInit En_Sw_InitVars = {
     ACTOR_EN_SW,
     ACTORCAT_NPC,
@@ -22,7 +22,6 @@ ActorInit En_Sw_InitVars = {
     (ActorFunc)EnSw_Update,
     (ActorFunc)EnSw_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnSw_Init.o")
 

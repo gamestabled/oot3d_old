@@ -10,7 +10,6 @@ void EnGe1_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ge1.data.o")
 
-/*
 ActorInit En_Ge1_InitVars = {
     ACTOR_EN_GE1,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Ge1_InitVars = {
     (ActorFunc)EnGe1_Update,
     (ActorFunc)EnGe1_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnGe1_Init.o")
 

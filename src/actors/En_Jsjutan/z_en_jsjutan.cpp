@@ -9,7 +9,6 @@ void EnJsjutan_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Jsjutan.data.o")
 
-/*
 ActorInit En_Jsjutan_InitVars = {
     ACTOR_EN_JSJUTAN,
     ACTORCAT_NPC,
@@ -21,7 +20,6 @@ ActorInit En_Jsjutan_InitVars = {
     (ActorFunc)EnJsjutan_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnJsjutan_Init.o")
 

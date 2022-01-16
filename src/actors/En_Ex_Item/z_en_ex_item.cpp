@@ -8,9 +8,6 @@ void EnExItem_Destroy(Actor* actor, GameState* state);
 void EnExItem_Update(Actor* actor, GameState* state);
 void EnExItem_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ex_Item.data.o")
-
-/*
 ActorInit En_Ex_Item_InitVars = {
     ACTOR_EN_EX_ITEM,
     ACTORCAT_PROP,
@@ -22,7 +19,6 @@ ActorInit En_Ex_Item_InitVars = {
     (ActorFunc)EnExItem_Update,
     (ActorFunc)EnExItem_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnExItem_Init.o")
 

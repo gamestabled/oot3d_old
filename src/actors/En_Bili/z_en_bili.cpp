@@ -10,7 +10,6 @@ void EnBili_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Bili.data.o")
 
-/*
 ActorInit En_Bili_InitVars = {
     ACTOR_EN_BILI,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Bili_InitVars = {
     (ActorFunc)EnBili_Update,
     (ActorFunc)EnBili_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBili_Init.o")
 

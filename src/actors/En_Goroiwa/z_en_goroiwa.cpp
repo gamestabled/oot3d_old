@@ -10,7 +10,6 @@ void EnGoroiwa_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Goroiwa.data.o")
 
-/*
 ActorInit En_Goroiwa_InitVars = {
     ACTOR_EN_GOROIWA,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Goroiwa_InitVars = {
     (ActorFunc)EnGoroiwa_Update,
     (ActorFunc)EnGoroiwa_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnGoroiwa_Init.o")
 

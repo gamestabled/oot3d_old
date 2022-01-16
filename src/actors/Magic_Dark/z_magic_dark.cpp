@@ -10,7 +10,6 @@ void MagicDark_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Magic_Dark.data.o")
 
-/*
 ActorInit Magic_Dark_InitVars = {
     ACTOR_MAGIC_DARK,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Magic_Dark_InitVars = {
     (ActorFunc)MagicDark_Update,
     (ActorFunc)MagicDark_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/MagicDark_Init.o")
 

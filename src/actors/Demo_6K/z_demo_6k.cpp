@@ -9,7 +9,6 @@ void Demo6K_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Demo_6K.data.o")
 
-/*
 ActorInit Demo_6K_InitVars = {
     ACTOR_DEMO_6K,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit Demo_6K_InitVars = {
     (ActorFunc)Demo6K_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/Demo6K_Init.o")
 

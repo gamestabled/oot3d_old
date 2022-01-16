@@ -8,9 +8,8 @@ void BgBdanSwitch_Destroy(Actor* actor, GameState* state);
 void BgBdanSwitch_Update(Actor* actor, GameState* state);
 void BgBdanSwitch_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Bgan_Switch.data.o")
+GLOBAL_ASM("binary/z_Bg_Bdan_Switch.data.o")
 
-/*
 ActorInit Bg_Bdan_Switch_InitVars = {
     ACTOR_BG_BDAN_SWITCH,
     ACTORCAT_SWITCH,
@@ -22,7 +21,6 @@ ActorInit Bg_Bdan_Switch_InitVars = {
     (ActorFunc)BgBdanSwitch_Update,
     (ActorFunc)BgBdanSwitch_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgBdanSwitch_Init.o")
 

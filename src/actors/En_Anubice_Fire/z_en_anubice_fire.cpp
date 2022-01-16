@@ -10,7 +10,6 @@ void EnAnubiceFire_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Anubice_Fire.data.o")
 
-/*
 ActorInit En_Anubice_Fire_InitVars = {
     ACTOR_EN_ANUBICE_FIRE,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Anubice_Fire_InitVars = {
     (ActorFunc)EnAnubiceFire_Update,
     (ActorFunc)EnAnubiceFire_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnAnubiceFire_Init.o")
 

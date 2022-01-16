@@ -10,7 +10,6 @@ void DemoKekkai_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Demo_Kekkai.data.o")
 
-/*
 ActorInit Demo_Kekkai_InitVars = {
     ACTOR_DEMO_KEKKAI,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Demo_Kekkai_InitVars = {
     (ActorFunc)DemoKekkai_Update,
     (ActorFunc)DemoKekkai_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DemoKekkai_Init.o")
 

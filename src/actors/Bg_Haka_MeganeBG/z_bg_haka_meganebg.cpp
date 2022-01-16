@@ -10,7 +10,6 @@ void BgHakaMeganeBG_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Haka_Megane_BG.data.o")
 
-/*
 ActorInit Bg_Haka_MeganeBG_InitVars = {
     ACTOR_BG_HAKA_MEGANEBG,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Haka_MeganeBG_InitVars = {
     (ActorFunc)BgHakaMeganeBG_Update,
     (ActorFunc)BgHakaMeganeBG_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHakaMeganeBG_Init.o")
 

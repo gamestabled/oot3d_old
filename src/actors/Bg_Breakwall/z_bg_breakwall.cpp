@@ -9,7 +9,6 @@ void BgBreakwall_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Breakwall.data.o")
 
-/*
 ActorInit Bg_Breakwall_InitVars = {
     ACTOR_BG_BREAKWALL,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Breakwall_InitVars = {
     (ActorFunc)BgBreakwall_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgBreakwall_Init.o")
 

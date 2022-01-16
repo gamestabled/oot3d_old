@@ -9,7 +9,6 @@ void BgMoriBigst_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mori_Bigst.data.o")
 
-/*
 ActorInit Bg_Mori_Bigst_InitVars = {
     ACTOR_BG_MORI_BIGST,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Mori_Bigst_InitVars = {
     (ActorFunc)BgMoriBigst_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgMoriBigst_Init.o")
 

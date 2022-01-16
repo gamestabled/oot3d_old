@@ -10,7 +10,6 @@ void DemoGj_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Demo_Gj.data.o")
 
-/*
 ActorInit Demo_Gj_InitVars = {
     ACTOR_DEMO_GJ,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Demo_Gj_InitVars = {
     (ActorFunc)DemoGj_Update,
     (ActorFunc)DemoGj_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DemoGj_Init.o")
 

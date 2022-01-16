@@ -10,7 +10,6 @@ void BgSpot11Bakudankabe_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot11_Bakudankabe.data.o")
 
-/*
 ActorInit Bg_Spot11_Bakudankabe_InitVars = {
     ACTOR_BG_SPOT11_BAKUDANKABE,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot11_Bakudankabe_InitVars = {
     (ActorFunc)BgSpot11Bakudankabe_Update,
     (ActorFunc)BgSpot11Bakudankabe_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot11Bakudankabe_Init.o")
 

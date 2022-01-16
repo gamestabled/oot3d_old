@@ -10,7 +10,6 @@ void EnDaiku_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Daiku.data.o")
 
-/*
 ActorInit En_Daiku_InitVars = {
     ACTOR_EN_DAIKU,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Daiku_InitVars = {
     (ActorFunc)EnDaiku_Update,
     (ActorFunc)EnDaiku_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDaiku_Init.o")
 

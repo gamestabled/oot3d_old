@@ -10,7 +10,6 @@ void EnDodongo_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Dodongo.data.o")
 
-/*
 ActorInit En_Dodongo_InitVars = {
     ACTOR_EN_DODONGO,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Dodongo_InitVars = {
     (ActorFunc)EnDodongo_Update,
     (ActorFunc)EnDodongo_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDodongo_Init.o")
 

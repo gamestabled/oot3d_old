@@ -10,7 +10,6 @@ void BgJyaMegami_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Megami.data.o")
 
-/*
 ActorInit Bg_Jya_Megami_InitVars = {
     ACTOR_BG_JYA_MEGAMI,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Megami_InitVars = {
     (ActorFunc)BgJyaMegami_Update,
     (ActorFunc)BgJyaMegami_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaMegami_Init.o")
 

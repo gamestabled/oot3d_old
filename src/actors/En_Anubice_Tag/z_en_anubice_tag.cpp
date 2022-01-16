@@ -8,9 +8,6 @@ void EnAnubiceTag_Destroy(Actor* actor, GameState* state);
 void EnAnubiceTag_Update(Actor* actor, GameState* state);
 void EnAnubiceTag_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Anubice_Tag.data.o")
-
-/*
 ActorInit En_Anubice_Tag_InitVars = {
     ACTOR_EN_ANUBICE_TAG,
     ACTORCAT_SWITCH,
@@ -22,7 +19,6 @@ ActorInit En_Anubice_Tag_InitVars = {
     (ActorFunc)EnAnubiceTag_Update,
     (ActorFunc)EnAnubiceTag_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnAnubiceTag_Init.o")
 

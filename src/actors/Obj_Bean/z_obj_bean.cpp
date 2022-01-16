@@ -10,7 +10,6 @@ void ObjBean_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Bean.data.o")
 
-/*
 ActorInit Obj_Bean_InitVars = {
     ACTOR_OBJ_BEAN,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Obj_Bean_InitVars = {
     (ActorFunc)ObjBean_Update,
     (ActorFunc)ObjBean_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjBean_Init.o")
 

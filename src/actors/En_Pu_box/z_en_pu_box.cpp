@@ -8,9 +8,6 @@ void EnPubox_Destroy(Actor* actor, GameState* state);
 void EnPubox_Update(Actor* actor, GameState* state);
 void EnPubox_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Pu_box.data.o")
-
-/*
 ActorInit En_Pu_box_InitVars = {
     ACTOR_EN_PU_BOX,
     ACTORCAT_BG,
@@ -22,7 +19,6 @@ ActorInit En_Pu_box_InitVars = {
     (ActorFunc)EnPubox_Update,
     (ActorFunc)EnPubox_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnPubox_Init.o")
 

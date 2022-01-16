@@ -10,7 +10,6 @@ void EnYukabyun_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Yukabyun.data.o")
 
-/*
 ActorInit En_Yukabyun_InitVars = {
     ACTOR_EN_YUKABYUN,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Yukabyun_InitVars = {
     (ActorFunc)EnYukabyun_Update,
     (ActorFunc)EnYukabyun_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnYukabyun_Init.o")
 

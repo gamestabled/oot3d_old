@@ -10,7 +10,6 @@ void EnBubble_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Bubble.data.o")
 
-/*
 ActorInit En_Bubble_InitVars = {
     ACTOR_EN_BUBBLE,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Bubble_InitVars = {
     (ActorFunc)EnBubble_Update,
     (ActorFunc)EnBubble_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBubble_Init.o")
 

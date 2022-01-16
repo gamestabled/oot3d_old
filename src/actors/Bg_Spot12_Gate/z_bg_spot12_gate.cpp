@@ -10,7 +10,6 @@ void BgSpot12Gate_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot12_Gate.data.o")
 
-/*
 ActorInit Bg_Spot12_Gate_InitVars = {
     ACTOR_BG_SPOT12_GATE,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot12_Gate_InitVars = {
     (ActorFunc)BgSpot12Gate_Update,
     (ActorFunc)BgSpot12Gate_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot12Gate_Init.o")
 

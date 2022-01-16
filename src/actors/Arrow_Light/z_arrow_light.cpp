@@ -10,7 +10,6 @@ void ArrowLight_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Arrow_Light.data.o")
 
-/*
 ActorInit Arrow_Light_InitVars = {
     ACTOR_ARROW_LIGHT,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Arrow_Light_InitVars = {
     (ActorFunc)ArrowLight_Update,
     (ActorFunc)ArrowLight_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ArrowLight_Init.o")
 

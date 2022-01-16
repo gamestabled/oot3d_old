@@ -7,9 +7,6 @@ void EnWallTubo_Init(Actor* actor, GameState* state);
 void EnWallTubo_Destroy(Actor* actor, GameState* state);
 void EnWallTubo_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Wall_Tubo.data.o")
-
-/*
 ActorInit En_Wall_Tubo_InitVars = {
     ACTOR_EN_WALL_TUBO,
     ACTORCAT_PROP,
@@ -21,7 +18,6 @@ ActorInit En_Wall_Tubo_InitVars = {
     (ActorFunc)EnWallTubo_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnWallTubo_Init.o")
 

@@ -10,7 +10,6 @@ void BgBowlWall_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Bowl_Wall.data.o")
 
-/*
 ActorInit Bg_Bowl_Wall_InitVars = {
     ACTOR_BG_BOWL_WALL,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Bowl_Wall_InitVars = {
     (ActorFunc)BgBowlWall_Update,
     (ActorFunc)BgBowlWall_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgBowlWall_Init.o")
 

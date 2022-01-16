@@ -9,7 +9,6 @@ void EnYabusameMark_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Yabusame_Mark.data.o")
 
-/*
 ActorInit En_Yabusame_Mark_InitVars = {
     ACTOR_EN_YABUSAME_MARK,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_Yabusame_Mark_InitVars = {
     (ActorFunc)EnYabusameMark_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnYabusameMark_Init.o")
 

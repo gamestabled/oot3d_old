@@ -9,7 +9,6 @@ void EnWonderTalk2_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Wonder_Talk2.data.o")
 
-/*
 ActorInit En_Wonder_Talk2_InitVars = {
     ACTOR_EN_WONDER_TALK2,
     ACTORCAT_ITEMACTION,
@@ -21,7 +20,6 @@ ActorInit En_Wonder_Talk2_InitVars = {
     (ActorFunc)EnWonderTalk2_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnWonderTalk2_Init.o")
 

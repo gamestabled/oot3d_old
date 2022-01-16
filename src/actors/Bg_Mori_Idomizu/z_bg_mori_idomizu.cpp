@@ -9,7 +9,6 @@ void BgMoriIdomizu_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mori_Idomizu.data.o")
 
-/*
 ActorInit Bg_Mori_Idomizu_InitVars = {
     ACTOR_BG_MORI_IDOMIZU,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Mori_Idomizu_InitVars = {
     (ActorFunc)BgMoriIdomizu_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgMoriIdomizu_Init.o")
 

@@ -10,7 +10,6 @@ void EnDekunuts_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Dekunuts.data.o")
 
-/*
 ActorInit En_Dekunuts_InitVars = {
     ACTOR_EN_DEKUNUTS,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Dekunuts_InitVars = {
     (ActorFunc)EnDekunuts_Update,
     (ActorFunc)EnDekunuts_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDekunuts_Init.o")
 

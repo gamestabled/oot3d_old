@@ -10,7 +10,6 @@ void BgHakaTubo_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Haka_Tubo.data.o")
 
-/*
 ActorInit Bg_Haka_Tubo_InitVars = {
     ACTOR_BG_HAKA_TUBO,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Haka_Tubo_InitVars = {
     (ActorFunc)BgHakaTubo_Update,
     (ActorFunc)BgHakaTubo_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHakaTubo_Init.o")
 

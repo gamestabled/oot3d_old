@@ -10,7 +10,6 @@ void BgHakaShip_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Haka_Ship.data.o")
 
-/*
 ActorInit Bg_Haka_Ship_InitVars = {
     ACTOR_BG_HAKA_SHIP,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Haka_Ship_InitVars = {
     (ActorFunc)BgHakaShip_Update,
     (ActorFunc)BgHakaShip_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHakaShip_Init.o")
 

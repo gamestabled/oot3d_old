@@ -10,7 +10,6 @@ void EnViewer_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Viewer.data.o")
 
-/*
 ActorInit En_Viewer_InitVars = {
     ACTOR_EN_VIEWER,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Viewer_InitVars = {
     (ActorFunc)EnViewer_Update,
     (ActorFunc)EnViewer_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnViewer_Init.o")
 

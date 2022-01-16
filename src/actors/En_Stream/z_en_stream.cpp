@@ -10,7 +10,6 @@ void EnStream_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Stream.data.o")
 
-/*
 ActorInit En_Stream_InitVars = {
     ACTOR_EN_STREAM,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit En_Stream_InitVars = {
     (ActorFunc)EnStream_Update,
     (ActorFunc)EnStream_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnStream_Init.o")
 

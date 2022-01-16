@@ -10,7 +10,6 @@ void EnPoField_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Po_Field.data.o")
 
-/*
 ActorInit En_Po_Field_InitVars = {
     ACTOR_EN_PO_FIELD,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Po_Field_InitVars = {
     (ActorFunc)EnPoField_Update,
     (ActorFunc)EnPoField_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnPoField_Init.o")
 

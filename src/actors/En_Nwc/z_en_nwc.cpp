@@ -10,7 +10,6 @@ void EnNwc_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Nwc.data.o")
 
-/*
 ActorInit En_Nwc_InitVars = {
     ACTOR_EN_NWC,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Nwc_InitVars = {
     (ActorFunc)EnNwc_Update,
     (ActorFunc)EnNwc_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnNwc_Init.o")
 

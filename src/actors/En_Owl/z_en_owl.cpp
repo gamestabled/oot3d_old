@@ -10,7 +10,6 @@ void EnOwl_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Owl.data.o")
 
-/*
 ActorInit En_Owl_InitVars = {
     ACTOR_EN_OWL,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Owl_InitVars = {
     (ActorFunc)EnOwl_Update,
     (ActorFunc)EnOwl_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnOwl_Init.o")
 

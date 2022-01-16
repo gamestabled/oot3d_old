@@ -10,7 +10,6 @@ void ArrowIce_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Arrow_Ice.data.o")
 
-/*
 ActorInit Arrow_Ice_InitVars = {
     ACTOR_ARROW_ICE,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Arrow_Ice_InitVars = {
     (ActorFunc)ArrowIce_Update,
     (ActorFunc)ArrowIce_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ArrowIce_Init.o")
 

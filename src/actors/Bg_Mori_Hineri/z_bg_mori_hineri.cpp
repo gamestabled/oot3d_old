@@ -9,7 +9,6 @@ void BgMoriHineri_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mori_Hineri.data.o")
 
-/*
 ActorInit Bg_Mori_Hineri_InitVars = {
     ACTOR_BG_MORI_HINERI,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Mori_Hineri_InitVars = {
     (ActorFunc)BgMoriHineri_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgMoriHineri_Init.o")
 

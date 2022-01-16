@@ -10,7 +10,6 @@ void OceffSpot_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Oceff_Spot.data.o")
 
-/*
 ActorInit Oceff_Spot_InitVars = {
     ACTOR_OCEFF_SPOT,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Oceff_Spot_InitVars = {
     (ActorFunc)OceffSpot_Update,
     (ActorFunc)OceffSpot_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/OceffSpot_Init.o")
 

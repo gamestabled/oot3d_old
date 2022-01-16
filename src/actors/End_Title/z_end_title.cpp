@@ -10,7 +10,6 @@ void EndTitle_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_End_Title.data.o")
 
-/*
 ActorInit End_Title_InitVars = {
     ACTOR_END_TITLE,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit End_Title_InitVars = {
     (ActorFunc)EndTitle_Update,
     (ActorFunc)EndTitle_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EndTitle_Init.o")
 

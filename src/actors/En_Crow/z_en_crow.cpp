@@ -10,7 +10,6 @@ void EnCrow_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Crow.data.o")
 
-/*
 ActorInit En_Crow_InitVars = {
     ACTOR_EN_CROW,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Crow_InitVars = {
     (ActorFunc)EnCrow_Update,
     (ActorFunc)EnCrow_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnCrow_Init.o")
 

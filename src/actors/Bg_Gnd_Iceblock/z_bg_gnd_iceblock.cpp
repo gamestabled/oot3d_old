@@ -10,7 +10,6 @@ void BgGndIceblock_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Gnd_Iceblock.data.o")
 
-/*
 ActorInit Bg_Gnd_Iceblock_InitVars = {
     ACTOR_BG_GND_ICEBLOCK,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Gnd_Iceblock_InitVars = {
     (ActorFunc)BgGndIceblock_Update,
     (ActorFunc)BgGndIceblock_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgGndIceblock_Init.o")
 

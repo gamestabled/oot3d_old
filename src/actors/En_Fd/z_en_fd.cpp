@@ -10,7 +10,6 @@ void EnFd_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Fd.data.o")
 
-/*
 ActorInit En_Fd_InitVars = {
     ACTOR_EN_FD,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Fd_InitVars = {
     (ActorFunc)EnFd_Update,
     (ActorFunc)EnFd_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnFd_Init.o")
 

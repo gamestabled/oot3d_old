@@ -10,7 +10,6 @@ void BgSpot16Doughnut_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot16_Doughnut.data.o")
 
-/*
 ActorInit Bg_Spot16_Doughnut_InitVars = {
     ACTOR_BG_SPOT16_DOUGHNUT,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot16_Doughnut_InitVars = {
     (ActorFunc)BgSpot16Doughnut_Update,
     (ActorFunc)BgSpot16Doughnut_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot16Doughnut_Init.o")
 

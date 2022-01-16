@@ -8,9 +8,6 @@ void ItemInbox_Destroy(Actor* actor, GameState* state);
 void ItemInbox_Update(Actor* actor, GameState* state);
 void ItemInbox_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Item_Inbox.data.o")
-
-/*
 ActorInit Item_Inbox_InitVars = {
     ACTOR_ITEM_INBOX,
     ACTORCAT_NPC,
@@ -22,7 +19,6 @@ ActorInit Item_Inbox_InitVars = {
     (ActorFunc)ItemInbox_Update,
     (ActorFunc)ItemInbox_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ItemInbox_Init.o")
 

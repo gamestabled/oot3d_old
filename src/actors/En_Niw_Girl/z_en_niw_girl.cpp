@@ -10,7 +10,6 @@ void EnNiwGirl_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Niw_Girl.data.o")
 
-/*
 ActorInit En_Niw_Girl_InitVars = {
     ACTOR_EN_NIW_GIRL,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Niw_Girl_InitVars = {
     (ActorFunc)EnNiwGirl_Update,
     (ActorFunc)EnNiwGirl_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnNiwGirl_Init.o")
 

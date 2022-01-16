@@ -10,7 +10,6 @@ void BgIceShelter_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Ice_Shelter.data.o")
 
-/*
 ActorInit Bg_Ice_Shelter_InitVars = {
     ACTOR_BG_ICE_SHELTER,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Ice_Shelter_InitVars = {
     (ActorFunc)BgIceShelter_Update,
     (ActorFunc)BgIceShelter_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgIceShelter_Init.o")
 

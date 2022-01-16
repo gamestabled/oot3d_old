@@ -10,7 +10,6 @@ void BgSpot12Saku_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot12_Saku.data.o")
 
-/*
 ActorInit Bg_Spot12_Saku_InitVars = {
     ACTOR_BG_SPOT12_SAKU,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot12_Saku_InitVars = {
     (ActorFunc)BgSpot12Saku_Update,
     (ActorFunc)BgSpot12Saku_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot12Saku_Init.o")
 

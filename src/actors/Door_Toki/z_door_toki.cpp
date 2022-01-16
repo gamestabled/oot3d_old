@@ -9,7 +9,6 @@ void DoorToki_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Door_Toki.data.o")
 
-/*
 ActorInit Door_Toki_InitVars = {
     ACTOR_DOOR_TOKI,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Door_Toki_InitVars = {
     (ActorFunc)DoorToki_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/DoorToki_Init.o")
 

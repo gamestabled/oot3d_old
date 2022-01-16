@@ -8,9 +8,6 @@ void ItemOcarina_Destroy(Actor* actor, GameState* state);
 void ItemOcarina_Update(Actor* actor, GameState* state);
 void ItemOcarina_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Item_Ocarina.data.o")
-
-/*
 ActorInit Item_Ocarina_InitVars = {
     ACTOR_ITEM_OCARINA,
     ACTORCAT_ITEMACTION,
@@ -22,7 +19,6 @@ ActorInit Item_Ocarina_InitVars = {
     (ActorFunc)ItemOcarina_Update,
     (ActorFunc)ItemOcarina_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ItemOcarina_Init.o")
 

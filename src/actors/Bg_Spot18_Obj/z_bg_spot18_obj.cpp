@@ -10,7 +10,6 @@ void BgSpot18Obj_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot18_Obj.data.o")
 
-/*
 ActorInit Bg_Spot18_Obj_InitVars = {
     ACTOR_BG_SPOT18_OBJ,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot18_Obj_InitVars = {
     (ActorFunc)BgSpot18Obj_Update,
     (ActorFunc)BgSpot18Obj_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot18Obj_Init.o")
 

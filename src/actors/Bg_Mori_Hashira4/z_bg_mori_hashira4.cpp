@@ -9,7 +9,6 @@ void BgMoriHashira4_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mori_Hashira4.data.o")
 
-/*
 ActorInit Bg_Mori_Hashira4_InitVars = {
     ACTOR_BG_MORI_HASHIRA4,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Mori_Hashira4_InitVars = {
     (ActorFunc)BgMoriHashira4_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgMoriHashira4_Init.o")
 

@@ -10,7 +10,6 @@ void BgHidanDalm_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Dalm.data.o")
 
-/*
 ActorInit Bg_Hidan_Dalm_InitVars = {
     ACTOR_BG_HIDAN_DALM,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Dalm_InitVars = {
     (ActorFunc)BgHidanDalm_Update,
     (ActorFunc)BgHidanDalm_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanDalm_Init.o")
 

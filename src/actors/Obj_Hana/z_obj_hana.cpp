@@ -10,7 +10,6 @@ void ObjHana_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Hana.data.o")
 
-/*
 ActorInit Obj_Hana_InitVars = {
     ACTOR_OBJ_HANA,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Obj_Hana_InitVars = {
     (ActorFunc)ObjHana_Update,
     (ActorFunc)ObjHana_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjHana_Init.o")
 
