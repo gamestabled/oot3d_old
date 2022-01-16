@@ -9,7 +9,6 @@ void BgDyYoseizo_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Dy_Yoseizo.data.o")
 
-/*
 ActorInit Bg_Dy_Yoseizo_InitVars = {
     ACTOR_BG_DY_YOSEIZO,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit Bg_Dy_Yoseizo_InitVars = {
     (ActorFunc)BgDyYoseizo_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgDyYoseizo_Init.o")
 

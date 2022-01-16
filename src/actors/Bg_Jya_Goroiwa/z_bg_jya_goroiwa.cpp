@@ -10,7 +10,6 @@ void BgJyaGoroiwa_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Goroiwa.data.o")
 
-/*
 ActorInit Bg_Jya_Goroiwa_InitVars = {
     ACTOR_BG_JYA_GOROIWA,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Goroiwa_InitVars = {
     (ActorFunc)BgJyaGoroiwa_Update,
     (ActorFunc)BgJyaGoroiwa_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaGoroiwa_Init.o")
 

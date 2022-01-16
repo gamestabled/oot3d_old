@@ -9,7 +9,6 @@ void EnOssan_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ossan.data.o")
 
-/*
 ActorInit En_Ossan_InitVars = {
     ACTOR_EN_OSSAN,
     ACTORCAT_NPC,
@@ -21,7 +20,6 @@ ActorInit En_Ossan_InitVars = {
     (ActorFunc)EnOssan_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnOssan_Init.o")
 

@@ -10,7 +10,6 @@ void ObjHsblock_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Hsblock.data.o")
 
-/*
 ActorInit Obj_Hsblock_InitVars = {
     ACTOR_OBJ_HSBLOCK,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Obj_Hsblock_InitVars = {
     (ActorFunc)ObjHsblock_Update,
     (ActorFunc)ObjHsblock_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjHsblock_Init.o")
 

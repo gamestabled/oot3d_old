@@ -10,7 +10,6 @@ void BgHidanSima_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Sima.data.o")
 
-/*
 ActorInit Bg_Hidan_Sima_InitVars = {
     ACTOR_BG_HIDAN_SIMA,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Sima_InitVars = {
     (ActorFunc)BgHidanSima_Update,
     (ActorFunc)BgHidanSima_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanSima_Init.o")
 

@@ -9,7 +9,6 @@ void BgMjin_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mjin.data.o")
 
-/*
 ActorInit Bg_Mjin_InitVars = {
     ACTOR_BG_MJIN,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Mjin_InitVars = {
     (ActorFunc)BgMjin_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgMjin_Init.o")
 

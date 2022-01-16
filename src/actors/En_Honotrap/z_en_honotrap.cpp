@@ -10,7 +10,6 @@ void EnHonotrap_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Honotrap.data.o")
 
-/*
 ActorInit En_Honotrap_InitVars = {
     ACTOR_EN_HONOTRAP,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Honotrap_InitVars = {
     (ActorFunc)EnHonotrap_Update,
     (ActorFunc)EnHonotrap_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnHonotrap_Init.o")
 

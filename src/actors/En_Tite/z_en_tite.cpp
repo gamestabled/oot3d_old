@@ -10,7 +10,6 @@ void EnTite_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Tite.data.o")
 
-/*
 ActorInit En_Tite_InitVars = {
     ACTOR_EN_TITE,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Tite_InitVars = {
     (ActorFunc)EnTite_Update,
     (ActorFunc)EnTite_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnTite_Init.o")
 

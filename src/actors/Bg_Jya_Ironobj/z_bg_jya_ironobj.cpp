@@ -10,7 +10,6 @@ void BgJyaIronobj_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Ironobj.data.o")
 
-/*
 ActorInit Bg_Jya_Ironobj_InitVars = {
     ACTOR_BG_JYA_IRONOBJ,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Ironobj_InitVars = {
     (ActorFunc)BgJyaIronobj_Update,
     (ActorFunc)BgJyaIronobj_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaIronobj_Init.o")
 

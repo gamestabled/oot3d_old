@@ -7,9 +7,6 @@ void ObjMakekinsuta_Init(Actor* actor, GameState* state);
 void ObjMakekinsuta_Destroy(Actor* actor, GameState* state);
 void ObjMakekinsuta_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Makekinsuta.data.o")
-
-/*
 ActorInit Obj_Makekinsuta_InitVars = {
     ACTOR_OBJ_MAKEKINSUTA,
     ACTORCAT_ITEMACTION,
@@ -21,7 +18,6 @@ ActorInit Obj_Makekinsuta_InitVars = {
     (ActorFunc)ObjMakekinsuta_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/ObjMakekinsuta_Init.o")
 

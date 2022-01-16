@@ -10,7 +10,6 @@ void EnButte_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Butte.data.o")
 
-/*
 ActorInit En_Butte_InitVars = {
     ACTOR_EN_BUTTE,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Butte_InitVars = {
     (ActorFunc)EnButte_Update,
     (ActorFunc)EnButte_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnButte_Init.o")
 

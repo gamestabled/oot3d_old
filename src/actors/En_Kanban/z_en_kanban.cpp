@@ -10,7 +10,6 @@ void EnKanban_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Kanban.data.o")
 
-/*
 ActorInit En_Kanban_InitVars = {
     ACTOR_EN_KANBAN,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Kanban_InitVars = {
     (ActorFunc)EnKanban_Update,
     (ActorFunc)EnKanban_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnKanban_Init.o")
 

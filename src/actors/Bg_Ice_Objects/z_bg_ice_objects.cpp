@@ -8,9 +8,6 @@ void BgIceObjects_Destroy(Actor* actor, GameState* state);
 void BgIceObjects_Update(Actor* actor, GameState* state);
 void BgIceObjects_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ice_Objects.data.o")
-
-/*
 ActorInit Bg_Ice_Objects_InitVars = {
     ACTOR_BG_ICE_OBJECTS,
     ACTORCAT_PROP,
@@ -22,7 +19,6 @@ ActorInit Bg_Ice_Objects_InitVars = {
     (ActorFunc)BgIceObjects_Update,
     (ActorFunc)BgIceObjects_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgIceObjects_Init.o")
 

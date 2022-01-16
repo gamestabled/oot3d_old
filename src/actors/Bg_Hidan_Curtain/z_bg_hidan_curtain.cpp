@@ -10,7 +10,6 @@ void BgHidanCurtain_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Curtain.data.o")
 
-/*
 ActorInit Bg_Hidan_Curtain_InitVars = {
     ACTOR_BG_HIDAN_CURTAIN,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Curtain_InitVars = {
     (ActorFunc)BgHidanCurtain_Update,
     (ActorFunc)BgHidanCurtain_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanCurtain_Init.o")
 

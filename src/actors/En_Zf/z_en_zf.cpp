@@ -10,7 +10,6 @@ void EnZf_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Zf.data.o")
 
-/*
 ActorInit En_Zf_InitVars = {
     ACTOR_EN_ZF,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Zf_InitVars = {
     (ActorFunc)EnZf_Update,
     (ActorFunc)EnZf_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnZf_Init.o")
 

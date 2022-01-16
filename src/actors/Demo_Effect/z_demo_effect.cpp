@@ -9,7 +9,6 @@ void DemoEffect_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Demo_Effect.data.o")
 
-/*
 ActorInit Demo_Effect_InitVars = {
     ACTOR_DEMO_EFFECT,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Demo_Effect_InitVars = {
     (ActorFunc)DemoEffect_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/DemoEffect_Init.o")
 

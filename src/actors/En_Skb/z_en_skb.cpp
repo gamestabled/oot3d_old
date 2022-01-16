@@ -10,7 +10,6 @@ void EnSkb_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Skb.data.o")
 
-/*
 ActorInit En_Skb_InitVars = {
     ACTOR_EN_SKB,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Skb_InitVars = {
     (ActorFunc)EnSkb_Update,
     (ActorFunc)EnSkb_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnSkb_Init.o")
 

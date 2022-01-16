@@ -10,7 +10,6 @@ void BgSpot18Shutter_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot18_Shutter.data.o")
 
-/*
 ActorInit Bg_Spot18_Shutter_InitVars = {
     ACTOR_BG_SPOT18_SHUTTER,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot18_Shutter_InitVars = {
     (ActorFunc)BgSpot18Shutter_Update,
     (ActorFunc)BgSpot18Shutter_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot18Shutter_Init.o")
 

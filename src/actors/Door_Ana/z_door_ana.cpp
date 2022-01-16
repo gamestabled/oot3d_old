@@ -10,7 +10,6 @@ void DoorAna_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Door_Ana.data.o")
 
-/*
 ActorInit Door_Ana_InitVars = {
     ACTOR_DOOR_ANA,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Door_Ana_InitVars = {
     (ActorFunc)DoorAna_Update,
     (ActorFunc)DoorAna_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DoorAna_Init.o")
 

@@ -9,7 +9,6 @@ void EnBomBowlPit_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Bom_Bowl_Pit.data.o")
 
-/*
 ActorInit En_Bom_Bowl_Pit_InitVars = {
     ACTOR_EN_BOM_BOWL_PIT,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_Bom_Bowl_Pit_InitVars = {
     (ActorFunc)EnBomBowlPit_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnBomBowlPit_Init.o")
 

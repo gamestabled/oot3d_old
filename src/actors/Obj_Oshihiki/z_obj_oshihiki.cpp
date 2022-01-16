@@ -10,7 +10,6 @@ void ObjOshihiki_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Oshihiki.data.o")
 
-/*
 ActorInit Obj_Oshihiki_InitVars = {
     ACTOR_OBJ_OSHIHIKI,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Obj_Oshihiki_InitVars = {
     (ActorFunc)ObjOshihiki_Update,
     (ActorFunc)ObjOshihiki_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjOshihiki_Init.o")
 

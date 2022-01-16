@@ -10,7 +10,6 @@ void EnHintnuts_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Hintnuts.data.o")
 
-/*
 ActorInit En_Hintnuts_InitVars = {
     ACTOR_EN_HINTNUTS,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Hintnuts_InitVars = {
     (ActorFunc)EnHintnuts_Update,
     (ActorFunc)EnHintnuts_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnHintnuts_Init.o")
 

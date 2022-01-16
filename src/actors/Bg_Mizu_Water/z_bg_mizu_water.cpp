@@ -10,7 +10,6 @@ void BgMizuWater_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mizu_Water.data.o")
 
-/*
 ActorInit Bg_Mizu_Water_InitVars = {
     ACTOR_BG_MIZU_WATER,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Mizu_Water_InitVars = {
     (ActorFunc)BgMizuWater_Update,
     (ActorFunc)BgMizuWater_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgMizuWater_Init.o")
 

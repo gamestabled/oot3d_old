@@ -10,7 +10,6 @@ void EnDh_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Dh.data.o")
 
-/*
 ActorInit En_Dh_InitVars = {
     ACTOR_EN_DH,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Dh_InitVars = {
     (ActorFunc)EnDh_Update,
     (ActorFunc)EnDh_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDh_Init.o")
 

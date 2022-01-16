@@ -9,7 +9,6 @@ void EnDntNomal_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Dnt_Nomal.data.o")
 
-/*
 ActorInit En_Dnt_Nomal_InitVars = {
     ACTOR_EN_DNT_NOMAL,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_Dnt_Nomal_InitVars = {
     (ActorFunc)EnDntNomal_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnDntNomal_Init.o")
 

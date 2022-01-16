@@ -10,7 +10,6 @@ void ArmsHook_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Arms_Hook.data.o")
 
-/*
 ActorInit Arms_Hook_InitVars = {
     ACTOR_ARMS_HOOK,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Arms_Hook_InitVars = {
     (ActorFunc)ArmsHook_Update,
     (ActorFunc)ArmsHook_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ArmsHook_Init.o")
 

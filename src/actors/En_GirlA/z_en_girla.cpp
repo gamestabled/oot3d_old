@@ -9,7 +9,6 @@ void EnGirlA_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_GirlA.data.o")
 
-/*
 ActorInit En_GirlA_InitVars = {
     ACTOR_EN_GIRLA,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_GirlA_InitVars = {
     (ActorFunc)EnGirlA_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnGirlA_Init.o")
 

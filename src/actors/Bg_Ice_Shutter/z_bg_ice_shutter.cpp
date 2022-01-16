@@ -10,7 +10,6 @@ void BgIceShutter_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Ice_Shutter.data.o")
 
-/*
 ActorInit Bg_Ice_Shutter_InitVars = {
     ACTOR_BG_ICE_SHUTTER,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Ice_Shutter_InitVars = {
     (ActorFunc)BgIceShutter_Update,
     (ActorFunc)BgIceShutter_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgIceShutter_Init.o")
 

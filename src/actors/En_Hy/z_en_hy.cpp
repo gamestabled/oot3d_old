@@ -10,7 +10,6 @@ void EnHy_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Hy.data.o")
 
-/*
 ActorInit En_Hy_InitVars = {
     ACTOR_EN_HY,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Hy_InitVars = {
     (ActorFunc)EnHy_Update,
     (ActorFunc)EnHy_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnHy_Init.o")
 

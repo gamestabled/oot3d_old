@@ -10,7 +10,6 @@ void OceffStorm_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Oceff_Storm.data.o")
 
-/*
 ActorInit Oceff_Storm_InitVars = {
     ACTOR_OCEFF_STORM,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Oceff_Storm_InitVars = {
     (ActorFunc)OceffStorm_Update,
     (ActorFunc)OceffStorm_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/OceffStorm_Init.o")
 

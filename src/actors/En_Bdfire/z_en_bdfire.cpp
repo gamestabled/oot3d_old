@@ -10,7 +10,6 @@ void EnBdfire_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Bdfire.data.o")
 
-/*
 ActorInit En_Bdfire_InitVars = {
     ACTOR_PLAYER,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Bdfire_InitVars = {
     (ActorFunc)EnBdfire_Update,
     (ActorFunc)EnBdfire_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBdfire_Init.o")
 

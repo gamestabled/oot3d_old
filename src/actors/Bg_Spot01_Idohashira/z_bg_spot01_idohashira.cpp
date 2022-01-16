@@ -10,7 +10,6 @@ void BgSpot01Idohashira_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot01_Idohashira.data.o")
 
-/*
 ActorInit Bg_Spot01_Idohashira_InitVars = {
     ACTOR_BG_SPOT01_IDOHASHIRA,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot01_Idohashira_InitVars = {
     (ActorFunc)BgSpot01Idohashira_Update,
     (ActorFunc)BgSpot01Idohashira_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot01Idohashira_Init.o")
 

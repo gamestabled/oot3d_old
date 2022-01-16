@@ -8,9 +8,6 @@ void BgGateShutter_Destroy(Actor* actor, GameState* state);
 void BgGateShutter_Update(Actor* actor, GameState* state);
 void BgGateShutter_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Gate_Shutter.data.o")
-
-/*
 ActorInit Bg_Gate_Shutter_InitVars = {
     ACTOR_BG_GATE_SHUTTER,
     ACTORCAT_ITEMACTION,
@@ -22,7 +19,6 @@ ActorInit Bg_Gate_Shutter_InitVars = {
     (ActorFunc)BgGateShutter_Update,
     (ActorFunc)BgGateShutter_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgGateShutter_Init.o")
 

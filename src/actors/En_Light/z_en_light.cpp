@@ -10,7 +10,6 @@ void EnLight_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Light.data.o")
 
-/*
 ActorInit En_Light_InitVars = {
     ACTOR_EN_LIGHT,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Light_InitVars = {
     (ActorFunc)EnLight_Update,
     (ActorFunc)EnLight_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnLight_Init.o")
 

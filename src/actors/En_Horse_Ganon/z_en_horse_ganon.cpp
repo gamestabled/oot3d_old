@@ -8,9 +8,6 @@ void EnHorseGanon_Destroy(Actor* actor, GameState* state);
 void EnHorseGanon_Update(Actor* actor, GameState* state);
 void EnHorseGanon_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Horse_Ganon.data.o")
-
-/*
 ActorInit En_Horse_Ganon_InitVars = {
     ACTOR_EN_HORSE_GANON,
     ACTORCAT_BG,
@@ -22,7 +19,6 @@ ActorInit En_Horse_Ganon_InitVars = {
     (ActorFunc)EnHorseGanon_Update,
     (ActorFunc)EnHorseGanon_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnHorseGanon_Init.o")
 

@@ -10,7 +10,6 @@ void EnFloormas_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Floormas.data.o")
 
-/*
 ActorInit En_Floormas_InitVars = {
     ACTOR_EN_FLOORMAS,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Floormas_InitVars = {
     (ActorFunc)EnFloormas_Update,
     (ActorFunc)EnFloormas_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnFloormas_Init.o")
 

@@ -8,9 +8,6 @@ void EnHata_Destroy(Actor* actor, GameState* state);
 void EnHata_Update(Actor* actor, GameState* state);
 void EnHata_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Hata.data.o")
-
-/*
 ActorInit En_Hata_InitVars = {
     ACTOR_EN_HATA,
     ACTORCAT_PROP,
@@ -22,7 +19,6 @@ ActorInit En_Hata_InitVars = {
     (ActorFunc)EnHata_Update,
     (ActorFunc)EnHata_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnHata_Init.o")
 

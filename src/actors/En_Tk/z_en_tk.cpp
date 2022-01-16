@@ -10,7 +10,6 @@ void EnTk_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Tk.data.o")
 
-/*
 ActorInit En_Tk_InitVars = {
     ACTOR_EN_TK,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Tk_InitVars = {
     (ActorFunc)EnTk_Update,
     (ActorFunc)EnTk_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnTk_Init.o")
 

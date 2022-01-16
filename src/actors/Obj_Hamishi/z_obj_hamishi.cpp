@@ -10,7 +10,6 @@ void ObjHamishi_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Hamishi.data.o")
 
-/*
 ActorInit Obj_Hamishi_InitVars = {
     ACTOR_OBJ_HAMISHI,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Obj_Hamishi_InitVars = {
     (ActorFunc)ObjHamishi_Update,
     (ActorFunc)ObjHamishi_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjHamishi_Init.o")
 

@@ -9,7 +9,6 @@ void EnIt_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_It.data.o")
 
-/*
 ActorInit En_It_InitVars = {
     ACTOR_EN_IT,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_It_InitVars = {
     (ActorFunc)EnIt_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnIt_Init.o")
 

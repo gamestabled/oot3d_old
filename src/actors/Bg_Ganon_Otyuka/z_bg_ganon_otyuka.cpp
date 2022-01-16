@@ -10,7 +10,6 @@ void BgGanonOtyuka_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Ganon_Otyuka.data.o")
 
-/*
 ActorInit Bg_Ganon_Otyuka_InitVars = {
     ACTOR_BG_GANON_OTYUKA,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Ganon_Otyuka_InitVars = {
     (ActorFunc)BgGanonOtyuka_Update,
     (ActorFunc)BgGanonOtyuka_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgGanonOtyuka_Init.o")
 

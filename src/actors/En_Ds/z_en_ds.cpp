@@ -10,7 +10,6 @@ void EnDs_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ds.data.o")
 
-/*
 ActorInit En_Ds_InitVars = {
     ACTOR_EN_DS,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Ds_InitVars = {
     (ActorFunc)EnDs_Update,
     (ActorFunc)EnDs_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDs_Init.o")
 

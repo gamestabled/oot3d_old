@@ -8,9 +8,9 @@ void EnBigokuta_Destroy(Actor* actor, GameState* state);
 void EnBigokuta_Update(Actor* actor, GameState* state);
 void EnBigokuta_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Bigokuta.data.o")
+GLOBAL_ASM("binary/z_En_Bigokuta.data_00520D58.o")
+GLOBAL_ASM("binary/z_En_Bigokuta.data_00520E40.o")
 
-/*
 ActorInit En_Bigokuta_InitVars = {
     ACTOR_EN_BIGOKUTA,
     ACTORCAT_ENEMY,
@@ -22,7 +22,6 @@ ActorInit En_Bigokuta_InitVars = {
     (ActorFunc)EnBigokuta_Update,
     (ActorFunc)EnBigokuta_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBigokuta_Init.o")
 

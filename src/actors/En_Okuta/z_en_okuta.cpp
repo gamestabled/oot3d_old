@@ -10,7 +10,6 @@ void EnOkuta_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Okuta.data.o")
 
-/*
 ActorInit En_Okuta_InitVars = {
     ACTOR_EN_OKUTA,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Okuta_InitVars = {
     (ActorFunc)EnOkuta_Update,
     (ActorFunc)EnOkuta_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnOkuta_Init.o")
 

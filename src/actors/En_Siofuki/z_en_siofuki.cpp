@@ -10,7 +10,6 @@ void EnSiofuki_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Siofuki.data.o")
 
-/*
 ActorInit En_Siofuki_InitVars = {
     ACTOR_EN_SIOFUKI,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit En_Siofuki_InitVars = {
     (ActorFunc)EnSiofuki_Update,
     (ActorFunc)EnSiofuki_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnSiofuki_Init.o")
 

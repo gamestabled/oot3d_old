@@ -10,7 +10,6 @@ void BgMenkuriNisekabe_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Menkuri_Nisekabe.data.o")
 
-/*
 ActorInit Bg_Menkuri_Nisekabe_InitVars = {
     ACTOR_BG_MENKURI_NISEKABE,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Menkuri_Nisekabe_InitVars = {
     (ActorFunc)BgMenkuriNisekabe_Update,
     (ActorFunc)BgMenkuriNisekabe_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgMenkuriNisekabe_Init.o")
 

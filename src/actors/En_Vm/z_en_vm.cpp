@@ -10,7 +10,6 @@ void EnVm_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Vm.data.o")
 
-/*
 ActorInit En_Vm_InitVars = {
     ACTOR_EN_VM,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Vm_InitVars = {
     (ActorFunc)EnVm_Update,
     (ActorFunc)EnVm_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnVm_Init.o")
 

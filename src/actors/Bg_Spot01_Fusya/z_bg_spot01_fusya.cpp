@@ -10,7 +10,6 @@ void BgSpot01Fusya_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot01_Fusya.data.o")
 
-/*
 ActorInit Bg_Spot01_Fusya_InitVars = {
     ACTOR_BG_SPOT01_FUSYA,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot01_Fusya_InitVars = {
     (ActorFunc)BgSpot01Fusya_Update,
     (ActorFunc)BgSpot01Fusya_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot01Fusya_Init.o")
 

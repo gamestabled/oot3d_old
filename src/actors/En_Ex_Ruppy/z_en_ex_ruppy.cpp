@@ -10,7 +10,6 @@ void EnExRuppy_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ex_Ruppy.data.o")
 
-/*
 ActorInit En_Ex_Ruppy_InitVars = {
     ACTOR_EN_EX_RUPPY,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Ex_Ruppy_InitVars = {
     (ActorFunc)EnExRuppy_Update,
     (ActorFunc)EnExRuppy_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnExRuppy_Init.o")
 

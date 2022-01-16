@@ -10,7 +10,6 @@ void EnTorch2_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Torch2.data.o")
 
-/*
 ActorInit En_Torch2_InitVars = {
     ACTOR_EN_TORCH2,
     ACTORCAT_BOSS,
@@ -22,7 +21,6 @@ ActorInit En_Torch2_InitVars = {
     (ActorFunc)EnTorch2_Update,
     (ActorFunc)EnTorch2_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnTorch2_Init.o")
 

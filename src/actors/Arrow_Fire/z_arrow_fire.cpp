@@ -10,7 +10,6 @@ void ArrowFire_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Arrow_Fire.data.o")
 
-/*
 ActorInit Arrow_Fire_InitVars = {
     ACTOR_ARROW_FIRE,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Arrow_Fire_InitVars = {
     (ActorFunc)ArrowFire_Update,
     (ActorFunc)ArrowFire_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ArrowFire_Init.o")
 

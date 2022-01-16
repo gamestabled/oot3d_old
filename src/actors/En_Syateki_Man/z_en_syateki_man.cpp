@@ -10,7 +10,6 @@ void EnSyatekiMan_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Syateki_Man.data.o")
 
-/*
 ActorInit En_Syateki_Man_InitVars = {
     ACTOR_EN_SYATEKI_MAN,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Syateki_Man_InitVars = {
     (ActorFunc)EnSyatekiMan_Update,
     (ActorFunc)EnSyatekiMan_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnSyatekiMan_Init.o")
 

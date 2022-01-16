@@ -10,7 +10,6 @@ void EnDekubaba_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Dekubaba.data.o")
 
-/*
 ActorInit En_Dekubaba_InitVars = {
     ACTOR_EN_DEKUBABA,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Dekubaba_InitVars = {
     (ActorFunc)EnDekubaba_Update,
     (ActorFunc)EnDekubaba_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDekubaba_Init.o")
 

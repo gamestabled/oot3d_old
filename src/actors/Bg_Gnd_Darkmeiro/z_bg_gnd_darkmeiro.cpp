@@ -7,9 +7,6 @@ void BgGndDarkmeiro_Init(Actor* actor, GameState* state);
 void BgGndDarkmeiro_Destroy(Actor* actor, GameState* state);
 void BgGndDarkmeiro_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Gnd_Darkmeiro.data.o")
-
-/*
 ActorInit Bg_Gnd_Darkmeiro_InitVars = {
     ACTOR_BG_GND_DARKMEIRO,
     ACTORCAT_PROP,
@@ -21,7 +18,6 @@ ActorInit Bg_Gnd_Darkmeiro_InitVars = {
     (ActorFunc)BgGndDarkmeiro_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgGndDarkmeiro_Init.o")
 

@@ -10,7 +10,6 @@ void EnWallmas_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Wallmas.data.o")
 
-/*
 ActorInit En_Wallmas_InitVars = {
     ACTOR_EN_WALLMAS,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Wallmas_InitVars = {
     (ActorFunc)EnWallmas_Update,
     (ActorFunc)EnWallmas_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnWallmas_Init.o")
 

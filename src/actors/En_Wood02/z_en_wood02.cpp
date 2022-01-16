@@ -10,7 +10,6 @@ void EnWood02_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Wood02.data.o")
 
-/*
 ActorInit En_Wood02_InitVars = {
     ACTOR_EN_WOOD02,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Wood02_InitVars = {
     (ActorFunc)EnWood02_Update,
     (ActorFunc)EnWood02_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnWood02_Init.o")
 

@@ -10,7 +10,6 @@ void EnWeiyer_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Weiyer.data.o")
 
-/*
 ActorInit En_Weiyer_InitVars = {
     ACTOR_EN_WEIYER,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Weiyer_InitVars = {
     (ActorFunc)EnWeiyer_Update,
     (ActorFunc)EnWeiyer_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnWeiyer_Init.o")
 

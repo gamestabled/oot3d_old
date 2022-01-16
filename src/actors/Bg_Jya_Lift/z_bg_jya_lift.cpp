@@ -10,7 +10,6 @@ void BgJyaLift_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Lift.data.o")
 
-/*
 ActorInit Bg_Jya_Lift_InitVars = {
     ACTOR_BG_JYA_LIFT,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Lift_InitVars = {
     (ActorFunc)BgJyaLift_Update,
     (ActorFunc)BgJyaLift_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaLift_Init.o")
 

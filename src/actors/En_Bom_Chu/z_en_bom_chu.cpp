@@ -10,7 +10,6 @@ void EnBomChu_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Bom_Chu.data.o")
 
-/*
 ActorInit En_Bom_Chu_InitVars = {
     ACTOR_EN_BOM_CHU,
     ACTORCAT_EXPLOSIVES,
@@ -22,7 +21,6 @@ ActorInit En_Bom_Chu_InitVars = {
     (ActorFunc)EnBomChu_Update,
     (ActorFunc)EnBomChu_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBomChu_Init.o")
 

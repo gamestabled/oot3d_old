@@ -10,7 +10,6 @@ void EnBird_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Bird.data.o")
 
-/*
 ActorInit En_Bird_InitVars = {
     ACTOR_EN_BIRD,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Bird_InitVars = {
     (ActorFunc)EnBird_Update,
     (ActorFunc)EnBird_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBird_Init.o")
 

@@ -8,9 +8,9 @@ void EnElf_Destroy(Actor* actor, GameState* state);
 void EnElf_Update(Actor* actor, GameState* state);
 void EnElf_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Elf.data.o")
+GLOBAL_ASM("binary/z_En_Elf.data_00522E74.o")
+GLOBAL_ASM("binary/z_En_Elf.data_005230C4.o")
 
-/*
 ActorInit En_Elf_InitVars = {
     ACTOR_EN_ELF,
     ACTORCAT_ITEMACTION,
@@ -22,7 +22,6 @@ ActorInit En_Elf_InitVars = {
     (ActorFunc)EnElf_Update,
     (ActorFunc)EnElf_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnElf_Init.o")
 

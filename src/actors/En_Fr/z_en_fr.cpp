@@ -9,7 +9,6 @@ void EnFr_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Fr.data.o")
 
-/*
 ActorInit En_Fr_InitVars = {
     ACTOR_EN_FR,
     ACTORCAT_NPC,
@@ -21,7 +20,6 @@ ActorInit En_Fr_InitVars = {
     (ActorFunc)EnFr_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnFr_Init.o")
 

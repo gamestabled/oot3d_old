@@ -9,7 +9,6 @@ void EnChanger_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Changer.data.o")
 
-/*
 ActorInit En_Changer_InitVars = {
     ACTOR_EN_CHANGER,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_Changer_InitVars = {
     (ActorFunc)EnChanger_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnChanger_Init.o")
 

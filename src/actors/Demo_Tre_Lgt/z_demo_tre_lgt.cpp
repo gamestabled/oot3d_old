@@ -10,7 +10,6 @@ void DemoTreLgt_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Demo_Tre_Lgt.data.o")
 
-/*
 ActorInit Demo_Tre_Lgt_InitVars = {
     ACTOR_DEMO_TRE_LGT,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Demo_Tre_Lgt_InitVars = {
     (ActorFunc)DemoTreLgt_Update,
     (ActorFunc)DemoTreLgt_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DemoTreLgt_Init.o")
 

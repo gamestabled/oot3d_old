@@ -10,7 +10,6 @@ void EnFish_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Fish.data.o")
 
-/*
 ActorInit En_Fish_InitVars = {
     ACTOR_EN_FISH,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Fish_InitVars = {
     (ActorFunc)EnFish_Update,
     (ActorFunc)EnFish_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnFish_Init.o")
 

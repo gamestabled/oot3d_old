@@ -10,7 +10,6 @@ void DoorGerudo_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Door_Gerudo.data.o")
 
-/*
 ActorInit Door_Gerudo_InitVars = {
     ACTOR_DOOR_GERUDO,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Door_Gerudo_InitVars = {
     (ActorFunc)DoorGerudo_Update,
     (ActorFunc)DoorGerudo_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DoorGerudo_Init.o")
 

@@ -9,7 +9,6 @@ void EnSyatekiItm_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Syateki_Itm.data.o")
 
-/*
 ActorInit En_Syateki_Itm_InitVars = {
     ACTOR_EN_SYATEKI_ITM,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_Syateki_Itm_InitVars = {
     (ActorFunc)EnSyatekiItm_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnSyatekiItm_Init.o")
 

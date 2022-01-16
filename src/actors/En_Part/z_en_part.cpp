@@ -10,7 +10,6 @@ void EnPart_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Part.data.o")
 
-/*
 ActorInit En_Part_InitVars = {
     ACTOR_EN_PART,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Part_InitVars = {
     (ActorFunc)EnPart_Update,
     (ActorFunc)EnPart_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnPart_Init.o")
 

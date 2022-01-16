@@ -10,7 +10,6 @@ void EnHeishi1_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Heishi1.data.o")
 
-/*
 ActorInit En_Heishi1_InitVars = {
     ACTOR_PLAYER,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Heishi1_InitVars = {
     (ActorFunc)EnHeishi1_Update,
     (ActorFunc)EnHeishi1_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnHeishi1_Init.o")
 

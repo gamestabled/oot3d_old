@@ -8,9 +8,6 @@ void BgBombwall_Destroy(Actor* actor, GameState* state);
 void BgBombwall_Update(Actor* actor, GameState* state);
 void BgBombwall_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Bombwall.data.o")
-
-/*
 ActorInit Bg_Bombwall_InitVars = {
     ACTOR_BG_BOMBWALL,
     ACTORCAT_BG,
@@ -22,7 +19,6 @@ ActorInit Bg_Bombwall_InitVars = {
     (ActorFunc)BgBombwall_Update,
     (ActorFunc)BgBombwall_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgBombwall_Init.o")
 

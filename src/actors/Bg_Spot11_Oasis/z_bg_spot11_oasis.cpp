@@ -9,7 +9,6 @@ void BgSpot11Oasis_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot11_Oasis.data.o")
 
-/*
 ActorInit Bg_Spot11_Oasis_InitVars = {
     ACTOR_BG_SPOT11_OASIS,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Spot11_Oasis_InitVars = {
     (ActorFunc)BgSpot11Oasis_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot11Oasis_Init.o")
 

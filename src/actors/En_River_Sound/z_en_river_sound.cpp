@@ -10,7 +10,6 @@ void EnRiverSound_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_River_Sound.data.o")
 
-/*
 ActorInit En_River_Sound_InitVars = {
     ACTOR_EN_RIVER_SOUND,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit En_River_Sound_InitVars = {
     (ActorFunc)EnRiverSound_Update,
     (ActorFunc)EnRiverSound_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnRiverSound_Init.o")
 

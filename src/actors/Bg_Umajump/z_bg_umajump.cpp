@@ -10,7 +10,6 @@ void BgUmajump_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Umajump.data.o")
 
-/*
 ActorInit Bg_Umajump_InitVars = {
     ACTOR_BG_UMAJUMP,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Umajump_InitVars = {
     (ActorFunc)BgUmajump_Update,
     (ActorFunc)BgUmajump_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgUmajump_Init.o")
 

@@ -10,7 +10,6 @@ void EnGoma_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Goma.data.o")
 
-/*
 ActorInit En_Goma_InitVars = {
     ACTOR_BOSS_GOMA,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Goma_InitVars = {
     (ActorFunc)EnGoma_Update,
     (ActorFunc)EnGoma_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnGoma_Init.o")
 

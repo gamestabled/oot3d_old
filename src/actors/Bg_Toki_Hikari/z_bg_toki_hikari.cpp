@@ -10,7 +10,6 @@ void BgTokiHikari_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Toki_Hikari.data.o")
 
-/*
 ActorInit Bg_Toki_Hikari_InitVars = {
     ACTOR_BG_TOKI_HIKARI,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Toki_Hikari_InitVars = {
     (ActorFunc)BgTokiHikari_Update,
     (ActorFunc)BgTokiHikari_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgTokiHikari_Init.o")
 

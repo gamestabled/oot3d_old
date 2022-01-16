@@ -10,7 +10,6 @@ void EnHorseLinkChild_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Horse_Link_Child.data.o")
 
-/*
 ActorInit En_Horse_Link_Child_InitVars = {
     ACTOR_EN_HORSE_LINK_CHILD,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit En_Horse_Link_Child_InitVars = {
     (ActorFunc)EnHorseLinkChild_Update,
     (ActorFunc)EnHorseLinkChild_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnHorseLinkChild_Init.o")
 

@@ -10,7 +10,6 @@ void BgMizuShutter_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mizu_Shutter.data.o")
 
-/*
 ActorInit Bg_Mizu_Shutter_InitVars = {
     ACTOR_BG_MIZU_SHUTTER,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Mizu_Shutter_InitVars = {
     (ActorFunc)BgMizuShutter_Update,
     (ActorFunc)BgMizuShutter_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgMizuShutter_Init.o")
 

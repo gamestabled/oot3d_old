@@ -8,9 +8,6 @@ void EnGanonOrgan_Destroy(Actor* actor, GameState* state);
 void EnGanonOrgan_Update(Actor* actor, GameState* state);
 void EnGanonOrgan_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ganon_Organ.data.o")
-
-/*
 ActorInit En_Ganon_Organ_InitVars = {
     ACTOR_EN_GANON_ORGAN,
     ACTORCAT_BOSS,
@@ -22,7 +19,6 @@ ActorInit En_Ganon_Organ_InitVars = {
     (ActorFunc)EnGanonOrgan_Update,
     (ActorFunc)EnGanonOrgan_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnGanonOrgan_Init.o")
 

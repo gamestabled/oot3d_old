@@ -9,7 +9,6 @@ void ElfMsg2_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Elf_Msg2.data.o")
 
-/*
 ActorInit Elf_Msg2_InitVars = {
     ACTOR_ELF_MSG2,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Elf_Msg2_InitVars = {
     (ActorFunc)ElfMsg2_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/ElfMsg2_Init.o")
 

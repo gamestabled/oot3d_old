@@ -9,7 +9,6 @@ void EnGanonMant_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ganon_Mant.data.o")
 
-/*
 ActorInit En_Ganon_Mant_InitVars = {
     ACTOR_EN_GANON_MANT,
     ACTORCAT_BOSS,
@@ -21,7 +20,6 @@ ActorInit En_Ganon_Mant_InitVars = {
     (ActorFunc)EnGanonMant_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnGanonMant_Init.o")
 

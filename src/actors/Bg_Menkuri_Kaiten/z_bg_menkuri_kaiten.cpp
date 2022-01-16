@@ -10,7 +10,6 @@ void BgMenkuriKaiten_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Menkuri_Kaiten.data.o")
 
-/*
 ActorInit Bg_Menkuri_Kaiten_InitVars = {
     ACTOR_BG_MENKURI_KAITEN,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Menkuri_Kaiten_InitVars = {
     (ActorFunc)BgMenkuriKaiten_Update,
     (ActorFunc)BgMenkuriKaiten_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgMenkuriKaiten_Init.o")
 

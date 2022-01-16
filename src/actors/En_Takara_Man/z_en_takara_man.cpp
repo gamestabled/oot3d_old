@@ -8,9 +8,6 @@ void EnTakaraMan_Destroy(Actor* actor, GameState* state);
 void EnTakaraMan_Update(Actor* actor, GameState* state);
 void EnTakaraMan_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Takara_Man.data.o")
-
-/*
 ActorInit En_Takara_Man_InitVars = {
     ACTOR_EN_TAKARA_MAN,
     ACTORCAT_NPC,
@@ -22,7 +19,6 @@ ActorInit En_Takara_Man_InitVars = {
     (ActorFunc)EnTakaraMan_Update,
     (ActorFunc)EnTakaraMan_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnTakaraMan_Init.o")
 

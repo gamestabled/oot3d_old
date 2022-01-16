@@ -10,7 +10,6 @@ void Actor1D7_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Actor_1D7.data.o")
 
-/*
 ActorInit Actor_1D7_InitVars = {
     ACTOR_1D7,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Actor_1D7_InitVars = {
     (ActorFunc)Actor1D7_Update,
     (ActorFunc)Actor1D7_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/Actor1D7_Init.o")
 

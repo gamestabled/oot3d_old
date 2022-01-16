@@ -10,7 +10,6 @@ void EnSi_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Si.data.o")
 
-/*
 ActorInit En_Si_InitVars = {
     ACTOR_EN_SI,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Si_InitVars = {
     (ActorFunc)EnSi_Update,
     (ActorFunc)EnSi_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnSi_Init.o")
 

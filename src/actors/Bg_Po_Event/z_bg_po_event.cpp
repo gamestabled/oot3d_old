@@ -10,7 +10,6 @@ void BgPoEvent_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Po_Event.data.o")
 
-/*
 ActorInit Bg_Po_Event_InitVars = {
     ACTOR_BG_PO_EVENT,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Po_Event_InitVars = {
     (ActorFunc)BgPoEvent_Update,
     (ActorFunc)BgPoEvent_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgPoEvent_Init.o")
 

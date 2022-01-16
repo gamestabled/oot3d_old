@@ -10,7 +10,6 @@ void BgHidanFwbig_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Fwbig.data.o")
 
-/*
 ActorInit Bg_Hidan_Fwbig_InitVars = {
     ACTOR_BG_HIDAN_FWBIG,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Fwbig_InitVars = {
     (ActorFunc)BgHidanFwbig_Update,
     (ActorFunc)BgHidanFwbig_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanFwbig_Init.o")
 

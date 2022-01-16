@@ -10,7 +10,6 @@ void MirRay_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Mir_Ray.data.o")
 
-/*
 ActorInit Mir_Ray_InitVars = {
     ACTOR_MIR_RAY,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Mir_Ray_InitVars = {
     (ActorFunc)MirRay_Update,
     (ActorFunc)MirRay_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/MirRay_Init.o")
 

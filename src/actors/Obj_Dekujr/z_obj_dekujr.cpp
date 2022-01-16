@@ -10,7 +10,6 @@ void ObjDekujr_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Dekujr.data.o")
 
-/*
 ActorInit Obj_Dekujr_InitVars = {
     ACTOR_OBJ_DEKUJR,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit Obj_Dekujr_InitVars = {
     (ActorFunc)ObjDekujr_Update,
     (ActorFunc)ObjDekujr_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjDekujr_Init.o")
 

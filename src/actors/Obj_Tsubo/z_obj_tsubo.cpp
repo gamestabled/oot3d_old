@@ -9,7 +9,6 @@ void ObjTsubo_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Tsubo.data.o")
 
-/*
 ActorInit Obj_Tsubo_InitVars = {
     ACTOR_OBJ_TSUBO,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit Obj_Tsubo_InitVars = {
     (ActorFunc)ObjTsubo_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/ObjTsubo_Init.o")
 

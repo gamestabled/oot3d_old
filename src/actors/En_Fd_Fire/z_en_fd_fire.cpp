@@ -10,7 +10,6 @@ void EnFdFire_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Fd_Fire.data.o")
 
-/*
 ActorInit En_Fd_Fire_InitVars = {
     ACTOR_EN_FD_FIRE,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Fd_Fire_InitVars = {
     (ActorFunc)EnFdFire_Update,
     (ActorFunc)EnFdFire_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnFdFire_Init.o")
 

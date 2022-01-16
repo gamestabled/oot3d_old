@@ -10,7 +10,6 @@ void EnPoSisters_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Po_Sisters.data.o")
 
-/*
 ActorInit En_Po_Sisters_InitVars = {
     ACTOR_EN_PO_SISTERS,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Po_Sisters_InitVars = {
     (ActorFunc)EnPoSisters_Update,
     (ActorFunc)EnPoSisters_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnPoSisters_Init.o")
 

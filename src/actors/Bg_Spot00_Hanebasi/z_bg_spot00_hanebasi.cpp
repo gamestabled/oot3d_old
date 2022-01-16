@@ -10,7 +10,6 @@ void BgSpot00Hanebasi_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot00_Hanebasi.data.o")
 
-/*
 ActorInit Bg_Spot00_Hanebasi_InitVars = {
     ACTOR_BG_SPOT00_HANEBASI,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot00_Hanebasi_InitVars = {
     (ActorFunc)BgSpot00Hanebasi_Update,
     (ActorFunc)BgSpot00Hanebasi_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot00Hanebasi_Init.o")
 

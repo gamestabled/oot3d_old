@@ -10,7 +10,6 @@ void BgSpot05Soko_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot05_Soko.data.o")
 
-/*
 ActorInit Bg_Spot05_Soko_InitVars = {
     ACTOR_BG_SPOT05_SOKO,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot05_Soko_InitVars = {
     (ActorFunc)BgSpot05Soko_Update,
     (ActorFunc)BgSpot05Soko_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot05Soko_Init.o")
 
