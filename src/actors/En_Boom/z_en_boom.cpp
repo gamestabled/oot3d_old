@@ -10,7 +10,6 @@ void EnBoom_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Boom.data.o")
 
-/*
 ActorInit En_Boom_InitVars = {
     ACTOR_EN_BOOM,
     ACTORCAT_MISC,
@@ -22,7 +21,6 @@ ActorInit En_Boom_InitVars = {
     (ActorFunc)EnBoom_Update,
     (ActorFunc)EnBoom_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBoom_Init.o")
 

@@ -10,7 +10,6 @@ void BgTokiSwd_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Toki_Swd.data.o")
 
-/*
 ActorInit Bg_Toki_Swd_InitVars = {
     ACTOR_BG_TOKI_SWD,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Toki_Swd_InitVars = {
     (ActorFunc)BgTokiSwd_Update,
     (ActorFunc)BgTokiSwd_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgTokiSwd_Init.o")
 

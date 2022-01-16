@@ -10,7 +10,6 @@ void EnCow_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Cow.data.o")
 
-/*
 ActorInit En_Cow_InitVars = {
     ACTOR_EN_COW,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Cow_InitVars = {
     (ActorFunc)EnCow_Update,
     (ActorFunc)EnCow_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnCow_Init.o")
 

@@ -10,7 +10,6 @@ void EnSkjneedle_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Skjneedle.data.o")
 
-/*
 ActorInit En_Skjneedle_InitVars = {
     ACTOR_EN_SKJNEEDLE,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Skjneedle_InitVars = {
     (ActorFunc)EnSkjneedle_Update,
     (ActorFunc)EnSkjneedle_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnSkjneedle_Init.o")
 

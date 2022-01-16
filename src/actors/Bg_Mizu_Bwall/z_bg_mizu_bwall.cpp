@@ -10,7 +10,6 @@ void BgMizuBwall_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mizu_Bwall.data.o")
 
-/*
 ActorInit Bg_Mizu_Bwall_InitVars = {
     ACTOR_BG_MIZU_BWALL,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Mizu_Bwall_InitVars = {
     (ActorFunc)BgMizuBwall_Update,
     (ActorFunc)BgMizuBwall_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgMizuBwall_Init.o")
 

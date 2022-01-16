@@ -10,7 +10,6 @@ void EnKo_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ko.data.o")
 
-/*
 ActorInit En_Ko_InitVars = {
     ACTOR_EN_KO,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Ko_InitVars = {
     (ActorFunc)EnKo_Update,
     (ActorFunc)EnKo_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnKo_Init.o")
 

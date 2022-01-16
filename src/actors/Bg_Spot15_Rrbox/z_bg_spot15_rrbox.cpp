@@ -10,7 +10,6 @@ void BgSpot15Rrbox_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot15_Rrbox.data.o")
 
-/*
 ActorInit Bg_Spot15_Rrbox_InitVars = {
     ACTOR_BG_SPOT15_RRBOX,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot15_Rrbox_InitVars = {
     (ActorFunc)BgSpot15Rrbox_Update,
     (ActorFunc)BgSpot15Rrbox_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot15Rrbox_Init.o")
 

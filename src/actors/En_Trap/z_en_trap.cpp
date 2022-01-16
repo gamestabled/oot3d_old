@@ -10,7 +10,6 @@ void EnTrap_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Trap.data.o")
 
-/*
 ActorInit En_Trap_InitVars = {
     ACTOR_EN_TRAP,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit En_Trap_InitVars = {
     (ActorFunc)EnTrap_Update,
     (ActorFunc)EnTrap_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnTrap_Init.o")
 

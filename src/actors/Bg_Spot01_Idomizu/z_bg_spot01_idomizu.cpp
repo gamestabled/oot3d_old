@@ -10,7 +10,6 @@ void BgSpot01Idomizu_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot01_Idomizu.data.o")
 
-/*
 ActorInit Bg_Spot01_Idomizu_InitVars = {
     ACTOR_BG_SPOT01_IDOMIZU,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot01_Idomizu_InitVars = {
     (ActorFunc)BgSpot01Idomizu_Update,
     (ActorFunc)BgSpot01Idomizu_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot01Idomizu_Init.o")
 

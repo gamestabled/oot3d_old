@@ -10,7 +10,6 @@ void ObjElevator_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Elevator.data.o")
 
-/*
 ActorInit Obj_Elevator_InitVars = {
     ACTOR_OBJ_ELEVATOR,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Obj_Elevator_InitVars = {
     (ActorFunc)ObjElevator_Update,
     (ActorFunc)ObjElevator_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjElevator_Init.o")
 

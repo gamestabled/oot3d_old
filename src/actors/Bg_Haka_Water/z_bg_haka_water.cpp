@@ -8,9 +8,6 @@ void BgHakaWater_Destroy(Actor* actor, GameState* state);
 void BgHakaWater_Update(Actor* actor, GameState* state);
 void BgHakaWater_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Haka_Water.data.o")
-
-/*
 ActorInit Bg_Haka_Water_InitVars = {
     ACTOR_BG_HAKA_WATER,
     ACTORCAT_PROP,
@@ -22,7 +19,6 @@ ActorInit Bg_Haka_Water_InitVars = {
     (ActorFunc)BgHakaWater_Update,
     (ActorFunc)BgHakaWater_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHakaWater_Init.o")
 

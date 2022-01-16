@@ -10,7 +10,6 @@ void EnIceHono_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ice_Hono.data.o")
 
-/*
 ActorInit En_Ice_Hono_InitVars = {
     ACTOR_EN_ICE_HONO,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Ice_Hono_InitVars = {
     (ActorFunc)EnIceHono_Update,
     (ActorFunc)EnIceHono_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnIceHono_Init.o")
 

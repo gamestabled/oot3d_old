@@ -10,7 +10,6 @@ void DoorShutter_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Door_Shutter.data.o")
 
-/*
 ActorInit Door_Shutter_InitVars = {
     ACTOR_DOOR_SHUTTER,
     ACTORCAT_DOOR,
@@ -22,7 +21,6 @@ ActorInit Door_Shutter_InitVars = {
     (ActorFunc)DoorShutter_Update,
     (ActorFunc)DoorShutter_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DoorShutter_Init.o")
 

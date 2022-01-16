@@ -10,7 +10,6 @@ void BgRelayObjects_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Relay_Objects.data.o")
 
-/*
 ActorInit Bg_Relay_Objects_InitVars = {
     ACTOR_BG_RELAY_OBJECTS,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Relay_Objects_InitVars = {
     (ActorFunc)BgRelayObjects_Update,
     (ActorFunc)BgRelayObjects_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgRelayObjects_Init.o")
 

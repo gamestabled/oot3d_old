@@ -8,9 +8,9 @@ void BossDodongo_Destroy(Actor* actor, GameState* state);
 void BossDodongo_Update(Actor* actor, GameState* state);
 void BossDodongo_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Boss_Dodongo.data.o")
+GLOBAL_ASM("binary/z_Boss_Dodongo.data_005144C0.o")
+GLOBAL_ASM("binary/z_Boss_Dodongo.data_005145B4.o")
 
-/*
 ActorInit Boss_Dodongo_InitVars = {
     ACTOR_EN_DODONGO,
     ACTORCAT_BOSS,
@@ -22,7 +22,6 @@ ActorInit Boss_Dodongo_InitVars = {
     (ActorFunc)BossDodongo_Update,
     (ActorFunc)BossDodongo_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BossDodongo_Init.o")
 

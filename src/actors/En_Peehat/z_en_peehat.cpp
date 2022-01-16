@@ -10,7 +10,6 @@ void EnPeehat_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Peehat.data.o")
 
-/*
 ActorInit En_Peehat_InitVars = {
     ACTOR_EN_PEEHAT,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Peehat_InitVars = {
     (ActorFunc)EnPeehat_Update,
     (ActorFunc)EnPeehat_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnPeehat_Init.o")
 

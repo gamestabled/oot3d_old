@@ -10,7 +10,6 @@ void BgJya1flift_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_1flift.data.o")
 
-/*
 ActorInit Bg_Jya_1flift_InitVars = {
     ACTOR_BG_JYA_1FLIFT,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_1flift_InitVars = {
     (ActorFunc)BgJya1flift_Update,
     (ActorFunc)BgJya1flift_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJya1flift_Init.o")
 

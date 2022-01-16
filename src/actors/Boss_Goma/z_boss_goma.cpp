@@ -10,7 +10,6 @@ void BossGoma_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Boss_Goma.data.o")
 
-/*
 ActorInit Boss_Goma_InitVars = {
     ACTOR_BOSS_GOMA,
     ACTORCAT_BOSS,
@@ -22,7 +21,6 @@ ActorInit Boss_Goma_InitVars = {
     (ActorFunc)BossGoma_Update,
     (ActorFunc)BossGoma_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BossGoma_Init.o")
 

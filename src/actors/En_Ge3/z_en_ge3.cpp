@@ -10,7 +10,6 @@ void EnGe3_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ge3.data.o")
 
-/*
 ActorInit En_Ge3_InitVars = {
     ACTOR_EN_GE3,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Ge3_InitVars = {
     (ActorFunc)EnGe3_Update,
     (ActorFunc)EnGe3_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnGe3_Init.o")
 

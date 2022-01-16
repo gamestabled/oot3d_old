@@ -10,7 +10,6 @@ void EnGeldB_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_GeldB.data.o")
 
-/*
 ActorInit En_GeldB_InitVars = {
     ACTOR_EN_GELDB,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_GeldB_InitVars = {
     (ActorFunc)EnGeldB_Update,
     (ActorFunc)EnGeldB_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnGeldB_Init.o")
 

@@ -10,7 +10,6 @@ void BgDdanJd_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Ddan_Jd.data.o")
 
-/*
 ActorInit Bg_Ddan_Jd_InitVars = {
     ACTOR_BG_DDAN_JD,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Ddan_Jd_InitVars = {
     (ActorFunc)BgDdanJd_Update,
     (ActorFunc)BgDdanJd_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgDdanJd_Init.o")
 

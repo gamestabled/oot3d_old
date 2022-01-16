@@ -9,7 +9,6 @@ void ShotSun_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Shot_Sun.data.o")
 
-/*
 ActorInit Shot_Sun_InitVars = {
     ACTOR_SHOT_SUN,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit Shot_Sun_InitVars = {
     (ActorFunc)ShotSun_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/ShotSun_Init.o")
 

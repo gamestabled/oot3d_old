@@ -10,7 +10,6 @@ void EnDaikuKakariko_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Daiku_Kakariko.data.o")
 
-/*
 ActorInit En_Daiku_Kakariko_InitVars = {
     ACTOR_EN_DAIKU_KAKARIKO,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Daiku_Kakariko_InitVars = {
     (ActorFunc)EnDaikuKakariko_Update,
     (ActorFunc)EnDaikuKakariko_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDaikuKakariko_Init.o")
 

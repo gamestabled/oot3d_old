@@ -10,7 +10,6 @@ void ObjIcePoly_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Ice_Poly.data.o")
 
-/*
 ActorInit Obj_Ice_Poly_InitVars = {
     ACTOR_OBJ_ICE_POLY,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Obj_Ice_Poly_InitVars = {
     (ActorFunc)ObjIcePoly_Update,
     (ActorFunc)ObjIcePoly_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjIcePoly_Init.o")
 

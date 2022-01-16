@@ -9,7 +9,6 @@ void EnSth_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Sth.data.o")
 
-/*
 ActorInit En_Sth_InitVars = {
     ACTOR_EN_STH,
     ACTORCAT_NPC,
@@ -21,7 +20,6 @@ ActorInit En_Sth_InitVars = {
     (ActorFunc)EnSth_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnSth_Init.o")
 

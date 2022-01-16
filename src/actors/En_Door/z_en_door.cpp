@@ -10,7 +10,6 @@ void EnDoor_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Door.data.o")
 
-/*
 ActorInit En_Door_InitVars = {
     ACTOR_EN_DOOR,
     ACTORCAT_DOOR,
@@ -22,7 +21,6 @@ ActorInit En_Door_InitVars = {
     (ActorFunc)EnDoor_Update,
     (ActorFunc)EnDoor_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDoor_Init.o")
 

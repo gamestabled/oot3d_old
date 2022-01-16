@@ -10,7 +10,6 @@ void EnFireRock_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Fire_Rock.data.o")
 
-/*
 ActorInit En_Fire_Rock_InitVars = {
     ACTOR_EN_FIRE_ROCK,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Fire_Rock_InitVars = {
     (ActorFunc)EnFireRock_Update,
     (ActorFunc)EnFireRock_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnFireRock_Init.o")
 

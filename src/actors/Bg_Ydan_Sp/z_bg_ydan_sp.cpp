@@ -10,7 +10,6 @@ void BgYdanSp_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Ydan_Sp.data.o")
 
-/*
 ActorInit Bg_Ydan_Sp_InitVars = {
     ACTOR_BG_YDAN_SP,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Ydan_Sp_InitVars = {
     (ActorFunc)BgYdanSp_Update,
     (ActorFunc)BgYdanSp_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgYdanSp_Init.o")
 

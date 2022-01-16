@@ -9,7 +9,6 @@ void DoorKiller_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Door_Killer.data.o")
 
-/*
 ActorInit Door_Killer_InitVars = {
     ACTOR_DOOR_KILLER,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Door_Killer_InitVars = {
     (ActorFunc)DoorKiller_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/DoorKiller_Init.o")
 

@@ -10,7 +10,6 @@ void EnJs_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Js.data.o")
 
-/*
 ActorInit En_Js_InitVars = {
     ACTOR_EN_JS,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Js_InitVars = {
     (ActorFunc)EnJs_Update,
     (ActorFunc)EnJs_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnJs_Init.o")
 

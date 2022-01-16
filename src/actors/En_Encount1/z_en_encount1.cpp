@@ -7,9 +7,6 @@ void EnEncount1_Init(Actor* actor, GameState* state);
 void EnEncount1_Destroy(Actor* actor, GameState* state);
 void EnEncount1_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Encount1.data.o")
-
-/*
 ActorInit En_Encount1_InitVars = {
     ACTOR_EN_ENCOUNT1,
     ACTORCAT_PROP,
@@ -21,7 +18,6 @@ ActorInit En_Encount1_InitVars = {
     (ActorFunc)EnEncount1_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnEncount1_Init.o")
 

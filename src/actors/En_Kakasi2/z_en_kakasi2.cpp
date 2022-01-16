@@ -9,7 +9,6 @@ void EnKakasi2_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Kakasi2.data.o")
 
-/*
 ActorInit En_Kakasi2_InitVars = {
     ACTOR_EN_KAKASI2,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_Kakasi2_InitVars = {
     (ActorFunc)EnKakasi2_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnKakasi2_Init.o")
 

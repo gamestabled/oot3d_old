@@ -8,9 +8,6 @@ void EnMag_Destroy(Actor* actor, GameState* state);
 void EnMag_Update(Actor* actor, GameState* state);
 void EnMag_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Mag.data.o")
-
-/*
 ActorInit En_Mag_InitVars = {
     ACTOR_EN_MAG,
     ACTORCAT_PROP,
@@ -22,7 +19,6 @@ ActorInit En_Mag_InitVars = {
     (ActorFunc)EnMag_Update,
     (ActorFunc)EnMag_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnMag_Init.o")
 

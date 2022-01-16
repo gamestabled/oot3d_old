@@ -10,7 +10,6 @@ void BgHidanSyoku_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Syoku.data.o")
 
-/*
 ActorInit Bg_Hidan_Syoku_InitVars = {
     ACTOR_BG_HIDAN_SYOKU,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Syoku_InitVars = {
     (ActorFunc)BgHidanSyoku_Update,
     (ActorFunc)BgHidanSyoku_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanSyoku_Init.o")
 

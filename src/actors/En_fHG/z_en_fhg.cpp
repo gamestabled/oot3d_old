@@ -10,7 +10,6 @@ void EnfHG_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_fHG.data.o")
 
-/*
 ActorInit En_fHG_InitVars = {
     ACTOR_EN_FHG,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit En_fHG_InitVars = {
     (ActorFunc)EnfHG_Update,
     (ActorFunc)EnfHG_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnfHG_Init.o")
 

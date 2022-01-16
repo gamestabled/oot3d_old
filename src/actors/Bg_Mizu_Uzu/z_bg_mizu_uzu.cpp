@@ -10,7 +10,6 @@ void BgMizuUzu_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mizu_Uzu.data.o")
 
-/*
 ActorInit Bg_Mizu_Uzu_InitVars = {
     ACTOR_BG_MIZU_UZU,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Mizu_Uzu_InitVars = {
     (ActorFunc)BgMizuUzu_Update,
     (ActorFunc)BgMizuUzu_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgMizuUzu_Init.o")
 

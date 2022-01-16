@@ -10,7 +10,6 @@ void BgGjyoBridge_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Gjyo_Bridge.data.o")
 
-/*
 ActorInit Bg_Gjyo_Bridge_InitVars = {
     ACTOR_BG_GJYO_BRIDGE,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Gjyo_Bridge_InitVars = {
     (ActorFunc)BgGjyoBridge_Update,
     (ActorFunc)BgGjyoBridge_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgGjyoBridge_Init.o")
 

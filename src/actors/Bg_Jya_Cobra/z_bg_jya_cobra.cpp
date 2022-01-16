@@ -10,7 +10,6 @@ void BgJyaCobra_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Cobra.data.o")
 
-/*
 ActorInit Bg_Jya_Cobra_InitVars = {
     ACTOR_BG_JYA_COBRA,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Cobra_InitVars = {
     (ActorFunc)BgJyaCobra_Update,
     (ActorFunc)BgJyaCobra_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaCobra_Init.o")
 

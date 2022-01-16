@@ -9,7 +9,6 @@ void EnKusa_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Kusa.data.o")
 
-/*
 ActorInit En_Kusa_InitVars = {
     ACTOR_EN_KUSA,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_Kusa_InitVars = {
     (ActorFunc)EnKusa_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnKusa_Init.o")
 

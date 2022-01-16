@@ -8,9 +8,6 @@ void BgIngate_Destroy(Actor* actor, GameState* state);
 void BgIngate_Update(Actor* actor, GameState* state);
 void BgIngate_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ingate.data.o")
-
-/*
 ActorInit Bg_Ingate_InitVars = {
     ACTOR_BG_INGATE,
     ACTORCAT_PROP,
@@ -22,7 +19,6 @@ ActorInit Bg_Ingate_InitVars = {
     (ActorFunc)BgIngate_Update,
     (ActorFunc)BgIngate_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgIngate_Init.o")
 

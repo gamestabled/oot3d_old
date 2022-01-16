@@ -10,7 +10,6 @@ void EnDns_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Dns.data.o")
 
-/*
 ActorInit En_Dns_InitVars = {
     ACTOR_EN_DNS,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit En_Dns_InitVars = {
     (ActorFunc)EnDns_Update,
     (ActorFunc)EnDns_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDns_Init.o")
 

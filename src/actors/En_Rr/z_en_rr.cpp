@@ -10,7 +10,6 @@ void EnRr_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Rr.data.o")
 
-/*
 ActorInit En_Rr_InitVars = {
     ACTOR_EN_RR,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Rr_InitVars = {
     (ActorFunc)EnRr_Update,
     (ActorFunc)EnRr_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnRr_Init.o")
 

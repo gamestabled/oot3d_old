@@ -10,7 +10,6 @@ void BgDodoago_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Dodoago.data.o")
 
-/*
 ActorInit Bg_Dodoago_InitVars = {
     ACTOR_BG_DODOAGO,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Dodoago_InitVars = {
     (ActorFunc)BgDodoago_Update,
     (ActorFunc)BgDodoago_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgDodoago_Init.o")
 

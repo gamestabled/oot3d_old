@@ -10,7 +10,6 @@ void EnKakasi3_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Kakasi3.data.o")
 
-/*
 ActorInit En_Kakasi3_InitVars = {
     ACTOR_EN_KAKASI3,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Kakasi3_InitVars = {
     (ActorFunc)EnKakasi3_Update,
     (ActorFunc)EnKakasi3_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnKakasi3_Init.o")
 

@@ -9,7 +9,6 @@ void ObjMure2_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Mure2.data.o")
 
-/*
 ActorInit Obj_Mure2_InitVars = {
     ACTOR_OBJ_MURE2,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit Obj_Mure2_InitVars = {
     (ActorFunc)ObjMure2_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/ObjMure2_Init.o")
 

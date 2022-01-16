@@ -10,7 +10,6 @@ void ItemShield_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Item_Shield.data.o")
 
-/*
 ActorInit Item_Shield_InitVars = {
     ACTOR_ITEM_SHIELD,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Item_Shield_InitVars = {
     (ActorFunc)ItemShield_Update,
     (ActorFunc)ItemShield_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ItemShield_Init.o")
 

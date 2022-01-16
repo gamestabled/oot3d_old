@@ -10,7 +10,6 @@ void BgSpot07Taki_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot07_Taki.data.o")
 
-/*
 ActorInit Bg_Spot07_Taki_InitVars = {
     ACTOR_BG_SPOT07_TAKI,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot07_Taki_InitVars = {
     (ActorFunc)BgSpot07Taki_Update,
     (ActorFunc)BgSpot07Taki_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot07Taki_Init.o")
 

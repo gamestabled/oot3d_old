@@ -10,7 +10,6 @@ void EnAnubice_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Anubice.data.o")
 
-/*
 ActorInit En_Anubice_InitVars = {
     ACTOR_EN_ANUBICE,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Anubice_InitVars = {
     (ActorFunc)EnAnubice_Update,
     (ActorFunc)EnAnubice_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnAnubice_Init.o")
 

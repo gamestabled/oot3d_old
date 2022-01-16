@@ -10,7 +10,6 @@ void ObjectKankyo_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Object_Kankyo.data.o")
 
-/*
 ActorInit Object_Kankyo_InitVars = {
     ACTOR_OBJECT_KANKYO,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Object_Kankyo_InitVars = {
     (ActorFunc)ObjectKankyo_Update,
     (ActorFunc)ObjectKankyo_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjectKankyo_Init.o")
 

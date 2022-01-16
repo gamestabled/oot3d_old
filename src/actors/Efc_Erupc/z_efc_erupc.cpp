@@ -10,7 +10,6 @@ void EfcErupc_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Efc_Erupc.data.o")
 
-/*
 ActorInit Efc_Erupc_InitVars = {
     ACTOR_EFC_ERUPC,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Efc_Erupc_InitVars = {
     (ActorFunc)EfcErupc_Update,
     (ActorFunc)EfcErupc_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EfcErupc_Init.o")
 

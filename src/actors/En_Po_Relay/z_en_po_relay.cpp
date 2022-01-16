@@ -10,7 +10,6 @@ void EnPoRelay_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Po_Relay.data.o")
 
-/*
 ActorInit En_Po_Relay_InitVars = {
     ACTOR_EN_PO_RELAY,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Po_Relay_InitVars = {
     (ActorFunc)EnPoRelay_Update,
     (ActorFunc)EnPoRelay_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnPoRelay_Init.o")
 

@@ -10,7 +10,6 @@ void EnBlkobj_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Blkobj.data.o")
 
-/*
 ActorInit En_Blkobj_InitVars = {
     ACTOR_EN_BLKOBJ,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Blkobj_InitVars = {
     (ActorFunc)EnBlkobj_Update,
     (ActorFunc)EnBlkobj_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBlkobj_Init.o")
 

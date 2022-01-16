@@ -7,9 +7,6 @@ void EnWonderTalk_Init(Actor* actor, GameState* state);
 void EnWonderTalk_Destroy(Actor* actor, GameState* state);
 void EnWonderTalk_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Wonder_Talk.data.o")
-
-/*
 ActorInit En_Wonder_Talk_InitVars = {
     ACTOR_EN_WONDER_TALK,
     ACTORCAT_PROP,
@@ -21,7 +18,6 @@ ActorInit En_Wonder_Talk_InitVars = {
     (ActorFunc)EnWonderTalk_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnWonderTalk_Init.o")
 

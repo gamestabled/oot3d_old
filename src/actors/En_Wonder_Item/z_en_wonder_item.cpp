@@ -9,7 +9,6 @@ void EnWonderItem_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Wonder_Item.data.o")
 
-/*
 ActorInit En_Wonder_Item_InitVars = {
     ACTOR_EN_WONDER_ITEM,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_Wonder_Item_InitVars = {
     (ActorFunc)EnWonderItem_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnWonderItem_Init.o")
 

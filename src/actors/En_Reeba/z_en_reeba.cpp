@@ -10,7 +10,6 @@ void EnReeba_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Reeba.data.o")
 
-/*
 ActorInit En_Reeba_InitVars = {
     ACTOR_EN_REEBA,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Reeba_InitVars = {
     (ActorFunc)EnReeba_Update,
     (ActorFunc)EnReeba_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnReeba_Init.o")
 

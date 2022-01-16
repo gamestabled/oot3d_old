@@ -10,7 +10,6 @@ void EnGs_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Gs.data.o")
 
-/*
 ActorInit En_Gs_InitVars = {
     ACTOR_EN_GS,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Gs_InitVars = {
     (ActorFunc)EnGs_Update,
     (ActorFunc)EnGs_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnGs_Init.o")
 

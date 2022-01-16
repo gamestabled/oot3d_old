@@ -10,7 +10,6 @@ void DoorWarp1_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Door_Warp1.data.o")
 
-/*
 ActorInit Door_Warp1_InitVars = {
     ACTOR_DOOR_WARP1,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit Door_Warp1_InitVars = {
     (ActorFunc)DoorWarp1_Update,
     (ActorFunc)DoorWarp1_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DoorWarp1_Init.o")
 

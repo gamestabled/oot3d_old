@@ -10,7 +10,6 @@ void EnInsect_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Insect.data.o")
 
-/*
 ActorInit En_Insect_InitVars = {
     ACTOR_EN_INSECT,
     ACTORCAT_ITEMACTION,
@@ -22,7 +21,6 @@ ActorInit En_Insect_InitVars = {
     (ActorFunc)EnInsect_Update,
     (ActorFunc)EnInsect_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnInsect_Init.o")
 

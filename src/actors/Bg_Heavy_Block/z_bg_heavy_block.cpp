@@ -10,7 +10,6 @@ void BgHeavyBlock_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Heavy_Block.data.o")
 
-/*
 ActorInit Bg_Heavy_Block_InitVars = {
     ACTOR_BG_HEAVY_BLOCK,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Heavy_Block_InitVars = {
     (ActorFunc)BgHeavyBlock_Update,
     (ActorFunc)BgHeavyBlock_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHeavyBlock_Init.o")
 

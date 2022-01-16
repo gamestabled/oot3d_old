@@ -10,7 +10,6 @@ void BgHakaHuta_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Haka_Huta.data.o")
 
-/*
 ActorInit Bg_Haka_Huta_InitVars = {
     ACTOR_BG_HAKA_HUTA,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Haka_Huta_InitVars = {
     (ActorFunc)BgHakaHuta_Update,
     (ActorFunc)BgHakaHuta_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHakaHuta_Init.o")
 

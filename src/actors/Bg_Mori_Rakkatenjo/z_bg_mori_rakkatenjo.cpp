@@ -9,7 +9,6 @@ void BgMoriRakkatenjo_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mori_Rakkatenjo.data.o")
 
-/*
 ActorInit Bg_Mori_Rakkatenjo_InitVars = {
     ACTOR_BG_MORI_RAKKATENJO,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Mori_Rakkatenjo_InitVars = {
     (ActorFunc)BgMoriRakkatenjo_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgMoriRakkatenjo_Init.o")
 

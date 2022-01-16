@@ -8,9 +8,6 @@ void BgGndFiremeiro_Destroy(Actor* actor, GameState* state);
 void BgGndFiremeiro_Update(Actor* actor, GameState* state);
 void BgGndFiremeiro_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Gnd_Firemeiro.data.o")
-
-/*
 ActorInit Bg_Gnd_Firemeiro_InitVars = {
     ACTOR_BG_GND_FIREMEIRO,
     ACTORCAT_PROP,
@@ -22,7 +19,6 @@ ActorInit Bg_Gnd_Firemeiro_InitVars = {
     (ActorFunc)BgGndFiremeiro_Update,
     (ActorFunc)BgGndFiremeiro_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgGndFiremeiro_Init.o")
 

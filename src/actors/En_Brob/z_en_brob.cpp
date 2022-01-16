@@ -10,7 +10,6 @@ void EnBrob_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Brob.data.o")
 
-/*
 ActorInit En_Brob_InitVars = {
     ACTOR_EN_BROB,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Brob_InitVars = {
     (ActorFunc)EnBrob_Update,
     (ActorFunc)EnBrob_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBrob_Init.o")
 

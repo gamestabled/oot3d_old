@@ -10,7 +10,6 @@ void EnSsh_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ssh.data.o")
 
-/*
 ActorInit En_Ssh_InitVars = {
     ACTOR_EN_SSH,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Ssh_InitVars = {
     (ActorFunc)EnSsh_Update,
     (ActorFunc)EnSsh_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnSsh_Init.o")
 

@@ -7,9 +7,6 @@ void EnArowTrap_Init(Actor* actor, GameState* state);
 void EnArowTrap_Destroy(Actor* actor, GameState* state);
 void EnArowTrap_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Arow_Trap.data.o")
-
-/*
 ActorInit En_Arow_Trap_InitVars = {
     ACTOR_EN_AROW_TRAP,
     ACTORCAT_PROP,
@@ -21,7 +18,6 @@ ActorInit En_Arow_Trap_InitVars = {
     (ActorFunc)EnArowTrap_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnArowTrap_Init.o")
 

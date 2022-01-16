@@ -9,7 +9,6 @@ void EnMFire1_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_M_Fire1.data.o")
 
-/*
 ActorInit En_M_Fire1_InitVars = {
     ACTOR_EN_M_FIRE1,
     ACTORCAT_MISC,
@@ -21,7 +20,6 @@ ActorInit En_M_Fire1_InitVars = {
     (ActorFunc)EnMFire1_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnMFire1_Init.o")
 

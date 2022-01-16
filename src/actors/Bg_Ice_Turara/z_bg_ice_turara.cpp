@@ -10,7 +10,6 @@ void BgIceTurara_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Ice_Turara.data.o")
 
-/*
 ActorInit Bg_Ice_Turara_InitVars = {
     ACTOR_BG_ICE_TURARA,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Ice_Turara_InitVars = {
     (ActorFunc)BgIceTurara_Update,
     (ActorFunc)BgIceTurara_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgIceTurara_Init.o")
 

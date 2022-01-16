@@ -10,7 +10,6 @@ void EnHorseNormal_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Horse_Normal.data.o")
 
-/*
 ActorInit En_Horse_Normal_InitVars = {
     ACTOR_EN_HORSE_NORMAL,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit En_Horse_Normal_InitVars = {
     (ActorFunc)EnHorseNormal_Update,
     (ActorFunc)EnHorseNormal_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnHorseNormal_Init.o")
 

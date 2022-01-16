@@ -9,7 +9,6 @@ void BgSpot17Funen_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot17_Funen.data.o")
 
-/*
 ActorInit Bg_Spot17_Funen_InitVars = {
     ACTOR_BG_SPOT17_FUNEN,
     ACTORCAT_SWITCH,
@@ -21,7 +20,6 @@ ActorInit Bg_Spot17_Funen_InitVars = {
     (ActorFunc)BgSpot17Funen_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot17Funen_Init.o")
 

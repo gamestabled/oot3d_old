@@ -10,7 +10,6 @@ void BgJyaKanaami_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Kanaami.data.o")
 
-/*
 ActorInit Bg_Jya_Kanaami_InitVars = {
     ACTOR_BG_JYA_KANAAMI,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Kanaami_InitVars = {
     (ActorFunc)BgJyaKanaami_Update,
     (ActorFunc)BgJyaKanaami_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaKanaami_Init.o")
 

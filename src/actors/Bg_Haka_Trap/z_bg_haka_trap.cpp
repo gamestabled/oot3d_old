@@ -10,7 +10,6 @@ void BgHakaTrap_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Haka_Trap.data.o")
 
-/*
 ActorInit Bg_Haka_Trap_InitVars = {
     ACTOR_BG_HAKA_TRAP,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Haka_Trap_InitVars = {
     (ActorFunc)BgHakaTrap_Update,
     (ActorFunc)BgHakaTrap_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHakaTrap_Init.o")
 

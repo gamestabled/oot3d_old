@@ -10,7 +10,6 @@ void BgJyaZurerukabe_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Zurerukabe.data.o")
 
-/*
 ActorInit Bg_Jya_Zurerukabe_InitVars = {
     ACTOR_BG_JYA_ZURERUKABE,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Zurerukabe_InitVars = {
     (ActorFunc)BgJyaZurerukabe_Update,
     (ActorFunc)BgJyaZurerukabe_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaZurerukabe_Init.o")
 

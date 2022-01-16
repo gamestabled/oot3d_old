@@ -10,7 +10,6 @@ void BgJyaAmishutter_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Amishutter.data.o")
 
-/*
 ActorInit Bg_Jya_Amishutter_InitVars = {
     ACTOR_BG_JYA_AMISHUTTER,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Amishutter_InitVars = {
     (ActorFunc)BgJyaAmishutter_Update,
     (ActorFunc)BgJyaAmishutter_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaAmishutter_Init.o")
 

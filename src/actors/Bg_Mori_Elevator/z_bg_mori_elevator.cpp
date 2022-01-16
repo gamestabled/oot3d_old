@@ -9,7 +9,6 @@ void BgMoriElevator_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mori_Elevator.data.o")
 
-/*
 ActorInit Bg_Mori_Elevator_InitVars = {
     ACTOR_BG_MORI_ELEVATOR,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Mori_Elevator_InitVars = {
     (ActorFunc)BgMoriElevator_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgMoriElevator_Init.o")
 

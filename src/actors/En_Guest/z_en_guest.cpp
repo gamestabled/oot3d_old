@@ -9,7 +9,6 @@ void EnGuest_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Guest.data.o")
 
-/*
 ActorInit En_Guest_InitVars = {
     ACTOR_EN_GUEST,
     ACTORCAT_NPC,
@@ -21,7 +20,6 @@ ActorInit En_Guest_InitVars = {
     (ActorFunc)EnGuest_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnGuest_Init.o")
 

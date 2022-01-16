@@ -10,7 +10,6 @@ void BgHidanHamstep_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Hamstep.data.o")
 
-/*
 ActorInit Bg_Hidan_Hamstep_InitVars = {
     ACTOR_BG_HIDAN_HAMSTEP,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Hamstep_InitVars = {
     (ActorFunc)BgHidanHamstep_Update,
     (ActorFunc)BgHidanHamstep_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanHamstep_Init.o")
 

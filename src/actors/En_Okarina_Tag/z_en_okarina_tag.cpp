@@ -7,9 +7,6 @@ void EnOkarinaTag_Init(Actor* actor, GameState* state);
 void EnOkarinaTag_Destroy(Actor* actor, GameState* state);
 void EnOkarinaTag_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Okarina_Tag.data.o")
-
-/*
 ActorInit En_Okarina_Tag_InitVars = {
     ACTOR_EN_OKARINA_TAG,
     ACTORCAT_PROP,
@@ -21,7 +18,6 @@ ActorInit En_Okarina_Tag_InitVars = {
     (ActorFunc)EnOkarinaTag_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnOkarinaTag_Init.o")
 

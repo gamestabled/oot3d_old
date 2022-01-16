@@ -9,7 +9,6 @@ void BgSpot01Objects2_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot01_Objects2.data.o")
 
-/*
 ActorInit Bg_Spot01_Objects2_InitVars = {
     ACTOR_BG_SPOT01_OBJECTS2,
     ACTORCAT_BG,
@@ -21,7 +20,6 @@ ActorInit Bg_Spot01_Objects2_InitVars = {
     (ActorFunc)BgSpot01Objects2_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot01Objects2_Init.o")
 

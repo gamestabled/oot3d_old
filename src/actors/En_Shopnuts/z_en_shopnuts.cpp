@@ -10,7 +10,6 @@ void EnShopnuts_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Shopnuts.data.o")
 
-/*
 ActorInit En_Shopnuts_InitVars = {
     ACTOR_EN_SHOPNUTS,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Shopnuts_InitVars = {
     (ActorFunc)EnShopnuts_Update,
     (ActorFunc)EnShopnuts_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnShopnuts_Init.o")
 

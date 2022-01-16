@@ -10,7 +10,6 @@ void EnAttackNiw_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Attack_Niw.data.o")
 
-/*
 ActorInit En_Attack_Niw_InitVars = {
     ACTOR_EN_ATTACK_NIW,
     ACTORCAT_ENEMY,
@@ -22,7 +21,6 @@ ActorInit En_Attack_Niw_InitVars = {
     (ActorFunc)EnAttackNiw_Update,
     (ActorFunc)EnAttackNiw_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnAttackNiw_Init.o")
 

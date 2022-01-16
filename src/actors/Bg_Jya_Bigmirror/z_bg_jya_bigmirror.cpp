@@ -10,7 +10,6 @@ void BgJyaBigmirror_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Bigmirror.data.o")
 
-/*
 ActorInit Bg_Jya_Bigmirror_InitVars = {
     ACTOR_BG_JYA_BIGMIRROR,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Bigmirror_InitVars = {
     (ActorFunc)BgJyaBigmirror_Update,
     (ActorFunc)BgJyaBigmirror_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaBigmirror_Init.o")
 

@@ -10,7 +10,6 @@ void BgMizuMovebg_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Mizu_Movebg.data.o")
 
-/*
 ActorInit Bg_Mizu_Movebg_InitVars = {
     ACTOR_BG_MIZU_MOVEBG,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Mizu_Movebg_InitVars = {
     (ActorFunc)BgMizuMovebg_Update,
     (ActorFunc)BgMizuMovebg_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgMizuMovebg_Init.o")
 

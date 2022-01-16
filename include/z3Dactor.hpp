@@ -217,6 +217,7 @@ typedef struct {
     /* 0x221C */ float  xzSpeed; //probably
     /* 0x2220 */ char   unk_2220[0x0007];
     /* 0x2227 */ u8     isg;
+    /* 0x2228 */ char   unk_2228[0x0824];
 } Player; //total size (from init vars): 2A4C
 
 typedef enum {

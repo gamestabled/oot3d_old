@@ -10,7 +10,6 @@ void BgHakaGate_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Haka_Gate.data.o")
 
-/*
 ActorInit Bg_Haka_Gate_InitVars = {
     ACTOR_BG_HAKA_GATE,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Haka_Gate_InitVars = {
     (ActorFunc)BgHakaGate_Update,
     (ActorFunc)BgHakaGate_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHakaGate_Init.o")
 

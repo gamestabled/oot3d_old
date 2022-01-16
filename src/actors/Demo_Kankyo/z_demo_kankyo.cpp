@@ -10,7 +10,6 @@ void DemoKankyo_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Demo_Kankyo.data.o")
 
-/*
 ActorInit Demo_Kankyo_InitVars = {
     ACTOR_DEMO_KANKYO,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Demo_Kankyo_InitVars = {
     (ActorFunc)DemoKankyo_Update,
     (ActorFunc)DemoKankyo_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/DemoKankyo_Init.o")
 

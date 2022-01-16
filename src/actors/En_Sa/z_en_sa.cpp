@@ -10,7 +10,6 @@ void EnSa_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Sa.data.o")
 
-/*
 ActorInit En_Sa_InitVars = {
     ACTOR_EN_SA,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Sa_InitVars = {
     (ActorFunc)EnSa_Update,
     (ActorFunc)EnSa_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnSa_Init.o")
 

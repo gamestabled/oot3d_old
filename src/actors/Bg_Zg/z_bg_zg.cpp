@@ -10,7 +10,6 @@ void BgZg_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Zg.data.o")
 
-/*
 ActorInit Bg_Zg_InitVars = {
     ACTOR_BG_ZG,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit Bg_Zg_InitVars = {
     (ActorFunc)BgZg_Update,
     (ActorFunc)BgZg_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgZg_Init.o")
 

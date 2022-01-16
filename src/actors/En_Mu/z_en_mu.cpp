@@ -10,7 +10,6 @@ void EnMu_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Mu.data.o")
 
-/*
 ActorInit En_Mu_InitVars = {
     ACTOR_EN_MU,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Mu_InitVars = {
     (ActorFunc)EnMu_Update,
     (ActorFunc)EnMu_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnMu_Init.o")
 

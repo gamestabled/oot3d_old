@@ -10,7 +10,6 @@ void EnDivingGame_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Diving_Game.data.o")
 
-/*
 ActorInit En_Diving_Game_InitVars = {
     ACTOR_EN_DIVING_GAME,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Diving_Game_InitVars = {
     (ActorFunc)EnDivingGame_Update,
     (ActorFunc)EnDivingGame_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnDivingGame_Init.o")
 

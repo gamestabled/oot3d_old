@@ -10,7 +10,6 @@ void BgSpot16Bombstone_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Spot16_Bombstone.data.o")
 
-/*
 ActorInit Bg_Spot16_Bombstone_InitVars = {
     ACTOR_BG_SPOT16_BOMBSTONE,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Spot16_Bombstone_InitVars = {
     (ActorFunc)BgSpot16Bombstone_Update,
     (ActorFunc)BgSpot16Bombstone_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSpot16Bombstone_Init.o")
 

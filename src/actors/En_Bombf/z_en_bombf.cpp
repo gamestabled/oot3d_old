@@ -10,7 +10,6 @@ void EnBombf_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Bombf.data.o")
 
-/*
 ActorInit En_Bombf_InitVars = {
     ACTOR_EN_BOMBF,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit En_Bombf_InitVars = {
     (ActorFunc)EnBombf_Update,
     (ActorFunc)EnBombf_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnBombf_Init.o")
 

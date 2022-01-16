@@ -10,7 +10,6 @@ void BgJyaBlock_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Jya_Block.data.o")
 
-/*
 ActorInit Bg_Jya_Block_InitVars = {
     ACTOR_BG_JYA_BLOCK,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Jya_Block_InitVars = {
     (ActorFunc)BgJyaBlock_Update,
     (ActorFunc)BgJyaBlock_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgJyaBlock_Init.o")
 

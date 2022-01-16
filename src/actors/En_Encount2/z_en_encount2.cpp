@@ -8,9 +8,6 @@ void EnEncount2_Destroy(Actor* actor, GameState* state);
 void EnEncount2_Update(Actor* actor, GameState* state);
 void EnEncount2_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Encount2.data.o")
-
-/*
 ActorInit En_Encount2_InitVars = {
     ACTOR_EN_ENCOUNT2,
     ACTORCAT_ENEMY,
@@ -22,7 +19,6 @@ ActorInit En_Encount2_InitVars = {
     (ActorFunc)EnEncount2_Update,
     (ActorFunc)EnEncount2_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnEncount2_Init.o")
 

@@ -10,7 +10,6 @@ void BgHidanKowarerukabe_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Hidan_Kowarerukabe.data.o")
 
-/*
 ActorInit Bg_Hidan_Kowarerukabe_InitVars = {
     ACTOR_BG_HIDAN_KOWARERUKABE,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Hidan_Kowarerukabe_InitVars = {
     (ActorFunc)BgHidanKowarerukabe_Update,
     (ActorFunc)BgHidanKowarerukabe_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgHidanKowarerukabe_Init.o")
 

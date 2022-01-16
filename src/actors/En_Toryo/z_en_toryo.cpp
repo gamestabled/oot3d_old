@@ -10,7 +10,6 @@ void EnToryo_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Toryo.data.o")
 
-/*
 ActorInit En_Toryo_InitVars = {
     ACTOR_EN_TORYO,
     ACTORCAT_NPC,
@@ -22,7 +21,6 @@ ActorInit En_Toryo_InitVars = {
     (ActorFunc)EnToryo_Update,
     (ActorFunc)EnToryo_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnToryo_Init.o")
 

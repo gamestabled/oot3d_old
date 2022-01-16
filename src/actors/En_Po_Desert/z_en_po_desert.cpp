@@ -10,7 +10,6 @@ void EnPoDesert_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Po_Desert.data.o")
 
-/*
 ActorInit En_Po_Desert_InitVars = {
     ACTOR_EN_PO_DESERT,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit En_Po_Desert_InitVars = {
     (ActorFunc)EnPoDesert_Update,
     (ActorFunc)EnPoDesert_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnPoDesert_Init.o")
 

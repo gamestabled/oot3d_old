@@ -10,7 +10,6 @@ void BgSstFloor_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Sst_Floor.data.o")
 
-/*
 ActorInit Bg_Sst_Floor_InitVars = {
     ACTOR_BG_SST_FLOOR,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Sst_Floor_InitVars = {
     (ActorFunc)BgSstFloor_Update,
     (ActorFunc)BgSstFloor_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgSstFloor_Init.o")
 

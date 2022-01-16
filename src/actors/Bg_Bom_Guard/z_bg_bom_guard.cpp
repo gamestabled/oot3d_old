@@ -9,7 +9,6 @@ void BgBomGuard_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Bom_Guard.data.o")
 
-/*
 ActorInit Bg_Bom_Guard_InitVars = {
     ACTOR_BG_BOM_GUARD,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit Bg_Bom_Guard_InitVars = {
     (ActorFunc)BgBomGuard_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/BgBomGuard_Init.o")
 

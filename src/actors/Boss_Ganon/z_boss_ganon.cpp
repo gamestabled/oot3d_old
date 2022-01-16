@@ -10,7 +10,6 @@ void BossGanon_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Boss_Ganon.data.o")
 
-/*
 ActorInit Boss_Ganon_InitVars = {
     ACTOR_BOSS_GANON,
     ACTORCAT_BOSS,
@@ -22,7 +21,6 @@ ActorInit Boss_Ganon_InitVars = {
     (ActorFunc)BossGanon_Update,
     (ActorFunc)BossGanon_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BossGanon_Init.o")
 

@@ -10,7 +10,6 @@ void BgMenkuriEye_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Menkuri_Eye.data.o")
 
-/*
 ActorInit Bg_Menkuri_Eye_InitVars = {
     ACTOR_BG_MENKURI_EYE,
     ACTORCAT_BG,
@@ -22,7 +21,6 @@ ActorInit Bg_Menkuri_Eye_InitVars = {
     (ActorFunc)BgMenkuriEye_Update,
     (ActorFunc)BgMenkuriEye_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgMenkuriEye_Init.o")
 

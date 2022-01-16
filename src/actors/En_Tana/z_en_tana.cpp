@@ -9,7 +9,6 @@ void EnTana_Update(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Tana.data.o")
 
-/*
 ActorInit En_Tana_InitVars = {
     ACTOR_EN_TANA,
     ACTORCAT_PROP,
@@ -21,7 +20,6 @@ ActorInit En_Tana_InitVars = {
     (ActorFunc)EnTana_Update,
     NULL,
 };
-*/
 
 GLOBAL_ASM("binary/EnTana_Init.o")
 

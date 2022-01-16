@@ -10,7 +10,6 @@ void BgYdanMaruta_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Bg_Ydan_Maruta.data.o")
 
-/*
 ActorInit Bg_Ydan_Maruta_InitVars = {
     ACTOR_BG_YDAN_MARUTA,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Bg_Ydan_Maruta_InitVars = {
     (ActorFunc)BgYdanMaruta_Update,
     (ActorFunc)BgYdanMaruta_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/BgYdanMaruta_Init.o")
 

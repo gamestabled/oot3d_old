@@ -10,7 +10,6 @@ void ObjMakeoshihiki_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_Obj_Makeoshihiki.data.o")
 
-/*
 ActorInit Obj_Makeoshihiki_InitVars = {
     ACTOR_OBJ_MAKEOSHIHIKI,
     ACTORCAT_PROP,
@@ -22,7 +21,6 @@ ActorInit Obj_Makeoshihiki_InitVars = {
     (ActorFunc)Actor_Noop,
     (ActorFunc)ObjMakeoshihiki_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/ObjMakeoshihiki_Init.o")
 

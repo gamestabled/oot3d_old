@@ -10,7 +10,6 @@ void EnIk_Draw(Actor* actor, GameState* state);
 
 GLOBAL_ASM("binary/z_En_Ik.data.o")
 
-/*
 ActorInit En_Ik_InitVars = {
     ACTOR_EN_IK,
     ACTORCAT_BOSS,
@@ -22,7 +21,6 @@ ActorInit En_Ik_InitVars = {
     (ActorFunc)EnIk_Update,
     (ActorFunc)EnIk_Draw,
 };
-*/
 
 GLOBAL_ASM("binary/EnIk_Init.o")
 
