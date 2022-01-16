@@ -20,11 +20,15 @@ ActorInit En_Clear_Tag_InitVars = {
     (ActorFunc)EnClearTag_Draw,
 };
 
-GLOBAL_ASM("binary/EnClearTag_Init.o")
+void EnClearTag_Init(Actor* actor, GameState* state) {
+}
 
-GLOBAL_ASM("binary/EnClearTag_Destroy.o")
+void EnClearTag_Destroy(Actor* actor, GameState* state) {
+}
 
-GLOBAL_ASM("binary/EnClearTag_Update.o")
+void EnClearTag_Update(Actor* actor, GameState* state) {
+}
 
-GLOBAL_ASM("binary/EnClearTag_Draw.o")
+void EnClearTag_Draw(Actor* actor, GameState* state) {
+}
 }
