@@ -21,7 +21,7 @@
 typedef struct GraphicsContext GraphicsContext; //TODO
 
 typedef struct {
-    /* 0x00 */ void* colHeader; //TODO: CollisionHeader* struct
+    /* 0x00 */ CollisionHeader* colHeader;
     /* 0x04 */ char             unk_04[0x4C];
 } StaticCollisionContext; // size = 0x50
 

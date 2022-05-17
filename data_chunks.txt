@@ -83,7 +83,6 @@ z_Bg_Spot00_Break.data,00513584,00513594
 z_Bg_Spot00_Hanebasi.data,005135B4,005135C8
 z_Bg_Spot01_Fusya.data,005135E8,005135F8
 z_Bg_Spot01_Idohashira.data,00513618,00513634
-z_Bg_Spot01_Idomizu.data,00513654,00513658
 z_Bg_Spot01_Idosoko.data,00513678,0051367C
 z_Bg_Spot01_Objects2.data,0051369C,005136AC
 z_Bg_Spot02_Objects.data,005136CC,005136D4

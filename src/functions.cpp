@@ -14036,8 +14036,6 @@ GLOBAL_ASM("binary/FUN_003e8738.o")
 
 GLOBAL_ASM("binary/FUN_003e87dc.o")
 
-GLOBAL_ASM("binary/FUN_003e8ab8.o")
-
 GLOBAL_ASM("binary/BgSpot01Idosoko_DoNothing.o")
 
 GLOBAL_ASM("binary/FUN_003e8b60.o")
