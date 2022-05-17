@@ -1,11 +1,15 @@
 #pragma once
 
-class CollisionHeader {
-public:
-    CollisionHeader(void* arg1) : unk_00(arg1) {
-    }
-    static void SetUnk00(void* arg1, CollisionHeader* col);
+#include "z3Dvec.hpp"
 
-private:
-    void* unk_00;
-};
+typedef struct {
+    /* 0x00 */ char unk_00[0x2];
+    /* 0x02 */ s16 ySurface;
+} WaterBox;
+
+typedef struct {
+    /* 0x00 */ char unk_00[0x28];
+    /* 0x28 */ WaterBox* waterBoxes;
+} CollisionHeader;
+
+void ReadCollisionHeaderFromZsi(void* arg1, CollisionHeader** col);

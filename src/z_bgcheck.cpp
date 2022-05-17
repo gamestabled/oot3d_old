@@ -1,3 +1,4 @@
+extern "C" {
 #include "z3Dbgcheck.hpp"
 
 /**
@@ -5,6 +6,7 @@
  * If you change this function, you MUST compile with NON_MATCHING set, or your
  * changes will not be reflected throughout the codebase!
  */
-void CollisionHeader::SetUnk00(void* arg1, CollisionHeader* col) {
-    col->unk_00 = arg1;
+void ReadCollisionHeaderFromZsi(void* arg1, CollisionHeader** col) {
+    *col = (CollisionHeader*) arg1;
+}
 }

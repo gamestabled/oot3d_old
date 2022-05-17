@@ -11977,7 +11977,6 @@ SECTIONS
 		*(actors/Bg_Spot01_Idohashira/z_bg_spot01_idohashira.data)
 		*(ASM_z_Bg_Spot01_Idohashira.data)
 		*(actors/Bg_Spot01_Idomizu/z_bg_spot01_idomizu.data)
-		*(ASM_z_Bg_Spot01_Idomizu.data)
 		*(actors/Bg_Spot01_Idosoko/z_bg_spot01_idosoko.data)
 		*(ASM_z_Bg_Spot01_Idosoko.data)
 		*(actors/Bg_Spot01_Objects2/z_bg_spot01_objects2.data)
@@ -12681,7 +12680,7 @@ SECTIONS
 
 
 		/* INLINES THAT HAVENT FOUND THEIR HOME YET */
-		*(i._ZN15CollisionHeader8SetUnk00EPvPS_)
+		*(i.ReadCollisionHeaderFromZsi)
 		*(i.__cxa_guard_release)
 		*(i.GraphicsContext_UnknownStub)
 	}

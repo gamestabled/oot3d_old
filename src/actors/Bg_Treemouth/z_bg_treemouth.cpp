@@ -43,13 +43,13 @@ static void BgTreemouth_SetupAction(BgTreemouth* self, BgTreemouthActionFunc act
 void BgTreemouth_Init(Actor* actor, GameState* state) {
     BgTreemouth* self = (BgTreemouth*)actor;
     GlobalContext* globalCtx = (GlobalContext*)state;
-    CollisionHeader colHeader(0);
+    CollisionHeader* colHeader = NULL;
 
     Actor_ProcessInitChain(actor, sInitChain);
     self->dyna.actor.unk_19A = 1;
     FUN_00372f38(&self->dyna.actor, globalCtx, &self->skelAnimModel, 2, 0);
     DynaPolyActor_Init(&self->dyna, DPM_UNK);
-    CollisionHeader::SetUnk00(globalCtx->GetObjectStatus(self->dyna.actor.objBankIndex)->zarInfo.FUN_003532c0(0),
+    ReadCollisionHeaderFromZsi(globalCtx->GetObjectStatus(self->dyna.actor.objBankIndex)->zarInfo.FUN_003532c0(0),
                               &colHeader);
     self->dyna.bgId = DynaPoly_SetBgActor(globalCtx, &globalCtx->colCtx.dyna, actor, colHeader);
     ActorShape_Init(&actor->shape, 0.0f, NULL, 0.0f);

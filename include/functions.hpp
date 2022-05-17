@@ -128,7 +128,7 @@ void FUN_00372244(void* arg0, s16 arg1, u32 sfxId);
 s32 GiveItem(Actor* actor, GlobalContext* globalCtx, s32 getItemId, f32 xyRange, f32 yRange);
 void DynaPolyActor_Init(DynaPolyActor* dynaActor, s32 flags);
 ZARInfo* FUN_003532c0(ZARInfo* zarInfo, s32 arg1);
-s32 DynaPoly_SetBgActor(GlobalContext* globalCtx, DynaCollisionContext* dyna, Actor* actor, CollisionHeader colHeader);
+s32 DynaPoly_SetBgActor(GlobalContext* globalCtx, DynaCollisionContext* dyna, Actor* actor, CollisionHeader* colHeader);
 void DynaPoly_DeleteBgActor(GlobalContext* globalCtx, DynaCollisionContext* dyna, s32 bgId);
 
 void FUN_003695cc(SkeletonAnimationModel* skelAnimModel, s32 arg1, s32 arg2, s32 arg3, f32 arg4, f32 arg5, f32 arg6,

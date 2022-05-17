@@ -4398,8 +4398,6 @@ BgSpot00Break_Draw,002ac62c,002ac6b4
 BgSpot00Break_Update,002ac6b4,002ac6b8
 BgSpot01Fusya_Draw,002ac6b8,002ac6fc
 BgSpot01Fusya_Update,002ac6fc,002ac704
-BgSpot01Idomizu_Init,002ac704,002ac7bc
-BgSpot01Idomizu_Destroy,002ac7bc,002ac7c8
 BgSpot01Idosoko_Init,002ac7c8,002ac87c
 BgSpot01Idosoko_Destroy,002ac87c,002ac8ac
 BgSpot02Objects_Init,002ac8ac,002acc5c
@@ -7664,8 +7662,6 @@ BgMenkuriKaiten_Draw,00382f78,00382ff0
 BgMenkuriKaiten_Update,00382ff0,0038303c
 BgMenkuriNisekabe_Init,0038303c,00383088
 BgMenkuriNisekabe_Destroy,00383088,00383094
-BgSpot01Idomizu_Draw,00383094,0038310c
-BgSpot01Idomizu_Update,0038310c,00383114
 BgSpot01Idosoko_Draw,00383114,00383158
 BgSpot01Idosoko_Update,00383158,00383160
 BgSpot02Objects_Draw,00383160,003831ac
@@ -8644,7 +8640,6 @@ FUN_003e8674,003e8674,003e870c
 FUN_003e870c,003e870c,003e8738
 FUN_003e8738,003e8738,003e87dc
 FUN_003e87dc,003e87dc,003e8a34
-FUN_003e8ab8,003e8ab8,003e8b5c
 BgSpot01Idosoko_DoNothing,003e8b5c,003e8b60
 FUN_003e8b60,003e8b60,003e8b64
 BgSpot18Shutter_DoNothing,003e8b64,003e8b68
