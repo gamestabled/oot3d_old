@@ -2299,8 +2299,6 @@ EnPeehat_Init,001f7d84,001f80e4
 EnPeehat_Destroy,001f80e4,001f8160
 EnFish_Init,001f8160,001f8424
 EnFish_Destroy,001f8424,001f8444
-EnStream_Init,001f8444,001f84e0
-EnStream_Destroy,001f84e0,001f84ec
 FUN_001f84ec,001f84ec,001f8538
 EnTana_Update,001f8538,001f853c
 EnTorch2_Init,001f853c,001f8764
@@ -2867,8 +2865,6 @@ EnFish_Draw,0022e4e4,0022e520
 EnFish_Update,0022e520,0022ed2c
 EnShopnuts_Init,0022ed2c,0022ef40
 EnShopnuts_Destroy,0022ef40,0022ef64
-EnStream_Draw,0022ef64,0022efd4
-EnStream_Update,0022efd4,0022eff8
 EnTorch2_Draw,0022eff8,0022f0c8
 EnTorch2_Update,0022f0c8,0022fa68
 FUN_0022fa68,0022fa68,0022fd70
@@ -8582,7 +8578,6 @@ EnOkuta_WaitToAppear,003e47cc,003e4890
 BgIngate_DoNothing,003e4890,003e4894
 BossGoma_FloorIdle,003e4894,003e48f8
 FUN_003e48f8,003e48f8,003e4af0
-EnStream_WaitForPlayer,003e4af0,003e4bc4
 FUN_003e4bc4,003e4bc4,003e4d28
 FUN_003e4d28,003e4d28,003e4ea4
 FUN_003e4ea4,003e4ea4,003e4fe8

@@ -12478,7 +12478,6 @@ SECTIONS
 		*(actors/En_Sth/z_en_sth.data)
 		*(ASM_z_En_Sth.data)
 		*(actors/En_Stream/z_en_stream.data)
-		*(ASM_z_En_Stream.data)
 		*(ASM_z_En_Sw.data_0052F258)
 		*(actors/En_Sw/z_en_sw.data)
 		*(ASM_z_En_Sw.data_0052F300)
