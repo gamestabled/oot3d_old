@@ -41,6 +41,7 @@ s16 Math_Atan2S(f32 x, f32 y);
 f32 Math_SinS(s16 angle);
 s32 Math_StepToF(f32* pValue, f32 target, f32 step);
 s16 Math_SmoothStepToS(s16* pValue, s16 target, s16 scale, s16 step, s16 minStep);
+f32 Math_SmoothStepToF(f32* pValue, f32 target, f32 fraction, f32 step, f32 minStep);
 void Math_Vec3f_Copy(Vec3f* dest, Vec3f* src);
 f32 Math_Vec3f_DistXYZ(Vec3f* a, Vec3f* b);
 void Math_Vec3s_ToVec3f(Vec3f* dest, Vec3s* src);
@@ -157,5 +158,6 @@ void Message_ContinueTextbox(GlobalContext* globalCtx, u16 textId);
 void FUN_00371e6c(s16 seconds);
 void Gameplay_ClearCamera(GlobalContext* globalCtx, s16 camId);
 s32 FUN_0036bb28(Actor* actor, GlobalContext* globalCtx, f32 arg2);
+void FUN_0035ae08(Actor* actor, u32 sfxId);
 
 float sqrtf(float arg);

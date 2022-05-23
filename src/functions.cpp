@@ -562,8 +562,6 @@ GLOBAL_ASM("binary/BossGoma_CeilingIdle.o")
 
 GLOBAL_ASM("binary/BossGoma_CeilingMoveToCenter.o")
 
-GLOBAL_ASM("binary/EnStream_SuckPlayer.o")
-
 GLOBAL_ASM("binary/FUN_0011b150.o")
 
 GLOBAL_ASM("binary/EnBili_SpawnedFlyApart.o")
@@ -13919,8 +13917,6 @@ GLOBAL_ASM("binary/BgIngate_DoNothing.o")
 GLOBAL_ASM("binary/BossGoma_FloorIdle.o")
 
 GLOBAL_ASM("binary/FUN_003e48f8.o")
-
-GLOBAL_ASM("binary/EnStream_WaitForPlayer.o")
 
 GLOBAL_ASM("binary/FUN_003e4bc4.o")
 

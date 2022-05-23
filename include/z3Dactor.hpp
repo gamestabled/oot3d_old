@@ -217,7 +217,10 @@ typedef struct {
     /* 0x221C */ float  xzSpeed; //probably
     /* 0x2220 */ char   unk_2220[0x0007];
     /* 0x2227 */ u8     isg;
-    /* 0x2228 */ char   unk_2228[0x0824];
+    /* 0x2228 */ char   unk_2228[0x0074];
+    /* 0x229C */ f32    pushedSpeed; // Pushing player, examples include water currents, floor conveyors, climbing sloped surfaces
+    /* 0x22A0 */ s16    pushedYaw; // Yaw direction of player being pushed
+    /* 0x22A2 */ char   unk_22A2[0x07AA];
 } Player; //total size (from init vars): 2A4C
 
 typedef enum {
