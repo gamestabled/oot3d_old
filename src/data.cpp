@@ -36,6 +36,8 @@ GLOBAL_ASM("binary/data_53CC7C.o")
 
 GLOBAL_ASM("binary/data_5495F4.o")
 
+GLOBAL_ASM("binary/data_54A9BC.o")
+
 f32 FLOAT_0054ac20 __attribute__((section(".data_54ac20"))) = 1.0f;
 s8 DAT_0054ac24 __attribute__((section(".data_54ac24"))) = 0;
 s8 DAT_0054ac25 __attribute__((section(".data_54ac25"))) = 0;
