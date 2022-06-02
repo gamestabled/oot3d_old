@@ -57,20 +57,20 @@ s16 sEffectScales[] = {
 };
 #endif
 
-static void ObjBombiwa_InitCollision(ObjBombiwa* self, GlobalContext* globalCtx) {
-    Collider_InitCylinder(globalCtx, &self->collider);
-    Collider_SetCylinder(globalCtx, &self->collider, &self->actor, &sCylinderInit);
+static void ObjBombiwa_InitCollision(ObjBombiwa* self, PlayState* play) {
+    Collider_InitCylinder(play, &self->collider);
+    Collider_SetCylinder(play, &self->collider, &self->actor, &sCylinderInit);
     Collider_UpdateCylinder(&self->actor, &self->collider);
 }
 
 void ObjBombiwa_Init(Actor* actor, GameState* state) {
     ObjBombiwa* self = (ObjBombiwa*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
     Actor_ProcessInitChain(&self->actor, sInitChain);
-    FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 0, 0);
-    ObjBombiwa_InitCollision(self, globalCtx);
-    if ((Flags_GetSwitch(globalCtx, self->actor.params & 0x3F) != 0)) {
+    FUN_00372f38(&self->actor, play, &self->skelAnimModel, 0, 0);
+    ObjBombiwa_InitCollision(self, play);
+    if ((Flags_GetSwitch(play, self->actor.params & 0x3F) != 0)) {
         Actor_Kill(&self->actor);
     } else {
         CollisionCheck_SetInfo(&self->actor.colChkInfo, NULL, &sColChkInfoInit);
@@ -86,14 +86,14 @@ void ObjBombiwa_Init(Actor* actor, GameState* state) {
 
 void ObjBombiwa_Destroy(Actor* actor, GameState* state) {
     ObjBombiwa* self = (ObjBombiwa*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    Collider_DestroyCylinder(globalCtx, &self->collider);
+    Collider_DestroyCylinder(play, &self->collider);
     FUN_00350f34(&self->actor, &self->skelAnimModel, 0);
 }
 
 #ifdef NON_MATCHING
-static void ObjBombiwa_Break(ObjBombiwa* self, GlobalContext* globalCtx) {
+static void ObjBombiwa_Break(ObjBombiwa* self, PlayState* play) {
     Vec3f pos;
     Vec3f velocity;
     s16 arg5;
@@ -113,22 +113,22 @@ static void ObjBombiwa_Break(ObjBombiwa* self, GlobalContext* globalCtx) {
         } else {
             arg5 = 33;
         }
-        EffectSsKakera_Spawn(globalCtx, &pos, &velocity, &pos, -400, arg5, 10, 2, 0, scale, 1, 0, 80, -1,
+        EffectSsKakera_Spawn(play, &pos, &velocity, &pos, -400, arg5, 10, 2, 0, scale, 1, 0, 80, -1,
                              OBJECT_BOMBIWA, NULL);
     }
-    FUN_0037378c(globalCtx, &self->actor.world.pos, 60.0f, 8, 100, 160, 1);
+    FUN_0037378c(play, &self->actor.world.pos, 60.0f, 8, 100, 160, 1);
 }
 
 void ObjBombiwa_Update(Actor* actor, GameState* state) {
     ObjBombiwa* self = (ObjBombiwa*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
     u8 acFlags = self->collider.base.acFlags;
 
-    if ((FUN_00346d94(globalCtx, &self->actor) != NULL) ||
+    if ((FUN_00346d94(play, &self->actor) != NULL) ||
         ((self->collider.base.acFlags & 0x2) && (self->collider.info.acHitInfo->toucher.dmgFlags & 0x40000040))) {
-        if ((globalCtx->sceneNum == 0x59) && ((actor->params & 0x3F) == 0x16)) {
+        if ((play->sceneNum == 0x59) && ((actor->params & 0x3F) == 0x16)) {
             Actor* otherActor;
-            otherActor = globalCtx->actorCtx.actorList[ACTORCAT_PROP].first;
+            otherActor = play->actorCtx.actorList[ACTORCAT_PROP].first;
             while (otherActor != NULL) {
                 if ((u16)otherActor->params != 0xFF21) {
                     otherActor = otherActor->next;
@@ -140,19 +140,19 @@ void ObjBombiwa_Update(Actor* actor, GameState* state) {
             }
         }
 
-        ObjBombiwa_Break(self, globalCtx);
+        ObjBombiwa_Break(self, play);
 
-        Flags_SetSwitch(globalCtx, self->actor.params & 0x3F);
-        Audio_PlaySoundAtPosition(globalCtx, &self->actor.world.pos, 80, 0x1000167);
+        Flags_SetSwitch(play, self->actor.params & 0x3F);
+        Audio_PlaySoundAtPosition(play, &self->actor.world.pos, 80, 0x1000167);
         if (((self->actor.params >> 0xF) & 1) != 0) {
-            FUN_00372244(&globalCtx->unk_5FCC, 0x1E, 0x1000487);
+            FUN_00372244(&play->unk_5FCC, 0x1E, 0x1000487);
         }
         Actor_Kill(&self->actor);
     } else {
         self->collider.base.acFlags &= ~0x2;
         if (self->actor.xzDistToPlayer < 800.0f) {
-            CollisionCheck_SetAC(globalCtx, &globalCtx->colChkCtx, &self->collider.base);
-            CollisionCheck_SetOC(globalCtx, &globalCtx->colChkCtx, &self->collider.base);
+            CollisionCheck_SetAC(play, &play->colChkCtx, &self->collider.base);
+            CollisionCheck_SetOC(play, &play->colChkCtx, &self->collider.base);
         }
     }
 }

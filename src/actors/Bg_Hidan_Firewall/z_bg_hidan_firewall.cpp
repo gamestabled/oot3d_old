@@ -8,9 +8,9 @@ void BgHidanFirewall_Destroy(Actor* actor, GameState* state);
 void BgHidanFirewall_Update(Actor* actor, GameState* state);
 void BgHidanFirewall_Draw(Actor* actor, GameState* state);
 
-void BgHidanFirewall_Wait(BgHidanFirewall* self, GlobalContext* globalCtx);
-void BgHidanFirewall_Countdown(BgHidanFirewall* self, GlobalContext* globalCtx);
-void BgHidanFirewall_Erupt(BgHidanFirewall* self, GlobalContext* globalCtx);
+void BgHidanFirewall_Wait(BgHidanFirewall* self, PlayState* play);
+void BgHidanFirewall_Countdown(BgHidanFirewall* self, PlayState* play);
+void BgHidanFirewall_Erupt(BgHidanFirewall* self, PlayState* play);
 
 ActorInit Bg_Hidan_Firewall_InitVars = {
     ACTOR_BG_HIDAN_FIREWALL,
@@ -48,7 +48,7 @@ static CollisionCheckInfoInit sColChkInfoInit = { 1, 80, 100, MASS_IMMOVABLE };
 
 void BgHidanFirewall_Init(Actor* actor, GameState* state) {
     BgHidanFirewall* self = (BgHidanFirewall*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
     actor->scale.z = 0.12f;
     actor->scale.x = 0.12f;
@@ -56,12 +56,12 @@ void BgHidanFirewall_Init(Actor* actor, GameState* state) {
 
     self->unk_1A8 = 0;
 
-    Collider_InitCylinder(globalCtx, &self->collider);
-    Collider_SetCylinder(globalCtx, &self->collider, &self->actor, &sCylinderInit);
+    Collider_InitCylinder(play, &self->collider);
+    Collider_SetCylinder(play, &self->collider, &self->actor, &sCylinderInit);
 
     self->collider.dim.pos.y = self->actor.world.pos.y;
 
-    ZARInfo* zarInfo = FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 5, 0);
+    ZARInfo* zarInfo = FUN_00372f38(&self->actor, play, &self->skelAnimModel, 5, 0);
     self->skelAnimModel->unk_0C->FUN_00372d94(zarInfo->GetCMABByIndex(2));
     self->skelAnimModel->unk_0C->SetAnimType(1);
     self->skelAnimModel->unk_0C->SetAnimSpeed(2.0f);
@@ -73,14 +73,14 @@ void BgHidanFirewall_Init(Actor* actor, GameState* state) {
 
 void BgHidanFirewall_Destroy(Actor* actor, GameState* state) {
     BgHidanFirewall* self = (BgHidanFirewall*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    Collider_DestroyCylinder(globalCtx, &self->collider);
+    Collider_DestroyCylinder(play, &self->collider);
     FUN_00350f34(&self->actor, &self->skelAnimModel, 0);
 }
 
-inline s32 BgHidanFirewall_CheckProximity(BgHidanFirewall* self, GlobalContext* globalCtx) {
-    Player* player = GET_PLAYER(globalCtx);
+inline s32 BgHidanFirewall_CheckProximity(BgHidanFirewall* self, PlayState* play) {
+    Player* player = GET_PLAYER(play);
     Vec3f distance;
 
     FUN_0036c5d8(&self->actor, &distance, &player->actor.world.pos);
@@ -91,15 +91,15 @@ inline s32 BgHidanFirewall_CheckProximity(BgHidanFirewall* self, GlobalContext* 
     return 0;
 }
 
-void BgHidanFirewall_Wait(BgHidanFirewall* self, GlobalContext* globalCtx) {
-    if (BgHidanFirewall_CheckProximity(self, globalCtx) != 0) {
+void BgHidanFirewall_Wait(BgHidanFirewall* self, PlayState* play) {
+    if (BgHidanFirewall_CheckProximity(self, play) != 0) {
         self->actor.draw = BgHidanFirewall_Draw;
         self->actor.params = 8;
         self->actionFunc = BgHidanFirewall_Countdown;
     }
 }
 
-void BgHidanFirewall_Countdown(BgHidanFirewall* self, GlobalContext* globalCtx) {
+void BgHidanFirewall_Countdown(BgHidanFirewall* self, PlayState* play) {
     if (self->actor.params != 0) {
         self->actor.params--;
     }
@@ -108,8 +108,8 @@ void BgHidanFirewall_Countdown(BgHidanFirewall* self, GlobalContext* globalCtx) 
     }
 }
 
-void BgHidanFirewall_Erupt(BgHidanFirewall* self, GlobalContext* globalCtx) {
-    if (BgHidanFirewall_CheckProximity(self, globalCtx) != 0) {
+void BgHidanFirewall_Erupt(BgHidanFirewall* self, PlayState* play) {
+    if (BgHidanFirewall_CheckProximity(self, play) != 0) {
         Math_StepToF(&self->actor.scale.y, 0.1f, 0.01f / 0.4f);
     } else {
         if (Math_StepToF(&self->actor.scale.y, 0.01f, 0.01f) != 0) {
@@ -122,7 +122,7 @@ void BgHidanFirewall_Erupt(BgHidanFirewall* self, GlobalContext* globalCtx) {
 }
 
 #ifdef NON_MATCHING
-void BgHidanFirewall_Collide(BgHidanFirewall* self, GlobalContext* globalCtx) {
+void BgHidanFirewall_Collide(BgHidanFirewall* self, PlayState* play) {
     s16 phi_a3;
 
     if (Actor_IsFacingPlayer(&self->actor, 0x4000)) {
@@ -131,15 +131,15 @@ void BgHidanFirewall_Collide(BgHidanFirewall* self, GlobalContext* globalCtx) {
         phi_a3 = self->actor.shape.rot.y + 0x8000;
     }
 
-    FUN_00374bb8(globalCtx, &self->actor, 5.0f, phi_a3, 1.0f);
+    FUN_00374bb8(play, &self->actor, 5.0f, phi_a3, 1.0f);
 }
 
-void BgHidanFirewall_ColliderFollowPlayer(BgHidanFirewall* self, GlobalContext* globalCtx) {
+void BgHidanFirewall_ColliderFollowPlayer(BgHidanFirewall* self, PlayState* play) {
     Player* player;
     Vec3f sp30;
     f32 phi_f0;
 
-    player = GET_PLAYER(globalCtx);
+    player = GET_PLAYER(play);
 
     FUN_0036c5d8(&self->actor, &sp30, &player->actor.world.pos);
     if (sp30.x < -70.0f) {
@@ -173,20 +173,20 @@ void BgHidanFirewall_ColliderFollowPlayer(BgHidanFirewall* self, GlobalContext* 
 
 void BgHidanFirewall_Update(Actor* actor, GameState* state) {
     BgHidanFirewall* self = (BgHidanFirewall*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
     self->unk_1A8 = (self->unk_1A8 + 1) % 8;
 
     if (self->collider.base.atFlags & AT_HIT) {
         self->collider.base.atFlags &= ~AT_HIT;
-        BgHidanFirewall_Collide(self, globalCtx);
+        BgHidanFirewall_Collide(self, play);
     }
 
-    self->actionFunc(self, globalCtx);
+    self->actionFunc(self, play);
     if (self->actionFunc == BgHidanFirewall_Erupt) {
-        BgHidanFirewall_ColliderFollowPlayer(self, globalCtx);
-        CollisionCheck_SetAT(globalCtx, &globalCtx->colChkCtx, &self->collider.base);
-        CollisionCheck_SetOC(globalCtx, &globalCtx->colChkCtx, &self->collider.base);
+        BgHidanFirewall_ColliderFollowPlayer(self, play);
+        CollisionCheck_SetAT(play, &play->colChkCtx, &self->collider.base);
+        CollisionCheck_SetOC(play, &play->colChkCtx, &self->collider.base);
         FUN_00373264(&self->actor, 0x100018B);
     }
 }

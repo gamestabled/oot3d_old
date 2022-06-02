@@ -7,7 +7,7 @@ typedef struct SkelAnime {
     /* 0x00 */ void* unk_00;
     /* 0x04 */ struct ZARInfo* zarInfo;
     /* 0x08 */ char unk_08[0x08];
-    /* 0x10 */ struct GlobalContext* globalCtx;
+    /* 0x10 */ struct PlayState* play;
     /* 0x14 */ char unk_14[0x14];
     /* 0x28 */ struct SkeletonAnimationModel* unk_28;
     /* 0x2C */ char unk_2C[0x4];
@@ -51,8 +51,8 @@ typedef struct {
     /* 0x14 */ f32              transitionRate;
 } struct_80034EC0_Entry; // size = 0x18
 
-typedef s32 (*OverrideLimbDrawOpa)(struct GlobalContext* globalCtx, s32 limbIndex, MTX34* mtx, void*);
+typedef s32 (*OverrideLimbDrawOpa)(struct PlayState* play, s32 limbIndex, MTX34* mtx, void*);
 
-typedef void (*PostLimbDrawOpa)(struct GlobalContext* globalCtx, s32 limbIndex, MTX34* mtx, void*);
+typedef void (*PostLimbDrawOpa)(struct PlayState* play, s32 limbIndex, MTX34* mtx, void*);
 
 #endif

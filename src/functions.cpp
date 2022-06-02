@@ -19378,7 +19378,7 @@ GLOBAL_ASM("binary/FUN_0049f28c.o")
 
 GLOBAL_ASM("binary/FUN_0049f2e0.o")
 
-GLOBAL_ASM("binary/GlobalContext_GetActiveCamId.o")
+GLOBAL_ASM("binary/PlayState_GetActiveCamId.o")
 
 GLOBAL_ASM("binary/FUN_0049f3a0.o")
 

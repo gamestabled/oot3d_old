@@ -8,7 +8,7 @@ void EnOE2_Destroy(Actor* actor, GameState* state);
 void EnOE2_Update(Actor* actor, GameState* state);
 void EnOE2_Draw(Actor* actor, GameState* state);
 
-void EnOE2_DoNothing(EnOE2* self, GlobalContext* globalCtx);
+void EnOE2_DoNothing(EnOE2* self, PlayState* play);
 
 ActorInit En_OE2_InitVars = {
     ACTOR_EN_OE2,
@@ -35,7 +35,7 @@ void EnOE2_Init(Actor* actor, GameState* state) {
 void EnOE2_Destroy(Actor* actor, GameState* state) {
 }
 
-void EnOE2_DoNothing(EnOE2* self, GlobalContext* globalCtx) {
+void EnOE2_DoNothing(EnOE2* self, PlayState* play) {
 }
 
 void EnOE2_Update(Actor* actor, GameState* state) {

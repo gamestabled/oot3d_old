@@ -8,13 +8,13 @@ void EnKz_Destroy(Actor* actor, GameState* state);
 void EnKz_Update(Actor* actor, GameState* state);
 void EnKz_Draw(Actor* actor, GameState* state);
 
-void EnKz_PreMweepWait(EnKz* self, GlobalContext* globalCtx);
-void EnKz_SetupMweep(EnKz* self, GlobalContext* globalCtx);
-void EnKz_Mweep(EnKz* self, GlobalContext* globalCtx);
-void EnKz_StopMweep(EnKz* self, GlobalContext* globalCtx);
-void EnKz_Wait(EnKz* self, GlobalContext* globalCtx);
-void EnKz_SetupGetItem(EnKz* self, GlobalContext* globalCtx);
-void EnKz_StartTimer(EnKz* self, GlobalContext* globalCtx);
+void EnKz_PreMweepWait(EnKz* self, PlayState* play);
+void EnKz_SetupMweep(EnKz* self, PlayState* play);
+void EnKz_Mweep(EnKz* self, PlayState* play);
+void EnKz_StopMweep(EnKz* self, PlayState* play);
+void EnKz_Wait(EnKz* self, PlayState* play);
+void EnKz_SetupGetItem(EnKz* self, PlayState* play);
+void EnKz_StartTimer(EnKz* self, PlayState* play);
 
 ActorInit En_Kz_InitVars = {
     ACTOR_EN_KZ,
@@ -56,8 +56,8 @@ static struct_80034EC0_Entry sAnimations[] = {
     { 0, 1.0f, 0.0f, -1.0f, 0, -10.0f },
 };
 
-static u16 EnKz_GetTextNoMaskChild(GlobalContext* globalCtx, EnKz* self) {
-    Player* player = GET_PLAYER(globalCtx);
+static u16 EnKz_GetTextNoMaskChild(PlayState* play, EnKz* self) {
+    Player* player = GET_PLAYER(play);
 
     if (CHECK_QUEST_ITEM(QUEST_ZORA_SAPPHIRE)) {
         return 0x402B;
@@ -69,8 +69,8 @@ static u16 EnKz_GetTextNoMaskChild(GlobalContext* globalCtx, EnKz* self) {
     }
 }
 
-static u16 EnKz_GetTextNoMaskAdult(GlobalContext* globalCtx, EnKz* self) {
-    Player* player = GET_PLAYER(globalCtx);
+static u16 EnKz_GetTextNoMaskAdult(PlayState* play, EnKz* self) {
+    Player* player = GET_PLAYER(play);
 
     if (INV_CONTENT(ITEM_TRADE_ADULT) >= ITEM_FROG) {
         if (!(gSaveContext.infTable[19] & 0x200)) {
@@ -90,27 +90,27 @@ static u16 EnKz_GetTextNoMaskAdult(GlobalContext* globalCtx, EnKz* self) {
     }
 }
 
-u16 EnKz_GetText(GlobalContext* globalCtx, Actor* actor) {
+u16 EnKz_GetText(PlayState* play, Actor* actor) {
     EnKz* self = (EnKz*)actor;
 
-    u16 reactionText = Text_GetFaceReaction(globalCtx, 0x1E);
+    u16 reactionText = Text_GetFaceReaction(play, 0x1E);
 
     if (reactionText != 0) {
         return reactionText;
     }
 
     if (LINK_IS_ADULT) {
-        return EnKz_GetTextNoMaskAdult(globalCtx, self);
+        return EnKz_GetTextNoMaskAdult(play, self);
     } else {
-        return EnKz_GetTextNoMaskChild(globalCtx, self);
+        return EnKz_GetTextNoMaskChild(play, self);
     }
 }
 
-s16 FUN_00173370(GlobalContext* globalCtx, Actor* actor) {
+s16 FUN_00173370(PlayState* play, Actor* actor) {
     EnKz* self = (EnKz*)actor;
     s16 ret = 1;
 
-    switch (Message_GetState(&globalCtx->msgCtx)) {
+    switch (Message_GetState(&play->msgCtx)) {
         case TEXT_STATE_DONE:
             ret = 0;
             switch (self->actor.textId) {
@@ -125,7 +125,7 @@ s16 FUN_00173370(GlobalContext* globalCtx, Actor* actor) {
                     f32 xzRange;
                     f32 yRange;
 
-                    if (Actor_HasParent(&self->actor, globalCtx)) {
+                    if (Actor_HasParent(&self->actor, play)) {
                         self->actor.parent = NULL;
                         self->unk_D14 = 1;
                         self->actionFunc = EnKz_StartTimer;
@@ -134,14 +134,14 @@ s16 FUN_00173370(GlobalContext* globalCtx, Actor* actor) {
                         yRange = __fabsf(self->actor.yDistToPlayer) + 1.0f;
                         xzRange = self->actor.xzDistToPlayer + 1.0f;
                         self->unk_F4C = getItemId;
-                        GiveItem(&self->actor, globalCtx, getItemId, xzRange, yRange);
+                        GiveItem(&self->actor, play, getItemId, xzRange, yRange);
                     }
 
                     ret = 2;
                     break;
                 }
                 case 0x401B:
-                    if (!Message_ShouldAdvance(globalCtx)) {
+                    if (!Message_ShouldAdvance(play)) {
                         ret = 1;
                     } else {
                         ret = 2;
@@ -157,36 +157,36 @@ s16 FUN_00173370(GlobalContext* globalCtx, Actor* actor) {
             switch (self->actor.textId) {
                 case 0x4014:
                     if (!self->sfxPlayed) {
-                        FUN_00372244(&globalCtx->unk_5FCC, 0x1E, 0x100048C);
+                        FUN_00372244(&play->unk_5FCC, 0x1E, 0x100048C);
                         self->sfxPlayed = true;
                     }
                     break;
                 case 0x401B:
                     if (!self->sfxPlayed) {
-                        FUN_00372244(&globalCtx->unk_5FCC, 0x1E, 0x1000487);
+                        FUN_00372244(&play->unk_5FCC, 0x1E, 0x1000487);
                         self->sfxPlayed = true;
                     }
                     break;
             }
             break;
         case TEXT_STATE_CHOICE:
-            if (!Message_ShouldAdvance(globalCtx)) {
+            if (!Message_ShouldAdvance(play)) {
                 break;
             }
             switch (self->actor.textId) {
                 case 0x4014:
-                    if (FUN_00369f3c(globalCtx) == 0) {
-                        EnKz_SetupGetItem(self, globalCtx);
+                    if (FUN_00369f3c(play) == 0) {
+                        EnKz_SetupGetItem(self, play);
                         ret = 2;
                     } else {
                         self->actor.textId = 0x4016;
-                        Message_ContinueTextbox(globalCtx, self->actor.textId);
+                        Message_ContinueTextbox(play, self->actor.textId);
                     }
                     break;
             }
             break;
         case TEXT_STATE_EVENT:
-            if (!Message_ShouldAdvance(globalCtx)) {
+            if (!Message_ShouldAdvance(play)) {
                 break;
             }
             ret = 2;
@@ -202,7 +202,7 @@ s16 FUN_00173370(GlobalContext* globalCtx, Actor* actor) {
     return ret;
 }
 
-static s32 EnKz_FollowPath(EnKz* self, GlobalContext* globalCtx) {
+static s32 EnKz_FollowPath(EnKz* self, PlayState* play) {
     Path* path;
     Vec3s* pointPos;
     f32 pathDiffX;
@@ -212,7 +212,7 @@ static s32 EnKz_FollowPath(EnKz* self, GlobalContext* globalCtx) {
         return 0;
     }
 
-    path = &globalCtx->setupPathList[(self->actor.params & 0xFF00) >> 8];
+    path = &play->setupPathList[(self->actor.params & 0xFF00) >> 8];
     pointPos = path->points;
     pointPos += self->waypoint;
 
@@ -231,11 +231,11 @@ static s32 EnKz_FollowPath(EnKz* self, GlobalContext* globalCtx) {
     return 0;
 }
 
-static void EnKz_SetMovedPos(EnKz* self, GlobalContext* globalCtx) {
+static void EnKz_SetMovedPos(EnKz* self, PlayState* play) {
 
     if ((self->actor.params & 0xFF00) != 0xFF00) {
         Actor* actor = &self->actor;
-        Path* path = &globalCtx->setupPathList[(self->actor.params & 0xFF00) >> 8];
+        Path* path = &play->setupPathList[(self->actor.params & 0xFF00) >> 8];
         Vec3s* lastPointPos = path->points;
         lastPointPos += path->count - 1;
 
@@ -247,14 +247,14 @@ static void EnKz_SetMovedPos(EnKz* self, GlobalContext* globalCtx) {
 
 void EnKz_Init(Actor* actor, GameState* state) {
     EnKz* self = (EnKz*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 0, 0);
-    FUN_00353c9c(&self->actor, globalCtx, &self->skelAnime, 0, 1, self->jointTable, self->morphTable, 26);
+    FUN_00372f38(&self->actor, play, &self->skelAnimModel, 0, 0);
+    FUN_00353c9c(&self->actor, play, &self->skelAnime, 0, 1, self->jointTable, self->morphTable, 26);
     SkelAnime_SetFaceAnimations(&self->faceAnims, &self->skelAnime, 0, -1, -1);
     ActorShape_Init(&self->actor.shape, 0.0, NULL, 0.0);
-    Collider_InitCylinder(globalCtx, &self->collider);
-    Collider_SetCylinder(globalCtx, &self->collider, &self->actor, &sCylinderInit);
+    Collider_InitCylinder(play, &self->collider);
+    Collider_SetCylinder(play, &self->collider, &self->actor, &sCylinderInit);
     CollisionCheck_SetInfo2(&self->actor.colChkInfo, NULL, &sColChkInfoInit);
     Actor_SetScale(&self->actor, 0.01);
     actor->targetMode = 3;
@@ -264,7 +264,7 @@ void EnKz_Init(Actor* actor, GameState* state) {
     if (gSaveContext.eventChkInf[3] & 8) {
         Actor* actor2 = &self->actor;
         if ((self->actor.params & 0xFF00) != 0xFF00) {
-            Path* path = &globalCtx->setupPathList[(self->actor.params & 0xFF00) >> 8];
+            Path* path = &play->setupPathList[(self->actor.params & 0xFF00) >> 8];
             Vec3s* lastPointPos = path->points;
             lastPointPos += path->count - 1;
 
@@ -276,7 +276,7 @@ void EnKz_Init(Actor* actor, GameState* state) {
 
     if (LINK_IS_ADULT) {
         if (!(gSaveContext.infTable[19] & 0x100)) {
-            Actor_SpawnAsChild(&globalCtx->actorCtx, &self->actor, globalCtx, ACTOR_BG_ICE_SHELTER,
+            Actor_SpawnAsChild(&play->actorCtx, &self->actor, play, ACTOR_BG_ICE_SHELTER,
                                self->actor.world.pos.x, self->actor.world.pos.y, self->actor.world.pos.z, 0, 0, 0,
                                0x04FF);
         }
@@ -288,41 +288,41 @@ void EnKz_Init(Actor* actor, GameState* state) {
 
 void EnKz_Destroy(Actor* actor, GameState* state) {
     EnKz* self = (EnKz*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    Collider_DestroyCylinder(globalCtx, &self->collider);
+    Collider_DestroyCylinder(play, &self->collider);
     FUN_003508b8(&self->actor, self->skelAnimModel, 0);
     SkelAnime_Free2(&self->skelAnime);
     self->faceAnims.Destroy();
 }
 
-void EnKz_PreMweepWait(EnKz* self, GlobalContext* globalCtx) {
+void EnKz_PreMweepWait(EnKz* self, PlayState* play) {
     if (self->unk_D14 == 2) {
         FUN_003717ac(&self->skelAnime, sAnimations, 2);
         self->unk_D14 = 0;
         self->actionFunc = EnKz_SetupMweep;
     } else {
-        FUN_00370f5c(globalCtx, self->unk_D4A, self->unk_D62, 12);
+        FUN_00370f5c(play, self->unk_D4A, self->unk_D62, 12);
     }
 }
 
-void EnKz_SetupMweep(EnKz* self, GlobalContext* globalCtx) {
-    self->cutsceneCamera = Gameplay_CreateSubCamera(globalCtx);
-    self->gameplayCamera = globalCtx->activeCamera;
-    Gameplay_ChangeCameraStatus(globalCtx, self->gameplayCamera, CAM_STAT_WAIT);
-    Gameplay_ChangeCameraStatus(globalCtx, self->cutsceneCamera, CAM_STAT_ACTIVE);
+void EnKz_SetupMweep(EnKz* self, PlayState* play) {
+    self->cutsceneCamera = Gameplay_CreateSubCamera(play);
+    self->gameplayCamera = play->activeCamera;
+    Gameplay_ChangeCameraStatus(play, self->gameplayCamera, CAM_STAT_WAIT);
+    Gameplay_ChangeCameraStatus(play, self->cutsceneCamera, CAM_STAT_ACTIVE);
     Vec3f pos = self->actor.world.pos;
     Vec3f initPos = self->actor.home.pos;
     pos.y += 60.0f;
     initPos.y += -100.0f;
     initPos.z += 260.0f;
-    Gameplay_CameraSetAtEye(globalCtx, self->cutsceneCamera, &pos, &initPos);
-    FUN_0036e980(globalCtx, &self->actor, 8);
+    Gameplay_CameraSetAtEye(play, self->cutsceneCamera, &pos, &initPos);
+    FUN_0036e980(play, &self->actor, 8);
     self->actor.speedXZ = 0.1f;
     self->actionFunc = EnKz_Mweep;
 }
 
-void EnKz_Mweep(EnKz* self, GlobalContext* globalCtx) {
+void EnKz_Mweep(EnKz* self, PlayState* play) {
     f32 zero = 0.0f;
 
     Vec3f pos = self->actor.world.pos;
@@ -330,11 +330,11 @@ void EnKz_Mweep(EnKz* self, GlobalContext* globalCtx) {
     pos.y += 60.0f;
     initPos.y += -100.0f;
     initPos.z += 260.0f;
-    Gameplay_CameraSetAtEye(globalCtx, self->cutsceneCamera, &pos, &initPos);
-    if ((EnKz_FollowPath(self, globalCtx) == 1) && (self->waypoint == 0)) {
+    Gameplay_CameraSetAtEye(play, self->cutsceneCamera, &pos, &initPos);
+    if ((EnKz_FollowPath(self, play) == 1) && (self->waypoint == 0)) {
         FUN_003717ac(&self->skelAnime, sAnimations, 1);
-        Inventory_ReplaceItem(globalCtx, ITEM_LETTER_RUTO, ITEM_BOTTLE);
-        EnKz_SetMovedPos(self, globalCtx);
+        Inventory_ReplaceItem(play, ITEM_LETTER_RUTO, ITEM_BOTTLE);
+        EnKz_SetMovedPos(self, play);
         gSaveContext.eventChkInf[3] |= 8;
         self->actor.speedXZ = zero;
         self->actionFunc = EnKz_StopMweep;
@@ -344,28 +344,28 @@ void EnKz_Mweep(EnKz* self, GlobalContext* globalCtx) {
     }
 }
 
-void EnKz_StopMweep(EnKz* self, GlobalContext* globalCtx) {
-    Gameplay_ChangeCameraStatus(globalCtx, self->gameplayCamera, CAM_STAT_ACTIVE);
-    Gameplay_ClearCamera(globalCtx, self->cutsceneCamera);
-    FUN_0036e980(globalCtx, &self->actor, 7);
+void EnKz_StopMweep(EnKz* self, PlayState* play) {
+    Gameplay_ChangeCameraStatus(play, self->gameplayCamera, CAM_STAT_ACTIVE);
+    Gameplay_ClearCamera(play, self->cutsceneCamera);
+    FUN_0036e980(play, &self->actor, 7);
     self->actionFunc = EnKz_Wait;
 }
 
-void EnKz_Wait(EnKz* self, GlobalContext* globalCtx) {
+void EnKz_Wait(EnKz* self, PlayState* play) {
     if (self->unk_D14 == 2) {
         self->actionFunc = EnKz_SetupGetItem;
-        self->actionFunc(self, globalCtx);
+        self->actionFunc(self, play);
     } else {
-        FUN_00370f5c(globalCtx, self->unk_D4A, self->unk_D62, 12);
+        FUN_00370f5c(play, self->unk_D4A, self->unk_D62, 12);
     }
 }
 
-void EnKz_SetupGetItem(EnKz* self, GlobalContext* globalCtx) {
+void EnKz_SetupGetItem(EnKz* self, PlayState* play) {
     s32 getItemId;
     f32 xzRange;
     f32 yRange;
 
-    if (Actor_HasParent(&self->actor, globalCtx)) {
+    if (Actor_HasParent(&self->actor, play)) {
         self->actor.parent = NULL;
         self->unk_D14 = 1;
         self->actionFunc = EnKz_StartTimer;
@@ -374,12 +374,12 @@ void EnKz_SetupGetItem(EnKz* self, GlobalContext* globalCtx) {
         yRange = __fabsf(self->actor.yDistToPlayer) + 1.0f;
         xzRange = self->actor.xzDistToPlayer + 1.0f;
         self->unk_F4C = getItemId;
-        GiveItem(&self->actor, globalCtx, getItemId, xzRange, yRange);
+        GiveItem(&self->actor, play, getItemId, xzRange, yRange);
     }
 }
 
-void EnKz_StartTimer(EnKz* self, GlobalContext* globalCtx) {
-    if ((Message_GetState(&globalCtx->msgCtx) == TEXT_STATE_DONE) && Message_ShouldAdvance(globalCtx)) {
+void EnKz_StartTimer(EnKz* self, PlayState* play) {
+    if ((Message_GetState(&play->msgCtx) == TEXT_STATE_DONE) && Message_ShouldAdvance(play)) {
         if (INV_CONTENT(ITEM_TRADE_ADULT) == ITEM_FROG) {
             if (self->unk_F4C != GI_TUNIC_ZORA) {
                 FUN_00371e6c(180); // start timer2 with 3 minutes
@@ -404,21 +404,21 @@ void EnKz_UpdateEyes(EnKz* self) {
     }
 }
 
-static s32 func_80A9C95C(GlobalContext* globalCtx, EnKz* self, s16* arg2, f32 unkf, callback1_800343CC callback1,
+static s32 func_80A9C95C(PlayState* play, EnKz* self, s16* arg2, f32 unkf, callback1_800343CC callback1,
                          callback2_800343CC callback2) {
-    Player* player = GET_PLAYER(globalCtx);
+    Player* player = GET_PLAYER(play);
     s16 sp32;
     s16 sp30;
     f32 xzDistToPlayer;
     f32 yaw;
 
-    if (Actor_ProcessTalkRequest(&self->actor, globalCtx)) {
+    if (Actor_ProcessTalkRequest(&self->actor, play)) {
         *arg2 = 1;
         return 1;
     }
 
     if (*arg2 != 0) {
-        *arg2 = callback2(globalCtx, &self->actor);
+        *arg2 = callback2(play, &self->actor);
         return 0;
     }
 
@@ -431,29 +431,29 @@ static s32 func_80A9C95C(GlobalContext* globalCtx, EnKz* self, s16* arg2, f32 un
 
     self->actor.flags |= 1;
 
-    Actor_GetScreenPos(globalCtx, &self->actor, &sp32, &sp30);
+    Actor_GetScreenPos(play, &self->actor, &sp32, &sp30);
     if (!((sp32 >= -30) && (sp32 < 361) && (sp30 >= -10) && (sp30 <= 240))) {
         return 0;
     }
 
     xzDistToPlayer = self->actor.xzDistToPlayer;
     self->actor.xzDistToPlayer = Math_Vec3f_DistXZ(&self->actor.home.pos, &player->actor.world.pos);
-    if (FUN_0036bb28(&self->actor, globalCtx, unkf) == 0) {
+    if (FUN_0036bb28(&self->actor, play, unkf) == 0) {
         self->actor.xzDistToPlayer = xzDistToPlayer;
         return 0;
     }
     self->actor.xzDistToPlayer = xzDistToPlayer;
-    self->actor.textId = callback1(globalCtx, &self->actor);
+    self->actor.textId = callback1(play, &self->actor);
 
     return 0;
 }
 
-static void func_80A9CB18(EnKz* self, GlobalContext* globalCtx) {
-    Player* player = GET_PLAYER(globalCtx);
+static void func_80A9CB18(EnKz* self, PlayState* play) {
+    Player* player = GET_PLAYER(play);
 
-    if (func_80A9C95C(globalCtx, self, &self->unk_D14, 340.0f, EnKz_GetText, FUN_00173370)) {
+    if (func_80A9C95C(play, self, &self->unk_D14, 340.0f, EnKz_GetText, FUN_00173370)) {
         if ((self->actor.textId == 0x401A) && !(gSaveContext.eventChkInf[3] & 8)) {
-            if (FUN_0036bc84(globalCtx) == EXCH_ITEM_LETTER_RUTO) {
+            if (FUN_0036bc84(play) == EXCH_ITEM_LETTER_RUTO) {
                 self->actor.textId = 0x401B;
                 self->sfxPlayed = false;
             } else {
@@ -465,7 +465,7 @@ static void func_80A9CB18(EnKz* self, GlobalContext* globalCtx) {
 
         if (LINK_IS_ADULT) {
             if ((INV_CONTENT(ITEM_TRADE_ADULT) == ITEM_PRESCRIPTION) &&
-                (FUN_0036bc84(globalCtx) == EXCH_ITEM_PRESCRIPTION)) {
+                (FUN_0036bc84(play) == EXCH_ITEM_PRESCRIPTION)) {
                 self->actor.textId = 0x4014;
                 self->sfxPlayed = false;
                 player->actor.textId = self->actor.textId;
@@ -487,30 +487,30 @@ static void func_80A9CB18(EnKz* self, GlobalContext* globalCtx) {
 
 void EnKz_Update(Actor* actor, GameState* state) {
     EnKz* self = (EnKz*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
     if (LINK_IS_ADULT && !(gSaveContext.infTable[19] & 0x100)) {
         gSaveContext.infTable[19] |= 0x100;
     }
     Collider_UpdateCylinder(&self->actor, &self->collider);
-    CollisionCheck_SetOC(globalCtx, &globalCtx->colChkCtx, &self->collider.base);
+    CollisionCheck_SetOC(play, &play->colChkCtx, &self->collider.base);
     FUN_003731e0(&self->skelAnime);
     EnKz_UpdateEyes(self);
     Actor_MoveForward(&self->actor);
     if (self->actionFunc != EnKz_StartTimer) {
-        func_80A9CB18(self, globalCtx);
+        func_80A9CB18(self, play);
     }
-    self->actionFunc(self, globalCtx);
+    self->actionFunc(self, play);
 }
 #else
 GLOBAL_ASM("binary/EnKz_Update.o")
 #endif
 
-s32 EnKz_OverrideLimbDraw(GlobalContext* globalCtx, s32 limbIndex, MTX34* mtx, void* actor) {
+s32 EnKz_OverrideLimbDraw(PlayState* play, s32 limbIndex, MTX34* mtx, void* actor) {
     return 0;
 }
 
-void EnKz_PostLimbDraw(GlobalContext* globalCtx, s32 limbIndex, MTX34* mtx, void* actor) {
+void EnKz_PostLimbDraw(PlayState* play, s32 limbIndex, MTX34* mtx, void* actor) {
     EnKz* self = (EnKz*)actor;
     Vector3f vec(0.0f, 2600.0f, 0.0f);
 

@@ -8,7 +8,7 @@
 #define MASS_HEAVY 0xFE // Can only be pushed by OC collisions with IMMOVABLE and HEAVY objects.
 
 struct Actor;
-struct GlobalContext;
+struct PlayState;
 struct LightMapper;
 
 typedef struct {
@@ -23,9 +23,9 @@ typedef struct {
 } CollisionPoly; // size = 0x10
 
 typedef void (*ActorFunc)(struct Actor*, struct GameState*);
-typedef void (*ActorShadowFunc)(struct Actor*, struct Lights*, struct GlobalContext*);
-typedef u16 (*callback1_800343CC)(struct GlobalContext*, struct Actor*);
-typedef s16 (*callback2_800343CC)(struct GlobalContext*, struct Actor*);
+typedef void (*ActorShadowFunc)(struct Actor*, struct Lights*, struct PlayState*);
+typedef u16 (*callback1_800343CC)(struct PlayState*, struct Actor*);
+typedef s16 (*callback2_800343CC)(struct PlayState*, struct Actor*);
 
 typedef struct {
     /* 0x00 */ s16 id;
@@ -136,7 +136,7 @@ typedef struct Actor {
     /* 0x09C */ f32     yDistToPlayer; // Dist is negative if the actor is above the player
     /* 0x0A0 */ CollisionCheckInfo colChkInfo; // Variables related to the Collision Check system
     /* 0x0BC */ ActorShape shape; // Variables related to the physical shape of the actor
-    /* 0x0EC */ Vec3f   unk_EC; // Stores result of some vector transformation involving actor xyz vector, and a matrix at Global Context + 11D60
+    /* 0x0EC */ Vec3f   unk_EC; // Stores result of some vector transformation involving actor xyz vector, and a matrix at PlayState + 11D60
     /* 0x0F8 */ f32     unk_F8; // Related to above
     /* 0x0FC */ f32     uncullZoneForward; // Amount to increase the uncull zone forward by (in projected space)
     /* 0x100 */ f32     uncullZoneScale; // Amount to increase the uncull zone scale by (in projected space)

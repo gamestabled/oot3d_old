@@ -8,7 +8,7 @@ void BgSpot01Idomizu_Destroy(Actor* actor, GameState* state);
 void BgSpot01Idomizu_Update(Actor* actor, GameState* state);
 void BgSpot01Idomizu_Draw(Actor* actor, GameState* state);
 
-void FUN_003e8ab8(BgSpot01Idomizu* self, GlobalContext* globalCtx);
+void FUN_003e8ab8(BgSpot01Idomizu* self, PlayState* play);
 
 ActorInit Bg_Spot01_Idomizu_InitVars = {
     ACTOR_BG_SPOT01_IDOMIZU,
@@ -28,10 +28,10 @@ static InitChainEntry sInitChain[] = {
 
 void BgSpot01Idomizu_Init(Actor* actor, GameState* state) {
     BgSpot01Idomizu* self = (BgSpot01Idomizu*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
     Actor_ProcessInitChain(actor, sInitChain);
-    ZARInfo* zarInfo = FUN_00372f38(actor, globalCtx, &self->skelAnimModel, 2, 0);
+    ZARInfo* zarInfo = FUN_00372f38(actor, play, &self->skelAnimModel, 2, 0);
     self->skelAnimModel->unk_0C->FUN_00372d94(zarInfo->GetCMABByIndex(0));
     self->skelAnimModel->unk_0C->SetAnimType(1);
     if (gSaveContext.eventChkInf[6] & 0x80 || LINK_AGE_IN_YEARS == YEARS_ADULT) {
@@ -50,12 +50,12 @@ void BgSpot01Idomizu_Destroy(Actor* actor, GameState* state) {
     FUN_00350f34(&self->actor, &self->skelAnimModel, 0);
 }
 
-void FUN_003e8ab8(BgSpot01Idomizu* self, GlobalContext* globalCtx) {
+void FUN_003e8ab8(BgSpot01Idomizu* self, PlayState* play) {
     if (gSaveContext.eventChkInf[6] & 0x80) {
         self->waterHeight = -550.0f;
     }
 
-    globalCtx->colCtx.stat.colHeader->waterBoxes[0].ySurface = self->actor.world.pos.y;
+    play->colCtx.stat.colHeader->waterBoxes[0].ySurface = self->actor.world.pos.y;
     if (self->actor.world.pos.y > self->waterHeight) {
         Audio_PlaySoundGeneral(0x10001B5, NULL, 4, &FLOAT_0054ac20, &FLOAT_0054ac20, &DAT_0054ac24);
     }
@@ -65,9 +65,9 @@ void FUN_003e8ab8(BgSpot01Idomizu* self, GlobalContext* globalCtx) {
 
 void BgSpot01Idomizu_Update(Actor* actor, GameState* state) {
     BgSpot01Idomizu* self = (BgSpot01Idomizu*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    self->actionFunc(self, globalCtx);
+    self->actionFunc(self, play);
 }
 
 void BgSpot01Idomizu_Draw(Actor* actor, GameState* state) {
