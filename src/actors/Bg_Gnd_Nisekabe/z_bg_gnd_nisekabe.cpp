@@ -22,19 +22,19 @@ ActorInit Bg_Gnd_Nisekabe_InitVars = {
 
 void BgGndNisekabe_Init(Actor* actor, GameState* state) {
     BgGndNisekabe* self = (BgGndNisekabe*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
     Actor_SetScale(&self->actor, 0.1);
     self->actor.uncullZoneForward = 3000.0;
     switch (self->actor.params & 0xFF) {
         case 0:
-            FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 13, 0);
+            FUN_00372f38(&self->actor, play, &self->skelAnimModel, 13, 0);
             break;
         case 1:
-            FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 11, 0);
+            FUN_00372f38(&self->actor, play, &self->skelAnimModel, 11, 0);
             break;
         case 2:
-            FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 12, 0);
+            FUN_00372f38(&self->actor, play, &self->skelAnimModel, 12, 0);
             break;
     }
 }
@@ -47,9 +47,9 @@ void BgGndNisekabe_Destroy(Actor* actor, GameState* state) {
 
 void BgGndNisekabe_Update(Actor* actor, GameState* state) {
     BgGndNisekabe* self = (BgGndNisekabe*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    if (globalCtx->actorCtx.unk_03 != 0) {
+    if (play->actorCtx.unk_03 != 0) {
         self->actor.flags |= 0x80;
     } else {
         self->actor.flags &= ~0x80;

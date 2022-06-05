@@ -23,13 +23,13 @@ static u8 sChestContents[] = {
 
 void EnTorch_Init(Actor* actor, GameState* state) {
     EnTorch* self = (EnTorch*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
     s8 returnData = gSaveContext.respawn[RESPAWN_MODE_RETURN].data;
 
     /* Spawn chest with desired contents.
        Contents are passed to en_torch from grotto params via Save Context. */
-    Actor_Spawn(&globalCtx->actorCtx, globalCtx, ACTOR_EN_BOX, self->actor.world.pos.x, self->actor.world.pos.y,
+    Actor_Spawn(&play->actorCtx, play, ACTOR_EN_BOX, self->actor.world.pos.x, self->actor.world.pos.y,
                 self->actor.world.pos.z, 0, self->actor.shape.rot.y, 0,
                 (sChestContents[(returnData >> 0x5) & 0x7] << 0x5) | 0x5000 | (returnData & 0x1F), 1);
 

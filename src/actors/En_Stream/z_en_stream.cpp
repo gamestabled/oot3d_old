@@ -8,7 +8,7 @@ void EnStream_Destroy(Actor* actor, GameState* state);
 void EnStream_Update(Actor* actor, GameState* state);
 void EnStream_Draw(Actor* actor, GameState* state);
 
-void EnStream_WaitForPlayer(EnStream* self, GlobalContext* globalCtx);
+void EnStream_WaitForPlayer(EnStream* self, PlayState* play);
 
 ActorInit En_Stream_InitVars = {
     ACTOR_EN_STREAM,
@@ -32,10 +32,10 @@ static void EnStream_SetupAction(EnStream* self, EnStreamActionFunc actionFunc) 
 
 void EnStream_Init(Actor* actor, GameState* state) {
     EnStream* self = (EnStream*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
     self->unk_1A8 = self->actor.params & 0xFF;
-    ZARInfo* zarInfo = FUN_00372f38(actor, globalCtx, &self->skelAnimModel, 0, 0);
+    ZARInfo* zarInfo = FUN_00372f38(actor, play, &self->skelAnimModel, 0, 0);
     self->skelAnimModel->unk_0C->FUN_00372d94(zarInfo->GetCMABByIndex(0));
     self->skelAnimModel->unk_0C->SetAnimType(1);
     self->skelAnimModel->unk_0C->SetAnimSpeed(2.0f);
@@ -85,8 +85,8 @@ static s32 EnStream_PlayerIsInRange(Vec3f* vortexWorldPos, Vec3f* playerWorldPos
 }
 
 #ifdef NON_MATCHING
-void EnStream_SuckPlayer(EnStream* self, GlobalContext* globalCtx) {
-    Player* player = GET_PLAYER(globalCtx);
+void EnStream_SuckPlayer(EnStream* self, PlayState* play) {
+    Player* player = GET_PLAYER(play);
     Actor* actor = &self->actor;
     Vec3f posDifference;
     f32 xzDist;
@@ -118,12 +118,12 @@ void EnStream_SuckPlayer(EnStream* self, GlobalContext* globalCtx) {
     }
 }
 #else
-void EnStream_SuckPlayer(EnStream* self, GlobalContext* globalCtx);
+void EnStream_SuckPlayer(EnStream* self, PlayState* play);
 GLOBAL_ASM("binary/EnStream_SuckPlayer.o")
 #endif
 
-void EnStream_WaitForPlayer(EnStream* self, GlobalContext* globalCtx) {
-    Player* player = GET_PLAYER(globalCtx);
+void EnStream_WaitForPlayer(EnStream* self, PlayState* play) {
+    Player* player = GET_PLAYER(play);
     Vec3f temp;
 
     if (EnStream_PlayerIsInRange(&self->actor.world.pos, &player->actor.world.pos, &temp, self->actor.scale.y) != 0) {
@@ -133,9 +133,9 @@ void EnStream_WaitForPlayer(EnStream* self, GlobalContext* globalCtx) {
 
 void EnStream_Update(Actor* actor, GameState* state) {
     EnStream* self = (EnStream*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    self->actionFunc(self, globalCtx);
+    self->actionFunc(self, play);
     FUN_0035ae08(&self->actor, 0x1000234);
 }
 

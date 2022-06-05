@@ -40,7 +40,7 @@
 
 #define HIGH_SCORE(score) (gSaveContext.highScores[score])
 
-#define GET_PLAYER(globalCtx) ((Player*)(globalCtx)->actorCtx.actorLists[ACTORCAT_PLAYER].head)
+#define GET_PLAYER(play) ((Player*)(play)->actorCtx.actorLists[ACTORCAT_PLAYER].head)
 
 #define ADJUST_F32_FOR_FRAMERATE(f) ((2.0f * f) / 3.0f)
 #define ADJUST_S32_FOR_FRAMERATE(s) ((3 * s) / 2)

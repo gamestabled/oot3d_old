@@ -3,25 +3,25 @@ extern "C" {
 #include "math.hpp"
 #include "functions.hpp"
 
-static s32 Collider_DestroyBase(GlobalContext* globalCtx, Collider* collider) {
+static s32 Collider_DestroyBase(PlayState* play, Collider* collider) {
     return 1;
 }
 
-static s32 Collider_DestroyTouch(GlobalContext* globalCtx, ColliderTouch* touch) {
+static s32 Collider_DestroyTouch(PlayState* play, ColliderTouch* touch) {
     return 1;
 }
 
-static s32 Collider_DestroyBump(GlobalContext* globalCtx, ColliderBump* bump) {
+static s32 Collider_DestroyBump(PlayState* play, ColliderBump* bump) {
     return 1;
 }
 
-static s32 Collider_DestroyInfo(GlobalContext* globalCtx, ColliderInfo* info) {
-    Collider_DestroyTouch(globalCtx, &info->toucher);
-    Collider_DestroyBump(globalCtx, &info->bumper);
+static s32 Collider_DestroyInfo(PlayState* play, ColliderInfo* info) {
+    Collider_DestroyTouch(play, &info->toucher);
+    Collider_DestroyBump(play, &info->bumper);
     return 1;
 }
 
-static s32 Collider_DestroyCylinderDim(GlobalContext* globalCtx, Cylinderf* dim) {
+static s32 Collider_DestroyCylinderDim(PlayState* play, Cylinderf* dim) {
     return 1;
 }
 
@@ -32,10 +32,10 @@ static s32 Collider_DestroyCylinderDim(GlobalContext* globalCtx, Cylinderf* dim)
  * If you change this function, you MUST compile with NON_MATCHING set, or your
  * changes will not be reflected throughout the codebase!
  */
-s32 Collider_DestroyCylinder(GlobalContext* globalCtx, ColliderCylinder* collider) {
-    Collider_DestroyBase(globalCtx, &collider->base);
-    Collider_DestroyInfo(globalCtx, &collider->info);
-    Collider_DestroyCylinderDim(globalCtx, &collider->dim);
+s32 Collider_DestroyCylinder(PlayState* play, ColliderCylinder* collider) {
+    Collider_DestroyBase(play, &collider->base);
+    Collider_DestroyInfo(play, &collider->info);
+    Collider_DestroyCylinderDim(play, &collider->dim);
     return 1;
 }
 }
