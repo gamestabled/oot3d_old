@@ -12597,7 +12597,6 @@ SECTIONS
 		*(actors/Obj_Kibako/z_obj_kibako.data)
 		*(ASM_z_Obj_Kibako.data)
 		*(actors/Obj_Kibako2/z_obj_kibako2.data)
-		*(ASM_z_Obj_Kibako2.data)
 		*(actors/Obj_Lift/z_obj_lift.data)
 		*(ASM_z_Obj_Lift.data)
 		*(actors/Obj_Lightswitch/z_obj_lightswitch.data)

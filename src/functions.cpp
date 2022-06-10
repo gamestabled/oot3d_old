@@ -10688,8 +10688,6 @@ GLOBAL_ASM("binary/FUN_00353e78.o")
 
 GLOBAL_ASM("binary/DynaPoly_SetBgActor.o")
 
-GLOBAL_ASM("binary/DynaPolyInfo_Alloc.o")
-
 GLOBAL_ASM("binary/FUN_00354014.o")
 
 GLOBAL_ASM("binary/FUN_00354220.o")
@@ -13154,8 +13152,6 @@ GLOBAL_ASM("binary/FUN_003bc5dc.o")
 
 GLOBAL_ASM("binary/FUN_003bc808.o")
 
-GLOBAL_ASM("binary/ObjKibako2_Kill.o")
-
 GLOBAL_ASM("binary/FUN_003bcadc.o")
 
 GLOBAL_ASM("binary/FUN_003bcd9c.o")
@@ -13233,8 +13229,6 @@ GLOBAL_ASM("binary/FUN_003c06bc.o")
 GLOBAL_ASM("binary/BgJyaLift_DelayMove.o")
 
 GLOBAL_ASM("binary/FUN_003c07a8.o")
-
-GLOBAL_ASM("binary/ObjKibako2_Idle.o")
 
 GLOBAL_ASM("binary/FUN_003c0a58.o")
 

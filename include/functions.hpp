@@ -89,6 +89,7 @@ void FUN_0036b96c(Actor* actor);
 void FUN_003731e0(SkelAnime* skelAnime);
 void FUN_0036788c(void* arg0);
 void FUN_003542c4(void* arg0, s32 arg1, s32 arg2);
+EnItem00* Item_DropCollectible(PlayState* play, Vec3f* spawnPos, s16 params);
 s32 Collider_InitCylinder(PlayState* play, ColliderCylinder* collider);
 s32 Collider_DestroyCylinder(PlayState* play, ColliderCylinder* collider);
 s32 Collider_SetCylinder(PlayState* play, ColliderCylinder* collider, Actor* actor, ColliderCylinderInit* src);
@@ -128,10 +129,12 @@ void Audio_PlaySoundAtPosition(PlayState* play, Vec3f* pos, s32 duration, u32 sf
 void FUN_00372244(void* arg0, s16 arg1, u32 sfxId);
 s32 GiveItem(Actor* actor, PlayState* play, s32 getItemId, f32 xyRange, f32 yRange);
 void DynaPolyActor_Init(DynaPolyActor* dynaActor, s32 flags);
+void* DynaPolyInfo_Alloc(DynaPolyActor* dynaActor, GameState* state, s32 index);
 ZARInfo* FUN_003532c0(ZARInfo* zarInfo, s32 arg1);
 s32 DynaPoly_SetBgActor(PlayState* play, DynaCollisionContext* dyna, Actor* actor, CollisionHeader* colHeader);
 void DynaPoly_DeleteBgActor(PlayState* play, DynaCollisionContext* dyna, s32 bgId);
-
+void FUN_0036b940(PlayState* play, DynaCollisionContext* dyna, s32 bgId);
+void FUN_00357fd0(Player* player, void* arg1, Vec3f* pos);
 void FUN_003695cc(SkeletonAnimationModel* skelAnimModel, s32 arg1, s32 arg2, s32 arg3, f32 arg4, f32 arg5, f32 arg6,
                   f32 arg7);
 s32 FUN_00369f3c(PlayState* play);
