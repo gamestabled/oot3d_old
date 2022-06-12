@@ -8,7 +8,7 @@
 #define MASS_HEAVY 0xFE // Can only be pushed by OC collisions with IMMOVABLE and HEAVY objects.
 
 struct Actor;
-struct GlobalContext;
+struct PlayState;
 struct LightMapper;
 
 typedef struct {
@@ -23,9 +23,9 @@ typedef struct {
 } CollisionPoly; // size = 0x10
 
 typedef void (*ActorFunc)(struct Actor*, struct GameState*);
-typedef void (*ActorShadowFunc)(struct Actor*, struct Lights*, struct GlobalContext*);
-typedef u16 (*callback1_800343CC)(struct GlobalContext*, struct Actor*);
-typedef s16 (*callback2_800343CC)(struct GlobalContext*, struct Actor*);
+typedef void (*ActorShadowFunc)(struct Actor*, struct Lights*, struct PlayState*);
+typedef u16 (*callback1_800343CC)(struct PlayState*, struct Actor*);
+typedef s16 (*callback2_800343CC)(struct PlayState*, struct Actor*);
 
 typedef struct {
     /* 0x00 */ s16 id;
@@ -136,7 +136,7 @@ typedef struct Actor {
     /* 0x09C */ f32     yDistToPlayer; // Dist is negative if the actor is above the player
     /* 0x0A0 */ CollisionCheckInfo colChkInfo; // Variables related to the Collision Check system
     /* 0x0BC */ ActorShape shape; // Variables related to the physical shape of the actor
-    /* 0x0EC */ Vec3f   unk_EC; // Stores result of some vector transformation involving actor xyz vector, and a matrix at Global Context + 11D60
+    /* 0x0EC */ Vec3f   unk_EC; // Stores result of some vector transformation involving actor xyz vector, and a matrix at PlayState + 11D60
     /* 0x0F8 */ f32     unk_F8; // Related to above
     /* 0x0FC */ f32     uncullZoneForward; // Amount to increase the uncull zone forward by (in projected space)
     /* 0x100 */ f32     uncullZoneScale; // Amount to increase the uncull zone scale by (in projected space)
@@ -166,7 +166,7 @@ typedef struct Actor {
     /* 0x198 */ u8            unk_198;
     /* 0x199 */ char          unk_199[0x1];
     /* 0x19A */ s8            unk_19A;
-    /* 0x19B */ char          unk_19B[0x1];
+    /* 0x19B */ s8            unk_19B;
     /* 0x19C */ u16           unk_19C;
     /* 0x19E */ char          unk_19E[0x2];
     /* 0x1A0 */ f32           unk_1A0;
@@ -217,8 +217,44 @@ typedef struct {
     /* 0x221C */ float  xzSpeed; //probably
     /* 0x2220 */ char   unk_2220[0x0007];
     /* 0x2227 */ u8     isg;
-    /* 0x2228 */ char   unk_2228[0x0824];
+    /* 0x2228 */ char   unk_2228[0x0074];
+    /* 0x229C */ f32    pushedSpeed; // Pushing player, examples include water currents, floor conveyors, climbing sloped surfaces
+    /* 0x22A0 */ s16    pushedYaw; // Yaw direction of player being pushed
+    /* 0x22A2 */ char   unk_22A2[0x07AA];
 } Player; //total size (from init vars): 2A4C
+
+struct EnItem00;
+
+typedef enum {
+    /* 0x00 */ ITEM00_RUPEE_GREEN,
+    /* 0x01 */ ITEM00_RUPEE_BLUE,
+    /* 0x02 */ ITEM00_RUPEE_RED,
+    /* 0x03 */ ITEM00_HEART,
+    /* 0x04 */ ITEM00_BOMBS_A,
+    /* 0x05 */ ITEM00_ARROWS_SINGLE,
+    /* 0x06 */ ITEM00_HEART_PIECE,
+    /* 0x07 */ ITEM00_HEART_CONTAINER,
+    /* 0x08 */ ITEM00_ARROWS_SMALL,
+    /* 0x09 */ ITEM00_ARROWS_MEDIUM,
+    /* 0x0A */ ITEM00_ARROWS_LARGE,
+    /* 0x0B */ ITEM00_BOMBS_B,
+    /* 0x0C */ ITEM00_NUTS,
+    /* 0x0D */ ITEM00_STICK,
+    /* 0x0E */ ITEM00_MAGIC_LARGE,
+    /* 0x0F */ ITEM00_MAGIC_SMALL,
+    /* 0x10 */ ITEM00_SEEDS,
+    /* 0x11 */ ITEM00_SMALL_KEY,
+    /* 0x12 */ ITEM00_FLEXIBLE,
+    /* 0x13 */ ITEM00_RUPEE_ORANGE,
+    /* 0x14 */ ITEM00_RUPEE_PURPLE,
+    /* 0x15 */ ITEM00_SHIELD_DEKU,
+    /* 0x16 */ ITEM00_SHIELD_HYLIAN,
+    /* 0x17 */ ITEM00_TUNIC_ZORA,
+    /* 0x18 */ ITEM00_TUNIC_GORON,
+    /* 0x19 */ ITEM00_BOMBS_SPECIAL,
+    /* 0x1A */ ITEM00_MAX,
+    /* 0xFF */ ITEM00_NONE = 0xFF
+} Item00Type;
 
 typedef enum {
     /* 0x00 */ ACTORCAT_SWITCH,

@@ -29,15 +29,15 @@ static InitChainEntry sInitChain[] = {
 
 void ItemBHeart_Init(Actor* actor, GameState* state) {
     ItemBHeart* self = (ItemBHeart*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    if (Flags_GetCollectible(globalCtx, 0x1F)) {
+    if (Flags_GetCollectible(play, 0x1F)) {
         Actor_Kill(&self->actor);
     } else {
         Actor_ProcessInitChain(&self->actor, sInitChain);
         ActorShape_Init(&self->actor.shape, 0.0f, NULL, 0.8f);
         self->actor.unk_19A = 1;
-        FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 0, 0);
+        FUN_00372f38(&self->actor, play, &self->skelAnimModel, 0, 0);
     }
 }
 
@@ -47,7 +47,7 @@ void ItemBHeart_Destroy(Actor* actor, GameState* state) {
     FUN_00350f34(&self->actor, &self->skelAnimModel, 0);
 }
 
-static void ItemBHeart_UpdateShapeAndPos(ItemBHeart* self, GlobalContext* globalCtx) {
+static void ItemBHeart_UpdateShapeAndPos(ItemBHeart* self, PlayState* play) {
     f32 yOffset;
 
     self->unk_1C0++;
@@ -65,15 +65,15 @@ static void ItemBHeart_UpdateShapeAndPos(ItemBHeart* self, GlobalContext* global
 
 void ItemBHeart_Update(Actor* actor, GameState* state) {
     ItemBHeart* self = (ItemBHeart*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    ItemBHeart_UpdateShapeAndPos(self, globalCtx);
-    Actor_UpdateBgCheckInfo(globalCtx, &self->actor, 0.0f, 0.0f, 0.0f, 4);
-    if (Actor_HasParent(&self->actor, globalCtx)) {
-        Flags_SetCollectible(globalCtx, 0x1F);
+    ItemBHeart_UpdateShapeAndPos(self, play);
+    Actor_UpdateBgCheckInfo(play, &self->actor, 0.0f, 0.0f, 0.0f, 4);
+    if (Actor_HasParent(&self->actor, play)) {
+        Flags_SetCollectible(play, 0x1F);
         Actor_Kill(&self->actor);
     } else {
-        GiveItem(&self->actor, globalCtx, GI_HEART_CONTAINER_2, 30.0f, 40.0f);
+        GiveItem(&self->actor, play, GI_HEART_CONTAINER_2, 30.0f, 40.0f);
     }
 }
 

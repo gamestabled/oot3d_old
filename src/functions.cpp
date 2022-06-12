@@ -562,8 +562,6 @@ GLOBAL_ASM("binary/BossGoma_CeilingIdle.o")
 
 GLOBAL_ASM("binary/BossGoma_CeilingMoveToCenter.o")
 
-GLOBAL_ASM("binary/EnStream_SuckPlayer.o")
-
 GLOBAL_ASM("binary/FUN_0011b150.o")
 
 GLOBAL_ASM("binary/EnBili_SpawnedFlyApart.o")
@@ -10676,8 +10674,6 @@ GLOBAL_ASM("binary/FUN_00353e78.o")
 
 GLOBAL_ASM("binary/DynaPoly_SetBgActor.o")
 
-GLOBAL_ASM("binary/DynaPolyInfo_Alloc.o")
-
 GLOBAL_ASM("binary/FUN_00354014.o")
 
 GLOBAL_ASM("binary/FUN_00354220.o")
@@ -13142,8 +13138,6 @@ GLOBAL_ASM("binary/FUN_003bc5dc.o")
 
 GLOBAL_ASM("binary/FUN_003bc808.o")
 
-GLOBAL_ASM("binary/ObjKibako2_Kill.o")
-
 GLOBAL_ASM("binary/FUN_003bcadc.o")
 
 GLOBAL_ASM("binary/FUN_003bcd9c.o")
@@ -13221,8 +13215,6 @@ GLOBAL_ASM("binary/FUN_003c06bc.o")
 GLOBAL_ASM("binary/BgJyaLift_DelayMove.o")
 
 GLOBAL_ASM("binary/FUN_003c07a8.o")
-
-GLOBAL_ASM("binary/ObjKibako2_Idle.o")
 
 GLOBAL_ASM("binary/FUN_003c0a58.o")
 
@@ -13905,8 +13897,6 @@ GLOBAL_ASM("binary/BgIngate_DoNothing.o")
 GLOBAL_ASM("binary/BossGoma_FloorIdle.o")
 
 GLOBAL_ASM("binary/FUN_003e48f8.o")
-
-GLOBAL_ASM("binary/EnStream_WaitForPlayer.o")
 
 GLOBAL_ASM("binary/FUN_003e4bc4.o")
 
@@ -19358,7 +19348,7 @@ GLOBAL_ASM("binary/FUN_0049f28c.o")
 
 GLOBAL_ASM("binary/FUN_0049f2e0.o")
 
-GLOBAL_ASM("binary/GlobalContext_GetActiveCamId.o")
+GLOBAL_ASM("binary/PlayState_GetActiveCamId.o")
 
 GLOBAL_ASM("binary/FUN_0049f3a0.o")
 

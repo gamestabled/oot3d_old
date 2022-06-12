@@ -5,9 +5,14 @@
 
 struct EnStream;
 
+typedef void (*EnStreamActionFunc)(struct EnStream*, PlayState*);
+
 typedef struct EnStream {
-    /* 0x0000 */ Actor actor;
-    /* 0x01A4 */ char unk_1A4[0x10];
+    /* 0x000 */ Actor actor;
+    /* 0x1A4 */ EnStreamActionFunc actionFunc;
+    /* 0x1A8 */ s32 unk_1A8;
+    /* 0x1AC */ char unk_1AC[0x4];
+    /* 0x1B0 */ SkeletonAnimationModel* skelAnimModel;
 } EnStream; // size = 0x1B4
 
 extern ActorInit En_Stream_InitVars;

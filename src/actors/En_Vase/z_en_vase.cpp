@@ -26,9 +26,9 @@ ActorInit En_Vase_InitVars = {
 
 void EnVase_Init(Actor* actor, GameState* state) {
     EnVase* self = (EnVase*)actor;
-    GlobalContext* globalCtx = (GlobalContext*)state;
+    PlayState* play = (PlayState*)state;
 
-    FUN_00372f38(&self->actor, globalCtx, &self->skelAnimModel, 0, 0);
+    FUN_00372f38(&self->actor, play, &self->skelAnimModel, 0, 0);
     Actor_SetScale(&self->actor, 0.01f);
     self->actor.focus.pos = self->actor.world.pos;
     ActorShape_Init(&self->actor.shape, 0.0f, ActorShadow_DrawCircle, 6.0f);

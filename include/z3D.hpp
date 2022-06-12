@@ -250,7 +250,7 @@ typedef struct {
 
 typedef struct {
     /* 0x00 */ char unk_00[0x40];
-} subGlobalContext_5FCC; // size at least 0x40
+} subPlayState_5FCC; // size at least 0x40
 
 typedef struct {
     /* 0x000 */ char unk_00[0x7C0];
@@ -262,8 +262,8 @@ typedef struct {
     /* 0x000 */ char unk_000[0x2E0]; // Likely tons left
 } MessageContext;
 
-// Global Context (ram start: 0871E840)
-typedef struct GlobalContext {
+// Play State (ram start: 0871E840)
+typedef struct PlayState {
     /* 0x0000 */ GameState state;
     /* 0x0104 */ s16 sceneNum;
     /* 0x0106 */ u8 sceneConfig;
@@ -304,7 +304,7 @@ typedef struct GlobalContext {
     /* 0x5F14 */ char                  unk_5F14[0x0084];
     /* 0x5F98 */ u16                   envFlags[20];
     /* 0x5FC0 */ char                  unk_5FC0[12];
-    /* 0x5FCC */ subGlobalContext_5FCC unk_5FCC;
+    /* 0x5FCC */ subPlayState_5FCC unk_5FCC;
     //TODO
 
     ObjectStatus* GetObjectStatus(u8 objBankIdx) {
@@ -318,7 +318,7 @@ typedef struct GlobalContext {
     void FUN_0037573c(void* csSegment);
     u8 GetCutsceneState();
     void SetCutsceneState(u8 csState);
-} GlobalContext; // size = 0x5F14 TODO
+} PlayState; // size = 0x5F14 TODO
 
 typedef struct StaticContext {
     /* 0x0000 */ char unk_0[0x0E72];
@@ -401,6 +401,6 @@ typedef enum {
 #define gRandFloat (*(f32*)0x50C0C8)
 #define gDrawItemTable ((DrawItemTableEntry*)0x4D88C8)
 #define gRestrictionFlags ((RestrictionFlags*)0x539DC4)
-#define PLAYER ((Player*)globalCtx->actorCtx.actorList[ACTORCAT_PLAYER].first)
+#define PLAYER ((Player*)play->actorCtx.actorList[ACTORCAT_PLAYER].first)
 
 #endif //_Z3D_H_

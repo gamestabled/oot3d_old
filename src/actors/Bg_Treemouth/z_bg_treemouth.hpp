@@ -5,7 +5,7 @@
 
 struct BgTreemouth;
 
-typedef void (*BgTreemouthActionFunc)(struct BgTreemouth*, GlobalContext*);
+typedef void (*BgTreemouthActionFunc)(struct BgTreemouth*, PlayState*);
 
 typedef struct BgTreemouth {
     /* 0x0000 */ DynaPolyActor dyna;
