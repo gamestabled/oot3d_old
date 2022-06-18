@@ -52,7 +52,7 @@ Result FlushDataCache(u32 address, u32 size) {
         const u32* handle = &currentProcess;
         return session->FlushDataCache(*handle, address, size);
     }
-        return Result(0xC8A0A7F8);
+    return Result(0xC8A0A7F8);
 }
 #else
 GLOBAL_ASM("binary/_ZN2nn3dsp3CTR14FlushDataCacheEjj.o")
