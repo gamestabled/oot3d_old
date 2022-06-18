@@ -4,5 +4,9 @@
 #include "nn/types.hpp"
 #include "nn/Handle.hpp"
 #include "nn/Result.hpp"
+#include "nn/err.hpp"
+#include "nn/srv.hpp"
+#include "nn/applet.hpp"
+#include "nn/dsp.hpp"
 
 #endif //_NN_H_

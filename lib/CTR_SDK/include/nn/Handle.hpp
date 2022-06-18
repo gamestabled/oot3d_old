@@ -10,6 +10,10 @@ public:
     Handle() {}
     Handle(u32 handle) : _handle(handle) {}
 
+    u32 Value(void) const {
+        return _handle;
+    }
+
 private:
     u32 _handle;
 };

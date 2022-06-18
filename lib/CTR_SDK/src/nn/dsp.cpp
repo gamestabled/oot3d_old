@@ -6,18 +6,15 @@
 
 #include <std/cstring.hpp>
 
-// class nn::dsp::CTR::DSP;
 #include "non_matchings.hpp"
 
 namespace nn {
 namespace dsp {
 
-// GLOBAL_ASM("binary/FUN_00412210.o") Static initialzier for dsp namespace
-
-bool8 isSleepAcceptedCallbackCalled;
+bool8 wereSleepCallbacksCalled;
 bool8 isComponentLoaded;
-bool8 isSleeping;
-ubool8 isWaitingForFinalize;
+bool8 isAsleep;
+ubool8 isFinalized;
 
 u16 registeredProgramMask;
 u16 registeredDataMask;
@@ -34,19 +31,39 @@ void (*finalizeCallbacks[8])(void);
 
 nn::applet::CTR::SysSleepAcceptedCallbackInfo sleepCallbackInfo(0, 0, CTR::Sleep, 0, 0x8000);
 
-const u32 pseudoHandleCurrentProces = 0xFFFF8001;
-const char dspServiceName[] __attribute__((aligned (8))) = "dsp::DSP";
+const u32 currentProcess = 0xFFFF8001;
+const u32 zero = 0;
+const char dspServiceName[] = "dsp::DSP";
 
 namespace CTR {
 
-// GLOBAL_ASM("binary/_ZN2nn3dsp3CTR17IsComponentLoadedEv.o")
+/* Functions that might/should exist, but haven't been found */
+// Result LockComponent(void);
+// Result UnlockComponent(void);
+// Result InvalidateDataCache(u32, u32);
+// void ClearSleepWakeUpCallback(void(*)(void), void(*)(void), void(*)(void));
+// void Finalize(void);
+
+#ifdef NON_MATCHING
+Result FlushDataCache(u32 address, u32 size) {
+    Result result(0xC8A0A7F8);
+
+    if (session != NULL) {
+        const u32* handle = &currentProcess;
+        return session->FlushDataCache(*handle, address, size);
+    }
+        return Result(0xC8A0A7F8);
+}
+#else
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR14FlushDataCacheEjj.o")
+#endif
+
 s8 IsComponentLoaded(void) {
     return isComponentLoaded;
 }
 
-// GLOBAL_ASM("binary/_ZN2nn3dsp3CTR5SleepEv.o")
 void Sleep(void) {
-    bool8 isAwake = isComponentLoaded & ~isSleeping;
+    bool8 isAwake = isComponentLoaded & ~isAsleep;
     if (isAwake) {
         for (int i = 0; i < 8; i++) {
             if (sleepCallbacks[i] != NULL) {
@@ -59,28 +76,26 @@ void Sleep(void) {
         } else {
             isComponentLoaded = false;
         }
-        isAwake = returnTrueBool8(isWaitingForFinalize);
-        isSleeping = isAwake;
+        isAwake = returnTrueBool8(isFinalized);
+        isAsleep = isAwake;
     }
-    isSleepAcceptedCallbackCalled = isAwake;
+    wereSleepCallbacksCalled = isAwake;
 }
 
-// GLOBAL_ASM("binary/_ZN2nn3dsp3CTR22OrderToWaitForFinalizeEv.o")
 void OrderToWaitForFinalize(void) {
-    if (isSleeping) {
-        isWaitingForFinalize = true;
+    if (isAsleep) {
+        isFinalized = true;
         for (s32 i = 0; i < 8; i++) {
             if (finalizeCallbacks[i] != NULL) {
                 finalizeCallbacks[i]();
             }
         }
-        isSleeping = false;
+        isAsleep = false;
     }
 }
 
-// GLOBAL_ASM("binary/_ZN2nn3dsp3CTR5AwakeEv.o")
 void Awake(void) {
-    if (isSleepAcceptedCallbackCalled) {
+    if (wereSleepCallbacksCalled) {
         WakeUp();
     }
 }
@@ -95,13 +110,12 @@ inline Result LoadComponent(const u8* component, u32 componentSize, u16 programM
     return result;
 }
 
-// GLOBAL_ASM("binary/_ZN2nn3dsp3CTR6WakeUpEv.o")
 void WakeUp(void) {
     Result result;
     u32 uVar1;
 
-    isSleepAcceptedCallbackCalled = false;
-    if (isSleeping) {
+    wereSleepCallbacksCalled = false;
+    if (isAsleep) {
         result = LoadComponent((u8*)registeredComponent, registeredComponentSize, registeredProgramMask, registeredDataMask, &isComponentLoaded);
         uVar1 = result.GetCode() >> 0x1B;
 
@@ -116,18 +130,17 @@ void WakeUp(void) {
                 wakeupCallbacks[i]();
             }
         }
-        isSleeping = false;
+        isAsleep = false;
     }
 }
 
-// This seems to be an error check, for matching,
+// This seems to be an error check: for matching,
 // it does need to be an inline'd helper like this.
 // Does this belong in srv.hpp?
 inline u32 GetTopBit(Result r) {
     return r.GetCode() >> 0x1F;
 }
 
-// GLOBAL_ASM("binary/_ZN2nn3dsp3CTR10InitializeEv.o")
 Result Initialize(void) {
     Result result;
     u32 nameLen;
@@ -154,8 +167,8 @@ Result Initialize(void) {
                 registeredComponentSize = 0;
                 registeredProgramMask = 0;
                 registeredDataMask = 0;
-                isSleeping = false;
-                isWaitingForFinalize = false;
+                isAsleep = false;
+                isFinalized = false;
                 sleepCallbackInfo.Register();
                 result.SetCode(0);
             }
@@ -164,7 +177,6 @@ Result Initialize(void) {
     return result;
 }
 
-// GLOBAL_ASM("binary/_ZN2nn3dsp3CTR12SetSemaphoreEt.o")
 Result SetSemaphore(u16 value) {
     Result result;
     result.SetCode(0xC8A0A7F8);
@@ -176,45 +188,145 @@ Result SetSemaphore(u16 value) {
     }
 }
 
-// Result LockComponent(void);
+Result RecvDataIsReady(u16 registerNum, bool* outIsReady) {
+    Result result;
+    result.SetCode(0xC8A0A7F8);
 
-// struct test {
-//     Handle unk0;
-//     u32 unk1;
-// };
+    if (session != NULL) {
+        return session->RecvDataIsReady(registerNum, outIsReady);
+    } else {
+        return result;
+    }
+}
 
-// extern const test thing;
+void UnloadComponent(void) {
+    bool8 isAwake = isComponentLoaded & ~isAsleep;
+    if (isAwake) {
+        for (int i = 0; i < 8; i++) {
+            if (sleepCallbacks[i] != NULL) {
+                sleepCallbacks[i]();
+            }
+        }
+        if (isComponentLoaded) {
+            session->UnloadComponent();
+            isComponentLoaded = false;
+        } else {
+            isComponentLoaded = false;
+        }
+        isAwake = returnTrueBool8(isFinalized);
+        isAsleep = isAwake;
+    }
+}
 
-GLOBAL_ASM("binary/_ZN2nn3dsp3CTR14FlushDataCacheEjj.o")
-// Result FlushDataCache(u32 address, u32 size) {
-//     Result result;
-//     result.SetCode(0xC8A0A7F8);
-//     // DSP* temp = session;
+Result WriteProcessPipe(s32 channel, const u8* buffer, u32 size) {
+    Result result;
+    result.SetCode(0xC8A0A7F8);
 
-//     u32 s = size;
-//     if (session != NULL) {
-//         return session->FlushDataCache(thing.unk0, address, s);
-//         // return result;
-//     } else {
-//         return result;
-//     }
-// }
+    if (session != NULL) {
+        return session->WriteProcessPipe(channel, buffer, size);
+    } else {
+        return result;
+    }
+}
 
-// Result RecvDataIsReady(u16, bool*);
-// Result UnloadComponent(void);
-// Result UnlockComponent(void);
-// Result WriteProcessPipe(s32, const void*, u32);
-// Result ReadPipeIfPossible(s32, void*, u16, u16*);
-// Result InvalidateDataCache(u32, u32);
-// Result SetSemaphoreEventMask(u16);
-// Result GetSemaphoreEventHandle(Handle);
-// Result RegisterInterruptEvents(Handle, s32, s32);
-// void ClearSleepWakeUpCallback(void(*)(void), void(*)(void), void(*)(void));
-// bool RegisterSleepWakeUpCallback(void(*)(void), void(*)(void), void(*)(void));
-// Result ConvertProcessAddressFromDspDram(u32, u32*);
-// void Finalize(void);
-// Result RecvData(u16, u16*);
-// Result GetHeadphoneStatus(bool*);
+
+Result ReadPipeIfPossible(s32 channel, u8* buffer, u16 size, u16* outLengthRead) {
+    Result result;
+    result.SetCode(0xC8A0A7F8);
+
+    if (session != NULL) {
+        return session->ReadPipeIfPossible(channel, 0, buffer, size, outLengthRead);
+    } else {
+        return result;
+    }
+}
+
+Result SetSemaphoreEventMask(u16 mask) {
+    Result result;
+    result.SetCode(0xC8A0A7F8);
+
+    if (session != NULL) {
+        return session->SetSemaphoreMask(mask);
+    } else {
+        return result;
+    }
+}
+
+Result GetSemaphoreEventHandle(Handle* outHandle) {
+    Result result;
+    result.SetCode(0xC8A0A7F8);
+
+    if (session != NULL) {
+        return session->GetSemaphoreEventHandle(outHandle);
+    } else {
+        return result;
+    }
+}
+
+Result RegisterInterruptEvents(Handle handle, s32 interrupt, s32 channel) {
+    Result result;
+    result.SetCode(0xC8A0A7F8);
+
+    if (session != NULL) {
+        if (handle.Value() != 0) {
+            if (!(eventUsedFlags & (1 << (interrupt + channel)))) {
+                result = session->RegisterInterruptEvents(handle, interrupt, channel);
+                eventUsedFlags |= (1 << (interrupt + channel));
+            }
+        } else {
+            if (eventUsedFlags & (1 << (interrupt + channel))) {
+                result = session->RegisterInterruptEvents(handle, interrupt, channel);
+                eventUsedFlags &= ~(1 << (interrupt + channel));
+            }
+        }
+    }
+    return result;
+}
+
+bool RegisterSleepWakeUpCallback(void(*sleepCallback)(void), void(*wakeUpCallback)(void) , void(*finalizeCallback)(void)) {
+    for (s32 i = 0; i < 8; i++) {
+        if (sleepCallbacks[i] == NULL) {
+            sleepCallbacks[i] = sleepCallback;
+            wakeupCallbacks[i] = wakeUpCallback;
+            finalizeCallbacks[i] = finalizeCallback;
+            return true;
+        }
+    }
+    return false;
+}
+
+Result ConvertProcessAddressFromDspDram(u32 address, u32* outAddress) {
+    Result result;
+    *outAddress = 0xFFFFFFFF;
+    result.SetCode(0xC8A0A7F8);
+
+    if (session != NULL) {
+        session->ConvertProcessAddressFromDspDram(address, outAddress);
+    }
+    return result;
+}
+
+Result RecvData(u16 registerNumber, u16* outRegisterValue) {
+    Result result;
+    result.SetCode(0xC8A0A7F8);
+
+    if (session != NULL) {
+        return session->RecvData(registerNumber, outRegisterValue);
+    } else {
+        return result;
+    }
+}
+
+Result GetHeadphoneStatus(bool* outStatus) {
+    Result result;
+
+    if (session != NULL) {
+        return session->GetHeadphoneStatus(outStatus);
+    } else {
+        result.SetCode(0xC820A7F8);
+        return result;
+    }
+}
 
 } // namespace CTR
 } // namespace dsp

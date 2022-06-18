@@ -6560,8 +6560,6 @@ GLOBAL_ASM("binary/IsRegistered_002ce75c.o")
 
 GLOBAL_ASM("binary/GetAppletManInfo.o")
 
-GLOBAL_ASM("binary/Sleep.o")
-
 GLOBAL_ASM("binary/AuxUserCallback.o")
 
 GLOBAL_ASM("binary/FUN_002ce8a0.o")
@@ -6964,7 +6962,7 @@ GLOBAL_ASM("binary/__hardfp_pow.o")
 
 GLOBAL_ASM("binary/FUN_002dce5c.o")
 
-GLOBAL_ASM("binary/RegisterInterruptEvents.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP23RegisterInterruptEventsENS_6HandleEii.o")
 
 GLOBAL_ASM("binary/FUN_002dcee0.o")
 
@@ -7108,15 +7106,7 @@ GLOBAL_ASM("binary/FUN_002e1a5c.o")
 
 GLOBAL_ASM("binary/FUN_002e1adc.o")
 
-GLOBAL_ASM("binary/ConvertProcessAddressFromDspDram.o")
-
-GLOBAL_ASM("binary/ReadPipeIfPossible.o")
-
 GLOBAL_ASM("binary/WaitPipe_002e1ba0.o")
-
-GLOBAL_ASM("binary/WriteProcessPipe.o")
-
-GLOBAL_ASM("binary/RegisterInterruptEvents_002e1d58.o")
 
 GLOBAL_ASM("binary/SetSoundOutputMode.o")
 
@@ -7671,8 +7661,6 @@ GLOBAL_ASM("binary/GetAbsoluteHomeButtonState.o")
 GLOBAL_ASM("binary/GetInstance_002fa240.o")
 
 GLOBAL_ASM("binary/SetIsHeadsetConnected.o")
-
-GLOBAL_ASM("binary/GetHeadphoneStatus_002fa25c.o")
 
 GLOBAL_ASM("binary/Initialize_002fa280.o")
 
@@ -17108,8 +17096,6 @@ GLOBAL_ASM("binary/GetConfig_00435f90.o")
 
 GLOBAL_ASM("binary/SecureInfoGetRegion.o")
 
-GLOBAL_ASM("binary/RegisterSleepWakeUpCallback.o")
-
 GLOBAL_ASM("binary/Throw_0043608c.o")
 
 GLOBAL_ASM("binary/FUN_004360c4.o")
@@ -17470,11 +17456,7 @@ GLOBAL_ASM("binary/Initialize_0044a04c.o")
 
 GLOBAL_ASM("binary/Finalize_0044a114.o")
 
-GLOBAL_ASM("binary/SetSemaphoreEventMask.o")
-
-GLOBAL_ASM("binary/GetSemaphoreEventHandle.o")
-
-GLOBAL_ASM("binary/GetHeadphoneStatus_0044a200.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP18GetHeadphoneStatusEPb.o")
 
 GLOBAL_ASM("binary/AppendListObject.o")
 
@@ -17748,13 +17730,9 @@ GLOBAL_ASM("binary/FUN_00453684.o")
 
 GLOBAL_ASM("binary/TrySetPosition.o")
 
-GLOBAL_ASM("binary/RecvDataIsReady.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP16SetSemaphoreMaskEt.o")
 
-GLOBAL_ASM("binary/SetSemaphoreMask.o")
-
-GLOBAL_ASM("binary/GetSemaphoreEventHandle_00453850.o")
-
-GLOBAL_ASM("binary/RecvData.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP23GetSemaphoreEventHandleEPNS_6HandleE.o")
 
 GLOBAL_ASM("binary/FUN_004538b8.o")
 
@@ -18130,15 +18108,15 @@ GLOBAL_ASM("binary/FormatSaveData.o")
 
 GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP12SetSemaphoreEt.o")
 
-GLOBAL_ASM("binary/RecvDataIsReady_00465dec.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP15RecvDataIsReadyEtPb.o")
 
-GLOBAL_ASM("binary/WriteProcessPipe_00465e34.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP16WriteProcessPipeEiPKhj.o")
 
-GLOBAL_ASM("binary/ReadPipeIfPossible_00465e78.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP18ReadPipeIfPossibleEiiPhtPt.o")
 
-GLOBAL_ASM("binary/ConvertProcessAddressFromDspDram_00465ee8.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP32ConvertProcessAddressFromDspDramEjPj.o")
 
-GLOBAL_ASM("binary/RecvData_00465f28.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP8RecvDataEtPt.o")
 
 GLOBAL_ASM("binary/DestroyHeap.o")
 

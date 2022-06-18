@@ -13,7 +13,7 @@ BUILD_DIR ?= build
 
 SRC_DIR ?= src
 NN_SRC_DIR ?= lib/CTR_SDK/src/nn
-STD_SRC_DIR ?= lib/STL/src/std
+STD_SRC_DIR ?= lib/STL/src
 
 SRC_BUILD_DIR ?= $(BUILD_DIR)/src
 LIB_BUILD_DIR ?= $(BUILD_DIR)/lib
@@ -48,8 +48,8 @@ else
 	WINE :=
 endif
 
-CC := ./compilers/armcc.exe
-AS := ./armasm.exe
+CC := $(WINE) ./armcc.exe
+AS := $(WINE) ./armasm.exe
 LK := $(DEVKITARM)/bin/arm-none-eabi-gcc
 OBJCOPY := $(DEVKITARM)/bin/arm-none-eabi-objcopy
 
