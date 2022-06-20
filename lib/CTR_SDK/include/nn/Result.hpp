@@ -12,9 +12,7 @@ public:
     Result(u32 code) : _code(code) {
         // _code = code;
     }
-    // These functions probably shouldnt exist like this,
-    // it is probably supposed to be done through macros,
-    // or something of the sort
+
     void SetCode(u32 code) {
         _code = code;
     }
