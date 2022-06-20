@@ -58,11 +58,11 @@ private:
     Handle _handle;
 };
 
-} // namespace CTR
-
-// extern'd vars so they aren't optimized out
-extern const u32 currentProcess;
+// This should be INVALID_HANDLE_VALUE which is included
+// from Handle.hpp. But, it gets optimized out, so this is
+// kind of fake to get the data to match.
 extern const u32 zero;
 
+} // namespace CTR
 } // namespace dsp
 } // namespace nn

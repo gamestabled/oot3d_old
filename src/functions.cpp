@@ -19032,6 +19032,8 @@ GLOBAL_ASM("binary/FUN_0049342c.o")
 
 GLOBAL_ASM("binary/Initialize_004934c8.o")
 
+GLOBAL_ASM("binary/_ZN2nn3snd3CTR14FlushDataCacheEjj.o")
+
 GLOBAL_ASM("binary/FUN_00493568.o")
 
 GLOBAL_ASM("binary/SendParameter_0049357c.o")

@@ -11285,6 +11285,7 @@ SECTIONS
 		*(i.FUN_00493404)
 		*(i.FUN_0049342c)
 		*(i.Initialize_004934c8)
+		*(i._ZN2nn3snd3CTR14FlushDataCacheEjj)
 		*(i._ZN2nn3dsp3CTR14FlushDataCacheEjj)
 		*(i.FUN_00493568)
 		*(i.SendParameter_0049357c)
