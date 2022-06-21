@@ -6548,8 +6548,6 @@ GLOBAL_ASM("binary/IsEnableSleep.o")
 
 GLOBAL_ASM("binary/CallUtility.o")
 
-GLOBAL_ASM("binary/OrderToWaitForFinalize.o")
-
 GLOBAL_ASM("binary/Receive.o")
 
 GLOBAL_ASM("binary/LeaveApplication.o")
@@ -6561,8 +6559,6 @@ GLOBAL_ASM("binary/SaveVramSysArea.o")
 GLOBAL_ASM("binary/IsRegistered_002ce75c.o")
 
 GLOBAL_ASM("binary/GetAppletManInfo.o")
-
-GLOBAL_ASM("binary/Sleep.o")
 
 GLOBAL_ASM("binary/AuxUserCallback.o")
 
@@ -6966,7 +6962,7 @@ GLOBAL_ASM("binary/__hardfp_pow.o")
 
 GLOBAL_ASM("binary/FUN_002dce5c.o")
 
-GLOBAL_ASM("binary/RegisterInterruptEvents.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP23RegisterInterruptEventsENS_6HandleEii.o")
 
 GLOBAL_ASM("binary/FUN_002dcee0.o")
 
@@ -7110,25 +7106,13 @@ GLOBAL_ASM("binary/FUN_002e1a5c.o")
 
 GLOBAL_ASM("binary/FUN_002e1adc.o")
 
-GLOBAL_ASM("binary/ConvertProcessAddressFromDspDram.o")
-
-GLOBAL_ASM("binary/ReadPipeIfPossible.o")
-
 GLOBAL_ASM("binary/WaitPipe_002e1ba0.o")
-
-GLOBAL_ASM("binary/SetSemaphore.o")
-
-GLOBAL_ASM("binary/WriteProcessPipe.o")
-
-GLOBAL_ASM("binary/RegisterInterruptEvents_002e1d58.o")
 
 GLOBAL_ASM("binary/SetSoundOutputMode.o")
 
 GLOBAL_ASM("binary/EnableAuxBus.o")
 
 GLOBAL_ASM("binary/SetClippingMode.o")
-
-GLOBAL_ASM("binary/IsComponentLoaded.o")
 
 GLOBAL_ASM("binary/SetSurroundDepth.o")
 
@@ -7365,8 +7349,6 @@ GLOBAL_ASM("binary/FindContainHeap.o")
 GLOBAL_ASM("binary/GetNextListObject.o")
 
 GLOBAL_ASM("binary/InitList.o")
-
-GLOBAL_ASM("binary/WakeUp.o")
 
 GLOBAL_ASM("binary/Initialize.o")
 
@@ -7680,8 +7662,6 @@ GLOBAL_ASM("binary/GetInstance_002fa240.o")
 
 GLOBAL_ASM("binary/SetIsHeadsetConnected.o")
 
-GLOBAL_ASM("binary/GetHeadphoneStatus_002fa25c.o")
-
 GLOBAL_ASM("binary/Initialize_002fa280.o")
 
 GLOBAL_ASM("binary/FUN_002fa404.o")
@@ -7694,7 +7674,7 @@ GLOBAL_ASM("binary/CalculateGyroscopeAxisStatus.o")
 
 GLOBAL_ASM("binary/ConnectToPort.o")
 
-GLOBAL_ASM("binary/LoadComponent.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP13LoadComponentEPKhjttPa.o")
 
 GLOBAL_ASM("binary/FindArchive_wchar_t_.o")
 
@@ -8630,12 +8610,6 @@ GLOBAL_ASM("binary/GetGpuIpc.o")
 
 GLOBAL_ASM("binary/AcquireRight.o")
 
-GLOBAL_ASM("binary/GetServiceHandle.o")
-
-GLOBAL_ASM("binary/strlen.o")
-
-GLOBAL_ASM("binary/Initialize_0030de88.o")
-
 GLOBAL_ASM("binary/nngxlowUnlock.o")
 
 GLOBAL_ASM("binary/Unlock.o")
@@ -8660,7 +8634,7 @@ GLOBAL_ASM("binary/Finalize_0030e324.o")
 
 GLOBAL_ASM("binary/nnResultTFailureHandler.o")
 
-GLOBAL_ASM("binary/UnloadComponent.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP15UnloadComponentEv.o")
 
 GLOBAL_ASM("binary/Free.o")
 
@@ -9696,7 +9670,7 @@ GLOBAL_ASM("binary/FUN_00335044.o")
 
 GLOBAL_ASM("binary/ObjSwitch_InitTrisCollider.o")
 
-GLOBAL_ASM("binary/ThrowFatalErr.o")
+GLOBAL_ASM("binary/_ZN2nn3err3CTR13ThrowFatalErrENS_6ResultE.o")
 
 GLOBAL_ASM("binary/EnterImpl_003351e8.o")
 
@@ -14682,7 +14656,7 @@ GLOBAL_ASM("binary/PathParser.o")
 
 GLOBAL_ASM("binary/InvalidateDCache.o")
 
-GLOBAL_ASM("binary/Sleep_00400bb8.o")
+GLOBAL_ASM("binary/FUN_00400c28.o")
 
 GLOBAL_ASM("binary/FUN_00400dd4.o")
 
@@ -16188,8 +16162,6 @@ GLOBAL_ASM("binary/FUN_0041219c.o")
 
 GLOBAL_ASM("binary/FUN_004121c4.o")
 
-GLOBAL_ASM("binary/FUN_00412210.o")
-
 GLOBAL_ASM("binary/FUN_00412248.o")
 
 GLOBAL_ASM("binary/FUN_004122ac.o")
@@ -16868,8 +16840,6 @@ GLOBAL_ASM("binary/AllocateFromMemoryBlockSpace.o")
 
 GLOBAL_ASM("binary/GetRegion.o")
 
-GLOBAL_ASM("binary/Initialize_00422d20.o")
-
 GLOBAL_ASM("binary/LoadDefaultComponent.o")
 
 GLOBAL_ASM("binary/Throw.o")
@@ -17126,10 +17096,6 @@ GLOBAL_ASM("binary/GetConfig_00435f90.o")
 
 GLOBAL_ASM("binary/SecureInfoGetRegion.o")
 
-GLOBAL_ASM("binary/RegisterSleepWakeUpCallback.o")
-
-GLOBAL_ASM("binary/Awake.o")
-
 GLOBAL_ASM("binary/Throw_0043608c.o")
 
 GLOBAL_ASM("binary/FUN_004360c4.o")
@@ -17181,8 +17147,6 @@ GLOBAL_ASM("binary/IsToCallPowerButtonCallback.o")
 GLOBAL_ASM("binary/ProcessSleepAcceptedCommand.o")
 
 GLOBAL_ASM("binary/ClearPowerButtonCallbackFlag.o")
-
-GLOBAL_ASM("binary/Register.o")
 
 GLOBAL_ASM("binary/ClearSleepSysState.o")
 
@@ -17492,11 +17456,7 @@ GLOBAL_ASM("binary/Initialize_0044a04c.o")
 
 GLOBAL_ASM("binary/Finalize_0044a114.o")
 
-GLOBAL_ASM("binary/SetSemaphoreEventMask.o")
-
-GLOBAL_ASM("binary/GetSemaphoreEventHandle.o")
-
-GLOBAL_ASM("binary/GetHeadphoneStatus_0044a200.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP18GetHeadphoneStatusEPb.o")
 
 GLOBAL_ASM("binary/AppendListObject.o")
 
@@ -17770,13 +17730,9 @@ GLOBAL_ASM("binary/FUN_00453684.o")
 
 GLOBAL_ASM("binary/TrySetPosition.o")
 
-GLOBAL_ASM("binary/RecvDataIsReady.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP16SetSemaphoreMaskEt.o")
 
-GLOBAL_ASM("binary/SetSemaphoreMask.o")
-
-GLOBAL_ASM("binary/GetSemaphoreEventHandle_00453850.o")
-
-GLOBAL_ASM("binary/RecvData.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP23GetSemaphoreEventHandleEPNS_6HandleE.o")
 
 GLOBAL_ASM("binary/FUN_004538b8.o")
 
@@ -18150,17 +18106,17 @@ GLOBAL_ASM("binary/Finalize_00465d48.o")
 
 GLOBAL_ASM("binary/FormatSaveData.o")
 
-GLOBAL_ASM("binary/SetSemaphore_00465db4.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP12SetSemaphoreEt.o")
 
-GLOBAL_ASM("binary/RecvDataIsReady_00465dec.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP15RecvDataIsReadyEtPb.o")
 
-GLOBAL_ASM("binary/WriteProcessPipe_00465e34.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP16WriteProcessPipeEiPKhj.o")
 
-GLOBAL_ASM("binary/ReadPipeIfPossible_00465e78.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP18ReadPipeIfPossibleEiiPhtPt.o")
 
-GLOBAL_ASM("binary/ConvertProcessAddressFromDspDram_00465ee8.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP32ConvertProcessAddressFromDspDramEjPj.o")
 
-GLOBAL_ASM("binary/RecvData_00465f28.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP8RecvDataEtPt.o")
 
 GLOBAL_ASM("binary/DestroyHeap.o")
 
@@ -19076,7 +19032,7 @@ GLOBAL_ASM("binary/FUN_0049342c.o")
 
 GLOBAL_ASM("binary/Initialize_004934c8.o")
 
-GLOBAL_ASM("binary/FlushDataCache_00493528.o")
+GLOBAL_ASM("binary/_ZN2nn3snd3CTR14FlushDataCacheEjj.o")
 
 GLOBAL_ASM("binary/FUN_00493568.o")
 
@@ -19270,7 +19226,7 @@ GLOBAL_ASM("binary/FUN_004975a4.o")
 
 GLOBAL_ASM("binary/FUN_004975b0.o")
 
-GLOBAL_ASM("binary/FlushDataCache_004975bc.o")
+GLOBAL_ASM("binary/_ZN2nn3dsp3CTR3DSP14FlushDataCacheENS_6HandleEjj.o")
 
 GLOBAL_ASM("binary/GetDspCycles.o")
 

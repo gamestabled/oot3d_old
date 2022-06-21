@@ -1,4 +1,4 @@
-#include "z3Dvec.hpp"
+#include <nn/err.hpp>
 
 namespace nn {
 namespace err {
@@ -54,7 +54,7 @@ struct FatalErrInfo {
 
 // extern FatalErrInfo sFatalErrInfo;
 
-// void ThrowFatalError(Result result) {
+// void ThrowFatalErr(Result result) {
 // }
 
 } // namespace CTR
