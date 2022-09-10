@@ -157,7 +157,7 @@ void ObjBombiwa_Update(Actor* actor, GameState* state) {
     }
 }
 #else
-GLOBAL_ASM("binary/ObjBombiwa_Update.o")
+GLOBAL_ASM("asm/ObjBombiwa_Update.s")
 #endif
 
 void ObjBombiwa_Draw(Actor* actor, GameState* state) {

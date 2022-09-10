@@ -8,7 +8,7 @@ void EnDha_Destroy(Actor* actor, GameState* state);
 void EnDha_Update(Actor* actor, GameState* state);
 void EnDha_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Dha.data.o")
+GLOBAL_ASM("data/z_En_Dha.data.o")
 
 ActorInit En_Dha_InitVars = {
     ACTOR_EN_DHA,
@@ -22,11 +22,11 @@ ActorInit En_Dha_InitVars = {
     (ActorFunc)EnDha_Draw,
 };
 
-GLOBAL_ASM("binary/EnDha_Init.o")
+GLOBAL_ASM("asm/EnDha_Init.s")
 
-GLOBAL_ASM("binary/EnDha_Destroy.o")
+GLOBAL_ASM("asm/EnDha_Destroy.s")
 
-GLOBAL_ASM("binary/EnDha_Update.o")
+GLOBAL_ASM("asm/EnDha_Update.s")
 
-GLOBAL_ASM("binary/EnDha_Draw.o")
+GLOBAL_ASM("asm/EnDha_Draw.s")
 }

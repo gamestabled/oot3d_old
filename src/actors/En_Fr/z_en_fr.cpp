@@ -7,7 +7,7 @@ void EnFr_Init(Actor* actor, GameState* state);
 void EnFr_Destroy(Actor* actor, GameState* state);
 void EnFr_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Fr.data.o")
+GLOBAL_ASM("data/z_En_Fr.data.o")
 
 ActorInit En_Fr_InitVars = {
     ACTOR_EN_FR,
@@ -21,9 +21,9 @@ ActorInit En_Fr_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnFr_Init.o")
+GLOBAL_ASM("asm/EnFr_Init.s")
 
-GLOBAL_ASM("binary/EnFr_Destroy.o")
+GLOBAL_ASM("asm/EnFr_Destroy.s")
 
-GLOBAL_ASM("binary/EnFr_Update.o")
+GLOBAL_ASM("asm/EnFr_Update.s")
 }

@@ -8,7 +8,7 @@ void EnPoSisters_Destroy(Actor* actor, GameState* state);
 void EnPoSisters_Update(Actor* actor, GameState* state);
 void EnPoSisters_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Po_Sisters.data.o")
+GLOBAL_ASM("data/z_En_Po_Sisters.data.o")
 
 ActorInit En_Po_Sisters_InitVars = {
     ACTOR_EN_PO_SISTERS,
@@ -22,11 +22,11 @@ ActorInit En_Po_Sisters_InitVars = {
     (ActorFunc)EnPoSisters_Draw,
 };
 
-GLOBAL_ASM("binary/EnPoSisters_Init.o")
+GLOBAL_ASM("asm/EnPoSisters_Init.s")
 
-GLOBAL_ASM("binary/EnPoSisters_Destroy.o")
+GLOBAL_ASM("asm/EnPoSisters_Destroy.s")
 
-GLOBAL_ASM("binary/EnPoSisters_Update.o")
+GLOBAL_ASM("asm/EnPoSisters_Update.s")
 
-GLOBAL_ASM("binary/EnPoSisters_Draw.o")
+GLOBAL_ASM("asm/EnPoSisters_Draw.s")
 }

@@ -7,7 +7,7 @@ void BgHakaSgami_Init(Actor* actor, GameState* state);
 void BgHakaSgami_Destroy(Actor* actor, GameState* state);
 void BgHakaSgami_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Haka_Sgami.data.o")
+GLOBAL_ASM("data/z_Bg_Haka_Sgami.data.o")
 
 ActorInit Bg_Haka_Sgami_InitVars = {
     ACTOR_BG_HAKA_SGAMI,
@@ -21,9 +21,9 @@ ActorInit Bg_Haka_Sgami_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgHakaSgami_Init.o")
+GLOBAL_ASM("asm/BgHakaSgami_Init.s")
 
-GLOBAL_ASM("binary/BgHakaSgami_Destroy.o")
+GLOBAL_ASM("asm/BgHakaSgami_Destroy.s")
 
-GLOBAL_ASM("binary/BgHakaSgami_Update.o")
+GLOBAL_ASM("asm/BgHakaSgami_Update.s")
 }

@@ -1,0 +1,14 @@
+n3dsdisasm
+hashtable.c
+hashtable.h
+*.exe
+capstone-3.0.5-rc2
+capstone-4.0.2
+*.bin
+a.out
+*.gba
+.fuse_hidden*
+*.s
+clover.cfg
+*.stackdump
+*.dump

@@ -4,6 +4,6 @@
 
 namespace std {
 
-GLOBAL_ASM("binary/_ZSt6strlenPKc.o")
+GLOBAL_ASM("asm/_ZSt6strlenPKc.s")
 
 }

@@ -8,7 +8,7 @@ void EnBomChu_Destroy(Actor* actor, GameState* state);
 void EnBomChu_Update(Actor* actor, GameState* state);
 void EnBomChu_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Bom_Chu.data.o")
+GLOBAL_ASM("data/z_En_Bom_Chu.data.o")
 
 ActorInit En_Bom_Chu_InitVars = {
     ACTOR_EN_BOM_CHU,
@@ -22,11 +22,11 @@ ActorInit En_Bom_Chu_InitVars = {
     (ActorFunc)EnBomChu_Draw,
 };
 
-GLOBAL_ASM("binary/EnBomChu_Init.o")
+GLOBAL_ASM("asm/EnBomChu_Init.s")
 
-GLOBAL_ASM("binary/EnBomChu_Destroy.o")
+GLOBAL_ASM("asm/EnBomChu_Destroy.s")
 
-GLOBAL_ASM("binary/EnBomChu_Update.o")
+GLOBAL_ASM("asm/EnBomChu_Update.s")
 
-GLOBAL_ASM("binary/EnBomChu_Draw.o")
+GLOBAL_ASM("asm/EnBomChu_Draw.s")
 }

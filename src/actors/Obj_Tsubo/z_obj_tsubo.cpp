@@ -7,7 +7,7 @@ void ObjTsubo_Init(Actor* actor, GameState* state);
 void ObjTsubo_Destroy(Actor* actor, GameState* state);
 void ObjTsubo_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Tsubo.data.o")
+GLOBAL_ASM("data/z_Obj_Tsubo.data.o")
 
 ActorInit Obj_Tsubo_InitVars = {
     ACTOR_OBJ_TSUBO,
@@ -21,9 +21,9 @@ ActorInit Obj_Tsubo_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/ObjTsubo_Init.o")
+GLOBAL_ASM("asm/ObjTsubo_Init.s")
 
-GLOBAL_ASM("binary/ObjTsubo_Destroy.o")
+GLOBAL_ASM("asm/ObjTsubo_Destroy.s")
 
-GLOBAL_ASM("binary/ObjTsubo_Update.o")
+GLOBAL_ASM("asm/ObjTsubo_Update.s")
 }

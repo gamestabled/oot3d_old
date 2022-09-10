@@ -8,7 +8,7 @@ void EnTite_Destroy(Actor* actor, GameState* state);
 void EnTite_Update(Actor* actor, GameState* state);
 void EnTite_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Tite.data.o")
+GLOBAL_ASM("data/z_En_Tite.data.o")
 
 ActorInit En_Tite_InitVars = {
     ACTOR_EN_TITE,
@@ -22,11 +22,11 @@ ActorInit En_Tite_InitVars = {
     (ActorFunc)EnTite_Draw,
 };
 
-GLOBAL_ASM("binary/EnTite_Init.o")
+GLOBAL_ASM("asm/EnTite_Init.s")
 
-GLOBAL_ASM("binary/EnTite_Destroy.o")
+GLOBAL_ASM("asm/EnTite_Destroy.s")
 
-GLOBAL_ASM("binary/EnTite_Update.o")
+GLOBAL_ASM("asm/EnTite_Update.s")
 
-GLOBAL_ASM("binary/EnTite_Draw.o")
+GLOBAL_ASM("asm/EnTite_Draw.s")
 }

@@ -8,7 +8,7 @@ void DemoKankyo_Destroy(Actor* actor, GameState* state);
 void DemoKankyo_Update(Actor* actor, GameState* state);
 void DemoKankyo_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Demo_Kankyo.data.o")
+GLOBAL_ASM("data/z_Demo_Kankyo.data.o")
 
 ActorInit Demo_Kankyo_InitVars = {
     ACTOR_DEMO_KANKYO,
@@ -22,11 +22,11 @@ ActorInit Demo_Kankyo_InitVars = {
     (ActorFunc)DemoKankyo_Draw,
 };
 
-GLOBAL_ASM("binary/DemoKankyo_Init.o")
+GLOBAL_ASM("asm/DemoKankyo_Init.s")
 
-GLOBAL_ASM("binary/DemoKankyo_Destroy.o")
+GLOBAL_ASM("asm/DemoKankyo_Destroy.s")
 
-GLOBAL_ASM("binary/DemoKankyo_Update.o")
+GLOBAL_ASM("asm/DemoKankyo_Update.s")
 
-GLOBAL_ASM("binary/DemoKankyo_Draw.o")
+GLOBAL_ASM("asm/DemoKankyo_Draw.s")
 }

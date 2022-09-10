@@ -8,7 +8,7 @@ void MagicDark_Destroy(Actor* actor, GameState* state);
 void MagicDark_Update(Actor* actor, GameState* state);
 void MagicDark_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Magic_Dark.data.o")
+GLOBAL_ASM("data/z_Magic_Dark.data.o")
 
 ActorInit Magic_Dark_InitVars = {
     ACTOR_MAGIC_DARK,
@@ -22,11 +22,11 @@ ActorInit Magic_Dark_InitVars = {
     (ActorFunc)MagicDark_Draw,
 };
 
-GLOBAL_ASM("binary/MagicDark_Init.o")
+GLOBAL_ASM("asm/MagicDark_Init.s")
 
-GLOBAL_ASM("binary/MagicDark_Destroy.o")
+GLOBAL_ASM("asm/MagicDark_Destroy.s")
 
-GLOBAL_ASM("binary/MagicDark_Update.o")
+GLOBAL_ASM("asm/MagicDark_Update.s")
 
-GLOBAL_ASM("binary/MagicDark_Draw.o")
+GLOBAL_ASM("asm/MagicDark_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgSpot01Idohashira_Destroy(Actor* actor, GameState* state);
 void BgSpot01Idohashira_Update(Actor* actor, GameState* state);
 void BgSpot01Idohashira_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot01_Idohashira.data.o")
+GLOBAL_ASM("data/z_Bg_Spot01_Idohashira.data.o")
 
 ActorInit Bg_Spot01_Idohashira_InitVars = {
     ACTOR_BG_SPOT01_IDOHASHIRA,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot01_Idohashira_InitVars = {
     (ActorFunc)BgSpot01Idohashira_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot01Idohashira_Init.o")
+GLOBAL_ASM("asm/BgSpot01Idohashira_Init.s")
 
-GLOBAL_ASM("binary/BgSpot01Idohashira_Destroy.o")
+GLOBAL_ASM("asm/BgSpot01Idohashira_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot01Idohashira_Update.o")
+GLOBAL_ASM("asm/BgSpot01Idohashira_Update.s")
 
-GLOBAL_ASM("binary/BgSpot01Idohashira_Draw.o")
+GLOBAL_ASM("asm/BgSpot01Idohashira_Draw.s")
 }

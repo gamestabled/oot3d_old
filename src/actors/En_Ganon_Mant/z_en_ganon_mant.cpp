@@ -7,7 +7,7 @@ void EnGanonMant_Init(Actor* actor, GameState* state);
 void EnGanonMant_Destroy(Actor* actor, GameState* state);
 void EnGanonMant_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ganon_Mant.data.o")
+GLOBAL_ASM("data/z_En_Ganon_Mant.data.o")
 
 ActorInit En_Ganon_Mant_InitVars = {
     ACTOR_EN_GANON_MANT,
@@ -21,9 +21,9 @@ ActorInit En_Ganon_Mant_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnGanonMant_Init.o")
+GLOBAL_ASM("asm/EnGanonMant_Init.s")
 
-GLOBAL_ASM("binary/EnGanonMant_Destroy.o")
+GLOBAL_ASM("asm/EnGanonMant_Destroy.s")
 
-GLOBAL_ASM("binary/EnGanonMant_Update.o")
+GLOBAL_ASM("asm/EnGanonMant_Update.s")
 }

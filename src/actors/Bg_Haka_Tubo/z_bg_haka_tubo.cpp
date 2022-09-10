@@ -8,7 +8,7 @@ void BgHakaTubo_Destroy(Actor* actor, GameState* state);
 void BgHakaTubo_Update(Actor* actor, GameState* state);
 void BgHakaTubo_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Haka_Tubo.data.o")
+GLOBAL_ASM("data/z_Bg_Haka_Tubo.data.o")
 
 ActorInit Bg_Haka_Tubo_InitVars = {
     ACTOR_BG_HAKA_TUBO,
@@ -22,11 +22,11 @@ ActorInit Bg_Haka_Tubo_InitVars = {
     (ActorFunc)BgHakaTubo_Draw,
 };
 
-GLOBAL_ASM("binary/BgHakaTubo_Init.o")
+GLOBAL_ASM("asm/BgHakaTubo_Init.s")
 
-GLOBAL_ASM("binary/BgHakaTubo_Destroy.o")
+GLOBAL_ASM("asm/BgHakaTubo_Destroy.s")
 
-GLOBAL_ASM("binary/BgHakaTubo_Update.o")
+GLOBAL_ASM("asm/BgHakaTubo_Update.s")
 
-GLOBAL_ASM("binary/BgHakaTubo_Draw.o")
+GLOBAL_ASM("asm/BgHakaTubo_Draw.s")
 }

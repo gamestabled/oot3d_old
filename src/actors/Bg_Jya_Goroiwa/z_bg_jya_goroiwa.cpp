@@ -8,7 +8,7 @@ void BgJyaGoroiwa_Destroy(Actor* actor, GameState* state);
 void BgJyaGoroiwa_Update(Actor* actor, GameState* state);
 void BgJyaGoroiwa_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Jya_Goroiwa.data.o")
+GLOBAL_ASM("data/z_Bg_Jya_Goroiwa.data.o")
 
 ActorInit Bg_Jya_Goroiwa_InitVars = {
     ACTOR_BG_JYA_GOROIWA,
@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Goroiwa_InitVars = {
     (ActorFunc)BgJyaGoroiwa_Draw,
 };
 
-GLOBAL_ASM("binary/BgJyaGoroiwa_Init.o")
+GLOBAL_ASM("asm/BgJyaGoroiwa_Init.s")
 
-GLOBAL_ASM("binary/BgJyaGoroiwa_Destroy.o")
+GLOBAL_ASM("asm/BgJyaGoroiwa_Destroy.s")
 
-GLOBAL_ASM("binary/BgJyaGoroiwa_Update.o")
+GLOBAL_ASM("asm/BgJyaGoroiwa_Update.s")
 
-GLOBAL_ASM("binary/BgJyaGoroiwa_Draw.o")
+GLOBAL_ASM("asm/BgJyaGoroiwa_Draw.s")
 }

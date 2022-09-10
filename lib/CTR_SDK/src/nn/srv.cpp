@@ -5,9 +5,9 @@
 namespace nn {
 namespace srv {
 
-GLOBAL_ASM("binary/_ZN2nn3srv10InitializeEv.o")
+GLOBAL_ASM("asm/_ZN2nn3srv10InitializeEv.s")
 
-GLOBAL_ASM("binary/_ZN2nn3srv16GetServiceHandleEPNS_6HandleEPKcjj.o")
+GLOBAL_ASM("asm/_ZN2nn3srv16GetServiceHandleEPNS_6HandleEPKcjj.s")
 
 } // namespace srv
 } // namespace nn

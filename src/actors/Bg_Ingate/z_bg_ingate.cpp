@@ -20,11 +20,11 @@ ActorInit Bg_Ingate_InitVars = {
     (ActorFunc)BgIngate_Draw,
 };
 
-GLOBAL_ASM("binary/BgIngate_Init.o")
+GLOBAL_ASM("asm/BgIngate_Init.s")
 
-GLOBAL_ASM("binary/BgIngate_Destroy.o")
+GLOBAL_ASM("asm/BgIngate_Destroy.s")
 
-GLOBAL_ASM("binary/BgIngate_Update.o")
+GLOBAL_ASM("asm/BgIngate_Update.s")
 
-GLOBAL_ASM("binary/BgIngate_Draw.o")
+GLOBAL_ASM("asm/BgIngate_Draw.s")
 }

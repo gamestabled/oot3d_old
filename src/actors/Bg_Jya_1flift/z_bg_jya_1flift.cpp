@@ -8,7 +8,7 @@ void BgJya1flift_Destroy(Actor* actor, GameState* state);
 void BgJya1flift_Update(Actor* actor, GameState* state);
 void BgJya1flift_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Jya_1flift.data.o")
+GLOBAL_ASM("data/z_Bg_Jya_1flift.data.o")
 
 ActorInit Bg_Jya_1flift_InitVars = {
     ACTOR_BG_JYA_1FLIFT,
@@ -22,11 +22,11 @@ ActorInit Bg_Jya_1flift_InitVars = {
     (ActorFunc)BgJya1flift_Draw,
 };
 
-GLOBAL_ASM("binary/BgJya1flift_Init.o")
+GLOBAL_ASM("asm/BgJya1flift_Init.s")
 
-GLOBAL_ASM("binary/BgJya1flift_Destroy.o")
+GLOBAL_ASM("asm/BgJya1flift_Destroy.s")
 
-GLOBAL_ASM("binary/BgJya1flift_Update.o")
+GLOBAL_ASM("asm/BgJya1flift_Update.s")
 
-GLOBAL_ASM("binary/BgJya1flift_Draw.o")
+GLOBAL_ASM("asm/BgJya1flift_Draw.s")
 }

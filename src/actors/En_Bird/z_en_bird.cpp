@@ -8,7 +8,7 @@ void EnBird_Destroy(Actor* actor, GameState* state);
 void EnBird_Update(Actor* actor, GameState* state);
 void EnBird_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Bird.data.o")
+GLOBAL_ASM("data/z_En_Bird.data.o")
 
 ActorInit En_Bird_InitVars = {
     ACTOR_EN_BIRD,
@@ -22,11 +22,11 @@ ActorInit En_Bird_InitVars = {
     (ActorFunc)EnBird_Draw,
 };
 
-GLOBAL_ASM("binary/EnBird_Init.o")
+GLOBAL_ASM("asm/EnBird_Init.s")
 
-GLOBAL_ASM("binary/EnBird_Destroy.o")
+GLOBAL_ASM("asm/EnBird_Destroy.s")
 
-GLOBAL_ASM("binary/EnBird_Update.o")
+GLOBAL_ASM("asm/EnBird_Update.s")
 
-GLOBAL_ASM("binary/EnBird_Draw.o")
+GLOBAL_ASM("asm/EnBird_Draw.s")
 }

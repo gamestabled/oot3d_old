@@ -8,7 +8,7 @@ void BgSpot15Rrbox_Destroy(Actor* actor, GameState* state);
 void BgSpot15Rrbox_Update(Actor* actor, GameState* state);
 void BgSpot15Rrbox_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot15_Rrbox.data.o")
+GLOBAL_ASM("data/z_Bg_Spot15_Rrbox.data.o")
 
 ActorInit Bg_Spot15_Rrbox_InitVars = {
     ACTOR_BG_SPOT15_RRBOX,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot15_Rrbox_InitVars = {
     (ActorFunc)BgSpot15Rrbox_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot15Rrbox_Init.o")
+GLOBAL_ASM("asm/BgSpot15Rrbox_Init.s")
 
-GLOBAL_ASM("binary/BgSpot15Rrbox_Destroy.o")
+GLOBAL_ASM("asm/BgSpot15Rrbox_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot15Rrbox_Update.o")
+GLOBAL_ASM("asm/BgSpot15Rrbox_Update.s")
 
-GLOBAL_ASM("binary/BgSpot15Rrbox_Draw.o")
+GLOBAL_ASM("asm/BgSpot15Rrbox_Draw.s")
 }

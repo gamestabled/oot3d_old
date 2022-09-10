@@ -8,7 +8,7 @@ void EnZo_Destroy(Actor* actor, GameState* state);
 void EnZo_Update(Actor* actor, GameState* state);
 void EnZo_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Zo.data.o")
+GLOBAL_ASM("data/z_En_Zo.data.o")
 
 ActorInit En_Zo_InitVars = {
     ACTOR_EN_ZO,
@@ -22,11 +22,11 @@ ActorInit En_Zo_InitVars = {
     (ActorFunc)EnZo_Draw,
 };
 
-GLOBAL_ASM("binary/EnZo_Init.o")
+GLOBAL_ASM("asm/EnZo_Init.s")
 
-GLOBAL_ASM("binary/EnZo_Destroy.o")
+GLOBAL_ASM("asm/EnZo_Destroy.s")
 
-GLOBAL_ASM("binary/EnZo_Update.o")
+GLOBAL_ASM("asm/EnZo_Update.s")
 
-GLOBAL_ASM("binary/EnZo_Draw.o")
+GLOBAL_ASM("asm/EnZo_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgJyaKanaami_Destroy(Actor* actor, GameState* state);
 void BgJyaKanaami_Update(Actor* actor, GameState* state);
 void BgJyaKanaami_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Jya_Kanaami.data.o")
+GLOBAL_ASM("data/z_Bg_Jya_Kanaami.data.o")
 
 ActorInit Bg_Jya_Kanaami_InitVars = {
     ACTOR_BG_JYA_KANAAMI,
@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Kanaami_InitVars = {
     (ActorFunc)BgJyaKanaami_Draw,
 };
 
-GLOBAL_ASM("binary/BgJyaKanaami_Init.o")
+GLOBAL_ASM("asm/BgJyaKanaami_Init.s")
 
-GLOBAL_ASM("binary/BgJyaKanaami_Destroy.o")
+GLOBAL_ASM("asm/BgJyaKanaami_Destroy.s")
 
-GLOBAL_ASM("binary/BgJyaKanaami_Update.o")
+GLOBAL_ASM("asm/BgJyaKanaami_Update.s")
 
-GLOBAL_ASM("binary/BgJyaKanaami_Draw.o")
+GLOBAL_ASM("asm/BgJyaKanaami_Draw.s")
 }

@@ -20,11 +20,11 @@ ActorInit En_Pu_box_InitVars = {
     (ActorFunc)EnPubox_Draw,
 };
 
-GLOBAL_ASM("binary/EnPubox_Init.o")
+GLOBAL_ASM("asm/EnPubox_Init.s")
 
-GLOBAL_ASM("binary/EnPubox_Destroy.o")
+GLOBAL_ASM("asm/EnPubox_Destroy.s")
 
-GLOBAL_ASM("binary/EnPubox_Update.o")
+GLOBAL_ASM("asm/EnPubox_Update.s")
 
-GLOBAL_ASM("binary/EnPubox_Draw.o")
+GLOBAL_ASM("asm/EnPubox_Draw.s")
 }

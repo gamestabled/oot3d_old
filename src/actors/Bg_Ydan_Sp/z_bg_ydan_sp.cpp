@@ -8,7 +8,7 @@ void BgYdanSp_Destroy(Actor* actor, GameState* state);
 void BgYdanSp_Update(Actor* actor, GameState* state);
 void BgYdanSp_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ydan_Sp.data.o")
+GLOBAL_ASM("data/z_Bg_Ydan_Sp.data.o")
 
 ActorInit Bg_Ydan_Sp_InitVars = {
     ACTOR_BG_YDAN_SP,
@@ -22,11 +22,11 @@ ActorInit Bg_Ydan_Sp_InitVars = {
     (ActorFunc)BgYdanSp_Draw,
 };
 
-GLOBAL_ASM("binary/BgYdanSp_Init.o")
+GLOBAL_ASM("asm/BgYdanSp_Init.s")
 
-GLOBAL_ASM("binary/BgYdanSp_Destroy.o")
+GLOBAL_ASM("asm/BgYdanSp_Destroy.s")
 
-GLOBAL_ASM("binary/BgYdanSp_Update.o")
+GLOBAL_ASM("asm/BgYdanSp_Update.s")
 
-GLOBAL_ASM("binary/BgYdanSp_Draw.o")
+GLOBAL_ASM("asm/BgYdanSp_Draw.s")
 }

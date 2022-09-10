@@ -8,7 +8,7 @@ void EnReeba_Destroy(Actor* actor, GameState* state);
 void EnReeba_Update(Actor* actor, GameState* state);
 void EnReeba_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Reeba.data.o")
+GLOBAL_ASM("data/z_En_Reeba.data.o")
 
 ActorInit En_Reeba_InitVars = {
     ACTOR_EN_REEBA,
@@ -22,11 +22,11 @@ ActorInit En_Reeba_InitVars = {
     (ActorFunc)EnReeba_Draw,
 };
 
-GLOBAL_ASM("binary/EnReeba_Init.o")
+GLOBAL_ASM("asm/EnReeba_Init.s")
 
-GLOBAL_ASM("binary/EnReeba_Destroy.o")
+GLOBAL_ASM("asm/EnReeba_Destroy.s")
 
-GLOBAL_ASM("binary/EnReeba_Update.o")
+GLOBAL_ASM("asm/EnReeba_Update.s")
 
-GLOBAL_ASM("binary/EnReeba_Draw.o")
+GLOBAL_ASM("asm/EnReeba_Draw.s")
 }

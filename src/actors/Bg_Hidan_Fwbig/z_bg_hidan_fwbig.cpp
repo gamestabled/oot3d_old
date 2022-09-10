@@ -8,7 +8,7 @@ void BgHidanFwbig_Destroy(Actor* actor, GameState* state);
 void BgHidanFwbig_Update(Actor* actor, GameState* state);
 void BgHidanFwbig_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Hidan_Fwbig.data.o")
+GLOBAL_ASM("data/z_Bg_Hidan_Fwbig.data.o")
 
 ActorInit Bg_Hidan_Fwbig_InitVars = {
     ACTOR_BG_HIDAN_FWBIG,
@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Fwbig_InitVars = {
     (ActorFunc)BgHidanFwbig_Draw,
 };
 
-GLOBAL_ASM("binary/BgHidanFwbig_Init.o")
+GLOBAL_ASM("asm/BgHidanFwbig_Init.s")
 
-GLOBAL_ASM("binary/BgHidanFwbig_Destroy.o")
+GLOBAL_ASM("asm/BgHidanFwbig_Destroy.s")
 
-GLOBAL_ASM("binary/BgHidanFwbig_Update.o")
+GLOBAL_ASM("asm/BgHidanFwbig_Update.s")
 
-GLOBAL_ASM("binary/BgHidanFwbig_Draw.o")
+GLOBAL_ASM("asm/BgHidanFwbig_Draw.s")
 }

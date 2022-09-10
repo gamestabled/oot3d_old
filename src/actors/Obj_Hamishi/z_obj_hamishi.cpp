@@ -8,7 +8,7 @@ void ObjHamishi_Destroy(Actor* actor, GameState* state);
 void ObjHamishi_Update(Actor* actor, GameState* state);
 void ObjHamishi_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Hamishi.data.o")
+GLOBAL_ASM("data/z_Obj_Hamishi.data.o")
 
 ActorInit Obj_Hamishi_InitVars = {
     ACTOR_OBJ_HAMISHI,
@@ -22,11 +22,11 @@ ActorInit Obj_Hamishi_InitVars = {
     (ActorFunc)ObjHamishi_Draw,
 };
 
-GLOBAL_ASM("binary/ObjHamishi_Init.o")
+GLOBAL_ASM("asm/ObjHamishi_Init.s")
 
-GLOBAL_ASM("binary/ObjHamishi_Destroy.o")
+GLOBAL_ASM("asm/ObjHamishi_Destroy.s")
 
-GLOBAL_ASM("binary/ObjHamishi_Update.o")
+GLOBAL_ASM("asm/ObjHamishi_Update.s")
 
-GLOBAL_ASM("binary/ObjHamishi_Draw.o")
+GLOBAL_ASM("asm/ObjHamishi_Draw.s")
 }

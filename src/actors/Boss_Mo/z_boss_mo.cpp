@@ -8,7 +8,7 @@ void BossMo_Destroy(Actor* actor, GameState* state);
 void BossMo_Update(Actor* actor, GameState* state);
 void BossMo_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Boss_Mo.data.o")
+GLOBAL_ASM("data/z_Boss_Mo.data.o")
 
 ActorInit Boss_Mo_InitVars = {
     ACTOR_BOSS_MO,
@@ -22,11 +22,11 @@ ActorInit Boss_Mo_InitVars = {
     (ActorFunc)BossMo_Draw,
 };
 
-GLOBAL_ASM("binary/BossMo_Init.o")
+GLOBAL_ASM("asm/BossMo_Init.s")
 
-GLOBAL_ASM("binary/BossMo_Destroy.o")
+GLOBAL_ASM("asm/BossMo_Destroy.s")
 
-GLOBAL_ASM("binary/BossMo_Update.o")
+GLOBAL_ASM("asm/BossMo_Update.s")
 
-GLOBAL_ASM("binary/BossMo_Draw.o")
+GLOBAL_ASM("asm/BossMo_Draw.s")
 }

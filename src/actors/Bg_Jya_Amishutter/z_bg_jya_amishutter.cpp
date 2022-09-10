@@ -8,7 +8,7 @@ void BgJyaAmishutter_Destroy(Actor* actor, GameState* state);
 void BgJyaAmishutter_Update(Actor* actor, GameState* state);
 void BgJyaAmishutter_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Jya_Amishutter.data.o")
+GLOBAL_ASM("data/z_Bg_Jya_Amishutter.data.o")
 
 ActorInit Bg_Jya_Amishutter_InitVars = {
     ACTOR_BG_JYA_AMISHUTTER,
@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Amishutter_InitVars = {
     (ActorFunc)BgJyaAmishutter_Draw,
 };
 
-GLOBAL_ASM("binary/BgJyaAmishutter_Init.o")
+GLOBAL_ASM("asm/BgJyaAmishutter_Init.s")
 
-GLOBAL_ASM("binary/BgJyaAmishutter_Destroy.o")
+GLOBAL_ASM("asm/BgJyaAmishutter_Destroy.s")
 
-GLOBAL_ASM("binary/BgJyaAmishutter_Update.o")
+GLOBAL_ASM("asm/BgJyaAmishutter_Update.s")
 
-GLOBAL_ASM("binary/BgJyaAmishutter_Draw.o")
+GLOBAL_ASM("asm/BgJyaAmishutter_Draw.s")
 }

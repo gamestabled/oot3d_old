@@ -8,7 +8,7 @@ void ObjWarp2block_Destroy(Actor* actor, GameState* state);
 void ObjWarp2block_Update(Actor* actor, GameState* state);
 void ObjWarp2block_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Warp2block.data.o")
+GLOBAL_ASM("data/z_Obj_Warp2block.data.o")
 
 ActorInit Obj_Warp2block_InitVars = {
     ACTOR_OBJ_WARP2BLOCK,
@@ -22,11 +22,11 @@ ActorInit Obj_Warp2block_InitVars = {
     (ActorFunc)ObjWarp2block_Draw,
 };
 
-GLOBAL_ASM("binary/ObjWarp2block_Init.o")
+GLOBAL_ASM("asm/ObjWarp2block_Init.s")
 
-GLOBAL_ASM("binary/ObjWarp2block_Destroy.o")
+GLOBAL_ASM("asm/ObjWarp2block_Destroy.s")
 
-GLOBAL_ASM("binary/ObjWarp2block_Update.o")
+GLOBAL_ASM("asm/ObjWarp2block_Update.s")
 
-GLOBAL_ASM("binary/ObjWarp2block_Draw.o")
+GLOBAL_ASM("asm/ObjWarp2block_Draw.s")
 }

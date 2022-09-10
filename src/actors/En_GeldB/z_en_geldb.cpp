@@ -8,7 +8,7 @@ void EnGeldB_Destroy(Actor* actor, GameState* state);
 void EnGeldB_Update(Actor* actor, GameState* state);
 void EnGeldB_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_GeldB.data.o")
+GLOBAL_ASM("data/z_En_GeldB.data.o")
 
 ActorInit En_GeldB_InitVars = {
     ACTOR_EN_GELDB,
@@ -22,11 +22,11 @@ ActorInit En_GeldB_InitVars = {
     (ActorFunc)EnGeldB_Draw,
 };
 
-GLOBAL_ASM("binary/EnGeldB_Init.o")
+GLOBAL_ASM("asm/EnGeldB_Init.s")
 
-GLOBAL_ASM("binary/EnGeldB_Destroy.o")
+GLOBAL_ASM("asm/EnGeldB_Destroy.s")
 
-GLOBAL_ASM("binary/EnGeldB_Update.o")
+GLOBAL_ASM("asm/EnGeldB_Update.s")
 
-GLOBAL_ASM("binary/EnGeldB_Draw.o")
+GLOBAL_ASM("asm/EnGeldB_Draw.s")
 }

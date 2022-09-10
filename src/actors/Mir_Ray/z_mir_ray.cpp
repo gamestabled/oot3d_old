@@ -8,7 +8,7 @@ void MirRay_Destroy(Actor* actor, GameState* state);
 void MirRay_Update(Actor* actor, GameState* state);
 void MirRay_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Mir_Ray.data.o")
+GLOBAL_ASM("data/z_Mir_Ray.data.o")
 
 ActorInit Mir_Ray_InitVars = {
     ACTOR_MIR_RAY,
@@ -22,11 +22,11 @@ ActorInit Mir_Ray_InitVars = {
     (ActorFunc)MirRay_Draw,
 };
 
-GLOBAL_ASM("binary/MirRay_Init.o")
+GLOBAL_ASM("asm/MirRay_Init.s")
 
-GLOBAL_ASM("binary/MirRay_Destroy.o")
+GLOBAL_ASM("asm/MirRay_Destroy.s")
 
-GLOBAL_ASM("binary/MirRay_Update.o")
+GLOBAL_ASM("asm/MirRay_Update.s")
 
-GLOBAL_ASM("binary/MirRay_Draw.o")
+GLOBAL_ASM("asm/MirRay_Draw.s")
 }

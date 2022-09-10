@@ -7,7 +7,7 @@ void EnGirlA_Init(Actor* actor, GameState* state);
 void EnGirlA_Destroy(Actor* actor, GameState* state);
 void EnGirlA_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_GirlA.data.o")
+GLOBAL_ASM("data/z_En_GirlA.data.o")
 
 ActorInit En_GirlA_InitVars = {
     ACTOR_EN_GIRLA,
@@ -21,9 +21,9 @@ ActorInit En_GirlA_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnGirlA_Init.o")
+GLOBAL_ASM("asm/EnGirlA_Init.s")
 
-GLOBAL_ASM("binary/EnGirlA_Destroy.o")
+GLOBAL_ASM("asm/EnGirlA_Destroy.s")
 
-GLOBAL_ASM("binary/EnGirlA_Update.o")
+GLOBAL_ASM("asm/EnGirlA_Update.s")
 }

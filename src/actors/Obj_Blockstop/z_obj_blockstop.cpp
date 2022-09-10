@@ -19,9 +19,9 @@ ActorInit Obj_Blockstop_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/ObjBlockstop_Init.o")
+GLOBAL_ASM("asm/ObjBlockstop_Init.s")
 
-GLOBAL_ASM("binary/ObjBlockstop_Destroy.o")
+GLOBAL_ASM("asm/ObjBlockstop_Destroy.s")
 
-GLOBAL_ASM("binary/ObjBlockstop_Update.o")
+GLOBAL_ASM("asm/ObjBlockstop_Update.s")
 }

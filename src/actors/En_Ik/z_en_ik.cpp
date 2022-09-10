@@ -8,7 +8,7 @@ void EnIk_Destroy(Actor* actor, GameState* state);
 void EnIk_Update(Actor* actor, GameState* state);
 void EnIk_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ik.data.o")
+GLOBAL_ASM("data/z_En_Ik.data.o")
 
 ActorInit En_Ik_InitVars = {
     ACTOR_EN_IK,
@@ -22,11 +22,11 @@ ActorInit En_Ik_InitVars = {
     (ActorFunc)EnIk_Draw,
 };
 
-GLOBAL_ASM("binary/EnIk_Init.o")
+GLOBAL_ASM("asm/EnIk_Init.s")
 
-GLOBAL_ASM("binary/EnIk_Destroy.o")
+GLOBAL_ASM("asm/EnIk_Destroy.s")
 
-GLOBAL_ASM("binary/EnIk_Update.o")
+GLOBAL_ASM("asm/EnIk_Update.s")
 
-GLOBAL_ASM("binary/EnIk_Draw.o")
+GLOBAL_ASM("asm/EnIk_Draw.s")
 }

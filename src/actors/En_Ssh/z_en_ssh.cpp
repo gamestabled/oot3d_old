@@ -8,7 +8,7 @@ void EnSsh_Destroy(Actor* actor, GameState* state);
 void EnSsh_Update(Actor* actor, GameState* state);
 void EnSsh_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ssh.data.o")
+GLOBAL_ASM("data/z_En_Ssh.data.o")
 
 ActorInit En_Ssh_InitVars = {
     ACTOR_EN_SSH,
@@ -22,11 +22,11 @@ ActorInit En_Ssh_InitVars = {
     (ActorFunc)EnSsh_Draw,
 };
 
-GLOBAL_ASM("binary/EnSsh_Init.o")
+GLOBAL_ASM("asm/EnSsh_Init.s")
 
-GLOBAL_ASM("binary/EnSsh_Destroy.o")
+GLOBAL_ASM("asm/EnSsh_Destroy.s")
 
-GLOBAL_ASM("binary/EnSsh_Update.o")
+GLOBAL_ASM("asm/EnSsh_Update.s")
 
-GLOBAL_ASM("binary/EnSsh_Draw.o")
+GLOBAL_ASM("asm/EnSsh_Draw.s")
 }

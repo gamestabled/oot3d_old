@@ -8,7 +8,7 @@ void EnTrap_Destroy(Actor* actor, GameState* state);
 void EnTrap_Update(Actor* actor, GameState* state);
 void EnTrap_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Trap.data.o")
+GLOBAL_ASM("data/z_En_Trap.data.o")
 
 ActorInit En_Trap_InitVars = {
     ACTOR_EN_TRAP,
@@ -22,11 +22,11 @@ ActorInit En_Trap_InitVars = {
     (ActorFunc)EnTrap_Draw,
 };
 
-GLOBAL_ASM("binary/EnTrap_Init.o")
+GLOBAL_ASM("asm/EnTrap_Init.s")
 
-GLOBAL_ASM("binary/EnTrap_Destroy.o")
+GLOBAL_ASM("asm/EnTrap_Destroy.s")
 
-GLOBAL_ASM("binary/EnTrap_Update.o")
+GLOBAL_ASM("asm/EnTrap_Update.s")
 
-GLOBAL_ASM("binary/EnTrap_Draw.o")
+GLOBAL_ASM("asm/EnTrap_Draw.s")
 }

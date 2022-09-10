@@ -8,7 +8,7 @@ void EnGoma_Destroy(Actor* actor, GameState* state);
 void EnGoma_Update(Actor* actor, GameState* state);
 void EnGoma_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Goma.data.o")
+GLOBAL_ASM("data/z_En_Goma.data.o")
 
 ActorInit En_Goma_InitVars = {
     ACTOR_BOSS_GOMA,
@@ -22,11 +22,11 @@ ActorInit En_Goma_InitVars = {
     (ActorFunc)EnGoma_Draw,
 };
 
-GLOBAL_ASM("binary/EnGoma_Init.o")
+GLOBAL_ASM("asm/EnGoma_Init.s")
 
-GLOBAL_ASM("binary/EnGoma_Destroy.o")
+GLOBAL_ASM("asm/EnGoma_Destroy.s")
 
-GLOBAL_ASM("binary/EnGoma_Update.o")
+GLOBAL_ASM("asm/EnGoma_Update.s")
 
-GLOBAL_ASM("binary/EnGoma_Draw.o")
+GLOBAL_ASM("asm/EnGoma_Draw.s")
 }

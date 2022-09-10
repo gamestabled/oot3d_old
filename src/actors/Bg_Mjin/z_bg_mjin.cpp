@@ -7,7 +7,7 @@ void BgMjin_Init(Actor* actor, GameState* state);
 void BgMjin_Destroy(Actor* actor, GameState* state);
 void BgMjin_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mjin.data.o")
+GLOBAL_ASM("data/z_Bg_Mjin.data.o")
 
 ActorInit Bg_Mjin_InitVars = {
     ACTOR_BG_MJIN,
@@ -21,9 +21,9 @@ ActorInit Bg_Mjin_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgMjin_Init.o")
+GLOBAL_ASM("asm/BgMjin_Init.s")
 
-GLOBAL_ASM("binary/BgMjin_Destroy.o")
+GLOBAL_ASM("asm/BgMjin_Destroy.s")
 
-GLOBAL_ASM("binary/BgMjin_Update.o")
+GLOBAL_ASM("asm/BgMjin_Update.s")
 }

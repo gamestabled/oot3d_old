@@ -8,7 +8,7 @@ void ObjKibako_Destroy(Actor* actor, GameState* state);
 void ObjKibako_Update(Actor* actor, GameState* state);
 void ObjKibako_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Kibako.data.o")
+GLOBAL_ASM("data/z_Obj_Kibako.data.o")
 
 ActorInit Obj_Kibako_InitVars = {
     ACTOR_OBJ_KIBAKO,
@@ -22,11 +22,11 @@ ActorInit Obj_Kibako_InitVars = {
     (ActorFunc)ObjKibako_Draw,
 };
 
-GLOBAL_ASM("binary/ObjKibako_Init.o")
+GLOBAL_ASM("asm/ObjKibako_Init.s")
 
-GLOBAL_ASM("binary/ObjKibako_Destroy.o")
+GLOBAL_ASM("asm/ObjKibako_Destroy.s")
 
-GLOBAL_ASM("binary/ObjKibako_Update.o")
+GLOBAL_ASM("asm/ObjKibako_Update.s")
 
-GLOBAL_ASM("binary/ObjKibako_Draw.o")
+GLOBAL_ASM("asm/ObjKibako_Draw.s")
 }

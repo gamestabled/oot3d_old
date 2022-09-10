@@ -20,11 +20,11 @@ ActorInit En_Anubice_Tag_InitVars = {
     (ActorFunc)EnAnubiceTag_Draw,
 };
 
-GLOBAL_ASM("binary/EnAnubiceTag_Init.o")
+GLOBAL_ASM("asm/EnAnubiceTag_Init.s")
 
-GLOBAL_ASM("binary/EnAnubiceTag_Destroy.o")
+GLOBAL_ASM("asm/EnAnubiceTag_Destroy.s")
 
-GLOBAL_ASM("binary/EnAnubiceTag_Update.o")
+GLOBAL_ASM("asm/EnAnubiceTag_Update.s")
 
-GLOBAL_ASM("binary/EnAnubiceTag_Draw.o")
+GLOBAL_ASM("asm/EnAnubiceTag_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgSpot01Fusya_Destroy(Actor* actor, GameState* state);
 void BgSpot01Fusya_Update(Actor* actor, GameState* state);
 void BgSpot01Fusya_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot01_Fusya.data.o")
+GLOBAL_ASM("data/z_Bg_Spot01_Fusya.data.o")
 
 ActorInit Bg_Spot01_Fusya_InitVars = {
     ACTOR_BG_SPOT01_FUSYA,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot01_Fusya_InitVars = {
     (ActorFunc)BgSpot01Fusya_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot01Fusya_Init.o")
+GLOBAL_ASM("asm/BgSpot01Fusya_Init.s")
 
-GLOBAL_ASM("binary/BgSpot01Fusya_Destroy.o")
+GLOBAL_ASM("asm/BgSpot01Fusya_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot01Fusya_Update.o")
+GLOBAL_ASM("asm/BgSpot01Fusya_Update.s")
 
-GLOBAL_ASM("binary/BgSpot01Fusya_Draw.o")
+GLOBAL_ASM("asm/BgSpot01Fusya_Draw.s")
 }

@@ -8,7 +8,7 @@ void EnInsect_Destroy(Actor* actor, GameState* state);
 void EnInsect_Update(Actor* actor, GameState* state);
 void EnInsect_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Insect.data.o")
+GLOBAL_ASM("data/z_En_Insect.data.o")
 
 ActorInit En_Insect_InitVars = {
     ACTOR_EN_INSECT,
@@ -22,11 +22,11 @@ ActorInit En_Insect_InitVars = {
     (ActorFunc)EnInsect_Draw,
 };
 
-GLOBAL_ASM("binary/EnInsect_Init.o")
+GLOBAL_ASM("asm/EnInsect_Init.s")
 
-GLOBAL_ASM("binary/EnInsect_Destroy.o")
+GLOBAL_ASM("asm/EnInsect_Destroy.s")
 
-GLOBAL_ASM("binary/EnInsect_Update.o")
+GLOBAL_ASM("asm/EnInsect_Update.s")
 
-GLOBAL_ASM("binary/EnInsect_Draw.o")
+GLOBAL_ASM("asm/EnInsect_Draw.s")
 }

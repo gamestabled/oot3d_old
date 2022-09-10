@@ -8,7 +8,7 @@ void EnSkj_Destroy(Actor* actor, GameState* state);
 void EnSkj_Update(Actor* actor, GameState* state);
 void EnSkj_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Skj.data.o")
+GLOBAL_ASM("data/z_En_Skj.data.o")
 
 ActorInit En_Skj_InitVars = {
     ACTOR_EN_SKJ,
@@ -22,11 +22,11 @@ ActorInit En_Skj_InitVars = {
     (ActorFunc)EnSkj_Draw,
 };
 
-GLOBAL_ASM("binary/EnSkj_Init.o")
+GLOBAL_ASM("asm/EnSkj_Init.s")
 
-GLOBAL_ASM("binary/EnSkj_Destroy.o")
+GLOBAL_ASM("asm/EnSkj_Destroy.s")
 
-GLOBAL_ASM("binary/EnSkj_Update.o")
+GLOBAL_ASM("asm/EnSkj_Update.s")
 
-GLOBAL_ASM("binary/EnSkj_Draw.o")
+GLOBAL_ASM("asm/EnSkj_Draw.s")
 }

@@ -20,11 +20,11 @@ ActorInit Bg_Spot15_Saku_InitVars = {
     (ActorFunc)BgSpot15Saku_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot15Saku_Init.o")
+GLOBAL_ASM("asm/BgSpot15Saku_Init.s")
 
-GLOBAL_ASM("binary/BgSpot15Saku_Destroy.o")
+GLOBAL_ASM("asm/BgSpot15Saku_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot15Saku_Update.o")
+GLOBAL_ASM("asm/BgSpot15Saku_Update.s")
 
-GLOBAL_ASM("binary/BgSpot15Saku_Draw.o")
+GLOBAL_ASM("asm/BgSpot15Saku_Draw.s")
 }

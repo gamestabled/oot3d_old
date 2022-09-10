@@ -8,8 +8,8 @@ void EnCs_Destroy(Actor* actor, GameState* state);
 void EnCs_Update(Actor* actor, GameState* state);
 void EnCs_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Cs.data_00521B74.o")
-GLOBAL_ASM("binary/z_En_Cs.data_00521B98.o")
+GLOBAL_ASM("data/z_En_Cs.data_00521B74.o")
+GLOBAL_ASM("data/z_En_Cs.data_00521B98.o")
 
 ActorInit En_Cs_InitVars = {
     ACTOR_EN_CS,
@@ -23,11 +23,11 @@ ActorInit En_Cs_InitVars = {
     (ActorFunc)EnCs_Draw,
 };
 
-GLOBAL_ASM("binary/EnCs_Init.o")
+GLOBAL_ASM("asm/EnCs_Init.s")
 
-GLOBAL_ASM("binary/EnCs_Destroy.o")
+GLOBAL_ASM("asm/EnCs_Destroy.s")
 
-GLOBAL_ASM("binary/EnCs_Update.o")
+GLOBAL_ASM("asm/EnCs_Update.s")
 
-GLOBAL_ASM("binary/EnCs_Draw.o")
+GLOBAL_ASM("asm/EnCs_Draw.s")
 }

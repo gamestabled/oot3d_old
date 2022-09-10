@@ -8,7 +8,7 @@ void BgHakaTrap_Destroy(Actor* actor, GameState* state);
 void BgHakaTrap_Update(Actor* actor, GameState* state);
 void BgHakaTrap_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Haka_Trap.data.o")
+GLOBAL_ASM("data/z_Bg_Haka_Trap.data.o")
 
 ActorInit Bg_Haka_Trap_InitVars = {
     ACTOR_BG_HAKA_TRAP,
@@ -22,11 +22,11 @@ ActorInit Bg_Haka_Trap_InitVars = {
     (ActorFunc)BgHakaTrap_Draw,
 };
 
-GLOBAL_ASM("binary/BgHakaTrap_Init.o")
+GLOBAL_ASM("asm/BgHakaTrap_Init.s")
 
-GLOBAL_ASM("binary/BgHakaTrap_Destroy.o")
+GLOBAL_ASM("asm/BgHakaTrap_Destroy.s")
 
-GLOBAL_ASM("binary/BgHakaTrap_Update.o")
+GLOBAL_ASM("asm/BgHakaTrap_Update.s")
 
-GLOBAL_ASM("binary/BgHakaTrap_Draw.o")
+GLOBAL_ASM("asm/BgHakaTrap_Draw.s")
 }

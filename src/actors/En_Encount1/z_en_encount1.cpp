@@ -19,9 +19,9 @@ ActorInit En_Encount1_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnEncount1_Init.o")
+GLOBAL_ASM("asm/EnEncount1_Init.s")
 
-GLOBAL_ASM("binary/EnEncount1_Destroy.o")
+GLOBAL_ASM("asm/EnEncount1_Destroy.s")
 
-GLOBAL_ASM("binary/EnEncount1_Update.o")
+GLOBAL_ASM("asm/EnEncount1_Update.s")
 }

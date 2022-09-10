@@ -8,7 +8,7 @@ void BgJyaIronobj_Destroy(Actor* actor, GameState* state);
 void BgJyaIronobj_Update(Actor* actor, GameState* state);
 void BgJyaIronobj_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Jya_Ironobj.data.o")
+GLOBAL_ASM("data/z_Bg_Jya_Ironobj.data.o")
 
 ActorInit Bg_Jya_Ironobj_InitVars = {
     ACTOR_BG_JYA_IRONOBJ,
@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Ironobj_InitVars = {
     (ActorFunc)BgJyaIronobj_Draw,
 };
 
-GLOBAL_ASM("binary/BgJyaIronobj_Init.o")
+GLOBAL_ASM("asm/BgJyaIronobj_Init.s")
 
-GLOBAL_ASM("binary/BgJyaIronobj_Destroy.o")
+GLOBAL_ASM("asm/BgJyaIronobj_Destroy.s")
 
-GLOBAL_ASM("binary/BgJyaIronobj_Update.o")
+GLOBAL_ASM("asm/BgJyaIronobj_Update.s")
 
-GLOBAL_ASM("binary/BgJyaIronobj_Draw.o")
+GLOBAL_ASM("asm/BgJyaIronobj_Draw.s")
 }

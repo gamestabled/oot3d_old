@@ -8,7 +8,7 @@ void ObjTimeblock_Destroy(Actor* actor, GameState* state);
 void ObjTimeblock_Update(Actor* actor, GameState* state);
 void ObjTimeblock_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Timeblock.data.o")
+GLOBAL_ASM("data/z_Obj_Timeblock.data.o")
 
 ActorInit Obj_Timeblock_InitVars = {
     ACTOR_OBJ_TIMEBLOCK,
@@ -22,11 +22,11 @@ ActorInit Obj_Timeblock_InitVars = {
     (ActorFunc)ObjTimeblock_Draw,
 };
 
-GLOBAL_ASM("binary/ObjTimeblock_Init.o")
+GLOBAL_ASM("asm/ObjTimeblock_Init.s")
 
-GLOBAL_ASM("binary/ObjTimeblock_Destroy.o")
+GLOBAL_ASM("asm/ObjTimeblock_Destroy.s")
 
-GLOBAL_ASM("binary/ObjTimeblock_Update.o")
+GLOBAL_ASM("asm/ObjTimeblock_Update.s")
 
-GLOBAL_ASM("binary/ObjTimeblock_Draw.o")
+GLOBAL_ASM("asm/ObjTimeblock_Draw.s")
 }

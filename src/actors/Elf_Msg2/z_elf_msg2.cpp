@@ -7,7 +7,7 @@ void ElfMsg2_Init(Actor* actor, GameState* state);
 void ElfMsg2_Destroy(Actor* actor, GameState* state);
 void ElfMsg2_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Elf_Msg2.data.o")
+GLOBAL_ASM("data/z_Elf_Msg2.data.o")
 
 ActorInit Elf_Msg2_InitVars = {
     ACTOR_ELF_MSG2,
@@ -21,9 +21,9 @@ ActorInit Elf_Msg2_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/ElfMsg2_Init.o")
+GLOBAL_ASM("asm/ElfMsg2_Init.s")
 
-GLOBAL_ASM("binary/ElfMsg2_Destroy.o")
+GLOBAL_ASM("asm/ElfMsg2_Destroy.s")
 
-GLOBAL_ASM("binary/ElfMsg2_Update.o")
+GLOBAL_ASM("asm/ElfMsg2_Update.s")
 }

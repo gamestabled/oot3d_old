@@ -8,7 +8,7 @@ void EnShopnuts_Destroy(Actor* actor, GameState* state);
 void EnShopnuts_Update(Actor* actor, GameState* state);
 void EnShopnuts_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Shopnuts.data.o")
+GLOBAL_ASM("data/z_En_Shopnuts.data.o")
 
 ActorInit En_Shopnuts_InitVars = {
     ACTOR_EN_SHOPNUTS,
@@ -22,11 +22,11 @@ ActorInit En_Shopnuts_InitVars = {
     (ActorFunc)EnShopnuts_Draw,
 };
 
-GLOBAL_ASM("binary/EnShopnuts_Init.o")
+GLOBAL_ASM("asm/EnShopnuts_Init.s")
 
-GLOBAL_ASM("binary/EnShopnuts_Destroy.o")
+GLOBAL_ASM("asm/EnShopnuts_Destroy.s")
 
-GLOBAL_ASM("binary/EnShopnuts_Update.o")
+GLOBAL_ASM("asm/EnShopnuts_Update.s")
 
-GLOBAL_ASM("binary/EnShopnuts_Draw.o")
+GLOBAL_ASM("asm/EnShopnuts_Draw.s")
 }

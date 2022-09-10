@@ -503,7 +503,7 @@ void EnKz_Update(Actor* actor, GameState* state) {
     self->actionFunc(self, play);
 }
 #else
-GLOBAL_ASM("binary/EnKz_Update.o")
+GLOBAL_ASM("asm/EnKz_Update.s")
 #endif
 
 s32 EnKz_OverrideLimbDraw(PlayState* play, s32 limbIndex, MTX34* mtx, void* actor) {

@@ -8,7 +8,7 @@ void BgHidanKowarerukabe_Destroy(Actor* actor, GameState* state);
 void BgHidanKowarerukabe_Update(Actor* actor, GameState* state);
 void BgHidanKowarerukabe_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Hidan_Kowarerukabe.data.o")
+GLOBAL_ASM("data/z_Bg_Hidan_Kowarerukabe.data.o")
 
 ActorInit Bg_Hidan_Kowarerukabe_InitVars = {
     ACTOR_BG_HIDAN_KOWARERUKABE,
@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Kowarerukabe_InitVars = {
     (ActorFunc)BgHidanKowarerukabe_Draw,
 };
 
-GLOBAL_ASM("binary/BgHidanKowarerukabe_Init.o")
+GLOBAL_ASM("asm/BgHidanKowarerukabe_Init.s")
 
-GLOBAL_ASM("binary/BgHidanKowarerukabe_Destroy.o")
+GLOBAL_ASM("asm/BgHidanKowarerukabe_Destroy.s")
 
-GLOBAL_ASM("binary/BgHidanKowarerukabe_Update.o")
+GLOBAL_ASM("asm/BgHidanKowarerukabe_Update.s")
 
-GLOBAL_ASM("binary/BgHidanKowarerukabe_Draw.o")
+GLOBAL_ASM("asm/BgHidanKowarerukabe_Draw.s")
 }

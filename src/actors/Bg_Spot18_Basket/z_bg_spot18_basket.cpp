@@ -8,7 +8,7 @@ void BgSpot18Basket_Destroy(Actor* actor, GameState* state);
 void BgSpot18Basket_Update(Actor* actor, GameState* state);
 void BgSpot18Basket_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot18_Basket.data.o")
+GLOBAL_ASM("data/z_Bg_Spot18_Basket.data.o")
 
 ActorInit Bg_Spot18_Basket_InitVars = {
     ACTOR_BG_SPOT18_BASKET,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot18_Basket_InitVars = {
     (ActorFunc)BgSpot18Basket_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot18Basket_Init.o")
+GLOBAL_ASM("asm/BgSpot18Basket_Init.s")
 
-GLOBAL_ASM("binary/BgSpot18Basket_Destroy.o")
+GLOBAL_ASM("asm/BgSpot18Basket_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot18Basket_Update.o")
+GLOBAL_ASM("asm/BgSpot18Basket_Update.s")
 
-GLOBAL_ASM("binary/BgSpot18Basket_Draw.o")
+GLOBAL_ASM("asm/BgSpot18Basket_Draw.s")
 }

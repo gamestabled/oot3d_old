@@ -8,7 +8,7 @@ void BgHakaMeganeBG_Destroy(Actor* actor, GameState* state);
 void BgHakaMeganeBG_Update(Actor* actor, GameState* state);
 void BgHakaMeganeBG_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Haka_Megane_BG.data.o")
+GLOBAL_ASM("data/z_Bg_Haka_Megane_BG.data.o")
 
 ActorInit Bg_Haka_MeganeBG_InitVars = {
     ACTOR_BG_HAKA_MEGANEBG,
@@ -22,11 +22,11 @@ ActorInit Bg_Haka_MeganeBG_InitVars = {
     (ActorFunc)BgHakaMeganeBG_Draw,
 };
 
-GLOBAL_ASM("binary/BgHakaMeganeBG_Init.o")
+GLOBAL_ASM("asm/BgHakaMeganeBG_Init.s")
 
-GLOBAL_ASM("binary/BgHakaMeganeBG_Destroy.o")
+GLOBAL_ASM("asm/BgHakaMeganeBG_Destroy.s")
 
-GLOBAL_ASM("binary/BgHakaMeganeBG_Update.o")
+GLOBAL_ASM("asm/BgHakaMeganeBG_Update.s")
 
-GLOBAL_ASM("binary/BgHakaMeganeBG_Draw.o")
+GLOBAL_ASM("asm/BgHakaMeganeBG_Draw.s")
 }

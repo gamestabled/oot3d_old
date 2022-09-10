@@ -7,7 +7,7 @@ void BgMoriBigst_Init(Actor* actor, GameState* state);
 void BgMoriBigst_Destroy(Actor* actor, GameState* state);
 void BgMoriBigst_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mori_Bigst.data.o")
+GLOBAL_ASM("data/z_Bg_Mori_Bigst.data.o")
 
 ActorInit Bg_Mori_Bigst_InitVars = {
     ACTOR_BG_MORI_BIGST,
@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Bigst_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgMoriBigst_Init.o")
+GLOBAL_ASM("asm/BgMoriBigst_Init.s")
 
-GLOBAL_ASM("binary/BgMoriBigst_Destroy.o")
+GLOBAL_ASM("asm/BgMoriBigst_Destroy.s")
 
-GLOBAL_ASM("binary/BgMoriBigst_Update.o")
+GLOBAL_ASM("asm/BgMoriBigst_Update.s")
 }

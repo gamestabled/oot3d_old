@@ -8,7 +8,7 @@ void EnKo_Destroy(Actor* actor, GameState* state);
 void EnKo_Update(Actor* actor, GameState* state);
 void EnKo_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ko.data.o")
+GLOBAL_ASM("data/z_En_Ko.data.o")
 
 ActorInit En_Ko_InitVars = {
     ACTOR_EN_KO,
@@ -22,11 +22,11 @@ ActorInit En_Ko_InitVars = {
     (ActorFunc)EnKo_Draw,
 };
 
-GLOBAL_ASM("binary/EnKo_Init.o")
+GLOBAL_ASM("asm/EnKo_Init.s")
 
-GLOBAL_ASM("binary/EnKo_Destroy.o")
+GLOBAL_ASM("asm/EnKo_Destroy.s")
 
-GLOBAL_ASM("binary/EnKo_Update.o")
+GLOBAL_ASM("asm/EnKo_Update.s")
 
-GLOBAL_ASM("binary/EnKo_Draw.o")
+GLOBAL_ASM("asm/EnKo_Draw.s")
 }

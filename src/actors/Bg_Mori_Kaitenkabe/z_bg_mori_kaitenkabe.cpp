@@ -7,7 +7,7 @@ void BgMoriKaitenkabe_Init(Actor* actor, GameState* state);
 void BgMoriKaitenkabe_Destroy(Actor* actor, GameState* state);
 void BgMoriKaitenkabe_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mori_Kaitenkabe.data.o")
+GLOBAL_ASM("data/z_Bg_Mori_Kaitenkabe.data.o")
 
 ActorInit Bg_Mori_Kaitenkabe_InitVars = {
     ACTOR_BG_MORI_KAITENKABE,
@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Kaitenkabe_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgMoriKaitenkabe_Init.o")
+GLOBAL_ASM("asm/BgMoriKaitenkabe_Init.s")
 
-GLOBAL_ASM("binary/BgMoriKaitenkabe_Destroy.o")
+GLOBAL_ASM("asm/BgMoriKaitenkabe_Destroy.s")
 
-GLOBAL_ASM("binary/BgMoriKaitenkabe_Update.o")
+GLOBAL_ASM("asm/BgMoriKaitenkabe_Update.s")
 }

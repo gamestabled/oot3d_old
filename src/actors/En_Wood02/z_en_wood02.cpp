@@ -8,7 +8,7 @@ void EnWood02_Destroy(Actor* actor, GameState* state);
 void EnWood02_Update(Actor* actor, GameState* state);
 void EnWood02_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Wood02.data.o")
+GLOBAL_ASM("data/z_En_Wood02.data.o")
 
 ActorInit En_Wood02_InitVars = {
     ACTOR_EN_WOOD02,
@@ -22,11 +22,11 @@ ActorInit En_Wood02_InitVars = {
     (ActorFunc)EnWood02_Draw,
 };
 
-GLOBAL_ASM("binary/EnWood02_Init.o")
+GLOBAL_ASM("asm/EnWood02_Init.s")
 
-GLOBAL_ASM("binary/EnWood02_Destroy.o")
+GLOBAL_ASM("asm/EnWood02_Destroy.s")
 
-GLOBAL_ASM("binary/EnWood02_Update.o")
+GLOBAL_ASM("asm/EnWood02_Update.s")
 
-GLOBAL_ASM("binary/EnWood02_Draw.o")
+GLOBAL_ASM("asm/EnWood02_Draw.s")
 }

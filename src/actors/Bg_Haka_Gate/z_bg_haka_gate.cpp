@@ -8,7 +8,7 @@ void BgHakaGate_Destroy(Actor* actor, GameState* state);
 void BgHakaGate_Update(Actor* actor, GameState* state);
 void BgHakaGate_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Haka_Gate.data.o")
+GLOBAL_ASM("data/z_Bg_Haka_Gate.data.o")
 
 ActorInit Bg_Haka_Gate_InitVars = {
     ACTOR_BG_HAKA_GATE,
@@ -22,11 +22,11 @@ ActorInit Bg_Haka_Gate_InitVars = {
     (ActorFunc)BgHakaGate_Draw,
 };
 
-GLOBAL_ASM("binary/BgHakaGate_Init.o")
+GLOBAL_ASM("asm/BgHakaGate_Init.s")
 
-GLOBAL_ASM("binary/BgHakaGate_Destroy.o")
+GLOBAL_ASM("asm/BgHakaGate_Destroy.s")
 
-GLOBAL_ASM("binary/BgHakaGate_Update.o")
+GLOBAL_ASM("asm/BgHakaGate_Update.s")
 
-GLOBAL_ASM("binary/BgHakaGate_Draw.o")
+GLOBAL_ASM("asm/BgHakaGate_Draw.s")
 }

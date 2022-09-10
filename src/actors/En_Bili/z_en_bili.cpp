@@ -8,7 +8,7 @@ void EnBili_Destroy(Actor* actor, GameState* state);
 void EnBili_Update(Actor* actor, GameState* state);
 void EnBili_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Bili.data.o")
+GLOBAL_ASM("data/z_En_Bili.data.o")
 
 ActorInit En_Bili_InitVars = {
     ACTOR_EN_BILI,
@@ -22,11 +22,11 @@ ActorInit En_Bili_InitVars = {
     (ActorFunc)EnBili_Draw,
 };
 
-GLOBAL_ASM("binary/EnBili_Init.o")
+GLOBAL_ASM("asm/EnBili_Init.s")
 
-GLOBAL_ASM("binary/EnBili_Destroy.o")
+GLOBAL_ASM("asm/EnBili_Destroy.s")
 
-GLOBAL_ASM("binary/EnBili_Update.o")
+GLOBAL_ASM("asm/EnBili_Update.s")
 
-GLOBAL_ASM("binary/EnBili_Draw.o")
+GLOBAL_ASM("asm/EnBili_Draw.s")
 }

@@ -8,7 +8,7 @@ void EnRr_Destroy(Actor* actor, GameState* state);
 void EnRr_Update(Actor* actor, GameState* state);
 void EnRr_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Rr.data.o")
+GLOBAL_ASM("data/z_En_Rr.data.o")
 
 ActorInit En_Rr_InitVars = {
     ACTOR_EN_RR,
@@ -22,11 +22,11 @@ ActorInit En_Rr_InitVars = {
     (ActorFunc)EnRr_Draw,
 };
 
-GLOBAL_ASM("binary/EnRr_Init.o")
+GLOBAL_ASM("asm/EnRr_Init.s")
 
-GLOBAL_ASM("binary/EnRr_Destroy.o")
+GLOBAL_ASM("asm/EnRr_Destroy.s")
 
-GLOBAL_ASM("binary/EnRr_Update.o")
+GLOBAL_ASM("asm/EnRr_Update.s")
 
-GLOBAL_ASM("binary/EnRr_Draw.o")
+GLOBAL_ASM("asm/EnRr_Draw.s")
 }

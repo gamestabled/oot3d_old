@@ -8,7 +8,7 @@ void EnNiwGirl_Destroy(Actor* actor, GameState* state);
 void EnNiwGirl_Update(Actor* actor, GameState* state);
 void EnNiwGirl_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Niw_Girl.data.o")
+GLOBAL_ASM("data/z_En_Niw_Girl.data.o")
 
 ActorInit En_Niw_Girl_InitVars = {
     ACTOR_EN_NIW_GIRL,
@@ -22,11 +22,11 @@ ActorInit En_Niw_Girl_InitVars = {
     (ActorFunc)EnNiwGirl_Draw,
 };
 
-GLOBAL_ASM("binary/EnNiwGirl_Init.o")
+GLOBAL_ASM("asm/EnNiwGirl_Init.s")
 
-GLOBAL_ASM("binary/EnNiwGirl_Destroy.o")
+GLOBAL_ASM("asm/EnNiwGirl_Destroy.s")
 
-GLOBAL_ASM("binary/EnNiwGirl_Update.o")
+GLOBAL_ASM("asm/EnNiwGirl_Update.s")
 
-GLOBAL_ASM("binary/EnNiwGirl_Draw.o")
+GLOBAL_ASM("asm/EnNiwGirl_Draw.s")
 }

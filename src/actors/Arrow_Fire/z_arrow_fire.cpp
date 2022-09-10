@@ -8,7 +8,7 @@ void ArrowFire_Destroy(Actor* actor, GameState* state);
 void ArrowFire_Update(Actor* actor, GameState* state);
 void ArrowFire_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Arrow_Fire.data.o")
+GLOBAL_ASM("data/z_Arrow_Fire.data.o")
 
 ActorInit Arrow_Fire_InitVars = {
     ACTOR_ARROW_FIRE,
@@ -22,11 +22,11 @@ ActorInit Arrow_Fire_InitVars = {
     (ActorFunc)ArrowFire_Draw,
 };
 
-GLOBAL_ASM("binary/ArrowFire_Init.o")
+GLOBAL_ASM("asm/ArrowFire_Init.s")
 
-GLOBAL_ASM("binary/ArrowFire_Destroy.o")
+GLOBAL_ASM("asm/ArrowFire_Destroy.s")
 
-GLOBAL_ASM("binary/ArrowFire_Update.o")
+GLOBAL_ASM("asm/ArrowFire_Update.s")
 
-GLOBAL_ASM("binary/ArrowFire_Draw.o")
+GLOBAL_ASM("asm/ArrowFire_Draw.s")
 }

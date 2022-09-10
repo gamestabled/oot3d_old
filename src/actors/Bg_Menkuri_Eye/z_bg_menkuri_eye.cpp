@@ -8,7 +8,7 @@ void BgMenkuriEye_Destroy(Actor* actor, GameState* state);
 void BgMenkuriEye_Update(Actor* actor, GameState* state);
 void BgMenkuriEye_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Menkuri_Eye.data.o")
+GLOBAL_ASM("data/z_Bg_Menkuri_Eye.data.o")
 
 ActorInit Bg_Menkuri_Eye_InitVars = {
     ACTOR_BG_MENKURI_EYE,
@@ -22,11 +22,11 @@ ActorInit Bg_Menkuri_Eye_InitVars = {
     (ActorFunc)BgMenkuriEye_Draw,
 };
 
-GLOBAL_ASM("binary/BgMenkuriEye_Init.o")
+GLOBAL_ASM("asm/BgMenkuriEye_Init.s")
 
-GLOBAL_ASM("binary/BgMenkuriEye_Destroy.o")
+GLOBAL_ASM("asm/BgMenkuriEye_Destroy.s")
 
-GLOBAL_ASM("binary/BgMenkuriEye_Update.o")
+GLOBAL_ASM("asm/BgMenkuriEye_Update.s")
 
-GLOBAL_ASM("binary/BgMenkuriEye_Draw.o")
+GLOBAL_ASM("asm/BgMenkuriEye_Draw.s")
 }

@@ -8,7 +8,7 @@ void ObjHana_Destroy(Actor* actor, GameState* state);
 void ObjHana_Update(Actor* actor, GameState* state);
 void ObjHana_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Hana.data.o")
+GLOBAL_ASM("data/z_Obj_Hana.data.o")
 
 ActorInit Obj_Hana_InitVars = {
     ACTOR_OBJ_HANA,
@@ -22,11 +22,11 @@ ActorInit Obj_Hana_InitVars = {
     (ActorFunc)ObjHana_Draw,
 };
 
-GLOBAL_ASM("binary/ObjHana_Init.o")
+GLOBAL_ASM("asm/ObjHana_Init.s")
 
-GLOBAL_ASM("binary/ObjHana_Destroy.o")
+GLOBAL_ASM("asm/ObjHana_Destroy.s")
 
-GLOBAL_ASM("binary/ObjHana_Update.o")
+GLOBAL_ASM("asm/ObjHana_Update.s")
 
-GLOBAL_ASM("binary/ObjHana_Draw.o")
+GLOBAL_ASM("asm/ObjHana_Draw.s")
 }

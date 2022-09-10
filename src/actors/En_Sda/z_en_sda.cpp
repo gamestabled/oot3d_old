@@ -20,11 +20,11 @@ ActorInit En_Sda_InitVars = {
     (ActorFunc)EnSda_Draw,
 };
 
-GLOBAL_ASM("binary/EnSda_Init.o")
+GLOBAL_ASM("asm/EnSda_Init.s")
 
-GLOBAL_ASM("binary/EnSda_Destroy.o")
+GLOBAL_ASM("asm/EnSda_Destroy.s")
 
-GLOBAL_ASM("binary/EnSda_Update.o")
+GLOBAL_ASM("asm/EnSda_Update.s")
 
-GLOBAL_ASM("binary/EnSda_Draw.o")
+GLOBAL_ASM("asm/EnSda_Draw.s")
 }

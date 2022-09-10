@@ -8,7 +8,7 @@ void EnIshi_Destroy(Actor* actor, GameState* state);
 void EnIshi_Update(Actor* actor, GameState* state);
 void EnIshi_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ishi.data.o")
+GLOBAL_ASM("data/z_En_Ishi.data.o")
 
 ActorInit En_Ishi_InitVars = {
     ACTOR_EN_ISHI,
@@ -22,11 +22,11 @@ ActorInit En_Ishi_InitVars = {
     (ActorFunc)EnIshi_Draw,
 };
 
-GLOBAL_ASM("binary/EnIshi_Init.o")
+GLOBAL_ASM("asm/EnIshi_Init.s")
 
-GLOBAL_ASM("binary/EnIshi_Destroy.o")
+GLOBAL_ASM("asm/EnIshi_Destroy.s")
 
-GLOBAL_ASM("binary/EnIshi_Update.o")
+GLOBAL_ASM("asm/EnIshi_Update.s")
 
-GLOBAL_ASM("binary/EnIshi_Draw.o")
+GLOBAL_ASM("asm/EnIshi_Draw.s")
 }

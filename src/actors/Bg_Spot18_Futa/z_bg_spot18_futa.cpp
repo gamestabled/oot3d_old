@@ -8,7 +8,7 @@ void BgSpot18Futa_Destroy(Actor* actor, GameState* state);
 void BgSpot18Futa_Update(Actor* actor, GameState* state);
 void BgSpot18Futa_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot18_Futa.data.o")
+GLOBAL_ASM("data/z_Bg_Spot18_Futa.data.o")
 
 ActorInit Bg_Spot18_Futa_InitVars = {
     ACTOR_BG_SPOT18_FUTA,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot18_Futa_InitVars = {
     (ActorFunc)BgSpot18Futa_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot18Futa_Init.o")
+GLOBAL_ASM("asm/BgSpot18Futa_Init.s")
 
-GLOBAL_ASM("binary/BgSpot18Futa_Destroy.o")
+GLOBAL_ASM("asm/BgSpot18Futa_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot18Futa_Update.o")
+GLOBAL_ASM("asm/BgSpot18Futa_Update.s")
 
-GLOBAL_ASM("binary/BgSpot18Futa_Draw.o")
+GLOBAL_ASM("asm/BgSpot18Futa_Draw.s")
 }

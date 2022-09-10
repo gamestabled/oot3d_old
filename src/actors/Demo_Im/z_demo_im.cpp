@@ -8,7 +8,7 @@ void DemoIm_Destroy(Actor* actor, GameState* state);
 void DemoIm_Update(Actor* actor, GameState* state);
 void DemoIm_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Demo_Im.data.o")
+GLOBAL_ASM("data/z_Demo_Im.data.o")
 
 ActorInit Demo_Im_InitVars = {
     ACTOR_DEMO_IM,
@@ -22,11 +22,11 @@ ActorInit Demo_Im_InitVars = {
     (ActorFunc)DemoIm_Draw,
 };
 
-GLOBAL_ASM("binary/DemoIm_Init.o")
+GLOBAL_ASM("asm/DemoIm_Init.s")
 
-GLOBAL_ASM("binary/DemoIm_Destroy.o")
+GLOBAL_ASM("asm/DemoIm_Destroy.s")
 
-GLOBAL_ASM("binary/DemoIm_Update.o")
+GLOBAL_ASM("asm/DemoIm_Update.s")
 
-GLOBAL_ASM("binary/DemoIm_Draw.o")
+GLOBAL_ASM("asm/DemoIm_Draw.s")
 }

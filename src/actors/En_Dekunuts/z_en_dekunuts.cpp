@@ -8,7 +8,7 @@ void EnDekunuts_Destroy(Actor* actor, GameState* state);
 void EnDekunuts_Update(Actor* actor, GameState* state);
 void EnDekunuts_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Dekunuts.data.o")
+GLOBAL_ASM("data/z_En_Dekunuts.data.o")
 
 ActorInit En_Dekunuts_InitVars = {
     ACTOR_EN_DEKUNUTS,
@@ -22,11 +22,11 @@ ActorInit En_Dekunuts_InitVars = {
     (ActorFunc)EnDekunuts_Draw,
 };
 
-GLOBAL_ASM("binary/EnDekunuts_Init.o")
+GLOBAL_ASM("asm/EnDekunuts_Init.s")
 
-GLOBAL_ASM("binary/EnDekunuts_Destroy.o")
+GLOBAL_ASM("asm/EnDekunuts_Destroy.s")
 
-GLOBAL_ASM("binary/EnDekunuts_Update.o")
+GLOBAL_ASM("asm/EnDekunuts_Update.s")
 
-GLOBAL_ASM("binary/EnDekunuts_Draw.o")
+GLOBAL_ASM("asm/EnDekunuts_Draw.s")
 }

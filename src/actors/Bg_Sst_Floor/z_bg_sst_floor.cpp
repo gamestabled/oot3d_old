@@ -8,7 +8,7 @@ void BgSstFloor_Destroy(Actor* actor, GameState* state);
 void BgSstFloor_Update(Actor* actor, GameState* state);
 void BgSstFloor_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Sst_Floor.data.o")
+GLOBAL_ASM("data/z_Bg_Sst_Floor.data.o")
 
 ActorInit Bg_Sst_Floor_InitVars = {
     ACTOR_BG_SST_FLOOR,
@@ -22,11 +22,11 @@ ActorInit Bg_Sst_Floor_InitVars = {
     (ActorFunc)BgSstFloor_Draw,
 };
 
-GLOBAL_ASM("binary/BgSstFloor_Init.o")
+GLOBAL_ASM("asm/BgSstFloor_Init.s")
 
-GLOBAL_ASM("binary/BgSstFloor_Destroy.o")
+GLOBAL_ASM("asm/BgSstFloor_Destroy.s")
 
-GLOBAL_ASM("binary/BgSstFloor_Update.o")
+GLOBAL_ASM("asm/BgSstFloor_Update.s")
 
-GLOBAL_ASM("binary/BgSstFloor_Draw.o")
+GLOBAL_ASM("asm/BgSstFloor_Draw.s")
 }

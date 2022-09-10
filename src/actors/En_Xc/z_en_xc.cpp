@@ -8,7 +8,7 @@ void EnXc_Destroy(Actor* actor, GameState* state);
 void EnXc_Update(Actor* actor, GameState* state);
 void EnXc_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Xc.data.o")
+GLOBAL_ASM("data/z_En_Xc.data.o")
 
 ActorInit En_Xc_InitVars = {
     ACTOR_EN_XC,
@@ -22,11 +22,11 @@ ActorInit En_Xc_InitVars = {
     (ActorFunc)EnXc_Draw,
 };
 
-GLOBAL_ASM("binary/EnXc_Init.o")
+GLOBAL_ASM("asm/EnXc_Init.s")
 
-GLOBAL_ASM("binary/EnXc_Destroy.o")
+GLOBAL_ASM("asm/EnXc_Destroy.s")
 
-GLOBAL_ASM("binary/EnXc_Update.o")
+GLOBAL_ASM("asm/EnXc_Update.s")
 
-GLOBAL_ASM("binary/EnXc_Draw.o")
+GLOBAL_ASM("asm/EnXc_Draw.s")
 }

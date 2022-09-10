@@ -7,7 +7,7 @@ void EnNutsball_Init(Actor* actor, GameState* state);
 void EnNutsball_Destroy(Actor* actor, GameState* state);
 void EnNutsball_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Nutsball.data.o")
+GLOBAL_ASM("data/z_En_Nutsball.data.o")
 
 ActorInit En_Nutsball_InitVars = {
     ACTOR_EN_NUTSBALL,
@@ -21,9 +21,9 @@ ActorInit En_Nutsball_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnNutsball_Init.o")
+GLOBAL_ASM("asm/EnNutsball_Init.s")
 
-GLOBAL_ASM("binary/EnNutsball_Destroy.o")
+GLOBAL_ASM("asm/EnNutsball_Destroy.s")
 
-GLOBAL_ASM("binary/EnNutsball_Update.o")
+GLOBAL_ASM("asm/EnNutsball_Update.s")
 }

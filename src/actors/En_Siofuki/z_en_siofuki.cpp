@@ -8,7 +8,7 @@ void EnSiofuki_Destroy(Actor* actor, GameState* state);
 void EnSiofuki_Update(Actor* actor, GameState* state);
 void EnSiofuki_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Siofuki.data.o")
+GLOBAL_ASM("data/z_En_Siofuki.data.o")
 
 ActorInit En_Siofuki_InitVars = {
     ACTOR_EN_SIOFUKI,
@@ -22,11 +22,11 @@ ActorInit En_Siofuki_InitVars = {
     (ActorFunc)EnSiofuki_Draw,
 };
 
-GLOBAL_ASM("binary/EnSiofuki_Init.o")
+GLOBAL_ASM("asm/EnSiofuki_Init.s")
 
-GLOBAL_ASM("binary/EnSiofuki_Destroy.o")
+GLOBAL_ASM("asm/EnSiofuki_Destroy.s")
 
-GLOBAL_ASM("binary/EnSiofuki_Update.o")
+GLOBAL_ASM("asm/EnSiofuki_Update.s")
 
-GLOBAL_ASM("binary/EnSiofuki_Draw.o")
+GLOBAL_ASM("asm/EnSiofuki_Draw.s")
 }

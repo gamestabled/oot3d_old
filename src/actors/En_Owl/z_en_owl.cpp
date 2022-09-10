@@ -8,7 +8,7 @@ void EnOwl_Destroy(Actor* actor, GameState* state);
 void EnOwl_Update(Actor* actor, GameState* state);
 void EnOwl_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Owl.data.o")
+GLOBAL_ASM("data/z_En_Owl.data.o")
 
 ActorInit En_Owl_InitVars = {
     ACTOR_EN_OWL,
@@ -22,11 +22,11 @@ ActorInit En_Owl_InitVars = {
     (ActorFunc)EnOwl_Draw,
 };
 
-GLOBAL_ASM("binary/EnOwl_Init.o")
+GLOBAL_ASM("asm/EnOwl_Init.s")
 
-GLOBAL_ASM("binary/EnOwl_Destroy.o")
+GLOBAL_ASM("asm/EnOwl_Destroy.s")
 
-GLOBAL_ASM("binary/EnOwl_Update.o")
+GLOBAL_ASM("asm/EnOwl_Update.s")
 
-GLOBAL_ASM("binary/EnOwl_Draw.o")
+GLOBAL_ASM("asm/EnOwl_Draw.s")
 }

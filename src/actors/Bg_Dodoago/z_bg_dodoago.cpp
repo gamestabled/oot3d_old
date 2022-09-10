@@ -8,7 +8,7 @@ void BgDodoago_Destroy(Actor* actor, GameState* state);
 void BgDodoago_Update(Actor* actor, GameState* state);
 void BgDodoago_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Dodoago.data.o")
+GLOBAL_ASM("data/z_Bg_Dodoago.data.o")
 
 ActorInit Bg_Dodoago_InitVars = {
     ACTOR_BG_DODOAGO,
@@ -22,11 +22,11 @@ ActorInit Bg_Dodoago_InitVars = {
     (ActorFunc)BgDodoago_Draw,
 };
 
-GLOBAL_ASM("binary/BgDodoago_Init.o")
+GLOBAL_ASM("asm/BgDodoago_Init.s")
 
-GLOBAL_ASM("binary/BgDodoago_Destroy.o")
+GLOBAL_ASM("asm/BgDodoago_Destroy.s")
 
-GLOBAL_ASM("binary/BgDodoago_Update.o")
+GLOBAL_ASM("asm/BgDodoago_Update.s")
 
-GLOBAL_ASM("binary/BgDodoago_Draw.o")
+GLOBAL_ASM("asm/BgDodoago_Draw.s")
 }

@@ -19,7 +19,7 @@ ActorInit Obj_Makekinsuta_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/ObjMakekinsuta_Init.o")
+GLOBAL_ASM("asm/ObjMakekinsuta_Init.s")
 
-GLOBAL_ASM("binary/ObjMakekinsuta_Update.o")
+GLOBAL_ASM("asm/ObjMakekinsuta_Update.s")
 }

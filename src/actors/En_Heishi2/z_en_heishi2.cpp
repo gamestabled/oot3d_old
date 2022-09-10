@@ -8,7 +8,7 @@ void EnHeishi2_Destroy(Actor* actor, GameState* state);
 void EnHeishi2_Update(Actor* actor, GameState* state);
 void EnHeishi2_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Heishi2.data.o")
+GLOBAL_ASM("data/z_En_Heishi2.data.o")
 
 ActorInit En_Heishi2_InitVars = {
     ACTOR_EN_HEISHI2,
@@ -22,11 +22,11 @@ ActorInit En_Heishi2_InitVars = {
     (ActorFunc)EnHeishi2_Draw,
 };
 
-GLOBAL_ASM("binary/EnHeishi2_Init.o")
+GLOBAL_ASM("asm/EnHeishi2_Init.s")
 
-GLOBAL_ASM("binary/EnHeishi2_Destroy.o")
+GLOBAL_ASM("asm/EnHeishi2_Destroy.s")
 
-GLOBAL_ASM("binary/EnHeishi2_Update.o")
+GLOBAL_ASM("asm/EnHeishi2_Update.s")
 
-GLOBAL_ASM("binary/EnHeishi2_Draw.o")
+GLOBAL_ASM("asm/EnHeishi2_Draw.s")
 }

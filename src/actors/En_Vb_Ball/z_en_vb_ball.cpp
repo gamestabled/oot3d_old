@@ -8,7 +8,7 @@ void EnVbBall_Destroy(Actor* actor, GameState* state);
 void EnVbBall_Update(Actor* actor, GameState* state);
 void EnVbBall_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Vb_Ball.data.o")
+GLOBAL_ASM("data/z_En_Vb_Ball.data.o")
 
 ActorInit En_Vb_Ball_InitVars = {
     ACTOR_PLAYER,
@@ -22,11 +22,11 @@ ActorInit En_Vb_Ball_InitVars = {
     (ActorFunc)EnVbBall_Draw,
 };
 
-GLOBAL_ASM("binary/EnVbBall_Init.o")
+GLOBAL_ASM("asm/EnVbBall_Init.s")
 
-GLOBAL_ASM("binary/EnVbBall_Destroy.o")
+GLOBAL_ASM("asm/EnVbBall_Destroy.s")
 
-GLOBAL_ASM("binary/EnVbBall_Update.o")
+GLOBAL_ASM("asm/EnVbBall_Update.s")
 
-GLOBAL_ASM("binary/EnVbBall_Draw.o")
+GLOBAL_ASM("asm/EnVbBall_Draw.s")
 }

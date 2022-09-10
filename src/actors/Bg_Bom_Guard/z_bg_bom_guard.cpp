@@ -7,7 +7,7 @@ void BgBomGuard_Init(Actor* actor, GameState* state);
 void BgBomGuard_Destroy(Actor* actor, GameState* state);
 void BgBomGuard_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Bom_Guard.data.o")
+GLOBAL_ASM("data/z_Bg_Bom_Guard.data.o")
 
 ActorInit Bg_Bom_Guard_InitVars = {
     ACTOR_BG_BOM_GUARD,
@@ -21,9 +21,9 @@ ActorInit Bg_Bom_Guard_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgBomGuard_Init.o")
+GLOBAL_ASM("asm/BgBomGuard_Init.s")
 
-GLOBAL_ASM("binary/BgBomGuard_Destroy.o")
+GLOBAL_ASM("asm/BgBomGuard_Destroy.s")
 
-GLOBAL_ASM("binary/BgBomGuard_Update.o")
+GLOBAL_ASM("asm/BgBomGuard_Update.s")
 }

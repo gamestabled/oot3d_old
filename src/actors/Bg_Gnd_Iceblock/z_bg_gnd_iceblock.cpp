@@ -8,7 +8,7 @@ void BgGndIceblock_Destroy(Actor* actor, GameState* state);
 void BgGndIceblock_Update(Actor* actor, GameState* state);
 void BgGndIceblock_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Gnd_Iceblock.data.o")
+GLOBAL_ASM("data/z_Bg_Gnd_Iceblock.data.o")
 
 ActorInit Bg_Gnd_Iceblock_InitVars = {
     ACTOR_BG_GND_ICEBLOCK,
@@ -22,11 +22,11 @@ ActorInit Bg_Gnd_Iceblock_InitVars = {
     (ActorFunc)BgGndIceblock_Draw,
 };
 
-GLOBAL_ASM("binary/BgGndIceblock_Init.o")
+GLOBAL_ASM("asm/BgGndIceblock_Init.s")
 
-GLOBAL_ASM("binary/BgGndIceblock_Destroy.o")
+GLOBAL_ASM("asm/BgGndIceblock_Destroy.s")
 
-GLOBAL_ASM("binary/BgGndIceblock_Update.o")
+GLOBAL_ASM("asm/BgGndIceblock_Update.s")
 
-GLOBAL_ASM("binary/BgGndIceblock_Draw.o")
+GLOBAL_ASM("asm/BgGndIceblock_Draw.s")
 }

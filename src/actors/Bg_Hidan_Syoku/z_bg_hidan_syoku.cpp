@@ -8,7 +8,7 @@ void BgHidanSyoku_Destroy(Actor* actor, GameState* state);
 void BgHidanSyoku_Update(Actor* actor, GameState* state);
 void BgHidanSyoku_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Hidan_Syoku.data.o")
+GLOBAL_ASM("data/z_Bg_Hidan_Syoku.data.o")
 
 ActorInit Bg_Hidan_Syoku_InitVars = {
     ACTOR_BG_HIDAN_SYOKU,
@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Syoku_InitVars = {
     (ActorFunc)BgHidanSyoku_Draw,
 };
 
-GLOBAL_ASM("binary/BgHidanSyoku_Init.o")
+GLOBAL_ASM("asm/BgHidanSyoku_Init.s")
 
-GLOBAL_ASM("binary/BgHidanSyoku_Destroy.o")
+GLOBAL_ASM("asm/BgHidanSyoku_Destroy.s")
 
-GLOBAL_ASM("binary/BgHidanSyoku_Update.o")
+GLOBAL_ASM("asm/BgHidanSyoku_Update.s")
 
-GLOBAL_ASM("binary/BgHidanSyoku_Draw.o")
+GLOBAL_ASM("asm/BgHidanSyoku_Draw.s")
 }

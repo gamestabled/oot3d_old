@@ -8,7 +8,7 @@ void BgMizuWater_Destroy(Actor* actor, GameState* state);
 void BgMizuWater_Update(Actor* actor, GameState* state);
 void BgMizuWater_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mizu_Water.data.o")
+GLOBAL_ASM("data/z_Bg_Mizu_Water.data.o")
 
 ActorInit Bg_Mizu_Water_InitVars = {
     ACTOR_BG_MIZU_WATER,
@@ -22,11 +22,11 @@ ActorInit Bg_Mizu_Water_InitVars = {
     (ActorFunc)BgMizuWater_Draw,
 };
 
-GLOBAL_ASM("binary/BgMizuWater_Init.o")
+GLOBAL_ASM("asm/BgMizuWater_Init.s")
 
-GLOBAL_ASM("binary/BgMizuWater_Destroy.o")
+GLOBAL_ASM("asm/BgMizuWater_Destroy.s")
 
-GLOBAL_ASM("binary/BgMizuWater_Update.o")
+GLOBAL_ASM("asm/BgMizuWater_Update.s")
 
-GLOBAL_ASM("binary/BgMizuWater_Draw.o")
+GLOBAL_ASM("asm/BgMizuWater_Draw.s")
 }

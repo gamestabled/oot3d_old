@@ -8,7 +8,7 @@ void EnPart_Destroy(Actor* actor, GameState* state);
 void EnPart_Update(Actor* actor, GameState* state);
 void EnPart_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Part.data.o")
+GLOBAL_ASM("data/z_En_Part.data.o")
 
 ActorInit En_Part_InitVars = {
     ACTOR_EN_PART,
@@ -22,11 +22,11 @@ ActorInit En_Part_InitVars = {
     (ActorFunc)EnPart_Draw,
 };
 
-GLOBAL_ASM("binary/EnPart_Init.o")
+GLOBAL_ASM("asm/EnPart_Init.s")
 
-GLOBAL_ASM("binary/EnPart_Destroy.o")
+GLOBAL_ASM("asm/EnPart_Destroy.s")
 
-GLOBAL_ASM("binary/EnPart_Update.o")
+GLOBAL_ASM("asm/EnPart_Update.s")
 
-GLOBAL_ASM("binary/EnPart_Draw.o")
+GLOBAL_ASM("asm/EnPart_Draw.s")
 }

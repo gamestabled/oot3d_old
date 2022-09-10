@@ -8,7 +8,7 @@ void EnJs_Destroy(Actor* actor, GameState* state);
 void EnJs_Update(Actor* actor, GameState* state);
 void EnJs_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Js.data.o")
+GLOBAL_ASM("data/z_En_Js.data.o")
 
 ActorInit En_Js_InitVars = {
     ACTOR_EN_JS,
@@ -22,11 +22,11 @@ ActorInit En_Js_InitVars = {
     (ActorFunc)EnJs_Draw,
 };
 
-GLOBAL_ASM("binary/EnJs_Init.o")
+GLOBAL_ASM("asm/EnJs_Init.s")
 
-GLOBAL_ASM("binary/EnJs_Destroy.o")
+GLOBAL_ASM("asm/EnJs_Destroy.s")
 
-GLOBAL_ASM("binary/EnJs_Update.o")
+GLOBAL_ASM("asm/EnJs_Update.s")
 
-GLOBAL_ASM("binary/EnJs_Draw.o")
+GLOBAL_ASM("asm/EnJs_Draw.s")
 }

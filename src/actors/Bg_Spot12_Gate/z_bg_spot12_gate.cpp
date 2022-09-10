@@ -8,7 +8,7 @@ void BgSpot12Gate_Destroy(Actor* actor, GameState* state);
 void BgSpot12Gate_Update(Actor* actor, GameState* state);
 void BgSpot12Gate_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot12_Gate.data.o")
+GLOBAL_ASM("data/z_Bg_Spot12_Gate.data.o")
 
 ActorInit Bg_Spot12_Gate_InitVars = {
     ACTOR_BG_SPOT12_GATE,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot12_Gate_InitVars = {
     (ActorFunc)BgSpot12Gate_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot12Gate_Init.o")
+GLOBAL_ASM("asm/BgSpot12Gate_Init.s")
 
-GLOBAL_ASM("binary/BgSpot12Gate_Destroy.o")
+GLOBAL_ASM("asm/BgSpot12Gate_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot12Gate_Update.o")
+GLOBAL_ASM("asm/BgSpot12Gate_Update.s")
 
-GLOBAL_ASM("binary/BgSpot12Gate_Draw.o")
+GLOBAL_ASM("asm/BgSpot12Gate_Draw.s")
 }

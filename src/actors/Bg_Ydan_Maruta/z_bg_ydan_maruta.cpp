@@ -8,7 +8,7 @@ void BgYdanMaruta_Destroy(Actor* actor, GameState* state);
 void BgYdanMaruta_Update(Actor* actor, GameState* state);
 void BgYdanMaruta_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ydan_Maruta.data.o")
+GLOBAL_ASM("data/z_Bg_Ydan_Maruta.data.o")
 
 ActorInit Bg_Ydan_Maruta_InitVars = {
     ACTOR_BG_YDAN_MARUTA,
@@ -22,11 +22,11 @@ ActorInit Bg_Ydan_Maruta_InitVars = {
     (ActorFunc)BgYdanMaruta_Draw,
 };
 
-GLOBAL_ASM("binary/BgYdanMaruta_Init.o")
+GLOBAL_ASM("asm/BgYdanMaruta_Init.s")
 
-GLOBAL_ASM("binary/BgYdanMaruta_Destroy.o")
+GLOBAL_ASM("asm/BgYdanMaruta_Destroy.s")
 
-GLOBAL_ASM("binary/BgYdanMaruta_Update.o")
+GLOBAL_ASM("asm/BgYdanMaruta_Update.s")
 
-GLOBAL_ASM("binary/BgYdanMaruta_Draw.o")
+GLOBAL_ASM("asm/BgYdanMaruta_Draw.s")
 }

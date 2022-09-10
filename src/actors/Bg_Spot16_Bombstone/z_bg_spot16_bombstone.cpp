@@ -8,7 +8,7 @@ void BgSpot16Bombstone_Destroy(Actor* actor, GameState* state);
 void BgSpot16Bombstone_Update(Actor* actor, GameState* state);
 void BgSpot16Bombstone_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot16_Bombstone.data.o")
+GLOBAL_ASM("data/z_Bg_Spot16_Bombstone.data.o")
 
 ActorInit Bg_Spot16_Bombstone_InitVars = {
     ACTOR_BG_SPOT16_BOMBSTONE,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot16_Bombstone_InitVars = {
     (ActorFunc)BgSpot16Bombstone_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot16Bombstone_Init.o")
+GLOBAL_ASM("asm/BgSpot16Bombstone_Init.s")
 
-GLOBAL_ASM("binary/BgSpot16Bombstone_Destroy.o")
+GLOBAL_ASM("asm/BgSpot16Bombstone_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot16Bombstone_Update.o")
+GLOBAL_ASM("asm/BgSpot16Bombstone_Update.s")
 
-GLOBAL_ASM("binary/BgSpot16Bombstone_Draw.o")
+GLOBAL_ASM("asm/BgSpot16Bombstone_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgSpot16Doughnut_Destroy(Actor* actor, GameState* state);
 void BgSpot16Doughnut_Update(Actor* actor, GameState* state);
 void BgSpot16Doughnut_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot16_Doughnut.data.o")
+GLOBAL_ASM("data/z_Bg_Spot16_Doughnut.data.o")
 
 ActorInit Bg_Spot16_Doughnut_InitVars = {
     ACTOR_BG_SPOT16_DOUGHNUT,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot16_Doughnut_InitVars = {
     (ActorFunc)BgSpot16Doughnut_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot16Doughnut_Init.o")
+GLOBAL_ASM("asm/BgSpot16Doughnut_Init.s")
 
-GLOBAL_ASM("binary/BgSpot16Doughnut_Destroy.o")
+GLOBAL_ASM("asm/BgSpot16Doughnut_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot16Doughnut_Update.o")
+GLOBAL_ASM("asm/BgSpot16Doughnut_Update.s")
 
-GLOBAL_ASM("binary/BgSpot16Doughnut_Draw.o")
+GLOBAL_ASM("asm/BgSpot16Doughnut_Draw.s")
 }

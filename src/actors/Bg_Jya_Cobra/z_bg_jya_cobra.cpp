@@ -8,7 +8,7 @@ void BgJyaCobra_Destroy(Actor* actor, GameState* state);
 void BgJyaCobra_Update(Actor* actor, GameState* state);
 void BgJyaCobra_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Jya_Cobra.data.o")
+GLOBAL_ASM("data/z_Bg_Jya_Cobra.data.o")
 
 ActorInit Bg_Jya_Cobra_InitVars = {
     ACTOR_BG_JYA_COBRA,
@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Cobra_InitVars = {
     (ActorFunc)BgJyaCobra_Draw,
 };
 
-GLOBAL_ASM("binary/BgJyaCobra_Init.o")
+GLOBAL_ASM("asm/BgJyaCobra_Init.s")
 
-GLOBAL_ASM("binary/BgJyaCobra_Destroy.o")
+GLOBAL_ASM("asm/BgJyaCobra_Destroy.s")
 
-GLOBAL_ASM("binary/BgJyaCobra_Update.o")
+GLOBAL_ASM("asm/BgJyaCobra_Update.s")
 
-GLOBAL_ASM("binary/BgJyaCobra_Draw.o")
+GLOBAL_ASM("asm/BgJyaCobra_Draw.s")
 }

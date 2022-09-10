@@ -8,7 +8,7 @@ void BgSpot07Taki_Destroy(Actor* actor, GameState* state);
 void BgSpot07Taki_Update(Actor* actor, GameState* state);
 void BgSpot07Taki_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot07_Taki.data.o")
+GLOBAL_ASM("data/z_Bg_Spot07_Taki.data.o")
 
 ActorInit Bg_Spot07_Taki_InitVars = {
     ACTOR_BG_SPOT07_TAKI,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot07_Taki_InitVars = {
     (ActorFunc)BgSpot07Taki_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot07Taki_Init.o")
+GLOBAL_ASM("asm/BgSpot07Taki_Init.s")
 
-GLOBAL_ASM("binary/BgSpot07Taki_Destroy.o")
+GLOBAL_ASM("asm/BgSpot07Taki_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot07Taki_Update.o")
+GLOBAL_ASM("asm/BgSpot07Taki_Update.s")
 
-GLOBAL_ASM("binary/BgSpot07Taki_Draw.o")
+GLOBAL_ASM("asm/BgSpot07Taki_Draw.s")
 }

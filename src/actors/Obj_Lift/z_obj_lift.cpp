@@ -8,7 +8,7 @@ void ObjLift_Destroy(Actor* actor, GameState* state);
 void ObjLift_Update(Actor* actor, GameState* state);
 void ObjLift_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Lift.data.o")
+GLOBAL_ASM("data/z_Obj_Lift.data.o")
 
 ActorInit Obj_Lift_InitVars = {
     ACTOR_OBJ_LIFT,
@@ -22,11 +22,11 @@ ActorInit Obj_Lift_InitVars = {
     (ActorFunc)ObjLift_Draw,
 };
 
-GLOBAL_ASM("binary/ObjLift_Init.o")
+GLOBAL_ASM("asm/ObjLift_Init.s")
 
-GLOBAL_ASM("binary/ObjLift_Destroy.o")
+GLOBAL_ASM("asm/ObjLift_Destroy.s")
 
-GLOBAL_ASM("binary/ObjLift_Update.o")
+GLOBAL_ASM("asm/ObjLift_Update.s")
 
-GLOBAL_ASM("binary/ObjLift_Draw.o")
+GLOBAL_ASM("asm/ObjLift_Draw.s")
 }

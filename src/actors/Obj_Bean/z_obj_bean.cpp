@@ -8,7 +8,7 @@ void ObjBean_Destroy(Actor* actor, GameState* state);
 void ObjBean_Update(Actor* actor, GameState* state);
 void ObjBean_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Bean.data.o")
+GLOBAL_ASM("data/z_Obj_Bean.data.o")
 
 ActorInit Obj_Bean_InitVars = {
     ACTOR_OBJ_BEAN,
@@ -22,11 +22,11 @@ ActorInit Obj_Bean_InitVars = {
     (ActorFunc)ObjBean_Draw,
 };
 
-GLOBAL_ASM("binary/ObjBean_Init.o")
+GLOBAL_ASM("asm/ObjBean_Init.s")
 
-GLOBAL_ASM("binary/ObjBean_Destroy.o")
+GLOBAL_ASM("asm/ObjBean_Destroy.s")
 
-GLOBAL_ASM("binary/ObjBean_Update.o")
+GLOBAL_ASM("asm/ObjBean_Update.s")
 
-GLOBAL_ASM("binary/ObjBean_Draw.o")
+GLOBAL_ASM("asm/ObjBean_Draw.s")
 }

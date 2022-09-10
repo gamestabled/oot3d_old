@@ -8,7 +8,7 @@ void BgSpot01Idosoko_Destroy(Actor* actor, GameState* state);
 void BgSpot01Idosoko_Update(Actor* actor, GameState* state);
 void BgSpot01Idosoko_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot01_Idosoko.data.o")
+GLOBAL_ASM("data/z_Bg_Spot01_Idosoko.data.o")
 
 ActorInit Bg_Spot01_Idosoko_InitVars = {
     ACTOR_BG_SPOT01_IDOSOKO,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot01_Idosoko_InitVars = {
     (ActorFunc)BgSpot01Idosoko_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot01Idosoko_Init.o")
+GLOBAL_ASM("asm/BgSpot01Idosoko_Init.s")
 
-GLOBAL_ASM("binary/BgSpot01Idosoko_Destroy.o")
+GLOBAL_ASM("asm/BgSpot01Idosoko_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot01Idosoko_Update.o")
+GLOBAL_ASM("asm/BgSpot01Idosoko_Update.s")
 
-GLOBAL_ASM("binary/BgSpot01Idosoko_Draw.o")
+GLOBAL_ASM("asm/BgSpot01Idosoko_Draw.s")
 }

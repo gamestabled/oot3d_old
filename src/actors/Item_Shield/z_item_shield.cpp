@@ -8,7 +8,7 @@ void ItemShield_Destroy(Actor* actor, GameState* state);
 void ItemShield_Update(Actor* actor, GameState* state);
 void ItemShield_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Item_Shield.data.o")
+GLOBAL_ASM("data/z_Item_Shield.data.o")
 
 ActorInit Item_Shield_InitVars = {
     ACTOR_ITEM_SHIELD,
@@ -22,11 +22,11 @@ ActorInit Item_Shield_InitVars = {
     (ActorFunc)ItemShield_Draw,
 };
 
-GLOBAL_ASM("binary/ItemShield_Init.o")
+GLOBAL_ASM("asm/ItemShield_Init.s")
 
-GLOBAL_ASM("binary/ItemShield_Destroy.o")
+GLOBAL_ASM("asm/ItemShield_Destroy.s")
 
-GLOBAL_ASM("binary/ItemShield_Update.o")
+GLOBAL_ASM("asm/ItemShield_Update.s")
 
-GLOBAL_ASM("binary/ItemShield_Draw.o")
+GLOBAL_ASM("asm/ItemShield_Draw.s")
 }

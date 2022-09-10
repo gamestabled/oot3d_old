@@ -8,7 +8,7 @@ void EnRiverSound_Destroy(Actor* actor, GameState* state);
 void EnRiverSound_Update(Actor* actor, GameState* state);
 void EnRiverSound_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_River_Sound.data.o")
+GLOBAL_ASM("data/z_En_River_Sound.data.o")
 
 ActorInit En_River_Sound_InitVars = {
     ACTOR_EN_RIVER_SOUND,
@@ -22,11 +22,11 @@ ActorInit En_River_Sound_InitVars = {
     (ActorFunc)EnRiverSound_Draw,
 };
 
-GLOBAL_ASM("binary/EnRiverSound_Init.o")
+GLOBAL_ASM("asm/EnRiverSound_Init.s")
 
-GLOBAL_ASM("binary/EnRiverSound_Destroy.o")
+GLOBAL_ASM("asm/EnRiverSound_Destroy.s")
 
-GLOBAL_ASM("binary/EnRiverSound_Update.o")
+GLOBAL_ASM("asm/EnRiverSound_Update.s")
 
-GLOBAL_ASM("binary/EnRiverSound_Draw.o")
+GLOBAL_ASM("asm/EnRiverSound_Draw.s")
 }

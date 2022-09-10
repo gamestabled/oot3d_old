@@ -8,7 +8,7 @@ void BgHidanHamstep_Destroy(Actor* actor, GameState* state);
 void BgHidanHamstep_Update(Actor* actor, GameState* state);
 void BgHidanHamstep_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Hidan_Hamstep.data.o")
+GLOBAL_ASM("data/z_Bg_Hidan_Hamstep.data.o")
 
 ActorInit Bg_Hidan_Hamstep_InitVars = {
     ACTOR_BG_HIDAN_HAMSTEP,
@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Hamstep_InitVars = {
     (ActorFunc)BgHidanHamstep_Draw,
 };
 
-GLOBAL_ASM("binary/BgHidanHamstep_Init.o")
+GLOBAL_ASM("asm/BgHidanHamstep_Init.s")
 
-GLOBAL_ASM("binary/BgHidanHamstep_Destroy.o")
+GLOBAL_ASM("asm/BgHidanHamstep_Destroy.s")
 
-GLOBAL_ASM("binary/BgHidanHamstep_Update.o")
+GLOBAL_ASM("asm/BgHidanHamstep_Update.s")
 
-GLOBAL_ASM("binary/BgHidanHamstep_Draw.o")
+GLOBAL_ASM("asm/BgHidanHamstep_Draw.s")
 }

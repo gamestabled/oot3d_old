@@ -8,7 +8,7 @@ void EnPoDesert_Destroy(Actor* actor, GameState* state);
 void EnPoDesert_Update(Actor* actor, GameState* state);
 void EnPoDesert_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Po_Desert.data.o")
+GLOBAL_ASM("data/z_En_Po_Desert.data.o")
 
 ActorInit En_Po_Desert_InitVars = {
     ACTOR_EN_PO_DESERT,
@@ -22,11 +22,11 @@ ActorInit En_Po_Desert_InitVars = {
     (ActorFunc)EnPoDesert_Draw,
 };
 
-GLOBAL_ASM("binary/EnPoDesert_Init.o")
+GLOBAL_ASM("asm/EnPoDesert_Init.s")
 
-GLOBAL_ASM("binary/EnPoDesert_Destroy.o")
+GLOBAL_ASM("asm/EnPoDesert_Destroy.s")
 
-GLOBAL_ASM("binary/EnPoDesert_Update.o")
+GLOBAL_ASM("asm/EnPoDesert_Update.s")
 
-GLOBAL_ASM("binary/EnPoDesert_Draw.o")
+GLOBAL_ASM("asm/EnPoDesert_Draw.s")
 }

@@ -7,7 +7,7 @@ void Demo6K_Init(Actor* actor, GameState* state);
 void Demo6K_Destroy(Actor* actor, GameState* state);
 void Demo6K_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Demo_6K.data.o")
+GLOBAL_ASM("data/z_Demo_6K.data.o")
 
 ActorInit Demo_6K_InitVars = {
     ACTOR_DEMO_6K,
@@ -21,9 +21,9 @@ ActorInit Demo_6K_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/Demo6K_Init.o")
+GLOBAL_ASM("asm/Demo6K_Init.s")
 
-GLOBAL_ASM("binary/Demo6K_Destroy.o")
+GLOBAL_ASM("asm/Demo6K_Destroy.s")
 
-GLOBAL_ASM("binary/Demo6K_Update.o")
+GLOBAL_ASM("asm/Demo6K_Update.s")
 }

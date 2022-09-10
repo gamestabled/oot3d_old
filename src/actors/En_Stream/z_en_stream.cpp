@@ -119,7 +119,7 @@ void EnStream_SuckPlayer(EnStream* self, PlayState* play) {
 }
 #else
 void EnStream_SuckPlayer(EnStream* self, PlayState* play);
-GLOBAL_ASM("binary/EnStream_SuckPlayer.o")
+GLOBAL_ASM("asm/EnStream_SuckPlayer.s")
 #endif
 
 void EnStream_WaitForPlayer(EnStream* self, PlayState* play) {

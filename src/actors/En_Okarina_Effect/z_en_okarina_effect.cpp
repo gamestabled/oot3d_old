@@ -19,9 +19,9 @@ ActorInit En_Okarina_Effect_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnOkarinaEffect_Init.o")
+GLOBAL_ASM("asm/EnOkarinaEffect_Init.s")
 
-GLOBAL_ASM("binary/EnOkarinaEffect_Destroy.o")
+GLOBAL_ASM("asm/EnOkarinaEffect_Destroy.s")
 
-GLOBAL_ASM("binary/EnOkarinaEffect_Update.o")
+GLOBAL_ASM("asm/EnOkarinaEffect_Update.s")
 }

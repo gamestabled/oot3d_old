@@ -8,7 +8,7 @@ void EnEiyer_Destroy(Actor* actor, GameState* state);
 void EnEiyer_Update(Actor* actor, GameState* state);
 void EnEiyer_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Eiyer.data.o")
+GLOBAL_ASM("data/z_En_Eiyer.data.o")
 
 ActorInit En_Eiyer_InitVars = {
     ACTOR_EN_EIYER,
@@ -22,11 +22,11 @@ ActorInit En_Eiyer_InitVars = {
     (ActorFunc)EnEiyer_Draw,
 };
 
-GLOBAL_ASM("binary/EnEiyer_Init.o")
+GLOBAL_ASM("asm/EnEiyer_Init.s")
 
-GLOBAL_ASM("binary/EnEiyer_Destroy.o")
+GLOBAL_ASM("asm/EnEiyer_Destroy.s")
 
-GLOBAL_ASM("binary/EnEiyer_Update.o")
+GLOBAL_ASM("asm/EnEiyer_Update.s")
 
-GLOBAL_ASM("binary/EnEiyer_Draw.o")
+GLOBAL_ASM("asm/EnEiyer_Draw.s")
 }

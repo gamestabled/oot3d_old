@@ -8,7 +8,7 @@ void ObjOshihiki_Destroy(Actor* actor, GameState* state);
 void ObjOshihiki_Update(Actor* actor, GameState* state);
 void ObjOshihiki_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Oshihiki.data.o")
+GLOBAL_ASM("data/z_Obj_Oshihiki.data.o")
 
 ActorInit Obj_Oshihiki_InitVars = {
     ACTOR_OBJ_OSHIHIKI,
@@ -22,11 +22,11 @@ ActorInit Obj_Oshihiki_InitVars = {
     (ActorFunc)ObjOshihiki_Draw,
 };
 
-GLOBAL_ASM("binary/ObjOshihiki_Init.o")
+GLOBAL_ASM("asm/ObjOshihiki_Init.s")
 
-GLOBAL_ASM("binary/ObjOshihiki_Destroy.o")
+GLOBAL_ASM("asm/ObjOshihiki_Destroy.s")
 
-GLOBAL_ASM("binary/ObjOshihiki_Update.o")
+GLOBAL_ASM("asm/ObjOshihiki_Update.s")
 
-GLOBAL_ASM("binary/ObjOshihiki_Draw.o")
+GLOBAL_ASM("asm/ObjOshihiki_Draw.s")
 }

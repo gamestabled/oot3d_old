@@ -8,7 +8,7 @@ void ArmsHook_Destroy(Actor* actor, GameState* state);
 void ArmsHook_Update(Actor* actor, GameState* state);
 void ArmsHook_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Arms_Hook.data.o")
+GLOBAL_ASM("data/z_Arms_Hook.data.o")
 
 ActorInit Arms_Hook_InitVars = {
     ACTOR_ARMS_HOOK,
@@ -22,11 +22,11 @@ ActorInit Arms_Hook_InitVars = {
     (ActorFunc)ArmsHook_Draw,
 };
 
-GLOBAL_ASM("binary/ArmsHook_Init.o")
+GLOBAL_ASM("asm/ArmsHook_Init.s")
 
-GLOBAL_ASM("binary/ArmsHook_Destroy.o")
+GLOBAL_ASM("asm/ArmsHook_Destroy.s")
 
-GLOBAL_ASM("binary/ArmsHook_Update.o")
+GLOBAL_ASM("asm/ArmsHook_Update.s")
 
-GLOBAL_ASM("binary/ArmsHook_Draw.o")
+GLOBAL_ASM("asm/ArmsHook_Draw.s")
 }

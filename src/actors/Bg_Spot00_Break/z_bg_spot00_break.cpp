@@ -8,7 +8,7 @@ void BgSpot00Break_Destroy(Actor* actor, GameState* state);
 void BgSpot00Break_Update(Actor* actor, GameState* state);
 void BgSpot00Break_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot00_Break.data.o")
+GLOBAL_ASM("data/z_Bg_Spot00_Break.data.o")
 
 ActorInit Bg_Spot00_Break_InitVars = {
     ACTOR_BG_SPOT00_BREAK,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot00_Break_InitVars = {
     (ActorFunc)BgSpot00Break_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot00Break_Init.o")
+GLOBAL_ASM("asm/BgSpot00Break_Init.s")
 
-GLOBAL_ASM("binary/BgSpot00Break_Destroy.o")
+GLOBAL_ASM("asm/BgSpot00Break_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot00Break_Update.o")
+GLOBAL_ASM("asm/BgSpot00Break_Update.s")
 
-GLOBAL_ASM("binary/BgSpot00Break_Draw.o")
+GLOBAL_ASM("asm/BgSpot00Break_Draw.s")
 }

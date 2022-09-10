@@ -8,7 +8,7 @@ void EnDaiku_Destroy(Actor* actor, GameState* state);
 void EnDaiku_Update(Actor* actor, GameState* state);
 void EnDaiku_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Daiku.data.o")
+GLOBAL_ASM("data/z_En_Daiku.data.o")
 
 ActorInit En_Daiku_InitVars = {
     ACTOR_EN_DAIKU,
@@ -22,11 +22,11 @@ ActorInit En_Daiku_InitVars = {
     (ActorFunc)EnDaiku_Draw,
 };
 
-GLOBAL_ASM("binary/EnDaiku_Init.o")
+GLOBAL_ASM("asm/EnDaiku_Init.s")
 
-GLOBAL_ASM("binary/EnDaiku_Destroy.o")
+GLOBAL_ASM("asm/EnDaiku_Destroy.s")
 
-GLOBAL_ASM("binary/EnDaiku_Update.o")
+GLOBAL_ASM("asm/EnDaiku_Update.s")
 
-GLOBAL_ASM("binary/EnDaiku_Draw.o")
+GLOBAL_ASM("asm/EnDaiku_Draw.s")
 }

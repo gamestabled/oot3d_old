@@ -8,7 +8,7 @@ void EnBubble_Destroy(Actor* actor, GameState* state);
 void EnBubble_Update(Actor* actor, GameState* state);
 void EnBubble_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Bubble.data.o")
+GLOBAL_ASM("data/z_En_Bubble.data.o")
 
 ActorInit En_Bubble_InitVars = {
     ACTOR_EN_BUBBLE,
@@ -22,11 +22,11 @@ ActorInit En_Bubble_InitVars = {
     (ActorFunc)EnBubble_Draw,
 };
 
-GLOBAL_ASM("binary/EnBubble_Init.o")
+GLOBAL_ASM("asm/EnBubble_Init.s")
 
-GLOBAL_ASM("binary/EnBubble_Destroy.o")
+GLOBAL_ASM("asm/EnBubble_Destroy.s")
 
-GLOBAL_ASM("binary/EnBubble_Update.o")
+GLOBAL_ASM("asm/EnBubble_Update.s")
 
-GLOBAL_ASM("binary/EnBubble_Draw.o")
+GLOBAL_ASM("asm/EnBubble_Draw.s")
 }

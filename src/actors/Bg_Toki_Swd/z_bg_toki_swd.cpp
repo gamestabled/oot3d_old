@@ -8,7 +8,7 @@ void BgTokiSwd_Destroy(Actor* actor, GameState* state);
 void BgTokiSwd_Update(Actor* actor, GameState* state);
 void BgTokiSwd_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Toki_Swd.data.o")
+GLOBAL_ASM("data/z_Bg_Toki_Swd.data.o")
 
 ActorInit Bg_Toki_Swd_InitVars = {
     ACTOR_BG_TOKI_SWD,
@@ -22,11 +22,11 @@ ActorInit Bg_Toki_Swd_InitVars = {
     (ActorFunc)BgTokiSwd_Draw,
 };
 
-GLOBAL_ASM("binary/BgTokiSwd_Init.o")
+GLOBAL_ASM("asm/BgTokiSwd_Init.s")
 
-GLOBAL_ASM("binary/BgTokiSwd_Destroy.o")
+GLOBAL_ASM("asm/BgTokiSwd_Destroy.s")
 
-GLOBAL_ASM("binary/BgTokiSwd_Update.o")
+GLOBAL_ASM("asm/BgTokiSwd_Update.s")
 
-GLOBAL_ASM("binary/BgTokiSwd_Draw.o")
+GLOBAL_ASM("asm/BgTokiSwd_Draw.s")
 }

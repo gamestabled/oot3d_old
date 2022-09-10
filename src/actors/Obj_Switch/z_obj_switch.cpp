@@ -8,7 +8,7 @@ void ObjSwitch_Destroy(Actor* actor, GameState* state);
 void ObjSwitch_Update(Actor* actor, GameState* state);
 void ObjSwitch_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Switch.data.o")
+GLOBAL_ASM("data/z_Obj_Switch.data.o")
 
 ActorInit Obj_Switch_InitVars = {
     ACTOR_OBJ_SWITCH,
@@ -22,11 +22,11 @@ ActorInit Obj_Switch_InitVars = {
     (ActorFunc)ObjSwitch_Draw,
 };
 
-GLOBAL_ASM("binary/ObjSwitch_Init.o")
+GLOBAL_ASM("asm/ObjSwitch_Init.s")
 
-GLOBAL_ASM("binary/ObjSwitch_Destroy.o")
+GLOBAL_ASM("asm/ObjSwitch_Destroy.s")
 
-GLOBAL_ASM("binary/ObjSwitch_Update.o")
+GLOBAL_ASM("asm/ObjSwitch_Update.s")
 
-GLOBAL_ASM("binary/ObjSwitch_Draw.o")
+GLOBAL_ASM("asm/ObjSwitch_Draw.s")
 }

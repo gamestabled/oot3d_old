@@ -8,7 +8,7 @@ void EnTest_Destroy(Actor* actor, GameState* state);
 void EnTest_Update(Actor* actor, GameState* state);
 void EnTest_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Test.data.o")
+GLOBAL_ASM("data/z_En_Test.data.o")
 
 ActorInit En_Test_InitVars = {
     ACTOR_EN_TEST,
@@ -22,11 +22,11 @@ ActorInit En_Test_InitVars = {
     (ActorFunc)EnTest_Draw,
 };
 
-GLOBAL_ASM("binary/EnTest_Init.o")
+GLOBAL_ASM("asm/EnTest_Init.s")
 
-GLOBAL_ASM("binary/EnTest_Destroy.o")
+GLOBAL_ASM("asm/EnTest_Destroy.s")
 
-GLOBAL_ASM("binary/EnTest_Update.o")
+GLOBAL_ASM("asm/EnTest_Update.s")
 
-GLOBAL_ASM("binary/EnTest_Draw.o")
+GLOBAL_ASM("asm/EnTest_Draw.s")
 }

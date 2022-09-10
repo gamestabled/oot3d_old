@@ -7,7 +7,7 @@ void EnWonderItem_Init(Actor* actor, GameState* state);
 void EnWonderItem_Destroy(Actor* actor, GameState* state);
 void EnWonderItem_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Wonder_Item.data.o")
+GLOBAL_ASM("data/z_En_Wonder_Item.data.o")
 
 ActorInit En_Wonder_Item_InitVars = {
     ACTOR_EN_WONDER_ITEM,
@@ -21,9 +21,9 @@ ActorInit En_Wonder_Item_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnWonderItem_Init.o")
+GLOBAL_ASM("asm/EnWonderItem_Init.s")
 
-GLOBAL_ASM("binary/EnWonderItem_Destroy.o")
+GLOBAL_ASM("asm/EnWonderItem_Destroy.s")
 
-GLOBAL_ASM("binary/EnWonderItem_Update.o")
+GLOBAL_ASM("asm/EnWonderItem_Update.s")
 }

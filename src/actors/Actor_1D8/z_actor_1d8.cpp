@@ -8,7 +8,7 @@ void Actor1D8_Destroy(Actor* actor, GameState* state);
 void Actor1D8_Update(Actor* actor, GameState* state);
 void Actor1D8_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Actor_1D8.data.o")
+GLOBAL_ASM("data/z_Actor_1D8.data.o")
 
 ActorInit Actor_1D8_InitVars = {
     ACTOR_1D8,
@@ -22,11 +22,11 @@ ActorInit Actor_1D8_InitVars = {
     (ActorFunc)Actor1D8_Draw,
 };
 
-GLOBAL_ASM("binary/Actor1D8_Init.o")
+GLOBAL_ASM("asm/Actor1D8_Init.s")
 
-GLOBAL_ASM("binary/Actor1D8_Destroy.o")
+GLOBAL_ASM("asm/Actor1D8_Destroy.s")
 
-GLOBAL_ASM("binary/Actor1D8_Update.o")
+GLOBAL_ASM("asm/Actor1D8_Update.s")
 
-GLOBAL_ASM("binary/Actor1D8_Draw.o")
+GLOBAL_ASM("asm/Actor1D8_Draw.s")
 }

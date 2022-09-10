@@ -7,7 +7,7 @@ void EnChanger_Init(Actor* actor, GameState* state);
 void EnChanger_Destroy(Actor* actor, GameState* state);
 void EnChanger_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Changer.data.o")
+GLOBAL_ASM("data/z_En_Changer.data.o")
 
 ActorInit En_Changer_InitVars = {
     ACTOR_EN_CHANGER,
@@ -21,9 +21,9 @@ ActorInit En_Changer_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnChanger_Init.o")
+GLOBAL_ASM("asm/EnChanger_Init.s")
 
-GLOBAL_ASM("binary/EnChanger_Destroy.o")
+GLOBAL_ASM("asm/EnChanger_Destroy.s")
 
-GLOBAL_ASM("binary/EnChanger_Update.o")
+GLOBAL_ASM("asm/EnChanger_Update.s")
 }

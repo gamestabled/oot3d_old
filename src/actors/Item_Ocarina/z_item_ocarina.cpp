@@ -20,11 +20,11 @@ ActorInit Item_Ocarina_InitVars = {
     (ActorFunc)ItemOcarina_Draw,
 };
 
-GLOBAL_ASM("binary/ItemOcarina_Init.o")
+GLOBAL_ASM("asm/ItemOcarina_Init.s")
 
-GLOBAL_ASM("binary/ItemOcarina_Destroy.o")
+GLOBAL_ASM("asm/ItemOcarina_Destroy.s")
 
-GLOBAL_ASM("binary/ItemOcarina_Update.o")
+GLOBAL_ASM("asm/ItemOcarina_Update.s")
 
-GLOBAL_ASM("binary/ItemOcarina_Draw.o")
+GLOBAL_ASM("asm/ItemOcarina_Draw.s")
 }

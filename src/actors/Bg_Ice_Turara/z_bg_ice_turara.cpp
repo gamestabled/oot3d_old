@@ -8,7 +8,7 @@ void BgIceTurara_Destroy(Actor* actor, GameState* state);
 void BgIceTurara_Update(Actor* actor, GameState* state);
 void BgIceTurara_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ice_Turara.data.o")
+GLOBAL_ASM("data/z_Bg_Ice_Turara.data.o")
 
 ActorInit Bg_Ice_Turara_InitVars = {
     ACTOR_BG_ICE_TURARA,
@@ -22,11 +22,11 @@ ActorInit Bg_Ice_Turara_InitVars = {
     (ActorFunc)BgIceTurara_Draw,
 };
 
-GLOBAL_ASM("binary/BgIceTurara_Init.o")
+GLOBAL_ASM("asm/BgIceTurara_Init.s")
 
-GLOBAL_ASM("binary/BgIceTurara_Destroy.o")
+GLOBAL_ASM("asm/BgIceTurara_Destroy.s")
 
-GLOBAL_ASM("binary/BgIceTurara_Update.o")
+GLOBAL_ASM("asm/BgIceTurara_Update.s")
 
-GLOBAL_ASM("binary/BgIceTurara_Draw.o")
+GLOBAL_ASM("asm/BgIceTurara_Draw.s")
 }

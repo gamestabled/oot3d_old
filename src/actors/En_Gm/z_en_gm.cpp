@@ -7,7 +7,7 @@ void EnGm_Init(Actor* actor, GameState* state);
 void EnGm_Destroy(Actor* actor, GameState* state);
 void EnGm_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Gm.data.o")
+GLOBAL_ASM("data/z_En_Gm.data.o")
 
 ActorInit En_Gm_InitVars = {
     ACTOR_EN_GM,
@@ -21,9 +21,9 @@ ActorInit En_Gm_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnGm_Init.o")
+GLOBAL_ASM("asm/EnGm_Init.s")
 
-GLOBAL_ASM("binary/EnGm_Destroy.o")
+GLOBAL_ASM("asm/EnGm_Destroy.s")
 
-GLOBAL_ASM("binary/EnGm_Update.o")
+GLOBAL_ASM("asm/EnGm_Update.s")
 }

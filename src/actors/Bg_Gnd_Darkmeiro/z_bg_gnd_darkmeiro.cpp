@@ -19,9 +19,9 @@ ActorInit Bg_Gnd_Darkmeiro_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgGndDarkmeiro_Init.o")
+GLOBAL_ASM("asm/BgGndDarkmeiro_Init.s")
 
-GLOBAL_ASM("binary/BgGndDarkmeiro_Destroy.o")
+GLOBAL_ASM("asm/BgGndDarkmeiro_Destroy.s")
 
-GLOBAL_ASM("binary/BgGndDarkmeiro_Update.o")
+GLOBAL_ASM("asm/BgGndDarkmeiro_Update.s")
 }

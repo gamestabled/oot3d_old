@@ -20,11 +20,11 @@ ActorInit En_Mag_InitVars = {
     (ActorFunc)EnMag_Draw,
 };
 
-GLOBAL_ASM("binary/EnMag_Init.o")
+GLOBAL_ASM("asm/EnMag_Init.s")
 
-GLOBAL_ASM("binary/EnMag_Destroy.o")
+GLOBAL_ASM("asm/EnMag_Destroy.s")
 
-GLOBAL_ASM("binary/EnMag_Update.o")
+GLOBAL_ASM("asm/EnMag_Update.s")
 
-GLOBAL_ASM("binary/EnMag_Draw.o")
+GLOBAL_ASM("asm/EnMag_Draw.s")
 }

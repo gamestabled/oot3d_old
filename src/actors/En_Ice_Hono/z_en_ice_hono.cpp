@@ -8,7 +8,7 @@ void EnIceHono_Destroy(Actor* actor, GameState* state);
 void EnIceHono_Update(Actor* actor, GameState* state);
 void EnIceHono_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ice_Hono.data.o")
+GLOBAL_ASM("data/z_En_Ice_Hono.data.o")
 
 ActorInit En_Ice_Hono_InitVars = {
     ACTOR_EN_ICE_HONO,
@@ -22,11 +22,11 @@ ActorInit En_Ice_Hono_InitVars = {
     (ActorFunc)EnIceHono_Draw,
 };
 
-GLOBAL_ASM("binary/EnIceHono_Init.o")
+GLOBAL_ASM("asm/EnIceHono_Init.s")
 
-GLOBAL_ASM("binary/EnIceHono_Destroy.o")
+GLOBAL_ASM("asm/EnIceHono_Destroy.s")
 
-GLOBAL_ASM("binary/EnIceHono_Update.o")
+GLOBAL_ASM("asm/EnIceHono_Update.s")
 
-GLOBAL_ASM("binary/EnIceHono_Draw.o")
+GLOBAL_ASM("asm/EnIceHono_Draw.s")
 }

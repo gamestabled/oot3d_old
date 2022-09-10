@@ -8,7 +8,7 @@ void BgMenkuriKaiten_Destroy(Actor* actor, GameState* state);
 void BgMenkuriKaiten_Update(Actor* actor, GameState* state);
 void BgMenkuriKaiten_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Menkuri_Kaiten.data.o")
+GLOBAL_ASM("data/z_Bg_Menkuri_Kaiten.data.o")
 
 ActorInit Bg_Menkuri_Kaiten_InitVars = {
     ACTOR_BG_MENKURI_KAITEN,
@@ -22,11 +22,11 @@ ActorInit Bg_Menkuri_Kaiten_InitVars = {
     (ActorFunc)BgMenkuriKaiten_Draw,
 };
 
-GLOBAL_ASM("binary/BgMenkuriKaiten_Init.o")
+GLOBAL_ASM("asm/BgMenkuriKaiten_Init.s")
 
-GLOBAL_ASM("binary/BgMenkuriKaiten_Destroy.o")
+GLOBAL_ASM("asm/BgMenkuriKaiten_Destroy.s")
 
-GLOBAL_ASM("binary/BgMenkuriKaiten_Update.o")
+GLOBAL_ASM("asm/BgMenkuriKaiten_Update.s")
 
-GLOBAL_ASM("binary/BgMenkuriKaiten_Draw.o")
+GLOBAL_ASM("asm/BgMenkuriKaiten_Draw.s")
 }

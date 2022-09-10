@@ -8,7 +8,7 @@ void EnBombf_Destroy(Actor* actor, GameState* state);
 void EnBombf_Update(Actor* actor, GameState* state);
 void EnBombf_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Bombf.data.o")
+GLOBAL_ASM("data/z_En_Bombf.data.o")
 
 ActorInit En_Bombf_InitVars = {
     ACTOR_EN_BOMBF,
@@ -22,11 +22,11 @@ ActorInit En_Bombf_InitVars = {
     (ActorFunc)EnBombf_Draw,
 };
 
-GLOBAL_ASM("binary/EnBombf_Init.o")
+GLOBAL_ASM("asm/EnBombf_Init.s")
 
-GLOBAL_ASM("binary/EnBombf_Destroy.o")
+GLOBAL_ASM("asm/EnBombf_Destroy.s")
 
-GLOBAL_ASM("binary/EnBombf_Update.o")
+GLOBAL_ASM("asm/EnBombf_Update.s")
 
-GLOBAL_ASM("binary/EnBombf_Draw.o")
+GLOBAL_ASM("asm/EnBombf_Draw.s")
 }

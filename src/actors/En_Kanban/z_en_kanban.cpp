@@ -8,7 +8,7 @@ void EnKanban_Destroy(Actor* actor, GameState* state);
 void EnKanban_Update(Actor* actor, GameState* state);
 void EnKanban_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Kanban.data.o")
+GLOBAL_ASM("data/z_En_Kanban.data.o")
 
 ActorInit En_Kanban_InitVars = {
     ACTOR_EN_KANBAN,
@@ -22,11 +22,11 @@ ActorInit En_Kanban_InitVars = {
     (ActorFunc)EnKanban_Draw,
 };
 
-GLOBAL_ASM("binary/EnKanban_Init.o")
+GLOBAL_ASM("asm/EnKanban_Init.s")
 
-GLOBAL_ASM("binary/EnKanban_Destroy.o")
+GLOBAL_ASM("asm/EnKanban_Destroy.s")
 
-GLOBAL_ASM("binary/EnKanban_Update.o")
+GLOBAL_ASM("asm/EnKanban_Update.s")
 
-GLOBAL_ASM("binary/EnKanban_Draw.o")
+GLOBAL_ASM("asm/EnKanban_Draw.s")
 }

@@ -8,7 +8,7 @@ void EnSyatekiNiw_Destroy(Actor* actor, GameState* state);
 void EnSyatekiNiw_Update(Actor* actor, GameState* state);
 void EnSyatekiNiw_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Syateki_Niw.data.o")
+GLOBAL_ASM("data/z_En_Syateki_Niw.data.o")
 
 ActorInit En_Syateki_Niw_InitVars = {
     ACTOR_EN_SYATEKI_NIW,
@@ -22,11 +22,11 @@ ActorInit En_Syateki_Niw_InitVars = {
     (ActorFunc)EnSyatekiNiw_Draw,
 };
 
-GLOBAL_ASM("binary/EnSyatekiNiw_Init.o")
+GLOBAL_ASM("asm/EnSyatekiNiw_Init.s")
 
-GLOBAL_ASM("binary/EnSyatekiNiw_Destroy.o")
+GLOBAL_ASM("asm/EnSyatekiNiw_Destroy.s")
 
-GLOBAL_ASM("binary/EnSyatekiNiw_Update.o")
+GLOBAL_ASM("asm/EnSyatekiNiw_Update.s")
 
-GLOBAL_ASM("binary/EnSyatekiNiw_Draw.o")
+GLOBAL_ASM("asm/EnSyatekiNiw_Draw.s")
 }

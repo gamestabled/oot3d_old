@@ -20,11 +20,11 @@ ActorInit En_Scene_Change_InitVars = {
     (ActorFunc)EnSceneChange_Draw,
 };
 
-GLOBAL_ASM("binary/EnSceneChange_Init.o")
+GLOBAL_ASM("asm/EnSceneChange_Init.s")
 
-GLOBAL_ASM("binary/EnSceneChange_Destroy.o")
+GLOBAL_ASM("asm/EnSceneChange_Destroy.s")
 
-GLOBAL_ASM("binary/EnSceneChange_Update.o")
+GLOBAL_ASM("asm/EnSceneChange_Update.s")
 
-GLOBAL_ASM("binary/EnSceneChange_Draw.o")
+GLOBAL_ASM("asm/EnSceneChange_Draw.s")
 }

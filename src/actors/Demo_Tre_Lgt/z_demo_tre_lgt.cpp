@@ -8,7 +8,7 @@ void DemoTreLgt_Destroy(Actor* actor, GameState* state);
 void DemoTreLgt_Update(Actor* actor, GameState* state);
 void DemoTreLgt_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Demo_Tre_Lgt.data.o")
+GLOBAL_ASM("data/z_Demo_Tre_Lgt.data.o")
 
 ActorInit Demo_Tre_Lgt_InitVars = {
     ACTOR_DEMO_TRE_LGT,
@@ -22,11 +22,11 @@ ActorInit Demo_Tre_Lgt_InitVars = {
     (ActorFunc)DemoTreLgt_Draw,
 };
 
-GLOBAL_ASM("binary/DemoTreLgt_Init.o")
+GLOBAL_ASM("asm/DemoTreLgt_Init.s")
 
-GLOBAL_ASM("binary/DemoTreLgt_Destroy.o")
+GLOBAL_ASM("asm/DemoTreLgt_Destroy.s")
 
-GLOBAL_ASM("binary/DemoTreLgt_Update.o")
+GLOBAL_ASM("asm/DemoTreLgt_Update.s")
 
-GLOBAL_ASM("binary/DemoTreLgt_Draw.o")
+GLOBAL_ASM("asm/DemoTreLgt_Draw.s")
 }
