@@ -13,14 +13,15 @@ parser.add_argument("-m", "--matching", dest='matching', action='store_true',
                     help="Output matching progress instead of decompilation progress")
 args = parser.parse_args()
 
-NON_MATCHING_PATTERN = r"#ifdef\s+NON_MATCHING.*?#pragma\s+GLOBAL_ASM\s*\(\s*\"(.*?)\"\s*\).*?#endif"
+NON_MATCHING_PATTERN = r'#ifdef\s+NON_MATCHING.*?\s+GLOBAL_ASM\s*\(\s*\"(.*?)\"\s*\).*?#endif'
+NOT_ATTEMPTED_PATTERN = r'\s+GLOBAL_ASM\s*\(\s*"asm/(.*?)"\s*\)'
 
-def GetNonMatchingFunctions(files):
+def GetFunctionsByPattern(pattern, files):
     functions = []
 
     for file in files:
         with open(file) as f:
-            functions += re.findall(NON_MATCHING_PATTERN, f.read(), re.DOTALL)
+            functions += re.findall(pattern, f.read(), re.DOTALL)
 
     return functions
 
@@ -41,7 +42,13 @@ def GetFiles(path, ext):
 
     return files
 
-nonMatchingFunctions = GetNonMatchingFunctions(GetFiles("src", ".cpp")) if not args.matching else []
+allFiles = GetFiles("src", ".cpp")
+
+nonMatchingFunctions = GetFunctionsByPattern(NON_MATCHING_PATTERN, allFiles)
+notAttemptedFunctions = GetFunctionsByPattern(NOT_ATTEMPTED_PATTERN, allFiles)
+
+if not args.matching:
+    nonMatchingFunctions = []
 
 def GetNonMatchingSize(path):
     size = 0
@@ -49,11 +56,16 @@ def GetNonMatchingSize(path):
     asmFiles = GetFiles(path, ".s")
 
     for asmFilePath in asmFiles:
-        if asmFilePath not in nonMatchingFunctions:
+        if asmFilePath.split('/')[1] in notAttemptedFunctions:
             asmLines = ReadAllLines(asmFilePath)
 
             for asmLine in asmLines:
-                if (asmLine.startswith(" ")):
+                if asmLine.startswith("\t"):
+                    if not (asmLine.startswith("\t.") or asmLine.startswith("\tarm_func_start") or asmLine.startswith("\t.byte")):
+                        size += 4
+                    elif asmLine.startswith("\t.byte"):
+                        size += int((len(asmLine.strip()) - 4) / 6)
+                elif asmLine.count(".4byte") > 0:
                     size += 4
 
     return size
@@ -85,19 +97,8 @@ src = 3973120
 #                 ovl += size
 
 nonMatchingASM = GetNonMatchingSize("asm")
-# nonMatchingASM = GetNonMatchingSize("asm/non_matchings")
-# nonMatchingASMBoot = GetNonMatchingSize("asm/non_matchings/boot")
-# nonMatchingASMCode = GetNonMatchingSize("asm/non_matchings/code")
-# nonMatchingASMOvl = GetNonMatchingSize("asm/non_matchings/overlays")
 
 src -= nonMatchingASM
-# code -= nonMatchingASMCode
-# boot -= nonMatchingASMBoot
-# ovl -= nonMatchingASMOvl
-
-# bootSize = 31408 # decompilable code only
-# codeSize = 1000000 # decompilable code only (1.00mb)
-# ovlSize = 2812000 # .text sections
 
 total = src + nonMatchingASM
 srcPct = 100 * src / total
