@@ -8,7 +8,7 @@ void BgGjyoBridge_Destroy(Actor* actor, GameState* state);
 void BgGjyoBridge_Update(Actor* actor, GameState* state);
 void BgGjyoBridge_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Gjyo_Bridge.data.o")
+GLOBAL_ASM("data/z_Bg_Gjyo_Bridge.data.o")
 
 ActorInit Bg_Gjyo_Bridge_InitVars = {
     ACTOR_BG_GJYO_BRIDGE,
@@ -22,11 +22,11 @@ ActorInit Bg_Gjyo_Bridge_InitVars = {
     (ActorFunc)BgGjyoBridge_Draw,
 };
 
-GLOBAL_ASM("binary/BgGjyoBridge_Init.o")
+GLOBAL_ASM("asm/BgGjyoBridge_Init.s")
 
-GLOBAL_ASM("binary/BgGjyoBridge_Destroy.o")
+GLOBAL_ASM("asm/BgGjyoBridge_Destroy.s")
 
-GLOBAL_ASM("binary/BgGjyoBridge_Update.o")
+GLOBAL_ASM("asm/BgGjyoBridge_Update.s")
 
-GLOBAL_ASM("binary/BgGjyoBridge_Draw.o")
+GLOBAL_ASM("asm/BgGjyoBridge_Draw.s")
 }

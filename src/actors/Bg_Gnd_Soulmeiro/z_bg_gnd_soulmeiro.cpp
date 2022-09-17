@@ -8,7 +8,7 @@ void BgGndSoulmeiro_Destroy(Actor* actor, GameState* state);
 void BgGndSoulmeiro_Update(Actor* actor, GameState* state);
 void BgGndSoulmeiro_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Gnd_Soulmeiro.data.o")
+GLOBAL_ASM("data/z_Bg_Gnd_Soulmeiro.data.o")
 
 ActorInit Bg_Gnd_Soulmeiro_InitVars = {
     ACTOR_BG_GND_SOULMEIRO,
@@ -22,11 +22,11 @@ ActorInit Bg_Gnd_Soulmeiro_InitVars = {
     (ActorFunc)BgGndSoulmeiro_Draw,
 };
 
-GLOBAL_ASM("binary/BgGndSoulmeiro_Init.o")
+GLOBAL_ASM("asm/BgGndSoulmeiro_Init.s")
 
-GLOBAL_ASM("binary/BgGndSoulmeiro_Destroy.o")
+GLOBAL_ASM("asm/BgGndSoulmeiro_Destroy.s")
 
-GLOBAL_ASM("binary/BgGndSoulmeiro_Update.o")
+GLOBAL_ASM("asm/BgGndSoulmeiro_Update.s")
 
-GLOBAL_ASM("binary/BgGndSoulmeiro_Draw.o")
+GLOBAL_ASM("asm/BgGndSoulmeiro_Draw.s")
 }

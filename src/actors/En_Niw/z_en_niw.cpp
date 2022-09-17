@@ -8,7 +8,7 @@ void EnNiw_Destroy(Actor* actor, GameState* state);
 void EnNiw_Update(Actor* actor, GameState* state);
 void EnNiw_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Niw.data.o")
+GLOBAL_ASM("data/z_En_Niw.data.o")
 
 ActorInit En_Niw_InitVars = {
     ACTOR_EN_NIW,
@@ -22,11 +22,11 @@ ActorInit En_Niw_InitVars = {
     (ActorFunc)EnNiw_Draw,
 };
 
-GLOBAL_ASM("binary/EnNiw_Init.o")
+GLOBAL_ASM("asm/EnNiw_Init.s")
 
-GLOBAL_ASM("binary/EnNiw_Destroy.o")
+GLOBAL_ASM("asm/EnNiw_Destroy.s")
 
-GLOBAL_ASM("binary/EnNiw_Update.o")
+GLOBAL_ASM("asm/EnNiw_Update.s")
 
-GLOBAL_ASM("binary/EnNiw_Draw.o")
+GLOBAL_ASM("asm/EnNiw_Draw.s")
 }

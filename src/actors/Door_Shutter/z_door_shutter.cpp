@@ -8,7 +8,7 @@ void DoorShutter_Destroy(Actor* actor, GameState* state);
 void DoorShutter_Update(Actor* actor, GameState* state);
 void DoorShutter_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Door_Shutter.data.o")
+GLOBAL_ASM("data/z_Door_Shutter.data.o")
 
 ActorInit Door_Shutter_InitVars = {
     ACTOR_DOOR_SHUTTER,
@@ -22,11 +22,11 @@ ActorInit Door_Shutter_InitVars = {
     (ActorFunc)DoorShutter_Draw,
 };
 
-GLOBAL_ASM("binary/DoorShutter_Init.o")
+GLOBAL_ASM("asm/DoorShutter_Init.s")
 
-GLOBAL_ASM("binary/DoorShutter_Destroy.o")
+GLOBAL_ASM("asm/DoorShutter_Destroy.s")
 
-GLOBAL_ASM("binary/DoorShutter_Update.o")
+GLOBAL_ASM("asm/DoorShutter_Update.s")
 
-GLOBAL_ASM("binary/DoorShutter_Draw.o")
+GLOBAL_ASM("asm/DoorShutter_Draw.s")
 }

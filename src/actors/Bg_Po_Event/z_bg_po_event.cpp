@@ -8,7 +8,7 @@ void BgPoEvent_Destroy(Actor* actor, GameState* state);
 void BgPoEvent_Update(Actor* actor, GameState* state);
 void BgPoEvent_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Po_Event.data.o")
+GLOBAL_ASM("data/z_Bg_Po_Event.data.o")
 
 ActorInit Bg_Po_Event_InitVars = {
     ACTOR_BG_PO_EVENT,
@@ -22,11 +22,11 @@ ActorInit Bg_Po_Event_InitVars = {
     (ActorFunc)BgPoEvent_Draw,
 };
 
-GLOBAL_ASM("binary/BgPoEvent_Init.o")
+GLOBAL_ASM("asm/BgPoEvent_Init.s")
 
-GLOBAL_ASM("binary/BgPoEvent_Destroy.o")
+GLOBAL_ASM("asm/BgPoEvent_Destroy.s")
 
-GLOBAL_ASM("binary/BgPoEvent_Update.o")
+GLOBAL_ASM("asm/BgPoEvent_Update.s")
 
-GLOBAL_ASM("binary/BgPoEvent_Draw.o")
+GLOBAL_ASM("asm/BgPoEvent_Draw.s")
 }

@@ -7,7 +7,7 @@ void BgMoriRakkatenjo_Init(Actor* actor, GameState* state);
 void BgMoriRakkatenjo_Destroy(Actor* actor, GameState* state);
 void BgMoriRakkatenjo_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mori_Rakkatenjo.data.o")
+GLOBAL_ASM("data/z_Bg_Mori_Rakkatenjo.data.o")
 
 ActorInit Bg_Mori_Rakkatenjo_InitVars = {
     ACTOR_BG_MORI_RAKKATENJO,
@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Rakkatenjo_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgMoriRakkatenjo_Init.o")
+GLOBAL_ASM("asm/BgMoriRakkatenjo_Init.s")
 
-GLOBAL_ASM("binary/BgMoriRakkatenjo_Destroy.o")
+GLOBAL_ASM("asm/BgMoriRakkatenjo_Destroy.s")
 
-GLOBAL_ASM("binary/BgMoriRakkatenjo_Update.o")
+GLOBAL_ASM("asm/BgMoriRakkatenjo_Update.s")
 }

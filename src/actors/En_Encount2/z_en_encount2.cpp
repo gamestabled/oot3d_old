@@ -20,11 +20,11 @@ ActorInit En_Encount2_InitVars = {
     (ActorFunc)EnEncount2_Draw,
 };
 
-GLOBAL_ASM("binary/EnEncount2_Init.o")
+GLOBAL_ASM("asm/EnEncount2_Init.s")
 
-GLOBAL_ASM("binary/EnEncount2_Destroy.o")
+GLOBAL_ASM("asm/EnEncount2_Destroy.s")
 
-GLOBAL_ASM("binary/EnEncount2_Update.o")
+GLOBAL_ASM("asm/EnEncount2_Update.s")
 
-GLOBAL_ASM("binary/EnEncount2_Draw.o")
+GLOBAL_ASM("asm/EnEncount2_Draw.s")
 }

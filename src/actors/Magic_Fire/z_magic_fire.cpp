@@ -8,7 +8,7 @@ void MagicFire_Destroy(Actor* actor, GameState* state);
 void MagicFire_Update(Actor* actor, GameState* state);
 void MagicFire_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Magic_Fire.data.o")
+GLOBAL_ASM("data/z_Magic_Fire.data.o")
 
 ActorInit Magic_Fire_InitVars = {
     ACTOR_MAGIC_FIRE,
@@ -22,11 +22,11 @@ ActorInit Magic_Fire_InitVars = {
     (ActorFunc)MagicFire_Draw,
 };
 
-GLOBAL_ASM("binary/MagicFire_Init.o")
+GLOBAL_ASM("asm/MagicFire_Init.s")
 
-GLOBAL_ASM("binary/MagicFire_Destroy.o")
+GLOBAL_ASM("asm/MagicFire_Destroy.s")
 
-GLOBAL_ASM("binary/MagicFire_Update.o")
+GLOBAL_ASM("asm/MagicFire_Update.s")
 
-GLOBAL_ASM("binary/MagicFire_Draw.o")
+GLOBAL_ASM("asm/MagicFire_Draw.s")
 }

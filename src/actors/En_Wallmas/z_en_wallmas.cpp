@@ -8,7 +8,7 @@ void EnWallmas_Destroy(Actor* actor, GameState* state);
 void EnWallmas_Update(Actor* actor, GameState* state);
 void EnWallmas_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Wallmas.data.o")
+GLOBAL_ASM("data/z_En_Wallmas.data.o")
 
 ActorInit En_Wallmas_InitVars = {
     ACTOR_EN_WALLMAS,
@@ -22,11 +22,11 @@ ActorInit En_Wallmas_InitVars = {
     (ActorFunc)EnWallmas_Draw,
 };
 
-GLOBAL_ASM("binary/EnWallmas_Init.o")
+GLOBAL_ASM("asm/EnWallmas_Init.s")
 
-GLOBAL_ASM("binary/EnWallmas_Destroy.o")
+GLOBAL_ASM("asm/EnWallmas_Destroy.s")
 
-GLOBAL_ASM("binary/EnWallmas_Update.o")
+GLOBAL_ASM("asm/EnWallmas_Update.s")
 
-GLOBAL_ASM("binary/EnWallmas_Draw.o")
+GLOBAL_ASM("asm/EnWallmas_Draw.s")
 }

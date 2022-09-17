@@ -8,7 +8,7 @@ void EnfHG_Destroy(Actor* actor, GameState* state);
 void EnfHG_Update(Actor* actor, GameState* state);
 void EnfHG_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_fHG.data.o")
+GLOBAL_ASM("data/z_En_fHG.data.o")
 
 ActorInit En_fHG_InitVars = {
     ACTOR_EN_FHG,
@@ -22,11 +22,11 @@ ActorInit En_fHG_InitVars = {
     (ActorFunc)EnfHG_Draw,
 };
 
-GLOBAL_ASM("binary/EnfHG_Init.o")
+GLOBAL_ASM("asm/EnfHG_Init.s")
 
-GLOBAL_ASM("binary/EnfHG_Destroy.o")
+GLOBAL_ASM("asm/EnfHG_Destroy.s")
 
-GLOBAL_ASM("binary/EnfHG_Update.o")
+GLOBAL_ASM("asm/EnfHG_Update.s")
 
-GLOBAL_ASM("binary/EnfHG_Draw.o")
+GLOBAL_ASM("asm/EnfHG_Draw.s")
 }

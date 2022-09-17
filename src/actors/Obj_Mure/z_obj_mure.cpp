@@ -7,7 +7,7 @@ void ObjMure_Init(Actor* actor, GameState* state);
 void ObjMure_Destroy(Actor* actor, GameState* state);
 void ObjMure_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Mure.data.o")
+GLOBAL_ASM("data/z_Obj_Mure.data.o")
 
 ActorInit Obj_Mure_InitVars = {
     ACTOR_OBJ_MURE,
@@ -21,9 +21,9 @@ ActorInit Obj_Mure_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/ObjMure_Init.o")
+GLOBAL_ASM("asm/ObjMure_Init.s")
 
-GLOBAL_ASM("binary/ObjMure_Destroy.o")
+GLOBAL_ASM("asm/ObjMure_Destroy.s")
 
-GLOBAL_ASM("binary/ObjMure_Update.o")
+GLOBAL_ASM("asm/ObjMure_Update.s")
 }

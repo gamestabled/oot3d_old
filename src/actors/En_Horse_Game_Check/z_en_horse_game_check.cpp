@@ -335,10 +335,10 @@ s32 EnHorseGameCheck_UpdateIngoRace(EnHorseGameCheckBase* base, GameState* state
 }
 #else
 s32 EnHorseGameCheck_UpdateIngoRace(EnHorseGameCheckBase* base, GameState* state);
-GLOBAL_ASM("binary/EnHorseGameCheck_UpdateIngoRace.o")
+GLOBAL_ASM("asm/EnHorseGameCheck_UpdateIngoRace.s")
 #endif
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_InitGerudoArchery.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_InitGerudoArchery.s")
 s32 EnHorseGameCheck_InitGerudoArchery(EnHorseGameCheckBase* base, GameState* state) {
     EnHorseGameCheckGerudoArchery* self = (EnHorseGameCheckGerudoArchery*)base;
     s32 ret = true;
@@ -349,12 +349,12 @@ s32 EnHorseGameCheck_InitGerudoArchery(EnHorseGameCheckBase* base, GameState* st
     return ret;
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_DestroyGerudoArchery.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_DestroyGerudoArchery.s")
 s32 EnHorseGameCheck_DestroyGerudoArchery(EnHorseGameCheckBase* base, GameState* state) {
     return true;
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_UpdateGerudoArchery.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_UpdateGerudoArchery.s")
 s32 EnHorseGameCheck_UpdateGerudoArchery(EnHorseGameCheckBase* base, GameState* state) {
     EnHorseGameCheckGerudoArchery* self = (EnHorseGameCheckGerudoArchery*)base;
     Player* player = GET_PLAYER((PlayState*)state);
@@ -372,7 +372,7 @@ s32 EnHorseGameCheck_UpdateGerudoArchery(EnHorseGameCheckBase* base, GameState* 
     return ret;
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_InitType3.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_InitType3.s")
 s32 EnHorseGameCheck_InitType3(EnHorseGameCheckBase* base, GameState* state) {
     EnHorseGameCheck3* self = (EnHorseGameCheck3*)base;
     s32 ret = true;
@@ -382,17 +382,17 @@ s32 EnHorseGameCheck_InitType3(EnHorseGameCheckBase* base, GameState* state) {
     return ret;
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_DestroyType3.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_DestroyType3.s")
 s32 EnHorseGameCheck_DestroyType3(EnHorseGameCheckBase* base, GameState* state) {
     return true;
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_UpdateType3.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_UpdateType3.s")
 s32 EnHorseGameCheck_UpdateType3(EnHorseGameCheckBase* base, GameState* state) {
     return true;
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_InitMalonRace.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_InitMalonRace.s")
 s32 EnHorseGameCheck_InitMalonRace(EnHorseGameCheckBase* base, GameState* state) {
     s32 ret = true;
     EnHorseGameCheckMalonRace* self = (EnHorseGameCheckMalonRace*)base;
@@ -409,7 +409,7 @@ s32 EnHorseGameCheck_InitMalonRace(EnHorseGameCheckBase* base, GameState* state)
     return ret;
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_DestroyMalonRace.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_DestroyMalonRace.s")
 s32 EnHorseGameCheck_DestroyMalonRace(EnHorseGameCheckBase* base, GameState* state) {
     return true;
 }
@@ -439,7 +439,7 @@ static void EnHorseGameCheck_FinishMalonRace(EnHorseGameCheckMalonRace* self, Ga
     }
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_UpdateMalonRace.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_UpdateMalonRace.s")
 s32 EnHorseGameCheck_UpdateMalonRace(EnHorseGameCheckBase* base, GameState* state) {
     EnHorseGameCheckMalonRace* self = (EnHorseGameCheckMalonRace*)base;
     s32 ret = true;
@@ -550,7 +550,7 @@ s32 EnHorseGameCheck_UpdateMalonRace(EnHorseGameCheckBase* base, GameState* stat
     return ret;
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_Init.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_Init.s")
 void EnHorseGameCheck_Init(Actor* actor, GameState* state) {
     PlayState* play = (PlayState*)state;
     EnHorseGameCheckBase* self = (EnHorseGameCheckBase*)actor;
@@ -563,7 +563,7 @@ void EnHorseGameCheck_Init(Actor* actor, GameState* state) {
     }
 }
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_Destroy.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_Destroy.s")
 void EnHorseGameCheck_Destroy(Actor* actor, GameState* state) {
     EnHorseGameCheckBase* self = (EnHorseGameCheckBase*)actor;
 
@@ -581,10 +581,10 @@ void EnHorseGameCheck_Update(Actor* actor, GameState* state) {
     }
 }
 #else
-GLOBAL_ASM("binary/EnHorseGameCheck_Update.o")
+GLOBAL_ASM("asm/EnHorseGameCheck_Update.s")
 #endif
 
-// GLOBAL_ASM("binary/EnHorseGameCheck_Draw.o")
+// GLOBAL_ASM("asm/EnHorseGameCheck_Draw.s")
 void EnHorseGameCheck_Draw(Actor* actor, GameState* state) {
 }
 }

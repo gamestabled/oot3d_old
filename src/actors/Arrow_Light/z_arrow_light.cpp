@@ -8,7 +8,7 @@ void ArrowLight_Destroy(Actor* actor, GameState* state);
 void ArrowLight_Update(Actor* actor, GameState* state);
 void ArrowLight_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Arrow_Light.data.o")
+GLOBAL_ASM("data/z_Arrow_Light.data.o")
 
 ActorInit Arrow_Light_InitVars = {
     ACTOR_ARROW_LIGHT,
@@ -22,11 +22,11 @@ ActorInit Arrow_Light_InitVars = {
     (ActorFunc)ArrowLight_Draw,
 };
 
-GLOBAL_ASM("binary/ArrowLight_Init.o")
+GLOBAL_ASM("asm/ArrowLight_Init.s")
 
-GLOBAL_ASM("binary/ArrowLight_Destroy.o")
+GLOBAL_ASM("asm/ArrowLight_Destroy.s")
 
-GLOBAL_ASM("binary/ArrowLight_Update.o")
+GLOBAL_ASM("asm/ArrowLight_Update.s")
 
-GLOBAL_ASM("binary/ArrowLight_Draw.o")
+GLOBAL_ASM("asm/ArrowLight_Draw.s")
 }

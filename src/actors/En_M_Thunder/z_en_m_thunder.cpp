@@ -8,7 +8,7 @@ void EnMThunder_Destroy(Actor* actor, GameState* state);
 void EnMThunder_Update(Actor* actor, GameState* state);
 void EnMThunder_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_M_Thunder.data.o")
+GLOBAL_ASM("data/z_En_M_Thunder.data.o")
 
 ActorInit En_M_Thunder_InitVars = {
     ACTOR_EN_M_THUNDER,
@@ -22,11 +22,11 @@ ActorInit En_M_Thunder_InitVars = {
     (ActorFunc)EnMThunder_Draw,
 };
 
-GLOBAL_ASM("binary/EnMThunder_Init.o")
+GLOBAL_ASM("asm/EnMThunder_Init.s")
 
-GLOBAL_ASM("binary/EnMThunder_Destroy.o")
+GLOBAL_ASM("asm/EnMThunder_Destroy.s")
 
-GLOBAL_ASM("binary/EnMThunder_Update.o")
+GLOBAL_ASM("asm/EnMThunder_Update.s")
 
-GLOBAL_ASM("binary/EnMThunder_Draw.o")
+GLOBAL_ASM("asm/EnMThunder_Draw.s")
 }

@@ -8,7 +8,7 @@ void EnFhgFire_Destroy(Actor* actor, GameState* state);
 void EnFhgFire_Update(Actor* actor, GameState* state);
 void EnFhgFire_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Fhg_Fire.data.o")
+GLOBAL_ASM("data/z_En_Fhg_Fire.data.o")
 
 ActorInit En_Fhg_Fire_InitVars = {
     ACTOR_PLAYER,
@@ -22,11 +22,11 @@ ActorInit En_Fhg_Fire_InitVars = {
     (ActorFunc)EnFhgFire_Draw,
 };
 
-GLOBAL_ASM("binary/EnFhgFire_Init.o")
+GLOBAL_ASM("asm/EnFhgFire_Init.s")
 
-GLOBAL_ASM("binary/EnFhgFire_Destroy.o")
+GLOBAL_ASM("asm/EnFhgFire_Destroy.s")
 
-GLOBAL_ASM("binary/EnFhgFire_Update.o")
+GLOBAL_ASM("asm/EnFhgFire_Update.s")
 
-GLOBAL_ASM("binary/EnFhgFire_Draw.o")
+GLOBAL_ASM("asm/EnFhgFire_Draw.s")
 }

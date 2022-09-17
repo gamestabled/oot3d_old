@@ -7,8 +7,8 @@ void Player_Destroy(Actor* actor, GameState* state);
 void Player_Update(Actor* actor, GameState* state);
 void Player_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Player.data_00539FB0.o")
-GLOBAL_ASM("binary/z_Player.data_0053C924.o")
+GLOBAL_ASM("data/z_Player.data_00539FB0.o")
+GLOBAL_ASM("data/z_Player.data_0053C924.o")
 
 ActorInit Player_InitVars = {
     ACTOR_PLAYER,
@@ -22,11 +22,11 @@ ActorInit Player_InitVars = {
     (ActorFunc)Player_Draw,
 };
 
-GLOBAL_ASM("binary/Player_Init.o")
+GLOBAL_ASM("asm/Player_Init.s")
 
-GLOBAL_ASM("binary/Player_Destroy.o")
+GLOBAL_ASM("asm/Player_Destroy.s")
 
-GLOBAL_ASM("binary/Player_Update.o")
+GLOBAL_ASM("asm/Player_Update.s")
 
-GLOBAL_ASM("binary/Player_Draw.o")
+GLOBAL_ASM("asm/Player_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgRelayObjects_Destroy(Actor* actor, GameState* state);
 void BgRelayObjects_Update(Actor* actor, GameState* state);
 void BgRelayObjects_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Relay_Objects.data.o")
+GLOBAL_ASM("data/z_Bg_Relay_Objects.data.o")
 
 ActorInit Bg_Relay_Objects_InitVars = {
     ACTOR_BG_RELAY_OBJECTS,
@@ -22,11 +22,11 @@ ActorInit Bg_Relay_Objects_InitVars = {
     (ActorFunc)BgRelayObjects_Draw,
 };
 
-GLOBAL_ASM("binary/BgRelayObjects_Init.o")
+GLOBAL_ASM("asm/BgRelayObjects_Init.s")
 
-GLOBAL_ASM("binary/BgRelayObjects_Destroy.o")
+GLOBAL_ASM("asm/BgRelayObjects_Destroy.s")
 
-GLOBAL_ASM("binary/BgRelayObjects_Update.o")
+GLOBAL_ASM("asm/BgRelayObjects_Update.s")
 
-GLOBAL_ASM("binary/BgRelayObjects_Draw.o")
+GLOBAL_ASM("asm/BgRelayObjects_Draw.s")
 }

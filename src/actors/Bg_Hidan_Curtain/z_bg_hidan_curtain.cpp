@@ -8,7 +8,7 @@ void BgHidanCurtain_Destroy(Actor* actor, GameState* state);
 void BgHidanCurtain_Update(Actor* actor, GameState* state);
 void BgHidanCurtain_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Hidan_Curtain.data.o")
+GLOBAL_ASM("data/z_Bg_Hidan_Curtain.data.o")
 
 ActorInit Bg_Hidan_Curtain_InitVars = {
     ACTOR_BG_HIDAN_CURTAIN,
@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Curtain_InitVars = {
     (ActorFunc)BgHidanCurtain_Draw,
 };
 
-GLOBAL_ASM("binary/BgHidanCurtain_Init.o")
+GLOBAL_ASM("asm/BgHidanCurtain_Init.s")
 
-GLOBAL_ASM("binary/BgHidanCurtain_Destroy.o")
+GLOBAL_ASM("asm/BgHidanCurtain_Destroy.s")
 
-GLOBAL_ASM("binary/BgHidanCurtain_Update.o")
+GLOBAL_ASM("asm/BgHidanCurtain_Update.s")
 
-GLOBAL_ASM("binary/BgHidanCurtain_Draw.o")
+GLOBAL_ASM("asm/BgHidanCurtain_Draw.s")
 }

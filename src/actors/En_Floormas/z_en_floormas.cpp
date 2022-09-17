@@ -8,7 +8,7 @@ void EnFloormas_Destroy(Actor* actor, GameState* state);
 void EnFloormas_Update(Actor* actor, GameState* state);
 void EnFloormas_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Floormas.data.o")
+GLOBAL_ASM("data/z_En_Floormas.data.o")
 
 ActorInit En_Floormas_InitVars = {
     ACTOR_EN_FLOORMAS,
@@ -22,11 +22,11 @@ ActorInit En_Floormas_InitVars = {
     (ActorFunc)EnFloormas_Draw,
 };
 
-GLOBAL_ASM("binary/EnFloormas_Init.o")
+GLOBAL_ASM("asm/EnFloormas_Init.s")
 
-GLOBAL_ASM("binary/EnFloormas_Destroy.o")
+GLOBAL_ASM("asm/EnFloormas_Destroy.s")
 
-GLOBAL_ASM("binary/EnFloormas_Update.o")
+GLOBAL_ASM("asm/EnFloormas_Update.s")
 
-GLOBAL_ASM("binary/EnFloormas_Draw.o")
+GLOBAL_ASM("asm/EnFloormas_Draw.s")
 }

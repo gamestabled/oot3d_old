@@ -7,7 +7,7 @@ void EnDntDemo_Init(Actor* actor, GameState* state);
 void EnDntDemo_Destroy(Actor* actor, GameState* state);
 void EnDntDemo_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Dnt_Demo.data.o")
+GLOBAL_ASM("data/z_En_Dnt_Demo.data.o")
 
 ActorInit En_Dnt_Demo_InitVars = {
     ACTOR_EN_DNT_DEMO,
@@ -21,9 +21,9 @@ ActorInit En_Dnt_Demo_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnDntDemo_Init.o")
+GLOBAL_ASM("asm/EnDntDemo_Init.s")
 
-GLOBAL_ASM("binary/EnDntDemo_Destroy.o")
+GLOBAL_ASM("asm/EnDntDemo_Destroy.s")
 
-GLOBAL_ASM("binary/EnDntDemo_Update.o")
+GLOBAL_ASM("asm/EnDntDemo_Update.s")
 }

@@ -8,7 +8,7 @@ void BgUmajump_Destroy(Actor* actor, GameState* state);
 void BgUmajump_Update(Actor* actor, GameState* state);
 void BgUmajump_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Umajump.data.o")
+GLOBAL_ASM("data/z_Bg_Umajump.data.o")
 
 ActorInit Bg_Umajump_InitVars = {
     ACTOR_BG_UMAJUMP,
@@ -22,11 +22,11 @@ ActorInit Bg_Umajump_InitVars = {
     (ActorFunc)BgUmajump_Draw,
 };
 
-GLOBAL_ASM("binary/BgUmajump_Init.o")
+GLOBAL_ASM("asm/BgUmajump_Init.s")
 
-GLOBAL_ASM("binary/BgUmajump_Destroy.o")
+GLOBAL_ASM("asm/BgUmajump_Destroy.s")
 
-GLOBAL_ASM("binary/BgUmajump_Update.o")
+GLOBAL_ASM("asm/BgUmajump_Update.s")
 
-GLOBAL_ASM("binary/BgUmajump_Draw.o")
+GLOBAL_ASM("asm/BgUmajump_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgSpot12Saku_Destroy(Actor* actor, GameState* state);
 void BgSpot12Saku_Update(Actor* actor, GameState* state);
 void BgSpot12Saku_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot12_Saku.data.o")
+GLOBAL_ASM("data/z_Bg_Spot12_Saku.data.o")
 
 ActorInit Bg_Spot12_Saku_InitVars = {
     ACTOR_BG_SPOT12_SAKU,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot12_Saku_InitVars = {
     (ActorFunc)BgSpot12Saku_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot12Saku_Init.o")
+GLOBAL_ASM("asm/BgSpot12Saku_Init.s")
 
-GLOBAL_ASM("binary/BgSpot12Saku_Destroy.o")
+GLOBAL_ASM("asm/BgSpot12Saku_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot12Saku_Update.o")
+GLOBAL_ASM("asm/BgSpot12Saku_Update.s")
 
-GLOBAL_ASM("binary/BgSpot12Saku_Draw.o")
+GLOBAL_ASM("asm/BgSpot12Saku_Draw.s")
 }

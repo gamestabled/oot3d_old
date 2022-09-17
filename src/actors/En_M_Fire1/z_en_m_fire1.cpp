@@ -7,7 +7,7 @@ void EnMFire1_Init(Actor* actor, GameState* state);
 void EnMFire1_Destroy(Actor* actor, GameState* state);
 void EnMFire1_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_M_Fire1.data.o")
+GLOBAL_ASM("data/z_En_M_Fire1.data.o")
 
 ActorInit En_M_Fire1_InitVars = {
     ACTOR_EN_M_FIRE1,
@@ -21,9 +21,9 @@ ActorInit En_M_Fire1_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnMFire1_Init.o")
+GLOBAL_ASM("asm/EnMFire1_Init.s")
 
-GLOBAL_ASM("binary/EnMFire1_Destroy.o")
+GLOBAL_ASM("asm/EnMFire1_Destroy.s")
 
-GLOBAL_ASM("binary/EnMFire1_Update.o")
+GLOBAL_ASM("asm/EnMFire1_Update.s")
 }

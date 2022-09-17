@@ -8,7 +8,7 @@ void EnTorch2_Destroy(Actor* actor, GameState* state);
 void EnTorch2_Update(Actor* actor, GameState* state);
 void EnTorch2_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Torch2.data.o")
+GLOBAL_ASM("data/z_En_Torch2.data.o")
 
 ActorInit En_Torch2_InitVars = {
     ACTOR_EN_TORCH2,
@@ -22,11 +22,11 @@ ActorInit En_Torch2_InitVars = {
     (ActorFunc)EnTorch2_Draw,
 };
 
-GLOBAL_ASM("binary/EnTorch2_Init.o")
+GLOBAL_ASM("asm/EnTorch2_Init.s")
 
-GLOBAL_ASM("binary/EnTorch2_Destroy.o")
+GLOBAL_ASM("asm/EnTorch2_Destroy.s")
 
-GLOBAL_ASM("binary/EnTorch2_Update.o")
+GLOBAL_ASM("asm/EnTorch2_Update.s")
 
-GLOBAL_ASM("binary/EnTorch2_Draw.o")
+GLOBAL_ASM("asm/EnTorch2_Draw.s")
 }

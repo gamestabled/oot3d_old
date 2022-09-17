@@ -19,9 +19,9 @@ ActorInit En_Arow_Trap_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnArowTrap_Init.o")
+GLOBAL_ASM("asm/EnArowTrap_Init.s")
 
-GLOBAL_ASM("binary/EnArowTrap_Destroy.o")
+GLOBAL_ASM("asm/EnArowTrap_Destroy.s")
 
-GLOBAL_ASM("binary/EnArowTrap_Update.o")
+GLOBAL_ASM("asm/EnArowTrap_Update.s")
 }

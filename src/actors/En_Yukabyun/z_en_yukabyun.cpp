@@ -8,7 +8,7 @@ void EnYukabyun_Destroy(Actor* actor, GameState* state);
 void EnYukabyun_Update(Actor* actor, GameState* state);
 void EnYukabyun_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Yukabyun.data.o")
+GLOBAL_ASM("data/z_En_Yukabyun.data.o")
 
 ActorInit En_Yukabyun_InitVars = {
     ACTOR_EN_YUKABYUN,
@@ -22,11 +22,11 @@ ActorInit En_Yukabyun_InitVars = {
     (ActorFunc)EnYukabyun_Draw,
 };
 
-GLOBAL_ASM("binary/EnYukabyun_Init.o")
+GLOBAL_ASM("asm/EnYukabyun_Init.s")
 
-GLOBAL_ASM("binary/EnYukabyun_Destroy.o")
+GLOBAL_ASM("asm/EnYukabyun_Destroy.s")
 
-GLOBAL_ASM("binary/EnYukabyun_Update.o")
+GLOBAL_ASM("asm/EnYukabyun_Update.s")
 
-GLOBAL_ASM("binary/EnYukabyun_Draw.o")
+GLOBAL_ASM("asm/EnYukabyun_Draw.s")
 }

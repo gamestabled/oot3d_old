@@ -8,8 +8,8 @@ void Fishing_Destroy(Actor* actor, GameState* state);
 void Fishing_Update(Actor* actor, GameState* state);
 void Fishing_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Fishing.data_00531294.o")
-GLOBAL_ASM("binary/z_Fishing.data_0053142C.o")
+GLOBAL_ASM("data/z_Fishing.data_00531294.o")
+GLOBAL_ASM("data/z_Fishing.data_0053142C.o")
 
 ActorInit Fishing_InitVars = {
     ACTOR_FISHING,
@@ -23,11 +23,11 @@ ActorInit Fishing_InitVars = {
     (ActorFunc)Fishing_Draw,
 };
 
-GLOBAL_ASM("binary/Fishing_Init.o")
+GLOBAL_ASM("asm/Fishing_Init.s")
 
-GLOBAL_ASM("binary/Fishing_Destroy.o")
+GLOBAL_ASM("asm/Fishing_Destroy.s")
 
-GLOBAL_ASM("binary/Fishing_Update.o")
+GLOBAL_ASM("asm/Fishing_Update.s")
 
-GLOBAL_ASM("binary/Fishing_Draw.o")
+GLOBAL_ASM("asm/Fishing_Draw.s")
 }

@@ -20,11 +20,11 @@ ActorInit En_Lightbox_InitVars = {
     (ActorFunc)EnLightbox_Draw,
 };
 
-GLOBAL_ASM("binary/EnLightbox_Init.o")
+GLOBAL_ASM("asm/EnLightbox_Init.s")
 
-GLOBAL_ASM("binary/EnLightbox_Destroy.o")
+GLOBAL_ASM("asm/EnLightbox_Destroy.s")
 
-GLOBAL_ASM("binary/EnLightbox_Update.o")
+GLOBAL_ASM("asm/EnLightbox_Update.s")
 
-GLOBAL_ASM("binary/EnLightbox_Draw.o")
+GLOBAL_ASM("asm/EnLightbox_Draw.s")
 }

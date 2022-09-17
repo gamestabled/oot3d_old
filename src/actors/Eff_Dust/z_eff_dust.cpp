@@ -8,7 +8,7 @@ void EffDust_Destroy(Actor* actor, GameState* state);
 void EffDust_Update(Actor* actor, GameState* state);
 void EffDust_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Eff_Dust.data.o")
+GLOBAL_ASM("data/z_Eff_Dust.data.o")
 
 ActorInit Eff_Dust_InitVars = {
     ACTOR_EFF_DUST,
@@ -22,11 +22,11 @@ ActorInit Eff_Dust_InitVars = {
     (ActorFunc)EffDust_Draw,
 };
 
-GLOBAL_ASM("binary/EffDust_Init.o")
+GLOBAL_ASM("asm/EffDust_Init.s")
 
-GLOBAL_ASM("binary/EffDust_Destroy.o")
+GLOBAL_ASM("asm/EffDust_Destroy.s")
 
-GLOBAL_ASM("binary/EffDust_Update.o")
+GLOBAL_ASM("asm/EffDust_Update.s")
 
-GLOBAL_ASM("binary/EffDust_Draw.o")
+GLOBAL_ASM("asm/EffDust_Draw.s")
 }

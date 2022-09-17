@@ -8,7 +8,7 @@ void EnAni_Destroy(Actor* actor, GameState* state);
 void EnAni_Update(Actor* actor, GameState* state);
 void EnAni_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ani.data.o")
+GLOBAL_ASM("data/z_En_Ani.data.o")
 
 ActorInit En_Ani_InitVars = {
     ACTOR_EN_ANI,
@@ -22,11 +22,11 @@ ActorInit En_Ani_InitVars = {
     (ActorFunc)EnAni_Draw,
 };
 
-GLOBAL_ASM("binary/EnAni_Init.o")
+GLOBAL_ASM("asm/EnAni_Init.s")
 
-GLOBAL_ASM("binary/EnAni_Destroy.o")
+GLOBAL_ASM("asm/EnAni_Destroy.s")
 
-GLOBAL_ASM("binary/EnAni_Update.o")
+GLOBAL_ASM("asm/EnAni_Update.s")
 
-GLOBAL_ASM("binary/EnAni_Draw.o")
+GLOBAL_ASM("asm/EnAni_Draw.s")
 }

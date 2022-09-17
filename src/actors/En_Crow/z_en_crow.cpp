@@ -8,7 +8,7 @@ void EnCrow_Destroy(Actor* actor, GameState* state);
 void EnCrow_Update(Actor* actor, GameState* state);
 void EnCrow_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Crow.data.o")
+GLOBAL_ASM("data/z_En_Crow.data.o")
 
 ActorInit En_Crow_InitVars = {
     ACTOR_EN_CROW,
@@ -22,11 +22,11 @@ ActorInit En_Crow_InitVars = {
     (ActorFunc)EnCrow_Draw,
 };
 
-GLOBAL_ASM("binary/EnCrow_Init.o")
+GLOBAL_ASM("asm/EnCrow_Init.s")
 
-GLOBAL_ASM("binary/EnCrow_Destroy.o")
+GLOBAL_ASM("asm/EnCrow_Destroy.s")
 
-GLOBAL_ASM("binary/EnCrow_Update.o")
+GLOBAL_ASM("asm/EnCrow_Update.s")
 
-GLOBAL_ASM("binary/EnCrow_Draw.o")
+GLOBAL_ASM("asm/EnCrow_Draw.s")
 }

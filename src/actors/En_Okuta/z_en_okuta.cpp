@@ -8,7 +8,7 @@ void EnOkuta_Destroy(Actor* actor, GameState* state);
 void EnOkuta_Update(Actor* actor, GameState* state);
 void EnOkuta_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Okuta.data.o")
+GLOBAL_ASM("data/z_En_Okuta.data.o")
 
 ActorInit En_Okuta_InitVars = {
     ACTOR_EN_OKUTA,
@@ -22,11 +22,11 @@ ActorInit En_Okuta_InitVars = {
     (ActorFunc)EnOkuta_Draw,
 };
 
-GLOBAL_ASM("binary/EnOkuta_Init.o")
+GLOBAL_ASM("asm/EnOkuta_Init.s")
 
-GLOBAL_ASM("binary/EnOkuta_Destroy.o")
+GLOBAL_ASM("asm/EnOkuta_Destroy.s")
 
-GLOBAL_ASM("binary/EnOkuta_Update.o")
+GLOBAL_ASM("asm/EnOkuta_Update.s")
 
-GLOBAL_ASM("binary/EnOkuta_Draw.o")
+GLOBAL_ASM("asm/EnOkuta_Draw.s")
 }

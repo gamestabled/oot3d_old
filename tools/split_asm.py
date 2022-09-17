@@ -38,6 +38,7 @@ BASEROMDIR = 'baserom/'
 WORKDIR = BASEROMDIR + 'workdir/'
 BINARYDIR = 'binary/'
 ASMDIR = 'asm/'
+DATADIR = 'data/'
 
 DATA_CHUNK_FILE = 'data_chunks.txt'
 FUNCTION_ADDRESSES_FILE = 'function_addresses.txt'
@@ -73,6 +74,18 @@ def handle_function_addresses(progress: tqdm.tqdm) -> None:
 
                 progress.update(len(line))
 
+def handle_SHT__INIT_ARRAY__Base():
+    with open(WORKDIR + 'text.bin', 'rb') as b:
+        arrayName = "SHT__INIT_ARRAY__Base"
+        arrayStart = 0x4C97B8 - 0x100000
+        arrayEnd = 0x4C99A8 - 0x100000
+        arraySize = arrayEnd - arrayStart
+        b.seek(arrayStart)
+        arrayBin = b.read(arraySize)
+        writefile(DATADIR + arrayName + ".bin", arrayBin)
+        run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data=ASM_{arrayName},alloc,load,readonly,data,contents',
+             '--redefine-sym', f'_binary_binary_{arrayName}_bin_start={arrayName}', f'{DATADIR}{arrayName}.bin', f'{DATADIR}{arrayName}.o'])
+
 def handle_rodata_chunks(progress: tqdm.tqdm) -> None:
     with open(WORKDIR + 'ro.bin', 'rb') as b:
         with open(RODATA_CHUNK_FILE) as rodata:
@@ -84,9 +97,9 @@ def handle_rodata_chunks(progress: tqdm.tqdm) -> None:
                 chunkSize = chunkEnd - chunkStart
                 b.seek(chunkStart)
                 chunkBin = b.read(chunkSize)
-                writefile(BINARYDIR + chunkName + '.bin', chunkBin)
+                writefile(DATADIR + chunkName + '.bin', chunkBin)
                 run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data=ASM_{chunkName},alloc,load,readonly,data,contents',
-                     '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{BINARYDIR}{chunkName}.bin', f'{BINARYDIR}{chunkName}.o'])
+                     '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{DATADIR}{chunkName}.bin', f'{DATADIR}{chunkName}.o'])
 
                 progress.update(len(line))
 
@@ -101,13 +114,14 @@ def handle_data_chunks(progress: tqdm.tqdm) -> None:
                 chunkSize = chunkEnd - chunkStart
                 b.seek(chunkStart)
                 chunkBin = b.read(chunkSize)
-                writefile(BINARYDIR + chunkName + '.bin', chunkBin)
+                writefile(DATADIR + chunkName + '.bin', chunkBin)
                 run([OC, '-I', 'binary', '-O', 'elf32-littlearm', '--rename-section', f'.data=ASM_{chunkName},alloc,load,data,contents',
-                     '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{BINARYDIR}{chunkName}.bin', f'{BINARYDIR}{chunkName}.o'])
+                     '--redefine-sym', f'_binary_binary_{chunkName}_bin_start={chunkName}', f'{DATADIR}{chunkName}.bin', f'{DATADIR}{chunkName}.o'])
 
                 progress.update(len(line))
 
 with tqdm.tqdm(total=total_file_sizes()) as progress:
-    handle_function_addresses(progress)
+    # handle_function_addresses(progress)
+    handle_SHT__INIT_ARRAY__Base()
     handle_rodata_chunks(progress)
     handle_data_chunks(progress)

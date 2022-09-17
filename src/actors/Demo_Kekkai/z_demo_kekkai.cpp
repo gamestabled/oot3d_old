@@ -8,7 +8,7 @@ void DemoKekkai_Destroy(Actor* actor, GameState* state);
 void DemoKekkai_Update(Actor* actor, GameState* state);
 void DemoKekkai_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Demo_Kekkai.data.o")
+GLOBAL_ASM("data/z_Demo_Kekkai.data.o")
 
 ActorInit Demo_Kekkai_InitVars = {
     ACTOR_DEMO_KEKKAI,
@@ -22,11 +22,11 @@ ActorInit Demo_Kekkai_InitVars = {
     (ActorFunc)DemoKekkai_Draw,
 };
 
-GLOBAL_ASM("binary/DemoKekkai_Init.o")
+GLOBAL_ASM("asm/DemoKekkai_Init.s")
 
-GLOBAL_ASM("binary/DemoKekkai_Destroy.o")
+GLOBAL_ASM("asm/DemoKekkai_Destroy.s")
 
-GLOBAL_ASM("binary/DemoKekkai_Update.o")
+GLOBAL_ASM("asm/DemoKekkai_Update.s")
 
-GLOBAL_ASM("binary/DemoKekkai_Draw.o")
+GLOBAL_ASM("asm/DemoKekkai_Draw.s")
 }

@@ -7,7 +7,7 @@ void BgMoriHineri_Init(Actor* actor, GameState* state);
 void BgMoriHineri_Destroy(Actor* actor, GameState* state);
 void BgMoriHineri_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mori_Hineri.data.o")
+GLOBAL_ASM("data/z_Bg_Mori_Hineri.data.o")
 
 ActorInit Bg_Mori_Hineri_InitVars = {
     ACTOR_BG_MORI_HINERI,
@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Hineri_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgMoriHineri_Init.o")
+GLOBAL_ASM("asm/BgMoriHineri_Init.s")
 
-GLOBAL_ASM("binary/BgMoriHineri_Destroy.o")
+GLOBAL_ASM("asm/BgMoriHineri_Destroy.s")
 
-GLOBAL_ASM("binary/BgMoriHineri_Update.o")
+GLOBAL_ASM("asm/BgMoriHineri_Update.s")
 }

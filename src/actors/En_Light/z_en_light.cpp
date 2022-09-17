@@ -8,7 +8,7 @@ void EnLight_Destroy(Actor* actor, GameState* state);
 void EnLight_Update(Actor* actor, GameState* state);
 void EnLight_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Light.data.o")
+GLOBAL_ASM("data/z_En_Light.data.o")
 
 ActorInit En_Light_InitVars = {
     ACTOR_EN_LIGHT,
@@ -22,11 +22,11 @@ ActorInit En_Light_InitVars = {
     (ActorFunc)EnLight_Draw,
 };
 
-GLOBAL_ASM("binary/EnLight_Init.o")
+GLOBAL_ASM("asm/EnLight_Init.s")
 
-GLOBAL_ASM("binary/EnLight_Destroy.o")
+GLOBAL_ASM("asm/EnLight_Destroy.s")
 
-GLOBAL_ASM("binary/EnLight_Update.o")
+GLOBAL_ASM("asm/EnLight_Update.s")
 
-GLOBAL_ASM("binary/EnLight_Draw.o")
+GLOBAL_ASM("asm/EnLight_Draw.s")
 }

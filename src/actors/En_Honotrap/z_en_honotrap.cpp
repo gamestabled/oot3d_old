@@ -8,7 +8,7 @@ void EnHonotrap_Destroy(Actor* actor, GameState* state);
 void EnHonotrap_Update(Actor* actor, GameState* state);
 void EnHonotrap_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Honotrap.data.o")
+GLOBAL_ASM("data/z_En_Honotrap.data.o")
 
 ActorInit En_Honotrap_InitVars = {
     ACTOR_EN_HONOTRAP,
@@ -22,11 +22,11 @@ ActorInit En_Honotrap_InitVars = {
     (ActorFunc)EnHonotrap_Draw,
 };
 
-GLOBAL_ASM("binary/EnHonotrap_Init.o")
+GLOBAL_ASM("asm/EnHonotrap_Init.s")
 
-GLOBAL_ASM("binary/EnHonotrap_Destroy.o")
+GLOBAL_ASM("asm/EnHonotrap_Destroy.s")
 
-GLOBAL_ASM("binary/EnHonotrap_Update.o")
+GLOBAL_ASM("asm/EnHonotrap_Update.s")
 
-GLOBAL_ASM("binary/EnHonotrap_Draw.o")
+GLOBAL_ASM("asm/EnHonotrap_Draw.s")
 }

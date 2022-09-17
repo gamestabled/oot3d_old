@@ -191,7 +191,7 @@ void BgHidanFirewall_Update(Actor* actor, GameState* state) {
     }
 }
 #else
-GLOBAL_ASM("binary/BgHidanFirewall_Update.o")
+GLOBAL_ASM("asm/BgHidanFirewall_Update.s")
 #endif
 
 void BgHidanFirewall_Draw(Actor* actor, GameState* state) {

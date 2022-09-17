@@ -7,7 +7,7 @@ void EnGuest_Init(Actor* actor, GameState* state);
 void EnGuest_Destroy(Actor* actor, GameState* state);
 void EnGuest_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Guest.data.o")
+GLOBAL_ASM("data/z_En_Guest.data.o")
 
 ActorInit En_Guest_InitVars = {
     ACTOR_EN_GUEST,
@@ -21,9 +21,9 @@ ActorInit En_Guest_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnGuest_Init.o")
+GLOBAL_ASM("asm/EnGuest_Init.s")
 
-GLOBAL_ASM("binary/EnGuest_Destroy.o")
+GLOBAL_ASM("asm/EnGuest_Destroy.s")
 
-GLOBAL_ASM("binary/EnGuest_Update.o")
+GLOBAL_ASM("asm/EnGuest_Update.s")
 }

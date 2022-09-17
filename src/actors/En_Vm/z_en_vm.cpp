@@ -8,7 +8,7 @@ void EnVm_Destroy(Actor* actor, GameState* state);
 void EnVm_Update(Actor* actor, GameState* state);
 void EnVm_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Vm.data.o")
+GLOBAL_ASM("data/z_En_Vm.data.o")
 
 ActorInit En_Vm_InitVars = {
     ACTOR_EN_VM,
@@ -22,11 +22,11 @@ ActorInit En_Vm_InitVars = {
     (ActorFunc)EnVm_Draw,
 };
 
-GLOBAL_ASM("binary/EnVm_Init.o")
+GLOBAL_ASM("asm/EnVm_Init.s")
 
-GLOBAL_ASM("binary/EnVm_Destroy.o")
+GLOBAL_ASM("asm/EnVm_Destroy.s")
 
-GLOBAL_ASM("binary/EnVm_Update.o")
+GLOBAL_ASM("asm/EnVm_Update.s")
 
-GLOBAL_ASM("binary/EnVm_Draw.o")
+GLOBAL_ASM("asm/EnVm_Draw.s")
 }

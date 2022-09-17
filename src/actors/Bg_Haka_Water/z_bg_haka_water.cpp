@@ -20,11 +20,11 @@ ActorInit Bg_Haka_Water_InitVars = {
     (ActorFunc)BgHakaWater_Draw,
 };
 
-GLOBAL_ASM("binary/BgHakaWater_Init.o")
+GLOBAL_ASM("asm/BgHakaWater_Init.s")
 
-GLOBAL_ASM("binary/BgHakaWater_Destroy.o")
+GLOBAL_ASM("asm/BgHakaWater_Destroy.s")
 
-GLOBAL_ASM("binary/BgHakaWater_Update.o")
+GLOBAL_ASM("asm/BgHakaWater_Update.s")
 
-GLOBAL_ASM("binary/BgHakaWater_Draw.o")
+GLOBAL_ASM("asm/BgHakaWater_Draw.s")
 }

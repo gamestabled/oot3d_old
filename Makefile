@@ -12,16 +12,21 @@ endif
 BUILD_DIR ?= build
 
 SRC_DIR ?= src
+ASM_DIR ?= asm
 NN_SRC_DIR ?= lib/CTR_SDK/src/nn
 STD_SRC_DIR ?= lib/STD/src
 
 SRC_BUILD_DIR ?= $(BUILD_DIR)/src
+ASM_BUILD_DIR ?= $(BUILD_DIR)/asm
 LIB_BUILD_DIR ?= $(BUILD_DIR)/lib
 NN_BUILD_DIR ?= $(LIB_BUILD_DIR)/nn
 STD_BUILD_DIR ?= $(LIB_BUILD_DIR)/std
 
 CPP_SRCS := $(wildcard $(SRC_DIR)/*.cpp $(SRC_DIR)/**/*.cpp $(SRC_DIR)/**/**/*.cpp)
 CPP_OBJS := $(patsubst $(SRC_DIR)/%.cpp,$(SRC_BUILD_DIR)/%.o,$(CPP_SRCS))
+
+ASM_SRCS := $(wildcard $(ASM_SUBDIR)/*.s)
+ASM_OBJS := $(patsubst $(ASM_SUBDIR)/%.s,$(ASM_BUILDDIR)/%.o,$(ASM_SRCS))
 
 NN_CPP_SRCS := $(wildcard $(NN_SRC_DIR)/*.cpp $(NN_SRC_DIR)/**/*.cpp $(NN_SRC_DIR)/**/**/*.cpp)
 NN_CPP_OBJS := $(patsubst $(NN_SRC_DIR)/%.cpp,$(NN_BUILD_DIR)/%.o,$(NN_CPP_SRCS))
@@ -71,7 +76,8 @@ LKFLAGS += -mcpu=MPCore -mfloat-abi=hard -marm -T oot.ld
 # Clear the default suffixes
 .SUFFIXES:
 
-.PHONY: dir all clean
+.PHONY: dir all clean setup disasm init
+
 all: dir $(TARGET).3ds
 ifeq ($(COMPARE),1)
 	@md5sum $(BUILD_DIR)/code.bin
@@ -87,11 +93,20 @@ clean:
 	rm -f -r $(BUILD_DIR)
 
 setup:
+	$(MAKE) -C tools
+
+disasm:
+	$(RM) -rf asm data
 	python3 ./tools/extract_baserom.py
+
+init:
+	$(MAKE) setup
+	$(MAKE) disasm
+	$(MAKE) all
 
 # Steps
 
-$(BUILD_DIR)/text.o: $(CPP_OBJS) $(LIB_OBJS)
+$(BUILD_DIR)/text.o: $(CPP_OBJS) $(LIB_OBJS) $(ASM_OBJS)
 	@echo "linking asm..."
 	$(LK) $(LKFLAGS) -nostdlib -Xlinker -Map=$(TARGET).map $(CPP_OBJS) $(LIB_OBJS) -o $@
 
@@ -107,8 +122,17 @@ ifeq ($(NON_MATCHING),0)
 	python3 ./tools/partial_inlines.py $(SRC_BUILD_DIR)/$*.s
 endif
 	$(AS) $(ASMFLAGS) $(SRC_BUILD_DIR)/$*.s -o $(SRC_BUILD_DIR)/$*_temp.o
-	$(LK) -r $(SRC_BUILD_DIR)/$*_temp.o $(shell cat '$(SRC_BUILD_DIR)/$*.deps') -o $(SRC_BUILD_DIR)/$*.o
+	$(LK) -mfpu=vfpv2 -march=armv6k -r $(SRC_BUILD_DIR)/$*_temp.o $(shell cat '$(SRC_BUILD_DIR)/$*.deps') -o $(SRC_BUILD_DIR)/$*.o
 	$(OBJCOPY) --rename-section .data=$*.data --rename-section .constdata=$*.rodata --rename-section .bss=$*.bss $(SRC_BUILD_DIR)/$*.o
+
+ifeq ($(NODEP),1)
+$(ASM_BUILDDIR)/%.o: asm_dep :=
+else
+$(ASM_BUILDDIR)/%.o: asm_dep = $(shell $(SCANINC) -I . $(ASM_SUBDIR)/$*.s)
+endif
+
+$(ASM_BUILDDIR)/%.o: $(ASM_SUBDIR)/%.s $$(asm_dep)
+	$(PREPROC) $< | $(AS) $(ASFLAGS) -o $@
 
 $(NN_BUILD_DIR)/%.deps: $(NN_SRC_DIR)/%.cpp
 	python3 ./tools/preproc.py $(NN_SRC_DIR)/$*.cpp $(NN_BUILD_DIR)/$*.deps
@@ -119,7 +143,7 @@ ifeq ($(NON_MATCHING),0)
 	python3 ./tools/partial_inlines.py $(NN_BUILD_DIR)/$*.s
 endif
 	$(AS) $(ASMFLAGS) $(NN_BUILD_DIR)/$*.s -o $(NN_BUILD_DIR)/$*_temp.o
-	$(LK) -r $(NN_BUILD_DIR)/$*_temp.o $(shell cat '$(NN_BUILD_DIR)/$*.deps') -o $(NN_BUILD_DIR)/$*.o
+	$(LK) -mfpu=vfpv2 -march=armv6k -r $(NN_BUILD_DIR)/$*_temp.o $(shell cat '$(NN_BUILD_DIR)/$*.deps') -o $(NN_BUILD_DIR)/$*.o
 	$(OBJCOPY) --rename-section .data=nn/$*.data --rename-section .constdata=nn/$*.rodata --rename-section .bss=nn/$*.bss $(NN_BUILD_DIR)/$*.o
 
 $(STD_BUILD_DIR)/%.deps: $(STD_SRC_DIR)/%.cpp
@@ -131,7 +155,7 @@ ifeq ($(NON_MATCHING),0)
 	python3 ./tools/partial_inlines.py $(STD_BUILD_DIR)/$*.s
 endif
 	$(AS) $(ASMFLAGS) $(STD_BUILD_DIR)/$*.s -o $(STD_BUILD_DIR)/$*_temp.o
-	$(LK) -r $(STD_BUILD_DIR)/$*_temp.o $(shell cat '$(STD_BUILD_DIR)/$*.deps') -o $(STD_BUILD_DIR)/$*.o
+	$(LK) -mfpu=vfpv2 -march=armv6k -r $(STD_BUILD_DIR)/$*_temp.o $(shell cat '$(STD_BUILD_DIR)/$*.deps') -o $(STD_BUILD_DIR)/$*.o
 	$(OBJCOPY) --rename-section .data=nn/$*.data --rename-section .constdata=nn/$*.rodata --rename-section .bss=nn/$*.bss $(STD_BUILD_DIR)/$*.o
 
 $(BUILD_DIR)/code.bin: $(BUILD_DIR)/text.o

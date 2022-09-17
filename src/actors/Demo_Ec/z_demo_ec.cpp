@@ -8,7 +8,7 @@ void DemoEc_Destroy(Actor* actor, GameState* state);
 void DemoEc_Update(Actor* actor, GameState* state);
 void DemoEc_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Demo_Ec.data.o")
+GLOBAL_ASM("data/z_Demo_Ec.data.o")
 
 ActorInit Demo_Ec_InitVars = {
     ACTOR_DEMO_EC,
@@ -22,11 +22,11 @@ ActorInit Demo_Ec_InitVars = {
     (ActorFunc)DemoEc_Draw,
 };
 
-GLOBAL_ASM("binary/DemoEc_Init.o")
+GLOBAL_ASM("asm/DemoEc_Init.s")
 
-GLOBAL_ASM("binary/DemoEc_Destroy.o")
+GLOBAL_ASM("asm/DemoEc_Destroy.s")
 
-GLOBAL_ASM("binary/DemoEc_Update.o")
+GLOBAL_ASM("asm/DemoEc_Update.s")
 
-GLOBAL_ASM("binary/DemoEc_Draw.o")
+GLOBAL_ASM("asm/DemoEc_Draw.s")
 }

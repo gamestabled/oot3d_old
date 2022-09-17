@@ -8,7 +8,7 @@ void EnSi_Destroy(Actor* actor, GameState* state);
 void EnSi_Update(Actor* actor, GameState* state);
 void EnSi_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Si.data.o")
+GLOBAL_ASM("data/z_En_Si.data.o")
 
 ActorInit En_Si_InitVars = {
     ACTOR_EN_SI,
@@ -22,11 +22,11 @@ ActorInit En_Si_InitVars = {
     (ActorFunc)EnSi_Draw,
 };
 
-GLOBAL_ASM("binary/EnSi_Init.o")
+GLOBAL_ASM("asm/EnSi_Init.s")
 
-GLOBAL_ASM("binary/EnSi_Destroy.o")
+GLOBAL_ASM("asm/EnSi_Destroy.s")
 
-GLOBAL_ASM("binary/EnSi_Update.o")
+GLOBAL_ASM("asm/EnSi_Update.s")
 
-GLOBAL_ASM("binary/EnSi_Draw.o")
+GLOBAL_ASM("asm/EnSi_Draw.s")
 }

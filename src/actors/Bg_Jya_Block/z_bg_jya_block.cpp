@@ -8,7 +8,7 @@ void BgJyaBlock_Destroy(Actor* actor, GameState* state);
 void BgJyaBlock_Update(Actor* actor, GameState* state);
 void BgJyaBlock_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Jya_Block.data.o")
+GLOBAL_ASM("data/z_Bg_Jya_Block.data.o")
 
 ActorInit Bg_Jya_Block_InitVars = {
     ACTOR_BG_JYA_BLOCK,
@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Block_InitVars = {
     (ActorFunc)BgJyaBlock_Draw,
 };
 
-GLOBAL_ASM("binary/BgJyaBlock_Init.o")
+GLOBAL_ASM("asm/BgJyaBlock_Init.s")
 
-GLOBAL_ASM("binary/BgJyaBlock_Destroy.o")
+GLOBAL_ASM("asm/BgJyaBlock_Destroy.s")
 
-GLOBAL_ASM("binary/BgJyaBlock_Update.o")
+GLOBAL_ASM("asm/BgJyaBlock_Update.s")
 
-GLOBAL_ASM("binary/BgJyaBlock_Draw.o")
+GLOBAL_ASM("asm/BgJyaBlock_Draw.s")
 }

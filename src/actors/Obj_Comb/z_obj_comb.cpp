@@ -8,7 +8,7 @@ void ObjComb_Destroy(Actor* actor, GameState* state);
 void ObjComb_Update(Actor* actor, GameState* state);
 void ObjComb_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Comb.data.o")
+GLOBAL_ASM("data/z_Obj_Comb.data.o")
 
 ActorInit Obj_Comb_InitVars = {
     ACTOR_OBJ_COMB,
@@ -22,11 +22,11 @@ ActorInit Obj_Comb_InitVars = {
     (ActorFunc)ObjComb_Draw,
 };
 
-GLOBAL_ASM("binary/ObjComb_Init.o")
+GLOBAL_ASM("asm/ObjComb_Init.s")
 
-GLOBAL_ASM("binary/ObjComb_Destroy.o")
+GLOBAL_ASM("asm/ObjComb_Destroy.s")
 
-GLOBAL_ASM("binary/ObjComb_Update.o")
+GLOBAL_ASM("asm/ObjComb_Update.s")
 
-GLOBAL_ASM("binary/ObjComb_Draw.o")
+GLOBAL_ASM("asm/ObjComb_Draw.s")
 }

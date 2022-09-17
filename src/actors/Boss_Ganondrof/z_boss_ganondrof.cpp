@@ -8,7 +8,7 @@ void BossGanondrof_Destroy(Actor* actor, GameState* state);
 void BossGanondrof_Update(Actor* actor, GameState* state);
 void BossGanondrof_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Boss_Ganondrof.data.o")
+GLOBAL_ASM("data/z_Boss_Ganondrof.data.o")
 
 ActorInit Boss_Ganondrof_InitVars = {
     ACTOR_BOSS_GANONDROF,
@@ -22,11 +22,11 @@ ActorInit Boss_Ganondrof_InitVars = {
     (ActorFunc)BossGanondrof_Draw,
 };
 
-GLOBAL_ASM("binary/BossGanondrof_Init.o")
+GLOBAL_ASM("asm/BossGanondrof_Init.s")
 
-GLOBAL_ASM("binary/BossGanondrof_Destroy.o")
+GLOBAL_ASM("asm/BossGanondrof_Destroy.s")
 
-GLOBAL_ASM("binary/BossGanondrof_Update.o")
+GLOBAL_ASM("asm/BossGanondrof_Update.s")
 
-GLOBAL_ASM("binary/BossGanondrof_Draw.o")
+GLOBAL_ASM("asm/BossGanondrof_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgHakaShip_Destroy(Actor* actor, GameState* state);
 void BgHakaShip_Update(Actor* actor, GameState* state);
 void BgHakaShip_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Haka_Ship.data.o")
+GLOBAL_ASM("data/z_Bg_Haka_Ship.data.o")
 
 ActorInit Bg_Haka_Ship_InitVars = {
     ACTOR_BG_HAKA_SHIP,
@@ -22,11 +22,11 @@ ActorInit Bg_Haka_Ship_InitVars = {
     (ActorFunc)BgHakaShip_Draw,
 };
 
-GLOBAL_ASM("binary/BgHakaShip_Init.o")
+GLOBAL_ASM("asm/BgHakaShip_Init.s")
 
-GLOBAL_ASM("binary/BgHakaShip_Destroy.o")
+GLOBAL_ASM("asm/BgHakaShip_Destroy.s")
 
-GLOBAL_ASM("binary/BgHakaShip_Update.o")
+GLOBAL_ASM("asm/BgHakaShip_Update.s")
 
-GLOBAL_ASM("binary/BgHakaShip_Draw.o")
+GLOBAL_ASM("asm/BgHakaShip_Draw.s")
 }

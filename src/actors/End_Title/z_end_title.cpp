@@ -8,7 +8,7 @@ void EndTitle_Destroy(Actor* actor, GameState* state);
 void EndTitle_Update(Actor* actor, GameState* state);
 void EndTitle_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_End_Title.data.o")
+GLOBAL_ASM("data/z_End_Title.data.o")
 
 ActorInit End_Title_InitVars = {
     ACTOR_END_TITLE,
@@ -22,11 +22,11 @@ ActorInit End_Title_InitVars = {
     (ActorFunc)EndTitle_Draw,
 };
 
-GLOBAL_ASM("binary/EndTitle_Init.o")
+GLOBAL_ASM("asm/EndTitle_Init.s")
 
-GLOBAL_ASM("binary/EndTitle_Destroy.o")
+GLOBAL_ASM("asm/EndTitle_Destroy.s")
 
-GLOBAL_ASM("binary/EndTitle_Update.o")
+GLOBAL_ASM("asm/EndTitle_Update.s")
 
-GLOBAL_ASM("binary/EndTitle_Draw.o")
+GLOBAL_ASM("asm/EndTitle_Draw.s")
 }

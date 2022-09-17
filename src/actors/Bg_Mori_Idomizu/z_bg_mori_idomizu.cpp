@@ -7,7 +7,7 @@ void BgMoriIdomizu_Init(Actor* actor, GameState* state);
 void BgMoriIdomizu_Destroy(Actor* actor, GameState* state);
 void BgMoriIdomizu_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mori_Idomizu.data.o")
+GLOBAL_ASM("data/z_Bg_Mori_Idomizu.data.o")
 
 ActorInit Bg_Mori_Idomizu_InitVars = {
     ACTOR_BG_MORI_IDOMIZU,
@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Idomizu_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgMoriIdomizu_Init.o")
+GLOBAL_ASM("asm/BgMoriIdomizu_Init.s")
 
-GLOBAL_ASM("binary/BgMoriIdomizu_Destroy.o")
+GLOBAL_ASM("asm/BgMoriIdomizu_Destroy.s")
 
-GLOBAL_ASM("binary/BgMoriIdomizu_Update.o")
+GLOBAL_ASM("asm/BgMoriIdomizu_Update.s")
 }

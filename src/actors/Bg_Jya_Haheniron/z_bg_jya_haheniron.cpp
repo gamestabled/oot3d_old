@@ -8,8 +8,8 @@ void BgJyaHaheniron_Destroy(Actor* actor, GameState* state);
 void BgJyaHaheniron_Update(Actor* actor, GameState* state);
 void BgJyaHaheniron_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Jya_Haheniron.data_005128D8.o")
-GLOBAL_ASM("binary/z_Bg_Jya_Haheniron.data_00512948.o")
+GLOBAL_ASM("data/z_Bg_Jya_Haheniron.data_005128D8.o")
+GLOBAL_ASM("data/z_Bg_Jya_Haheniron.data_00512948.o")
 
 ActorInit Bg_Jya_Haheniron_InitVars = {
     ACTOR_BG_JYA_HAHENIRON,
@@ -23,11 +23,11 @@ ActorInit Bg_Jya_Haheniron_InitVars = {
     (ActorFunc)BgJyaHaheniron_Draw,
 };
 
-GLOBAL_ASM("binary/BgJyaHaheniron_Init.o")
+GLOBAL_ASM("asm/BgJyaHaheniron_Init.s")
 
-GLOBAL_ASM("binary/BgJyaHaheniron_Destroy.o")
+GLOBAL_ASM("asm/BgJyaHaheniron_Destroy.s")
 
-GLOBAL_ASM("binary/BgJyaHaheniron_Update.o")
+GLOBAL_ASM("asm/BgJyaHaheniron_Update.s")
 
-GLOBAL_ASM("binary/BgJyaHaheniron_Draw.o")
+GLOBAL_ASM("asm/BgJyaHaheniron_Draw.s")
 }

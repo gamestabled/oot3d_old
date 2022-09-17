@@ -8,7 +8,7 @@ void DoorGerudo_Destroy(Actor* actor, GameState* state);
 void DoorGerudo_Update(Actor* actor, GameState* state);
 void DoorGerudo_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Door_Gerudo.data.o")
+GLOBAL_ASM("data/z_Door_Gerudo.data.o")
 
 ActorInit Door_Gerudo_InitVars = {
     ACTOR_DOOR_GERUDO,
@@ -22,11 +22,11 @@ ActorInit Door_Gerudo_InitVars = {
     (ActorFunc)DoorGerudo_Draw,
 };
 
-GLOBAL_ASM("binary/DoorGerudo_Init.o")
+GLOBAL_ASM("asm/DoorGerudo_Init.s")
 
-GLOBAL_ASM("binary/DoorGerudo_Destroy.o")
+GLOBAL_ASM("asm/DoorGerudo_Destroy.s")
 
-GLOBAL_ASM("binary/DoorGerudo_Update.o")
+GLOBAL_ASM("asm/DoorGerudo_Update.s")
 
-GLOBAL_ASM("binary/DoorGerudo_Draw.o")
+GLOBAL_ASM("asm/DoorGerudo_Draw.s")
 }

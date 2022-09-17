@@ -8,7 +8,7 @@ void ElfMsg_Destroy(Actor* actor, GameState* state);
 void ElfMsg_Update(Actor* actor, GameState* state);
 void ElfMsg_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Elf_Msg.data.o")
+GLOBAL_ASM("data/z_Elf_Msg.data.o")
 
 ActorInit Elf_Msg_InitVars = {
     ACTOR_ELF_MSG,
@@ -22,11 +22,11 @@ ActorInit Elf_Msg_InitVars = {
     (ActorFunc)ElfMsg_Draw,
 };
 
-GLOBAL_ASM("binary/ElfMsg_Init.o")
+GLOBAL_ASM("asm/ElfMsg_Init.s")
 
-GLOBAL_ASM("binary/ElfMsg_Destroy.o")
+GLOBAL_ASM("asm/ElfMsg_Destroy.s")
 
-GLOBAL_ASM("binary/ElfMsg_Update.o")
+GLOBAL_ASM("asm/ElfMsg_Update.s")
 
-GLOBAL_ASM("binary/ElfMsg_Draw.o")
+GLOBAL_ASM("asm/ElfMsg_Draw.s")
 }

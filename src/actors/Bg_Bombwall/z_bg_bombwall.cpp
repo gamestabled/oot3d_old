@@ -20,11 +20,11 @@ ActorInit Bg_Bombwall_InitVars = {
     (ActorFunc)BgBombwall_Draw,
 };
 
-GLOBAL_ASM("binary/BgBombwall_Init.o")
+GLOBAL_ASM("asm/BgBombwall_Init.s")
 
-GLOBAL_ASM("binary/BgBombwall_Destroy.o")
+GLOBAL_ASM("asm/BgBombwall_Destroy.s")
 
-GLOBAL_ASM("binary/BgBombwall_Update.o")
+GLOBAL_ASM("asm/BgBombwall_Update.s")
 
-GLOBAL_ASM("binary/BgBombwall_Draw.o")
+GLOBAL_ASM("asm/BgBombwall_Draw.s")
 }

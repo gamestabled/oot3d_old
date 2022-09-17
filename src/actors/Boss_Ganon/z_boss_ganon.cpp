@@ -8,7 +8,7 @@ void BossGanon_Destroy(Actor* actor, GameState* state);
 void BossGanon_Update(Actor* actor, GameState* state);
 void BossGanon_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Boss_Ganon.data.o")
+GLOBAL_ASM("data/z_Boss_Ganon.data.o")
 
 ActorInit Boss_Ganon_InitVars = {
     ACTOR_BOSS_GANON,
@@ -22,11 +22,11 @@ ActorInit Boss_Ganon_InitVars = {
     (ActorFunc)BossGanon_Draw,
 };
 
-GLOBAL_ASM("binary/BossGanon_Init.o")
+GLOBAL_ASM("asm/BossGanon_Init.s")
 
-GLOBAL_ASM("binary/BossGanon_Destroy.o")
+GLOBAL_ASM("asm/BossGanon_Destroy.s")
 
-GLOBAL_ASM("binary/BossGanon_Update.o")
+GLOBAL_ASM("asm/BossGanon_Update.s")
 
-GLOBAL_ASM("binary/BossGanon_Draw.o")
+GLOBAL_ASM("asm/BossGanon_Draw.s")
 }

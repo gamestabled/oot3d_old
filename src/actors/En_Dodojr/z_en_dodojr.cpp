@@ -8,7 +8,7 @@ void EnDodojr_Destroy(Actor* actor, GameState* state);
 void EnDodojr_Update(Actor* actor, GameState* state);
 void EnDodojr_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Dodojr.data.o")
+GLOBAL_ASM("data/z_En_Dodojr.data.o")
 
 ActorInit En_Dodojr_InitVars = {
     ACTOR_EN_DODOJR,
@@ -22,11 +22,11 @@ ActorInit En_Dodojr_InitVars = {
     (ActorFunc)EnDodojr_Draw,
 };
 
-GLOBAL_ASM("binary/EnDodojr_Init.o")
+GLOBAL_ASM("asm/EnDodojr_Init.s")
 
-GLOBAL_ASM("binary/EnDodojr_Destroy.o")
+GLOBAL_ASM("asm/EnDodojr_Destroy.s")
 
-GLOBAL_ASM("binary/EnDodojr_Update.o")
+GLOBAL_ASM("asm/EnDodojr_Update.s")
 
-GLOBAL_ASM("binary/EnDodojr_Draw.o")
+GLOBAL_ASM("asm/EnDodojr_Draw.s")
 }

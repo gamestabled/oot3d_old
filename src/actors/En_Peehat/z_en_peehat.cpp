@@ -8,7 +8,7 @@ void EnPeehat_Destroy(Actor* actor, GameState* state);
 void EnPeehat_Update(Actor* actor, GameState* state);
 void EnPeehat_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Peehat.data.o")
+GLOBAL_ASM("data/z_En_Peehat.data.o")
 
 ActorInit En_Peehat_InitVars = {
     ACTOR_EN_PEEHAT,
@@ -22,11 +22,11 @@ ActorInit En_Peehat_InitVars = {
     (ActorFunc)EnPeehat_Draw,
 };
 
-GLOBAL_ASM("binary/EnPeehat_Init.o")
+GLOBAL_ASM("asm/EnPeehat_Init.s")
 
-GLOBAL_ASM("binary/EnPeehat_Destroy.o")
+GLOBAL_ASM("asm/EnPeehat_Destroy.s")
 
-GLOBAL_ASM("binary/EnPeehat_Update.o")
+GLOBAL_ASM("asm/EnPeehat_Update.s")
 
-GLOBAL_ASM("binary/EnPeehat_Draw.o")
+GLOBAL_ASM("asm/EnPeehat_Draw.s")
 }

@@ -8,7 +8,7 @@ void BossTw_Destroy(Actor* actor, GameState* state);
 void BossTw_Update(Actor* actor, GameState* state);
 void BossTw_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Boss_Tw.data.o")
+GLOBAL_ASM("data/z_Boss_Tw.data.o")
 
 ActorInit Boss_Tw_InitVars = {
     ACTOR_BOSS_TW,
@@ -22,11 +22,11 @@ ActorInit Boss_Tw_InitVars = {
     (ActorFunc)BossTw_Draw,
 };
 
-GLOBAL_ASM("binary/BossTw_Init.o")
+GLOBAL_ASM("asm/BossTw_Init.s")
 
-GLOBAL_ASM("binary/BossTw_Destroy.o")
+GLOBAL_ASM("asm/BossTw_Destroy.s")
 
-GLOBAL_ASM("binary/BossTw_Update.o")
+GLOBAL_ASM("asm/BossTw_Update.s")
 
-GLOBAL_ASM("binary/BossTw_Draw.o")
+GLOBAL_ASM("asm/BossTw_Draw.s")
 }

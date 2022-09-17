@@ -8,8 +8,8 @@ void EnElf_Destroy(Actor* actor, GameState* state);
 void EnElf_Update(Actor* actor, GameState* state);
 void EnElf_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Elf.data_00522E74.o")
-GLOBAL_ASM("binary/z_En_Elf.data_005230C4.o")
+GLOBAL_ASM("data/z_En_Elf.data_00522E74.o")
+GLOBAL_ASM("data/z_En_Elf.data_005230C4.o")
 
 ActorInit En_Elf_InitVars = {
     ACTOR_EN_ELF,
@@ -23,11 +23,11 @@ ActorInit En_Elf_InitVars = {
     (ActorFunc)EnElf_Draw,
 };
 
-GLOBAL_ASM("binary/EnElf_Init.o")
+GLOBAL_ASM("asm/EnElf_Init.s")
 
-GLOBAL_ASM("binary/EnElf_Destroy.o")
+GLOBAL_ASM("asm/EnElf_Destroy.s")
 
-GLOBAL_ASM("binary/EnElf_Update.o")
+GLOBAL_ASM("asm/EnElf_Update.s")
 
-GLOBAL_ASM("binary/EnElf_Draw.o")
+GLOBAL_ASM("asm/EnElf_Draw.s")
 }

@@ -8,7 +8,7 @@ void EnKakasi_Destroy(Actor* actor, GameState* state);
 void EnKakasi_Update(Actor* actor, GameState* state);
 void EnKakasi_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Kakasi.data.o")
+GLOBAL_ASM("data/z_En_Kakasi.data.o")
 
 ActorInit En_Kakasi_InitVars = {
     ACTOR_EN_KAKASI,
@@ -22,11 +22,11 @@ ActorInit En_Kakasi_InitVars = {
     (ActorFunc)EnKakasi_Draw,
 };
 
-GLOBAL_ASM("binary/EnKakasi_Init.o")
+GLOBAL_ASM("asm/EnKakasi_Init.s")
 
-GLOBAL_ASM("binary/EnKakasi_Destroy.o")
+GLOBAL_ASM("asm/EnKakasi_Destroy.s")
 
-GLOBAL_ASM("binary/EnKakasi_Update.o")
+GLOBAL_ASM("asm/EnKakasi_Update.s")
 
-GLOBAL_ASM("binary/EnKakasi_Draw.o")
+GLOBAL_ASM("asm/EnKakasi_Draw.s")
 }

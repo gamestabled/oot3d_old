@@ -8,7 +8,7 @@ void EnCow_Destroy(Actor* actor, GameState* state);
 void EnCow_Update(Actor* actor, GameState* state);
 void EnCow_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Cow.data.o")
+GLOBAL_ASM("data/z_En_Cow.data.o")
 
 ActorInit En_Cow_InitVars = {
     ACTOR_EN_COW,
@@ -22,11 +22,11 @@ ActorInit En_Cow_InitVars = {
     (ActorFunc)EnCow_Draw,
 };
 
-GLOBAL_ASM("binary/EnCow_Init.o")
+GLOBAL_ASM("asm/EnCow_Init.s")
 
-GLOBAL_ASM("binary/EnCow_Destroy.o")
+GLOBAL_ASM("asm/EnCow_Destroy.s")
 
-GLOBAL_ASM("binary/EnCow_Update.o")
+GLOBAL_ASM("asm/EnCow_Update.s")
 
-GLOBAL_ASM("binary/EnCow_Draw.o")
+GLOBAL_ASM("asm/EnCow_Draw.s")
 }

@@ -8,7 +8,7 @@ void EnButte_Destroy(Actor* actor, GameState* state);
 void EnButte_Update(Actor* actor, GameState* state);
 void EnButte_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Butte.data.o")
+GLOBAL_ASM("data/z_En_Butte.data.o")
 
 ActorInit En_Butte_InitVars = {
     ACTOR_EN_BUTTE,
@@ -22,11 +22,11 @@ ActorInit En_Butte_InitVars = {
     (ActorFunc)EnButte_Draw,
 };
 
-GLOBAL_ASM("binary/EnButte_Init.o")
+GLOBAL_ASM("asm/EnButte_Init.s")
 
-GLOBAL_ASM("binary/EnButte_Destroy.o")
+GLOBAL_ASM("asm/EnButte_Destroy.s")
 
-GLOBAL_ASM("binary/EnButte_Update.o")
+GLOBAL_ASM("asm/EnButte_Update.s")
 
-GLOBAL_ASM("binary/EnButte_Draw.o")
+GLOBAL_ASM("asm/EnButte_Draw.s")
 }

@@ -7,7 +7,7 @@ void BgMoriHashira4_Init(Actor* actor, GameState* state);
 void BgMoriHashira4_Destroy(Actor* actor, GameState* state);
 void BgMoriHashira4_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mori_Hashira4.data.o")
+GLOBAL_ASM("data/z_Bg_Mori_Hashira4.data.o")
 
 ActorInit Bg_Mori_Hashira4_InitVars = {
     ACTOR_BG_MORI_HASHIRA4,
@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Hashira4_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgMoriHashira4_Init.o")
+GLOBAL_ASM("asm/BgMoriHashira4_Init.s")
 
-GLOBAL_ASM("binary/BgMoriHashira4_Destroy.o")
+GLOBAL_ASM("asm/BgMoriHashira4_Destroy.s")
 
-GLOBAL_ASM("binary/BgMoriHashira4_Update.o")
+GLOBAL_ASM("asm/BgMoriHashira4_Update.s")
 }

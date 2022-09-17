@@ -8,7 +8,7 @@ void EnHoll_Destroy(Actor* actor, GameState* state);
 void EnHoll_Update(Actor* actor, GameState* state);
 void EnHoll_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Holl.data.o")
+GLOBAL_ASM("data/z_En_Holl.data.o")
 
 ActorInit En_Holl_InitVars = {
     ACTOR_EN_HOLL,
@@ -22,11 +22,11 @@ ActorInit En_Holl_InitVars = {
     (ActorFunc)EnHoll_Draw,
 };
 
-GLOBAL_ASM("binary/EnHoll_Init.o")
+GLOBAL_ASM("asm/EnHoll_Init.s")
 
-GLOBAL_ASM("binary/EnHoll_Destroy.o")
+GLOBAL_ASM("asm/EnHoll_Destroy.s")
 
-GLOBAL_ASM("binary/EnHoll_Update.o")
+GLOBAL_ASM("asm/EnHoll_Update.s")
 
-GLOBAL_ASM("binary/EnHoll_Draw.o")
+GLOBAL_ASM("asm/EnHoll_Draw.s")
 }

@@ -7,7 +7,7 @@ void ShotSun_Init(Actor* actor, GameState* state);
 void ShotSun_Destroy(Actor* actor, GameState* state);
 void ShotSun_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Shot_Sun.data.o")
+GLOBAL_ASM("data/z_Shot_Sun.data.o")
 
 ActorInit Shot_Sun_InitVars = {
     ACTOR_SHOT_SUN,
@@ -21,9 +21,9 @@ ActorInit Shot_Sun_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/ShotSun_Init.o")
+GLOBAL_ASM("asm/ShotSun_Init.s")
 
-GLOBAL_ASM("binary/ShotSun_Destroy.o")
+GLOBAL_ASM("asm/ShotSun_Destroy.s")
 
-GLOBAL_ASM("binary/ShotSun_Update.o")
+GLOBAL_ASM("asm/ShotSun_Update.s")
 }

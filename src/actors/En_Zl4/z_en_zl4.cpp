@@ -8,7 +8,7 @@ void EnZl4_Destroy(Actor* actor, GameState* state);
 void EnZl4_Update(Actor* actor, GameState* state);
 void EnZl4_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Zl4.data.o")
+GLOBAL_ASM("data/z_En_Zl4.data.o")
 
 ActorInit En_Zl4_InitVars = {
     ACTOR_EN_ZL4,
@@ -22,11 +22,11 @@ ActorInit En_Zl4_InitVars = {
     (ActorFunc)EnZl4_Draw,
 };
 
-GLOBAL_ASM("binary/EnZl4_Init.o")
+GLOBAL_ASM("asm/EnZl4_Init.s")
 
-GLOBAL_ASM("binary/EnZl4_Destroy.o")
+GLOBAL_ASM("asm/EnZl4_Destroy.s")
 
-GLOBAL_ASM("binary/EnZl4_Update.o")
+GLOBAL_ASM("asm/EnZl4_Update.s")
 
-GLOBAL_ASM("binary/EnZl4_Draw.o")
+GLOBAL_ASM("asm/EnZl4_Draw.s")
 }

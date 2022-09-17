@@ -8,7 +8,7 @@ void BgSpot17Bakudankabe_Destroy(Actor* actor, GameState* state);
 void BgSpot17Bakudankabe_Update(Actor* actor, GameState* state);
 void BgSpot17Bakudankabe_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot17_Bakudankabe.data.o")
+GLOBAL_ASM("data/z_Bg_Spot17_Bakudankabe.data.o")
 
 ActorInit Bg_Spot17_Bakudankabe_InitVars = {
     ACTOR_BG_SPOT17_BAKUDANKABE,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot17_Bakudankabe_InitVars = {
     (ActorFunc)BgSpot17Bakudankabe_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot17Bakudankabe_Init.o")
+GLOBAL_ASM("asm/BgSpot17Bakudankabe_Init.s")
 
-GLOBAL_ASM("binary/BgSpot17Bakudankabe_Destroy.o")
+GLOBAL_ASM("asm/BgSpot17Bakudankabe_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot17Bakudankabe_Update.o")
+GLOBAL_ASM("asm/BgSpot17Bakudankabe_Update.s")
 
-GLOBAL_ASM("binary/BgSpot17Bakudankabe_Draw.o")
+GLOBAL_ASM("asm/BgSpot17Bakudankabe_Draw.s")
 }

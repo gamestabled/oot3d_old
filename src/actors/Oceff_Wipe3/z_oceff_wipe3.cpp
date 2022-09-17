@@ -20,11 +20,11 @@ ActorInit Oceff_Wipe3_InitVars = {
     (ActorFunc)OceffWipe3_Draw,
 };
 
-GLOBAL_ASM("binary/OceffWipe3_Init.o")
+GLOBAL_ASM("asm/OceffWipe3_Init.s")
 
-GLOBAL_ASM("binary/OceffWipe3_Destroy.o")
+GLOBAL_ASM("asm/OceffWipe3_Destroy.s")
 
-GLOBAL_ASM("binary/OceffWipe3_Update.o")
+GLOBAL_ASM("asm/OceffWipe3_Update.s")
 
-GLOBAL_ASM("binary/OceffWipe3_Draw.o")
+GLOBAL_ASM("asm/OceffWipe3_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgIceShelter_Destroy(Actor* actor, GameState* state);
 void BgIceShelter_Update(Actor* actor, GameState* state);
 void BgIceShelter_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ice_Shelter.data.o")
+GLOBAL_ASM("data/z_Bg_Ice_Shelter.data.o")
 
 ActorInit Bg_Ice_Shelter_InitVars = {
     ACTOR_BG_ICE_SHELTER,
@@ -22,11 +22,11 @@ ActorInit Bg_Ice_Shelter_InitVars = {
     (ActorFunc)BgIceShelter_Draw,
 };
 
-GLOBAL_ASM("binary/BgIceShelter_Init.o")
+GLOBAL_ASM("asm/BgIceShelter_Init.s")
 
-GLOBAL_ASM("binary/BgIceShelter_Destroy.o")
+GLOBAL_ASM("asm/BgIceShelter_Destroy.s")
 
-GLOBAL_ASM("binary/BgIceShelter_Update.o")
+GLOBAL_ASM("asm/BgIceShelter_Update.s")
 
-GLOBAL_ASM("binary/BgIceShelter_Draw.o")
+GLOBAL_ASM("asm/BgIceShelter_Draw.s")
 }

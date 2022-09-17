@@ -8,7 +8,7 @@ void EnKarebaba_Destroy(Actor* actor, GameState* state);
 void EnKarebaba_Update(Actor* actor, GameState* state);
 void EnKarebaba_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Karebaba.data.o")
+GLOBAL_ASM("data/z_En_Karebaba.data.o")
 
 ActorInit En_Karebaba_InitVars = {
     ACTOR_EN_KAREBABA,
@@ -22,11 +22,11 @@ ActorInit En_Karebaba_InitVars = {
     (ActorFunc)EnKarebaba_Draw,
 };
 
-GLOBAL_ASM("binary/EnKarebaba_Init.o")
+GLOBAL_ASM("asm/EnKarebaba_Init.s")
 
-GLOBAL_ASM("binary/EnKarebaba_Destroy.o")
+GLOBAL_ASM("asm/EnKarebaba_Destroy.s")
 
-GLOBAL_ASM("binary/EnKarebaba_Update.o")
+GLOBAL_ASM("asm/EnKarebaba_Update.s")
 
-GLOBAL_ASM("binary/EnKarebaba_Draw.o")
+GLOBAL_ASM("asm/EnKarebaba_Draw.s")
 }

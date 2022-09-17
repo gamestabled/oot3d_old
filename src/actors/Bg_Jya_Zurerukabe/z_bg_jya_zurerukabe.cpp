@@ -8,7 +8,7 @@ void BgJyaZurerukabe_Destroy(Actor* actor, GameState* state);
 void BgJyaZurerukabe_Update(Actor* actor, GameState* state);
 void BgJyaZurerukabe_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Jya_Zurerukabe.data.o")
+GLOBAL_ASM("data/z_Bg_Jya_Zurerukabe.data.o")
 
 ActorInit Bg_Jya_Zurerukabe_InitVars = {
     ACTOR_BG_JYA_ZURERUKABE,
@@ -22,11 +22,11 @@ ActorInit Bg_Jya_Zurerukabe_InitVars = {
     (ActorFunc)BgJyaZurerukabe_Draw,
 };
 
-GLOBAL_ASM("binary/BgJyaZurerukabe_Init.o")
+GLOBAL_ASM("asm/BgJyaZurerukabe_Init.s")
 
-GLOBAL_ASM("binary/BgJyaZurerukabe_Destroy.o")
+GLOBAL_ASM("asm/BgJyaZurerukabe_Destroy.s")
 
-GLOBAL_ASM("binary/BgJyaZurerukabe_Update.o")
+GLOBAL_ASM("asm/BgJyaZurerukabe_Update.s")
 
-GLOBAL_ASM("binary/BgJyaZurerukabe_Draw.o")
+GLOBAL_ASM("asm/BgJyaZurerukabe_Draw.s")
 }

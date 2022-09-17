@@ -8,7 +8,7 @@ void EnMk_Destroy(Actor* actor, GameState* state);
 void EnMk_Update(Actor* actor, GameState* state);
 void EnMk_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Mk.data.o")
+GLOBAL_ASM("data/z_En_Mk.data.o")
 
 ActorInit En_Mk_InitVars = {
     ACTOR_EN_MK,
@@ -22,11 +22,11 @@ ActorInit En_Mk_InitVars = {
     (ActorFunc)EnMk_Draw,
 };
 
-GLOBAL_ASM("binary/EnMk_Init.o")
+GLOBAL_ASM("asm/EnMk_Init.s")
 
-GLOBAL_ASM("binary/EnMk_Destroy.o")
+GLOBAL_ASM("asm/EnMk_Destroy.s")
 
-GLOBAL_ASM("binary/EnMk_Update.o")
+GLOBAL_ASM("asm/EnMk_Update.s")
 
-GLOBAL_ASM("binary/EnMk_Draw.o")
+GLOBAL_ASM("asm/EnMk_Draw.s")
 }

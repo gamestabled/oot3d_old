@@ -8,7 +8,7 @@ void EnNy_Destroy(Actor* actor, GameState* state);
 void EnNy_Update(Actor* actor, GameState* state);
 void EnNy_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ny.data.o")
+GLOBAL_ASM("data/z_En_Ny.data.o")
 
 ActorInit En_Ny_InitVars = {
     ACTOR_EN_NY,
@@ -22,11 +22,11 @@ ActorInit En_Ny_InitVars = {
     (ActorFunc)EnNy_Draw,
 };
 
-GLOBAL_ASM("binary/EnNy_Init.o")
+GLOBAL_ASM("asm/EnNy_Init.s")
 
-GLOBAL_ASM("binary/EnNy_Destroy.o")
+GLOBAL_ASM("asm/EnNy_Destroy.s")
 
-GLOBAL_ASM("binary/EnNy_Update.o")
+GLOBAL_ASM("asm/EnNy_Update.s")
 
-GLOBAL_ASM("binary/EnNy_Draw.o")
+GLOBAL_ASM("asm/EnNy_Draw.s")
 }

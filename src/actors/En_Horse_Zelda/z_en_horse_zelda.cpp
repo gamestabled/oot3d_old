@@ -20,11 +20,11 @@ ActorInit En_Horse_Zelda_InitVars = {
     (ActorFunc)EnHorseZelda_Draw,
 };
 
-GLOBAL_ASM("binary/EnHorseZelda_Init.o")
+GLOBAL_ASM("asm/EnHorseZelda_Init.s")
 
-GLOBAL_ASM("binary/EnHorseZelda_Destroy.o")
+GLOBAL_ASM("asm/EnHorseZelda_Destroy.s")
 
-GLOBAL_ASM("binary/EnHorseZelda_Update.o")
+GLOBAL_ASM("asm/EnHorseZelda_Update.s")
 
-GLOBAL_ASM("binary/EnHorseZelda_Draw.o")
+GLOBAL_ASM("asm/EnHorseZelda_Draw.s")
 }

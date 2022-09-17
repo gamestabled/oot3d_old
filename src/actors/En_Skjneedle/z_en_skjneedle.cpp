@@ -8,7 +8,7 @@ void EnSkjneedle_Destroy(Actor* actor, GameState* state);
 void EnSkjneedle_Update(Actor* actor, GameState* state);
 void EnSkjneedle_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Skjneedle.data.o")
+GLOBAL_ASM("data/z_En_Skjneedle.data.o")
 
 ActorInit En_Skjneedle_InitVars = {
     ACTOR_EN_SKJNEEDLE,
@@ -22,11 +22,11 @@ ActorInit En_Skjneedle_InitVars = {
     (ActorFunc)EnSkjneedle_Draw,
 };
 
-GLOBAL_ASM("binary/EnSkjneedle_Init.o")
+GLOBAL_ASM("asm/EnSkjneedle_Init.s")
 
-GLOBAL_ASM("binary/EnSkjneedle_Destroy.o")
+GLOBAL_ASM("asm/EnSkjneedle_Destroy.s")
 
-GLOBAL_ASM("binary/EnSkjneedle_Update.o")
+GLOBAL_ASM("asm/EnSkjneedle_Update.s")
 
-GLOBAL_ASM("binary/EnSkjneedle_Draw.o")
+GLOBAL_ASM("asm/EnSkjneedle_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgHidanFslift_Destroy(Actor* actor, GameState* state);
 void BgHidanFslift_Update(Actor* actor, GameState* state);
 void BgHidanFslift_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Hidan_Fslift.data.o")
+GLOBAL_ASM("data/z_Bg_Hidan_Fslift.data.o")
 
 ActorInit Bg_Hidan_Fslift_InitVars = {
     ACTOR_BG_HIDAN_FSLIFT,
@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Fslift_InitVars = {
     (ActorFunc)BgHidanFslift_Draw,
 };
 
-GLOBAL_ASM("binary/BgHidanFslift_Init.o")
+GLOBAL_ASM("asm/BgHidanFslift_Init.s")
 
-GLOBAL_ASM("binary/BgHidanFslift_Destroy.o")
+GLOBAL_ASM("asm/BgHidanFslift_Destroy.s")
 
-GLOBAL_ASM("binary/BgHidanFslift_Update.o")
+GLOBAL_ASM("asm/BgHidanFslift_Update.s")
 
-GLOBAL_ASM("binary/BgHidanFslift_Draw.o")
+GLOBAL_ASM("asm/BgHidanFslift_Draw.s")
 }

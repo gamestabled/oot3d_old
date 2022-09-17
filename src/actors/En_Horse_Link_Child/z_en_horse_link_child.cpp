@@ -8,7 +8,7 @@ void EnHorseLinkChild_Destroy(Actor* actor, GameState* state);
 void EnHorseLinkChild_Update(Actor* actor, GameState* state);
 void EnHorseLinkChild_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Horse_Link_Child.data.o")
+GLOBAL_ASM("data/z_En_Horse_Link_Child.data.o")
 
 ActorInit En_Horse_Link_Child_InitVars = {
     ACTOR_EN_HORSE_LINK_CHILD,
@@ -22,11 +22,11 @@ ActorInit En_Horse_Link_Child_InitVars = {
     (ActorFunc)EnHorseLinkChild_Draw,
 };
 
-GLOBAL_ASM("binary/EnHorseLinkChild_Init.o")
+GLOBAL_ASM("asm/EnHorseLinkChild_Init.s")
 
-GLOBAL_ASM("binary/EnHorseLinkChild_Destroy.o")
+GLOBAL_ASM("asm/EnHorseLinkChild_Destroy.s")
 
-GLOBAL_ASM("binary/EnHorseLinkChild_Update.o")
+GLOBAL_ASM("asm/EnHorseLinkChild_Update.s")
 
-GLOBAL_ASM("binary/EnHorseLinkChild_Draw.o")
+GLOBAL_ASM("asm/EnHorseLinkChild_Draw.s")
 }

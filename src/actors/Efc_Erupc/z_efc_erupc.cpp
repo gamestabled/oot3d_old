@@ -8,7 +8,7 @@ void EfcErupc_Destroy(Actor* actor, GameState* state);
 void EfcErupc_Update(Actor* actor, GameState* state);
 void EfcErupc_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Efc_Erupc.data.o")
+GLOBAL_ASM("data/z_Efc_Erupc.data.o")
 
 ActorInit Efc_Erupc_InitVars = {
     ACTOR_EFC_ERUPC,
@@ -22,11 +22,11 @@ ActorInit Efc_Erupc_InitVars = {
     (ActorFunc)EfcErupc_Draw,
 };
 
-GLOBAL_ASM("binary/EfcErupc_Init.o")
+GLOBAL_ASM("asm/EfcErupc_Init.s")
 
-GLOBAL_ASM("binary/EfcErupc_Destroy.o")
+GLOBAL_ASM("asm/EfcErupc_Destroy.s")
 
-GLOBAL_ASM("binary/EfcErupc_Update.o")
+GLOBAL_ASM("asm/EfcErupc_Update.s")
 
-GLOBAL_ASM("binary/EfcErupc_Draw.o")
+GLOBAL_ASM("asm/EfcErupc_Draw.s")
 }

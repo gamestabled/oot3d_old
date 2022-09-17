@@ -8,7 +8,7 @@ void EnExRuppy_Destroy(Actor* actor, GameState* state);
 void EnExRuppy_Update(Actor* actor, GameState* state);
 void EnExRuppy_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ex_Ruppy.data.o")
+GLOBAL_ASM("data/z_En_Ex_Ruppy.data.o")
 
 ActorInit En_Ex_Ruppy_InitVars = {
     ACTOR_EN_EX_RUPPY,
@@ -22,11 +22,11 @@ ActorInit En_Ex_Ruppy_InitVars = {
     (ActorFunc)EnExRuppy_Draw,
 };
 
-GLOBAL_ASM("binary/EnExRuppy_Init.o")
+GLOBAL_ASM("asm/EnExRuppy_Init.s")
 
-GLOBAL_ASM("binary/EnExRuppy_Destroy.o")
+GLOBAL_ASM("asm/EnExRuppy_Destroy.s")
 
-GLOBAL_ASM("binary/EnExRuppy_Update.o")
+GLOBAL_ASM("asm/EnExRuppy_Update.s")
 
-GLOBAL_ASM("binary/EnExRuppy_Draw.o")
+GLOBAL_ASM("asm/EnExRuppy_Draw.s")
 }

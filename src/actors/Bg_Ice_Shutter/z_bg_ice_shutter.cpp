@@ -8,7 +8,7 @@ void BgIceShutter_Destroy(Actor* actor, GameState* state);
 void BgIceShutter_Update(Actor* actor, GameState* state);
 void BgIceShutter_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ice_Shutter.data.o")
+GLOBAL_ASM("data/z_Bg_Ice_Shutter.data.o")
 
 ActorInit Bg_Ice_Shutter_InitVars = {
     ACTOR_BG_ICE_SHUTTER,
@@ -22,11 +22,11 @@ ActorInit Bg_Ice_Shutter_InitVars = {
     (ActorFunc)BgIceShutter_Draw,
 };
 
-GLOBAL_ASM("binary/BgIceShutter_Init.o")
+GLOBAL_ASM("asm/BgIceShutter_Init.s")
 
-GLOBAL_ASM("binary/BgIceShutter_Destroy.o")
+GLOBAL_ASM("asm/BgIceShutter_Destroy.s")
 
-GLOBAL_ASM("binary/BgIceShutter_Update.o")
+GLOBAL_ASM("asm/BgIceShutter_Update.s")
 
-GLOBAL_ASM("binary/BgIceShutter_Draw.o")
+GLOBAL_ASM("asm/BgIceShutter_Draw.s")
 }

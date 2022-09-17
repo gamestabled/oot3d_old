@@ -8,7 +8,7 @@ void BgHidanHrock_Destroy(Actor* actor, GameState* state);
 void BgHidanHrock_Update(Actor* actor, GameState* state);
 void BgHidanHrock_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Hidan_Hrock.data.o")
+GLOBAL_ASM("data/z_Bg_Hidan_Hrock.data.o")
 
 ActorInit Bg_Hidan_Hrock_InitVars = {
     ACTOR_BG_HIDAN_HROCK,
@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Hrock_InitVars = {
     (ActorFunc)BgHidanHrock_Draw,
 };
 
-GLOBAL_ASM("binary/BgHidanHrock_Init.o")
+GLOBAL_ASM("asm/BgHidanHrock_Init.s")
 
-GLOBAL_ASM("binary/BgHidanHrock_Destroy.o")
+GLOBAL_ASM("asm/BgHidanHrock_Destroy.s")
 
-GLOBAL_ASM("binary/BgHidanHrock_Update.o")
+GLOBAL_ASM("asm/BgHidanHrock_Update.s")
 
-GLOBAL_ASM("binary/BgHidanHrock_Draw.o")
+GLOBAL_ASM("asm/BgHidanHrock_Draw.s")
 }

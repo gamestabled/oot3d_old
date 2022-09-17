@@ -8,8 +8,8 @@ void EnHorse_Destroy(Actor* actor, GameState* state);
 void EnHorse_Update(Actor* actor, GameState* state);
 void EnHorse_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Horse.data_005265BC.o")
-GLOBAL_ASM("binary/z_En_Horse.data_00526F0C.o")
+GLOBAL_ASM("data/z_En_Horse.data_005265BC.o")
+GLOBAL_ASM("data/z_En_Horse.data_00526F0C.o")
 
 ActorInit En_Horse_InitVars = {
     ACTOR_EN_HORSE,
@@ -23,11 +23,11 @@ ActorInit En_Horse_InitVars = {
     (ActorFunc)EnHorse_Draw,
 };
 
-GLOBAL_ASM("binary/EnHorse_Init.o")
+GLOBAL_ASM("asm/EnHorse_Init.s")
 
-GLOBAL_ASM("binary/EnHorse_Destroy.o")
+GLOBAL_ASM("asm/EnHorse_Destroy.s")
 
-GLOBAL_ASM("binary/EnHorse_Update.o")
+GLOBAL_ASM("asm/EnHorse_Update.s")
 
-GLOBAL_ASM("binary/EnHorse_Draw.o")
+GLOBAL_ASM("asm/EnHorse_Draw.s")
 }

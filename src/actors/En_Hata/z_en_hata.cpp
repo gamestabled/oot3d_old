@@ -20,11 +20,11 @@ ActorInit En_Hata_InitVars = {
     (ActorFunc)EnHata_Draw,
 };
 
-GLOBAL_ASM("binary/EnHata_Init.o")
+GLOBAL_ASM("asm/EnHata_Init.s")
 
-GLOBAL_ASM("binary/EnHata_Destroy.o")
+GLOBAL_ASM("asm/EnHata_Destroy.s")
 
-GLOBAL_ASM("binary/EnHata_Update.o")
+GLOBAL_ASM("asm/EnHata_Update.s")
 
-GLOBAL_ASM("binary/EnHata_Draw.o")
+GLOBAL_ASM("asm/EnHata_Draw.s")
 }

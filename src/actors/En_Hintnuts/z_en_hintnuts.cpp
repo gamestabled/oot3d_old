@@ -8,7 +8,7 @@ void EnHintnuts_Destroy(Actor* actor, GameState* state);
 void EnHintnuts_Update(Actor* actor, GameState* state);
 void EnHintnuts_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Hintnuts.data.o")
+GLOBAL_ASM("data/z_En_Hintnuts.data.o")
 
 ActorInit En_Hintnuts_InitVars = {
     ACTOR_EN_HINTNUTS,
@@ -22,11 +22,11 @@ ActorInit En_Hintnuts_InitVars = {
     (ActorFunc)EnHintnuts_Draw,
 };
 
-GLOBAL_ASM("binary/EnHintnuts_Init.o")
+GLOBAL_ASM("asm/EnHintnuts_Init.s")
 
-GLOBAL_ASM("binary/EnHintnuts_Destroy.o")
+GLOBAL_ASM("asm/EnHintnuts_Destroy.s")
 
-GLOBAL_ASM("binary/EnHintnuts_Update.o")
+GLOBAL_ASM("asm/EnHintnuts_Update.s")
 
-GLOBAL_ASM("binary/EnHintnuts_Draw.o")
+GLOBAL_ASM("asm/EnHintnuts_Draw.s")
 }

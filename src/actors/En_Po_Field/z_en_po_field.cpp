@@ -8,7 +8,7 @@ void EnPoField_Destroy(Actor* actor, GameState* state);
 void EnPoField_Update(Actor* actor, GameState* state);
 void EnPoField_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Po_Field.data.o")
+GLOBAL_ASM("data/z_En_Po_Field.data.o")
 
 ActorInit En_Po_Field_InitVars = {
     ACTOR_EN_PO_FIELD,
@@ -22,11 +22,11 @@ ActorInit En_Po_Field_InitVars = {
     (ActorFunc)EnPoField_Draw,
 };
 
-GLOBAL_ASM("binary/EnPoField_Init.o")
+GLOBAL_ASM("asm/EnPoField_Init.s")
 
-GLOBAL_ASM("binary/EnPoField_Destroy.o")
+GLOBAL_ASM("asm/EnPoField_Destroy.s")
 
-GLOBAL_ASM("binary/EnPoField_Update.o")
+GLOBAL_ASM("asm/EnPoField_Update.s")
 
-GLOBAL_ASM("binary/EnPoField_Draw.o")
+GLOBAL_ASM("asm/EnPoField_Draw.s")
 }

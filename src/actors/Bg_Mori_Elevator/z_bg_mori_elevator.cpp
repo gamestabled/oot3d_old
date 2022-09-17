@@ -7,7 +7,7 @@ void BgMoriElevator_Init(Actor* actor, GameState* state);
 void BgMoriElevator_Destroy(Actor* actor, GameState* state);
 void BgMoriElevator_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mori_Elevator.data.o")
+GLOBAL_ASM("data/z_Bg_Mori_Elevator.data.o")
 
 ActorInit Bg_Mori_Elevator_InitVars = {
     ACTOR_BG_MORI_ELEVATOR,
@@ -21,9 +21,9 @@ ActorInit Bg_Mori_Elevator_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/BgMoriElevator_Init.o")
+GLOBAL_ASM("asm/BgMoriElevator_Init.s")
 
-GLOBAL_ASM("binary/BgMoriElevator_Destroy.o")
+GLOBAL_ASM("asm/BgMoriElevator_Destroy.s")
 
-GLOBAL_ASM("binary/BgMoriElevator_Update.o")
+GLOBAL_ASM("asm/BgMoriElevator_Update.s")
 }

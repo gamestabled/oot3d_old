@@ -8,7 +8,7 @@ void BgYdanHasi_Destroy(Actor* actor, GameState* state);
 void BgYdanHasi_Update(Actor* actor, GameState* state);
 void BgYdanHasi_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ydan_Hasi.data.o")
+GLOBAL_ASM("data/z_Bg_Ydan_Hasi.data.o")
 
 ActorInit Bg_Ydan_Hasi_InitVars = {
     ACTOR_BG_YDAN_HASI,
@@ -22,11 +22,11 @@ ActorInit Bg_Ydan_Hasi_InitVars = {
     (ActorFunc)BgYdanHasi_Draw,
 };
 
-GLOBAL_ASM("binary/BgYdanHasi_Init.o")
+GLOBAL_ASM("asm/BgYdanHasi_Init.s")
 
-GLOBAL_ASM("binary/BgYdanHasi_Destroy.o")
+GLOBAL_ASM("asm/BgYdanHasi_Destroy.s")
 
-GLOBAL_ASM("binary/BgYdanHasi_Update.o")
+GLOBAL_ASM("asm/BgYdanHasi_Update.s")
 
-GLOBAL_ASM("binary/BgYdanHasi_Draw.o")
+GLOBAL_ASM("asm/BgYdanHasi_Draw.s")
 }

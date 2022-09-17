@@ -8,7 +8,7 @@ void EnDog_Destroy(Actor* actor, GameState* state);
 void EnDog_Update(Actor* actor, GameState* state);
 void EnDog_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Dog.data.o")
+GLOBAL_ASM("data/z_En_Dog.data.o")
 
 ActorInit En_Dog_InitVars = {
     ACTOR_EN_DOG,
@@ -22,11 +22,11 @@ ActorInit En_Dog_InitVars = {
     (ActorFunc)EnDog_Draw,
 };
 
-GLOBAL_ASM("binary/EnDog_Init.o")
+GLOBAL_ASM("asm/EnDog_Init.s")
 
-GLOBAL_ASM("binary/EnDog_Destroy.o")
+GLOBAL_ASM("asm/EnDog_Destroy.s")
 
-GLOBAL_ASM("binary/EnDog_Update.o")
+GLOBAL_ASM("asm/EnDog_Update.s")
 
-GLOBAL_ASM("binary/EnDog_Draw.o")
+GLOBAL_ASM("asm/EnDog_Draw.s")
 }

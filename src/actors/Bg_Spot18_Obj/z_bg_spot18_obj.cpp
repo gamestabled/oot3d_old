@@ -8,7 +8,7 @@ void BgSpot18Obj_Destroy(Actor* actor, GameState* state);
 void BgSpot18Obj_Update(Actor* actor, GameState* state);
 void BgSpot18Obj_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot18_Obj.data.o")
+GLOBAL_ASM("data/z_Bg_Spot18_Obj.data.o")
 
 ActorInit Bg_Spot18_Obj_InitVars = {
     ACTOR_BG_SPOT18_OBJ,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot18_Obj_InitVars = {
     (ActorFunc)BgSpot18Obj_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot18Obj_Init.o")
+GLOBAL_ASM("asm/BgSpot18Obj_Init.s")
 
-GLOBAL_ASM("binary/BgSpot18Obj_Destroy.o")
+GLOBAL_ASM("asm/BgSpot18Obj_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot18Obj_Update.o")
+GLOBAL_ASM("asm/BgSpot18Obj_Update.s")
 
-GLOBAL_ASM("binary/BgSpot18Obj_Draw.o")
+GLOBAL_ASM("asm/BgSpot18Obj_Draw.s")
 }

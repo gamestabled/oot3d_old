@@ -20,11 +20,11 @@ ActorInit En_Dy_Extra_InitVars = {
     (ActorFunc)EnDyExtra_Draw,
 };
 
-GLOBAL_ASM("binary/EnDyExtra_Init.o")
+GLOBAL_ASM("asm/EnDyExtra_Init.s")
 
-GLOBAL_ASM("binary/EnDyExtra_Destroy.o")
+GLOBAL_ASM("asm/EnDyExtra_Destroy.s")
 
-GLOBAL_ASM("binary/EnDyExtra_Update.o")
+GLOBAL_ASM("asm/EnDyExtra_Update.s")
 
-GLOBAL_ASM("binary/EnDyExtra_Draw.o")
+GLOBAL_ASM("asm/EnDyExtra_Draw.s")
 }

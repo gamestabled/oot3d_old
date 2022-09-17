@@ -8,7 +8,7 @@ void EnSt_Destroy(Actor* actor, GameState* state);
 void EnSt_Update(Actor* actor, GameState* state);
 void EnSt_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_St.data.o")
+GLOBAL_ASM("data/z_En_St.data.o")
 
 ActorInit En_St_InitVars = {
     ACTOR_EN_ST,
@@ -22,11 +22,11 @@ ActorInit En_St_InitVars = {
     (ActorFunc)EnSt_Draw,
 };
 
-GLOBAL_ASM("binary/EnSt_Init.o")
+GLOBAL_ASM("asm/EnSt_Init.s")
 
-GLOBAL_ASM("binary/EnSt_Destroy.o")
+GLOBAL_ASM("asm/EnSt_Destroy.s")
 
-GLOBAL_ASM("binary/EnSt_Update.o")
+GLOBAL_ASM("asm/EnSt_Update.s")
 
-GLOBAL_ASM("binary/EnSt_Draw.o")
+GLOBAL_ASM("asm/EnSt_Draw.s")
 }

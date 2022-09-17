@@ -20,11 +20,11 @@ ActorInit Magic_Wind_InitVars = {
     (ActorFunc)MagicWind_Draw,
 };
 
-GLOBAL_ASM("binary/MagicWind_Init.o")
+GLOBAL_ASM("asm/MagicWind_Init.s")
 
-GLOBAL_ASM("binary/MagicWind_Destroy.o")
+GLOBAL_ASM("asm/MagicWind_Destroy.s")
 
-GLOBAL_ASM("binary/MagicWind_Update.o")
+GLOBAL_ASM("asm/MagicWind_Update.s")
 
-GLOBAL_ASM("binary/MagicWind_Draw.o")
+GLOBAL_ASM("asm/MagicWind_Draw.s")
 }

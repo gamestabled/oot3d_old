@@ -20,11 +20,11 @@ ActorInit Bg_Ice_Objects_InitVars = {
     (ActorFunc)BgIceObjects_Draw,
 };
 
-GLOBAL_ASM("binary/BgIceObjects_Init.o")
+GLOBAL_ASM("asm/BgIceObjects_Init.s")
 
-GLOBAL_ASM("binary/BgIceObjects_Destroy.o")
+GLOBAL_ASM("asm/BgIceObjects_Destroy.s")
 
-GLOBAL_ASM("binary/BgIceObjects_Update.o")
+GLOBAL_ASM("asm/BgIceObjects_Update.s")
 
-GLOBAL_ASM("binary/BgIceObjects_Draw.o")
+GLOBAL_ASM("asm/BgIceObjects_Draw.s")
 }

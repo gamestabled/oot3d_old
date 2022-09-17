@@ -8,7 +8,7 @@ void EnDu_Destroy(Actor* actor, GameState* state);
 void EnDu_Update(Actor* actor, GameState* state);
 void EnDu_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Du.data.o")
+GLOBAL_ASM("data/z_En_Du.data.o")
 
 ActorInit En_Du_InitVars = {
     ACTOR_EN_DU,
@@ -22,11 +22,11 @@ ActorInit En_Du_InitVars = {
     (ActorFunc)EnDu_Draw,
 };
 
-GLOBAL_ASM("binary/EnDu_Init.o")
+GLOBAL_ASM("asm/EnDu_Init.s")
 
-GLOBAL_ASM("binary/EnDu_Destroy.o")
+GLOBAL_ASM("asm/EnDu_Destroy.s")
 
-GLOBAL_ASM("binary/EnDu_Update.o")
+GLOBAL_ASM("asm/EnDu_Update.s")
 
-GLOBAL_ASM("binary/EnDu_Draw.o")
+GLOBAL_ASM("asm/EnDu_Draw.s")
 }

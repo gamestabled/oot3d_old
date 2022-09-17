@@ -8,7 +8,7 @@ void EnFd_Destroy(Actor* actor, GameState* state);
 void EnFd_Update(Actor* actor, GameState* state);
 void EnFd_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Fd.data.o")
+GLOBAL_ASM("data/z_En_Fd.data.o")
 
 ActorInit En_Fd_InitVars = {
     ACTOR_EN_FD,
@@ -22,11 +22,11 @@ ActorInit En_Fd_InitVars = {
     (ActorFunc)EnFd_Draw,
 };
 
-GLOBAL_ASM("binary/EnFd_Init.o")
+GLOBAL_ASM("asm/EnFd_Init.s")
 
-GLOBAL_ASM("binary/EnFd_Destroy.o")
+GLOBAL_ASM("asm/EnFd_Destroy.s")
 
-GLOBAL_ASM("binary/EnFd_Update.o")
+GLOBAL_ASM("asm/EnFd_Update.s")
 
-GLOBAL_ASM("binary/EnFd_Draw.o")
+GLOBAL_ASM("asm/EnFd_Draw.s")
 }

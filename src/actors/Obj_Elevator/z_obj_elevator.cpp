@@ -8,7 +8,7 @@ void ObjElevator_Destroy(Actor* actor, GameState* state);
 void ObjElevator_Update(Actor* actor, GameState* state);
 void ObjElevator_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Elevator.data.o")
+GLOBAL_ASM("data/z_Obj_Elevator.data.o")
 
 ActorInit Obj_Elevator_InitVars = {
     ACTOR_OBJ_ELEVATOR,
@@ -22,11 +22,11 @@ ActorInit Obj_Elevator_InitVars = {
     (ActorFunc)ObjElevator_Draw,
 };
 
-GLOBAL_ASM("binary/ObjElevator_Init.o")
+GLOBAL_ASM("asm/ObjElevator_Init.s")
 
-GLOBAL_ASM("binary/ObjElevator_Destroy.o")
+GLOBAL_ASM("asm/ObjElevator_Destroy.s")
 
-GLOBAL_ASM("binary/ObjElevator_Update.o")
+GLOBAL_ASM("asm/ObjElevator_Update.s")
 
-GLOBAL_ASM("binary/ObjElevator_Draw.o")
+GLOBAL_ASM("asm/ObjElevator_Draw.s")
 }

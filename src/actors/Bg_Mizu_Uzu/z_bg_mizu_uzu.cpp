@@ -8,7 +8,7 @@ void BgMizuUzu_Destroy(Actor* actor, GameState* state);
 void BgMizuUzu_Update(Actor* actor, GameState* state);
 void BgMizuUzu_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Mizu_Uzu.data.o")
+GLOBAL_ASM("data/z_Bg_Mizu_Uzu.data.o")
 
 ActorInit Bg_Mizu_Uzu_InitVars = {
     ACTOR_BG_MIZU_UZU,
@@ -22,11 +22,11 @@ ActorInit Bg_Mizu_Uzu_InitVars = {
     (ActorFunc)BgMizuUzu_Draw,
 };
 
-GLOBAL_ASM("binary/BgMizuUzu_Init.o")
+GLOBAL_ASM("asm/BgMizuUzu_Init.s")
 
-GLOBAL_ASM("binary/BgMizuUzu_Destroy.o")
+GLOBAL_ASM("asm/BgMizuUzu_Destroy.s")
 
-GLOBAL_ASM("binary/BgMizuUzu_Update.o")
+GLOBAL_ASM("asm/BgMizuUzu_Update.s")
 
-GLOBAL_ASM("binary/BgMizuUzu_Draw.o")
+GLOBAL_ASM("asm/BgMizuUzu_Draw.s")
 }

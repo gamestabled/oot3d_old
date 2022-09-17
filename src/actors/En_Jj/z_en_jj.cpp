@@ -8,7 +8,7 @@ void EnJj_Destroy(Actor* actor, GameState* state);
 void EnJj_Update(Actor* actor, GameState* state);
 void EnJj_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Jj.data.o")
+GLOBAL_ASM("data/z_En_Jj.data.o")
 
 ActorInit En_Jj_InitVars = {
     ACTOR_EN_JJ,
@@ -22,11 +22,11 @@ ActorInit En_Jj_InitVars = {
     (ActorFunc)EnJj_Draw,
 };
 
-GLOBAL_ASM("binary/EnJj_Init.o")
+GLOBAL_ASM("asm/EnJj_Init.s")
 
-GLOBAL_ASM("binary/EnJj_Destroy.o")
+GLOBAL_ASM("asm/EnJj_Destroy.s")
 
-GLOBAL_ASM("binary/EnJj_Update.o")
+GLOBAL_ASM("asm/EnJj_Update.s")
 
-GLOBAL_ASM("binary/EnJj_Draw.o")
+GLOBAL_ASM("asm/EnJj_Draw.s")
 }

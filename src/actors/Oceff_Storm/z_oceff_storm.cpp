@@ -8,7 +8,7 @@ void OceffStorm_Destroy(Actor* actor, GameState* state);
 void OceffStorm_Update(Actor* actor, GameState* state);
 void OceffStorm_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Oceff_Storm.data.o")
+GLOBAL_ASM("data/z_Oceff_Storm.data.o")
 
 ActorInit Oceff_Storm_InitVars = {
     ACTOR_OCEFF_STORM,
@@ -22,11 +22,11 @@ ActorInit Oceff_Storm_InitVars = {
     (ActorFunc)OceffStorm_Draw,
 };
 
-GLOBAL_ASM("binary/OceffStorm_Init.o")
+GLOBAL_ASM("asm/OceffStorm_Init.s")
 
-GLOBAL_ASM("binary/OceffStorm_Destroy.o")
+GLOBAL_ASM("asm/OceffStorm_Destroy.s")
 
-GLOBAL_ASM("binary/OceffStorm_Update.o")
+GLOBAL_ASM("asm/OceffStorm_Update.s")
 
-GLOBAL_ASM("binary/OceffStorm_Draw.o")
+GLOBAL_ASM("asm/OceffStorm_Draw.s")
 }

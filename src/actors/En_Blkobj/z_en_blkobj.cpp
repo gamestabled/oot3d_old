@@ -8,7 +8,7 @@ void EnBlkobj_Destroy(Actor* actor, GameState* state);
 void EnBlkobj_Update(Actor* actor, GameState* state);
 void EnBlkobj_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Blkobj.data.o")
+GLOBAL_ASM("data/z_En_Blkobj.data.o")
 
 ActorInit En_Blkobj_InitVars = {
     ACTOR_EN_BLKOBJ,
@@ -22,11 +22,11 @@ ActorInit En_Blkobj_InitVars = {
     (ActorFunc)EnBlkobj_Draw,
 };
 
-GLOBAL_ASM("binary/EnBlkobj_Init.o")
+GLOBAL_ASM("asm/EnBlkobj_Init.s")
 
-GLOBAL_ASM("binary/EnBlkobj_Destroy.o")
+GLOBAL_ASM("asm/EnBlkobj_Destroy.s")
 
-GLOBAL_ASM("binary/EnBlkobj_Update.o")
+GLOBAL_ASM("asm/EnBlkobj_Update.s")
 
-GLOBAL_ASM("binary/EnBlkobj_Draw.o")
+GLOBAL_ASM("asm/EnBlkobj_Draw.s")
 }

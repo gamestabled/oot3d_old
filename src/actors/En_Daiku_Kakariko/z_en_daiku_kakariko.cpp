@@ -8,7 +8,7 @@ void EnDaikuKakariko_Destroy(Actor* actor, GameState* state);
 void EnDaikuKakariko_Update(Actor* actor, GameState* state);
 void EnDaikuKakariko_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Daiku_Kakariko.data.o")
+GLOBAL_ASM("data/z_En_Daiku_Kakariko.data.o")
 
 ActorInit En_Daiku_Kakariko_InitVars = {
     ACTOR_EN_DAIKU_KAKARIKO,
@@ -22,11 +22,11 @@ ActorInit En_Daiku_Kakariko_InitVars = {
     (ActorFunc)EnDaikuKakariko_Draw,
 };
 
-GLOBAL_ASM("binary/EnDaikuKakariko_Init.o")
+GLOBAL_ASM("asm/EnDaikuKakariko_Init.s")
 
-GLOBAL_ASM("binary/EnDaikuKakariko_Destroy.o")
+GLOBAL_ASM("asm/EnDaikuKakariko_Destroy.s")
 
-GLOBAL_ASM("binary/EnDaikuKakariko_Update.o")
+GLOBAL_ASM("asm/EnDaikuKakariko_Update.s")
 
-GLOBAL_ASM("binary/EnDaikuKakariko_Draw.o")
+GLOBAL_ASM("asm/EnDaikuKakariko_Draw.s")
 }

@@ -8,7 +8,7 @@ void EnDntJiji_Destroy(Actor* actor, GameState* state);
 void EnDntJiji_Update(Actor* actor, GameState* state);
 void EnDntJiji_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Dnt_Jiji.data.o")
+GLOBAL_ASM("data/z_En_Dnt_Jiji.data.o")
 
 ActorInit En_Dnt_Jiji_InitVars = {
     ACTOR_EN_DNT_JIJI,
@@ -22,11 +22,11 @@ ActorInit En_Dnt_Jiji_InitVars = {
     (ActorFunc)EnDntJiji_Draw,
 };
 
-GLOBAL_ASM("binary/EnDntJiji_Init.o")
+GLOBAL_ASM("asm/EnDntJiji_Init.s")
 
-GLOBAL_ASM("binary/EnDntJiji_Destroy.o")
+GLOBAL_ASM("asm/EnDntJiji_Destroy.s")
 
-GLOBAL_ASM("binary/EnDntJiji_Update.o")
+GLOBAL_ASM("asm/EnDntJiji_Update.s")
 
-GLOBAL_ASM("binary/EnDntJiji_Draw.o")
+GLOBAL_ASM("asm/EnDntJiji_Draw.s")
 }

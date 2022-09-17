@@ -8,8 +8,8 @@ void EnBigokuta_Destroy(Actor* actor, GameState* state);
 void EnBigokuta_Update(Actor* actor, GameState* state);
 void EnBigokuta_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Bigokuta.data_00520D58.o")
-GLOBAL_ASM("binary/z_En_Bigokuta.data_00520E40.o")
+GLOBAL_ASM("data/z_En_Bigokuta.data_00520D58.o")
+GLOBAL_ASM("data/z_En_Bigokuta.data_00520E40.o")
 
 ActorInit En_Bigokuta_InitVars = {
     ACTOR_EN_BIGOKUTA,
@@ -23,11 +23,11 @@ ActorInit En_Bigokuta_InitVars = {
     (ActorFunc)EnBigokuta_Draw,
 };
 
-GLOBAL_ASM("binary/EnBigokuta_Init.o")
+GLOBAL_ASM("asm/EnBigokuta_Init.s")
 
-GLOBAL_ASM("binary/EnBigokuta_Destroy.o")
+GLOBAL_ASM("asm/EnBigokuta_Destroy.s")
 
-GLOBAL_ASM("binary/EnBigokuta_Update.o")
+GLOBAL_ASM("asm/EnBigokuta_Update.s")
 
-GLOBAL_ASM("binary/EnBigokuta_Draw.o")
+GLOBAL_ASM("asm/EnBigokuta_Draw.s")
 }

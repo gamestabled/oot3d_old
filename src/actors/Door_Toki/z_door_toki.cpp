@@ -7,7 +7,7 @@ void DoorToki_Init(Actor* actor, GameState* state);
 void DoorToki_Destroy(Actor* actor, GameState* state);
 void DoorToki_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Door_Toki.data.o")
+GLOBAL_ASM("data/z_Door_Toki.data.o")
 
 ActorInit Door_Toki_InitVars = {
     ACTOR_DOOR_TOKI,
@@ -21,9 +21,9 @@ ActorInit Door_Toki_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/DoorToki_Init.o")
+GLOBAL_ASM("asm/DoorToki_Init.s")
 
-GLOBAL_ASM("binary/DoorToki_Destroy.o")
+GLOBAL_ASM("asm/DoorToki_Destroy.s")
 
-GLOBAL_ASM("binary/DoorToki_Update.o")
+GLOBAL_ASM("asm/DoorToki_Update.s")
 }

@@ -8,7 +8,7 @@ void BgGanonOtyuka_Destroy(Actor* actor, GameState* state);
 void BgGanonOtyuka_Update(Actor* actor, GameState* state);
 void BgGanonOtyuka_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ganon_Otyuka.data.o")
+GLOBAL_ASM("data/z_Bg_Ganon_Otyuka.data.o")
 
 ActorInit Bg_Ganon_Otyuka_InitVars = {
     ACTOR_BG_GANON_OTYUKA,
@@ -22,11 +22,11 @@ ActorInit Bg_Ganon_Otyuka_InitVars = {
     (ActorFunc)BgGanonOtyuka_Draw,
 };
 
-GLOBAL_ASM("binary/BgGanonOtyuka_Init.o")
+GLOBAL_ASM("asm/BgGanonOtyuka_Init.s")
 
-GLOBAL_ASM("binary/BgGanonOtyuka_Destroy.o")
+GLOBAL_ASM("asm/BgGanonOtyuka_Destroy.s")
 
-GLOBAL_ASM("binary/BgGanonOtyuka_Update.o")
+GLOBAL_ASM("asm/BgGanonOtyuka_Update.s")
 
-GLOBAL_ASM("binary/BgGanonOtyuka_Draw.o")
+GLOBAL_ASM("asm/BgGanonOtyuka_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgHidanSekizou_Destroy(Actor* actor, GameState* state);
 void BgHidanSekizou_Update(Actor* actor, GameState* state);
 void BgHidanSekizou_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Hidan_Sekizou.data.o")
+GLOBAL_ASM("data/z_Bg_Hidan_Sekizou.data.o")
 
 ActorInit Bg_Hidan_Sekizou_InitVars = {
     ACTOR_BG_HIDAN_SEKIZOU,
@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Sekizou_InitVars = {
     (ActorFunc)BgHidanSekizou_Draw,
 };
 
-GLOBAL_ASM("binary/BgHidanSekizou_Init.o")
+GLOBAL_ASM("asm/BgHidanSekizou_Init.s")
 
-GLOBAL_ASM("binary/BgHidanSekizou_Destroy.o")
+GLOBAL_ASM("asm/BgHidanSekizou_Destroy.s")
 
-GLOBAL_ASM("binary/BgHidanSekizou_Update.o")
+GLOBAL_ASM("asm/BgHidanSekizou_Update.s")
 
-GLOBAL_ASM("binary/BgHidanSekizou_Draw.o")
+GLOBAL_ASM("asm/BgHidanSekizou_Draw.s")
 }

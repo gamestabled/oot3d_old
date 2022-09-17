@@ -8,7 +8,7 @@ void ObjSyokudai_Destroy(Actor* actor, GameState* state);
 void ObjSyokudai_Update(Actor* actor, GameState* state);
 void ObjSyokudai_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Syokudai.data.o")
+GLOBAL_ASM("data/z_Obj_Syokudai.data.o")
 
 ActorInit Obj_Syokudai_InitVars = {
     ACTOR_OBJ_SYOKUDAI,
@@ -22,11 +22,11 @@ ActorInit Obj_Syokudai_InitVars = {
     (ActorFunc)ObjSyokudai_Draw,
 };
 
-GLOBAL_ASM("binary/ObjSyokudai_Init.o")
+GLOBAL_ASM("asm/ObjSyokudai_Init.s")
 
-GLOBAL_ASM("binary/ObjSyokudai_Destroy.o")
+GLOBAL_ASM("asm/ObjSyokudai_Destroy.s")
 
-GLOBAL_ASM("binary/ObjSyokudai_Update.o")
+GLOBAL_ASM("asm/ObjSyokudai_Update.s")
 
-GLOBAL_ASM("binary/ObjSyokudai_Draw.o")
+GLOBAL_ASM("asm/ObjSyokudai_Draw.s")
 }

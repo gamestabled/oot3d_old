@@ -8,7 +8,7 @@ void EnDivingGame_Destroy(Actor* actor, GameState* state);
 void EnDivingGame_Update(Actor* actor, GameState* state);
 void EnDivingGame_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Diving_Game.data.o")
+GLOBAL_ASM("data/z_En_Diving_Game.data.o")
 
 ActorInit En_Diving_Game_InitVars = {
     ACTOR_EN_DIVING_GAME,
@@ -22,11 +22,11 @@ ActorInit En_Diving_Game_InitVars = {
     (ActorFunc)EnDivingGame_Draw,
 };
 
-GLOBAL_ASM("binary/EnDivingGame_Init.o")
+GLOBAL_ASM("asm/EnDivingGame_Init.s")
 
-GLOBAL_ASM("binary/EnDivingGame_Destroy.o")
+GLOBAL_ASM("asm/EnDivingGame_Destroy.s")
 
-GLOBAL_ASM("binary/EnDivingGame_Update.o")
+GLOBAL_ASM("asm/EnDivingGame_Update.s")
 
-GLOBAL_ASM("binary/EnDivingGame_Draw.o")
+GLOBAL_ASM("asm/EnDivingGame_Draw.s")
 }

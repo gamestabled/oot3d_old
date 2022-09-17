@@ -8,7 +8,7 @@ void BossGoma_Destroy(Actor* actor, GameState* state);
 void BossGoma_Update(Actor* actor, GameState* state);
 void BossGoma_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Boss_Goma.data.o")
+GLOBAL_ASM("data/z_Boss_Goma.data.o")
 
 ActorInit Boss_Goma_InitVars = {
     ACTOR_BOSS_GOMA,
@@ -22,11 +22,11 @@ ActorInit Boss_Goma_InitVars = {
     (ActorFunc)BossGoma_Draw,
 };
 
-GLOBAL_ASM("binary/BossGoma_Init.o")
+GLOBAL_ASM("asm/BossGoma_Init.s")
 
-GLOBAL_ASM("binary/BossGoma_Destroy.o")
+GLOBAL_ASM("asm/BossGoma_Destroy.s")
 
-GLOBAL_ASM("binary/BossGoma_Update.o")
+GLOBAL_ASM("asm/BossGoma_Update.s")
 
-GLOBAL_ASM("binary/BossGoma_Draw.o")
+GLOBAL_ASM("asm/BossGoma_Draw.s")
 }

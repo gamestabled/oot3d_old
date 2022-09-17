@@ -8,7 +8,7 @@ void EnDoor_Destroy(Actor* actor, GameState* state);
 void EnDoor_Update(Actor* actor, GameState* state);
 void EnDoor_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Door.data.o")
+GLOBAL_ASM("data/z_En_Door.data.o")
 
 ActorInit En_Door_InitVars = {
     ACTOR_EN_DOOR,
@@ -22,11 +22,11 @@ ActorInit En_Door_InitVars = {
     (ActorFunc)EnDoor_Draw,
 };
 
-GLOBAL_ASM("binary/EnDoor_Init.o")
+GLOBAL_ASM("asm/EnDoor_Init.s")
 
-GLOBAL_ASM("binary/EnDoor_Destroy.o")
+GLOBAL_ASM("asm/EnDoor_Destroy.s")
 
-GLOBAL_ASM("binary/EnDoor_Update.o")
+GLOBAL_ASM("asm/EnDoor_Update.s")
 
-GLOBAL_ASM("binary/EnDoor_Draw.o")
+GLOBAL_ASM("asm/EnDoor_Draw.s")
 }

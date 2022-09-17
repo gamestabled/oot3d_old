@@ -8,7 +8,7 @@ void EnMa3_Destroy(Actor* actor, GameState* state);
 void EnMa3_Update(Actor* actor, GameState* state);
 void EnMa3_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Ma3.data.o")
+GLOBAL_ASM("data/z_En_Ma3.data.o")
 
 ActorInit En_Ma3_InitVars = {
     ACTOR_EN_MA3,
@@ -22,11 +22,11 @@ ActorInit En_Ma3_InitVars = {
     (ActorFunc)EnMa3_Draw,
 };
 
-GLOBAL_ASM("binary/EnMa3_Init.o")
+GLOBAL_ASM("asm/EnMa3_Init.s")
 
-GLOBAL_ASM("binary/EnMa3_Destroy.o")
+GLOBAL_ASM("asm/EnMa3_Destroy.s")
 
-GLOBAL_ASM("binary/EnMa3_Update.o")
+GLOBAL_ASM("asm/EnMa3_Update.s")
 
-GLOBAL_ASM("binary/EnMa3_Draw.o")
+GLOBAL_ASM("asm/EnMa3_Draw.s")
 }

@@ -8,7 +8,7 @@ void BgHidanRock_Destroy(Actor* actor, GameState* state);
 void BgHidanRock_Update(Actor* actor, GameState* state);
 void BgHidanRock_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Hidan_Rock.data.o")
+GLOBAL_ASM("data/z_Bg_Hidan_Rock.data.o")
 
 ActorInit Bg_Hidan_Rock_InitVars = {
     ACTOR_BG_HIDAN_ROCK,
@@ -22,11 +22,11 @@ ActorInit Bg_Hidan_Rock_InitVars = {
     (ActorFunc)BgHidanRock_Draw,
 };
 
-GLOBAL_ASM("binary/BgHidanRock_Init.o")
+GLOBAL_ASM("asm/BgHidanRock_Init.s")
 
-GLOBAL_ASM("binary/BgHidanRock_Destroy.o")
+GLOBAL_ASM("asm/BgHidanRock_Destroy.s")
 
-GLOBAL_ASM("binary/BgHidanRock_Update.o")
+GLOBAL_ASM("asm/BgHidanRock_Update.s")
 
-GLOBAL_ASM("binary/BgHidanRock_Draw.o")
+GLOBAL_ASM("asm/BgHidanRock_Draw.s")
 }

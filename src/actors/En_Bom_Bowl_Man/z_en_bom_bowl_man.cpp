@@ -8,7 +8,7 @@ void EnBomBowlMan_Destroy(Actor* actor, GameState* state);
 void EnBomBowlMan_Update(Actor* actor, GameState* state);
 void EnBomBowlMan_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Bom_Bowl_Man.data.o")
+GLOBAL_ASM("data/z_En_Bom_Bowl_Man.data.o")
 
 ActorInit En_Bom_Bowl_Man_InitVars = {
     ACTOR_EN_BOM_BOWL_MAN,
@@ -22,11 +22,11 @@ ActorInit En_Bom_Bowl_Man_InitVars = {
     (ActorFunc)EnBomBowlMan_Draw,
 };
 
-GLOBAL_ASM("binary/EnBomBowlMan_Init.o")
+GLOBAL_ASM("asm/EnBomBowlMan_Init.s")
 
-GLOBAL_ASM("binary/EnBomBowlMan_Destroy.o")
+GLOBAL_ASM("asm/EnBomBowlMan_Destroy.s")
 
-GLOBAL_ASM("binary/EnBomBowlMan_Update.o")
+GLOBAL_ASM("asm/EnBomBowlMan_Update.s")
 
-GLOBAL_ASM("binary/EnBomBowlMan_Draw.o")
+GLOBAL_ASM("asm/EnBomBowlMan_Draw.s")
 }

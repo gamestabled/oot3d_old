@@ -7,8 +7,8 @@ void EnPoh_Init(Actor* actor, GameState* state);
 void EnPoh_Destroy(Actor* actor, GameState* state);
 void EnPoh_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Poh.data_0052E0C0.o")
-GLOBAL_ASM("binary/z_En_Poh.data_0052E1C0.o")
+GLOBAL_ASM("data/z_En_Poh.data_0052E0C0.o")
+GLOBAL_ASM("data/z_En_Poh.data_0052E1C0.o")
 
 ActorInit En_Poh_InitVars = {
     ACTOR_EN_POH,
@@ -22,9 +22,9 @@ ActorInit En_Poh_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnPoh_Init.o")
+GLOBAL_ASM("asm/EnPoh_Init.s")
 
-GLOBAL_ASM("binary/EnPoh_Destroy.o")
+GLOBAL_ASM("asm/EnPoh_Destroy.s")
 
-GLOBAL_ASM("binary/EnPoh_Update.o")
+GLOBAL_ASM("asm/EnPoh_Update.s")
 }

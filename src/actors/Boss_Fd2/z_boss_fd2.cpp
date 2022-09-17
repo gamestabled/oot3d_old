@@ -8,7 +8,7 @@ void BossFd2_Destroy(Actor* actor, GameState* state);
 void BossFd2_Update(Actor* actor, GameState* state);
 void BossFd2_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Boss_Fd2.data.o")
+GLOBAL_ASM("data/z_Boss_Fd2.data.o")
 
 ActorInit Boss_Fd2_InitVars = {
     ACTOR_BOSS_FD2,
@@ -22,11 +22,11 @@ ActorInit Boss_Fd2_InitVars = {
     (ActorFunc)BossFd2_Draw,
 };
 
-GLOBAL_ASM("binary/BossFd2_Init.o")
+GLOBAL_ASM("asm/BossFd2_Init.s")
 
-GLOBAL_ASM("binary/BossFd2_Destroy.o")
+GLOBAL_ASM("asm/BossFd2_Destroy.s")
 
-GLOBAL_ASM("binary/BossFd2_Update.o")
+GLOBAL_ASM("asm/BossFd2_Update.s")
 
-GLOBAL_ASM("binary/BossFd2_Draw.o")
+GLOBAL_ASM("asm/BossFd2_Draw.s")
 }

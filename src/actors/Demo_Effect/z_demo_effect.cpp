@@ -7,7 +7,7 @@ void DemoEffect_Init(Actor* actor, GameState* state);
 void DemoEffect_Destroy(Actor* actor, GameState* state);
 void DemoEffect_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Demo_Effect.data.o")
+GLOBAL_ASM("data/z_Demo_Effect.data.o")
 
 ActorInit Demo_Effect_InitVars = {
     ACTOR_DEMO_EFFECT,
@@ -21,9 +21,9 @@ ActorInit Demo_Effect_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/DemoEffect_Init.o")
+GLOBAL_ASM("asm/DemoEffect_Init.s")
 
-GLOBAL_ASM("binary/DemoEffect_Destroy.o")
+GLOBAL_ASM("asm/DemoEffect_Destroy.s")
 
-GLOBAL_ASM("binary/DemoEffect_Update.o")
+GLOBAL_ASM("asm/DemoEffect_Update.s")
 }

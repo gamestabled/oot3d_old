@@ -8,7 +8,7 @@ void BgZg_Destroy(Actor* actor, GameState* state);
 void BgZg_Update(Actor* actor, GameState* state);
 void BgZg_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Zg.data.o")
+GLOBAL_ASM("data/z_Bg_Zg.data.o")
 
 ActorInit Bg_Zg_InitVars = {
     ACTOR_BG_ZG,
@@ -22,11 +22,11 @@ ActorInit Bg_Zg_InitVars = {
     (ActorFunc)BgZg_Draw,
 };
 
-GLOBAL_ASM("binary/BgZg_Init.o")
+GLOBAL_ASM("asm/BgZg_Init.s")
 
-GLOBAL_ASM("binary/BgZg_Destroy.o")
+GLOBAL_ASM("asm/BgZg_Destroy.s")
 
-GLOBAL_ASM("binary/BgZg_Update.o")
+GLOBAL_ASM("asm/BgZg_Update.s")
 
-GLOBAL_ASM("binary/BgZg_Draw.o")
+GLOBAL_ASM("asm/BgZg_Draw.s")
 }

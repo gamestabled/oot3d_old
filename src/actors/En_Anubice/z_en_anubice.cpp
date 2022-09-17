@@ -8,7 +8,7 @@ void EnAnubice_Destroy(Actor* actor, GameState* state);
 void EnAnubice_Update(Actor* actor, GameState* state);
 void EnAnubice_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Anubice.data.o")
+GLOBAL_ASM("data/z_En_Anubice.data.o")
 
 ActorInit En_Anubice_InitVars = {
     ACTOR_EN_ANUBICE,
@@ -22,11 +22,11 @@ ActorInit En_Anubice_InitVars = {
     (ActorFunc)EnAnubice_Draw,
 };
 
-GLOBAL_ASM("binary/EnAnubice_Init.o")
+GLOBAL_ASM("asm/EnAnubice_Init.s")
 
-GLOBAL_ASM("binary/EnAnubice_Destroy.o")
+GLOBAL_ASM("asm/EnAnubice_Destroy.s")
 
-GLOBAL_ASM("binary/EnAnubice_Update.o")
+GLOBAL_ASM("asm/EnAnubice_Update.s")
 
-GLOBAL_ASM("binary/EnAnubice_Draw.o")
+GLOBAL_ASM("asm/EnAnubice_Draw.s")
 }

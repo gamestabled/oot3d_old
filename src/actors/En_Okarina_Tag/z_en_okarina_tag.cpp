@@ -19,9 +19,9 @@ ActorInit En_Okarina_Tag_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnOkarinaTag_Init.o")
+GLOBAL_ASM("asm/EnOkarinaTag_Init.s")
 
-GLOBAL_ASM("binary/EnOkarinaTag_Destroy.o")
+GLOBAL_ASM("asm/EnOkarinaTag_Destroy.s")
 
-GLOBAL_ASM("binary/EnOkarinaTag_Update.o")
+GLOBAL_ASM("asm/EnOkarinaTag_Update.s")
 }

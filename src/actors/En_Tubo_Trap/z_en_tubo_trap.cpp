@@ -8,7 +8,7 @@ void EnTuboTrap_Destroy(Actor* actor, GameState* state);
 void EnTuboTrap_Update(Actor* actor, GameState* state);
 void EnTuboTrap_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Tubo_Trap.data.o")
+GLOBAL_ASM("data/z_En_Tubo_Trap.data.o")
 
 ActorInit En_Tubo_Trap_InitVars = {
     ACTOR_EN_TUBO_TRAP,
@@ -22,11 +22,11 @@ ActorInit En_Tubo_Trap_InitVars = {
     (ActorFunc)EnTuboTrap_Draw,
 };
 
-GLOBAL_ASM("binary/EnTuboTrap_Init.o")
+GLOBAL_ASM("asm/EnTuboTrap_Init.s")
 
-GLOBAL_ASM("binary/EnTuboTrap_Destroy.o")
+GLOBAL_ASM("asm/EnTuboTrap_Destroy.s")
 
-GLOBAL_ASM("binary/EnTuboTrap_Update.o")
+GLOBAL_ASM("asm/EnTuboTrap_Update.s")
 
-GLOBAL_ASM("binary/EnTuboTrap_Draw.o")
+GLOBAL_ASM("asm/EnTuboTrap_Draw.s")
 }

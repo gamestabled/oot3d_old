@@ -8,7 +8,7 @@ void EnWf_Destroy(Actor* actor, GameState* state);
 void EnWf_Update(Actor* actor, GameState* state);
 void EnWf_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Wf.data.o")
+GLOBAL_ASM("data/z_En_Wf.data.o")
 
 ActorInit En_Wf_InitVars = {
     ACTOR_EN_WF,
@@ -22,11 +22,11 @@ ActorInit En_Wf_InitVars = {
     (ActorFunc)EnWf_Draw,
 };
 
-GLOBAL_ASM("binary/EnWf_Init.o")
+GLOBAL_ASM("asm/EnWf_Init.s")
 
-GLOBAL_ASM("binary/EnWf_Destroy.o")
+GLOBAL_ASM("asm/EnWf_Destroy.s")
 
-GLOBAL_ASM("binary/EnWf_Update.o")
+GLOBAL_ASM("asm/EnWf_Update.s")
 
-GLOBAL_ASM("binary/EnWf_Draw.o")
+GLOBAL_ASM("asm/EnWf_Draw.s")
 }

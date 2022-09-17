@@ -8,7 +8,7 @@ void ArrowIce_Destroy(Actor* actor, GameState* state);
 void ArrowIce_Update(Actor* actor, GameState* state);
 void ArrowIce_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Arrow_Ice.data.o")
+GLOBAL_ASM("data/z_Arrow_Ice.data.o")
 
 ActorInit Arrow_Ice_InitVars = {
     ACTOR_ARROW_ICE,
@@ -22,11 +22,11 @@ ActorInit Arrow_Ice_InitVars = {
     (ActorFunc)ArrowIce_Draw,
 };
 
-GLOBAL_ASM("binary/ArrowIce_Init.o")
+GLOBAL_ASM("asm/ArrowIce_Init.s")
 
-GLOBAL_ASM("binary/ArrowIce_Destroy.o")
+GLOBAL_ASM("asm/ArrowIce_Destroy.s")
 
-GLOBAL_ASM("binary/ArrowIce_Update.o")
+GLOBAL_ASM("asm/ArrowIce_Update.s")
 
-GLOBAL_ASM("binary/ArrowIce_Draw.o")
+GLOBAL_ASM("asm/ArrowIce_Draw.s")
 }

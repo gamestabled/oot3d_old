@@ -8,7 +8,7 @@ void BgSpot18Shutter_Destroy(Actor* actor, GameState* state);
 void BgSpot18Shutter_Update(Actor* actor, GameState* state);
 void BgSpot18Shutter_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot18_Shutter.data.o")
+GLOBAL_ASM("data/z_Bg_Spot18_Shutter.data.o")
 
 ActorInit Bg_Spot18_Shutter_InitVars = {
     ACTOR_BG_SPOT18_SHUTTER,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot18_Shutter_InitVars = {
     (ActorFunc)BgSpot18Shutter_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot18Shutter_Init.o")
+GLOBAL_ASM("asm/BgSpot18Shutter_Init.s")
 
-GLOBAL_ASM("binary/BgSpot18Shutter_Destroy.o")
+GLOBAL_ASM("asm/BgSpot18Shutter_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot18Shutter_Update.o")
+GLOBAL_ASM("asm/BgSpot18Shutter_Update.s")
 
-GLOBAL_ASM("binary/BgSpot18Shutter_Draw.o")
+GLOBAL_ASM("asm/BgSpot18Shutter_Draw.s")
 }

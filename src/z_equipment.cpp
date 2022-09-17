@@ -48,9 +48,9 @@ u8 gItemSlots[] = {
     SLOT_TRADE_ADULT, SLOT_TRADE_ADULT,
 };
 
-GLOBAL_ASM("binary/Inventory_ChangeEquipment.o")
+GLOBAL_ASM("asm/Inventory_ChangeEquipment.s")
 
-GLOBAL_ASM("binary/Inventory_DeleteEquipment.o")
+GLOBAL_ASM("asm/Inventory_DeleteEquipment.s")
 
-GLOBAL_ASM("binary/Inventory_ChangeUpgrade.o")
+GLOBAL_ASM("asm/Inventory_ChangeUpgrade.s")
 }

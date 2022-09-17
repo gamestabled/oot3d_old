@@ -8,7 +8,7 @@ void BgSpot05Soko_Destroy(Actor* actor, GameState* state);
 void BgSpot05Soko_Update(Actor* actor, GameState* state);
 void BgSpot05Soko_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Spot05_Soko.data.o")
+GLOBAL_ASM("data/z_Bg_Spot05_Soko.data.o")
 
 ActorInit Bg_Spot05_Soko_InitVars = {
     ACTOR_BG_SPOT05_SOKO,
@@ -22,11 +22,11 @@ ActorInit Bg_Spot05_Soko_InitVars = {
     (ActorFunc)BgSpot05Soko_Draw,
 };
 
-GLOBAL_ASM("binary/BgSpot05Soko_Init.o")
+GLOBAL_ASM("asm/BgSpot05Soko_Init.s")
 
-GLOBAL_ASM("binary/BgSpot05Soko_Destroy.o")
+GLOBAL_ASM("asm/BgSpot05Soko_Destroy.s")
 
-GLOBAL_ASM("binary/BgSpot05Soko_Update.o")
+GLOBAL_ASM("asm/BgSpot05Soko_Update.s")
 
-GLOBAL_ASM("binary/BgSpot05Soko_Draw.o")
+GLOBAL_ASM("asm/BgSpot05Soko_Draw.s")
 }

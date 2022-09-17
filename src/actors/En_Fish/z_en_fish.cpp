@@ -8,7 +8,7 @@ void EnFish_Destroy(Actor* actor, GameState* state);
 void EnFish_Update(Actor* actor, GameState* state);
 void EnFish_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Fish.data.o")
+GLOBAL_ASM("data/z_En_Fish.data.o")
 
 ActorInit En_Fish_InitVars = {
     ACTOR_EN_FISH,
@@ -22,11 +22,11 @@ ActorInit En_Fish_InitVars = {
     (ActorFunc)EnFish_Draw,
 };
 
-GLOBAL_ASM("binary/EnFish_Init.o")
+GLOBAL_ASM("asm/EnFish_Init.s")
 
-GLOBAL_ASM("binary/EnFish_Destroy.o")
+GLOBAL_ASM("asm/EnFish_Destroy.s")
 
-GLOBAL_ASM("binary/EnFish_Update.o")
+GLOBAL_ASM("asm/EnFish_Update.s")
 
-GLOBAL_ASM("binary/EnFish_Draw.o")
+GLOBAL_ASM("asm/EnFish_Draw.s")
 }

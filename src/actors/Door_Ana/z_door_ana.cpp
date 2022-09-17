@@ -8,7 +8,7 @@ void DoorAna_Destroy(Actor* actor, GameState* state);
 void DoorAna_Update(Actor* actor, GameState* state);
 void DoorAna_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Door_Ana.data.o")
+GLOBAL_ASM("data/z_Door_Ana.data.o")
 
 ActorInit Door_Ana_InitVars = {
     ACTOR_DOOR_ANA,
@@ -22,11 +22,11 @@ ActorInit Door_Ana_InitVars = {
     (ActorFunc)DoorAna_Draw,
 };
 
-GLOBAL_ASM("binary/DoorAna_Init.o")
+GLOBAL_ASM("asm/DoorAna_Init.s")
 
-GLOBAL_ASM("binary/DoorAna_Destroy.o")
+GLOBAL_ASM("asm/DoorAna_Destroy.s")
 
-GLOBAL_ASM("binary/DoorAna_Update.o")
+GLOBAL_ASM("asm/DoorAna_Update.s")
 
-GLOBAL_ASM("binary/DoorAna_Draw.o")
+GLOBAL_ASM("asm/DoorAna_Draw.s")
 }

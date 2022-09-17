@@ -8,7 +8,7 @@ void ObjHsblock_Destroy(Actor* actor, GameState* state);
 void ObjHsblock_Update(Actor* actor, GameState* state);
 void ObjHsblock_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Obj_Hsblock.data.o")
+GLOBAL_ASM("data/z_Obj_Hsblock.data.o")
 
 ActorInit Obj_Hsblock_InitVars = {
     ACTOR_OBJ_HSBLOCK,
@@ -22,11 +22,11 @@ ActorInit Obj_Hsblock_InitVars = {
     (ActorFunc)ObjHsblock_Draw,
 };
 
-GLOBAL_ASM("binary/ObjHsblock_Init.o")
+GLOBAL_ASM("asm/ObjHsblock_Init.s")
 
-GLOBAL_ASM("binary/ObjHsblock_Destroy.o")
+GLOBAL_ASM("asm/ObjHsblock_Destroy.s")
 
-GLOBAL_ASM("binary/ObjHsblock_Update.o")
+GLOBAL_ASM("asm/ObjHsblock_Update.s")
 
-GLOBAL_ASM("binary/ObjHsblock_Draw.o")
+GLOBAL_ASM("asm/ObjHsblock_Draw.s")
 }

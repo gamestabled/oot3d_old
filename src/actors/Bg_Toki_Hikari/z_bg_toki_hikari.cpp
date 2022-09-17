@@ -8,7 +8,7 @@ void BgTokiHikari_Destroy(Actor* actor, GameState* state);
 void BgTokiHikari_Update(Actor* actor, GameState* state);
 void BgTokiHikari_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Toki_Hikari.data.o")
+GLOBAL_ASM("data/z_Bg_Toki_Hikari.data.o")
 
 ActorInit Bg_Toki_Hikari_InitVars = {
     ACTOR_BG_TOKI_HIKARI,
@@ -22,11 +22,11 @@ ActorInit Bg_Toki_Hikari_InitVars = {
     (ActorFunc)BgTokiHikari_Draw,
 };
 
-GLOBAL_ASM("binary/BgTokiHikari_Init.o")
+GLOBAL_ASM("asm/BgTokiHikari_Init.s")
 
-GLOBAL_ASM("binary/BgTokiHikari_Destroy.o")
+GLOBAL_ASM("asm/BgTokiHikari_Destroy.s")
 
-GLOBAL_ASM("binary/BgTokiHikari_Update.o")
+GLOBAL_ASM("asm/BgTokiHikari_Update.s")
 
-GLOBAL_ASM("binary/BgTokiHikari_Draw.o")
+GLOBAL_ASM("asm/BgTokiHikari_Draw.s")
 }

@@ -8,7 +8,7 @@ void DoorWarp1_Destroy(Actor* actor, GameState* state);
 void DoorWarp1_Update(Actor* actor, GameState* state);
 void DoorWarp1_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Door_Warp1.data.o")
+GLOBAL_ASM("data/z_Door_Warp1.data.o")
 
 ActorInit Door_Warp1_InitVars = {
     ACTOR_DOOR_WARP1,
@@ -22,11 +22,11 @@ ActorInit Door_Warp1_InitVars = {
     (ActorFunc)DoorWarp1_Draw,
 };
 
-GLOBAL_ASM("binary/DoorWarp1_Init.o")
+GLOBAL_ASM("asm/DoorWarp1_Init.s")
 
-GLOBAL_ASM("binary/DoorWarp1_Destroy.o")
+GLOBAL_ASM("asm/DoorWarp1_Destroy.s")
 
-GLOBAL_ASM("binary/DoorWarp1_Update.o")
+GLOBAL_ASM("asm/DoorWarp1_Update.s")
 
-GLOBAL_ASM("binary/DoorWarp1_Draw.o")
+GLOBAL_ASM("asm/DoorWarp1_Draw.s")
 }

@@ -8,7 +8,7 @@ void DemoGeff_Destroy(Actor* actor, GameState* state);
 void DemoGeff_Update(Actor* actor, GameState* state);
 void DemoGeff_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Demo_Geff.data.o")
+GLOBAL_ASM("data/z_Demo_Geff.data.o")
 
 ActorInit Demo_Geff_InitVars = {
     ACTOR_DEMO_GEFF,
@@ -22,11 +22,11 @@ ActorInit Demo_Geff_InitVars = {
     (ActorFunc)DemoGeff_Draw,
 };
 
-GLOBAL_ASM("binary/DemoGeff_Init.o")
+GLOBAL_ASM("asm/DemoGeff_Init.s")
 
-GLOBAL_ASM("binary/DemoGeff_Destroy.o")
+GLOBAL_ASM("asm/DemoGeff_Destroy.s")
 
-GLOBAL_ASM("binary/DemoGeff_Update.o")
+GLOBAL_ASM("asm/DemoGeff_Update.s")
 
-GLOBAL_ASM("binary/DemoGeff_Draw.o")
+GLOBAL_ASM("asm/DemoGeff_Draw.s")
 }

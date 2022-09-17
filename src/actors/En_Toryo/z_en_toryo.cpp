@@ -8,7 +8,7 @@ void EnToryo_Destroy(Actor* actor, GameState* state);
 void EnToryo_Update(Actor* actor, GameState* state);
 void EnToryo_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Toryo.data.o")
+GLOBAL_ASM("data/z_En_Toryo.data.o")
 
 ActorInit En_Toryo_InitVars = {
     ACTOR_EN_TORYO,
@@ -22,11 +22,11 @@ ActorInit En_Toryo_InitVars = {
     (ActorFunc)EnToryo_Draw,
 };
 
-GLOBAL_ASM("binary/EnToryo_Init.o")
+GLOBAL_ASM("asm/EnToryo_Init.s")
 
-GLOBAL_ASM("binary/EnToryo_Destroy.o")
+GLOBAL_ASM("asm/EnToryo_Destroy.s")
 
-GLOBAL_ASM("binary/EnToryo_Update.o")
+GLOBAL_ASM("asm/EnToryo_Update.s")
 
-GLOBAL_ASM("binary/EnToryo_Draw.o")
+GLOBAL_ASM("asm/EnToryo_Draw.s")
 }

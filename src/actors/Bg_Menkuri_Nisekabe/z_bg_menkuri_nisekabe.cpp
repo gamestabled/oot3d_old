@@ -8,7 +8,7 @@ void BgMenkuriNisekabe_Destroy(Actor* actor, GameState* state);
 void BgMenkuriNisekabe_Update(Actor* actor, GameState* state);
 void BgMenkuriNisekabe_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Menkuri_Nisekabe.data.o")
+GLOBAL_ASM("data/z_Bg_Menkuri_Nisekabe.data.o")
 
 ActorInit Bg_Menkuri_Nisekabe_InitVars = {
     ACTOR_BG_MENKURI_NISEKABE,
@@ -22,11 +22,11 @@ ActorInit Bg_Menkuri_Nisekabe_InitVars = {
     (ActorFunc)BgMenkuriNisekabe_Draw,
 };
 
-GLOBAL_ASM("binary/BgMenkuriNisekabe_Init.o")
+GLOBAL_ASM("asm/BgMenkuriNisekabe_Init.s")
 
-GLOBAL_ASM("binary/BgMenkuriNisekabe_Destroy.o")
+GLOBAL_ASM("asm/BgMenkuriNisekabe_Destroy.s")
 
-GLOBAL_ASM("binary/BgMenkuriNisekabe_Update.o")
+GLOBAL_ASM("asm/BgMenkuriNisekabe_Update.s")
 
-GLOBAL_ASM("binary/BgMenkuriNisekabe_Draw.o")
+GLOBAL_ASM("asm/BgMenkuriNisekabe_Draw.s")
 }

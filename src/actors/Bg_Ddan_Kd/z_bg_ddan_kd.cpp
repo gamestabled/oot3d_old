@@ -8,7 +8,7 @@ void BgDdanKd_Destroy(Actor* actor, GameState* state);
 void BgDdanKd_Update(Actor* actor, GameState* state);
 void BgDdanKd_Draw(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_Bg_Ddan_Kd.data.o")
+GLOBAL_ASM("data/z_Bg_Ddan_Kd.data.o")
 
 ActorInit Bg_Ddan_Kd_InitVars = {
     ACTOR_BG_DDAN_KD,
@@ -22,11 +22,11 @@ ActorInit Bg_Ddan_Kd_InitVars = {
     (ActorFunc)BgDdanKd_Draw,
 };
 
-GLOBAL_ASM("binary/BgDdanKd_Init.o")
+GLOBAL_ASM("asm/BgDdanKd_Init.s")
 
-GLOBAL_ASM("binary/BgDdanKd_Destroy.o")
+GLOBAL_ASM("asm/BgDdanKd_Destroy.s")
 
-GLOBAL_ASM("binary/BgDdanKd_Update.o")
+GLOBAL_ASM("asm/BgDdanKd_Update.s")
 
-GLOBAL_ASM("binary/BgDdanKd_Draw.o")
+GLOBAL_ASM("asm/BgDdanKd_Draw.s")
 }

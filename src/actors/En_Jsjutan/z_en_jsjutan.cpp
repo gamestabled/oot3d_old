@@ -7,7 +7,7 @@ void EnJsjutan_Init(Actor* actor, GameState* state);
 void EnJsjutan_Destroy(Actor* actor, GameState* state);
 void EnJsjutan_Update(Actor* actor, GameState* state);
 
-GLOBAL_ASM("binary/z_En_Jsjutan.data.o")
+GLOBAL_ASM("data/z_En_Jsjutan.data.o")
 
 ActorInit En_Jsjutan_InitVars = {
     ACTOR_EN_JSJUTAN,
@@ -21,9 +21,9 @@ ActorInit En_Jsjutan_InitVars = {
     NULL,
 };
 
-GLOBAL_ASM("binary/EnJsjutan_Init.o")
+GLOBAL_ASM("asm/EnJsjutan_Init.s")
 
-GLOBAL_ASM("binary/EnJsjutan_Destroy.o")
+GLOBAL_ASM("asm/EnJsjutan_Destroy.s")
 
-GLOBAL_ASM("binary/EnJsjutan_Update.o")
+GLOBAL_ASM("asm/EnJsjutan_Update.s")
 }
